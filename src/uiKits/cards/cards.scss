@@ -1,11 +1,69 @@
-$bg-color: red;
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$title-fs: 24px;
+$subtitle-fs: 12px;
 
-body {
-    background: $bg-color;
-    font-size: 70px;
+@mixin breakpoint-pattern {
+    @media (max-width: 639px) {
+    }
+    @media (min-width: 640px) and (max-width: 767px) {
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+    }
+    @media (min-width: 1200px) and (max-width: 1439px) {
+    }
+    @media (min-width: 1440px) {
+    }
 }
 
-.card {
-    font-size: 70px;
-    border: 5px solid black;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e5e5e5;
+
+    @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    }
+}
+
+/* прибытие */
+
+@mixin card-subtitles {
+    line-height: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #1f2041;
+}
+
+@mixin card-titles {
+    line-height: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #1f2041;
+}
+
+@mixin card-container {
+    display: grid;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    width: 380px;
+}
+
+.room-search {
+    @include card-container;
+
+    @media (max-width: 639px) {
+    }
+    @media (min-width: 640px) and (max-width: 767px) {
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+    }
+    @media (min-width: 1200px) and (max-width: 1439px) {
+    }
+    @media (min-width: 1440px) {
+    }
+    height: 374px;
 }
