@@ -1,0 +1,11 @@
+$bg-color: red;
+
+body {
+    background: $bg-color;
+    font-size: 70px;
+}
+
+.card {
+    font-size: 70px;
+    border: 5px solid black;
+}

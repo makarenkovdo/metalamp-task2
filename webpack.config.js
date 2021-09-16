@@ -13,7 +13,7 @@ const path = require('path')
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: './src/uiKits/cards/cards.js',
 
     output: {
         filename: '[name].bundle.js',
@@ -26,6 +26,12 @@ module.exports = {
             filename: 'output.html',
             minify: false,
         }),
+        new HtmlWebpackPlugin({
+            template: './src/uiKits/cards/cards.html',
+            filename: 'cards.html',
+            minify: false,
+        }),
+
         new HtmlWebpackPugPlugin(),
     ],
     module: {
@@ -37,6 +43,17 @@ module.exports = {
                         loader: 'pug-loader',
                         options: { pretty: true },
                     },
+                ],
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    'style-loader',
+                    // Translates CSS into CommonJS
+                    'css-loader',
+                    // Compiles Sass to CSS
+                    'sass-loader',
                 ],
             },
         ],
