@@ -1,19 +1,13 @@
-doctype html
-html(lang='en')
-  head
-    title Jade
-    script(type='text/javascript').
-      const foo = true;
-      let bar = function() {};
-      if (foo) {
-      bar(1 + 5)
-      }
-  body
-    h1 Jade - node template engine
-    #container.col
-      p You are amazing
-      p
-        | Jade is a terse and simple
-        | templating language with a
-        | strong focus on performance
-        | and powerful features.
+include base
+body
+    main
+        section.container-a
+        section.room-search 1
+        section.sign-up 2
+        section.container-b
+        section.to-book 3
+        section.sign-in 4
+        section.container-c
+        section.calendar 5
+        section.room 6
+        section.room 7
