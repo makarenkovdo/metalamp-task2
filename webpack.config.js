@@ -13,7 +13,10 @@ const path = require('path')
 
 module.exports = {
     mode: 'development',
-    entry: './src/uiKits/cards/cards.js',
+    entry: [
+        './src/uikits/cards/cards.js',
+        './src/uikits/formElements/formElements.js',
+    ],
 
     output: {
         filename: '[name].bundle.js',
@@ -27,8 +30,13 @@ module.exports = {
             minify: false,
         }),
         new HtmlWebpackPlugin({
-            template: './src/uiKits/cards/cards.html',
+            template: './src/uikits/cards/cards.html',
             filename: 'cards.html',
+            minify: false,
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/uikits/formElements/formElements.html',
+            filename: 'formElements.html',
             minify: false,
         }),
 
