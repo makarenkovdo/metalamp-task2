@@ -62,18 +62,23 @@ main {
 }
 
 .container-a {
+    display: grid;
     grid-area: a;
+    gap: 100px;
 }
 .container-b {
+    display: grid;
     grid-area: b;
+    gap: 100px;
 }
 .container-c {
+    display: grid;
     grid-area: c;
+    gap: 100px;
 }
-
 .room-search {
     @include card-mixin;
-    // grid-area: aa;
+
     @media (max-width: 479px) {
     }
     @media (min-width: 480px) and (max-width: 639px) {
@@ -93,7 +98,6 @@ main {
 
 .sign-up {
     @include card-mixin;
-    // grid-area: ab;
     @media (max-width: 479px) {
     }
     @media (min-width: 480px) and (max-width: 639px) {
