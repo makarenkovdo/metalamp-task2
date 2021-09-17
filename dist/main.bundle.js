@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./../../components/dropdown-guests/dropdown-guests.svg */ \"./src/components/dropdown-guests/dropdown-guests.svg\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".text-field {\\n  width: 320px;\\n  height: 44px;\\n  background: #ffffff;\\n  border: 1px solid rgba(31, 32, 65, 0.25);\\n  box-sizing: border-box;\\n  border-radius: 4px;\\n}\\n.text-field:hover {\\n  border: 1px solid rgba(31, 32, 65, 0.5);\\n}\\n.text-field:focus {\\n  border: 1px solid rgba(31, 32, 65, 0.5);\\n}\\n\\n.dropdown-guests {\\n  position: absolute;\\n  width: 320px;\\n  height: 44px;\\n  left: 587px;\\n  top: 896px;\\n  background: #ffffff;\\n  /* Dark 50% */\\n  border: 1px solid rgba(31, 32, 65, 0.5);\\n  box-sizing: border-box;\\n  border-radius: 2px;\\n  background: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \") no-repeat;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://task2/./src/uikits/formElements/formElements.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".text-field {\\n  width: 320px;\\n  height: 44px;\\n  background: #ffffff;\\n  border: 1px solid rgba(31, 32, 65, 0.25);\\n  box-sizing: border-box;\\n  border-radius: 4px;\\n}\\n.text-field:hover {\\n  border: 1px solid rgba(31, 32, 65, 0.5);\\n}\\n.text-field:focus {\\n  border: 1px solid rgba(31, 32, 65, 0.5);\\n}\\n\\n.dropdown-guests {\\n  position: absolute;\\n  width: 320px;\\n  height: 44px;\\n  left: 587px;\\n  top: 896px;\\n  background: #ffffff;\\n  /* Dark 50% */\\n  border: 1px solid rgba(31, 32, 65, 0.5);\\n  box-sizing: border-box;\\n  border-radius: 2px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://task2/./src/uikits/formElements/formElements.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -40,23 +40,13 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
-  \********************************************************/
-/***/ ((module) => {
-
-eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  }\n\n  if (!url) {\n    return url;\n  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n\n\n  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack://task2/./node_modules/css-loader/dist/runtime/getUrl.js?");
-
-/***/ }),
-
-/***/ "./src/components/subscriptionTextField/narrow.svg":
-/*!*********************************************************!*\
-  !*** ./src/components/subscriptionTextField/narrow.svg ***!
-  \*********************************************************/
+/***/ "./src/components/dropdown-guests/dropdown-guests.svg":
+/*!************************************************************!*\
+  !*** ./src/components/dropdown-guests/dropdown-guests.svg ***!
+  \************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/narrow.svg\");\n\n//# sourceURL=webpack://task2/./src/components/subscriptionTextField/narrow.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/dropdown-guests.svg\");\n\n//# sourceURL=webpack://task2/./src/components/dropdown-guests/dropdown-guests.svg?");
 
 /***/ }),
 
@@ -156,17 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _car
   \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _formElements_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./formElements.scss */ \"./src/uikits/formElements/formElements.scss\");\n/* harmony import */ var _components_subscriptionTextField_narrow_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../components/subscriptionTextField/narrow.svg */ \"./src/components/subscriptionTextField/narrow.svg\");\n\r\n\r\n\r\nconsole.log('formElements here')\r\n\n\n//# sourceURL=webpack://task2/./src/uikits/formElements/formElements.js?");
-
-/***/ }),
-
-/***/ "./src/components/dropdown-guests/dropdown-guests.svg":
-/*!************************************************************!*\
-  !*** ./src/components/dropdown-guests/dropdown-guests.svg ***!
-  \************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"edcc26c82ee8fa68bafc.svg\";\n\n//# sourceURL=webpack://task2/./src/components/dropdown-guests/dropdown-guests.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _formElements_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./formElements.scss */ \"./src/uikits/formElements/formElements.scss\");\n/* harmony import */ var _components_dropdown_guests_dropdown_guests_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../components/dropdown-guests/dropdown-guests.svg */ \"./src/components/dropdown-guests/dropdown-guests.svg\");\n\r\n\r\n\r\nconsole.log('formElements here')\r\n\n\n//# sourceURL=webpack://task2/./src/uikits/formElements/formElements.js?");
 
 /***/ })
 
@@ -195,9 +175,6 @@ eval("module.exports = __webpack_require__.p + \"edcc26c82ee8fa68bafc.svg\";\n\n
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -270,32 +247,6 @@ eval("module.exports = __webpack_require__.p + \"edcc26c82ee8fa68bafc.svg\";\n\n
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"main": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		// no on chunks loaded
-/******/ 		
-/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /************************************************************************/
