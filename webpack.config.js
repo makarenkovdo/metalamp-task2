@@ -23,6 +23,11 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
+    resolve: {
+        alias: {
+            images: path.resolve(__dirname, 'src/assets/img/'),
+        },
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.pug',
@@ -44,6 +49,26 @@ module.exports = {
     ],
     module: {
         rules: [
+            // {
+            //     loader: 'extract-loader',
+            // },
+            // {
+            //     loader: 'html-loader',
+            //     options: {
+            //         attrs: ['img:src', 'link:href'],
+            //     },
+            // },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: 'img/[name].[ext]',
+                        },
+                    },
+                ],
+            },
             {
                 test: /\.pug$/,
                 use: [
