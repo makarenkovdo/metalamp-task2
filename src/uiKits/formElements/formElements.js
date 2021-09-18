@@ -32,23 +32,37 @@ function handleClick() {
     }
 }
 
-function counter() {
-    const counter = 0
-    $counterSelector.innerHTML = counter
-}
-counter()
+// function counter() {
+//     const counter = 0
+//     $counterSelector.innerHTML = counter
+// }
+// counter()
 
-function makeCounter() {
+// function makeCounter() {
+//     console.log(makeCounter)
+
+//     let currentCounter = 0
+//     return function (shift) {
+//         console.log(shift)
+//         console.log('inside zamik')
+//         return currentCounter + shift
+//     }
+// }
+function makeCounter(a) {
     console.log(makeCounter)
 
     let currentCounter = 0
     return function (shift) {
+        console.log(currentCounter)
         console.log(shift)
         console.log('inside zamik')
+        currentCounter += shift
+        $counterSelector.innerHTML = currentCounter
         return currentCounter + shift
     }
 }
 
 const counter1 = makeCounter()
+// counter1(0)
 $increaseSelector.addEventListener('click', () => counter1(1))
 $decreaseSelector.addEventListener('click', () => counter1(-1))
