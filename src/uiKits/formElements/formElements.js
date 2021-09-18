@@ -4,7 +4,7 @@ import someSvg from './../../components/dropdown-guests/dropdown-guests.svg'
 let isOpen = false
 const $dropdownContainerImg = document.querySelector('.js-img-box')
 const $dropdownContainer = document.querySelector('.js-dropdown-guests')
-const $dropdownBoxContainer = document.querySelector('.js-dropdown-box')
+const $dropdownBoxContainer = document.querySelector('.js-dropdown-popup')
 
 $dropdownContainerImg.addEventListener('click', handleClick)
 
