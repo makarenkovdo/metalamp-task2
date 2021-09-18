@@ -58,7 +58,9 @@ function makeCounter(a) {
         console.log(currentCounter)
         console.log(shift)
         console.log('inside zamik')
-        currentCounter += shift
+        if (currentCounter === 0 && shift < 0) {
+            return currentCounter
+        } else currentCounter += shift
         $counterSelector.innerHTML = currentCounter
         return currentCounter + shift
     }
