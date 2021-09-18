@@ -1,6 +1,5 @@
 .dropdown-guests {
-    overflow: hidden;
-
+    // overflow: hidden;
     display: grid;
     position: absolute;
     width: 320px;
@@ -38,6 +37,7 @@
 }
 
 .dropdown-box {
+    position: absolute;
     width: 320px;
     height: 159px;
 

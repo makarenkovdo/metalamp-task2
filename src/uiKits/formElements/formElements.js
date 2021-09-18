@@ -24,7 +24,16 @@ function handleClick() {
         dropdownBox.classList.add('dropdown-box')
         // $dropdownContainer.insertAdjacentElement('beforeend', <div>asd</div>)
         console.log('CLICK!')
+        const x = $dropdownContainer.getBoundingClientRect().x
+        const y =
+            $dropdownContainer.getBoundingClientRect().y +
+            $dropdownContainer.getBoundingClientRect().height
+        console.log(x, y)
+        // dropdownBox.style.left = x
+        // dropdownBox.style.top = y
+        dropdownBox.style.cssText = `left:${x}px; top: ${y}px; `
         $dropdownBoxContainer.insertAdjacentElement('beforeend', dropdownBox)
+
         isOpen = true
     }
 }
