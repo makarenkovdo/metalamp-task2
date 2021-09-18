@@ -60,11 +60,26 @@
     justify-content: space-between;
     align-items: center;
     background: #ffffff;
+
     /* Dark 50% */
 
     border: 1px solid rgba(31, 32, 65, 0.5);
     box-sizing: border-box;
     border-radius: 2px 2px 0px 0px;
+
+    //
+
+    /* Сколько гостей */
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    /* Dark 75% */
+    color: rgba(31, 32, 65, 0.75);
 }
 
 .dropdown-text {
