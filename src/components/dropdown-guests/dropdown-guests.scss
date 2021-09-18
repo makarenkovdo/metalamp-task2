@@ -1,11 +1,14 @@
 .dropdown-guests {
-    display: grid;
+    display: flex;
     position: absolute;
     width: 320px;
     height: 44px;
     left: 587px;
     top: 196px;
     grid-template-columns: 86.25% 13.75%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.5625%;
 
     background: #ffffff;
     border: 1px solid rgba(31, 32, 65, 0.5);
@@ -32,6 +35,8 @@
 }
 .img-box {
     display: grid;
-    justify-items: center;
+    width: 44px;
+    height: 44px;
     align-items: center;
+    justify-content: center;
 }
