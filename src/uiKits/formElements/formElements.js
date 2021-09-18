@@ -22,7 +22,6 @@ const $increaseSelector3 = document.querySelector('.js-increase3')
 $dropdownContainerImg.addEventListener('click', handleClick)
 
 function handleClick() {
-    console.log(isOpen)
     isOpen ? closeDropdownBox() : openDropdownBox()
     function closeDropdownBox() {
         $dropdownBoxContainer.classList.add('hide')
@@ -34,7 +33,6 @@ function handleClick() {
         const y =
             $dropdownContainer.getBoundingClientRect().y +
             $dropdownContainer.getBoundingClientRect().height
-        console.log(x, y)
         $dropdownBoxContainer.classList.remove('hide')
         $dropdownBoxContainer.style.cssText = `left:${x}px; top: ${y}px; `
 
@@ -42,30 +40,9 @@ function handleClick() {
     }
 }
 
-// function counter() {
-//     const counter = 0
-//     $counterSelector.innerHTML = counter
-// }
-// counter()
-
-// function makeCounter() {
-//     console.log(makeCounter)
-
-//     let currentCounter = 0
-//     return function (shift) {
-//         console.log(shift)
-//         console.log('inside zamik')
-//         return currentCounter + shift
-//     }
-// }
 function makeCounter(counterSelector) {
-    console.log(makeCounter)
-
     let currentCounter = 0
     return function (shift) {
-        console.log(currentCounter)
-        console.log(shift)
-        console.log('inside zamik')
         if (currentCounter === 0 && shift < 0) {
             return currentCounter
         } else currentCounter += shift
@@ -74,6 +51,7 @@ function makeCounter(counterSelector) {
     }
 }
 
+//closures implementation
 const counter1 = makeCounter($counterSelector1)
 const counter2 = makeCounter($counterSelector2)
 const counter3 = makeCounter($counterSelector3)
