@@ -1,13 +1,14 @@
 .dropdown-guests {
-    // overflow: hidden;
     display: grid;
     position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+
     width: 320px;
     left: 587px;
     top: 196px;
 
     border: 1px solid rgba(31, 32, 65, 0.5);
-    box-sizing: content-box;
     border-radius: 2px;
     img {
         position: relative;
