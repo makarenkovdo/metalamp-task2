@@ -7,6 +7,7 @@ let isOpen = false
 const $dropdownContainerImg = document.querySelector('.js-img-box')
 const $dropdownContainer = document.querySelector('.js-dropdown-guests')
 const $dropdownBoxContainer = document.querySelector('.js-dropdown-popup')
+const $dropdownText = document.querySelector('.js-dropdown-text')
 
 const $counterSelector1 = document.querySelector('.js-counter1')
 const $counterSelector2 = document.querySelector('.js-counter2')
@@ -40,26 +41,107 @@ function handleClick() {
     }
 }
 
-function makeCounter(counterSelector) {
-    let currentCounter = 0
-    return function (shift) {
-        if (currentCounter === 0 && shift < 0) {
-            return currentCounter
-        } else currentCounter += shift
-        counterSelector.innerHTML = currentCounter
-        return currentCounter + shift
+function makeCounter() {
+    let commonCounter = 0
+    let counter1 = 0
+    let counter2 = 0
+    let counter3 = 0
+    let guestWordEnding = 'ь'
+
+    function setGuestWordEnging(guestWordEnding, commonCounter) {
+        if (commonCounter > 1 && commonCounter < 5) {
+            return (guestWordEnding = 'я')
+        }
+        if (commonCounter > 5 || commonCounter < 1) {
+            return (guestWordEnding = 'ей')
+        }
+        if (commonCounter === 1) {
+            return (guestWordEnding = 'ь')
+        }
+        return guestWordEnding
+    }
+
+    return function (shift, counterSelector) {
+        switch (counterSelector.attributes.class.value) {
+            case 'counter js-counter1':
+                if (counter1 === 0 && shift < 0) {
+                    return counter1
+                } else {
+                    counter1 += shift
+                    commonCounter += shift
+                    guestWordEnding = setGuestWordEnging(
+                        guestWordEnding,
+                        commonCounter
+                    )
+
+                    counterSelector.innerHTML = counter1
+                    $dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
+                }
+                break
+            case 'counter js-counter2':
+                if (counter2 === 0 && shift < 0) {
+                    return counter2
+                } else {
+                    counter2 += shift
+                    commonCounter += shift
+                    guestWordEnding = setGuestWordEnging(
+                        guestWordEnding,
+                        commonCounter
+                    )
+                    counterSelector.innerHTML = counter2
+                    $dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
+                }
+                break
+            case 'counter js-counter3':
+                if (counter3 === 0 && shift < 0) {
+                    return counter3
+                } else {
+                    counter3 += shift
+                    commonCounter += shift
+                    guestWordEnding = setGuestWordEnging(
+                        guestWordEnding,
+                        commonCounter
+                    )
+                    counterSelector.innerHTML = counter3
+                    $dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
+                }
+                break
+            default:
+                return false
+        }
     }
 }
 
 //closures implementation
-const counter1 = makeCounter($counterSelector1)
-const counter2 = makeCounter($counterSelector2)
-const counter3 = makeCounter($counterSelector3)
+// const counter1 = makeCounter($counterSelector1)
+// const counter2 = makeCounter($counterSelector2)
+// const counter3 = makeCounter($counterSelector3)
 
-// counter1(0)
-$increaseSelector1.addEventListener('click', () => counter1(1))
-$decreaseSelector1.addEventListener('click', () => counter1(-1))
-$increaseSelector2.addEventListener('click', () => counter2(1))
-$decreaseSelector2.addEventListener('click', () => counter2(-1))
-$increaseSelector3.addEventListener('click', () => counter3(1))
-$decreaseSelector3.addEventListener('click', () => counter4(-1))
+// // counter1(0)
+// $increaseSelector1.addEventListener('click', () => counter1(1))
+// $decreaseSelector1.addEventListener('click', () => counter1(-1))
+// $increaseSelector2.addEventListener('click', () => counter2(1))
+// $decreaseSelector2.addEventListener('click', () => counter2(-1))
+// $increaseSelector3.addEventListener('click', () => counter3(1))
+// $decreaseSelector3.addEventListener('click', () => counter4(-1))
+
+const counter = makeCounter()
+
+$increaseSelector1.addEventListener('click', () =>
+    counter(1, $counterSelector1)
+)
+$decreaseSelector1.addEventListener('click', () =>
+    counter(-1, $counterSelector1)
+)
+$increaseSelector2.addEventListener('click', () =>
+    counter(1, $counterSelector2)
+)
+$decreaseSelector2.addEventListener('click', () =>
+    counter(-1, $counterSelector2)
+)
+$increaseSelector3.addEventListener('click', () =>
+    counter(1, $counterSelector3)
+)
+$decreaseSelector3.addEventListener('click', () =>
+    counter(-1, $counterSelector3)
+)
