@@ -1,5 +1,7 @@
 import './formElements.scss'
-import someSvg from './../../components/dropdown-guests/dropdown-guests.svg'
+import dropdownSvg from './../../components/dropdown-guests/dropdown-guests.svg'
+import minusSvg from './../../components/dropdown/minus.svg'
+import plusSvg from './../../components/dropdown/plus.svg'
 
 let isOpen = false
 const $dropdownContainerImg = document.querySelector('.js-img-box')
