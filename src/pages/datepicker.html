@@ -12,11 +12,6 @@
         <main>
             <div>
                 <form>
-                    <input
-                        type="text"
-                        class="datepicker-here"
-                        data-position="right top"
-                    />
                     <div class="one">
                         <label for="start_one">С:</label>
                         <input
@@ -27,7 +22,16 @@
                             class="datepicker-here"
                         />
                         <label for="start_one">До:</label>
-                        <input type="text" id="end_one" />
+                        <input
+                            type="text"
+                            id="end_one"
+                            data-range="true"
+                            data-multiple-dates-separator=" - "
+                            <!--
+                            class="datepicker-here"
+                            --
+                        />
+                        />
                     </div>
                 </form>
             </div>
@@ -35,7 +39,7 @@
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" /> -->
         <!-- <script>
             $(function () {
-                $('#calendar').datepicker()
+                $('#calendar').datepicker(range: true)
             })
         </script> -->
     </body>
