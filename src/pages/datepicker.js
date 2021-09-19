@@ -1,0 +1,8 @@
+import 'jquery'
+import 'air-datepicker'
+import './../uikits/formElements/formElements'
+import './../../node_modules/air-datepicker/src/sass/_datepicker-config.scss'
+import './../../node_modules/air-datepicker/src/sass/cell.scss'
+import './../../node_modules/air-datepicker/src/sass/datepicker.scss'
+import './../../node_modules/air-datepicker/src/sass/navigation.scss'
+import './../../node_modules/air-datepicker/src/sass/timepicker.scss'

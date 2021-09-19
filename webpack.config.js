@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin')
+const webpack = require('webpack')
 
 // var template = require('pug-loader!./file.pug')
 // var locals = {
@@ -13,10 +14,7 @@ const path = require('path')
 
 module.exports = {
     mode: 'development',
-    entry: [
-        './src/uikits/cards/cards.js',
-        './src/uikits/formElements/formElements.js',
-    ],
+    entry: ['./src/index.js'],
 
     output: {
         filename: '[name].bundle.js',
@@ -30,8 +28,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.pug',
-            filename: 'output.html',
+            template: './src/index.html',
+            filename: 'index.html',
             minify: false,
         }),
         new HtmlWebpackPlugin({
@@ -44,20 +42,31 @@ module.exports = {
             filename: 'formElements.html',
             minify: false,
         }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/datepicker.html',
+            filename: 'datepicker.html',
+            minify: false,
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/pg.html',
+            filename: 'pg.html',
+            minify: false,
+        }),
 
         new HtmlWebpackPugPlugin(),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery',
+            'window.$': 'jquery',
+        }),
     ],
     module: {
         rules: [
-            // {
-            //     loader: 'extract-loader',
-            // },
-            // {
-            //     loader: 'html-loader',
-            //     options: {
-            //         attrs: ['img:src', 'link:href'],
-            //     },
-            // },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
                 use: [

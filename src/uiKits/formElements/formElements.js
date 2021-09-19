@@ -2,8 +2,6 @@ import './formElements.scss'
 import dropdownSvg from './../../components/dropdown-guests/dropdown-guests.svg'
 import minusSvg from './../../components/dropdown/minus.svg'
 import plusSvg from './../../components/dropdown/plus.svg'
-// import './../../../bower_components/air-datepicker/dist/css/datepicker.scss'
-// import './../../../bower_components/air-datepicker/dist/js/datepicker.js'
 
 let isOpen = false
 const $dropdownContainerImg = document.querySelector('.js-img-box')
