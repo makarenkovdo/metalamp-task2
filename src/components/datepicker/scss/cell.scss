@@ -26,6 +26,7 @@
 
     &.-current- {
         color: map_get($datepickerTextColor, currentDate);
+        background: map_get($datepickerBG, background);
 
         &.-focus- {
             color: map_get($datepickerTextColor, common);
