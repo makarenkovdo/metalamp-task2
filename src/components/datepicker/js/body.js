@@ -151,8 +151,7 @@
             if (dp.isSame(currentDate, date, type)) classes += ' -current-'
             if (parent.focused && dp.isSame(date, parent.focused, type))
                 classes += ' -focus-'
-            if (parent._isSelected(date, type))
-                classes += ' -selected- -in-range-'
+            if (parent._isSelected(date, type)) classes += ' -selected- '
             if (!parent._isInRange(date, type) || render.disabled)
                 classes += ' -disabled-'
 

@@ -70,7 +70,27 @@
         border: 1px solid rgba(map_get($datepickerBG, selected), 0.5);
         background-color: map_get($datepickerBG, inRange);
         border-radius: $datepickerBorderRadius;
+        // &::before {
+        //     z-index: -2;
+        //     content: '';
+        //     position: absolute;
+        //     border: 1px solid rgba(map_get($datepickerBG, selected), 0.5);
+
+        //     background-color: map_get($datepickerBG, inRange);
+
+        //     border-radius: $datepickerBorderRadius;
+        // }
+
+        &::after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            background-color: map_get($datepickerBG, inRange);
+            width: 100%;
+            height: 100%;
+        }
     }
+
     &.-range-to- {
         border: 1px solid rgba(map_get($datepickerBG, selected), 0.5);
         background-color: map_get($datepickerBG, inRange);
@@ -85,7 +105,6 @@
         color: #fff;
         border: none;
         background: map_get($datepickerBG, selected);
-
         &.-current- {
             color: #fff;
             background: map_get($datepickerBG, selected);
@@ -94,6 +113,22 @@
         &.-focus- {
             background: map_get($datepickerBG, selectedHover);
         }
+        // &:before {
+        //     content: '';
+        //     // position: absolute;
+        //     width: 100%;
+        //     height: 100%;
+        //     background-color: #e8e7fe;
+        //     z-index: 0;
+        // }
+        // &:after {
+        //     content: 'after';
+        //     position: absolute;
+        //     background-color: black;
+        //     color: #fff;
+        //     border: none;
+        //     background: map_get($datepickerBG, selected);
+        // }
     }
 
     &:empty {
