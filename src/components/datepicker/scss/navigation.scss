@@ -43,9 +43,9 @@
     }
 
     path {
-        fill: none;
-        stroke: map_get($datepickerTextColor, navArrows);
-        stroke-width: 2px;
+        fill: $purple;
+        // stroke: map_get($datepickerTextColor, navArrows);
+        // stroke-width: 2px;
     }
 }
 

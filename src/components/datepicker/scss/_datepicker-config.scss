@@ -1,7 +1,10 @@
+@import './../../../styles/mixins/fonts.scss';
+@import './../../../styles/variables/colors.scss';
+
 $datepickerDayCellSize: 40px !default;
 $datepickerWidth: 320px !default;
 $datepickerMinBodyHeight: 369px !default;
-$datepickerBorderRadius: 4px !default;
+$datepickerBorderRadius: 22px !default;
 $datepickerPadding: 4px !default;
 $datepickerZIndex: 100 !default;
 
@@ -11,14 +14,14 @@ $datepickerFontSize: 14px !default;
 $datepickerYearsPerRow: 4 !default;
 
 $datepickerTextColor: (
-    button: blue,
-    otherMonth: #dedede,
-    otherMonthInRange: #ccc,
+    // button: blue,
+    otherMonth: $ds-25,
+    // otherMonthInRange: #ccc,
     disabled: #aeaeae,
-    currentDate: red,
+    currentDate: white,
     common: #4a4a4a,
-    dayNames: #ff9a19,
-    navArrows: #9c9c9c,
+    // dayNames: #ff9a19,
+    navArrows: $purple
 ) !default;
 
 $datepickerBG: (
