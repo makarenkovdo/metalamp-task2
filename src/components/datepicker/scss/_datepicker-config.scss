@@ -29,6 +29,7 @@ $datepickerBG: (
     selectedHover: darken(#5cc4ef, 5),
     inRange: rgb(165, 159, 252, 0.25),
     hover: #f0f0f0,
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%),
 ) !default;
 
 $datepickerBorderColor: (
