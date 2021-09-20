@@ -1,4 +1,8 @@
-import './datepicker.scss'
+// import './scss/_datepicker-config.scss'
+import './scss/datepicker.scss'
+import './scss/cell.scss'
+import './scss/navigation.scss'
+import './scss/timepicker.scss'
 
 $('#start_one').datepicker({
     onSelect: function (fd, d, picker) {
