@@ -1,16 +1,27 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin')
 const webpack = require('webpack')
-
-// var template = require('pug-loader!./file.pug')
-// var locals = {
-//     /* ... */
-// }
-
-// var html = template(locals)
-// => the rendered HTML
-
 const path = require('path')
+const pages = ['dropdown-guests', 'datepicker']
+const plugins = []
+
+pages.map((page) => {
+    plugins.push(
+        new HtmlWebpackPlugin({
+            template: `./src/components/${page}/${page}.html`,
+            filename: `${page}.html`,
+        })
+    )
+})
+plugins.push(
+    new HtmlWebpackPugPlugin(),
+    new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+        'window.$': 'jquery',
+    })
+)
 
 module.exports = {
     mode: 'development',
@@ -26,41 +37,33 @@ module.exports = {
             images: path.resolve(__dirname, 'src/assets/img/'),
         },
     },
-    plugins: [
-        // new HtmlWebpackPlugin({
-        //     template: './src/index.html',
-        //     filename: 'index.html',
-        //     minify: false,
-        // }),
-        // new HtmlWebpackPlugin({
-        //     template: './src/uikits/cards/cards.html',
-        //     filename: 'cards.html',
-        //     minify: false,
-        // }),
-        new HtmlWebpackPlugin({
-            template: './src/pages/formElements/formElements.html',
-            filename: 'formElements.html',
-            minify: false,
-        }),
-        new HtmlWebpackPlugin({
-            template: './src/components/datepicker/datepicker.html',
-            filename: 'datepicker.html',
-            minify: false,
-        }),
-        // new HtmlWebpackPlugin({
-        //     template: './src/pages/pg.html',
-        //     filename: 'pg.html',
-        //     minify: false,
-        // }),
 
-        new HtmlWebpackPugPlugin(),
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery',
-            'window.$': 'jquery',
-        }),
-    ],
+    plugins: plugins,
+
+    // new HtmlWebpackPlugin({
+    //     template: './src/pages/formElements/formElements.html',
+    //     filename: 'formElements.html',
+    //     minify: false,
+    // }),
+    // new HtmlWebpackPlugin({
+    //     template: './src/components/datepicker/datepicker.html',
+    //     filename: 'datepicker.html',
+    //     minify: false,
+    // }),
+    // new HtmlWebpackPlugin({
+    //     template: './src/pages/pg.html',
+    //     filename: 'pg.html',
+    //     minify: false,
+    // }),
+
+    // new HtmlWebpackPugPlugin(),
+    // new webpack.ProvidePlugin({
+    //     $: 'jquery',
+    //     jQuery: 'jquery',
+    //     'window.jQuery': 'jquery',
+    //     'window.$': 'jquery',
+    // }),
+
     module: {
         rules: [
             {

@@ -1,4 +1,4 @@
-import './formElements.scss'
+import './form-elements.scss'
 import dropdownSvg from './../../components/dropdown-guests/dropdown-guests.svg'
 import minusSvg from './../../components/dropdown/minus.svg'
 import plusSvg from './../../components/dropdown/plus.svg'
