@@ -1,6 +1,28 @@
 @import './../../../styles/mixins/fonts.scss';
 @import './../../../styles/variables/colors.scss';
 
+.js-datepicker-input {
+    width: 150px;
+    height: 44px;
+    &::-webkit-input-placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 129%;
+
+        color: $ds-75;
+    }
+    &::-moz-placeholder {
+        color: blue;
+    } /* Firefox 19+ */
+    &:-moz-placeholder {
+        color: blue;
+    } /* Firefox 18- */
+    &:-ms-input-placeholder {
+        color: blue;
+    }
+}
 .datepicker--cell-day.-other-month-,
 .datepicker--cell-year.-other-decade- {
     color: #dedede;
