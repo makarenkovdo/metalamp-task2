@@ -21,13 +21,15 @@ $datepickerTextColor: (
     currentDate: white,
     common: #4a4a4a,
     // dayNames: #ff9a19,
-    navArrows: $purple
+    navArrows: $purple,
+    title: $ds-100
 ) !default;
 
 $datepickerBG: (
     selected: #bc9cff,
     selectedHover: darken(#5cc4ef, 5),
     inRange: rgb(165, 159, 252, 0.25),
+    // inRange2: #eae7ff,
     hover: #f0f0f0,
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%),
 ) !default;

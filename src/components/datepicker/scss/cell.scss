@@ -70,16 +70,6 @@
         border: 1px solid rgba(map_get($datepickerBG, selected), 0.5);
         background-color: map_get($datepickerBG, inRange);
         border-radius: $datepickerBorderRadius;
-        // &::before {
-        //     z-index: -2;
-        //     content: '';
-        //     position: absolute;
-        //     border: 1px solid rgba(map_get($datepickerBG, selected), 0.5);
-
-        //     background-color: map_get($datepickerBG, inRange);
-
-        //     border-radius: $datepickerBorderRadius;
-        // }
 
         &::after {
             z-index: -1;
