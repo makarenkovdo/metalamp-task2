@@ -85,8 +85,9 @@
             z-index: -1;
             content: '';
             position: absolute;
+            left: ($datepickerDayCellSize/2);
             background-color: map_get($datepickerBG, inRange);
-            width: 100%;
+            width: 48.5%;
             height: 100%;
         }
     }
@@ -95,6 +96,15 @@
         border: 1px solid rgba(map_get($datepickerBG, selected), 0.5);
         background-color: map_get($datepickerBG, inRange);
         border-radius: $datepickerBorderRadius;
+        &::after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            right: ($datepickerDayCellSize/2);
+            background-color: map_get($datepickerBG, inRange);
+            width: 48.5%;
+            height: 100%;
+        }
     }
 
     &.-range-from-.-range-to- {
