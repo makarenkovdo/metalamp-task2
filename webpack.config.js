@@ -27,31 +27,31 @@ module.exports = {
         },
     },
     plugins: [
+        // new HtmlWebpackPlugin({
+        //     template: './src/index.html',
+        //     filename: 'index.html',
+        //     minify: false,
+        // }),
+        // new HtmlWebpackPlugin({
+        //     template: './src/uikits/cards/cards.html',
+        //     filename: 'cards.html',
+        //     minify: false,
+        // }),
         new HtmlWebpackPlugin({
-            template: './src/index.html',
-            filename: 'index.html',
-            minify: false,
-        }),
-        new HtmlWebpackPlugin({
-            template: './src/uikits/cards/cards.html',
-            filename: 'cards.html',
-            minify: false,
-        }),
-        new HtmlWebpackPlugin({
-            template: './src/uikits/formElements/formElements.html',
+            template: './src/pages/formElements/formElements.html',
             filename: 'formElements.html',
             minify: false,
         }),
         new HtmlWebpackPlugin({
-            template: './src/pages/datepicker.html',
+            template: './src/components/datepicker/datepicker.html',
             filename: 'datepicker.html',
             minify: false,
         }),
-        new HtmlWebpackPlugin({
-            template: './src/pages/pg.html',
-            filename: 'pg.html',
-            minify: false,
-        }),
+        // new HtmlWebpackPlugin({
+        //     template: './src/pages/pg.html',
+        //     filename: 'pg.html',
+        //     minify: false,
+        // }),
 
         new HtmlWebpackPugPlugin(),
         new webpack.ProvidePlugin({

@@ -168,6 +168,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
 
 /***/ }),
 
+/***/ "./src/components/datepicker/datepicker.js":
+/*!*************************************************!*\
+  !*** ./src/components/datepicker/datepicker.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n$('#start_one').datepicker({\r\n    onSelect: function (fd, d, picker) {\r\n        $('#start_one').val(fd.split('-')[0])\r\n        $('#end_one').val(fd.split('-')[1])\r\n    },\r\n})\r\n$('#end_one').datepicker({\r\n    onSelect: function (fd, d, picker) {\r\n        $('#start_one').val(fd.split('-')[0])\r\n        $('#end_one').val(fd.split('-')[1])\r\n    },\r\n})\r\n\r\n// var $start = $('#start'),\r\n//     $end = $('#end')\r\n\r\n// $start.datepicker({\r\n//     onSelect: function (fd, date) {\r\n//         $end.data('datepicker').update('minDate', date)\r\n\r\n//         $end.focus()\r\n//     },\r\n// })\r\n// $end.datepicker({\r\n//     onSelect: function (fd, date) {\r\n//         $start.data('datepicker').update('maxDate', date)\r\n//     },\r\n// })\r\n\r\n$('#minMaxExample').datepicker({\r\n    // Можно выбрать тольо даты, идущие за сегодняшним днем, включая сегодня\r\n    minDate: new Date(),\r\n})\r\n\r\n// $(function () {\r\n//     $('#calendar').datepicker({ range: true })\r\n// })\r\n\n\n//# sourceURL=webpack://task2/./src/components/datepicker/datepicker.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -175,7 +185,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/src/js/air-datepicker.js\");\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../node_modules/air-datepicker/dist/css/datepicker.css */ \"./node_modules/air-datepicker/dist/css/datepicker.css\");\n/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\r\n\r\n\r\n\r\n$('#minMaxExample').datepicker({\r\n    // Можно выбрать тольо даты, идущие за сегодняшним днем, включая сегодня\r\n    minDate: new Date()\r\n})\r\n\r\n$(function () {\r\n    $('#calendar').datepicker({range: true})\r\n})\n\n//# sourceURL=webpack://task2/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/src/js/air-datepicker.js\");\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(air_datepicker__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../node_modules/air-datepicker/dist/css/datepicker.css */ \"./node_modules/air-datepicker/dist/css/datepicker.css\");\n/* harmony import */ var _components_datepicker_datepicker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/datepicker/datepicker */ \"./src/components/datepicker/datepicker.js\");\n/* harmony import */ var _components_datepicker_datepicker__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_datepicker_datepicker__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://task2/./src/index.js?");
 
 /***/ })
 
