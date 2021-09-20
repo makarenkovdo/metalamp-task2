@@ -1,3 +1,5 @@
+import './datepicker.css'
+
 $('#start_one').datepicker({
     onSelect: function (fd, d, picker) {
         $('#start_one').val(fd.split('-')[0])
