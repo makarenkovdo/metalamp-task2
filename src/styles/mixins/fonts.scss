@@ -1,19 +1,19 @@
-@mixin h1 {
-    font: normal bold 24px/29px Montserrat, Arial, sans-serif;
-    color: $dark-shade-100;
+@mixin h1($color: $ds-100, $weight: bold) {
+    font: normal $weight 24px/29px Montserrat, Arial, sans-serif;
+    color: $color;
 }
 
-@mixin h2 {
-    font: normal bold 19px/23px Montserrat, Arial, sans-serif;
-    color: $dark-shade-100;
+@mixin h2($color: $ds-100, $weight: bold) {
+    font: normal $weight 19px/23px Montserrat, Arial, sans-serif;
+    color: $color;
 }
 
-@mixin h3 {
-    font: normal bold 12px/15px Montserrat, Arial, sans-serif;
+@mixin h3($color: $ds-100, $weight: bold) {
+    font: normal $weight 12px/15px Montserrat, Arial, sans-serif;
     text-transform: uppercase;
-    color: $dark-shade-100;
+    color: $color;
 }
-@mixin body-font {
-    font: normal normal 14px/24px Montserrat, Arial, sans-serif;
-    color: $dark-shade-75;
+@mixin body-font($color: $ds-75, $weight: normal) {
+    font: normal $weight 14px/24px Montserrat, Arial, sans-serif;
+    color: $color;
 }
