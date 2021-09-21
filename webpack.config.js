@@ -10,6 +10,7 @@ const pages = [
     'buttons',
     'rate-button',
     'toggle',
+    'radio-button',
 ]
 const plugins = []
 
