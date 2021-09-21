@@ -1,3 +1,4 @@
+import './dropdown-guests.scss'
 let isOpen = false
 const $dropdownContainerImg = document.querySelector('.js-img-box')
 const $dropdownContainer = document.querySelector('.js-dropdown-guests')

@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin')
 const webpack = require('webpack')
 const path = require('path')
-const pages = ['dropdown-guests', 'datepicker', 'checkbox']
+const pages = ['dropdown-guests', 'datepicker', 'checkbox', 'test', 'buttons']
 const plugins = []
 
 pages.map((page) => {
@@ -14,6 +14,10 @@ pages.map((page) => {
     )
 })
 plugins.push(
+    new HtmlWebpackPlugin({
+        template: `./src/components/checkbox/checkbox.pug`,
+        filename: `checkboxpug.html`,
+    }),
     new HtmlWebpackPugPlugin(),
     new webpack.ProvidePlugin({
         $: 'jquery',
@@ -39,30 +43,6 @@ module.exports = {
     },
 
     plugins: plugins,
-
-    // new HtmlWebpackPlugin({
-    //     template: './src/pages/formElements/formElements.html',
-    //     filename: 'formElements.html',
-    //     minify: false,
-    // }),
-    // new HtmlWebpackPlugin({
-    //     template: './src/components/datepicker/datepicker.html',
-    //     filename: 'datepicker.html',
-    //     minify: false,
-    // }),
-    // new HtmlWebpackPlugin({
-    //     template: './src/pages/pg.html',
-    //     filename: 'pg.html',
-    //     minify: false,
-    // }),
-
-    // new HtmlWebpackPugPlugin(),
-    // new webpack.ProvidePlugin({
-    //     $: 'jquery',
-    //     jQuery: 'jquery',
-    //     'window.jQuery': 'jquery',
-    //     'window.$': 'jquery',
-    // }),
 
     module: {
         rules: [

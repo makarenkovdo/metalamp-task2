@@ -1,0 +1,46 @@
+.button-purple {
+    /* Rectangle 2 */
+
+    position: absolute;
+    width: 99px;
+    height: 44px;
+    left: 980px;
+    top: 262px;
+
+    /* Primary Gradient */
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    border-radius: 22px;
+}
+
+.button-white {
+    /* Rectangle 2 */
+
+    position: absolute;
+    width: 99px;
+    height: 44px;
+    left: 979px;
+    top: 336px;
+
+    border-radius: 22px;
+}
+
+.button-text {
+    /* CLICK ME */
+
+    position: absolute;
+    width: 61px;
+    height: 15px;
+    left: 980px;
+    top: 411px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    /* Primary Color */
+    color: #bc9cff;
+}

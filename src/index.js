@@ -1,12 +1,20 @@
-import 'jquery'
-// // import 'air-datepicker'
-import './components/datepicker/js/air-datepicker.js'
+// import 'jquery'
+import './components/test/test.scss'
+// import './components/checkbox2/checkbox2.scss'
+import './components/checkbox/checkbox.scss'
 
+import './components/datepicker/js/air-datepicker.js'
 import './components/datepicker/datepicker'
-// import './pages/form-elements/form-elements'
-import './components/dropdown-guests/dropdown-guests'
-function importAllFiles(v) {
-    v.keys().forEach(v)
-}
-importAllFiles(require.context('./styles/', true, /\.scss$/))
-importAllFiles(require.context('./components/', true, /\.(scss|svg)$/))
+import './components/dropdown-guests/dropdown-guests.js'
+
+// const cache = {}
+
+// function importAll(r) {
+//     r.keys().forEach(r)
+// }
+// importAll(require.context('./components/', true, /\.js$/))
+// importAll(require.context('./styles/', true, /\.scss$/))
+// importAll(require.context('./components/', true, /\.scss$/))
+importAll(require.context('./components/', true, /\.svg$/))
+
+// importAllFiles(require.context('./components/', true, /\.(scss|svg)$/))
