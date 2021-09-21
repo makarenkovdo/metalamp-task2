@@ -8,7 +8,7 @@ const pages = [
     'checkbox',
     'test',
     'buttons',
-    'rate - button',
+    'rate-button',
 ]
 const plugins = []
 

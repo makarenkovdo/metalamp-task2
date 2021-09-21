@@ -1,7 +1,14 @@
 .rate-button {
+    &-container {
+        width: 120px;
+        height: 24px;
+    }
+
     &-colored {
     }
 
-    &-transparent {
+    &-white {
+        background-color: white;
+        background-image: url('./../dropdown-guests/dropdown-guests.svg');
     }
 }
