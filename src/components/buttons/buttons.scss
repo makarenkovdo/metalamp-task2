@@ -1,46 +1,50 @@
-.button-purple {
-    /* Rectangle 2 */
+@import './../../styles/mixins/fonts.scss';
+@import './../../styles/variables/colors.scss';
+.button {
+    &-purple {
+        width: 99px;
+        height: 44px;
+        @include h3(white, bold);
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        border-radius: 22px;
+        border: none;
+        &:hover {
+            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            opacity: 0.5;
+        }
+    }
 
-    position: absolute;
-    width: 99px;
-    height: 44px;
-    left: 980px;
-    top: 262px;
+    &-white {
+        width: 99px;
+        height: 44px;
+        background-color: white;
+        @include h3($purple, bold);
+        border-radius: 22px;
+        border: 2px solid $purple;
+        &:hover {
+            border-color: rgb(188, 156, 255, 0.5);
+        }
+    }
 
-    /* Primary Gradient */
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    border-radius: 22px;
-}
+    &-text {
+        @include h3($purple, bold);
+        /* identical to box height */
+        text-transform: uppercase;
+        border: none;
+        color: #bc9cff;
+        &:hover {
+            color: $ds-50;
+        }
+    }
 
-.button-white {
-    /* Rectangle 2 */
+    &-go-to-pay {
+        width: 320px;
+        height: 44px;
+        @include h3(white, bold);
 
-    position: absolute;
-    width: 99px;
-    height: 44px;
-    left: 979px;
-    top: 336px;
-
-    border-radius: 22px;
-}
-
-.button-text {
-    /* CLICK ME */
-
-    position: absolute;
-    width: 61px;
-    height: 15px;
-    left: 980px;
-    top: 411px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    /* identical to box height */
-    text-transform: uppercase;
-
-    /* Primary Color */
-    color: #bc9cff;
+        /* Primary Gradient */
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        border-radius: 22px;
+        border: none;
+    }
 }

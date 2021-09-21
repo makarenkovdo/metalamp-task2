@@ -16,7 +16,7 @@
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./checkbox.svg */ \"./src/components/checkbox/checkbox.svg?2874\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".checkbox {\\n  position: flex;\\n}\\n.checkbox include body-font, .checkbox-container {\\n  display: inline-block;\\n  position: relative;\\n  cursor: pointer;\\n  width: 100%;\\n  min-height: 20px;\\n  height: 100%;\\n  max-height: 40px;\\n  line-height: 18px;\\n  color: rgba(31, 32, 65, 0.5);\\n}\\n.checkbox-title-wrapper {\\n  width: 100%;\\n  padding-left: 30px;\\n  padding-right: 10px;\\n  box-sizing: border-box;\\n}\\n.checkbox-title {\\n  display: inline-block;\\n  width: 100%;\\n  position: relative;\\n}\\n.checkbox-input {\\n  position: flex;\\n  opacity: 0;\\n  cursor: pointer;\\n  height: 0;\\n  width: 0;\\n}\\n.checkbox-input:checked ~ .checkbox__checkmark {\\n  border: 1px solid #bc9cff;\\n}\\n.checkbox-input:checked ~ .checkbox__checkmark:after {\\n  display: block;\\n}\\n.checkbox-checkmark {\\n  position: absolute;\\n  height: 20px;\\n  width: 20px;\\n  background-color: #fff;\\n  border: 1px solid rgba(31, 32, 65, 0.25);\\n  box-sizing: border-box;\\n  border-radius: 4px;\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n}\\n.checkbox-checkmark:after {\\n  content: \\\"\\\";\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://task2/./src/components/checkbox/checkbox.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".checkbox {\\n  box-sizing: border-box;\\n  width: 20px;\\n  height: 20px;\\n  background: #ffffff;\\n  /* Dark 25% */\\n  border: 1px solid rgba(31, 32, 65, 0.25);\\n  border-radius: 4px;\\n  border: 1px solid #bc9cff;\\n}\\n.checkbox-checkmark {\\n  position: relative;\\n  left: 6px;\\n  top: 4px;\\n  width: 4px;\\n  height: 6px;\\n  border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);\\n  border-image-slice: 1;\\n  border-right-width: 2px;\\n  border-right-style: solid;\\n  border-bottom-width: 2px;\\n  border-bottom-style: solid;\\n  transform: rotate(45deg);\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://task2/./src/components/checkbox/checkbox.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -94,28 +94,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (cssWithMappingToString) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join(\"\");\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === \"string\") {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, \"\"]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack://task2/./node_modules/css-loader/dist/runtime/api.js?");
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
-  \********************************************************/
-/***/ ((module) => {
-
-"use strict";
-eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  }\n\n  if (!url) {\n    return url;\n  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n\n\n  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack://task2/./node_modules/css-loader/dist/runtime/getUrl.js?");
-
-/***/ }),
-
-/***/ "./src/components/checkbox/checkbox.svg?601c":
-/*!**********************************************!*\
-  !*** ./src/components/checkbox/checkbox.svg ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/checkbox.svg\");\n\n//# sourceURL=webpack://task2/./src/components/checkbox/checkbox.svg?");
 
 /***/ }),
 
@@ -406,7 +384,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dro
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./checkbox/checkbox.svg\": \"./src/components/checkbox/checkbox.svg?601c\",\n\t\"./datepicker/arrow-back.svg\": \"./src/components/datepicker/arrow-back.svg\",\n\t\"./datepicker/arrow-forward.svg\": \"./src/components/datepicker/arrow-forward.svg\",\n\t\"./dropdown-guests/dropdown-guests.svg\": \"./src/components/dropdown-guests/dropdown-guests.svg\",\n\t\"./dropdown/minus.svg\": \"./src/components/dropdown/minus.svg\",\n\t\"./dropdown/plus.svg\": \"./src/components/dropdown/plus.svg\",\n\t\"./subscription-text-field/narrow.svg\": \"./src/components/subscription-text-field/narrow.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.svg$?");
+eval("var map = {\n\t\"./datepicker/arrow-back.svg\": \"./src/components/datepicker/arrow-back.svg\",\n\t\"./datepicker/arrow-forward.svg\": \"./src/components/datepicker/arrow-forward.svg\",\n\t\"./dropdown-guests/dropdown-guests.svg\": \"./src/components/dropdown-guests/dropdown-guests.svg\",\n\t\"./dropdown/minus.svg\": \"./src/components/dropdown/minus.svg\",\n\t\"./dropdown/plus.svg\": \"./src/components/dropdown/plus.svg\",\n\t\"./subscription-text-field/narrow.svg\": \"./src/components/subscription-text-field/narrow.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.svg$?");
 
 /***/ }),
 
@@ -418,17 +396,6 @@ eval("var map = {\n\t\"./checkbox/checkbox.svg\": \"./src/components/checkbox/ch
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_test_test_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/test/test.scss */ \"./src/components/test/test.scss\");\n/* harmony import */ var _components_checkbox_checkbox_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/checkbox/checkbox.scss */ \"./src/components/checkbox/checkbox.scss\");\n/* harmony import */ var _components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/datepicker/js/air-datepicker.js */ \"./src/components/datepicker/js/air-datepicker.js\");\n/* harmony import */ var _components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_datepicker_datepicker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/datepicker/datepicker */ \"./src/components/datepicker/datepicker.js\");\n/* harmony import */ var _components_dropdown_guests_dropdown_guests_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/dropdown-guests/dropdown-guests.js */ \"./src/components/dropdown-guests/dropdown-guests.js\");\n// import 'jquery'\r\n\r\n// import './components/checkbox2/checkbox2.scss'\r\n\r\n\r\n\r\n\r\n\r\n\r\n// const cache = {}\r\n\r\n// function importAll(r) {\r\n//     r.keys().forEach(r)\r\n// }\r\n// importAll(require.context('./components/', true, /\\.js$/))\r\n// importAll(require.context('./styles/', true, /\\.scss$/))\r\n// importAll(require.context('./components/', true, /\\.scss$/))\r\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.svg$\"))\r\n\r\n// importAllFiles(require.context('./components/', true, /\\.(scss|svg)$/))\r\n\n\n//# sourceURL=webpack://task2/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/components/checkbox/checkbox.svg?2874":
-/*!**********************************************!*\
-  !*** ./src/components/checkbox/checkbox.svg ***!
-  \**********************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"ae9a40ac3ba4aeb68bb2.svg\";\n\n//# sourceURL=webpack://task2/./src/components/checkbox/checkbox.svg?");
 
 /***/ })
 
@@ -457,9 +424,6 @@ eval("module.exports = __webpack_require__.p + \"ae9a40ac3ba4aeb68bb2.svg\";\n\n
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -532,32 +496,6 @@ eval("module.exports = __webpack_require__.p + \"ae9a40ac3ba4aeb68bb2.svg\";\n\n
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"main": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		// no on chunks loaded
-/******/ 		
-/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /************************************************************************/

@@ -2,6 +2,7 @@
 import './components/test/test.scss'
 // import './components/checkbox2/checkbox2.scss'
 import './components/checkbox/checkbox.scss'
+import './components/buttons/buttons.scss'
 
 import './components/datepicker/js/air-datepicker.js'
 import './components/datepicker/datepicker'
