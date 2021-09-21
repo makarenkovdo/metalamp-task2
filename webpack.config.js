@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin')
 const webpack = require('webpack')
 const path = require('path')
-const pages = ['dropdown-guests', 'datepicker']
+const pages = ['dropdown-guests', 'datepicker', 'checkbox']
 const plugins = []
 
 pages.map((page) => {
