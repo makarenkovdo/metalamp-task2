@@ -4,6 +4,7 @@ import './components/test/test.scss'
 import './components/checkbox/checkbox.scss'
 import './components/buttons/buttons.scss'
 import './components/rate-button/rate-button.scss'
+import './components/toggle/toggle.scss'
 
 import './components/datepicker/js/air-datepicker.js'
 import './components/datepicker/datepicker'
