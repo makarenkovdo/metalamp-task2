@@ -1,0 +1,17 @@
+@import './../../styles/variables/colors.scss';
+.like-button {
+    width: 40px;
+    height: 20px;
+
+    background: #ffffff;
+    border: 1px solid $ds-25;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    &-active {
+        border: 1px solid $purple;
+    }
+    &-icon {
+        position: relative;
+    }
+}
