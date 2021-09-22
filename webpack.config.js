@@ -13,6 +13,7 @@ const pages = [
     'radio-button',
     'like-button',
 ]
+const pugPages = ['checkbox']
 const plugins = []
 
 pages.map((page) => {
@@ -20,6 +21,14 @@ pages.map((page) => {
         new HtmlWebpackPlugin({
             template: `./src/components/${page}/${page}.html`,
             filename: `${page}.html`,
+        })
+    )
+})
+pugPages.map((page) => {
+    plugins.push(
+        new HtmlWebpackPlugin({
+            template: `./src/components/${page}/${page}.pug`,
+            filename: `${page}-pug.html`,
         })
     )
 })
