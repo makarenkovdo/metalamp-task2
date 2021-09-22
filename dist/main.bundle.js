@@ -27,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"@charset \\\"UTF-8\\\";\\n/* для элемента input c type=\\\"radio\\\" */\\n.checkbox > input {\\n  position: absolute;\\n  z-index: -1;\\n  opacity: 0;\\n}\\n\\n/* для элемента label связанного с .checkbox */\\n.checkbox > span {\\n  display: inline-flex;\\n  align-items: center;\\n  user-select: none;\\n}\\n\\n/* создание в label псевдоэлемента  before со следующими стилями */\\n.checkbox > span::before {\\n  content: \\\"\\\";\\n  display: inline-block;\\n  width: 20px;\\n  height: 20px;\\n  flex-shrink: 0;\\n  flex-grow: 0;\\n  border: 1px solid rgba(31, 32, 65, 0.25);\\n  border-radius: 50%;\\n  margin-right: 0.5em;\\n  background-repeat: no-repeat;\\n  background-position: center center;\\n  background-size: 50% 50%;\\n}\\n\\n.checkbox > span::after {\\n  background-color: white;\\n}\\n\\n.checkbox > input:checked + span::after {\\n  content: \\\"\\\";\\n  position: absolute;\\n  display: inline-block;\\n  width: 20px;\\n  height: 20px;\\n  flex-shrink: 0;\\n  flex-grow: 0;\\n  border: 1px solid #8ba4f9;\\n  border-radius: 50%;\\n  margin-right: 0.5em;\\n  background-repeat: no-repeat;\\n  background-position: center center;\\n  background-size: 50% 50%;\\n}\\n\\n/* стили при наведении курсора на радио */\\n.checkbox > input:not(:disabled):not(:checked) + span:hover::before {\\n  border-color: #b3d7ff;\\n}\\n\\n/* стили для активной радиокнопки (при нажатии на неё) */\\n.checkbox > input:not(:disabled):active + span::before {\\n  background-color: #b3d7ff;\\n  border-color: #b3d7ff;\\n}\\n\\n/* стили для радиокнопки, находящейся в фокусе */\\n/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */\\n/* стили для радиокнопки, находящейся в состоянии checked */\\n.checkbox > input:checked + span::before {\\n  content: \\\"\\\";\\n  position: relative;\\n  z-index: 5;\\n  width: 12px;\\n  height: 12px;\\n  left: 4px;\\n  border-color: #8ba4f9;\\n  background-color: #8ba4f9;\\n}\\n\\n/* стили для радиокнопки, находящейся в состоянии disabled */\\n.checkbox > input:disabled + span::before {\\n  background-color: #e9ecef;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://task2/./src/components/checkbox/checkbox.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://task2/./src/components/checkbox/checkbox.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -93,7 +93,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"@charset \\\"UTF-8\\\";\\n.radio-button {\\n  display: inline-block;\\n  width: 20px;\\n  height: 20px;\\n  flex-shrink: 0;\\n  flex-grow: 0;\\n  border: 1px solid rgba(31, 32, 65, 0.25);\\n  border-radius: 50%;\\n  margin-right: 0.5em;\\n  background-repeat: no-repeat;\\n  background-position: center center;\\n  background-size: 50% 50%;\\n}\\n.radio-button:checked {\\n  color: yellow;\\n}\\n\\n.radio-button:checked {\\n  display: inline-block;\\n  width: 30px;\\n  height: 30px;\\n  flex-shrink: 0;\\n  flex-grow: 0;\\n  border: 1px solid rgba(31, 32, 65, 0.25);\\n  border-radius: 50%;\\n  margin-right: 0.5em;\\n  background-repeat: no-repeat;\\n  background-position: center center;\\n  background-size: 50% 50%;\\n  color: yellow;\\n}\\n/* для элемента input c type=\\\"radio\\\" */\\n.custom-radio > input {\\n  position: absolute;\\n  z-index: -1;\\n  opacity: 0;\\n}\\n\\n/* для элемента label связанного с .custom-radio */\\n.custom-radio > span {\\n  display: inline-flex;\\n  align-items: center;\\n  user-select: none;\\n}\\n\\n/* создание в label псевдоэлемента  before со следующими стилями */\\n.custom-radio > span::before {\\n  content: \\\"\\\";\\n  display: inline-block;\\n  width: 20px;\\n  height: 20px;\\n  flex-shrink: 0;\\n  flex-grow: 0;\\n  border: 1px solid rgba(31, 32, 65, 0.25);\\n  border-radius: 50%;\\n  margin-right: 0.5em;\\n  background-repeat: no-repeat;\\n  background-position: center center;\\n  background-size: 50% 50%;\\n}\\n\\n.custom-radio > span::after {\\n  background-color: white;\\n}\\n\\n.custom-radio > input:checked + span::after {\\n  content: \\\"\\\";\\n  position: absolute;\\n  display: inline-block;\\n  width: 20px;\\n  height: 20px;\\n  flex-shrink: 0;\\n  flex-grow: 0;\\n  border: 1px solid #8ba4f9;\\n  border-radius: 50%;\\n  margin-right: 0.5em;\\n  background-repeat: no-repeat;\\n  background-position: center center;\\n  background-size: 50% 50%;\\n}\\n\\n/* стили при наведении курсора на радио */\\n.custom-radio > input:not(:disabled):not(:checked) + span:hover::before {\\n  border-color: #b3d7ff;\\n}\\n\\n/* стили для активной радиокнопки (при нажатии на неё) */\\n.custom-radio > input:not(:disabled):active + span::before {\\n  background-color: #b3d7ff;\\n  border-color: #b3d7ff;\\n}\\n\\n/* стили для радиокнопки, находящейся в фокусе */\\n/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */\\n/* стили для радиокнопки, находящейся в состоянии checked */\\n.custom-radio > input:checked + span::before {\\n  content: \\\"\\\";\\n  position: relative;\\n  z-index: 5;\\n  width: 12px;\\n  height: 12px;\\n  left: 4px;\\n  border-color: #8ba4f9;\\n  background-color: #8ba4f9;\\n}\\n\\n/* стили для радиокнопки, находящейся в состоянии disabled */\\n.custom-radio > input:disabled + span::before {\\n  background-color: #e9ecef;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://task2/./src/components/radio-button/radio-button.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"@charset \\\"UTF-8\\\";\\n/* remove standart styles */\\n.custom-radio {\\n  display: grid;\\n  grid-template-columns: 15% 35% 15% 35%;\\n}\\n\\n.custom-radio > input {\\n  position: absolute;\\n  z-index: -1;\\n  opacity: 0;\\n}\\n\\n/* для элемента label связанного с .custom-radio */\\n.custom-radio > span {\\n  display: inline-flex;\\n  align-items: center;\\n  user-select: none;\\n}\\n\\n/* создание в label псевдоэлемента  before со следующими стилями */\\n.custom-radio > span::before {\\n  content: \\\"\\\";\\n  position: absolute;\\n  display: inline-flex;\\n  width: 20px;\\n  height: 20px;\\n  border: 1px solid rgba(31, 32, 65, 0.25);\\n  border-radius: 50%;\\n  margin-right: 0.5em;\\n  background-repeat: no-repeat;\\n  background-position: center center;\\n  background-size: 50% 50%;\\n}\\n\\n.custom-radio > span::after {\\n  background-color: white;\\n}\\n\\n.custom-radio > input:checked + span::after {\\n  content: \\\"\\\";\\n  position: absolute;\\n  display: inline-flex;\\n  width: 20px;\\n  height: 20px;\\n  flex-shrink: 0;\\n  flex-grow: 0;\\n  border: 1px solid #8ba4f9;\\n  border-radius: 50%;\\n  margin-right: 0.5em;\\n  background-repeat: no-repeat;\\n  background-position: center center;\\n  background-size: 50% 50%;\\n}\\n\\n/* стили для радиокнопки, находящейся в состоянии checked */\\n.custom-radio > input:checked + span::before {\\n  content: \\\"\\\";\\n  display: inline-flex;\\n  position: relative;\\n  z-index: 5;\\n  width: 12px;\\n  height: 12px;\\n  left: 4px;\\n  border-color: #8ba4f9;\\n  background-color: #8ba4f9;\\n}\\n\\n/* стили при наведении курсора на радио */\\n.custom-radio > input:not(:disabled):not(:checked) + span:hover::before {\\n  border-color: #b3d7ff;\\n}\\n\\n/* стили для активной радиокнопки (при нажатии на неё) */\\n.custom-radio > input:not(:disabled):active + span::before {\\n  background-color: #b3d7ff;\\n  border-color: #b3d7ff;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://task2/./src/components/radio-button/radio-button.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -138,6 +138,94 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (cssWithMappingToString) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join(\"\");\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === \"string\") {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, \"\"]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack://task2/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./src/components/datepicker/arrow-back.svg":
+/*!**************************************************!*\
+  !*** ./src/components/datepicker/arrow-back.svg ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/arrow-back.svg\");\n\n//# sourceURL=webpack://task2/./src/components/datepicker/arrow-back.svg?");
+
+/***/ }),
+
+/***/ "./src/components/datepicker/arrow-forward.svg":
+/*!*****************************************************!*\
+  !*** ./src/components/datepicker/arrow-forward.svg ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/arrow-forward.svg\");\n\n//# sourceURL=webpack://task2/./src/components/datepicker/arrow-forward.svg?");
+
+/***/ }),
+
+/***/ "./src/components/dropdown-guests/dropdown-guests.svg":
+/*!************************************************************!*\
+  !*** ./src/components/dropdown-guests/dropdown-guests.svg ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/dropdown-guests.svg\");\n\n//# sourceURL=webpack://task2/./src/components/dropdown-guests/dropdown-guests.svg?");
+
+/***/ }),
+
+/***/ "./src/components/dropdown/minus.svg":
+/*!*******************************************!*\
+  !*** ./src/components/dropdown/minus.svg ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/minus.svg\");\n\n//# sourceURL=webpack://task2/./src/components/dropdown/minus.svg?");
+
+/***/ }),
+
+/***/ "./src/components/dropdown/plus.svg":
+/*!******************************************!*\
+  !*** ./src/components/dropdown/plus.svg ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/plus.svg\");\n\n//# sourceURL=webpack://task2/./src/components/dropdown/plus.svg?");
+
+/***/ }),
+
+/***/ "./src/components/rate-button/rate-button-white.svg":
+/*!**********************************************************!*\
+  !*** ./src/components/rate-button/rate-button-white.svg ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/rate-button-white.svg\");\n\n//# sourceURL=webpack://task2/./src/components/rate-button/rate-button-white.svg?");
+
+/***/ }),
+
+/***/ "./src/components/rate-button/rate-button.svg":
+/*!****************************************************!*\
+  !*** ./src/components/rate-button/rate-button.svg ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/rate-button.svg\");\n\n//# sourceURL=webpack://task2/./src/components/rate-button/rate-button.svg?");
+
+/***/ }),
+
+/***/ "./src/components/subscription-text-field/narrow.svg":
+/*!***********************************************************!*\
+  !*** ./src/components/subscription-text-field/narrow.svg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/narrow.svg\");\n\n//# sourceURL=webpack://task2/./src/components/subscription-text-field/narrow.svg?");
 
 /***/ }),
 
@@ -411,6 +499,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dro
 
 /***/ }),
 
+/***/ "./src/components sync recursive \\.svg$":
+/*!*************************************!*\
+  !*** ./src/components/ sync \.svg$ ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var map = {\n\t\"./datepicker/arrow-back.svg\": \"./src/components/datepicker/arrow-back.svg\",\n\t\"./datepicker/arrow-forward.svg\": \"./src/components/datepicker/arrow-forward.svg\",\n\t\"./dropdown-guests/dropdown-guests.svg\": \"./src/components/dropdown-guests/dropdown-guests.svg\",\n\t\"./dropdown/minus.svg\": \"./src/components/dropdown/minus.svg\",\n\t\"./dropdown/plus.svg\": \"./src/components/dropdown/plus.svg\",\n\t\"./rate-button/rate-button-white.svg\": \"./src/components/rate-button/rate-button-white.svg\",\n\t\"./rate-button/rate-button.svg\": \"./src/components/rate-button/rate-button.svg\",\n\t\"./subscription-text-field/narrow.svg\": \"./src/components/subscription-text-field/narrow.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.svg$?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -418,7 +516,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dro
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_checkbox_checkbox_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/checkbox/checkbox.js */ \"./src/components/checkbox/checkbox.js\");\n/* harmony import */ var _components_test_test_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/test/test.scss */ \"./src/components/test/test.scss\");\n/* harmony import */ var _components_buttons_buttons_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/buttons/buttons.scss */ \"./src/components/buttons/buttons.scss\");\n/* harmony import */ var _components_rate_button_rate_button_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/rate-button/rate-button.scss */ \"./src/components/rate-button/rate-button.scss\");\n/* harmony import */ var _components_toggle_toggle_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/toggle/toggle.scss */ \"./src/components/toggle/toggle.scss\");\n/* harmony import */ var _components_radio_button_radio_button_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/radio-button/radio-button.scss */ \"./src/components/radio-button/radio-button.scss\");\n/* harmony import */ var _components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/datepicker/js/air-datepicker.js */ \"./src/components/datepicker/js/air-datepicker.js\");\n/* harmony import */ var _components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _components_datepicker_datepicker__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/datepicker/datepicker */ \"./src/components/datepicker/datepicker.js\");\n/* harmony import */ var _components_dropdown_guests_dropdown_guests_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/dropdown-guests/dropdown-guests.js */ \"./src/components/dropdown-guests/dropdown-guests.js\");\n\r\n\r\n\r\n\r\n// import './components/checkbox2/checkbox2.scss'\r\n// import './components/checkbox/checkbox.scss'\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n// const cache = {}\r\n\r\n// function importAll(r) {\r\n//     r.keys().forEach(r)\r\n// }\r\n// importAll(require.context('./components/', true, /\\.js$/))\r\n// importAll(require.context('./styles/', true, /\\.scss$/))\r\n// importAll(require.context('./components/', true, /\\.scss$/))\r\n// importAll(require.context('./components/', true, /\\.svg$/))\r\n\r\n// importAllFiles(require.context('./components/', true, /\\.(scss|svg)$/))\r\n\n\n//# sourceURL=webpack://task2/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_checkbox_checkbox_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/checkbox/checkbox.js */ \"./src/components/checkbox/checkbox.js\");\n/* harmony import */ var _components_test_test_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/test/test.scss */ \"./src/components/test/test.scss\");\n/* harmony import */ var _components_buttons_buttons_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/buttons/buttons.scss */ \"./src/components/buttons/buttons.scss\");\n/* harmony import */ var _components_rate_button_rate_button_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/rate-button/rate-button.scss */ \"./src/components/rate-button/rate-button.scss\");\n/* harmony import */ var _components_toggle_toggle_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/toggle/toggle.scss */ \"./src/components/toggle/toggle.scss\");\n/* harmony import */ var _components_radio_button_radio_button_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/radio-button/radio-button.scss */ \"./src/components/radio-button/radio-button.scss\");\n/* harmony import */ var _components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/datepicker/js/air-datepicker.js */ \"./src/components/datepicker/js/air-datepicker.js\");\n/* harmony import */ var _components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _components_datepicker_datepicker__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/datepicker/datepicker */ \"./src/components/datepicker/datepicker.js\");\n/* harmony import */ var _components_dropdown_guests_dropdown_guests_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/dropdown-guests/dropdown-guests.js */ \"./src/components/dropdown-guests/dropdown-guests.js\");\nconsole.log('some')\r\n;\r\n\r\n\r\n\r\n// import './components/checkbox2/checkbox2.scss'\r\n// import './components/checkbox/checkbox.scss'\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nclass Game {\r\n    name = 'Violin Charades'\r\n}\r\nconst myGame = new Game()\r\n\r\nconsole.log('some')\r\n// const cache = {}\r\n\r\nfunction importAll(r) {\r\n    r.keys().forEach(r)\r\n}\r\n// importAll(require.context('./components/', true, /\\.js$/))\r\n// importAll(require.context('./styles/', true, /\\.scss$/))\r\n// importAll(require.context('./components/', true, /\\.scss$/))\r\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.svg$\"))\r\n\r\n// importAllFiles(require.context('./components/', true, /\\.(scss|svg)$/))\r\n\n\n//# sourceURL=webpack://task2/./src/index.js?");
 
 /***/ })
 
@@ -473,6 +571,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jque
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -487,6 +597,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jque
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
