@@ -1,7 +1,9 @@
-// import 'jquery'
+import 'jquery'
+import './components/checkbox/checkbox.js'
+
 import './components/test/test.scss'
 // import './components/checkbox2/checkbox2.scss'
-import './components/checkbox/checkbox.scss'
+// import './components/checkbox/checkbox.scss'
 import './components/buttons/buttons.scss'
 import './components/rate-button/rate-button.scss'
 import './components/toggle/toggle.scss'
@@ -19,6 +21,6 @@ import './components/dropdown-guests/dropdown-guests.js'
 // importAll(require.context('./components/', true, /\.js$/))
 // importAll(require.context('./styles/', true, /\.scss$/))
 // importAll(require.context('./components/', true, /\.scss$/))
-importAll(require.context('./components/', true, /\.svg$/))
+// importAll(require.context('./components/', true, /\.svg$/))
 
 // importAllFiles(require.context('./components/', true, /\.(scss|svg)$/))

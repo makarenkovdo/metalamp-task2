@@ -1,0 +1,36 @@
+.checkbox {
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+
+    background: #ffffff;
+    /* Dark 25% */
+
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+
+    &-checkmark {
+        position: relative;
+        left: 6px;
+        top: 4px;
+        width: 4px;
+        height: 6px;
+        border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        border-image-slice: 1;
+        border-right-width: 2px;
+        border-right-style: solid;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        transform: rotate(45deg);
+    }
+    &.checkbox-checked {
+        // background-color: chartreuse !important;
+        border: 1px solid #bc9cff;
+    }
+}
+
+// .checkbox-checked {
+//     width: 500px;
+//     height: 500px;
+//     background-color: chartreuse !important;
+// }
