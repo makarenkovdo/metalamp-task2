@@ -19,11 +19,13 @@ function handleLikeButtonClick(currentButton) {
     console.log('CLICK')
     if ($likeButtonSelector.classList.contains('like-button-active')) {
         $likeButtonSelector.classList.remove('like-button-active')
+        $likeButtonCounter.classList.remove('like-button-counter-active')
         $likeIconSelector.src = './img/like-border.svg'
         currentButton(-1)
     } else {
         console.log('ADD CLASS')
         $likeButtonSelector.classList.add('like-button-active')
+        $likeButtonCounter.classList.add('like-button-counter-active')
         $likeIconSelector.src = './img/like-active.svg'
         currentButton(+1)
     }

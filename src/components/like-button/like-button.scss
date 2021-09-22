@@ -1,8 +1,13 @@
 @import './../../styles/variables/colors.scss';
 .like-button {
+    cursor: pointer;
+    /* 2 */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: left;
+    align-items: center;
     width: 40px;
     height: 20px;
-
     background: #ffffff;
     border: 1px solid $ds-25;
     box-sizing: border-box;
@@ -11,7 +16,28 @@
     &-active {
         border: 1px solid $purple;
     }
-    &-icon {
-        position: relative;
+    &-icon-container {
+        display: grid;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    &-counter {
+        display: grid;
+        width: 50%;
+        justify-self: left;
+        justify-content: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        /* identical to box height */
+
+        /* Dark 25% */
+        color: rgba(31, 32, 65, 0.25);
+        &-active {
+            color: $purple;
+        }
     }
 }
