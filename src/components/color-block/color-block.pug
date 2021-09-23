@@ -37,7 +37,7 @@ mixin color-block (color)
     - const {title, subtitle} = colors[color]
     .color-block-container
         div(class = `color-block-square color-block-square-${color}`)
-        div.color-block-text 
+        div(class = `color-block-text-${color}`)
             span.color-block-text-title #{title}
             span.color-block-text-subtitle #{subtitle}
 
