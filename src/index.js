@@ -10,6 +10,7 @@ import './components/radio-button/radio-button.scss'
 import './components/like-button/like-button.scss'
 import './components/dropdown-guests/dropdown-guests.scss'
 import './components/color-block/color-block.scss'
+import './pages/color-and-type/color-and-type.scss'
 
 import './components/datepicker/js/air-datepicker.js'
 import './components/datepicker/datepicker.js'
