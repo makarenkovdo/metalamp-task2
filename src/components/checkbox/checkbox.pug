@@ -1,5 +1,5 @@
-extends ../pug-template/pug-template
-
-block content
-    .some EVEN
-    .some ESHE
+mixin checkbox()
+    block content
+    label.checkbox
+        input.checkbox-input(type='checkbox')
+        span Checkbox #1

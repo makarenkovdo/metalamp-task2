@@ -14,8 +14,8 @@ const htmlComponents = [
     'like-button',
     'checkbox-list',
 ]
-const pugPages = ['color-and-type']
-const pugComponents = ['checkbox']
+const pugPages = ['color-and-type', 'test']
+const pugComponents = ['checkbox', 'checkbox-list']
 
 const plugins = []
 
