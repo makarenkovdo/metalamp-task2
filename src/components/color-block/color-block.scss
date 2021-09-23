@@ -1,12 +1,55 @@
 @import './../../styles/variables/colors.scss';
 .color-block {
-    width: 70px;
-    height: 70px;
+    &-container {
+        display: grid;
+        width: 281px;
+        grid-template-areas:
+            'cb ct'
+            'cb cs';
+    }
+    &-square {
+        display: gridd;
+        grid-area: cb;
+        box-sizing: border-box;
+        border-radius: 6px;
+        width: 70px;
+        height: 70px;
+        background-color: black;
+        &-dark-shade-100 {
+            background-color: $dark-shade-100;
+        }
+
+        &-dark-shade-75 {
+            background-color: $dark-shade-75;
+        }
+
+        &-dark-shade-50 {
+            background-color: $dark-shade-50;
+        }
+
+        &-dark-shade-25 {
+            background-color: $dark-shade-25;
+        }
+
+        &-dark-shade-5 {
+            background-color: $dark-shade-5;
+        }
+
+        &-purple {
+            background-color: $purple;
+        }
+
+        &-green {
+            background-color: $green;
+        }
+    }
 
     &-text-title {
         /* Dark Shade 75% #1F2041 */
+        display: grid;
+        grid-area: ct;
+        width: max-content;
 
-        position: absolute;
         height: 56px;
         font-family: Montserrat;
         font-style: normal;
@@ -20,8 +63,9 @@
         color: #1f2041;
     }
     &-text-subtitle {
-        display: flex;
-        position: absolute;
+        display: grid;
+        grid-area: cs;
+
         height: 56px;
         font-family: Quicksand;
         font-style: normal;
@@ -32,33 +76,5 @@
 
         /* Dark 100% */
         color: #1f2041;
-    }
-
-    &-dark-shade-100 {
-        background-color: $dark-shade-100;
-    }
-
-    &-dark-shade-75 {
-        background-color: $dark-shade-75;
-    }
-
-    &-dark-shade-50 {
-        background-color: $dark-shade-50;
-    }
-
-    &-dark-shade-25 {
-        background-color: $dark-shade-25;
-    }
-
-    &-dark-shade-5 {
-        background-color: $dark-shade-5;
-    }
-
-    &-purple {
-        background-color: $purple;
-    }
-
-    &-green {
-        background-color: $green;
     }
 }

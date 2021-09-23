@@ -1,4 +1,4 @@
-mixin color-block (color = 'dark-shade-100' )
+mixin color-block (color)
     - 
         const colors = {
             "dark-shade-100": {
@@ -35,8 +35,9 @@ mixin color-block (color = 'dark-shade-100' )
             }
             }
     - const {title, subtitle} = colors[color]
-    .color-block
-        div(class = `color-block-${color}`)
+    .color-block-container
+        div(class = `color-block-square color-block-square-${color}`)
         div.color-block-text 
             span.color-block-text-title #{title}
             span.color-block-text-subtitle #{subtitle}
+
