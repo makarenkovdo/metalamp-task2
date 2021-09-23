@@ -15,6 +15,7 @@ import './pages/color-and-type/color-and-type.scss'
 import './components/datepicker/js/air-datepicker.js'
 import './components/datepicker/datepicker.js'
 import './components/like-button/like-button.js'
+import './pages/ui-kit-template/ui-kit-template.scss'
 // import './components/dropdown-guests/dropdown-guests'
 
 const cache = {}
@@ -23,3 +24,4 @@ function importAll(r) {
     r.keys().forEach((key) => (cache[key] = r(key)))
 }
 importAll(require.context('./components/', true, /\.svg$/))
+importAll(require.context('./pages/', true, /\.svg$/))
