@@ -15,14 +15,14 @@ $datepickerYearsPerRow: 4 !default;
 
 $datepickerTextColor: (
     // button: blue,
-    otherMonth: $ds-25,
+    otherMonth: $dark-shade-25,
     // otherMonthInRange: #ccc,
     disabled: #aeaeae,
     currentDate: white,
     common: #4a4a4a,
     // dayNames: #ff9a19,
     navArrows: $purple,
-    title: $ds-100
+    title: $dark-shade-100
 ) !default;
 
 $datepickerBG: (

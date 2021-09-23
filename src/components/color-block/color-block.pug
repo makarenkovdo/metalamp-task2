@@ -1,0 +1,41 @@
+mixin color-block ({ color = 'dark-shade-100' } = {})
+    - const colors = {
+        'dark-shade-100': {
+            title: 'Dark Shade 100%',
+            subtitle: '#1F2041',
+        
+        },
+        'dark-shade-75': {
+            title: 'Dark Shade 75%',
+            subtitle: '#1F2041',
+            
+        },
+        'dark-shade-50': {
+            title: 'Dark Shade 50%',
+            subtitle: '#1F2041',
+            
+        },
+        'dark-shade-25': {
+            title: 'Dark Shade 25%',
+            subtitle: '#1F2041'
+        
+        },
+        'dark-shade-5': {
+            title: 'Dark Shade 5%',
+            subtitle: '#1F2041',
+        },
+        'green': {
+            title: 'Green',
+            subtitle: '#6FCF97',
+        },
+        'purple': {
+            title: 'Purple',
+            subtitle: '#BC9CFF',
+        }
+        }
+    - const {title, subtitle} = colors[color]
+    .color-block
+        div(class = `color-block-${color}`)
+        div.color-block-text 
+            span.color-block-text-title = title
+            span.color-block-text-subtitle = subtitle

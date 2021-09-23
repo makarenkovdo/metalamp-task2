@@ -10,7 +10,7 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 129%;
-        color: $ds-75;
+        color: $dark-shade-75;
     }
     &::-moz-placeholder {
         color: blue;
@@ -206,7 +206,7 @@
 
 .datepicker--cell-day.-other-month-,
 .datepicker--cell-year.-other-decade- {
-    @include h3($ds-25, normal);
+    @include h3($dark-shade-25, normal);
 }
 .datepicker--cell-day.-other-month-:hover,
 .datepicker--cell-year.-other-decade-:hover {
