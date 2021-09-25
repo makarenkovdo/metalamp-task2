@@ -402,16 +402,16 @@ checkbox-list__popup {
   box-sizing: border-box;
   border-radius: 10px;
 }
-.like-button-active {
+.like-button_active {
   border: 1px solid #bc9cff;
 }
-.like-button-icon-container {
+.like-button__icon-container {
   display: grid;
   width: 100%;
   height: auto;
   justify-content: center;
 }
-.like-button-counter {
+.like-button__counter {
   display: grid;
   width: 50%;
   justify-self: left;
@@ -425,7 +425,7 @@ checkbox-list__popup {
   /* Dark 25% */
   color: rgba(31, 32, 65, 0.25);
 }
-.like-button-counter-active {
+.like-button__counter-active {
   color: #bc9cff;
 }
 /*!****************************************************************************************************************************************!*\
@@ -461,18 +461,18 @@ checkbox-list__popup {
   grid-template-columns: 30px 1fr;
   grid-template-rows: 30px;
 }
-.radio-input {
+.radio__input {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
-.radio-input:checked + span {
+.radio__input:checked + span {
   border-color: #8ba4f9;
 }
-.radio-input:checked + span::before {
+.radio__input:checked + span::before {
   opacity: 1;
 }
-.radio-new-icon {
+.radio__new-icon {
   content: "";
   position: relative;
   box-sizing: border-box;
@@ -486,7 +486,7 @@ checkbox-list__popup {
   background-position: center center;
   background-size: 50% 50%;
 }
-.radio-new-icon::before {
+.radio__new-icon::before {
   content: "";
   display: grid;
   position: absolute;
@@ -502,7 +502,7 @@ checkbox-list__popup {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.radio-text {
+.radio__text {
   height: 18px;
   align-self: flex-start;
   align-content: center;

@@ -13,16 +13,16 @@
     box-sizing: border-box;
     border-radius: 10px;
 
-    &-active {
+    &_active {
         border: 1px solid $purple;
     }
-    &-icon-container {
+    &__icon-container {
         display: grid;
         width: 100%;
         height: auto;
         justify-content: center;
     }
-    &-counter {
+    &__counter {
         display: grid;
         width: 50%;
         justify-self: left;
@@ -36,7 +36,7 @@
 
         /* Dark 25% */
         color: rgba(31, 32, 65, 0.25);
-        &-active {
+        &_active {
             color: $purple;
         }
     }

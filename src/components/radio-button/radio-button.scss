@@ -28,7 +28,7 @@
         grid-template-columns: 30px 1fr;
         grid-template-rows: 30px;
     }
-    &-input {
+    &__input {
         position: absolute;
         z-index: -1;
         opacity: 0;
@@ -39,7 +39,7 @@
             opacity: 1;
         }
     }
-    &-new-icon {
+    &__new-icon {
         content: '';
         position: relative;
         box-sizing: border-box;
@@ -70,7 +70,7 @@
             transform: translate(-50%, -50%);
         }
     }
-    &-text {
+    &__text {
         // display: grid;
         // align-self: center;
         height: 18px;
@@ -89,58 +89,3 @@
         color: rgba(31, 32, 65, 0.5);
     }
 }
-
-// /* для элемента label связанного с .custom-radio */
-
-// .custom-radio > span {
-//     display: grid;
-//     position: relative;
-//     display: inline-flex;
-//     align-items: center;
-//     user-select: none;
-// }
-
-// /* создание в label псевдоэлемента  before со следующими стилями */
-// .custom-radio > span::before {
-//     content: '';
-//     position: relative;
-//     box-sizing: border-box;
-//     display: grid;
-//     width: 20px;
-//     height: 20px;
-
-//     border: 1px solid $dark-shade-25;
-//     border-radius: 50%;
-//     margin-right: 0.5em;
-//     background-repeat: no-repeat;
-//     background-position: center center;
-//     background-size: 50% 50%;
-// }
-
-// /* стили для радиокнопки, находящейся в состоянии checked */
-// .custom-radio > input:checked + span::before {
-//     border-color: #8ba4f9;
-// }
-// .custom-radio > input:checked + span::after {
-//     content: '';
-//     display: grid;
-//     position: absolute;
-//     z-index: 5;
-//     width: 12px;
-//     height: 12px;
-//     left: 4px;
-//     border-color: #8ba4f9;
-//     background-color: #8ba4f9;
-//     border-radius: 50%;
-// }
-
-// /* стили при наведении курсора на радио */
-// .custom-radio > input:not(:disabled):not(:checked) + span:hover::before {
-//     border-color: #b3d7ff;
-// }
-
-// /* стили для активной радиокнопки (при нажатии на неё) */
-// .custom-radio > input:not(:disabled):active + span::before {
-//     background-color: #b3d7ff;
-//     border-color: #b3d7ff;
-// }

@@ -2,8 +2,12 @@ extends ../ui-kit-template/ui-kit-template
 include ../../components/checkbox-list/checkbox-list
 include ../../components/checkbox/checkbox
 include ../../components/button/button
+include ../../components/radio-button/radio-button
+include ../../components/like-button/like-button
 
 
 block content
     +checkbox-list()
     +button('white', 'someButton')
+    +radio-button()
+    +like-button()

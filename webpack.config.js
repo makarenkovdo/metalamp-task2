@@ -5,17 +5,16 @@ const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin')
 const webpack = require('webpack')
 const path = require('path')
 
-const htmlComponents = [
-    'datepicker',
-    'test',
-    'rate-button',
-    'toggle',
+const htmlComponents = ['datepicker', 'test', 'rate-button', 'toggle']
+
+const pugPages = ['color-and-type', 'test', 'form-elements']
+const pugComponents = [
+    'checkbox',
+    'checkbox-list',
+    'dropdown-guests',
     'radio-button',
     'like-button',
 ]
-
-const pugPages = ['color-and-type', 'test', 'form-elements']
-const pugComponents = ['checkbox', 'checkbox-list', 'dropdown-guests']
 
 const plugins = [
     new MiniCssExtractPlugin({
