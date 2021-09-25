@@ -1,9 +1,8 @@
-// import './scss/_datepicker-config.scss'
-import './scss/datepicker.scss'
-import './scss/cell.scss'
-import './scss/navigation.scss'
-import './scss/timepicker.scss'
-import './js/air-datepicker.js'
+import './../../vendor/air-datepicker/scss/datepicker.scss'
+import './../../vendor/air-datepicker/scss/cell.scss'
+import './../../vendor/air-datepicker/scss/navigation.scss'
+import './../../vendor/air-datepicker/scss/timepicker.scss'
+import './../../vendor/air-datepicker/js/air-datepicker.js'
 
 $('#start_one').datepicker({
     onSelect: function (fd, d, picker) {
