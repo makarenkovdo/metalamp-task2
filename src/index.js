@@ -1,7 +1,7 @@
 import 'jquery'
 
 import './components/checkbox-list/checkbox-list.scss'
-// import './components/checkbox-list/checkbox-list.js' //вставляем сюда и checbox.html не отображает стили
+// import './components/checkbox-list/checkbox-list.js' //вставляем сюда и checkbox тухнет
 
 import './components/test/test.scss'
 import './components/checkbox/checkbox.scss'
@@ -20,7 +20,7 @@ import './components/datepicker/js/air-datepicker.js'
 import './components/datepicker/datepicker.js'
 import './components/like-button/like-button.js'
 import './components/checkbox/checkbox.js'
-// import './components/dropdown-guests/dropdown-guests'
+import './components/dropdown-guests/dropdown-guests.js'
 
 const cache = {}
 

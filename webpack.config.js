@@ -91,6 +91,17 @@ module.exports = {
                 ],
             },
             {
+                test: /\.(woff2|woff|ttf)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: 'fonts/[name].[ext]',
+                        },
+                    },
+                ],
+            },
+            {
                 test: /\.pug$/,
                 use: [
                     {

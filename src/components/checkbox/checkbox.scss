@@ -1,4 +1,6 @@
+// @import './../../styles/mixins/font-faces.scss';
 @import './../../styles/variables/colors.scss';
+@import './../../styles/mixins/fonts.scss';
 
 /* remove standart styles */
 $checkmarkWidth: 4px;
@@ -28,10 +30,7 @@ $newIconWidth: 20px;
         box-sizing: border-box;
         width: 20px;
         height: 20px;
-
         background: #ffffff;
-        /* Dark 25% */
-
         border: 1px solid rgba(31, 32, 65, 0.25);
         border-radius: 4px;
         &::before {
@@ -58,12 +57,9 @@ $newIconWidth: 20px;
         height: 18px;
         align-self: flex-start;
         align-content: center;
+        // @include font-face;
+        @include body-font(yellow, bold, 18px);
 
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 18px;
         /* identical to box height, or 129% */
 
         /* Dark 50% */
