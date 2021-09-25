@@ -17,12 +17,7 @@ const htmlComponents = [
     'like-button',
     'checkbox-list',
 ]
-const jsFiles = [
-    'dropdown-guests',
-    'radio-button',
-    'like-button',
-    'checkbox-list',
-]
+
 const pugPages = ['color-and-type', 'test']
 const pugComponents = ['checkbox', 'checkbox-list']
 
@@ -80,6 +75,7 @@ module.exports = {
         checkbox: './src/components/checkbox-list/checkbox-list.js',
         likeButton: './src/components/like-button/like-button.js',
         dropdown: './src/components/dropdown-guests/dropdown-guests.js',
+        datepicker: './src/components/datepicker/datepicker.js',
     },
     output: {
         filename: '[name].bundle.js',

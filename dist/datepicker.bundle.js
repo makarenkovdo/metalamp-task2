@@ -60,17 +60,6 @@ eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./no
 
 /***/ }),
 
-/***/ "./src/indexjs.js":
-/*!************************!*\
-  !*** ./src/indexjs.js ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/datepicker/js/air-datepicker.js */ \"./src/components/datepicker/js/air-datepicker.js\");\n/* harmony import */ var _components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_datepicker_datepicker_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/datepicker/datepicker.js */ \"./src/components/datepicker/datepicker.js\");\n // import './components/checkbox-list/checkbox-list.js'\n// import './components/like-button/like-button.js'\n// import './components/checkbox/checkbox.js'\n// import './components/dropdown-guests/dropdown-guests.js'\n\n\n // // const cache = {}\n// // function importAll(r) {\n// //     r.keys().forEach((key) => (cache[key] = r(key)))\n// // }\n// // importAll(require.context('./components/', true, /\\.svg$/))\n// // importAll(require.context('./pages/', true, /\\.svg$/))\n\n//# sourceURL=webpack://task2/./src/indexjs.js?");
-
-/***/ }),
-
 /***/ "./node_modules/jquery/dist/jquery.js":
 /*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
@@ -197,7 +186,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/indexjs.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/components/datepicker/datepicker.js");
 /******/ 	
 /******/ })()
 ;
