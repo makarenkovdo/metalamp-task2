@@ -1,3 +1,5 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin')
 const webpack = require('webpack')
@@ -17,7 +19,13 @@ const htmlComponents = [
 const pugPages = ['color-and-type', 'test']
 const pugComponents = ['checkbox', 'checkbox-list']
 
-const plugins = []
+const plugins = [
+    new MiniCssExtractPlugin({
+        filename: '[name].css',
+        chunkFilename: '[name].css',
+        ignoreOrder: true,
+    }),
+]
 
 htmlComponents.map((page) => {
     plugins.push(
@@ -59,7 +67,7 @@ plugins.push(
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: ['./src/index.js', './src/indexjs.js'],
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
@@ -76,8 +84,27 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.js$/,
+                exclude: /(node_modules)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            [
+                                '@babel/preset-env',
+                                { exclude: ['proposal-dynamic-import'] },
+                            ],
+                        ],
+                    },
+                },
+            },
+            {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    // 'style-loader',
+                    'css-loader',
+                ],
             },
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
@@ -114,7 +141,7 @@ module.exports = {
                 test: /\.s[ac]ss$/i,
                 use: [
                     // Creates `style` nodes from JS strings
-                    'style-loader',
+                    MiniCssExtractPlugin.loader,
                     // Translates CSS into CommonJS
                     'css-loader',
                     // Compiles Sass to CSS

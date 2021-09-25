@@ -1,8 +1,15 @@
-import 'jquery'
+// import './components/checkbox-list/checkbox-list.js'
 
+// // import 'jquery'
+// // import './components/checkbox/checkbox.js'
+// // import './components/dropdown-guests/dropdown-guests.js'
+// // import './components/checkbox-list/checkbox-list.js'
+// // import './components/datepicker/js/air-datepicker.js'
+// // import './components/datepicker/datepicker.js'
+// // import './components/like-button/like-button.js'
+
+// // import './components/checkbox-list/checkbox-list.js' //вставляем сюда и checkbox тухнет
 import './components/checkbox-list/checkbox-list.scss'
-// import './components/checkbox-list/checkbox-list.js' //вставляем сюда и checkbox тухнет
-
 import './components/test/test.scss'
 import './components/checkbox/checkbox.scss'
 import './components/buttons/buttons.scss'
@@ -15,13 +22,6 @@ import './components/color-block/color-block.scss'
 import './pages/color-and-type/color-and-type.scss'
 import './pages/ui-kit-template/ui-kit-template.scss'
 
-import './components/checkbox-list/checkbox-list.js'
-import './components/datepicker/js/air-datepicker.js'
-import './components/datepicker/datepicker.js'
-import './components/like-button/like-button.js'
-import './components/checkbox/checkbox.js'
-import './components/dropdown-guests/dropdown-guests.js'
-
 const cache = {}
 
 function importAll(r) {
@@ -29,3 +29,8 @@ function importAll(r) {
 }
 importAll(require.context('./components/', true, /\.svg$/))
 importAll(require.context('./pages/', true, /\.svg$/))
+// importAll(require.context('./components/', true, /\.sass$/))
+// importAll(require.context('./pages/', true, /\.sass$/))
+// importAll(require.context('./components/', true, /\.js$/))
+// importAll(require.context('./pages/', true, /\.js$/))
+import 'jquery'

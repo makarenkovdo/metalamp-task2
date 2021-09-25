@@ -1,0 +1,1242 @@
+/*!******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-list/checkbox-list.scss ***!
+  \******************************************************************************************************************************************/
+checkbox-list-button {
+  width: 166px;
+  height: 44px;
+  border: 1px solid black;
+}
+checkbox-list-icon-box {
+  width: 44px;
+  height: 44px;
+  border: 1px solid black;
+}
+checkbox-list-text {
+  width: 192px;
+  height: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Dark 100% */
+  color: #1f2041;
+}
+checkbox-list-popup {
+  width: 192px;
+  height: 228px;
+  border: 1px solid black;
+}
+/*!************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/test/test.scss ***!
+  \************************************************************************************************************************/
+.test1 {
+  width: 500px;
+  height: 500px;
+  background-color: yellow;
+}
+/*!********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox/checkbox.scss ***!
+  \********************************************************************************************************************************/
+/* remove standart styles */
+.checkbox-label {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: 30px;
+  row-gap: 100px;
+}
+.checkbox-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox-input:checked + span {
+  border-color: #8ba4f9;
+}
+.checkbox-input:checked + span::before {
+  opacity: 1;
+}
+.checkbox-new-icon {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+.checkbox-new-icon::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  transform: translate(-500%, -50%);
+  width: 4px;
+  height: 6px;
+  border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-image-slice: 1;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+.checkbox-text {
+  height: 18px;
+  align-self: flex-start;
+  align-content: center;
+  font: normal bold 0.7777777778 Montserrat, Arial, sans-serif;
+  color: yellow;
+  font-family: "Montserrat";
+  src: url(f8d4ca7d3eac34d2d5a6.woff2), url(92f9099c50f6abcbc6f6.woff);
+  font-weight: 400;
+  font-style: normal;
+  /* identical to box height, or 129% */
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+}
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/buttons/buttons.scss ***!
+  \******************************************************************************************************************************/
+.button-purple {
+  width: 99px;
+  height: 44px;
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Montserrat";
+  src: url(f8d4ca7d3eac34d2d5a6.woff2), url(92f9099c50f6abcbc6f6.woff);
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  border: none;
+}
+.button-purple:hover {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  opacity: 0.5;
+}
+.button-white {
+  width: 99px;
+  height: 44px;
+  background-color: white;
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #bc9cff;
+  font-family: "Montserrat";
+  src: url(f8d4ca7d3eac34d2d5a6.woff2), url(92f9099c50f6abcbc6f6.woff);
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 22px;
+  border: 2px solid #bc9cff;
+}
+.button-white:hover {
+  border-color: rgba(188, 156, 255, 0.5);
+}
+.button-text {
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #bc9cff;
+  font-family: "Montserrat";
+  src: url(f8d4ca7d3eac34d2d5a6.woff2), url(92f9099c50f6abcbc6f6.woff);
+  font-weight: 400;
+  font-style: normal;
+  /* identical to box height */
+  text-transform: uppercase;
+  border: none;
+  color: #bc9cff;
+}
+.button-text:hover {
+  color: rgba(31, 32, 65, 0.5);
+}
+.button-go-to-pay {
+  width: 320px;
+  height: 44px;
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Montserrat";
+  src: url(f8d4ca7d3eac34d2d5a6.woff2), url(92f9099c50f6abcbc6f6.woff);
+  font-weight: 400;
+  font-style: normal;
+  /* Primary Gradient */
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  border: none;
+}
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/rate-button/rate-button.scss ***!
+  \**************************************************************************************************************************************/
+.rate-button {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+.rate-button-container {
+  width: 120px;
+  height: 24px;
+}
+.rate-button-colored {
+  color: rgba(136, 36, 175, 0.54);
+}
+/*!****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/toggle/toggle.scss ***!
+  \****************************************************************************************************************************/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgba(31, 32, 65, 0.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  border: 1px solid #8ba4f9;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+  background-color: #bc9cff;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  border: 1px solid #bc9cff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*!****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/radio-button/radio-button.scss ***!
+  \****************************************************************************************************************************************/
+/* remove standart styles */
+.radio-label {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: 30px;
+}
+.radio-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.radio-input:checked + span {
+  border-color: #8ba4f9;
+}
+.radio-input:checked + span::before {
+  opacity: 1;
+}
+.radio-new-icon {
+  content: "";
+  position: relative;
+  box-sizing: border-box;
+  display: grid;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.radio-new-icon::before {
+  content: "";
+  display: grid;
+  position: absolute;
+  z-index: 5;
+  width: 12px;
+  height: 12px;
+  left: 4px;
+  border-color: #8ba4f9;
+  background-color: #8ba4f9;
+  border-radius: 50%;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.radio-text {
+  height: 18px;
+  align-self: flex-start;
+  align-content: center;
+  font: normal bold 0.7777777778 Montserrat, Arial, sans-serif;
+  color: yellow;
+  font-family: "Montserrat";
+  src: url(f8d4ca7d3eac34d2d5a6.woff2), url(92f9099c50f6abcbc6f6.woff);
+  font-weight: 400;
+  font-style: normal;
+  /* identical to box height, or 129% */
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+}
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/like-button/like-button.scss ***!
+  \**************************************************************************************************************************************/
+.like-button {
+  cursor: pointer;
+  /* 2 */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: left;
+  align-items: center;
+  width: 40px;
+  height: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.like-button-active {
+  border: 1px solid #bc9cff;
+}
+.like-button-icon-container {
+  display: grid;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.like-button-counter {
+  display: grid;
+  width: 50%;
+  justify-self: left;
+  justify-content: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+  /* Dark 25% */
+  color: rgba(31, 32, 65, 0.25);
+}
+.like-button-counter-active {
+  color: #bc9cff;
+}
+/*!**********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dropdown-guests/dropdown-guests.scss ***!
+  \**********************************************************************************************************************************************/
+@charset "UTF-8";
+.dropdown-guests {
+  display: grid;
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 320px;
+  left: 387px;
+  top: 196px;
+}
+.dropdown-guests img {
+  position: relative;
+}
+.dropdown-img-box {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-popup {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 69.0625% 9.375% 10% 11.5625%;
+  width: 320px;
+  height: 159px;
+  background: #ffffff;
+  /* Dark 50% */
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 0px 0px 2px 2px;
+}
+
+.dropdown-button {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 86.25% 13.75%;
+  width: 320px;
+  height: 44px;
+  background: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  /* Dark 50% */
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  border-radius: 2px 2px 0px 0px;
+  /* Сколько гостей */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+  /* Dark 75% */
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.dropdown-text {
+  padding-left: 15px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.counter {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  /* Dark 100% */
+  color: #1f2041;
+  margin-top: 13px;
+}
+
+.option-text {
+  margin-left: 15px;
+  margin-top: 13px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Dark 100% */
+  color: #1f2041;
+}
+
+.increase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 22px;
+  margin-top: 7px;
+  margin-right: 7px;
+}
+
+.decrease {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7px;
+  /* Rectangle 2 */
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 22px;
+}
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/color-block/color-block.scss ***!
+  \**************************************************************************************************************************************/
+.color-block-container {
+  width: 281px;
+}
+.color-block-square {
+  display: gridd;
+  grid-area: cb;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 70px;
+  height: 70px;
+  background-color: black;
+}
+.color-block-square-dark-shade-100 {
+  background-color: #1f2041;
+  position: absolute;
+  left: 150px;
+  top: 145px;
+}
+.color-block-square-dark-shade-75 {
+  background-color: rgba(31, 32, 65, 0.75);
+  position: absolute;
+  left: 150px;
+  top: 235px;
+}
+.color-block-square-dark-shade-50 {
+  background-color: rgba(31, 32, 65, 0.5);
+  position: absolute;
+  left: 149.74px;
+  top: 324.56px;
+}
+.color-block-square-dark-shade-25 {
+  background-color: rgba(31, 32, 65, 0.25);
+  position: absolute;
+  left: 150px;
+  top: 415px;
+}
+.color-block-square-dark-shade-5 {
+  background-color: rgba(31, 32, 65, 0.05);
+  position: absolute;
+  left: 150px;
+  top: 505px;
+}
+.color-block-square-purple {
+  background-color: #bc9cff;
+  position: absolute;
+  left: 150px;
+  top: 595px;
+}
+.color-block-square-green {
+  background-color: #6fcf97;
+  position: absolute;
+  left: 150px;
+  top: 685px;
+}
+.color-block-text-title {
+  display: block;
+  font-family: Montserrat;
+  width: 171px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 28px;
+  color: #1f2041;
+}
+.color-block-text-subtitle {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 28px;
+  align-items: center;
+  /* Dark 100% */
+  color: #1f2041;
+}
+.color-block-text-dark-shade-100 {
+  position: absolute;
+  width: 171px;
+  height: 56px;
+  left: 260px;
+  top: 152px;
+}
+.color-block-text-dark-shade-75 {
+  position: absolute;
+  width: 161px;
+  height: 56px;
+  left: 260px;
+  top: 242px;
+}
+.color-block-text-dark-shade-50 {
+  position: absolute;
+  width: 162px;
+  height: 56px;
+  left: 260px;
+  top: 332px;
+}
+.color-block-text-dark-shade-25 {
+  position: absolute;
+  width: 161px;
+  height: 56px;
+  left: 260px;
+  top: 422px;
+}
+.color-block-text-dark-shade-5 {
+  position: absolute;
+  width: 149px;
+  height: 56px;
+  left: 260px;
+  top: 512px;
+}
+.color-block-text-purple {
+  position: absolute;
+  width: 91px;
+  height: 56px;
+  left: 260px;
+  top: 602px;
+}
+.color-block-text-green {
+  position: absolute;
+  width: 86px;
+  height: 56px;
+  left: 260px;
+  top: 692px;
+}
+/*!***************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/color-and-type/color-and-type.scss ***!
+  \***************************************************************************************************************************************/
+.color-and-type-h1-title {
+  position: absolute;
+  width: 29px;
+  height: 30px;
+  left: 854px;
+  top: 145px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  text-align: right;
+  /* Dark 25% */
+  color: rgba(31, 32, 65, 0.25);
+}
+.color-and-type-h1-subtitle {
+  /* This one is the sub-section or widget title */
+  position: absolute;
+  width: 369px;
+  height: 59px;
+  left: 913px;
+  top: 145px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  /* Dark 100% */
+  color: #1f2041;
+}
+.color-and-type-h2-title {
+  /* H2 */
+  position: absolute;
+  width: 27px;
+  height: 24px;
+  left: 856px;
+  top: 255px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 23px;
+  /* identical to box height */
+  text-align: right;
+  /* Dark 25% */
+  color: rgba(31, 32, 65, 0.25);
+}
+.color-and-type-h2-subtitle {
+  /* Next one is the item title inside widgets */
+  position: absolute;
+  width: 312px;
+  height: 47px;
+  left: 913px;
+  top: 255px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  /* Dark 100% */
+  color: #1f2041;
+}
+.color-and-type-h3-title {
+  /* H3 */
+  position: absolute;
+  width: 17px;
+  height: 15px;
+  left: 866px;
+  top: 353px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-align: right;
+  text-transform: uppercase;
+  /* Dark 25% */
+  color: rgba(31, 32, 65, 0.25);
+}
+.color-and-type-h3-subtitle {
+  /* This is a label or CTA text */
+  position: absolute;
+  width: 186px;
+  height: 15px;
+  left: 913px;
+  top: 353px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #1f2041;
+}
+.color-and-type-body-title {
+  /* Body */
+  position: absolute;
+  width: 37px;
+  height: 24px;
+  left: 846px;
+  top: 418px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  text-align: right;
+  /* Dark 25% */
+  color: rgba(31, 32, 65, 0.25);
+}
+.color-and-type-body-subtitle {
+  /* This is the body text which is used for most of the design, like paragraphs, lists, etc. */
+  position: absolute;
+  width: 301px;
+  height: 48px;
+  left: 913px;
+  top: 418px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  /* Dark 75% */
+  color: rgba(31, 32, 65, 0.75);
+}
+/*!*****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/ui-kit-template/ui-kit-template.scss ***!
+  \*****************************************************************************************************************************************/
+.ui-kit-template-logo {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 30px;
+  top: 30px;
+  background: url(dded68ce7f618a3b07f6.svg) no-repeat;
+}
+/*!***********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/datepicker/scss/cell.scss ***!
+  \***********************************************************************************************************************************/
+.datepicker--cell-year.-other-decade-, .datepicker--cell-day.-other-month- {
+  color: rgba(31, 32, 65, 0.25);
+}
+.datepicker--cell-year.-other-decade-:hover, .datepicker--cell-day.-other-month-:hover {
+  color: rgba(15, 15, 30, 0.25);
+}
+.-disabled-.-focus-.datepicker--cell-year.-other-decade-, .-disabled-.-focus-.datepicker--cell-day.-other-month- {
+  color: rgba(31, 32, 65, 0.25);
+}
+.-selected-.datepicker--cell-year.-other-decade-, .-selected-.datepicker--cell-day.-other-month- {
+  color: #fff;
+  background: #f0e9ff;
+}
+.-selected-.-focus-.datepicker--cell-year.-other-decade-, .-selected-.-focus-.datepicker--cell-day.-other-month- {
+  background: #dfcfff;
+}
+.-in-range-.datepicker--cell-year.-other-decade-, .-in-range-.datepicker--cell-day.-other-month- {
+  background-color: rgba(165, 159, 252, 0.25);
+  color: rgba(19, 20, 41, 0.25);
+}
+.-in-range-.-focus-.datepicker--cell-year.-other-decade-, .-in-range-.-focus-.datepicker--cell-day.-other-month- {
+  background-color: rgba(165, 159, 252, 0.2);
+}
+.datepicker--cell-year.-other-decade-:empty, .datepicker--cell-day.-other-month-:empty {
+  background: none;
+  border: none;
+}
+
+/* -------------------------------------------------
+    Datepicker cells
+   ------------------------------------------------- */
+.datepicker--cells {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.datepicker--cell {
+  border-radius: 22px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  z-index: 1;
+}
+.datepicker--cell.-focus- {
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+}
+.datepicker--cell.-current- {
+  color: white;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+}
+.datepicker--cell.-current-.-focus- {
+  color: #4a4a4a;
+}
+.datepicker--cell.-current-.-in-range- {
+  color: white;
+}
+.datepicker--cell.-in-range- {
+  background: rgba(165, 159, 252, 0.25);
+  color: #4a4a4a;
+  border-radius: 0;
+}
+.datepicker--cell.-in-range-.-focus- {
+  background-color: rgba(165, 159, 252, 0.2);
+}
+.datepicker--cell.-disabled- {
+  cursor: default;
+  color: #aeaeae;
+}
+.datepicker--cell.-disabled-.-focus- {
+  color: #aeaeae;
+}
+.datepicker--cell.-disabled-.-in-range- {
+  color: #a1a1a1;
+}
+.datepicker--cell.-disabled-.-current-.-focus- {
+  color: #aeaeae;
+}
+.datepicker--cell.-range-from- {
+  border: 1px solid rgba(188, 156, 255, 0.5);
+  background-color: rgba(165, 159, 252, 0.25);
+  border-radius: 22px;
+}
+.datepicker--cell.-range-from-::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 20px;
+  background-color: rgba(165, 159, 252, 0.25);
+  width: 48.5%;
+  height: 100%;
+}
+.datepicker--cell.-range-to- {
+  border: 1px solid rgba(188, 156, 255, 0.5);
+  background-color: rgba(165, 159, 252, 0.25);
+  border-radius: 22px;
+}
+.datepicker--cell.-range-to-::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  right: 20px;
+  background-color: rgba(165, 159, 252, 0.25);
+  width: 48.5%;
+  height: 100%;
+}
+.datepicker--cell.-range-from-.-range-to- {
+  border-radius: 22px;
+}
+.datepicker--cell.-selected- {
+  color: #fff;
+  border: none;
+  background: #bc9cff;
+}
+.datepicker--cell.-selected-.-current- {
+  color: #fff;
+  background: #bc9cff;
+}
+.datepicker--cell.-selected-.-focus- {
+  background: #45bced;
+}
+.datepicker--cell:empty {
+  cursor: default;
+}
+
+.datepicker--days-names {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8px 0 3px;
+}
+
+.datepicker--day-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  text-transform: inherit;
+  font-size: 0.8em;
+}
+
+.datepicker--cell-day {
+  width: 14.2857142857 %;
+}
+.datepicker--cells-months {
+  height: 369px;
+}
+
+.datepicker--cell-month {
+  width: 33.33%;
+  height: 25%;
+}
+
+.datepicker--years {
+  height: 369px;
+}
+
+.datepicker--cells-years {
+  height: 369px;
+}
+
+.datepicker--cell-year {
+  width: 25%;
+  height: 33.33%;
+}
+/*!*****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/datepicker/scss/navigation.scss ***!
+  \*****************************************************************************************************************************************/
+/* -------------------------------------------------
+    Navigation
+   ------------------------------------------------- */
+.datepicker--nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0px solid #efefef;
+  min-height: 32px;
+  padding: 4px;
+}
+.-only-timepicker- .datepicker--nav {
+  display: none;
+}
+
+.datepicker--nav-title,
+.datepicker--nav-action {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.datepicker--nav-action {
+  width: 40px;
+  border-radius: 22px;
+  user-select: none;
+}
+.datepicker--nav-action:hover {
+  background: #f0f0f0;
+}
+.datepicker--nav-action.-disabled- {
+  visibility: hidden;
+}
+.datepicker--nav-action svg {
+  width: 17;
+  height: 18px;
+}
+.datepicker--nav-action path {
+  fill: #bc9cff;
+}
+
+.datepicker--nav-title {
+  border-radius: 22px;
+  padding: 0 8px;
+  color: #1f2041;
+  font-weight: bold;
+}
+.datepicker--nav-title i {
+  font-style: normal;
+  color: #1f2041;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.datepicker--nav-title:hover {
+  background: #f0f0f0;
+}
+.datepicker--nav-title.-disabled- {
+  cursor: default;
+  background: none;
+}
+
+.datepicker--buttons {
+  display: flex;
+  padding: 4px;
+  border-top: 1px solid #efefef;
+}
+
+.datepicker--button {
+  color: white;
+  cursor: pointer;
+  border-radius: 22px;
+  flex: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+}
+.datepicker--button:hover {
+  color: #4a4a4a;
+  background: #f0f0f0;
+}
+/*!*****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/datepicker/scss/timepicker.scss ***!
+  \*****************************************************************************************************************************************/
+/* -------------------------------------------------
+    Timepicker
+   ------------------------------------------------- */
+.datepicker--time {
+  border-top: 1px solid #efefef;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  position: relative;
+}
+.datepicker--time.-am-pm- .datepicker--time-sliders {
+  flex: 0 1 138px;
+  max-width: 138px;
+}
+.-only-timepicker- .datepicker--time {
+  border-top: none;
+}
+
+.datepicker--time-sliders {
+  flex: 0 1 153px;
+  margin-right: 10px;
+  max-width: 153px;
+}
+
+.datepicker--time-label {
+  display: none;
+  font-size: 12px;
+}
+
+.datepicker--time-current {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 0 0 10px;
+}
+
+.datepicker--time-current-colon {
+  margin: 0 2px 3px;
+  line-height: 1;
+}
+
+.datepicker--time-current-hours,
+.datepicker--time-current-minutes {
+  line-height: 1;
+  font-size: 19px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  position: relative;
+  z-index: 1;
+}
+.datepicker--time-current-hours:after,
+.datepicker--time-current-minutes:after {
+  content: "";
+  background: #f0f0f0;
+  border-radius: 22px;
+  position: absolute;
+  left: -2px;
+  top: -3px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  opacity: 0;
+}
+.datepicker--time-current-hours.-focus-:after,
+.datepicker--time-current-minutes.-focus-:after {
+  opacity: 1;
+}
+
+.datepicker--time-current-ampm {
+  text-transform: uppercase;
+  align-self: flex-end;
+  color: #bc9cff;
+  margin-left: 6px;
+  font-size: 11px;
+  margin-bottom: 1px;
+}
+
+.datepicker--time-row {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  height: 17px;
+  background: linear-gradient(to right, #dedede, #dedede) left 50%/100% 1px no-repeat;
+}
+.datepicker--time-row:first-child {
+  margin-bottom: 4px;
+}
+.datepicker--time-row input[type=range] {
+  background: none;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+}
+.datepicker--time-row input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+.datepicker--time-row input[type=range]::-ms-tooltip {
+  display: none;
+}
+.datepicker--time-row input[type=range]:hover::-webkit-slider-thumb {
+  border-color: #b8b8b8;
+}
+.datepicker--time-row input[type=range]:hover::-moz-range-thumb {
+  border-color: #b8b8b8;
+}
+.datepicker--time-row input[type=range]:hover::-ms-thumb {
+  border-color: #b8b8b8;
+}
+.datepicker--time-row input[type=range]:focus {
+  outline: none;
+}
+.datepicker--time-row input[type=range]:focus::-webkit-slider-thumb {
+  background: #bc9cff;
+  border-color: #bc9cff;
+}
+.datepicker--time-row input[type=range]:focus::-moz-range-thumb {
+  background: #bc9cff;
+  border-color: #bc9cff;
+}
+.datepicker--time-row input[type=range]:focus::-ms-thumb {
+  background: #bc9cff;
+  border-color: #bc9cff;
+}
+.datepicker--time-row input[type=range]::-webkit-slider-thumb {
+  box-sizing: border-box;
+  height: 12px;
+  width: 12px;
+  border-radius: 3px;
+  border: 1px solid #dedede;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.datepicker--time-row input[type=range]::-moz-range-thumb {
+  box-sizing: border-box;
+  height: 12px;
+  width: 12px;
+  border-radius: 3px;
+  border: 1px solid #dedede;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.datepicker--time-row input[type=range]::-ms-thumb {
+  box-sizing: border-box;
+  height: 12px;
+  width: 12px;
+  border-radius: 3px;
+  border: 1px solid #dedede;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.datepicker--time-row input[type=range]::-webkit-slider-thumb {
+  margin-top: -6px;
+}
+.datepicker--time-row input[type=range]::-webkit-slider-runnable-track {
+  border: none;
+  height: 1px;
+  cursor: pointer;
+  color: transparent;
+  background: transparent;
+}
+.datepicker--time-row input[type=range]::-moz-range-track {
+  border: none;
+  height: 1px;
+  cursor: pointer;
+  color: transparent;
+  background: transparent;
+}
+.datepicker--time-row input[type=range]::-ms-track {
+  border: none;
+  height: 1px;
+  cursor: pointer;
+  color: transparent;
+  background: transparent;
+}
+.datepicker--time-row input[type=range]::-ms-fill-lower {
+  background: transparent;
+}
+.datepicker--time-row input[type=range]::-ms-fill-upper {
+  background: transparent;
+}
+.datepicker--time-row span {
+  padding: 0 12px;
+}
+
+.datepicker--time-icon {
+  color: #bc9cff;
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 16px;
+  position: relative;
+  margin: 0 5px -1px 0;
+  width: 1em;
+  height: 1em;
+}
+.datepicker--time-icon:after, .datepicker--time-icon:before {
+  content: "";
+  background: currentColor;
+  position: absolute;
+}
+.datepicker--time-icon:after {
+  height: 0.4em;
+  width: 1px;
+  left: calc(50% - 1px);
+  top: calc(50% + 1px);
+  transform: translateY(-100%);
+}
+.datepicker--time-icon:before {
+  width: 0.4em;
+  height: 1px;
+  top: calc(50% + 1px);
+  left: calc(50% - 1px);
+}
