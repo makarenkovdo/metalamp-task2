@@ -1,9 +1,10 @@
 import 'jquery'
-import './components/checkbox/checkbox.js'
-import './components/dropdown-guests/dropdown-guests.js'
+// import './components/checkbox-list/checkbox-list.js'
+// import './components/like-button/like-button.js'
+// import './components/checkbox/checkbox.js'
+// import './components/dropdown-guests/dropdown-guests.js'
 import './components/datepicker/js/air-datepicker.js'
 import './components/datepicker/datepicker.js'
-import './components/like-button/like-button.js'
 
 // // const cache = {}
 

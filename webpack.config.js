@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin')
 const webpack = require('webpack')
 const path = require('path')
-const entries = []
 
 const htmlComponents = [
     'dropdown-guests',
@@ -75,7 +74,13 @@ plugins.push(
 
 module.exports = {
     mode: 'development',
-    entry: ['./src/index.js', './src/indexjs.js'],
+    entry: {
+        app: './src/index.js',
+        js: './src/indexjs.js',
+        checkbox: './src/components/checkbox-list/checkbox-list.js',
+        likeButton: './src/components/like-button/like-button.js',
+        dropdown: './src/components/dropdown-guests/dropdown-guests.js',
+    },
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
@@ -125,9 +130,20 @@ module.exports = {
                     },
                 ],
             },
+            // {
+            //     test: /\.(woff|woff2|eot|ttf|otf)$/i,
+            //     type: 'asset/resource',
+            // },
             {
-                test: /\.(woff|woff2|eot|ttf|otf)$/i,
-                type: 'asset/resource',
+                test: /\.(woff2|woff|ttf)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: 'fonts/[name].[ext]',
+                        },
+                    },
+                ],
             },
             {
                 test: /\.pug$/,

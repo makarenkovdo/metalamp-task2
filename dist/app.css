@@ -3,25 +3,25 @@
   \****************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(c430087a706cf2a89f21.woff2), url(a08c3cf942c0d95f0949.woff);
+  src: url(f8d4ca7d3eac34d2d5a6.woff2), url(92f9099c50f6abcbc6f6.woff);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat Bold";
-  src: url(11263e847e4851dea50b.woff2), url(f29395fabb87619d91d3.woff);
+  src: url(4864fa64a4ca0d678210.woff2), url(1b85ddf71c245b802e72.woff);
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
+  src: url(4f3564bf83d4634c32ea.woff2), url(c0ab61c2a00761ede74e.woff);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
+  src: url(d9740b725d5cecd53445.woff2), url(9c0434acc2db91787f5e.woff);
   font-weight: 700;
   font-style: normal;
 }
@@ -76,7 +76,7 @@
   height: 18px;
   align-self: flex-start;
   align-content: center;
-  font: normal normal 0.5833333333 Montserrat, Arial, sans-serif;
+  font: normal normal 14px/24px Montserrat, Arial, sans-serif;
   color: rgba(31, 32, 65, 0.75);
   /* identical to box height, or 129% */
   /* Dark 50% */
@@ -85,30 +85,6 @@
 /*!******************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-list/checkbox-list.scss ***!
   \******************************************************************************************************************************************/
-@font-face {
-  font-family: "Montserrat";
-  src: url(c430087a706cf2a89f21.woff2), url(a08c3cf942c0d95f0949.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat Bold";
-  src: url(11263e847e4851dea50b.woff2), url(f29395fabb87619d91d3.woff);
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
-  font-weight: 700;
-  font-style: normal;
-}
 checkbox-list-button {
   width: 166px;
   height: 44px;
@@ -148,30 +124,6 @@ checkbox-list-popup {
 /*!********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox/checkbox.scss ***!
   \********************************************************************************************************************************/
-@font-face {
-  font-family: "Montserrat";
-  src: url(c430087a706cf2a89f21.woff2), url(a08c3cf942c0d95f0949.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat Bold";
-  src: url(11263e847e4851dea50b.woff2), url(f29395fabb87619d91d3.woff);
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
-  font-weight: 700;
-  font-style: normal;
-}
 /* remove standart styles */
 .checkbox-label {
   display: grid;
@@ -221,7 +173,7 @@ checkbox-list-popup {
   height: 18px;
   align-self: flex-start;
   align-content: center;
-  font: normal bold 0.7777777778 Montserrat, Arial, sans-serif;
+  font: normal bold 14px/24px Montserrat, Arial, sans-serif;
   color: yellow;
   /* identical to box height, or 129% */
   /* Dark 50% */
@@ -230,30 +182,6 @@ checkbox-list-popup {
 /*!******************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/buttons/buttons.scss ***!
   \******************************************************************************************************************************/
-@font-face {
-  font-family: "Montserrat";
-  src: url(c430087a706cf2a89f21.woff2), url(a08c3cf942c0d95f0949.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat Bold";
-  src: url(11263e847e4851dea50b.woff2), url(f29395fabb87619d91d3.woff);
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
-  font-weight: 700;
-  font-style: normal;
-}
 .button-purple {
   width: 99px;
   height: 44px;
@@ -696,25 +624,25 @@ input:checked + .slider:before {
   \***************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(c430087a706cf2a89f21.woff2), url(a08c3cf942c0d95f0949.woff);
+  src: url(f8d4ca7d3eac34d2d5a6.woff2), url(92f9099c50f6abcbc6f6.woff);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat Bold";
-  src: url(11263e847e4851dea50b.woff2), url(f29395fabb87619d91d3.woff);
+  src: url(4864fa64a4ca0d678210.woff2), url(1b85ddf71c245b802e72.woff);
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
+  src: url(4f3564bf83d4634c32ea.woff2), url(c0ab61c2a00761ede74e.woff);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
+  src: url(d9740b725d5cecd53445.woff2), url(9c0434acc2db91787f5e.woff);
   font-weight: 700;
   font-style: normal;
 }

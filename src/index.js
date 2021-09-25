@@ -23,4 +23,3 @@ importAll(require.context('./pages/', true, /\.svg$/))
 // importAll(require.context('./pages/', true, /\.sass$/))
 // importAll(require.context('./components/', true, /\.js$/))
 // importAll(require.context('./pages/', true, /\.js$/))
-import 'jquery'

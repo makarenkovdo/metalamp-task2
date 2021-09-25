@@ -9,16 +9,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/components/checkbox/checkbox.js":
-/*!*********************************************!*\
-  !*** ./src/components/checkbox/checkbox.js ***!
-  \*********************************************/
-/***/ (() => {
-
-eval("// console.log('something')\n// const $checkboxSelector = document.querySelector('.checkbox')\n// $checkboxSelector.addEventListener('click', () => handleCheckboxClick())\n// function handleCheckboxClick() {\n//     console.log('CLICK')\n//     if ($checkboxSelector.classList.contains('checkbox-checked')) {\n//         $checkboxSelector.classList.remove('checkbox-checked')\n//     } else {\n//         console.log('ADD CLASS')\n//         $checkboxSelector.classList.add('checkbox-checked')\n//     }\n// }\n// // $(document).ready(function () {\n// //     console.log('ready!')\n// // })\n\n//# sourceURL=webpack://task2/./src/components/checkbox/checkbox.js?");
-
-/***/ }),
-
 /***/ "./src/components/datepicker/datepicker.js":
 /*!*************************************************!*\
   !*** ./src/components/datepicker/datepicker.js ***!
@@ -26,7 +16,7 @@ eval("// console.log('something')\n// const $checkboxSelector = document.querySe
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_datepicker_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/datepicker.scss */ \"./src/components/datepicker/scss/datepicker.scss\");\n/* harmony import */ var _scss_datepicker_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_datepicker_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scss_cell_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/cell.scss */ \"./src/components/datepicker/scss/cell.scss\");\n/* harmony import */ var _scss_cell_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_cell_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _scss_navigation_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scss/navigation.scss */ \"./src/components/datepicker/scss/navigation.scss\");\n/* harmony import */ var _scss_navigation_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scss_navigation_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _scss_timepicker_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scss/timepicker.scss */ \"./src/components/datepicker/scss/timepicker.scss\");\n/* harmony import */ var _scss_timepicker_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scss_timepicker_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n// import './scss/_datepicker-config.scss'\n\n\n\n\n$('#start_one').datepicker({\n  onSelect: function onSelect(fd, d, picker) {\n    $('#start_one').val(fd.split('-')[0]);\n    $('#end_one').val(fd.split('-')[1]);\n  }\n});\n$('#end_one').datepicker({\n  onSelect: function onSelect(fd, d, picker) {\n    $('#start_one').val(fd.split('-')[0]);\n    $('#end_one').val(fd.split('-')[1]);\n  }\n}); // var $start = $('#start'),\n//     $end = $('#end')\n// $start.datepicker({\n//     onSelect: function (fd, date) {\n//         $end.data('datepicker').update('minDate', date)\n//         $end.focus()\n//     },\n// })\n// $end.datepicker({\n//     onSelect: function (fd, date) {\n//         $start.data('datepicker').update('maxDate', date)\n//     },\n// })\n\n$('#minMaxExample').datepicker({\n  // Можно выбрать тольо даты, идущие за сегодняшним днем, включая сегодня\n  minDate: new Date()\n}); // $(function () {\n//     $('#calendar').datepicker({ range: true })\n// })\n\n//# sourceURL=webpack://task2/./src/components/datepicker/datepicker.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_datepicker_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/datepicker.scss */ \"./src/components/datepicker/scss/datepicker.scss\");\n/* harmony import */ var _scss_cell_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/cell.scss */ \"./src/components/datepicker/scss/cell.scss\");\n/* harmony import */ var _scss_navigation_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scss/navigation.scss */ \"./src/components/datepicker/scss/navigation.scss\");\n/* harmony import */ var _scss_timepicker_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scss/timepicker.scss */ \"./src/components/datepicker/scss/timepicker.scss\");\n/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n// import './scss/_datepicker-config.scss'\n\n\n\n\n$('#start_one').datepicker({\n  onSelect: function onSelect(fd, d, picker) {\n    $('#start_one').val(fd.split('-')[0]);\n    $('#end_one').val(fd.split('-')[1]);\n  }\n});\n$('#end_one').datepicker({\n  onSelect: function onSelect(fd, d, picker) {\n    $('#start_one').val(fd.split('-')[0]);\n    $('#end_one').val(fd.split('-')[1]);\n  }\n}); // var $start = $('#start'),\n//     $end = $('#end')\n// $start.datepicker({\n//     onSelect: function (fd, date) {\n//         $end.data('datepicker').update('minDate', date)\n//         $end.focus()\n//     },\n// })\n// $end.datepicker({\n//     onSelect: function (fd, date) {\n//         $start.data('datepicker').update('maxDate', date)\n//     },\n// })\n\n$('#minMaxExample').datepicker({\n  // Можно выбрать тольо даты, идущие за сегодняшним днем, включая сегодня\n  minDate: new Date()\n}); // $(function () {\n//     $('#calendar').datepicker({ range: true })\n// })\n\n//# sourceURL=webpack://task2/./src/components/datepicker/datepicker.js?");
 
 /***/ }),
 
@@ -70,37 +60,6 @@ eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./no
 
 /***/ }),
 
-/***/ "./src/components/dropdown-guests/dropdown-guests.js":
-/*!***********************************************************!*\
-  !*** ./src/components/dropdown-guests/dropdown-guests.js ***!
-  \***********************************************************/
-/***/ (() => {
-
-eval("var isDropdownOpen = false;\nvar $dropdownContainerImg = document.querySelector('.js-dropdown-img-box');\nvar $dropdownContainer = document.querySelector('.js-dropdown-guests');\nvar $dropdownBoxContainer = document.querySelector('.js-dropdown-popup');\nvar $dropdownText = document.querySelector('.js-dropdown-text');\nvar $counterSelector1 = document.querySelector('.js-counter1');\nvar $counterSelector2 = document.querySelector('.js-counter2');\nvar $counterSelector3 = document.querySelector('.js-counter3');\nvar $decreaseSelector1 = document.querySelector('.js-decrease1');\nvar $increaseSelector1 = document.querySelector('.js-increase1');\nvar $decreaseSelector2 = document.querySelector('.js-decrease2');\nvar $increaseSelector2 = document.querySelector('.js-increase2');\nvar $decreaseSelector3 = document.querySelector('.js-decrease3');\nvar $increaseSelector3 = document.querySelector('.js-increase3');\n$dropdownContainerImg.addEventListener('click', handleDropdownClick);\n\nfunction handleDropdownClick() {\n  isDropdownOpen ? closeDropdownBox() : openDropdownBox();\n\n  function closeDropdownBox() {\n    $dropdownBoxContainer.classList.add('hide');\n    isDropdownOpen = false;\n  }\n\n  function openDropdownBox() {\n    var x = $dropdownContainer.getBoundingClientRect().x;\n    var y = $dropdownContainer.getBoundingClientRect().y + $dropdownContainer.getBoundingClientRect().height;\n    $dropdownBoxContainer.classList.remove('hide');\n    $dropdownBoxContainer.style.cssText = \"left:\".concat(x, \"px; top: \").concat(y, \"px; \");\n    isDropdownOpen = true;\n  }\n}\n\nfunction makeDropdownCounter() {\n  var commonCounter = 0;\n  var counter1 = 0;\n  var counter2 = 0;\n  var counter3 = 0;\n  var guestWordEnding = 'ь';\n\n  function setGuestWordEnging(guestWordEnding, commonCounter) {\n    if (commonCounter > 1 && commonCounter < 5) {\n      return guestWordEnding = 'я';\n    }\n\n    if (commonCounter > 5 || commonCounter < 1) {\n      return guestWordEnding = 'ей';\n    }\n\n    if (commonCounter === 1) {\n      return guestWordEnding = 'ь';\n    }\n\n    return guestWordEnding;\n  }\n\n  return function (shift, counterSelector) {\n    switch (counterSelector.attributes[\"class\"].value) {\n      case 'counter js-counter1':\n        if (counter1 === 0 && shift < 0) {\n          return counter1;\n        } else {\n          counter1 += shift;\n          commonCounter += shift;\n          guestWordEnding = setGuestWordEnging(guestWordEnding, commonCounter);\n          counterSelector.innerHTML = counter1;\n          $dropdownText.innerHTML = \"\".concat(commonCounter, \" \\u0433\\u043E\\u0441\\u0442\").concat(guestWordEnding);\n        }\n\n        break;\n\n      case 'counter js-counter2':\n        if (counter2 === 0 && shift < 0) {\n          return counter2;\n        } else {\n          counter2 += shift;\n          commonCounter += shift;\n          guestWordEnding = setGuestWordEnging(guestWordEnding, commonCounter);\n          counterSelector.innerHTML = counter2;\n          $dropdownText.innerHTML = \"\".concat(commonCounter, \" \\u0433\\u043E\\u0441\\u0442\").concat(guestWordEnding);\n        }\n\n        break;\n\n      case 'counter js-counter3':\n        if (counter3 === 0 && shift < 0) {\n          return counter3;\n        } else {\n          counter3 += shift;\n          commonCounter += shift;\n          guestWordEnding = setGuestWordEnging(guestWordEnding, commonCounter);\n          counterSelector.innerHTML = counter3;\n          $dropdownText.innerHTML = \"\".concat(commonCounter, \" \\u0433\\u043E\\u0441\\u0442\").concat(guestWordEnding);\n        }\n\n        break;\n\n      default:\n        return false;\n    }\n  };\n} //closures implementation\n// const counter1 = makeCounter($counterSelector1)\n// const counter2 = makeCounter($counterSelector2)\n// const counter3 = makeCounter($counterSelector3)\n// // counter1(0)\n// $increaseSelector1.addEventListener('click', () => counter1(1))\n// $decreaseSelector1.addEventListener('click', () => counter1(-1))\n// $increaseSelector2.addEventListener('click', () => counter2(1))\n// $decreaseSelector2.addEventListener('click', () => counter2(-1))\n// $increaseSelector3.addEventListener('click', () => counter3(1))\n// $decreaseSelector3.addEventListener('click', () => counter4(-1))\n\n\nvar dropdownCounter = makeDropdownCounter();\n$increaseSelector1.addEventListener('click', function () {\n  return dropdownCounter(1, $counterSelector1);\n});\n$decreaseSelector1.addEventListener('click', function () {\n  return dropdownCounter(-1, $counterSelector1);\n});\n$increaseSelector2.addEventListener('click', function () {\n  return dropdownCounter(1, $counterSelector2);\n});\n$decreaseSelector2.addEventListener('click', function () {\n  return dropdownCounter(-1, $counterSelector2);\n});\n$increaseSelector3.addEventListener('click', function () {\n  return dropdownCounter(1, $counterSelector3);\n});\n$decreaseSelector3.addEventListener('click', function () {\n  return dropdownCounter(-1, $counterSelector3);\n});\n\n//# sourceURL=webpack://task2/./src/components/dropdown-guests/dropdown-guests.js?");
-
-/***/ }),
-
-/***/ "./src/components/like-button/like-button.js":
-/*!***************************************************!*\
-  !*** ./src/components/like-button/like-button.js ***!
-  \***************************************************/
-/***/ (() => {
-
-eval("console.log('something');\nvar $likeButtonSelector = document.querySelector('.js-like-button');\nvar $likeIconSelector = document.querySelector('.js-like-button-icon');\nvar $likeButtonCounter = document.querySelector('.js-like-button-counter');\n$likeButtonSelector.addEventListener('click', function () {\n  return handleLikeButtonClick(twoLikesButton);\n});\n\nfunction likeButtonCounter(n) {\n  var counter = n;\n  return function changeLikeButtonCounter(shift) {\n    counter += shift;\n    $likeButtonCounter.innerHTML = counter;\n  };\n}\n\nvar twoLikesButton = likeButtonCounter(2);\nvar elevenLikesButton = likeButtonCounter(11);\n\nfunction handleLikeButtonClick(currentButton) {\n  console.log('CLICK');\n\n  if ($likeButtonSelector.classList.contains('like-button-active')) {\n    $likeButtonSelector.classList.remove('like-button-active');\n    $likeButtonCounter.classList.remove('like-button-counter-active');\n    $likeIconSelector.src = './img/like-border.svg';\n    currentButton(-1);\n  } else {\n    console.log('ADD CLASS');\n    $likeButtonSelector.classList.add('like-button-active');\n    $likeButtonCounter.classList.add('like-button-counter-active');\n    $likeIconSelector.src = './img/like-active.svg';\n    currentButton(+1);\n  }\n} // $(document).ready(function () {\n//     console.log('ready!')\n// })\n\n//# sourceURL=webpack://task2/./src/components/like-button/like-button.js?");
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_radio_button_radio_button_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/radio-button/radio-button.scss */ \"./src/components/radio-button/radio-button.scss\");\n/* harmony import */ var _components_checkbox_list_checkbox_list_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/checkbox-list/checkbox-list.scss */ \"./src/components/checkbox-list/checkbox-list.scss\");\n/* harmony import */ var _components_test_test_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/test/test.scss */ \"./src/components/test/test.scss\");\n/* harmony import */ var _components_checkbox_checkbox_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/checkbox/checkbox.scss */ \"./src/components/checkbox/checkbox.scss\");\n/* harmony import */ var _components_buttons_buttons_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/buttons/buttons.scss */ \"./src/components/buttons/buttons.scss\");\n/* harmony import */ var _components_rate_button_rate_button_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/rate-button/rate-button.scss */ \"./src/components/rate-button/rate-button.scss\");\n/* harmony import */ var _components_toggle_toggle_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/toggle/toggle.scss */ \"./src/components/toggle/toggle.scss\");\n/* harmony import */ var _components_like_button_like_button_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/like-button/like-button.scss */ \"./src/components/like-button/like-button.scss\");\n/* harmony import */ var _components_dropdown_guests_dropdown_guests_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/dropdown-guests/dropdown-guests.scss */ \"./src/components/dropdown-guests/dropdown-guests.scss\");\n/* harmony import */ var _components_color_block_color_block_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/color-block/color-block.scss */ \"./src/components/color-block/color-block.scss\");\n/* harmony import */ var _pages_color_and_type_color_and_type_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/color-and-type/color-and-type.scss */ \"./src/pages/color-and-type/color-and-type.scss\");\n/* harmony import */ var _pages_ui_kit_template_ui_kit_template_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/ui-kit-template/ui-kit-template.scss */ \"./src/pages/ui-kit-template/ui-kit-template.scss\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_12__);\n\n\n\n\n\n\n\n\n\n\n\n\nvar cache = {};\n\nfunction importAll(r) {\n  r.keys().forEach(function (key) {\n    return cache[key] = r(key);\n  });\n}\n\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.svg$\")); // importAll(require.context('./components/', true, /\\.sass$/))\n// importAll(require.context('./pages/', true, /\\.sass$/))\n// importAll(require.context('./components/', true, /\\.js$/))\n// importAll(require.context('./pages/', true, /\\.js$/))\n\n\n\n//# sourceURL=webpack://task2/./src/index.js?");
-
-/***/ }),
-
 /***/ "./src/indexjs.js":
 /*!************************!*\
   !*** ./src/indexjs.js ***!
@@ -108,150 +67,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_checkbox_checkbox_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/checkbox/checkbox.js */ \"./src/components/checkbox/checkbox.js\");\n/* harmony import */ var _components_checkbox_checkbox_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_checkbox_checkbox_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_dropdown_guests_dropdown_guests_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/dropdown-guests/dropdown-guests.js */ \"./src/components/dropdown-guests/dropdown-guests.js\");\n/* harmony import */ var _components_dropdown_guests_dropdown_guests_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_dropdown_guests_dropdown_guests_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/datepicker/js/air-datepicker.js */ \"./src/components/datepicker/js/air-datepicker.js\");\n/* harmony import */ var _components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _components_datepicker_datepicker_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/datepicker/datepicker.js */ \"./src/components/datepicker/datepicker.js\");\n/* harmony import */ var _components_like_button_like_button_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/like-button/like-button.js */ \"./src/components/like-button/like-button.js\");\n/* harmony import */ var _components_like_button_like_button_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_like_button_like_button_js__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n // // const cache = {}\n// // function importAll(r) {\n// //     r.keys().forEach((key) => (cache[key] = r(key)))\n// // }\n// // importAll(require.context('./components/', true, /\\.svg$/))\n// // importAll(require.context('./pages/', true, /\\.svg$/))\n\n//# sourceURL=webpack://task2/./src/indexjs.js?");
-
-/***/ }),
-
-/***/ "./src/components/checkbox-list/close-checkbox-list.svg":
-/*!**************************************************************!*\
-  !*** ./src/components/checkbox-list/close-checkbox-list.svg ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/close-checkbox-list.svg\");\n\n//# sourceURL=webpack://task2/./src/components/checkbox-list/close-checkbox-list.svg?");
-
-/***/ }),
-
-/***/ "./src/components/checkbox-list/open-checkbox-list.svg":
-/*!*************************************************************!*\
-  !*** ./src/components/checkbox-list/open-checkbox-list.svg ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/open-checkbox-list.svg\");\n\n//# sourceURL=webpack://task2/./src/components/checkbox-list/open-checkbox-list.svg?");
-
-/***/ }),
-
-/***/ "./src/components/datepicker/arrow-back.svg":
-/*!**************************************************!*\
-  !*** ./src/components/datepicker/arrow-back.svg ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/arrow-back.svg\");\n\n//# sourceURL=webpack://task2/./src/components/datepicker/arrow-back.svg?");
-
-/***/ }),
-
-/***/ "./src/components/datepicker/arrow-forward.svg":
-/*!*****************************************************!*\
-  !*** ./src/components/datepicker/arrow-forward.svg ***!
-  \*****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/arrow-forward.svg\");\n\n//# sourceURL=webpack://task2/./src/components/datepicker/arrow-forward.svg?");
-
-/***/ }),
-
-/***/ "./src/components/dropdown-guests/dropdown-guests.svg":
-/*!************************************************************!*\
-  !*** ./src/components/dropdown-guests/dropdown-guests.svg ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/dropdown-guests.svg\");\n\n//# sourceURL=webpack://task2/./src/components/dropdown-guests/dropdown-guests.svg?");
-
-/***/ }),
-
-/***/ "./src/components/dropdown/minus.svg":
-/*!*******************************************!*\
-  !*** ./src/components/dropdown/minus.svg ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/minus.svg\");\n\n//# sourceURL=webpack://task2/./src/components/dropdown/minus.svg?");
-
-/***/ }),
-
-/***/ "./src/components/dropdown/plus.svg":
-/*!******************************************!*\
-  !*** ./src/components/dropdown/plus.svg ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/plus.svg\");\n\n//# sourceURL=webpack://task2/./src/components/dropdown/plus.svg?");
-
-/***/ }),
-
-/***/ "./src/components/like-button/like-active.svg":
-/*!****************************************************!*\
-  !*** ./src/components/like-button/like-active.svg ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/like-active.svg\");\n\n//# sourceURL=webpack://task2/./src/components/like-button/like-active.svg?");
-
-/***/ }),
-
-/***/ "./src/components/like-button/like-border.svg":
-/*!****************************************************!*\
-  !*** ./src/components/like-button/like-border.svg ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/like-border.svg\");\n\n//# sourceURL=webpack://task2/./src/components/like-button/like-border.svg?");
-
-/***/ }),
-
-/***/ "./src/components/rate-button/rate-button-white.svg":
-/*!**********************************************************!*\
-  !*** ./src/components/rate-button/rate-button-white.svg ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/rate-button-white.svg\");\n\n//# sourceURL=webpack://task2/./src/components/rate-button/rate-button-white.svg?");
-
-/***/ }),
-
-/***/ "./src/components/rate-button/rate-button.svg":
-/*!****************************************************!*\
-  !*** ./src/components/rate-button/rate-button.svg ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/rate-button.svg\");\n\n//# sourceURL=webpack://task2/./src/components/rate-button/rate-button.svg?");
-
-/***/ }),
-
-/***/ "./src/components/subscription-text-field/narrow.svg":
-/*!***********************************************************!*\
-  !*** ./src/components/subscription-text-field/narrow.svg ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/narrow.svg\");\n\n//# sourceURL=webpack://task2/./src/components/subscription-text-field/narrow.svg?");
-
-/***/ }),
-
-/***/ "./src/pages/ui-kit-template/ui-kit-logo.svg":
-/*!***************************************************!*\
-  !*** ./src/pages/ui-kit-template/ui-kit-logo.svg ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/ui-kit-logo.svg\");\n\n//# sourceURL=webpack://task2/./src/pages/ui-kit-template/ui-kit-logo.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/datepicker/js/air-datepicker.js */ \"./src/components/datepicker/js/air-datepicker.js\");\n/* harmony import */ var _components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_datepicker_js_air_datepicker_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_datepicker_datepicker_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/datepicker/datepicker.js */ \"./src/components/datepicker/datepicker.js\");\n // import './components/checkbox-list/checkbox-list.js'\n// import './components/like-button/like-button.js'\n// import './components/checkbox/checkbox.js'\n// import './components/dropdown-guests/dropdown-guests.js'\n\n\n // // const cache = {}\n// // function importAll(r) {\n// //     r.keys().forEach((key) => (cache[key] = r(key)))\n// // }\n// // importAll(require.context('./components/', true, /\\.svg$/))\n// // importAll(require.context('./pages/', true, /\\.svg$/))\n\n//# sourceURL=webpack://task2/./src/indexjs.js?");
 
 /***/ }),
 
@@ -265,57 +81,14 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 
 /***/ }),
 
-/***/ "./src/components/buttons/buttons.scss":
-/*!*********************************************!*\
-  !*** ./src/components/buttons/buttons.scss ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/buttons/buttons.scss?");
-
-/***/ }),
-
-/***/ "./src/components/checkbox-list/checkbox-list.scss":
-/*!*********************************************************!*\
-  !*** ./src/components/checkbox-list/checkbox-list.scss ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/checkbox-list/checkbox-list.scss?");
-
-/***/ }),
-
-/***/ "./src/components/checkbox/checkbox.scss":
-/*!***********************************************!*\
-  !*** ./src/components/checkbox/checkbox.scss ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/checkbox/checkbox.scss?");
-
-/***/ }),
-
-/***/ "./src/components/color-block/color-block.scss":
-/*!*****************************************************!*\
-  !*** ./src/components/color-block/color-block.scss ***!
-  \*****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/color-block/color-block.scss?");
-
-/***/ }),
-
 /***/ "./src/components/datepicker/scss/cell.scss":
 /*!**************************************************!*\
   !*** ./src/components/datepicker/scss/cell.scss ***!
   \**************************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleNotFoundError: Module not found: Error: Can't resolve './../../fonts/Montserrat-Regular.woff2' in 'C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\src\\\\components\\\\datepicker\\\\scss'\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\Compilation.js:1779:28\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:814:13\\n    at eval (eval at create (C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:10:1)\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:286:22\\n    at eval (eval at create (C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:9:1)\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:442:22\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:124:11\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:676:25\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:885:8\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:1005:5\");\n\n//# sourceURL=webpack://task2/./src/components/datepicker/scss/cell.scss?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/datepicker/scss/cell.scss?");
 
 /***/ }),
 
@@ -323,9 +96,10 @@ eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extrac
 /*!********************************************************!*\
   !*** ./src/components/datepicker/scss/datepicker.scss ***!
   \********************************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleNotFoundError: Module not found: Error: Can't resolve './../../fonts/Montserrat-Regular.woff2' in 'C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\src\\\\components\\\\datepicker\\\\scss'\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\Compilation.js:1779:28\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:814:13\\n    at eval (eval at create (C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:10:1)\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:286:22\\n    at eval (eval at create (C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:9:1)\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:442:22\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:124:11\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:676:25\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:885:8\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:1005:5\");\n\n//# sourceURL=webpack://task2/./src/components/datepicker/scss/datepicker.scss?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/datepicker/scss/datepicker.scss?");
 
 /***/ }),
 
@@ -333,9 +107,10 @@ eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extrac
 /*!********************************************************!*\
   !*** ./src/components/datepicker/scss/navigation.scss ***!
   \********************************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleNotFoundError: Module not found: Error: Can't resolve './../../fonts/Montserrat-Regular.woff2' in 'C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\src\\\\components\\\\datepicker\\\\scss'\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\Compilation.js:1779:28\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:814:13\\n    at eval (eval at create (C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:10:1)\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:286:22\\n    at eval (eval at create (C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:9:1)\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:442:22\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:124:11\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:676:25\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:885:8\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:1005:5\");\n\n//# sourceURL=webpack://task2/./src/components/datepicker/scss/navigation.scss?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/datepicker/scss/navigation.scss?");
 
 /***/ }),
 
@@ -343,117 +118,10 @@ eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extrac
 /*!********************************************************!*\
   !*** ./src/components/datepicker/scss/timepicker.scss ***!
   \********************************************************/
-/***/ (() => {
-
-eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleNotFoundError: Module not found: Error: Can't resolve './../../fonts/Montserrat-Regular.woff2' in 'C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\src\\\\components\\\\datepicker\\\\scss'\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\Compilation.js:1779:28\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:814:13\\n    at eval (eval at create (C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:10:1)\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:286:22\\n    at eval (eval at create (C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:9:1)\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:442:22\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:124:11\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:676:25\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:885:8\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:1005:5\");\n\n//# sourceURL=webpack://task2/./src/components/datepicker/scss/timepicker.scss?");
-
-/***/ }),
-
-/***/ "./src/components/dropdown-guests/dropdown-guests.scss":
-/*!*************************************************************!*\
-  !*** ./src/components/dropdown-guests/dropdown-guests.scss ***!
-  \*************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/dropdown-guests/dropdown-guests.scss?");
-
-/***/ }),
-
-/***/ "./src/components/like-button/like-button.scss":
-/*!*****************************************************!*\
-  !*** ./src/components/like-button/like-button.scss ***!
-  \*****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/like-button/like-button.scss?");
-
-/***/ }),
-
-/***/ "./src/components/radio-button/radio-button.scss":
-/*!*******************************************************!*\
-  !*** ./src/components/radio-button/radio-button.scss ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/radio-button/radio-button.scss?");
-
-/***/ }),
-
-/***/ "./src/components/rate-button/rate-button.scss":
-/*!*****************************************************!*\
-  !*** ./src/components/rate-button/rate-button.scss ***!
-  \*****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/rate-button/rate-button.scss?");
-
-/***/ }),
-
-/***/ "./src/components/test/test.scss":
-/*!***************************************!*\
-  !*** ./src/components/test/test.scss ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/test/test.scss?");
-
-/***/ }),
-
-/***/ "./src/components/toggle/toggle.scss":
-/*!*******************************************!*\
-  !*** ./src/components/toggle/toggle.scss ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/toggle/toggle.scss?");
-
-/***/ }),
-
-/***/ "./src/pages/color-and-type/color-and-type.scss":
-/*!******************************************************!*\
-  !*** ./src/pages/color-and-type/color-and-type.scss ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/pages/color-and-type/color-and-type.scss?");
-
-/***/ }),
-
-/***/ "./src/pages/ui-kit-template/ui-kit-template.scss":
-/*!********************************************************!*\
-  !*** ./src/pages/ui-kit-template/ui-kit-template.scss ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/pages/ui-kit-template/ui-kit-template.scss?");
-
-/***/ }),
-
-/***/ "./src/components sync recursive \\.svg$":
-/*!*************************************!*\
-  !*** ./src/components/ sync \.svg$ ***!
-  \*************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("var map = {\n\t\"./checkbox-list/close-checkbox-list.svg\": \"./src/components/checkbox-list/close-checkbox-list.svg\",\n\t\"./checkbox-list/open-checkbox-list.svg\": \"./src/components/checkbox-list/open-checkbox-list.svg\",\n\t\"./datepicker/arrow-back.svg\": \"./src/components/datepicker/arrow-back.svg\",\n\t\"./datepicker/arrow-forward.svg\": \"./src/components/datepicker/arrow-forward.svg\",\n\t\"./dropdown-guests/dropdown-guests.svg\": \"./src/components/dropdown-guests/dropdown-guests.svg\",\n\t\"./dropdown/minus.svg\": \"./src/components/dropdown/minus.svg\",\n\t\"./dropdown/plus.svg\": \"./src/components/dropdown/plus.svg\",\n\t\"./like-button/like-active.svg\": \"./src/components/like-button/like-active.svg\",\n\t\"./like-button/like-border.svg\": \"./src/components/like-button/like-border.svg\",\n\t\"./rate-button/rate-button-white.svg\": \"./src/components/rate-button/rate-button-white.svg\",\n\t\"./rate-button/rate-button.svg\": \"./src/components/rate-button/rate-button.svg\",\n\t\"./subscription-text-field/narrow.svg\": \"./src/components/subscription-text-field/narrow.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.svg$?");
-
-/***/ }),
-
-/***/ "./src/pages sync recursive \\.svg$":
-/*!********************************!*\
-  !*** ./src/pages/ sync \.svg$ ***!
-  \********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("var map = {\n\t\"./ui-kit-template/ui-kit-logo.svg\": \"./src/pages/ui-kit-template/ui-kit-logo.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.svg$?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/datepicker/scss/timepicker.scss?");
 
 /***/ })
 
@@ -508,18 +176,6 @@ eval("var map = {\n\t\"./ui-kit-template/ui-kit-logo.svg\": \"./src/pages/ui-kit
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -536,32 +192,11 @@ eval("var map = {\n\t\"./ui-kit-template/ui-kit-logo.svg\": \"./src/pages/ui-kit
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	__webpack_require__("./src/index.js");
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/indexjs.js");
 /******/ 	
 /******/ })()
