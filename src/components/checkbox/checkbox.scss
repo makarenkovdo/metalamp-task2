@@ -2,7 +2,6 @@
 @import './../../styles/variables/colors.scss';
 @import './../../styles/mixins/fonts.scss';
 
-/* remove standart styles */
 $checkmarkWidth: 4px;
 $checkmarkHeight: 6px;
 $newIconWidth: 20px;
@@ -13,8 +12,8 @@ $newIconWidth: 20px;
         grid-template-rows: 30px;
         row-gap: 100px;
     }
-    &-input {
-        position: absolute;
+    &__input {
+        position: absolute; /* remove standart styles */
         z-index: -1;
         opacity: 0;
         &:checked + span {
@@ -24,7 +23,7 @@ $newIconWidth: 20px;
             opacity: 1;
         }
     }
-    &-new-icon {
+    &__new-icon {
         display: inline-block;
         position: relative;
         box-sizing: border-box;
@@ -51,7 +50,7 @@ $newIconWidth: 20px;
             opacity: 0;
         }
     }
-    &-text {
+    &__text {
         // display: grid;
         // align-self: center;
         height: 18px;

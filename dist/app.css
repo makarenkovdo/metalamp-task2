@@ -1,6 +1,6 @@
-/*!******************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/buttons/buttons.scss ***!
-  \******************************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/button/button.scss ***!
+  \****************************************************************************************************************************/
 .button-purple {
   width: 99px;
   height: 44px;
@@ -28,7 +28,7 @@
 .button-white:hover {
   border-color: rgba(188, 156, 255, 0.5);
 }
-.button-text {
+.button-link {
   font: normal bold 12px/15px Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #bc9cff;
@@ -37,7 +37,7 @@
   border: none;
   color: #bc9cff;
 }
-.button-text:hover {
+.button-link:hover {
   color: rgba(31, 32, 65, 0.5);
 }
 .button-go-to-pay {
@@ -85,25 +85,25 @@ checkbox-list-popup {
 /*!********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox/checkbox.scss ***!
   \********************************************************************************************************************************/
-/* remove standart styles */
 .checkbox-label {
   display: grid;
   grid-template-columns: 30px 1fr;
   grid-template-rows: 30px;
   row-gap: 100px;
 }
-.checkbox-input {
+.checkbox__input {
   position: absolute;
+  /* remove standart styles */
   z-index: -1;
   opacity: 0;
 }
-.checkbox-input:checked + span {
+.checkbox__input:checked + span {
   border-color: #8ba4f9;
 }
-.checkbox-input:checked + span::before {
+.checkbox__input:checked + span::before {
   opacity: 1;
 }
-.checkbox-new-icon {
+.checkbox__new-icon {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
@@ -113,7 +113,7 @@ checkbox-list-popup {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
 }
-.checkbox-new-icon::before {
+.checkbox__new-icon::before {
   content: "";
   position: absolute;
   left: 6px;
@@ -130,7 +130,7 @@ checkbox-list-popup {
   transform: rotate(45deg);
   opacity: 0;
 }
-.checkbox-text {
+.checkbox__text {
   height: 18px;
   align-self: flex-start;
   align-content: center;
@@ -811,141 +811,7 @@ input:checked + .slider:before {
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/form-elements/form-elements.scss ***!
   \*************************************************************************************************************************************/
-@charset "UTF-8";
-.text-field {
-  width: 320px;
-  height: 44px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-.text-field:hover {
-  border: 1px solid rgba(31, 32, 65, 0.5);
-}
-.text-field:focus {
-  border: 1px solid rgba(31, 32, 65, 0.5);
-}
 
-.dropdown-guests {
-  display: grid;
-  position: absolute;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 320px;
-  left: 387px;
-  top: 196px;
-}
-.dropdown-guests img {
-  position: relative;
-}
-.dropdown-img-box {
-  display: grid;
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  justify-content: center;
-}
-
-.dropdown-popup {
-  position: absolute;
-  display: grid;
-  grid-template-columns: 69.0625% 9.375% 10% 11.5625%;
-  width: 320px;
-  height: 159px;
-  background: #ffffff;
-  /* Dark 50% */
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  border-radius: 0px 0px 2px 2px;
-}
-
-.dropdown-button {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-columns: 86.25% 13.75%;
-  width: 320px;
-  height: 44px;
-  background: #ffffff;
-  justify-content: space-between;
-  align-items: center;
-  background: #ffffff;
-  /* Dark 50% */
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  box-sizing: border-box;
-  border-radius: 2px 2px 0px 0px;
-  /* Сколько гостей */
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  /* identical to box height, or 129% */
-  /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.dropdown-text {
-  padding-left: 15px;
-}
-
-.hide {
-  display: none !important;
-}
-
-.counter {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  /* Dark 100% */
-  color: #1f2041;
-  margin-top: 13px;
-}
-
-.option-text {
-  margin-left: 15px;
-  margin-top: 13px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  /* identical to box height */
-  text-transform: uppercase;
-  /* Dark 100% */
-  color: #1f2041;
-}
-
-.increase {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 22px;
-  margin-top: 7px;
-  margin-right: 7px;
-}
-
-.decrease {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 7px;
-  /* Rectangle 2 */
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 22px;
-}
 /*!*****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/ui-kit-template/ui-kit-template.scss ***!
   \*****************************************************************************************************************************************/
