@@ -1,27 +1,25 @@
-@import './fonts.scss';
-@mixin montserrat-regular {
+@font-face {
     font-family: 'Montserrat';
     src: url('./../../fonts/Montserrat-Regular.woff2'),
-        //без .. и уже во вложенных не работает
-        url('./../../fonts/Montserrat-Regular.woff'); // и наоборот..
+        url('./../../fonts/Montserrat-Regular.woff');
     font-weight: 400;
     font-style: normal;
 }
-@mixin montserrat-bold {
-    font-family: 'Montserrat';
+@font-face {
+    font-family: 'Montserrat Bold';
     src: url('./../../fonts/Montserrat-Bold.woff2'),
         url('./../../fonts/Montserrat-Bold.woff');
     font-weight: 700;
     font-style: normal;
 }
-@mixin quicksand-regular {
+@font-face {
     font-family: 'Quicksand';
     src: url('./../../fonts/Quicksand-Regular.woff2'),
         url('./../../fonts/Quicksand-Regular.woff');
     font-weight: 400;
     font-style: normal;
 }
-@mixin quicksand-bold {
+@font-face {
     font-family: 'Quicksand';
     src: url('./../../fonts/Quicksand-Bold.woff2'),
         url('./../../fonts/Quicksand-Bold.woff');

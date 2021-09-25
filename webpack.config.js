@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin')
 const webpack = require('webpack')
 const path = require('path')
+const entries = []
+
 const htmlComponents = [
     'dropdown-guests',
     'datepicker',
@@ -12,6 +14,12 @@ const htmlComponents = [
     'buttons',
     'rate-button',
     'toggle',
+    'radio-button',
+    'like-button',
+    'checkbox-list',
+]
+const jsFiles = [
+    'dropdown-guests',
     'radio-button',
     'like-button',
     'checkbox-list',
@@ -118,15 +126,8 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(woff2|woff|ttf)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: 'fonts/[name].[ext]',
-                        },
-                    },
-                ],
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
             },
             {
                 test: /\.pug$/,
