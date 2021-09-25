@@ -1,4 +1,3 @@
-import './checkbox.scss'
 // console.log('something')
 // const $checkboxSelector = document.querySelector('.checkbox')
 // $checkboxSelector.addEventListener('click', () => handleCheckboxClick())

@@ -1,7 +1,7 @@
 import 'jquery'
-import './components/checkbox-list/checkbox-list.js'
 
 import './components/checkbox-list/checkbox-list.scss'
+// import './components/checkbox-list/checkbox-list.js' //вставляем сюда и checbox.html не отображает стили
 
 import './components/test/test.scss'
 import './components/checkbox/checkbox.scss'
@@ -13,9 +13,9 @@ import './components/like-button/like-button.scss'
 import './components/dropdown-guests/dropdown-guests.scss'
 import './components/color-block/color-block.scss'
 import './pages/color-and-type/color-and-type.scss'
-
 import './pages/ui-kit-template/ui-kit-template.scss'
 
+import './components/checkbox-list/checkbox-list.js'
 import './components/datepicker/js/air-datepicker.js'
 import './components/datepicker/datepicker.js'
 import './components/like-button/like-button.js'
