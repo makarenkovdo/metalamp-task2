@@ -1,6 +1,9 @@
 @import './../../styles/variables/colors.scss';
 
 /* remove standart styles */
+$checkmarkWidth: 4px;
+$checkmarkHeight: 6px;
+$newIconWidth: 20px;
 .checkbox {
     &-label {
         display: grid;
@@ -10,11 +13,15 @@
         position: absolute;
         z-index: -1;
         opacity: 0;
+        &:checked + span {
+            border-color: #8ba4f9;
+        }
         &:checked + span::before {
             opacity: 1;
         }
     }
     &-new-icon {
+        display: inline-block;
         position: relative;
         box-sizing: border-box;
         width: 20px;
@@ -28,8 +35,9 @@
         &::before {
             content: '';
             position: absolute;
-            left: 7px;
-            top: 5px;
+            left: (0.4 * $newIconWidth) - (0.4 * $checkmarkWidth);
+            top: (0.4 * $newIconWidth)- (1 * $checkmarkWidth);
+            transform: translate(-500%, -50%);
             width: 4px;
             height: 6px;
             border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -42,47 +50,4 @@
             opacity: 0;
         }
     }
-}
-
-/* для элемента label связанного с .checkbox */
-
-.checkbox > span {
-    display: grid;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
-}
-
-/* создание в label псевдоэлемента  before со следующими стилями */
-
-/* стили для радиокнопки, находящейся в состоянии checked */
-.checkbox > input:checked + span::before {
-    border-color: #8ba4f9;
-}
-// .checkbox > input:checked + span::after {
-//     content: '';
-//     position: absolute;
-//     left: 7px;
-//     top: 5px;
-//     width: 4px;
-//     height: 6px;
-//     border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-//     border-image-slice: 1;
-//     border-right-width: 2px;
-//     border-right-style: solid;
-//     border-bottom-width: 2px;
-//     border-bottom-style: solid;
-//     transform: rotate(45deg);
-// }
-
-/* стили при наведении курсора на радио */
-.checkbox > input:not(:disabled):not(:checked) + span:hover::before {
-    border-color: #b3d7ff;
-}
-
-/* стили для активной радиокнопки (при нажатии на неё) */
-.checkbox > input:not(:disabled):active + span::before {
-    background-color: #b3d7ff;
-    border-color: #b3d7ff;
 }
