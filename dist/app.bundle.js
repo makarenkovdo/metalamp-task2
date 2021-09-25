@@ -15,7 +15,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("// import './components/radio-button/radio-button.scss'\n// import './components/checkbox-list/checkbox-list.scss'\n// import './components/test/test.scss'\n// import './components/checkbox/checkbox.scss'\n// import './components/buttons/buttons.scss'\n// import './components/rate-button/rate-button.scss'\n// import './components/toggle/toggle.scss'\n// import './components/like-button/like-button.scss'\n// import './components/dropdown-guests/dropdown-guests.scss'\n// import './components/color-block/color-block.scss'\n// import './pages/color-and-type/color-and-type.scss'\n// import './pages/ui-kit-template/ui-kit-template.scss'\nvar cache = {};\n\nfunction importAll(r) {\n  r.keys().forEach(function (key) {\n    return cache[key] = r(key);\n  });\n}\n\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.sass$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.sass$\")); // importAll(require.context('./components/', true, /\\.js$/))\n// importAll(require.context('./pages/', true, /\\.js$/))\n\n//# sourceURL=webpack://task2/./src/index.js?");
+eval("// import './components/radio-button/radio-button.scss'\n// import './components/checkbox-list/checkbox-list.scss'\n// import './components/test/test.scss'\n// import './components/checkbox/checkbox.scss'\n// import './components/buttons/buttons.scss'\n// import './components/rate-button/rate-button.scss'\n// import './components/toggle/toggle.scss'\n// import './components/like-button/like-button.scss'\n// import './components/dropdown-guests/dropdown-guests.scss'\n// import './components/color-block/color-block.scss'\n// import './pages/color-and-type/color-and-type.scss'\n// import './pages/ui-kit-template/ui-kit-template.scss'\nvar cache = {};\n\nfunction importAll(r) {\n  r.keys().forEach(function (key) {\n    return cache[key] = r(key);\n  });\n}\n\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.scss$\")); // importAll(require.context('./components/', true, /\\.js$/))\n// importAll(require.context('./pages/', true, /\\.js$/))\n\n//# sourceURL=webpack://task2/./src/index.js?");
 
 /***/ }),
 
@@ -162,13 +162,266 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/components sync recursive \\.sass$":
-/*!**************************************!*\
-  !*** ./src/components/ sync \.sass$ ***!
-  \**************************************/
-/***/ ((module) => {
+/***/ "./src/components/buttons/buttons.scss":
+/*!*********************************************!*\
+  !*** ./src/components/buttons/buttons.scss ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("function webpackEmptyContext(req) {\n\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\te.code = 'MODULE_NOT_FOUND';\n\tthrow e;\n}\nwebpackEmptyContext.keys = () => ([]);\nwebpackEmptyContext.resolve = webpackEmptyContext;\nwebpackEmptyContext.id = \"./src/components sync recursive \\\\.sass$\";\nmodule.exports = webpackEmptyContext;\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.sass$?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/buttons/buttons.scss?");
+
+/***/ }),
+
+/***/ "./src/components/checkbox-list/checkbox-list.scss":
+/*!*********************************************************!*\
+  !*** ./src/components/checkbox-list/checkbox-list.scss ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/checkbox-list/checkbox-list.scss?");
+
+/***/ }),
+
+/***/ "./src/components/checkbox/checkbox.scss":
+/*!***********************************************!*\
+  !*** ./src/components/checkbox/checkbox.scss ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/checkbox/checkbox.scss?");
+
+/***/ }),
+
+/***/ "./src/components/color-block/color-block.scss":
+/*!*****************************************************!*\
+  !*** ./src/components/color-block/color-block.scss ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/color-block/color-block.scss?");
+
+/***/ }),
+
+/***/ "./src/components/datepicker/scss/_datepicker-config.scss":
+/*!****************************************************************!*\
+  !*** ./src/components/datepicker/scss/_datepicker-config.scss ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/datepicker/scss/_datepicker-config.scss?");
+
+/***/ }),
+
+/***/ "./src/components/datepicker/scss/cell.scss":
+/*!**************************************************!*\
+  !*** ./src/components/datepicker/scss/cell.scss ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/datepicker/scss/cell.scss?");
+
+/***/ }),
+
+/***/ "./src/components/datepicker/scss/datepicker.scss":
+/*!********************************************************!*\
+  !*** ./src/components/datepicker/scss/datepicker.scss ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/datepicker/scss/datepicker.scss?");
+
+/***/ }),
+
+/***/ "./src/components/datepicker/scss/navigation.scss":
+/*!********************************************************!*\
+  !*** ./src/components/datepicker/scss/navigation.scss ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/datepicker/scss/navigation.scss?");
+
+/***/ }),
+
+/***/ "./src/components/datepicker/scss/timepicker.scss":
+/*!********************************************************!*\
+  !*** ./src/components/datepicker/scss/timepicker.scss ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/datepicker/scss/timepicker.scss?");
+
+/***/ }),
+
+/***/ "./src/components/dropdown-guests/dropdown-guests.scss":
+/*!*************************************************************!*\
+  !*** ./src/components/dropdown-guests/dropdown-guests.scss ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/dropdown-guests/dropdown-guests.scss?");
+
+/***/ }),
+
+/***/ "./src/components/interior-form-texts-mixins.scss":
+/*!********************************************************!*\
+  !*** ./src/components/interior-form-texts-mixins.scss ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/interior-form-texts-mixins.scss?");
+
+/***/ }),
+
+/***/ "./src/components/like-button/like-button.scss":
+/*!*****************************************************!*\
+  !*** ./src/components/like-button/like-button.scss ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/like-button/like-button.scss?");
+
+/***/ }),
+
+/***/ "./src/components/radio-button/radio-button.scss":
+/*!*******************************************************!*\
+  !*** ./src/components/radio-button/radio-button.scss ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/radio-button/radio-button.scss?");
+
+/***/ }),
+
+/***/ "./src/components/rate-button/rate-button.scss":
+/*!*****************************************************!*\
+  !*** ./src/components/rate-button/rate-button.scss ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/rate-button/rate-button.scss?");
+
+/***/ }),
+
+/***/ "./src/components/registration/registration.scss":
+/*!*******************************************************!*\
+  !*** ./src/components/registration/registration.scss ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/registration/registration.scss?");
+
+/***/ }),
+
+/***/ "./src/components/rich-checkbox/rich-checkbox.scss":
+/*!*********************************************************!*\
+  !*** ./src/components/rich-checkbox/rich-checkbox.scss ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/rich-checkbox/rich-checkbox.scss?");
+
+/***/ }),
+
+/***/ "./src/components/test/test.scss":
+/*!***************************************!*\
+  !*** ./src/components/test/test.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/test/test.scss?");
+
+/***/ }),
+
+/***/ "./src/components/text-field/text-field.scss":
+/*!***************************************************!*\
+  !*** ./src/components/text-field/text-field.scss ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/text-field/text-field.scss?");
+
+/***/ }),
+
+/***/ "./src/components/toggle/toggle.scss":
+/*!*******************************************!*\
+  !*** ./src/components/toggle/toggle.scss ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/toggle/toggle.scss?");
+
+/***/ }),
+
+/***/ "./src/pages/cards/cards.scss":
+/*!************************************!*\
+  !*** ./src/pages/cards/cards.scss ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/pages/cards/cards.scss?");
+
+/***/ }),
+
+/***/ "./src/pages/color-and-type/color-and-type.scss":
+/*!******************************************************!*\
+  !*** ./src/pages/color-and-type/color-and-type.scss ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/pages/color-and-type/color-and-type.scss?");
+
+/***/ }),
+
+/***/ "./src/pages/form-elements/form-elements.scss":
+/*!****************************************************!*\
+  !*** ./src/pages/form-elements/form-elements.scss ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/pages/form-elements/form-elements.scss?");
+
+/***/ }),
+
+/***/ "./src/pages/ui-kit-template/ui-kit-template.scss":
+/*!********************************************************!*\
+  !*** ./src/pages/ui-kit-template/ui-kit-template.scss ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/pages/ui-kit-template/ui-kit-template.scss?");
+
+/***/ }),
+
+/***/ "./src/components sync recursive \\.scss$":
+/*!**************************************!*\
+  !*** ./src/components/ sync \.scss$ ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var map = {\n\t\"./buttons/buttons.scss\": \"./src/components/buttons/buttons.scss\",\n\t\"./checkbox-list/checkbox-list.scss\": \"./src/components/checkbox-list/checkbox-list.scss\",\n\t\"./checkbox/checkbox.scss\": \"./src/components/checkbox/checkbox.scss\",\n\t\"./color-block/color-block.scss\": \"./src/components/color-block/color-block.scss\",\n\t\"./datepicker/scss/_datepicker-config.scss\": \"./src/components/datepicker/scss/_datepicker-config.scss\",\n\t\"./datepicker/scss/cell.scss\": \"./src/components/datepicker/scss/cell.scss\",\n\t\"./datepicker/scss/datepicker.scss\": \"./src/components/datepicker/scss/datepicker.scss\",\n\t\"./datepicker/scss/navigation.scss\": \"./src/components/datepicker/scss/navigation.scss\",\n\t\"./datepicker/scss/timepicker.scss\": \"./src/components/datepicker/scss/timepicker.scss\",\n\t\"./dropdown-guests/dropdown-guests.scss\": \"./src/components/dropdown-guests/dropdown-guests.scss\",\n\t\"./interior-form-texts-mixins.scss\": \"./src/components/interior-form-texts-mixins.scss\",\n\t\"./like-button/like-button.scss\": \"./src/components/like-button/like-button.scss\",\n\t\"./radio-button/radio-button.scss\": \"./src/components/radio-button/radio-button.scss\",\n\t\"./rate-button/rate-button.scss\": \"./src/components/rate-button/rate-button.scss\",\n\t\"./registration/registration.scss\": \"./src/components/registration/registration.scss\",\n\t\"./rich-checkbox/rich-checkbox.scss\": \"./src/components/rich-checkbox/rich-checkbox.scss\",\n\t\"./test/test.scss\": \"./src/components/test/test.scss\",\n\t\"./text-field/text-field.scss\": \"./src/components/text-field/text-field.scss\",\n\t\"./toggle/toggle.scss\": \"./src/components/toggle/toggle.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.scss$?");
 
 /***/ }),
 
@@ -182,13 +435,13 @@ eval("var map = {\n\t\"./checkbox-list/close-checkbox-list.svg\": \"./src/compon
 
 /***/ }),
 
-/***/ "./src/pages sync recursive \\.sass$":
+/***/ "./src/pages sync recursive \\.scss$":
 /*!*********************************!*\
-  !*** ./src/pages/ sync \.sass$ ***!
+  !*** ./src/pages/ sync \.scss$ ***!
   \*********************************/
-/***/ ((module) => {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("function webpackEmptyContext(req) {\n\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\te.code = 'MODULE_NOT_FOUND';\n\tthrow e;\n}\nwebpackEmptyContext.keys = () => ([]);\nwebpackEmptyContext.resolve = webpackEmptyContext;\nwebpackEmptyContext.id = \"./src/pages sync recursive \\\\.sass$\";\nmodule.exports = webpackEmptyContext;\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.sass$?");
+eval("var map = {\n\t\"./cards/cards.scss\": \"./src/pages/cards/cards.scss\",\n\t\"./color-and-type/color-and-type.scss\": \"./src/pages/color-and-type/color-and-type.scss\",\n\t\"./form-elements/form-elements.scss\": \"./src/pages/form-elements/form-elements.scss\",\n\t\"./ui-kit-template/ui-kit-template.scss\": \"./src/pages/ui-kit-template/ui-kit-template.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.scss$?");
 
 /***/ }),
 

@@ -18,7 +18,7 @@ function importAll(r) {
 }
 importAll(require.context('./components/', true, /\.svg$/))
 importAll(require.context('./pages/', true, /\.svg$/))
-importAll(require.context('./components/', true, /\.sass$/))
-importAll(require.context('./pages/', true, /\.sass$/))
+importAll(require.context('./components/', true, /\.scss$/))
+importAll(require.context('./pages/', true, /\.scss$/))
 // importAll(require.context('./components/', true, /\.js$/))
 // importAll(require.context('./pages/', true, /\.js$/))
