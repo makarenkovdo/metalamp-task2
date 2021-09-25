@@ -35,7 +35,7 @@ $newIconWidth: 20px;
         &::before {
             content: '';
             position: absolute;
-            left: (0.4 * $newIconWidth) - (0.4 * $checkmarkWidth);
+            left: (0.4 * $newIconWidth) - (0.5 * $checkmarkWidth);
             top: (0.4 * $newIconWidth)- (1 * $checkmarkWidth);
             transform: translate(-500%, -50%);
             width: 4px;
