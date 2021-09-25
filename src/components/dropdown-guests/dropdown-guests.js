@@ -1,19 +1,19 @@
 let isDropdownOpen = false
-const $dropdownContainerImg = document.querySelector('.js-dropdown-img-box')
+const $dropdownContainerImg = document.querySelector('.js-dropdown__img-box')
 const $dropdownContainer = document.querySelector('.js-dropdown-guests')
-const $dropdownBoxContainer = document.querySelector('.js-dropdown-popup')
-const $dropdownText = document.querySelector('.js-dropdown-text')
+const $dropdownBoxContainer = document.querySelector('.js-dropdown__popup')
+const $dropdownText = document.querySelector('.js-dropdown__text')
 
-const $counterSelector1 = document.querySelector('.js-counter1')
-const $counterSelector2 = document.querySelector('.js-counter2')
-const $counterSelector3 = document.querySelector('.js-counter3')
+const $counterSelector1 = document.querySelector('.js-dropdown__counter1')
+const $counterSelector2 = document.querySelector('.js-dropdown__counter2')
+const $counterSelector3 = document.querySelector('.js-dropdown__counter3')
 
-const $decreaseSelector1 = document.querySelector('.js-decrease1')
-const $increaseSelector1 = document.querySelector('.js-increase1')
-const $decreaseSelector2 = document.querySelector('.js-decrease2')
-const $increaseSelector2 = document.querySelector('.js-increase2')
-const $decreaseSelector3 = document.querySelector('.js-decrease3')
-const $increaseSelector3 = document.querySelector('.js-increase3')
+const $decreaseSelector1 = document.querySelector('.js-dropdown__decrease1')
+const $increaseSelector1 = document.querySelector('.js-dropdown__increase1')
+const $decreaseSelector2 = document.querySelector('.js-dropdown__decrease2')
+const $increaseSelector2 = document.querySelector('.js-dropdown__increase2')
+const $decreaseSelector3 = document.querySelector('.js-dropdown__decrease3')
+const $increaseSelector3 = document.querySelector('.js-dropdown__increase3')
 
 $dropdownContainerImg.addEventListener('click', handleDropdownClick)
 
@@ -37,8 +37,11 @@ function handleDropdownClick() {
 }
 
 function makeDropdownCounter() {
+    console.log('some log!')
+
     let commonCounter = 0
     let counter1 = 0
+    console.log(counter1)
     let counter2 = 0
     let counter3 = 0
     let guestWordEnding = 'ь'
@@ -58,7 +61,7 @@ function makeDropdownCounter() {
 
     return function (shift, counterSelector) {
         switch (counterSelector.attributes.class.value) {
-            case 'counter js-counter1':
+            case 'dropdown__counter js-dropdown__counter1':
                 if (counter1 === 0 && shift < 0) {
                     return counter1
                 } else {
@@ -73,7 +76,7 @@ function makeDropdownCounter() {
                     $dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
                 }
                 break
-            case 'counter js-counter2':
+            case 'dropdown__counter js-dropdown__counter2':
                 if (counter2 === 0 && shift < 0) {
                     return counter2
                 } else {
@@ -87,7 +90,7 @@ function makeDropdownCounter() {
                     $dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
                 }
                 break
-            case 'counter js-counter3':
+            case 'dropdown__counter js-dropdown__counter3':
                 if (counter3 === 0 && shift < 0) {
                     return counter3
                 } else {
@@ -107,19 +110,6 @@ function makeDropdownCounter() {
     }
 }
 
-//closures implementation
-// const counter1 = makeCounter($counterSelector1)
-// const counter2 = makeCounter($counterSelector2)
-// const counter3 = makeCounter($counterSelector3)
-
-// // counter1(0)
-// $increaseSelector1.addEventListener('click', () => counter1(1))
-// $decreaseSelector1.addEventListener('click', () => counter1(-1))
-// $increaseSelector2.addEventListener('click', () => counter2(1))
-// $decreaseSelector2.addEventListener('click', () => counter2(-1))
-// $increaseSelector3.addEventListener('click', () => counter3(1))
-// $decreaseSelector3.addEventListener('click', () => counter4(-1))
-
 const dropdownCounter = makeDropdownCounter()
 
 $increaseSelector1.addEventListener('click', () =>
@@ -134,9 +124,9 @@ $increaseSelector2.addEventListener('click', () =>
 $decreaseSelector2.addEventListener('click', () =>
     dropdownCounter(-1, $counterSelector2)
 )
-$increaseSelector3.addEventListener('click', () =>
+$increaseSelector3.addEventListener('click', () => {
     dropdownCounter(1, $counterSelector3)
-)
+})
 $decreaseSelector3.addEventListener('click', () =>
     dropdownCounter(-1, $counterSelector3)
 )

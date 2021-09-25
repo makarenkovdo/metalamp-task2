@@ -1,18 +1,18 @@
 @import './../../styles/variables/colors.scss';
 @import './../../styles/mixins/fonts.scss';
 checkbox-list {
-    &-button {
+    &__button {
         width: 166px;
         height: 44px;
         border: 1px solid black;
     }
-    &-icon-box {
+    &__icon-box {
         width: 44px;
         height: 44px;
         border: 1px solid black;
     }
 
-    &-text {
+    &__text {
         width: 192px;
         height: 15px;
 
@@ -27,7 +27,7 @@ checkbox-list {
         /* Dark 100% */
         color: #1f2041;
     }
-    &-popup {
+    &__popup {
         width: 192px;
         height: 228px;
         border: 1px solid black;

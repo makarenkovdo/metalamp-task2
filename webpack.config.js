@@ -6,18 +6,16 @@ const webpack = require('webpack')
 const path = require('path')
 
 const htmlComponents = [
-    'dropdown-guests',
     'datepicker',
     'test',
     'rate-button',
     'toggle',
     'radio-button',
     'like-button',
-    'checkbox-list',
 ]
 
 const pugPages = ['color-and-type', 'test', 'form-elements']
-const pugComponents = ['checkbox', 'checkbox-list']
+const pugComponents = ['checkbox', 'checkbox-list', 'dropdown-guests']
 
 const plugins = [
     new MiniCssExtractPlugin({
