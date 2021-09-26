@@ -4,14 +4,20 @@ include ../../components/checkbox/checkbox
 include ../../components/button/button
 include ../../components/radio-button/radio-button
 include ../../components/like-button/like-button
-
+include ../../components/block-title/block-title
 
 
 
 block content
-    - const styles = {  button: {position: 'absolute', left: '500px'}}
-    +checkbox-list()
-    +button('white', 'CLICK ME', 'form-elements')
-    +button('purple', 'CLICK ME', 'form-elements')
-    +radio-button()
-    +like-button()
+    .form-elements
+        - const styles = {  button: {position: 'absolute', left: '500px'}}
+        - const titles = ['text field', 'dropdown', 'masked text field', 'date dropdown']
+        each text, index in titles
+            +block-title(text, `instance-${index+1}`)
+
+
+        +checkbox-list()
+        +button('white', 'CLICK ME', 'instance-1')
+        +button('purple', 'CLICK ME', 'instance-2')
+        +radio-button()
+        +like-button()
