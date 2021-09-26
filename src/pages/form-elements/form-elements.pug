@@ -6,8 +6,11 @@ include ../../components/radio-button/radio-button
 include ../../components/like-button/like-button
 
 
+
+
 block content
+    - const styles = {button: {position: 'absolute', left: '500px'}}
     +checkbox-list()
-    +button('white', 'someButton')
+    +button('white', 'someButton', styles.button)
     +radio-button()
     +like-button()
