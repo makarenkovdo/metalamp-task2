@@ -1,18 +1,17 @@
 .form-elements {
-    &.button-white {
-        @media (min-width: 1440px) {
-            position: absolute;
-            width: 99px;
-            height: 44px;
-            left: 979px;
-            top: 336px;
-        }
-    }
-    &.button-purple {
-        @media (min-width: 1440px) {
-            position: absolute;
-            left: 980px;
-            top: 262px;
-        }
-    }
+	&.buttons-block {
+		&__button-white
+
+}
+&.checkbox-list-block {
+}
+&__title {
+
+}
+
+		&__checkbox-list {
+
+}
+
+
 }

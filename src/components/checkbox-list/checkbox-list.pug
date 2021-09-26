@@ -1,16 +1,6 @@
 include ../../components/checkbox/checkbox
 mixin checkbox-list()
-    .checkbox-list.js-checkbox-list
-        .checkbox-list__button.js-checkbox-list__button
-            span.checkbox-list__text.js-checkbox-list__text EXPANDABLE CHECKBOX LIST
-            span.checkbox-list__icon-box.js-checkbox-list__icon-box
-                img.checkbox-list-icon.js-checkbox-list-icon(src='./img/open-checkbox-list.svg' alt='some some' width='13' height='8')
-    .checkbox-list__popup.js-checkbox-list__popup.hide
-        +checkbox('Завтрак')
-        +checkbox('Письменный стол')
-        +checkbox('Стул для кормления')
-        +checkbox('Кроватка')
-        +checkbox('Телевизор')
-        +checkbox('Шампунь')
-        +checkbox('Телевизор')
-        +checkbox('Шампунь')
+    +checkbox('Можно курить')
+    +checkbox('Можно с питомцами')
+    +checkbox('Можно пригласить гостей (до 10 человек)')
+
