@@ -1,188 +1,41 @@
-.form-elements .checkbox-list-block {
-    position: absolute;
-
-    left: 587px;
-    top: 174.56px;
+@mixin a-area($margin-top: 20px) {
+    display: grid;
+    grid-area: 'a';
+    width: 320px;
+    grid-template-rows: 20px;
+    grid-template-columns: 50% 50%;
+    margin-left: 140.5px;
+    margin-top: $margin-top;
 }
 
-.form-elements .radio-buttons-block {
-    position: absolute;
-
-    left: 587px;
-    top: 174.56px;
+.form-elements {
+    display: grid;
+    grid-template-areas: 'a b c';
 }
-.form-elements .toggle-block {
-    position: absolute;
 
-    left: 587px;
-    top: 174.56px;
-}
-.form-elements .like-button-block {
-    &_instance-1 {
-        position: absolute;
-        left: 587px;
-        top: 565px;
+.form-elements .text-field_default {
+    @include a-area(143px);
+
+    margin-top: 143px;
+    &__title {
+        justify-self: left;
+        align-content: center;
     }
-    &_instance-2 {
-        position: absolute;
-        width: 39.72px;
-        height: 20px;
-        left: 637px;
-        top: 565px;
+    &__subtitle {
+        justify-self: right;
+    }
+    &__item {
     }
 }
-.form-elements .block-title {
-    &_instance-1 {
-        position: absolute;
+.form-elements .text-field-hover {
+}
 
-        left: 141px;
-        top: 143px;
-    }
-    &_instance-2 {
-        position: absolute;
-        width: 72px;
-
-        left: 141px;
-        top: 227.44px;
-    }
-    &_instance-3 {
-        position: absolute;
-        width: 81px;
-        height: 15px;
-        left: 141px;
-        top: 311.44px;
-    }
-    &_instance-4 {
-        position: absolute;
-        width: 130px;
-        height: 15px;
-        left: 141px;
-        top: 398px;
-    }
-    &_instance-5 {
-        position: absolute;
-        width: 150px;
-        height: 15px;
-        left: 141px;
-        top: 502px;
-    }
-    &_instance-6 {
-        position: absolute;
-        width: 150px;
-        height: 15px;
-        left: 311px;
-        top: 502px;
-    }
-    &_instance-7 {
-        position: absolute;
-        width: 197px;
-        height: 15px;
-        left: 141px;
-        top: 607px;
-    }
-    &_instance-8 {
-        position: absolute;
-        width: 170px;
-        height: 15px;
-        left: 141px;
-        top: 712px;
-    }
-    &_instance-9 {
-        position: absolute;
-        width: 81px;
-        height: 15px;
-        left: 140px;
-        top: 876px;
-    }
-    &_instance-10 {
-        position: absolute;
-        width: 81px;
-        height: 15px;
-        left: 140px;
-        top: 960px;
-    }
-    &_instance-11 {
-        position: absolute;
-        width: 136px;
-        height: 15px;
-        left: 587px;
-        top: 143px;
-    }
-    &_instance-12 {
-        position: absolute;
-        width: 107px;
-        height: 15px;
-        left: 587px;
-        top: 313px;
-    }
-    &_instance-13 {
-        position: absolute;
-        width: 50px;
-        height: 15px;
-        left: 587px;
-        top: 404.56px;
-    }
-    &_instance-14 {
-        position: absolute;
-        width: 85px;
-        height: 15px;
-        left: 587px;
-        top: 534px;
-    }
-    &_instance-15 {
-        position: absolute;
-        width: 90px;
-        height: 15px;
-        left: 587px;
-        top: 625px;
-    }
-    &_instance-16 {
-        position: absolute;
-        width: 81px;
-        height: 15px;
-        left: 587px;
-        top: 876px;
-    }
-    &_instance-17 {
-        position: absolute;
-        width: 171px;
-        height: 15px;
-        left: 587px;
-        top: 1196px;
-    }
-    &_instance-18 {
-        position: absolute;
-        width: 95px;
-        height: 15px;
-        left: 979px;
-        top: 143.44px;
-    }
-    &_instance-19 {
-        position: absolute;
-        width: 61px;
-        height: 15px;
-        left: 979px;
-        top: 231px;
-    }
-    &_instance-20 {
-        position: absolute;
-        width: 81px;
-        height: 15px;
-        left: 980px;
-        top: 540px;
-    }
-    &_instance-21 {
-        position: absolute;
-        width: 81px;
-        height: 15px;
-        left: 979px;
-        top: 876px;
-    }
-    &_instance-22 {
-        position: absolute;
-        width: 79px;
-        height: 15px;
-        left: 979px;
-        top: 1196px;
-    }
+.form-elements .form-elements__title {
+    display: grid;
+    justify-self: left;
+    align-content: center;
+}
+.form-elements .form-elements__subtitle {
+    display: grid;
+    justify-self: right;
 }

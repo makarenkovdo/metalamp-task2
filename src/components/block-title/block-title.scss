@@ -2,5 +2,6 @@
 @import './../../styles/mixins/font-faces.scss';
 @import './../../styles/variables/colors.scss';
 .block-title {
+    // position: absolute;
     @include h3($dark-shade-100);
 }

@@ -5,25 +5,26 @@ include ../../components/button/button
 include ../../components/radio-button/radio-button
 include ../../components/like-button/like-button
 include ../../components/block-title/block-title
+include ../../components/text-field/text-field
 
 
 
 block content
-    .form-elements
-        - const styles = {  button: {position: 'absolute', left: '500px'}}
-        - const titles = ['text field', 'text field', 'dropdown', 'masked text field', 'date dropdown', 'date dropdown', 'filter date dropdown', 'subscription text field','dropdown','dropdown', 'checkbox buttons', 'radio buttons', 'toggle', 'like button', 'rate button', 'dropdown', 'rich checkbox buttons', 'range-slider','buttons', 'pagination', 'dropdown', 'bullet list'  ]
-        each text, index in titles
-            +block-title(text, `instance-${index+1}`)
+    .form-elements    
+        .text-field_default
+            +block-title('TEXT FIELD')
+            +text-field ('','email', 'Email')
 
-        .checkbox-list-block
-            +checkbox-list()
-        - const buttonAttributes = [['white','CLICK ME'],['white','CLICK ME'], ['purple','CLICK ME'],['purple','CLICK ME'],['link','CLICK ME'],['link','CLICK ME'],['go-to-pay','ПЕРЕЙТИ К ОПЛАТЕ']]
-        each buttonAttribute, i in buttonAttributes
-            +button(buttonAttribute[0], buttonAttribute[1], `instance-${i+1}`)
+        //- .checkbox-list-block
+        //-     +checkbox-list()
+        //- - const buttonAttributes = [['white','CLICK ME'],['white','CLICK ME'], ['purple','CLICK ME'],['purple','CLICK ME'],['link','CLICK ME'],['link','CLICK ME'],['go-to-pay','ПЕРЕЙТИ К ОПЛАТЕ']]
+        //- each buttonAttribute, i in buttonAttributes
+        //-     +button(buttonAttribute[0], buttonAttribute[1], `instance-${i+1}`)
         
 
 
-        .radio-button-block
-            +radio-button()
-        .like-button-block
-            +like-button('instance-1')
+        //- .radio-button-block
+        //-     +radio-button()
+        //- +like-button('instance-1', 2)
+        //- +like-button('instance-2', 11)
+
