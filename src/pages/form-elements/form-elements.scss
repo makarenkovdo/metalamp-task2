@@ -1,3 +1,36 @@
+.form-elements .checkbox-list-block {
+    position: absolute;
+
+    left: 587px;
+    top: 174.56px;
+}
+
+.form-elements .radio-buttons-block {
+    position: absolute;
+
+    left: 587px;
+    top: 174.56px;
+}
+.form-elements .toggle-block {
+    position: absolute;
+
+    left: 587px;
+    top: 174.56px;
+}
+.form-elements .like-button-block {
+    &_instance-1 {
+        position: absolute;
+        left: 587px;
+        top: 565px;
+    }
+    &_instance-2 {
+        position: absolute;
+        width: 39.72px;
+        height: 20px;
+        left: 637px;
+        top: 565px;
+    }
+}
 .form-elements .block-title {
     &_instance-1 {
         position: absolute;

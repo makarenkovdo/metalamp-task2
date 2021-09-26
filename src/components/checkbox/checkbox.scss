@@ -10,7 +10,6 @@ $newIconWidth: 20px;
         display: grid;
         grid-template-columns: 30px 1fr;
         grid-template-rows: 30px;
-        row-gap: 100px;
     }
     &__input {
         position: absolute; /* remove standart styles */

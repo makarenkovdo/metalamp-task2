@@ -15,9 +15,15 @@ block content
         each text, index in titles
             +block-title(text, `instance-${index+1}`)
 
+        .checkbox-list-block
+            +checkbox-list()
+        - const buttonAttributes = [['white','CLICK ME'],['white','CLICK ME'], ['purple','CLICK ME'],['purple','CLICK ME'],['link','CLICK ME'],['link','CLICK ME'],['go-to-pay','ПЕРЕЙТИ К ОПЛАТЕ']]
+        each buttonAttribute, i in buttonAttributes
+            +button(buttonAttribute[0], buttonAttribute[1], `instance-${i+1}`)
+        
 
-        +checkbox-list()
-        +button('white', 'CLICK ME', 'instance-1')
-        +button('purple', 'CLICK ME', 'instance-2')
-        +radio-button()
-        +like-button()
+
+        .radio-button-block
+            +radio-button()
+        .like-button-block
+            +like-button('instance-1')
