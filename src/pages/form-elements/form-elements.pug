@@ -11,7 +11,7 @@ include ../../components/block-title/block-title
 block content
     .form-elements
         - const styles = {  button: {position: 'absolute', left: '500px'}}
-        - const titles = ['text field', 'dropdown', 'masked text field', 'date dropdown']
+        - const titles = ['text field', 'text field', 'dropdown', 'masked text field', 'date dropdown', 'date dropdown', 'filter date dropdown', 'subscription text field','dropdown','dropdown', 'checkbox buttons', 'radio buttons', 'toggle', 'like button', 'rate button', 'dropdown', 'rich checkbox buttons', 'range-slider','buttons', 'pagination', 'dropdown', 'bullet list'  ]
         each text, index in titles
             +block-title(text, `instance-${index+1}`)
 
