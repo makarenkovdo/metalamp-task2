@@ -1,26 +1,58 @@
 let isDropdownOpen = false
 const $dropdownInstanceNumber = document.querySelector(
-    '.js-dropdown_instance-number'
+    `.js-dropdown_instance-number`
 )
-const $dropdownContainerImg = document.querySelector('.js-dropdown__img-box')
-const $dropdownContainer = document.querySelector('.js-dropdown-guests')
-const $dropdownBoxContainer = document.querySelector('.js-dropdown__popup')
-const $dropdownText = document.querySelector('.js-dropdown__text')
+const instance = $dropdownInstanceNumber.innerHTML
+console.log(instance)
 
-const $counterSelector1 = document.querySelector('.js-dropdown__counter1')
-const $counterSelector2 = document.querySelector('.js-dropdown__counter2')
-const $counterSelector3 = document.querySelector('.js-dropdown__counter3')
+const $dropdownContainerImg = document.querySelector(
+    `.js-dropdown_instance-${instance}__img-box`
+)
+console.log($dropdownContainerImg)
 
-const $decreaseSelector1 = document.querySelector('.js-dropdown__decrease1')
-const $increaseSelector1 = document.querySelector('.js-dropdown__increase1')
-const $decreaseSelector2 = document.querySelector('.js-dropdown__decrease2')
-const $increaseSelector2 = document.querySelector('.js-dropdown__increase2')
-const $decreaseSelector3 = document.querySelector('.js-dropdown__decrease3')
-const $increaseSelector3 = document.querySelector('.js-dropdown__increase3')
+const $dropdownContainer = document.querySelector(
+    `.js-dropdown_instance-${instance}-guests`
+)
+const $dropdownBoxContainer = document.querySelector(
+    `.js-dropdown_instance-${instance}__popup`
+)
+const $dropdownText = document.querySelector(
+    `.js-dropdown_instance-${instance}__text`
+)
+
+const $counterSelector1 = document.querySelector(
+    `.js-dropdown_instance-${instance}__counter1`
+)
+const $counterSelector2 = document.querySelector(
+    `.js-dropdown_instance-${instance}__counter2`
+)
+const $counterSelector3 = document.querySelector(
+    `.js-dropdown_instance-${instance}__counter3`
+)
+const $decreaseSelector1 = document.querySelector(
+    `.js-dropdown_instance-${instance}__decrease1`
+)
+const $increaseSelector1 = document.querySelector(
+    `.js-dropdown_instance-${instance}__increase1`
+)
+const $decreaseSelector2 = document.querySelector(
+    `.js-dropdown_instance-${instance}__decrease2`
+)
+const $increaseSelector2 = document.querySelector(
+    `.js-dropdown_instance-${instance}__increase2`
+)
+const $decreaseSelector3 = document.querySelector(
+    `.js-dropdown_instance-${instance}__decrease3`
+)
+const $increaseSelector3 = document.querySelector(
+    `.js-dropdown_instance-${instance}__increase3`
+)
 
 $dropdownContainerImg.addEventListener('click', handleDropdownClick)
+// $dropdownContainerImg.addEventListener('click', console.log('hahaha'))
 
 function handleDropdownClick() {
+    console.log('something new ')
     isDropdownOpen ? closeDropdownBox() : openDropdownBox()
     function closeDropdownBox() {
         $dropdownBoxContainer.classList.add('hide')
@@ -64,7 +96,7 @@ function makeDropdownCounter() {
 
     return function (shift, counterSelector) {
         switch (counterSelector.attributes.class.value) {
-            case 'dropdown__counter js-dropdown__counter1':
+            case `dropdown__counter js-dropdown_instance-${instance}__counter1`:
                 if (counter1 === 0 && shift < 0) {
                     return counter1
                 } else {
@@ -79,7 +111,7 @@ function makeDropdownCounter() {
                     $dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
                 }
                 break
-            case 'dropdown__counter js-dropdown__counter2':
+            case `dropdown__counter js-dropdown_instance-${instance}__counter2`:
                 if (counter2 === 0 && shift < 0) {
                     return counter2
                 } else {
@@ -93,7 +125,7 @@ function makeDropdownCounter() {
                     $dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
                 }
                 break
-            case 'dropdown__counter js-dropdown__counter3':
+            case `dropdown__counter js-dropdown_instance-${instance}__counter3`:
                 if (counter3 === 0 && shift < 0) {
                     return counter3
                 } else {
