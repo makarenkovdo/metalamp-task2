@@ -5,5 +5,5 @@
     display: grid;
     justify-content: right;
     align-content: center;
-    @include h3($dark-shade-50);
+    @include h3($dark-shade-50, 400);
 }

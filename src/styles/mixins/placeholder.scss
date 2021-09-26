@@ -1,0 +1,14 @@
+@mixin placeholder($prop, $value) {
+    &::-webkit-input-placeholder {
+        #{$prop}: $value;
+    }
+    &::-moz-placeholder {
+        #{$prop}: $value;
+    } /* Firefox 19+ */
+    &:-moz-placeholder {
+        #{$prop}: $value;
+    } /* Firefox 18- */
+    &:-ms-input-placeholder {
+        #{$prop}: $value;
+    }
+}
