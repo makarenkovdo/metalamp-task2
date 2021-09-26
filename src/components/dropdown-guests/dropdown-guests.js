@@ -19,6 +19,7 @@ const $dropdownBoxContainer = document.querySelector(
 const $dropdownText = document.querySelector(
     `.js-dropdown_instance-${instance}__text`
 )
+console.log($dropdownText.innerHTML)
 
 const $counterSelector1 = document.querySelector(
     `.js-dropdown_instance-${instance}__counter1`

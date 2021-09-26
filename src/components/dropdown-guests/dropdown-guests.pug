@@ -2,7 +2,7 @@ mixin dropdown-guests(instance)
     div(class="js-dropdown_instance-number") 1
     div(class="dropdown-guests js-dropdown_instance-" + instance + "-guests")
         div(class="dropdown__button js-dropdown_instance-" + instance + "__button")
-            span(class="dropdown__text js-dropdown__text") Сколько гостей
+            span(class="dropdown__text js-dropdown_instance-" + instance + "__text") Сколько гостей
             span(class="dropdown__img-box js-dropdown_instance-" + instance + "__img-box")
                 img(src='./img/dropdown-guests.svg' alt='some some' width='13' height='8')
     div(class="dropdown__popup js-dropdown_instance-" + instance + "__popup.hide")
