@@ -1,21 +1,31 @@
 extends ../ui-kit-template/ui-kit-template
+
+include ../../components/block-subtitle/block-subtitle
+include ../../components/block-title/block-title
+include ../../components/button/button
 include ../../components/checkbox-list/checkbox-list
 include ../../components/checkbox/checkbox
-include ../../components/button/button
-include ../../components/radio-button/radio-button
+include ../../components/dropdown-guests/dropdown-guests
 include ../../components/like-button/like-button
-include ../../components/block-title/block-title
-include ../../components/block-subtitle/block-subtitle
+include ../../components/radio-button/radio-button
 include ../../components/text-field/text-field
 
 
 
+
 block content
-    .form-elements    
-        .text-field_default
-            +block-title('TEXT FIELD')
-            +block-subtitle('DEFAULT')
-            +text-field ('','email', 'Email')
+    .form-elements
+        .form-elements__area-a     
+            .text-field_default
+                +block-title('TEXT FIELD')
+                +block-subtitle('DEFAULT')
+                +text-field ('','email', 'Email')
+            .text-field_hover
+                +block-title('TEXT FIELD')
+                +block-subtitle('HOVER/FOCUS')
+                +text-field ('This is pretty awesome','email', 'Email')
+            .dropdown-guests_closes 
+                +dropdown-guests()
 
         //- .checkbox-list-block
         //-     +checkbox-list()

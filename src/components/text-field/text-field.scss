@@ -1,5 +1,5 @@
 @import './../../styles/mixins/fonts.scss';
-@import './../../styles/mixins/font-faces.scss';
+// @import './../../styles/mixins/font-faces.scss';
 @import './../../styles/variables/colors.scss';
 @import './../../styles/mixins/placeholder.scss';
 
@@ -12,7 +12,8 @@
     box-sizing: border-box;
     border-radius: 4px;
     @include body-font;
-    @include placeholder(padding, 15px);
+    @include placeholder(color, $dark-shade-25);
+    padding-left: 15px;
 
     &:hover {
         border: 1px solid rgba(31, 32, 65, 0.5);

@@ -1,35 +1,37 @@
-@mixin a-area($margin-top: 20px) {
+@mixin a-area() {
     display: grid;
-    grid-area: 'a';
+
     width: 320px;
-    grid-template-rows: 20px;
+    // grid-template-rows: 20px;
     grid-template-columns: 50% 50%;
     margin-left: 140.5px;
-    margin-top: $margin-top;
 }
 
 .form-elements {
     display: grid;
-    grid-template-areas: 'a b c';
+    grid-template-areas:
+        // 'a b c'
+        'a b c';
+}
+
+.form-elements__area-a {
+    display: grid;
+    grid-area: a;
+    grid-template-areas:
+        'aa'
+        'ab'
+        'ac';
 }
 
 .form-elements .text-field_default {
-    @include a-area(143px);
-
+    @include a-area();
+    grid-area: aa;
     margin-top: 143px;
-    &__title {
-        display: grid;
-        justify-self: left;
-        align-items: center;
-    }
-    &__subtitle {
-        justify-self: right;
-        justify-content: right;
-    }
-    &__item {
-    }
 }
-.form-elements .text-field-hover {
+.text-field_hover {
+    @include a-area();
+    grid-area: ab;
+    margin-top: 20px;
 }
 
 .form-elements .form-elements__title {
