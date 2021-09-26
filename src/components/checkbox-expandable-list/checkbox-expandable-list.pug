@@ -1,0 +1,16 @@
+include ../../components/checkbox/checkbox
+mixin checkbox-expandable-list()
+    .checkbox-expandable-list.js-checkbox-expandable-list
+        .checkbox-expandable-list__button.js-checkbox-expandable-list__button
+            span.checkbox-expandable-list__text.js-checkbox-expandable-list__text EXPANDABLE CHECKBOX LIST
+            span.checkbox-expandable-list__icon-box.js-checkbox-expandable-list__icon-box
+                img.checkbox-expandable-list-icon.js-checkbox-expandable-list-icon(src='./img/open-checkbox-expandable-list.svg' alt='some some' width='13' height='8')
+    .checkbox-expandable-list__popup.js-checkbox-expandable-list__popup.hide
+        +checkbox('Завтрак')
+        +checkbox('Письменный стол')
+        +checkbox('Стул для кормления')
+        +checkbox('Кроватка')
+        +checkbox('Телевизор')
+        +checkbox('Шампунь')
+        +checkbox('Телевизор')
+        +checkbox('Шампунь')
