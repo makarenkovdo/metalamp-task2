@@ -1,4 +1,7 @@
 let isDropdownOpen = false
+const $dropdownInstanceNumber = document.querySelector(
+    '.js-dropdown_instance-number'
+)
 const $dropdownContainerImg = document.querySelector('.js-dropdown__img-box')
 const $dropdownContainer = document.querySelector('.js-dropdown-guests')
 const $dropdownBoxContainer = document.querySelector('.js-dropdown__popup')

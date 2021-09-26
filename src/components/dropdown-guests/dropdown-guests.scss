@@ -1,13 +1,10 @@
 .dropdown {
     &-guests {
         display: grid;
-        position: absolute;
         overflow: hidden;
         box-sizing: border-box;
 
         width: 320px;
-        left: 387px;
-        top: 196px;
     }
     &__button {
         display: grid;
