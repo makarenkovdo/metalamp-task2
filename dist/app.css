@@ -1,3 +1,35 @@
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/block-title/block-title.scss ***!
+  \**************************************************************************************************************************************/
+@font-face {
+  font-family: "Montserrat";
+  src: url(f8d4ca7d3eac34d2d5a6.woff2), url(92f9099c50f6abcbc6f6.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(4864fa64a4ca0d678210.woff2), url(1b85ddf71c245b802e72.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(4f3564bf83d4634c32ea.woff2), url(c0ab61c2a00761ede74e.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(d9740b725d5cecd53445.woff2), url(9c0434acc2db91787f5e.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+.block-title {
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1f2041;
+}
 /*!****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/button/button.scss ***!
   \****************************************************************************************************************************/
@@ -51,20 +83,20 @@
   border-radius: 22px;
   border: none;
 }
-/*!******************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-list/checkbox-list.scss ***!
-  \******************************************************************************************************************************************/
-checkbox-list__button {
+/*!****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-expandable-list/checkbox-expandable-list.scss ***!
+  \****************************************************************************************************************************************************************/
+checkbox-expandable-list__button {
   width: 166px;
   height: 44px;
   border: 1px solid black;
 }
-checkbox-list__icon-box {
+checkbox-expandable-list__icon-box {
   width: 44px;
   height: 44px;
   border: 1px solid black;
 }
-checkbox-list__text {
+checkbox-expandable-list__text {
   width: 192px;
   height: 15px;
   font-family: Montserrat;
@@ -77,7 +109,7 @@ checkbox-list__text {
   /* Dark 100% */
   color: #1f2041;
 }
-checkbox-list__popup {
+checkbox-expandable-list__popup {
   width: 192px;
   height: 228px;
   border: 1px solid black;

@@ -1,17 +1,13 @@
 .form-elements {
-	&.buttons-block {
-		&__button-white
+    &.buttons-block {
+        &__button-white {
+        }
+    }
+    &.checkbox-list-block {
+    }
+    &__title {
+    }
 
-}
-&.checkbox-list-block {
-}
-&__title {
-
-}
-
-		&__checkbox-list {
-
-}
-
-
+    &__checkbox-list {
+    }
 }

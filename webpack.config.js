@@ -65,9 +65,9 @@ plugins.push(
 module.exports = {
     mode: 'development',
     entry: {
-        app: './src/index.js',
-        js: './src/indexjs.js',
-        checkbox: './src/components/checkbox-list/checkbox-list.js',
+        styles: './src/styles.js',
+        checkboxExpList:
+            './src/components/checkbox-expandable-list/checkbox-expandable-list.js',
         likeButton: './src/components/like-button/like-button.js',
         dropdown: './src/components/dropdown-guests/dropdown-guests.js',
         datepicker: './src/components/datepicker/datepicker.js',
