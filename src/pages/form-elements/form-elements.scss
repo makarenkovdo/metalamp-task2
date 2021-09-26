@@ -18,11 +18,13 @@
 
     margin-top: 143px;
     &__title {
+        display: grid;
         justify-self: left;
-        align-content: center;
+        align-items: center;
     }
     &__subtitle {
         justify-self: right;
+        justify-content: right;
     }
     &__item {
     }

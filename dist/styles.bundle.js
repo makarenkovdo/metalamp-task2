@@ -9,13 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/styles.js":
+/*!***********************!*\
+  !*** ./src/styles.js ***!
+  \***********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var cache = {};\n\nfunction importAll(r) {\n  r.keys().forEach(function (key) {\n    return cache[key] = r(key);\n  });\n}\n\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.scss$\"));\n\n//# sourceURL=webpack://task2/./src/index.js?");
+eval("var cache = {};\n\nfunction importAll(r) {\n  r.keys().forEach(function (key) {\n    return cache[key] = r(key);\n  });\n}\n\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/styles sync recursive \\\\.scss$\"));\n\n//# sourceURL=webpack://task2/./src/styles.js?");
 
 /***/ }),
 
@@ -162,6 +162,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/block-subtitle/block-subtitle.scss":
+/*!***********************************************************!*\
+  !*** ./src/components/block-subtitle/block-subtitle.scss ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/block-subtitle/block-subtitle.scss?");
+
+/***/ }),
+
 /***/ "./src/components/block-title/block-title.scss":
 /*!*****************************************************!*\
   !*** ./src/components/block-title/block-title.scss ***!
@@ -192,6 +203,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/checkbox-expandable-list/checkbox-expandable-list.scss?");
+
+/***/ }),
+
+/***/ "./src/components/checkbox-list/checkbox-list.scss":
+/*!*********************************************************!*\
+  !*** ./src/components/checkbox-list/checkbox-list.scss ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/checkbox-list/checkbox-list.scss?");
 
 /***/ }),
 
@@ -360,13 +382,68 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/styles/mixins/font-faces.scss":
+/*!*******************************************!*\
+  !*** ./src/styles/mixins/font-faces.scss ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/styles/mixins/font-faces.scss?");
+
+/***/ }),
+
+/***/ "./src/styles/mixins/fonts.scss":
+/*!**************************************!*\
+  !*** ./src/styles/mixins/fonts.scss ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/styles/mixins/fonts.scss?");
+
+/***/ }),
+
+/***/ "./src/styles/reset-styles.scss":
+/*!**************************************!*\
+  !*** ./src/styles/reset-styles.scss ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/styles/reset-styles.scss?");
+
+/***/ }),
+
+/***/ "./src/styles/variables/breakpoints.scss":
+/*!***********************************************!*\
+  !*** ./src/styles/variables/breakpoints.scss ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/styles/variables/breakpoints.scss?");
+
+/***/ }),
+
+/***/ "./src/styles/variables/colors.scss":
+/*!******************************************!*\
+  !*** ./src/styles/variables/colors.scss ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/styles/variables/colors.scss?");
+
+/***/ }),
+
 /***/ "./src/components sync recursive \\.scss$":
 /*!**************************************!*\
   !*** ./src/components/ sync \.scss$ ***!
   \**************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./block-title/block-title.scss\": \"./src/components/block-title/block-title.scss\",\n\t\"./button/button.scss\": \"./src/components/button/button.scss\",\n\t\"./checkbox-expandable-list/checkbox-expandable-list.scss\": \"./src/components/checkbox-expandable-list/checkbox-expandable-list.scss\",\n\t\"./checkbox/checkbox.scss\": \"./src/components/checkbox/checkbox.scss\",\n\t\"./color-block/color-block.scss\": \"./src/components/color-block/color-block.scss\",\n\t\"./dropdown-guests/dropdown-guests.scss\": \"./src/components/dropdown-guests/dropdown-guests.scss\",\n\t\"./interior-form-texts-mixins.scss\": \"./src/components/interior-form-texts-mixins.scss\",\n\t\"./like-button/like-button.scss\": \"./src/components/like-button/like-button.scss\",\n\t\"./radio-button/radio-button.scss\": \"./src/components/radio-button/radio-button.scss\",\n\t\"./rate-button/rate-button.scss\": \"./src/components/rate-button/rate-button.scss\",\n\t\"./registration/registration.scss\": \"./src/components/registration/registration.scss\",\n\t\"./rich-checkbox/rich-checkbox.scss\": \"./src/components/rich-checkbox/rich-checkbox.scss\",\n\t\"./test/test.scss\": \"./src/components/test/test.scss\",\n\t\"./text-field/text-field.scss\": \"./src/components/text-field/text-field.scss\",\n\t\"./toggle/toggle.scss\": \"./src/components/toggle/toggle.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.scss$?");
+eval("var map = {\n\t\"./block-subtitle/block-subtitle.scss\": \"./src/components/block-subtitle/block-subtitle.scss\",\n\t\"./block-title/block-title.scss\": \"./src/components/block-title/block-title.scss\",\n\t\"./button/button.scss\": \"./src/components/button/button.scss\",\n\t\"./checkbox-expandable-list/checkbox-expandable-list.scss\": \"./src/components/checkbox-expandable-list/checkbox-expandable-list.scss\",\n\t\"./checkbox-list/checkbox-list.scss\": \"./src/components/checkbox-list/checkbox-list.scss\",\n\t\"./checkbox/checkbox.scss\": \"./src/components/checkbox/checkbox.scss\",\n\t\"./color-block/color-block.scss\": \"./src/components/color-block/color-block.scss\",\n\t\"./dropdown-guests/dropdown-guests.scss\": \"./src/components/dropdown-guests/dropdown-guests.scss\",\n\t\"./interior-form-texts-mixins.scss\": \"./src/components/interior-form-texts-mixins.scss\",\n\t\"./like-button/like-button.scss\": \"./src/components/like-button/like-button.scss\",\n\t\"./radio-button/radio-button.scss\": \"./src/components/radio-button/radio-button.scss\",\n\t\"./rate-button/rate-button.scss\": \"./src/components/rate-button/rate-button.scss\",\n\t\"./registration/registration.scss\": \"./src/components/registration/registration.scss\",\n\t\"./rich-checkbox/rich-checkbox.scss\": \"./src/components/rich-checkbox/rich-checkbox.scss\",\n\t\"./test/test.scss\": \"./src/components/test/test.scss\",\n\t\"./text-field/text-field.scss\": \"./src/components/text-field/text-field.scss\",\n\t\"./toggle/toggle.scss\": \"./src/components/toggle/toggle.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.scss$?");
 
 /***/ }),
 
@@ -397,6 +474,16 @@ eval("var map = {\n\t\"./color-and-type/color-and-type.scss\": \"./src/pages/col
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var map = {\n\t\"./ui-kit-template/ui-kit-logo.svg\": \"./src/pages/ui-kit-template/ui-kit-logo.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.svg$?");
+
+/***/ }),
+
+/***/ "./src/styles sync recursive \\.scss$":
+/*!**********************************!*\
+  !*** ./src/styles/ sync \.scss$ ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var map = {\n\t\"./mixins/font-faces.scss\": \"./src/styles/mixins/font-faces.scss\",\n\t\"./mixins/fonts.scss\": \"./src/styles/mixins/fonts.scss\",\n\t\"./reset-styles.scss\": \"./src/styles/reset-styles.scss\",\n\t\"./variables/breakpoints.scss\": \"./src/styles/variables/breakpoints.scss\",\n\t\"./variables/colors.scss\": \"./src/styles/variables/colors.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/styles sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/styles/_sync_\\.scss$?");
 
 /***/ })
 
@@ -492,7 +579,7 @@ eval("var map = {\n\t\"./ui-kit-template/ui-kit-logo.svg\": \"./src/pages/ui-kit
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/styles.js");
 /******/ 	
 /******/ })()
 ;

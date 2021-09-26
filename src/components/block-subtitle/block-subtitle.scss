@@ -1,9 +1,9 @@
 @import './../../styles/mixins/fonts.scss';
 @import './../../styles/mixins/font-faces.scss';
 @import './../../styles/variables/colors.scss';
-.block-title {
+.block-subtitle {
     display: grid;
-    justify-content: left;
+    justify-content: right;
     align-content: center;
-    @include h3($dark-shade-100);
+    @include h3($dark-shade-50);
 }

@@ -1,3 +1,35 @@
+/*!********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/block-subtitle/block-subtitle.scss ***!
+  \********************************************************************************************************************************************/
+@font-face {
+  font-family: "Montserrat";
+  src: url(f8d4ca7d3eac34d2d5a6.woff2), url(92f9099c50f6abcbc6f6.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(4864fa64a4ca0d678210.woff2), url(1b85ddf71c245b802e72.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(4f3564bf83d4634c32ea.woff2), url(c0ab61c2a00761ede74e.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(d9740b725d5cecd53445.woff2), url(9c0434acc2db91787f5e.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+.block-title {
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1f2041;
+}
 /*!**************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/block-title/block-title.scss ***!
   \**************************************************************************************************************************************/
@@ -114,6 +146,13 @@ checkbox-expandable-list__popup {
   height: 228px;
   border: 1px solid black;
 }
+/*!******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-list/checkbox-list.scss ***!
+  \******************************************************************************************************************************************/
+.checkbox-list {
+  display: grid;
+  grid-template-columns: 3;
+}
 /*!********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox/checkbox.scss ***!
   \********************************************************************************************************************************/
@@ -121,7 +160,6 @@ checkbox-expandable-list__popup {
   display: grid;
   grid-template-columns: 30px 1fr;
   grid-template-rows: 30px;
-  row-gap: 100px;
 }
 .checkbox__input {
   position: absolute;
@@ -835,7 +873,38 @@ input:checked + .slider:before {
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/form-elements/form-elements.scss ***!
   \*************************************************************************************************************************************/
+.form-elements {
+  display: grid;
+  grid-template-areas: "a b c";
+}
 
+.form-elements .text-field_default {
+  display: grid;
+  grid-area: "a";
+  width: 320px;
+  grid-template-rows: 20px;
+  grid-template-columns: 50% 50%;
+  margin-left: 140.5px;
+  margin-top: 143px;
+  margin-top: 143px;
+}
+.form-elements .text-field_default__title {
+  justify-self: left;
+  align-content: center;
+}
+.form-elements .text-field_default__subtitle {
+  justify-self: right;
+}
+.form-elements .form-elements__title {
+  display: grid;
+  justify-self: left;
+  align-content: center;
+}
+
+.form-elements .form-elements__subtitle {
+  display: grid;
+  justify-self: right;
+}
 /*!*****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/ui-kit-template/ui-kit-template.scss ***!
   \*****************************************************************************************************************************************/
@@ -847,3 +916,137 @@ input:checked + .slider:before {
   top: 30px;
   background: url(dded68ce7f618a3b07f6.svg) no-repeat;
 }
+/*!****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/font-faces.scss ***!
+  \****************************************************************************************************************************/
+@font-face {
+  font-family: "Montserrat";
+  src: url(f8d4ca7d3eac34d2d5a6.woff2), url(92f9099c50f6abcbc6f6.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(4864fa64a4ca0d678210.woff2), url(1b85ddf71c245b802e72.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(4f3564bf83d4634c32ea.woff2), url(c0ab61c2a00761ede74e.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(d9740b725d5cecd53445.woff2), url(9c0434acc2db91787f5e.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/fonts.scss ***!
+  \***********************************************************************************************************************/
+
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/reset-styles.scss ***!
+  \***********************************************************************************************************************/
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+/*!********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/variables/breakpoints.scss ***!
+  \********************************************************************************************************************************/
+
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/variables/colors.scss ***!
+  \***************************************************************************************************************************/
+
