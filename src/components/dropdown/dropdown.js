@@ -86,26 +86,48 @@ class Dropdown {
             commonCounter,
             guestWordEnding,
             bedroomWordEnding,
-            bedWordEnding
+            bedWordEnding,
+            counter1,
+            counter2
         ) {
+            console.log(
+                'this FUCKING SHIT:',
+                commonCounter,
+                guestWordEnding,
+                bedroomWordEnding,
+                bedWordEnding,
+                counter1,
+                counter2
+            )
             if (commonCounter > 1 && commonCounter < 5) {
                 guestWordEnding = 'я'
-                bedroomWordEnding = 'ьни'
-                bedWordEnding = 'и'
-                return [guestWordEnding, bedroomWordEnding, bedWordEnding]
             }
+            if (counter1 > 1 && counter1 < 5) {
+                bedroomWordEnding = 'ьни'
+            }
+            if (counter2 > 1 && counter2 < 5) {
+                bedWordEnding = 'и'
+            }
+
             if (commonCounter >= 5 || commonCounter < 1) {
                 guestWordEnding = 'ей'
+            }
+            if (counter1 >= 5 || counter1 < 1) {
                 bedroomWordEnding = 'ен'
+            }
+            if (counter2 >= 5 || counter2 < 1) {
                 bedWordEnding = 'ей'
-                return [guestWordEnding, bedroomWordEnding, bedWordEnding]
             }
             if (commonCounter === 1) {
                 guestWordEnding = 'ь'
-                bedroomWordEnding = 'ьня'
-                bedWordEnding = 'ь'
-                return [guestWordEnding, bedroomWordEnding, bedWordEnding]
             }
+            if (counter1 === 1) {
+                bedroomWordEnding = 'ьня'
+            }
+            if (counter2 === 1) {
+                bedWordEnding = 'ь'
+            }
+            console.log([guestWordEnding, bedroomWordEnding, bedWordEnding])
             return [guestWordEnding, bedroomWordEnding, bedWordEnding]
         }
 
@@ -122,7 +144,9 @@ class Dropdown {
                                 commonCounter,
                                 guestWordEnding,
                                 bedroomWordEnding,
-                                bedWordEnding
+                                bedWordEnding,
+                                counter1,
+                                counter2
                             ),
                         ]
 
@@ -145,7 +169,9 @@ class Dropdown {
                                 commonCounter,
                                 guestWordEnding,
                                 bedroomWordEnding,
-                                bedWordEnding
+                                bedWordEnding,
+                                counter1,
+                                counter2
                             ),
                         ]
                         counterSelector.innerHTML = counter2
@@ -167,7 +193,9 @@ class Dropdown {
                                 commonCounter,
                                 guestWordEnding,
                                 bedroomWordEnding,
-                                bedWordEnding
+                                bedWordEnding,
+                                counter1,
+                                counter2
                             ),
                         ]
                         counterSelector.innerHTML = counter3
