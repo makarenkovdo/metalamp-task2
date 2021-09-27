@@ -27,8 +27,9 @@ mixin dropdown(instance, type)
         span(class="dropdown__counter js-dropdown_instance-" + instance + "__counter3") 0
         span(class="dropdown__increase js-dropdown_instance-" + instance + "__increase3")
             img(src='./img/plus.svg' alt='plus' width='13' height='8')
-        span(class="dropdown__clear js-dropdown_instance-" + instance + "__clear") ОЧИСТИТЬ
-        span(class="dropdown__apply js-dropdown_instance-" + instance + "__apply") ПРИМЕНИТЬ
+        if (!type)
+            span(class="dropdown__clear js-dropdown_instance-" + instance + "__clear hide") ОЧИСТИТЬ
+            span(class="dropdown__apply js-dropdown_instance-" + instance + "__apply hide") ПРИМЕНИТЬ
 
       
 
