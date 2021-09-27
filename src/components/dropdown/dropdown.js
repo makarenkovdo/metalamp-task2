@@ -118,98 +118,94 @@ class Dropdown {
             return [guestWordEnding, bedroomWordEnding, bedWordEnding]
         }
 
-        return function (shift, counterSelector) {
+        return function (shift, j) {
+            console.log(j, counter[j])
             if (shift === 0) {
                 console.log(this)
                 counter = [0, 0, 0, 0]
             }
-            switch (counterSelector.attributes.class.value) {
-                case `dropdown__counter js-dropdown_instance-${this.instance}__counter1`:
-                    if (counter[1] === 0 && shift < 0) {
-                        return counter[1]
-                    } else {
-                        counter[1] += shift
-                        counter[0] += shift
-                        ;[guestWordEnding, bedroomWordEnding, bedWordEnding] = [
-                            ...setWordEnding(
-                                counter,
-                                guestWordEnding,
-                                bedroomWordEnding,
-                                bedWordEnding
-                            ),
-                        ]
+            if (counter[j] === 0 && shift < 0) {
+                return counter[j]
+            } else {
+                counter[j] += shift
+                counter[0] += shift
+                ;[guestWordEnding, bedroomWordEnding, bedWordEnding] = [
+                    ...setWordEnding(
+                        counter,
+                        guestWordEnding,
+                        bedroomWordEnding,
+                        bedWordEnding
+                    ),
+                ]
 
-                        counterSelector.innerHTML = counter[1]
-                        if (counter[0] > 0) {
-                            this.$dropdownClearSelector.classList.remove('hide')
-                        } else {
-                            this.$dropdownClearSelector.classList.add('hide')
-                        }
-                        if (this.$dropdownType === 'room') {
-                            this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}`
-                        } else {
-                            this.$dropdownText.innerHTML = `${counter[0]} гост${guestWordEnding}`
-                        }
-                    }
-                    break
-                case `dropdown__counter js-dropdown_instance-${this.instance}__counter2`:
-                    if (counter[2] === 0 && shift < 0) {
-                        return counter[2]
-                    } else {
-                        counter[2] += shift
-                        counter[0] += shift
-                        ;[guestWordEnding, bedroomWordEnding, bedWordEnding] = [
-                            ...setWordEnding(
-                                counter,
-                                guestWordEnding,
-                                bedroomWordEnding,
-                                bedWordEnding
-                            ),
-                        ]
-                        counterSelector.innerHTML = counter[2]
-                        if (counter[0] > 0) {
-                            this.$dropdownClearSelector.classList.remove('hide')
-                        } else {
-                            this.$dropdownClearSelector.classList.add('hide')
-                        }
-                        if (this.$dropdownType === 'room') {
-                            this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}`
-                        } else {
-                            this.$dropdownText.innerHTML = `${counter[0]} гост${guestWordEnding}`
-                        }
-                    }
-                    break
-                case `dropdown__counter js-dropdown_instance-${this.instance}__counter3`:
-                    if (counter[3] === 0 && shift < 0) {
-                        return counter[3]
-                    } else {
-                        counter[3] += shift
-                        counter[0] += shift
-                        ;[guestWordEnding, bedroomWordEnding, bedWordEnding] = [
-                            ...setWordEnding(
-                                counter,
-                                guestWordEnding,
-                                bedroomWordEnding,
-                                bedWordEnding
-                            ),
-                        ]
-                        counterSelector.innerHTML = counter[3]
-                        if (counter[0] > 0) {
-                            this.$dropdownClearSelector.classList.remove('hide')
-                        } else {
-                            this.$dropdownClearSelector.classList.add('hide')
-                        }
-
-                        if (this.$dropdownType === 'room') {
-                            this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}`
-                        } else {
-                            this.$dropdownText.innerHTML = `${counter[0]} гост${guestWordEnding}`
-                        }
-                    }
-                    break
-                default:
-                    return false
+                this.$counterSelector1.innerHTML = counter[1]
+                this.$counterSelector2.innerHTML = counter[2]
+                this.$counterSelector3.innerHTML = counter[3]
+                if (counter[0] > 0) {
+                    this.$dropdownClearSelector.classList.remove('hide')
+                } else {
+                    this.$dropdownClearSelector.classList.add('hide')
+                }
+                if (this.$dropdownType === 'room') {
+                    this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}`
+                } else {
+                    this.$dropdownText.innerHTML = `${counter[0]} гост${guestWordEnding}`
+                }
             }
+            // case `dropdown__counter js-dropdown_instance-${this.instance}__counter2`:
+            //     if (counter[2] === 0 && shift < 0) {
+            //         return counter[2]
+            //     } else {
+            //         counter[2] += shift
+            //         counter[0] += shift
+            //         ;[guestWordEnding, bedroomWordEnding, bedWordEnding] = [
+            //             ...setWordEnding(
+            //                 counter,
+            //                 guestWordEnding,
+            //                 bedroomWordEnding,
+            //                 bedWordEnding
+            //             ),
+            //         ]
+            //         counterSelector.innerHTML = counter[2]
+            //         if (counter[0] > 0) {
+            //             this.$dropdownClearSelector.classList.remove('hide')
+            //         } else {
+            //             this.$dropdownClearSelector.classList.add('hide')
+            //         }
+            //         if (this.$dropdownType === 'room') {
+            //             this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}`
+            //         } else {
+            //             this.$dropdownText.innerHTML = `${counter[0]} гост${guestWordEnding}`
+            //         }
+            //     }
+            //     break
+            // case `dropdown__counter js-dropdown_instance-${this.instance}__counter3`:
+            //     if (counter[3] === 0 && shift < 0) {
+            //         return counter[3]
+            //     } else {
+            //         counter[3] += shift
+            //         counter[0] += shift
+            //         ;[guestWordEnding, bedroomWordEnding, bedWordEnding] = [
+            //             ...setWordEnding(
+            //                 counter,
+            //                 guestWordEnding,
+            //                 bedroomWordEnding,
+            //                 bedWordEnding
+            //             ),
+            //         ]
+            //         counterSelector.innerHTML = counter[3]
+            //         if (counter[0] > 0) {
+            //             this.$dropdownClearSelector.classList.remove('hide')
+            //         } else {
+            //             this.$dropdownClearSelector.classList.add('hide')
+            //         }
+
+            //         if (this.$dropdownType === 'room') {
+            //             this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}`
+            //         } else {
+            //             this.$dropdownText.innerHTML = `${counter[0]} гост${guestWordEnding}`
+            //         }
+            //     }
         }
     }
 }
@@ -232,54 +228,26 @@ for (let i = 0; i < dropdownArray.length; i++) {
     )
 
     dropdownArray[i].$increaseSelector1.addEventListener('click', () =>
-        dropdownArray[i].dropdownCounter.call(
-            dropdownArray[i],
-            1,
-            dropdownArray[i].$counterSelector1
-        )
+        dropdownArray[i].dropdownCounter.call(dropdownArray[i], 1, 1)
     )
     dropdownArray[i].$decreaseSelector1.addEventListener('click', () =>
-        dropdownArray[i].dropdownCounter.call(
-            dropdownArray[i],
-            -1,
-            dropdownArray[i].$counterSelector1
-        )
+        dropdownArray[i].dropdownCounter.call(dropdownArray[i], -1, 1)
     )
     dropdownArray[i].$increaseSelector2.addEventListener('click', () =>
-        dropdownArray[i].dropdownCounter.call(
-            dropdownArray[i],
-            1,
-            dropdownArray[i].$counterSelector2
-        )
+        dropdownArray[i].dropdownCounter.call(dropdownArray[i], 1, 2)
     )
     dropdownArray[i].$decreaseSelector2.addEventListener('click', () =>
-        dropdownArray[i].dropdownCounter.call(
-            dropdownArray[i],
-            -1,
-            dropdownArray[i].$counterSelector2
-        )
+        dropdownArray[i].dropdownCounter.call(dropdownArray[i], -1, 2)
     )
     dropdownArray[i].$increaseSelector3.addEventListener('click', () =>
-        dropdownArray[i].dropdownCounter.call(
-            dropdownArray[i],
-            1,
-            dropdownArray[i].$counterSelector3
-        )
+        dropdownArray[i].dropdownCounter.call(dropdownArray[i], 1, 3)
     )
     dropdownArray[i].$decreaseSelector3.addEventListener('click', () =>
-        dropdownArray[i].dropdownCounter.call(
-            dropdownArray[i],
-            -1,
-            dropdownArray[i].$counterSelector3
-        )
+        dropdownArray[i].dropdownCounter.call(dropdownArray[i], -1, 3)
     )
     if (!dropdownArray[i].$dropdownType) {
         dropdownArray[i].$dropdownClearSelector.addEventListener('click', () =>
-            dropdownArray[i].dropdownCounter.call(
-                dropdownArray[i],
-                0,
-                dropdownArray[i].$counterSelector3
-            )
+            dropdownArray[i].dropdownCounter.call(dropdownArray[i], 0, 0)
         )
     }
 
