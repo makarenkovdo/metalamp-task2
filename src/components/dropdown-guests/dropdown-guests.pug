@@ -2,7 +2,7 @@ mixin dropdown-guests(instance, type)
     - const roomArray = ['0 спален, 0 кроватей','СПАЛЬНИ', 'КРОВАТИ', 'ВАННЫЕ КОМНАТЫ']
     - const guestsArray = ['Сколько гостей?','ВЗРОСЛЫЕ', 'ДЕТИ', 'МЛАДЕНЦЫ']
 
-    div(class="js-dropdown_instance-" + instance +"_type")= type
+    div(class="js-dropdown_instance-" + instance +"_type" style="display:none")= type
     div(class="dropdown-guests js-dropdown_instance-" + instance + "-guests")
         div(class="dropdown__button js-dropdown_instance-" + instance + "__button")
             span(class="dropdown__text js-dropdown_instance-" + instance + "__text")= type? roomArray[0]:guestsArray[0]
