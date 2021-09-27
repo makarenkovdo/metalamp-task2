@@ -75,154 +75,135 @@ class Dropdown {
         }
     }
     makeDropdownCounter() {
-        console.log('some log!')
-        console.log(this)
+        let counter = [0, 0, 0, 0] //counter[0] is a sum of counters
 
-        let commonCounter = 0
-        let counter1 = 0
-        let counter2 = 0
-        let counter3 = 0
         let guestWordEnding = 'ь'
         let bedroomWordEnding = 'ен'
         let bedWordEnding = 'ей'
 
         function setWordEnding(
-            commonCounter,
+            counter,
             guestWordEnding,
             bedroomWordEnding,
-            bedWordEnding,
-            counter1,
-            counter2
+            bedWordEnding
         ) {
-            console.log(
-                'this FUCKING SHIT:',
-                commonCounter,
-                guestWordEnding,
-                bedroomWordEnding,
-                bedWordEnding,
-                counter1,
-                counter2
-            )
-            if (commonCounter > 1 && commonCounter < 5) {
+            if (counter[0] > 1 && counter[0] < 5) {
                 guestWordEnding = 'я'
             }
-            if (counter1 > 1 && counter1 < 5) {
+            if (counter[1] > 1 && counter[1] < 5) {
                 bedroomWordEnding = 'ьни'
             }
-            if (counter2 > 1 && counter2 < 5) {
+            if (counter[2] > 1 && counter[2] < 5) {
                 bedWordEnding = 'и'
             }
 
-            if (commonCounter >= 5 || commonCounter < 1) {
+            if (counter[0] >= 5 || counter[0] < 1) {
                 guestWordEnding = 'ей'
             }
-            if (counter1 >= 5 || counter1 < 1) {
+            if (counter[1] >= 5 || counter[1] < 1) {
                 bedroomWordEnding = 'ен'
             }
-            if (counter2 >= 5 || counter2 < 1) {
+            if (counter[2] >= 5 || counter[2] < 1) {
                 bedWordEnding = 'ей'
             }
-            if (commonCounter === 1) {
+            if (counter[0] === 1) {
                 guestWordEnding = 'ь'
             }
-            if (counter1 === 1) {
+            if (counter[1] === 1) {
                 bedroomWordEnding = 'ьня'
             }
-            if (counter2 === 1) {
+            if (counter[2] === 1) {
                 bedWordEnding = 'ь'
             }
-            console.log([guestWordEnding, bedroomWordEnding, bedWordEnding])
             return [guestWordEnding, bedroomWordEnding, bedWordEnding]
         }
 
         return function (shift, counterSelector) {
+            if (shift === 0) {
+                console.log(this)
+                counter = [0, 0, 0, 0]
+            }
             switch (counterSelector.attributes.class.value) {
                 case `dropdown__counter js-dropdown_instance-${this.instance}__counter1`:
-                    if (counter1 === 0 && shift < 0) {
-                        return counter1
+                    if (counter[1] === 0 && shift < 0) {
+                        return counter[1]
                     } else {
-                        counter1 += shift
-                        commonCounter += shift
+                        counter[1] += shift
+                        counter[0] += shift
                         ;[guestWordEnding, bedroomWordEnding, bedWordEnding] = [
                             ...setWordEnding(
-                                commonCounter,
+                                counter,
                                 guestWordEnding,
                                 bedroomWordEnding,
-                                bedWordEnding,
-                                counter1,
-                                counter2
+                                bedWordEnding
                             ),
                         ]
 
-                        counterSelector.innerHTML = counter1
-                        if (commonCounter > 0) {
+                        counterSelector.innerHTML = counter[1]
+                        if (counter[0] > 0) {
                             this.$dropdownClearSelector.classList.remove('hide')
                         } else {
                             this.$dropdownClearSelector.classList.add('hide')
                         }
                         if (this.$dropdownType === 'room') {
-                            this.$dropdownText.innerHTML = `${counter1} спал${bedroomWordEnding}, ${counter2} кроват${bedWordEnding}`
+                            this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}`
                         } else {
-                            this.$dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
+                            this.$dropdownText.innerHTML = `${counter[0]} гост${guestWordEnding}`
                         }
                     }
                     break
                 case `dropdown__counter js-dropdown_instance-${this.instance}__counter2`:
-                    if (counter2 === 0 && shift < 0) {
-                        return counter2
+                    if (counter[2] === 0 && shift < 0) {
+                        return counter[2]
                     } else {
-                        counter2 += shift
-                        commonCounter += shift
+                        counter[2] += shift
+                        counter[0] += shift
                         ;[guestWordEnding, bedroomWordEnding, bedWordEnding] = [
                             ...setWordEnding(
-                                commonCounter,
+                                counter,
                                 guestWordEnding,
                                 bedroomWordEnding,
-                                bedWordEnding,
-                                counter1,
-                                counter2
+                                bedWordEnding
                             ),
                         ]
-                        counterSelector.innerHTML = counter2
-                        if (commonCounter > 0) {
+                        counterSelector.innerHTML = counter[2]
+                        if (counter[0] > 0) {
                             this.$dropdownClearSelector.classList.remove('hide')
                         } else {
                             this.$dropdownClearSelector.classList.add('hide')
                         }
                         if (this.$dropdownType === 'room') {
-                            this.$dropdownText.innerHTML = `${counter1} спал${bedroomWordEnding}, ${counter2} кроват${bedWordEnding}`
+                            this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}`
                         } else {
-                            this.$dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
+                            this.$dropdownText.innerHTML = `${counter[0]} гост${guestWordEnding}`
                         }
                     }
                     break
                 case `dropdown__counter js-dropdown_instance-${this.instance}__counter3`:
-                    if (counter3 === 0 && shift < 0) {
-                        return counter3
+                    if (counter[3] === 0 && shift < 0) {
+                        return counter[3]
                     } else {
-                        counter3 += shift
-                        commonCounter += shift
+                        counter[3] += shift
+                        counter[0] += shift
                         ;[guestWordEnding, bedroomWordEnding, bedWordEnding] = [
                             ...setWordEnding(
-                                commonCounter,
+                                counter,
                                 guestWordEnding,
                                 bedroomWordEnding,
-                                bedWordEnding,
-                                counter1,
-                                counter2
+                                bedWordEnding
                             ),
                         ]
-                        counterSelector.innerHTML = counter3
-                        if (commonCounter > 0) {
+                        counterSelector.innerHTML = counter[3]
+                        if (counter[0] > 0) {
                             this.$dropdownClearSelector.classList.remove('hide')
                         } else {
                             this.$dropdownClearSelector.classList.add('hide')
                         }
 
                         if (this.$dropdownType === 'room') {
-                            this.$dropdownText.innerHTML = `${counter1} спал${bedroomWordEnding}, ${counter2} кроват${bedWordEnding}`
+                            this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}`
                         } else {
-                            this.$dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
+                            this.$dropdownText.innerHTML = `${counter[0]} гост${guestWordEnding}`
                         }
                     }
                     break
@@ -243,7 +224,6 @@ function createDropdowns(n) {
     return dropdownArray
 }
 const dropdownArray = createDropdowns(5)
-console.log(dropdownArray)
 
 for (let i = 0; i < dropdownArray.length; i++) {
     dropdownArray[i].$dropdownContainerImg.addEventListener(
@@ -293,6 +273,19 @@ for (let i = 0; i < dropdownArray.length; i++) {
             dropdownArray[i].$counterSelector3
         )
     )
+    if (!dropdownArray[i].$dropdownType) {
+        dropdownArray[i].$dropdownClearSelector.addEventListener('click', () =>
+            dropdownArray[i].dropdownCounter.call(
+                dropdownArray[i],
+                0,
+                dropdownArray[i].$counterSelector3
+            )
+        )
+    }
+
+    // dropdownArray[i].$dropdownClearSelector.addEventListener('click', () =>
+    //     console.log('SHIT')
+    // )
 }
 // dropdownArray[i].$dropdownContainer.addEventListener('click', () =>
 //     console.log('CLASSES WORKS')

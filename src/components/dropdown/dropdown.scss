@@ -64,6 +64,7 @@
 
         margin-top: 7px;
         margin-right: 7px;
+        cursor: pointer;
     }
 
     &__decrease {
@@ -78,6 +79,7 @@
         border: 1px solid rgba(31, 32, 65, 0.25);
         box-sizing: border-box;
         border-radius: 22px;
+        cursor: pointer;
     }
     &__popup {
         position: absolute;
@@ -137,9 +139,11 @@
 
         /* Primary Color */
         color: #bc9cff;
+        cursor: pointer;
     }
     &__clear {
         display: grid;
+        cursor: pointer;
 
         justify-self: left;
 
