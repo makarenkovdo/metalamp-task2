@@ -12,6 +12,12 @@ class Dropdown {
         this.$dropdownClearSelector = document.querySelector(
             `.js-dropdown_instance-${this.instance}__clear`
         )
+        this.$dropdownApplySelector = document.querySelector(
+            `.js-dropdown_instance-${this.instance}__apply`
+        )
+        this.$buttonSelector = document.querySelector(
+            `.js-dropdown_instance-${this.instance}__button`
+        )
 
         this.$dropdownContainerImg = document.querySelector(
             `.js-dropdown_instance-${this.instance}__img-box`
@@ -173,9 +179,8 @@ const dropdownArray = createDropdowns(5)
 console.log(dropdownArray[1].$increaseSelector[1])
 
 for (let i = 0; i < dropdownArray.length; i++) {
-    dropdownArray[i].$dropdownContainerImg.addEventListener(
-        'click',
-        dropdownArray[i].handleDropdownClick.bind(dropdownArray[i])
+    dropdownArray[i].$buttonSelector.addEventListener('click', () =>
+        dropdownArray[i].handleDropdownClick.call(dropdownArray[i])
     )
     for (let j = 1; j <= 3; j++) {
         console.log(dropdownArray[i].$increaseSelector[j])
@@ -190,6 +195,9 @@ for (let i = 0; i < dropdownArray.length; i++) {
     if (!dropdownArray[i].$type) {
         dropdownArray[i].$dropdownClearSelector.addEventListener('click', () =>
             dropdownArray[i].dropdownCounter.call(dropdownArray[i], 0, 0)
+        )
+        dropdownArray[i].$dropdownApplySelector.addEventListener('click', () =>
+            dropdownArray[i].handleDropdownClick.call(dropdownArray[i])
         )
     }
 }
