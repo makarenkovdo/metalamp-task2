@@ -63,14 +63,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/components/dropdown-guests/dropdown-guests.svg":
-/*!************************************************************!*\
-  !*** ./src/components/dropdown-guests/dropdown-guests.svg ***!
-  \************************************************************/
+/***/ "./src/components/dropdown/dropdown.svg":
+/*!**********************************************!*\
+  !*** ./src/components/dropdown/dropdown.svg ***!
+  \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/dropdown-guests.svg\");\n\n//# sourceURL=webpack://task2/./src/components/dropdown-guests/dropdown-guests.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/dropdown.svg\");\n\n//# sourceURL=webpack://task2/./src/components/dropdown/dropdown.svg?");
 
 /***/ }),
 
@@ -247,6 +247,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/dropdown-guests/dropdown-guests.scss?");
+
+/***/ }),
+
+/***/ "./src/components/dropdown/dropdown.scss":
+/*!***********************************************!*\
+  !*** ./src/components/dropdown/dropdown.scss ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/components/dropdown/dropdown.scss?");
 
 /***/ }),
 
@@ -454,7 +465,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./block-subtitle/block-subtitle.scss\": \"./src/components/block-subtitle/block-subtitle.scss\",\n\t\"./block-title/block-title.scss\": \"./src/components/block-title/block-title.scss\",\n\t\"./button/button.scss\": \"./src/components/button/button.scss\",\n\t\"./checkbox-expandable-list/checkbox-expandable-list.scss\": \"./src/components/checkbox-expandable-list/checkbox-expandable-list.scss\",\n\t\"./checkbox-list/checkbox-list.scss\": \"./src/components/checkbox-list/checkbox-list.scss\",\n\t\"./checkbox/checkbox.scss\": \"./src/components/checkbox/checkbox.scss\",\n\t\"./color-block/color-block.scss\": \"./src/components/color-block/color-block.scss\",\n\t\"./dropdown-guests/dropdown-guests.scss\": \"./src/components/dropdown-guests/dropdown-guests.scss\",\n\t\"./interior-form-texts-mixins.scss\": \"./src/components/interior-form-texts-mixins.scss\",\n\t\"./like-button/like-button.scss\": \"./src/components/like-button/like-button.scss\",\n\t\"./radio-button/radio-button.scss\": \"./src/components/radio-button/radio-button.scss\",\n\t\"./rate-button/rate-button.scss\": \"./src/components/rate-button/rate-button.scss\",\n\t\"./registration/registration.scss\": \"./src/components/registration/registration.scss\",\n\t\"./rich-checkbox/rich-checkbox.scss\": \"./src/components/rich-checkbox/rich-checkbox.scss\",\n\t\"./test/test.scss\": \"./src/components/test/test.scss\",\n\t\"./text-field/text-field.scss\": \"./src/components/text-field/text-field.scss\",\n\t\"./toggle/toggle.scss\": \"./src/components/toggle/toggle.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.scss$?");
+eval("var map = {\n\t\"./block-subtitle/block-subtitle.scss\": \"./src/components/block-subtitle/block-subtitle.scss\",\n\t\"./block-title/block-title.scss\": \"./src/components/block-title/block-title.scss\",\n\t\"./button/button.scss\": \"./src/components/button/button.scss\",\n\t\"./checkbox-expandable-list/checkbox-expandable-list.scss\": \"./src/components/checkbox-expandable-list/checkbox-expandable-list.scss\",\n\t\"./checkbox-list/checkbox-list.scss\": \"./src/components/checkbox-list/checkbox-list.scss\",\n\t\"./checkbox/checkbox.scss\": \"./src/components/checkbox/checkbox.scss\",\n\t\"./color-block/color-block.scss\": \"./src/components/color-block/color-block.scss\",\n\t\"./dropdown-guests/dropdown-guests.scss\": \"./src/components/dropdown-guests/dropdown-guests.scss\",\n\t\"./dropdown/dropdown.scss\": \"./src/components/dropdown/dropdown.scss\",\n\t\"./interior-form-texts-mixins.scss\": \"./src/components/interior-form-texts-mixins.scss\",\n\t\"./like-button/like-button.scss\": \"./src/components/like-button/like-button.scss\",\n\t\"./radio-button/radio-button.scss\": \"./src/components/radio-button/radio-button.scss\",\n\t\"./rate-button/rate-button.scss\": \"./src/components/rate-button/rate-button.scss\",\n\t\"./registration/registration.scss\": \"./src/components/registration/registration.scss\",\n\t\"./rich-checkbox/rich-checkbox.scss\": \"./src/components/rich-checkbox/rich-checkbox.scss\",\n\t\"./test/test.scss\": \"./src/components/test/test.scss\",\n\t\"./text-field/text-field.scss\": \"./src/components/text-field/text-field.scss\",\n\t\"./toggle/toggle.scss\": \"./src/components/toggle/toggle.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.scss$?");
 
 /***/ }),
 
@@ -464,7 +475,7 @@ eval("var map = {\n\t\"./block-subtitle/block-subtitle.scss\": \"./src/component
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./checkbox-expandable-list/close-checkbox-expandable-list.svg\": \"./src/components/checkbox-expandable-list/close-checkbox-expandable-list.svg\",\n\t\"./checkbox-expandable-list/open-checkbox-expandable-list.svg\": \"./src/components/checkbox-expandable-list/open-checkbox-expandable-list.svg\",\n\t\"./datepicker/arrow-back.svg\": \"./src/components/datepicker/arrow-back.svg\",\n\t\"./datepicker/arrow-forward.svg\": \"./src/components/datepicker/arrow-forward.svg\",\n\t\"./dropdown-guests/dropdown-guests.svg\": \"./src/components/dropdown-guests/dropdown-guests.svg\",\n\t\"./dropdown/minus.svg\": \"./src/components/dropdown/minus.svg\",\n\t\"./dropdown/plus.svg\": \"./src/components/dropdown/plus.svg\",\n\t\"./like-button/like-active.svg\": \"./src/components/like-button/like-active.svg\",\n\t\"./like-button/like-border.svg\": \"./src/components/like-button/like-border.svg\",\n\t\"./rate-button/rate-button-white.svg\": \"./src/components/rate-button/rate-button-white.svg\",\n\t\"./rate-button/rate-button.svg\": \"./src/components/rate-button/rate-button.svg\",\n\t\"./subscription-text-field/narrow.svg\": \"./src/components/subscription-text-field/narrow.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.svg$?");
+eval("var map = {\n\t\"./checkbox-expandable-list/close-checkbox-expandable-list.svg\": \"./src/components/checkbox-expandable-list/close-checkbox-expandable-list.svg\",\n\t\"./checkbox-expandable-list/open-checkbox-expandable-list.svg\": \"./src/components/checkbox-expandable-list/open-checkbox-expandable-list.svg\",\n\t\"./datepicker/arrow-back.svg\": \"./src/components/datepicker/arrow-back.svg\",\n\t\"./datepicker/arrow-forward.svg\": \"./src/components/datepicker/arrow-forward.svg\",\n\t\"./dropdown/dropdown.svg\": \"./src/components/dropdown/dropdown.svg\",\n\t\"./dropdown/minus.svg\": \"./src/components/dropdown/minus.svg\",\n\t\"./dropdown/plus.svg\": \"./src/components/dropdown/plus.svg\",\n\t\"./like-button/like-active.svg\": \"./src/components/like-button/like-active.svg\",\n\t\"./like-button/like-border.svg\": \"./src/components/like-button/like-border.svg\",\n\t\"./rate-button/rate-button-white.svg\": \"./src/components/rate-button/rate-button-white.svg\",\n\t\"./rate-button/rate-button.svg\": \"./src/components/rate-button/rate-button.svg\",\n\t\"./subscription-text-field/narrow.svg\": \"./src/components/subscription-text-field/narrow.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.svg$?");
 
 /***/ }),
 

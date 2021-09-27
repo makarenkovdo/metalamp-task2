@@ -13,7 +13,7 @@ class Dropdown {
             `.js-dropdown_instance-${this.instance}__img-box`
         )
         this.$dropdownContainer = document.querySelector(
-            `.js-dropdown_instance-${this.instance}-guests`
+            `.js-dropdown_instance-${this.instance}`
         )
         this.$dropdownPopupContainer = document.querySelector(
             `.js-dropdown_instance-${this.instance}__popup`

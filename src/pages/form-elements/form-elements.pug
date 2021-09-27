@@ -5,7 +5,7 @@ include ../../components/block-title/block-title
 include ../../components/button/button
 include ../../components/checkbox-list/checkbox-list
 include ../../components/checkbox/checkbox
-include ../../components/dropdown-guests/dropdown-guests
+include ../../components/dropdown/dropdown
 include ../../components/like-button/like-button
 include ../../components/radio-button/radio-button
 include ../../components/text-field/text-field
@@ -24,12 +24,12 @@ block content
                 +block-title('TEXT FIELD')
                 +block-subtitle('HOVER/FOCUS')
                 +text-field ('This is pretty awesome','email', 'Email')
-            .dropdown-guests_closes 
-                +dropdown-guests(1)
-                +dropdown-guests(2, 'room')
-                +dropdown-guests(3, 'room')
-                +dropdown-guests(4)
-                +dropdown-guests(5)
+            .dropdown 
+                +dropdown(1)
+                +dropdown(2, 'room')
+                +dropdown(3, 'room')
+                +dropdown(4)
+                +dropdown(5)
                 //- +dropdown-guests()
 
         //- .checkbox-list-block

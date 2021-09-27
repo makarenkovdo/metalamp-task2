@@ -11,7 +11,7 @@ const pugPages = ['color-and-type', 'test', 'form-elements']
 const pugComponents = [
     'checkbox',
     'checkbox-list',
-    'dropdown-guests',
+    'dropdown',
     'radio-button',
     'like-button',
 ]
