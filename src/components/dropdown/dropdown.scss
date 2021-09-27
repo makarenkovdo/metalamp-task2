@@ -118,6 +118,39 @@
         /* Dark 100% */
         color: #1f2041;
     }
+    &__apply {
+        display: grid;
+
+        /* применить */
+
+        width: 84px;
+        justify-self: right;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        text-transform: uppercase;
+
+        /* Primary Color */
+        color: #bc9cff;
+    }
+    &__clear {
+        display: grid;
+
+        justify-self: left;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        text-transform: uppercase;
+
+        color: #bc9cff;
+    }
 
     @media (max-width: 479px) {
     }
