@@ -1,6 +1,9 @@
 class Dropdown {
     constructor(number) {
         this.isDropdownOpen = false
+        this.$dropdownType = document.querySelector(
+            `.js-dropdown_instance-${number}_type`
+        ).innerHTML
         this.$dropdownInstanceNumber = document.querySelector(
             `.js-dropdown_instance-number`
         )
@@ -76,8 +79,10 @@ class Dropdown {
         let counter2 = 0
         let counter3 = 0
         let guestWordEnding = 'ь'
+        let bedroomWordEnding = 'ен'
+        let bedWordEnding = 'ей'
 
-        function setGuestWordEnging(guestWordEnding, commonCounter) {
+        function setGuestWordEnding(guestWordEnding, commonCounter) {
             if (commonCounter > 1 && commonCounter < 5) {
                 return (guestWordEnding = 'я')
             }
@@ -94,7 +99,9 @@ class Dropdown {
             console.log('inside')
             console.log(this)
             console.log(this.instance)
+            console.log(this.$dropdownType)
             console.log(counterSelector)
+
             switch (counterSelector.attributes.class.value) {
                 case `dropdown__counter js-dropdown_instance-${this.instance}__counter1`:
                     if (counter1 === 0 && shift < 0) {
@@ -102,14 +109,13 @@ class Dropdown {
                     } else {
                         counter1 += shift
                         commonCounter += shift
-                        guestWordEnding = setGuestWordEnging(
+                        guestWordEnding = setGuestWordEnding(
                             guestWordEnding,
                             commonCounter
                         )
 
                         counterSelector.innerHTML = counter1
-                        console.log(this)
-                        console.log('?')
+                        console.log(this.$dropdownType)
                         this.$dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
                     }
                     break
@@ -119,7 +125,7 @@ class Dropdown {
                     } else {
                         counter2 += shift
                         commonCounter += shift
-                        guestWordEnding = setGuestWordEnging(
+                        guestWordEnding = setGuestWordEnding(
                             guestWordEnding,
                             commonCounter
                         )
@@ -133,7 +139,7 @@ class Dropdown {
                     } else {
                         counter3 += shift
                         commonCounter += shift
-                        guestWordEnding = setGuestWordEnging(
+                        guestWordEnding = setGuestWordEnding(
                             guestWordEnding,
                             commonCounter
                         )
