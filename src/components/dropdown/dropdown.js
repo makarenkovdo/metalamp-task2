@@ -75,13 +75,12 @@ class Dropdown {
             this.isDropdownOpen = false
         }
         function openDropdownBox() {
-            const x = this.$dropdownContainer.getBoundingClientRect().x
+            const x = this.$dropdownContainer.offsetLeft
             const y =
-                this.$dropdownContainer.getBoundingClientRect().y +
-                this.$dropdownContainer.getBoundingClientRect().height
-            this.$dropdownPopupContainer.classList.remove('hide')
+                this.$dropdownContainer.offsetTop +
+                this.$dropdownContainer.offsetHeight
             this.$dropdownPopupContainer.style.cssText = `left:${x}px; top: ${y}px; `
-
+            this.$dropdownPopupContainer.classList.remove('hide')
             this.isDropdownOpen = true
         }
     }
