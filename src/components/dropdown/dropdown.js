@@ -157,7 +157,7 @@ function createDropdowns(n) {
     }
     return dropdownArray
 }
-const dropdownArray = createDropdowns(3)
+const dropdownArray = createDropdowns(5)
 console.log(dropdownArray)
 
 for (let i = 0; i < dropdownArray.length; i++) {
