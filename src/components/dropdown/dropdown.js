@@ -1,10 +1,10 @@
-class Drodpown {
-    constructor() {
+class Dropdown {
+    constructor(number) {
         this.isDropdownOpen = false
         this.$dropdownInstanceNumber = document.querySelector(
             `.js-dropdown_instance-number`
         )
-        this.instance = this.$dropdownInstanceNumber.innerHTML
+        this.instance = number
 
         this.$dropdownContainerImg = document.querySelector(
             `.js-dropdown_instance-${this.instance}__img-box`
@@ -48,8 +48,6 @@ class Drodpown {
         this.dropdownCounter = this.makeDropdownCounter()
     }
     handleDropdownClick() {
-        console.log('something new ')
-        console.log(this)
         this.isDropdownOpen
             ? closeDropdownBox.call(this)
             : openDropdownBox.call(this)
@@ -59,8 +57,6 @@ class Drodpown {
             this.isDropdownOpen = false
         }
         function openDropdownBox() {
-            console.log(this)
-
             const x = this.$dropdownContainer.getBoundingClientRect().x
             const y =
                 this.$dropdownContainer.getBoundingClientRect().y +
@@ -73,6 +69,7 @@ class Drodpown {
     }
     makeDropdownCounter() {
         console.log('some log!')
+        console.log(this)
 
         let commonCounter = 0
         let counter1 = 0
@@ -94,8 +91,12 @@ class Drodpown {
         }
 
         return function (shift, counterSelector) {
+            console.log('inside')
+            console.log(this)
+            console.log(this.instance)
+            console.log(counterSelector)
             switch (counterSelector.attributes.class.value) {
-                case `dropdown__counter js-dropdown_instance-${instance}__counter1`:
+                case `dropdown__counter js-dropdown_instance-${this.instance}__counter1`:
                     if (counter1 === 0 && shift < 0) {
                         return counter1
                     } else {
@@ -107,10 +108,12 @@ class Drodpown {
                         )
 
                         counterSelector.innerHTML = counter1
+                        console.log(this)
+                        console.log('?')
                         this.$dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
                     }
                     break
-                case `dropdown__counter js-dropdown_instance-${instance}__counter2`:
+                case `dropdown__counter js-dropdown_instance-${this.instance}__counter2`:
                     if (counter2 === 0 && shift < 0) {
                         return counter2
                     } else {
@@ -124,7 +127,7 @@ class Drodpown {
                         this.$dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
                     }
                     break
-                case `dropdown__counter js-dropdown_instance-${instance}__counter3`:
+                case `dropdown__counter js-dropdown_instance-${this.instance}__counter3`:
                     if (counter3 === 0 && shift < 0) {
                         return counter3
                     } else {
@@ -145,17 +148,31 @@ class Drodpown {
     }
 }
 
-const dropdown1 = new Drodpown()
-console.log(dropdown1)
+// const dropdown1 = new Dropdown(1)
+// const dropdown2 = new Dropdown(2)
+function createDropdowns(n) {
+    const dropdownArray = new Array(n)
+    for (let i = 0; i < n; i++) {
+        dropdownArray[i] = new Dropdown(i + 1)
+    }
+    return dropdownArray
+}
+
+console.log(createDropdowns(3))
 dropdown1.$dropdownContainerImg.addEventListener(
     'click',
     dropdown1.handleDropdownClick.bind(dropdown1)
 )
-console.log(dropdown1.dropdownCounter)
-console.log(dropdown1.handleDropdownClick)
+dropdown2.$dropdownContainerImg.addEventListener(
+    'click',
+    dropdown2.handleDropdownClick.bind(dropdown2)
+)
 
 dropdown1.$increaseSelector1.addEventListener('click', () =>
-    this.dropdownCounter(1, this.$counterSelector1)
+    dropdown1.dropdownCounter.call(dropdown1, 1, dropdown1.$counterSelector1)
+)
+dropdown2.$increaseSelector1.addEventListener('click', () =>
+    dropdown2.dropdownCounter.call(dropdown2, 1, dropdown2.$counterSelector1)
 )
 dropdown1.$decreaseSelector1.addEventListener('click', () =>
     this.dropdownCounter(-1, this.$counterSelector1)
