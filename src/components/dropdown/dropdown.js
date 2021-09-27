@@ -148,7 +148,7 @@ class Dropdown {
     }
 }
 
-// const dropdown1 = new Dropdown(1)
+// const dropdownArray[i] = new Dropdown(1)
 // const dropdown2 = new Dropdown(2)
 function createDropdowns(n) {
     const dropdownArray = new Array(n)
@@ -157,38 +157,58 @@ function createDropdowns(n) {
     }
     return dropdownArray
 }
+const dropdownArray = createDropdowns(3)
+console.log(dropdownArray)
 
-console.log(createDropdowns(3))
-dropdown1.$dropdownContainerImg.addEventListener(
-    'click',
-    dropdown1.handleDropdownClick.bind(dropdown1)
-)
-dropdown2.$dropdownContainerImg.addEventListener(
-    'click',
-    dropdown2.handleDropdownClick.bind(dropdown2)
-)
+for (let i = 0; i < dropdownArray.length; i++) {
+    dropdownArray[i].$dropdownContainerImg.addEventListener(
+        'click',
+        dropdownArray[i].handleDropdownClick.bind(dropdownArray[i])
+    )
 
-dropdown1.$increaseSelector1.addEventListener('click', () =>
-    dropdown1.dropdownCounter.call(dropdown1, 1, dropdown1.$counterSelector1)
-)
-dropdown2.$increaseSelector1.addEventListener('click', () =>
-    dropdown2.dropdownCounter.call(dropdown2, 1, dropdown2.$counterSelector1)
-)
-dropdown1.$decreaseSelector1.addEventListener('click', () =>
-    this.dropdownCounter(-1, this.$counterSelector1)
-)
-dropdown1.$increaseSelector2.addEventListener('click', () =>
-    this.dropdownCounter(1, this.$counterSelector2)
-)
-dropdown1.$decreaseSelector2.addEventListener('click', () =>
-    this.dropdownCounter(-1, this.$counterSelector2)
-)
-dropdown1.$increaseSelector3.addEventListener('click', () => {
-    this.dropdownCounter(1, this.$counterSelector3)
-})
-dropdown1.$decreaseSelector3.addEventListener('click', () =>
-    this.dropdownCounter(-1, this.$counterSelector3)
-)
-// dropdown1.$dropdownContainer.addEventListener('click', () =>
+    dropdownArray[i].$increaseSelector1.addEventListener('click', () =>
+        dropdownArray[i].dropdownCounter.call(
+            dropdownArray[i],
+            1,
+            dropdownArray[i].$counterSelector1
+        )
+    )
+    dropdownArray[i].$decreaseSelector1.addEventListener('click', () =>
+        dropdownArray[i].dropdownCounter.call(
+            dropdownArray[i],
+            -1,
+            dropdownArray[i].$counterSelector1
+        )
+    )
+    dropdownArray[i].$increaseSelector2.addEventListener('click', () =>
+        dropdownArray[i].dropdownCounter.call(
+            dropdownArray[i],
+            1,
+            dropdownArray[i].$counterSelector2
+        )
+    )
+    dropdownArray[i].$decreaseSelector2.addEventListener('click', () =>
+        dropdownArray[i].dropdownCounter.call(
+            dropdownArray[i],
+            -1,
+            dropdownArray[i].$counterSelector2
+        )
+    )
+    dropdownArray[i].$increaseSelector3.addEventListener('click', () =>
+        dropdownArray[i].dropdownCounter.call(
+            dropdownArray[i],
+            1,
+            dropdownArray[i].$counterSelector3
+        )
+    )
+    dropdownArray[i].$decreaseSelector3.addEventListener('click', () =>
+        dropdownArray[i].dropdownCounter.call(
+            dropdownArray[i],
+            -1,
+            dropdownArray[i].$counterSelector3
+        )
+    )
+}
+// dropdownArray[i].$dropdownContainer.addEventListener('click', () =>
 //     console.log('CLASSES WORKS')
 // )
