@@ -82,26 +82,34 @@ class Dropdown {
         let bedroomWordEnding = 'ен'
         let bedWordEnding = 'ей'
 
-        function setGuestWordEnding(guestWordEnding, commonCounter) {
+        function setWordEnding(
+            commonCounter,
+            guestWordEnding,
+            bedroomWordEnding,
+            bedWordEnding
+        ) {
             if (commonCounter > 1 && commonCounter < 5) {
-                return (guestWordEnding = 'я')
+                guestWordEnding = 'я'
+                bedroomWordEnding = 'ьни'
+                bedWordEnding = 'и'
+                return [guestWordEnding, bedroomWordEnding, bedWordEnding]
             }
-            if (commonCounter > 5 || commonCounter < 1) {
-                return (guestWordEnding = 'ей')
+            if (commonCounter >= 5 || commonCounter < 1) {
+                guestWordEnding = 'ей'
+                bedroomWordEnding = 'ен'
+                bedWordEnding = 'ей'
+                return [guestWordEnding, bedroomWordEnding, bedWordEnding]
             }
             if (commonCounter === 1) {
-                return (guestWordEnding = 'ь')
+                guestWordEnding = 'ь'
+                bedroomWordEnding = 'ьня'
+                bedWordEnding = 'ь'
+                return [guestWordEnding, bedroomWordEnding, bedWordEnding]
             }
-            return guestWordEnding
+            return [guestWordEnding, bedroomWordEnding, bedWordEnding]
         }
 
         return function (shift, counterSelector) {
-            console.log('inside')
-            console.log(this)
-            console.log(this.instance)
-            console.log(this.$dropdownType)
-            console.log(counterSelector)
-
             switch (counterSelector.attributes.class.value) {
                 case `dropdown__counter js-dropdown_instance-${this.instance}__counter1`:
                     if (counter1 === 0 && shift < 0) {
@@ -109,14 +117,21 @@ class Dropdown {
                     } else {
                         counter1 += shift
                         commonCounter += shift
-                        guestWordEnding = setGuestWordEnding(
-                            guestWordEnding,
-                            commonCounter
-                        )
+                        ;[guestWordEnding, bedroomWordEnding, bedWordEnding] = [
+                            ...setWordEnding(
+                                commonCounter,
+                                guestWordEnding,
+                                bedroomWordEnding,
+                                bedWordEnding
+                            ),
+                        ]
 
                         counterSelector.innerHTML = counter1
-                        console.log(this.$dropdownType)
-                        this.$dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
+                        if (this.$dropdownType === 'room') {
+                            this.$dropdownText.innerHTML = `${counter1} спал${bedroomWordEnding}, ${counter2} кроват${bedWordEnding}`
+                        } else {
+                            this.$dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
+                        }
                     }
                     break
                 case `dropdown__counter js-dropdown_instance-${this.instance}__counter2`:
@@ -125,12 +140,20 @@ class Dropdown {
                     } else {
                         counter2 += shift
                         commonCounter += shift
-                        guestWordEnding = setGuestWordEnding(
-                            guestWordEnding,
-                            commonCounter
-                        )
+                        ;[guestWordEnding, bedroomWordEnding, bedWordEnding] = [
+                            ...setWordEnding(
+                                commonCounter,
+                                guestWordEnding,
+                                bedroomWordEnding,
+                                bedWordEnding
+                            ),
+                        ]
                         counterSelector.innerHTML = counter2
-                        this.$dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
+                        if (this.$dropdownType === 'room') {
+                            this.$dropdownText.innerHTML = `${counter1} спал${bedroomWordEnding}, ${counter2} кроват${bedWordEnding}`
+                        } else {
+                            this.$dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
+                        }
                     }
                     break
                 case `dropdown__counter js-dropdown_instance-${this.instance}__counter3`:
@@ -139,12 +162,21 @@ class Dropdown {
                     } else {
                         counter3 += shift
                         commonCounter += shift
-                        guestWordEnding = setGuestWordEnding(
-                            guestWordEnding,
-                            commonCounter
-                        )
+                        ;[guestWordEnding, bedroomWordEnding, bedWordEnding] = [
+                            ...setWordEnding(
+                                commonCounter,
+                                guestWordEnding,
+                                bedroomWordEnding,
+                                bedWordEnding
+                            ),
+                        ]
                         counterSelector.innerHTML = counter3
-                        this.$dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
+
+                        if (this.$dropdownType === 'room') {
+                            this.$dropdownText.innerHTML = `${counter1} спал${bedroomWordEnding}, ${counter2} кроват${bedWordEnding}`
+                        } else {
+                            this.$dropdownText.innerHTML = `${commonCounter} гост${guestWordEnding}`
+                        }
                     }
                     break
                 default:
