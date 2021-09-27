@@ -9,6 +9,10 @@ class Dropdown {
         )
         this.instance = number
 
+        this.$dropdownClearSelector = document.querySelector(
+            `.js-dropdown_instance-${this.instance}__clear`
+        )
+
         this.$dropdownContainerImg = document.querySelector(
             `.js-dropdown_instance-${this.instance}__img-box`
         )
@@ -151,6 +155,11 @@ class Dropdown {
                         ]
 
                         counterSelector.innerHTML = counter1
+                        if (commonCounter > 0) {
+                            this.$dropdownClearSelector.classList.remove('hide')
+                        } else {
+                            this.$dropdownClearSelector.classList.add('hide')
+                        }
                         if (this.$dropdownType === 'room') {
                             this.$dropdownText.innerHTML = `${counter1} спал${bedroomWordEnding}, ${counter2} кроват${bedWordEnding}`
                         } else {
@@ -175,6 +184,11 @@ class Dropdown {
                             ),
                         ]
                         counterSelector.innerHTML = counter2
+                        if (commonCounter > 0) {
+                            this.$dropdownClearSelector.classList.remove('hide')
+                        } else {
+                            this.$dropdownClearSelector.classList.add('hide')
+                        }
                         if (this.$dropdownType === 'room') {
                             this.$dropdownText.innerHTML = `${counter1} спал${bedroomWordEnding}, ${counter2} кроват${bedWordEnding}`
                         } else {
@@ -199,6 +213,11 @@ class Dropdown {
                             ),
                         ]
                         counterSelector.innerHTML = counter3
+                        if (commonCounter > 0) {
+                            this.$dropdownClearSelector.classList.remove('hide')
+                        } else {
+                            this.$dropdownClearSelector.classList.add('hide')
+                        }
 
                         if (this.$dropdownType === 'room') {
                             this.$dropdownText.innerHTML = `${counter1} спал${bedroomWordEnding}, ${counter2} кроват${bedWordEnding}`
