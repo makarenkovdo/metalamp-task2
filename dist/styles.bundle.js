@@ -404,6 +404,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/styles/mixins/placeholder.scss":
+/*!********************************************!*\
+  !*** ./src/styles/mixins/placeholder.scss ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/styles/mixins/placeholder.scss?");
+
+/***/ }),
+
 /***/ "./src/styles/reset-styles.scss":
 /*!**************************************!*\
   !*** ./src/styles/reset-styles.scss ***!
@@ -483,7 +494,7 @@ eval("var map = {\n\t\"./ui-kit-template/ui-kit-logo.svg\": \"./src/pages/ui-kit
   \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./mixins/font-faces.scss\": \"./src/styles/mixins/font-faces.scss\",\n\t\"./mixins/fonts.scss\": \"./src/styles/mixins/fonts.scss\",\n\t\"./reset-styles.scss\": \"./src/styles/reset-styles.scss\",\n\t\"./variables/breakpoints.scss\": \"./src/styles/variables/breakpoints.scss\",\n\t\"./variables/colors.scss\": \"./src/styles/variables/colors.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/styles sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/styles/_sync_\\.scss$?");
+eval("var map = {\n\t\"./mixins/font-faces.scss\": \"./src/styles/mixins/font-faces.scss\",\n\t\"./mixins/fonts.scss\": \"./src/styles/mixins/fonts.scss\",\n\t\"./mixins/placeholder.scss\": \"./src/styles/mixins/placeholder.scss\",\n\t\"./reset-styles.scss\": \"./src/styles/reset-styles.scss\",\n\t\"./variables/breakpoints.scss\": \"./src/styles/variables/breakpoints.scss\",\n\t\"./variables/colors.scss\": \"./src/styles/variables/colors.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/styles sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/styles/_sync_\\.scss$?");
 
 /***/ })
 

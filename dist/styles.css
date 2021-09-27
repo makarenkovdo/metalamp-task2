@@ -8,7 +8,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Montserrat Bold";
+  font-family: "Montserrat";
   src: url(4864fa64a4ca0d678210.woff2), url(1b85ddf71c245b802e72.woff);
   font-weight: 700;
   font-style: normal;
@@ -25,10 +25,13 @@
   font-weight: 700;
   font-style: normal;
 }
-.block-title {
-  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
+.block-subtitle {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  font: normal 400 12px/15px Montserrat, Arial, sans-serif;
   text-transform: uppercase;
-  color: #1f2041;
+  color: rgba(31, 32, 65, 0.5);
 }
 /*!**************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/block-title/block-title.scss ***!
@@ -40,7 +43,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Montserrat Bold";
+  font-family: "Montserrat";
   src: url(4864fa64a4ca0d678210.woff2), url(1b85ddf71c245b802e72.woff);
   font-weight: 700;
   font-style: normal;
@@ -58,6 +61,9 @@
   font-style: normal;
 }
 .block-title {
+  display: grid;
+  justify-content: left;
+  align-content: center;
   font: normal bold 12px/15px Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #1f2041;
@@ -342,12 +348,9 @@ checkbox-expandable-list__popup {
 @charset "UTF-8";
 .dropdown-guests {
   display: grid;
-  position: absolute;
   overflow: hidden;
   box-sizing: border-box;
   width: 320px;
-  left: 387px;
-  top: 196px;
 }
 .dropdown__button {
   display: grid;
@@ -508,7 +511,7 @@ checkbox-expandable-list__popup {
   font-style: normal;
 }
 @font-face {
-  font-family: "Montserrat Bold";
+  font-family: "Montserrat";
   src: url(4864fa64a4ca0d678210.woff2), url(1b85ddf71c245b802e72.woff);
   font-weight: 700;
   font-style: normal;
@@ -643,6 +646,23 @@ checkbox-expandable-list__popup {
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
+  font: normal normal 14px/24px Montserrat, Arial, sans-serif;
+  color: rgba(31, 32, 65, 0.75);
+  /* Firefox 19+ */
+  /* Firefox 18- */
+  padding-left: 15px;
+}
+.text-field::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.text-field::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.text-field:-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.text-field:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
 }
 .text-field:hover {
   border: 1px solid rgba(31, 32, 65, 0.5);
@@ -723,7 +743,7 @@ input:checked + .slider:before {
   font-style: normal;
 }
 @font-face {
-  font-family: "Montserrat Bold";
+  font-family: "Montserrat";
   src: url(4864fa64a4ca0d678210.woff2), url(1b85ddf71c245b802e72.woff);
   font-weight: 700;
   font-style: normal;
@@ -878,23 +898,30 @@ input:checked + .slider:before {
   grid-template-areas: "a b c";
 }
 
+.form-elements__area-a {
+  display: grid;
+  grid-area: a;
+  grid-template-areas: "aa" "ab" "ac";
+}
+
 .form-elements .text-field_default {
   display: grid;
-  grid-area: "a";
   width: 320px;
-  grid-template-rows: 20px;
   grid-template-columns: 50% 50%;
   margin-left: 140.5px;
+  grid-area: aa;
   margin-top: 143px;
-  margin-top: 143px;
 }
-.form-elements .text-field_default__title {
-  justify-self: left;
-  align-content: center;
+
+.text-field_hover {
+  display: grid;
+  width: 320px;
+  grid-template-columns: 50% 50%;
+  margin-left: 140.5px;
+  grid-area: ab;
+  margin-top: 20px;
 }
-.form-elements .text-field_default__subtitle {
-  justify-self: right;
-}
+
 .form-elements .form-elements__title {
   display: grid;
   justify-self: left;
@@ -926,7 +953,7 @@ input:checked + .slider:before {
   font-style: normal;
 }
 @font-face {
-  font-family: "Montserrat Bold";
+  font-family: "Montserrat";
   src: url(4864fa64a4ca0d678210.woff2), url(1b85ddf71c245b802e72.woff);
   font-weight: 700;
   font-style: normal;
@@ -946,6 +973,10 @@ input:checked + .slider:before {
 /*!***********************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/fonts.scss ***!
   \***********************************************************************************************************************/
+
+/*!*****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/placeholder.scss ***!
+  \*****************************************************************************************************************************/
 
 /*!***********************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/reset-styles.scss ***!

@@ -7,10 +7,30 @@
     <title>Document</title>
   <script defer src="styles.bundle.js"></script><script defer src="checkboxExpList.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="datepicker.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"></head>
   <body><img class="ui-kit-template-logo" src="./img/ui-kit-logo.svg" alt="some some" width="48" height="48">
-    <div class="form-elements">   
-      <div class="text-field_default">
-        <h3 class="block-title">TEXT FIELD</h3>
-        <input class="text-field" text="" name="email" placeholder="Email">
+    <div class="form-elements">
+      <div class="form-elements__area-a">    
+        <div class="text-field_default">
+          <h3 class="block-title">TEXT FIELD</h3>
+          <h3 class="block-subtitle">DEFAULT</h3>
+          <input class="text-field" type="text" value="" name="email" placeholder="Email">
+        </div>
+        <div class="text-field_hover">
+          <h3 class="block-title">TEXT FIELD</h3>
+          <h3 class="block-subtitle">HOVER/FOCUS</h3>
+          <input class="text-field" type="text" value="This is pretty awesome" name="email" placeholder="Email">
+        </div>
+        <div class="dropdown-guests_closes"> 
+          <div class="js-dropdown_instance-number">1</div>
+          <div class="dropdown-guests js-dropdown_instance-1-guests">
+            <div class="dropdown__button js-dropdown_instance-1__button"><span class="dropdown__text js-dropdown_instance-1__text">Сколько гостей</span><span class="dropdown__img-box js-dropdown_instance-1__img-box"><img src="./img/dropdown-guests.svg" alt="some some" width="13" height="8"></span></div>
+          </div>
+          <div class="dropdown__popup js-dropdown_instance-1__popup hide"><span class="dropdown__option-text js-dropdown_instance-1__option-text">Взрослые</span><span class="dropdown__decrease js-dropdown_instance-1__decrease1"><img src="./img/minus.svg" alt="some some" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-1__counter1">0</span><span class="dropdown__increase js-dropdown_instance-1__increase1"><img src="./img/plus.svg" alt="some some" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-1__option-text">Дети</span><span class="dropdown__decrease js-dropdown_instance-1__decrease2"><img src="./img/minus.svg" alt="some some" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-1__counter2">0</span><span class="dropdown__increase js-dropdown_instance-1__increase2"><img src="./img/plus.svg" alt="some some" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-1__option-text">Младенцы</span><span class="dropdown__decrease js-dropdown_instance-1__decrease3"><img src="./img/minus.svg" alt="some some" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-1__counter3">0</span><span class="dropdown__increase js-dropdown_instance-1__increase3"><img src="./img/plus.svg" alt="some some" width="13" height="8"></span></div>
+          <div class="js-dropdown_instance-number">2</div>
+          <div class="dropdown-guests js-dropdown_instance-2-guests">
+            <div class="dropdown__button js-dropdown_instance-2__button"><span class="dropdown__text js-dropdown_instance-2__text">Сколько гостей</span><span class="dropdown__img-box js-dropdown_instance-2__img-box"><img src="./img/dropdown-guests.svg" alt="some some" width="13" height="8"></span></div>
+          </div>
+          <div class="dropdown__popup js-dropdown_instance-2__popup hide"><span class="dropdown__option-text js-dropdown_instance-2__option-text">Взрослые</span><span class="dropdown__decrease js-dropdown_instance-2__decrease1"><img src="./img/minus.svg" alt="some some" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter1">0</span><span class="dropdown__increase js-dropdown_instance-2__increase1"><img src="./img/plus.svg" alt="some some" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-2__option-text">Дети</span><span class="dropdown__decrease js-dropdown_instance-2__decrease2"><img src="./img/minus.svg" alt="some some" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter2">0</span><span class="dropdown__increase js-dropdown_instance-2__increase2"><img src="./img/plus.svg" alt="some some" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-2__option-text">Младенцы</span><span class="dropdown__decrease js-dropdown_instance-2__decrease3"><img src="./img/minus.svg" alt="some some" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter3">0</span><span class="dropdown__increase js-dropdown_instance-2__increase3"><img src="./img/plus.svg" alt="some some" width="13" height="8"></span></div>
+        </div>
       </div>
     </div>
   </body>

@@ -69,7 +69,7 @@ module.exports = {
         checkboxExpList:
             './src/components/checkbox-expandable-list/checkbox-expandable-list.js',
         likeButton: './src/components/like-button/like-button.js',
-        dropdown: './src/components/dropdown-guests/dropdown-guests.js',
+        dropdown: './src/components/dropdown/dropdown.js',
         datepicker: './src/components/datepicker/datepicker.js',
     },
     output: {
