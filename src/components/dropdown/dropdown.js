@@ -1,14 +1,13 @@
 class Dropdown {
     constructor(number) {
         this.isDropdownOpen = false
-        this.$type = document.querySelector(
-            `.js-dropdown_instance-${number}_type`
-        ).innerHTML
         this.$dropdownInstanceNumber = document.querySelector(
             `.js-dropdown_instance-number`
         )
         this.instance = number
-
+        this.$type = document.querySelector(
+            `.js-dropdown_instance-${number}_type`
+        ).innerHTML
         this.$dropdownClearSelector = document.querySelector(
             `.js-dropdown_instance-${this.instance}__clear`
         )
@@ -131,9 +130,8 @@ class Dropdown {
         }
 
         return function (shift, j) {
-            console.log(j, counter[j])
             if (shift === 0) {
-                console.log(this)
+                // console.log(this)
                 counter = [0, 0, 0, 0]
             }
             if (counter[j] === 0 && shift < 0) {
@@ -153,14 +151,29 @@ class Dropdown {
                 this.$counterSelector1.innerHTML = counter[1]
                 this.$counterSelector2.innerHTML = counter[2]
                 this.$counterSelector3.innerHTML = counter[3]
-                if (counter[0] > 0) {
-                    this.$dropdownClearSelector.classList.remove('hide')
-                } else {
-                    this.$dropdownClearSelector.classList.add('hide')
-                }
+
+                console.log(
+                    'this',
+                    this,
+                    'this instance',
+                    this.instance,
+                    'this type',
+                    this.$type
+                )
+                // console.log(
+                //     'selector',
+                //     document.querySelector(
+                //         `.js-dropdown_instance-${this.instance}_type`
+                //     ).innerHTML
+                // )
                 if (this.$type === 'room') {
                     this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}`
                 } else {
+                    if (counter[0] > 0) {
+                        this.$dropdownClearSelector.classList.remove('hide')
+                    } else {
+                        this.$dropdownClearSelector.classList.add('hide')
+                    }
                     this.$dropdownText.innerHTML = `${counter[0]} гост${guestWordEnding}`
                 }
             }
@@ -172,19 +185,17 @@ function createDropdowns(n) {
     const dropdownArray = new Array(n)
     for (let i = 0; i < n; i++) {
         dropdownArray[i] = new Dropdown(i + 1)
+        console.log(dropdownArray[i].$type)
     }
     return dropdownArray
 }
 const dropdownArray = createDropdowns(5)
-console.log(dropdownArray[1].$increaseSelector[1])
 
 for (let i = 0; i < dropdownArray.length; i++) {
     dropdownArray[i].$buttonSelector.addEventListener('click', () =>
         dropdownArray[i].handleDropdownClick.call(dropdownArray[i])
     )
     for (let j = 1; j <= 3; j++) {
-        console.log(dropdownArray[i].$increaseSelector[j])
-
         dropdownArray[i].$increaseSelector[j].addEventListener('click', () =>
             dropdownArray[i].dropdownCounter.call(dropdownArray[i], 1, j)
         )
