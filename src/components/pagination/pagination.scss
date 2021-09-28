@@ -5,7 +5,26 @@
     &__page-numbers {
         display: grid;
         grid-template-columns: repeat(6, 40px);
+        &_active-page {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            width: 40px;
+            height: 40px;
+            color: white;
+            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            border-radius: 50%;
+        }
+        &_non-active-page {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+
+            width: 40px;
+            height: 40px;
+        }
     }
+
     &__caption {
         width: 229px;
 

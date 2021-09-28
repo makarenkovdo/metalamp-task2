@@ -1,10 +1,12 @@
+include ../block-title/block-title
 mixin pagination() 
     .pagination-container
+        +block-title('pagination')
         .pagination__page-numbers
-            span(class="active-page")
-            span(class="non-active-page") 2
-            span(class="non-active-page") 3
-            span(class="non-active-page") ...
-            span(class="non-active-page") 15
+            span(class="pagination__page-numbers_active-page") 1
+            span(class="pagination__page-numbers_non-active-page") 2
+            span(class="pagination__page-numbers_non-active-page") 3
+            span(class="pagination__page-numbers_non-active-page") ...
+            span(class="pagination__page-numbers_non-active-page") 15
             img.emotion-icon(src='./img/pagination-arrow.svg' alt='next pages' width='48' height='48')           
         .pagination__caption  1 – 12 из 100+ вариантов аренды 

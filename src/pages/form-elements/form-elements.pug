@@ -22,56 +22,56 @@ include ../../components/toggle/toggle
 block content
     .form-elements
         .form-elements__area-a     
-            .text-field_default
+            .text-field-block-default
                 +block-title('TEXT FIELD')
                 +block-subtitle('DEFAULT')
                 +text-field ('','email', 'Email')
-            .text-field_hover
+            .text-field-block_hover
                 +block-title('TEXT FIELD')
                 +block-subtitle('HOVER/FOCUS')
                 +text-field ('This is pretty awesome','email', 'Email')
-            .dropdowns_container 
+            .dropdown-block 
                 +dropdown(1)
-            .masked-text-field-container
+            .masked-text-field-block
                 +text-field ('','masked-text-field', 'ДД.ММ.ГГГГ')
-            .date-dropdowns-container 
+            .date-dropdowns-block 
                 +datepicker()
-            .filter-date-dropdown-container 
+            .filter-date-dropdown-block 
                 +filter-date-dropdown
             .subscription-text-field 
                 +text-field ('','email', 'Email')
-            .room-dropdown-container 
+            .room-dropdown-block 
                 +dropdown(2, 'room') 
                 +dropdown(3, 'room') 
-            .expandable-checkbox-list-container
+            .expandable-checkbox-list-block
                 +checkbox-expandable-list
                 +checkbox-expandable-list
-            .comfort-container
+            .comfort-block
                 +comfort-block
         .form-elements__area-b
-            .checkbox-list-container
+            .checkbox-list-block
                 +block-title('checkbox buttons')
                 +checkbox-list
-            .radio-button-container 
+            .radio-button-block 
                 +radio-button()
                 +radio-button()
-            .toggle-container 
+            .toggle-block 
                 +toggle('Получать спецпредложения')
                 +toggle('Получать спецпредложения')
-            .like-button-container
+            .like-button-block
                 +like-button(1)
-            .rate-button-container 
+            .rate-button-block 
                 +rate-button(4)
                 +rate-button(5)
-            .dropdowns-container-2
+            .dropdowns-block-2
                 +dropdown(4)
-            .rich-checkbox-container
+            .rich-checkbox-block
                 +rich-checkbox()
         .form-elements__area-d
-            .feedback-container
+            .feedback-block
                 +feedback()
         .form-elements__area-c
-            .button-container
+            .button-block
                 +block-title('BUTTONS')
                 +button('purple', 'click me')
                 +button('purple', 'click me')
@@ -80,9 +80,9 @@ block content
                 +button('link', 'click me')
                 +button('link', 'click me')
                 +button('go-to-pay', 'перейти к оплате')
-            .pagination-container
+            .pagination-block
                 +pagination()
-            .dropdowns-container-3
+            .dropdowns-block-3
                 +dropdown(5) 
 
 
