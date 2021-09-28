@@ -29,7 +29,14 @@
         'ba'
         'bb'
         'bc';
-    margin-left: 140.5px;
+}
+.form-elements__area-c {
+    display: grid;
+    grid-area: c;
+    grid-template-areas:
+        'ca'
+        'cb'
+        'cc';
 }
 
 .form-elements .text-field_default {
