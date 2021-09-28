@@ -1,5 +1,10 @@
-mixin checkbox(text)
+mixin checkbox(text, addingText)
     label.checkbox-label
         input.checkbox__input(type='checkbox')
         span.checkbox__new-icon
-        span.checkbox__text #{text}
+        if addingText
+            span.checkbox__rich-title #{text}
+            span.checkbox__rich-subtitle #{addingText}
+        else
+            span.checkbox__text #{text}
+

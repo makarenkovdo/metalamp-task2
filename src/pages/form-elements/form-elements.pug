@@ -10,6 +10,8 @@ include ../../components/dropdown/dropdown
 include ../../components/like-button/like-button
 include ../../components/radio-button/radio-button
 include ../../components/rate-button/rate-button
+include ../../components/rich-checkbox/rich-checkbox
+
 include ../../components/text-field/text-field
 include ../../components/toggle/toggle
 
@@ -61,9 +63,12 @@ block content
             .rate-button-container 
                 +rate-button(4)
                 +rate-button(5)
-            .dropdowns_container-2
+            .dropdowns-container-2
                 +dropdown(4)
+            .rich-checkbox-container
+                +rich-checkbox()
         .form-elements__area-c
+            
 
 
 
