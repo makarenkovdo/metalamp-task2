@@ -9,14 +9,14 @@ include ../../components/datepicker/datepicker
 include ../../components/dropdown/dropdown
 include ../../components/like-button/like-button
 include ../../components/radio-button/radio-button
+include ../../components/rate-button/rate-button
 include ../../components/text-field/text-field
+include ../../components/toggle/toggle
+
 include ../../components/filter-date-dropdown/filter-date-dropdown
-
-
-
-
-
-
+include ../../components/checkbox-expandable-list/checkbox-expandable-list
+include ../../components/comfort-block/comfort-block
+                
 block content
     .form-elements
         .form-elements__area-a     
@@ -30,17 +30,41 @@ block content
                 +text-field ('This is pretty awesome','email', 'Email')
             .dropdowns_container 
                 +dropdown(1)
-                +dropdown(2, 'room')
-                +dropdown(3)
-                +dropdown(4)
-                +dropdown(5)
-              
             .masked-text-field-container
                 +text-field ('','masked-text-field', 'ДД.ММ.ГГГГ')
             .date-dropdowns-container 
                 +datepicker()
             .filter-date-dropdown-container 
                 +filter-date-dropdown
+            .subscription-text-field 
+                +text-field ('','email', 'Email')
+            .room-dropdown-container 
+                +dropdown(2, 'room') 
+                +dropdown(3, 'room') 
+            .expandable-checkbox-list-container
+                +checkbox-expandable-list
+                +checkbox-expandable-list
+            .comfort-container
+                +comfort-block
+        .form-elements__area-b
+            .checkbox-list-container
+                +block-title('checkbox buttons')
+                +checkbox-list
+            .radio-button-container 
+                +radio-button()
+                +radio-button()
+            .toggle-container 
+                +toggle('Получать спецпредложения')
+                +toggle('Получать спецпредложения')
+            .like-button-container
+                +like-button(1)
+            .rate-button-container 
+                +rate-button(4)
+                +rate-button(5)
+
+
+
+
 
 
            

@@ -22,6 +22,15 @@
         'ac';
     margin-left: 140.5px;
 }
+.form-elements__area-b {
+    display: grid;
+    grid-area: b;
+    grid-template-areas:
+        'ba'
+        'bb'
+        'bc';
+    margin-left: 140.5px;
+}
 
 .form-elements .text-field_default {
     @include a-area();

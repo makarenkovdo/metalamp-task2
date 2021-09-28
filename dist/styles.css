@@ -955,6 +955,13 @@ input:checked + .slider:before {
   margin-left: 140.5px;
 }
 
+.form-elements__area-b {
+  display: grid;
+  grid-area: b;
+  grid-template-areas: "ba" "bb" "bc";
+  margin-left: 140.5px;
+}
+
 .form-elements .text-field_default {
   display: grid;
   width: 320px;
