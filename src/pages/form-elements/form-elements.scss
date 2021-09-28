@@ -9,8 +9,8 @@
 .form-elements {
     display: grid;
     grid-template-areas:
-        // 'a b c'
-        'a b c';
+        'a b c'
+        'a d d';
 }
 
 .form-elements__area-a {
@@ -33,6 +33,14 @@
 .form-elements__area-c {
     display: grid;
     grid-area: c;
+    grid-template-areas:
+        'ca'
+        'cb'
+        'cc';
+}
+.form-elements__area-d {
+    display: grid;
+    grid-area: d;
     grid-template-areas:
         'ca'
         'cb'

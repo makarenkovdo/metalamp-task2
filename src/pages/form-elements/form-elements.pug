@@ -3,21 +3,20 @@ extends ../ui-kit-template/ui-kit-template
 include ../../components/block-subtitle/block-subtitle
 include ../../components/block-title/block-title
 include ../../components/button/button
-include ../../components/checkbox-list/checkbox-list
 include ../../components/checkbox/checkbox
+include ../../components/checkbox-expandable-list/checkbox-expandable-list
+include ../../components/checkbox-list/checkbox-list
+include ../../components/comfort-block/comfort-block
 include ../../components/datepicker/datepicker
 include ../../components/dropdown/dropdown
+include ../../components/feedback/feedback
+include ../../components/filter-date-dropdown/filter-date-dropdown
 include ../../components/like-button/like-button
 include ../../components/radio-button/radio-button
 include ../../components/rate-button/rate-button
 include ../../components/rich-checkbox/rich-checkbox
-
 include ../../components/text-field/text-field
 include ../../components/toggle/toggle
-
-include ../../components/filter-date-dropdown/filter-date-dropdown
-include ../../components/checkbox-expandable-list/checkbox-expandable-list
-include ../../components/comfort-block/comfort-block
                 
 block content
     .form-elements
@@ -67,7 +66,25 @@ block content
                 +dropdown(4)
             .rich-checkbox-container
                 +rich-checkbox()
+        .form-elements__area-d
+            .feedback-container
+                +feedback()
         .form-elements__area-c
+            
+            .button-container
+                +block-title('BUTTONS')
+                +button('purple', 'click me')
+                +button('purple', 'click me')
+                +button('white', 'click me')
+                +button('white', 'click me')
+                +button('link', 'click me')
+                +button('link', 'click me')
+                +button('go-to-pay', 'перейти к оплате')
+
+
+
+
+
             
 
 
