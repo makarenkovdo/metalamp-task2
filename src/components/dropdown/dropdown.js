@@ -92,12 +92,16 @@ class Dropdown {
         let guestWordEnding = 'ь'
         let bedroomWordEnding = 'ен'
         let bedWordEnding = 'ей'
+        let bathWordEnding = ['ая', 'а']
+        let babyWordEnding = 'ец'
 
         function setWordEnding(
             counter,
             guestWordEnding,
             bedroomWordEnding,
-            bedWordEnding
+            bedWordEnding,
+            bathWordEnding,
+            babyWordEnding
         ) {
             if (counter[0] > 1 && counter[0] < 5) {
                 guestWordEnding = 'я'
@@ -107,6 +111,10 @@ class Dropdown {
             }
             if (counter[2] > 1 && counter[2] < 5) {
                 bedWordEnding = 'и'
+            }
+            if (counter[3] > 1 && counter[3] < 5) {
+                bathWordEnding = ['ые', 'ы']
+                babyWordEnding = 'ца'
             }
 
             if (counter[0] >= 5 || counter[0] < 1) {
@@ -118,6 +126,10 @@ class Dropdown {
             if (counter[2] >= 5 || counter[2] < 1) {
                 bedWordEnding = 'ей'
             }
+            if (counter[3] >= 5 || counter[3] < 1) {
+                bathWordEnding = ['ых', '']
+                babyWordEnding = 'цев'
+            }
             if (counter[0] === 1) {
                 guestWordEnding = 'ь'
             }
@@ -127,7 +139,17 @@ class Dropdown {
             if (counter[2] === 1) {
                 bedWordEnding = 'ь'
             }
-            return [guestWordEnding, bedroomWordEnding, bedWordEnding]
+            if (counter[3] === 1) {
+                bathWordEnding = ['ая', 'а']
+                babyWordEnding = 'ец'
+            }
+            return [
+                guestWordEnding,
+                bedroomWordEnding,
+                bedWordEnding,
+                bathWordEnding,
+                babyWordEnding,
+            ]
         }
 
         return function (shift, j) {
@@ -139,13 +161,23 @@ class Dropdown {
                 return counter[j]
             } else {
                 counter[j] += shift
-                counter[0] += shift
-                ;[guestWordEnding, bedroomWordEnding, bedWordEnding] = [
+                if (j < 3) {
+                    counter[0] += shift
+                }
+                ;[
+                    guestWordEnding,
+                    bedroomWordEnding,
+                    bedWordEnding,
+                    bathWordEnding,
+                    babyWordEnding,
+                ] = [
                     ...setWordEnding(
                         counter,
                         guestWordEnding,
                         bedroomWordEnding,
-                        bedWordEnding
+                        bedWordEnding,
+                        bathWordEnding,
+                        babyWordEnding
                     ),
                 ]
 
@@ -168,14 +200,18 @@ class Dropdown {
                 //     ).innerHTML
                 // )
                 if (this.$type === 'room') {
-                    this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}`
+                    this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}, ${counter[3]} ванн${bathWordEnding[0]} комнат${bathWordEnding[1]}`
                 } else {
                     if (counter[0] > 0) {
                         this.$dropdownClearSelector.classList.remove('hide')
                     } else {
                         this.$dropdownClearSelector.classList.add('hide')
                     }
-                    this.$dropdownText.innerHTML = `${counter[0]} гост${guestWordEnding}`
+                    if (counter[3] > 0) {
+                        this.$dropdownText.innerHTML = `${counter[0]} гост${guestWordEnding}, ${counter[3]} младен${babyWordEnding} `
+                    } else {
+                        this.$dropdownText.innerHTML = `${counter[0]} гост${guestWordEnding}`
+                    }
                 }
             }
         }
