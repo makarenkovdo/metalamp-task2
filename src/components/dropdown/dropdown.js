@@ -1,6 +1,7 @@
 class Dropdown {
     constructor(number) {
         this.isDropdownOpen = false
+
         this.$dropdownInstanceNumber = document.querySelector(
             `.js-dropdown_instance-number`
         )
@@ -8,6 +9,9 @@ class Dropdown {
         this.$type = document.querySelector(
             `.js-dropdown_instance-${number}_type`
         ).innerHTML
+        this.$dropdownContainer = document.querySelector(
+            `.js-dropdown_instance-${this.instance}`
+        )
         this.$dropdownClearSelector = document.querySelector(
             `.js-dropdown_instance-${this.instance}__clear`
         )
@@ -21,9 +25,7 @@ class Dropdown {
         this.$dropdownContainerImg = document.querySelector(
             `.js-dropdown_instance-${this.instance}__img-box`
         )
-        this.$dropdownContainer = document.querySelector(
-            `.js-dropdown_instance-${this.instance}`
-        )
+
         this.$dropdownPopupContainer = document.querySelector(
             `.js-dropdown_instance-${this.instance}__popup`
         )
@@ -179,8 +181,11 @@ class Dropdown {
         }
     }
 }
+let $quantityArray = $(`.dropdown__button`)
 
 function createDropdowns(n) {
+    // let instanceQuantity = 1
+    // while (
     const dropdownArray = new Array(n)
     for (let i = 0; i < n; i++) {
         dropdownArray[i] = new Dropdown(i + 1)
@@ -188,7 +193,7 @@ function createDropdowns(n) {
     }
     return dropdownArray
 }
-const dropdownArray = createDropdowns(5)
+const dropdownArray = createDropdowns($quantityArray.length)
 
 for (let i = 0; i < dropdownArray.length; i++) {
     dropdownArray[i].$buttonSelector.addEventListener('click', () =>
