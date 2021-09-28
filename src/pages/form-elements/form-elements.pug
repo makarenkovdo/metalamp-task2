@@ -12,6 +12,7 @@ include ../../components/dropdown/dropdown
 include ../../components/feedback/feedback
 include ../../components/filter-date-dropdown/filter-date-dropdown
 include ../../components/like-button/like-button
+include ../../components/pagination/pagination
 include ../../components/radio-button/radio-button
 include ../../components/rate-button/rate-button
 include ../../components/rich-checkbox/rich-checkbox
@@ -70,7 +71,6 @@ block content
             .feedback-container
                 +feedback()
         .form-elements__area-c
-            
             .button-container
                 +block-title('BUTTONS')
                 +button('purple', 'click me')
@@ -80,6 +80,12 @@ block content
                 +button('link', 'click me')
                 +button('link', 'click me')
                 +button('go-to-pay', 'перейти к оплате')
+            .pagination-container
+                +pagination()
+            .dropdowns-container-3
+                +dropdown(5) 
+
+
 
 
 
