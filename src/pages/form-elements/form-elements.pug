@@ -2,6 +2,7 @@ extends ../ui-kit-template/ui-kit-template
 
 include ../../components/block-subtitle/block-subtitle
 include ../../components/block-title/block-title
+include ../../components/bullet-list/bullet-list
 include ../../components/button/button
 include ../../components/checkbox/checkbox
 include ../../components/checkbox-expandable-list/checkbox-expandable-list
@@ -82,8 +83,10 @@ block content
                 +button('go-to-pay', 'перейти к оплате')
             .pagination-block
                 +pagination()
-            .dropdowns-block-3
-                +dropdown(5) 
+            //- .dropdowns-block-3
+            //-     +dropdown(5) 
+            .bullet-list-block 
+                +bullet-list()
 
 
 
