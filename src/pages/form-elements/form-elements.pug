@@ -5,10 +5,14 @@ include ../../components/block-title/block-title
 include ../../components/button/button
 include ../../components/checkbox-list/checkbox-list
 include ../../components/checkbox/checkbox
+include ../../components/datepicker/datepicker
 include ../../components/dropdown/dropdown
 include ../../components/like-button/like-button
 include ../../components/radio-button/radio-button
 include ../../components/text-field/text-field
+include ../../components/filter-date-dropdown/filter-date-dropdown
+
+
 
 
 
@@ -24,13 +28,17 @@ block content
                 +block-title('TEXT FIELD')
                 +block-subtitle('HOVER/FOCUS')
                 +text-field ('This is pretty awesome','email', 'Email')
-            .dropdown 
+            .dropdowns_container 
                 +dropdown(1)
-                +dropdown(2, 'room')
-                +dropdown(3, 'room')
-                +dropdown(4)
-                +dropdown(5)
-                //- +dropdown-guests()
+            .masked-text-field-container
+                +text-field ('','masked-text-field', 'ДД.ММ.ГГГГ')
+            .date-dropdowns-container 
+                +datepicker()
+            .filter-date-dropdown-container 
+                +filter-date-dropdown
+
+
+           
 
         //- .checkbox-list-block
         //-     +checkbox-list()

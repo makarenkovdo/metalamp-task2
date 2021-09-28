@@ -75,10 +75,10 @@ class Dropdown {
             this.isDropdownOpen = false
         }
         function openDropdownBox() {
-            const x = this.$dropdownContainer.offsetLeft
+            const x = this.$buttonSelector.offsetLeft
             const y =
-                this.$dropdownContainer.offsetTop +
-                this.$dropdownContainer.offsetHeight
+                this.$buttonSelector.offsetTop +
+                this.$buttonSelector.offsetHeight
             this.$dropdownPopupContainer.style.cssText = `left:${x}px; top: ${y}px; `
             this.$dropdownPopupContainer.classList.remove('hide')
             this.isDropdownOpen = true

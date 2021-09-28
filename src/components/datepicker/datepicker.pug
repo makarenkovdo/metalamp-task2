@@ -1,0 +1,7 @@
+mixin datepicker()
+    form
+        .one
+            label(for='start_one') С:
+            input#start_one.datepicker-here.js-datepicker-input(type='text' data-range='true' data-multiple-dates-separator=' - ' placeholder='ДД.ММ.ГГГГ' )
+            label(for='start_one') До:
+            input#end_one(type='text' data-range='true' data-multiple-dates-separator=' - ' placeholder='ДД.ММ.ГГГГ')

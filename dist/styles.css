@@ -342,118 +342,6 @@ checkbox-expandable-list__popup {
   left: 260px;
   top: 692px;
 }
-/*!**********************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dropdown-guests/dropdown-guests.scss ***!
-  \**********************************************************************************************************************************************/
-@charset "UTF-8";
-.dropdown-guests {
-  display: grid;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 320px;
-}
-.dropdown__button {
-  display: grid;
-  box-sizing: border-box;
-  grid-template-columns: 86.25% 13.75%;
-  width: 320px;
-  height: 44px;
-  background: #ffffff;
-  justify-content: space-between;
-  align-items: center;
-  background: #ffffff;
-  /* Dark 50% */
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  box-sizing: border-box;
-  border-radius: 2px 2px 0px 0px;
-  /* Сколько гостей */
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  /* identical to box height, or 129% */
-  /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
-}
-.dropdown__text {
-  padding-left: 15px;
-}
-.dropdown__img-box {
-  display: grid;
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  justify-content: center;
-}
-.dropdown img {
-  position: relative;
-}
-.dropdown__increase {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 22px;
-  margin-top: 7px;
-  margin-right: 7px;
-}
-.dropdown__decrease {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 7px;
-  /* Rectangle 2 */
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 22px;
-}
-.dropdown__popup {
-  position: absolute;
-  display: grid;
-  grid-template-columns: 69.0625% 9.375% 10% 11.5625%;
-  width: 320px;
-  height: 159px;
-  background: #ffffff;
-  /* Dark 50% */
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  border-radius: 0px 0px 2px 2px;
-}
-.dropdown__counter {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  /* Dark 100% */
-  color: #1f2041;
-  margin-top: 13px;
-}
-.dropdown__option-text {
-  margin-left: 15px;
-  margin-top: 13px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  /* identical to box height */
-  text-transform: uppercase;
-  /* Dark 100% */
-  color: #1f2041;
-}
-.hide {
-  display: none !important;
-}
 /*!********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dropdown/dropdown.scss ***!
   \********************************************************************************************************************************/
@@ -462,6 +350,7 @@ checkbox-expandable-list__popup {
   display: grid;
   box-sizing: border-box;
   width: 320px;
+  grid-template-rows: 44px;
   z-index: 0;
 }
 .dropdown__button {
@@ -531,9 +420,9 @@ checkbox-expandable-list__popup {
 .dropdown__popup {
   position: absolute;
   display: grid;
+  grid-template-rows: 37px 37px 37px 48px;
   grid-template-columns: 69.0625% 9.375% 10% 11.5625%;
   width: 320px;
-  height: 159px;
   background: #ffffff;
   /* Dark 50% */
   border: 1px solid rgba(31, 32, 65, 0.5);
@@ -569,9 +458,14 @@ checkbox-expandable-list__popup {
 }
 .dropdown__apply {
   display: grid;
+  align-content: flex-end;
+  padding-bottom: 35.365%;
   /* применить */
   width: 84px;
+  grid-column-start: 4;
+  margin-right: 7px;
   justify-self: right;
+  justify-content: right;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -585,6 +479,9 @@ checkbox-expandable-list__popup {
 }
 .dropdown__clear {
   display: grid;
+  align-content: end;
+  padding-bottom: 35.365%;
+  margin-left: 14px;
   cursor: pointer;
   justify-self: left;
   font-family: Montserrat;
@@ -777,9 +674,17 @@ checkbox-expandable-list__popup {
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/test/test.scss ***!
   \************************************************************************************************************************/
 .test1 {
-  width: 500px;
-  height: 500px;
-  background-color: yellow;
+  display: grid;
+  line-height: 20px;
+  padding-bottom: 50px;
+  width: 320px;
+  border: 1px solid yellow;
+}
+
+.test-container1 {
+  display: grid;
+  border: 1px solid black;
+  grid-template-columns: 40% 20% 20% 20%;
 }
 /*!************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/text-field/text-field.scss ***!
@@ -1047,13 +952,13 @@ input:checked + .slider:before {
   display: grid;
   grid-area: a;
   grid-template-areas: "aa" "ab" "ac";
+  margin-left: 140.5px;
 }
 
 .form-elements .text-field_default {
   display: grid;
   width: 320px;
   grid-template-columns: 50% 50%;
-  margin-left: 140.5px;
   grid-area: aa;
   margin-top: 143px;
 }
@@ -1062,7 +967,6 @@ input:checked + .slider:before {
   display: grid;
   width: 320px;
   grid-template-columns: 50% 50%;
-  margin-left: 140.5px;
   grid-area: ab;
   margin-top: 20px;
 }
