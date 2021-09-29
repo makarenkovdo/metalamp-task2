@@ -3,49 +3,25 @@
   \********************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2), url(498c8cdbbcd5264ad13c.woff);
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(498c8cdbbcd5264ad13c.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2), url(0329bf8fcbfdd06caa24.woff);
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(0329bf8fcbfdd06caa24.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(3cd786652b8a2e9d41f2.ttf) format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(079ca05d3ded9bc107ab.ttf) format("ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
   font-weight: 700;
   font-style: normal;
 }
@@ -60,30 +36,6 @@
 /*!**************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/block-title/block-title.scss ***!
   \**************************************************************************************************************************************/
-@font-face {
-  font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2), url(498c8cdbbcd5264ad13c.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2), url(0329bf8fcbfdd06caa24.woff);
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
-  font-weight: 700;
-  font-style: normal;
-}
 .block-title {
   display: grid;
   justify-content: left;
@@ -105,30 +57,6 @@
 /*!****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/button/button.scss ***!
   \****************************************************************************************************************************/
-@font-face {
-  font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2), url(498c8cdbbcd5264ad13c.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2), url(0329bf8fcbfdd06caa24.woff);
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
-  font-weight: 700;
-  font-style: normal;
-}
 .button-purple {
   width: 99px;
   height: 44px;
@@ -182,30 +110,6 @@
 /*!****************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-expandable-list/checkbox-expandable-list.scss ***!
   \****************************************************************************************************************************************************************/
-@font-face {
-  font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2), url(498c8cdbbcd5264ad13c.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2), url(0329bf8fcbfdd06caa24.woff);
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
-  font-weight: 700;
-  font-style: normal;
-}
 checkbox-expandable-list__button {
   width: 166px;
   height: 44px;
@@ -244,30 +148,6 @@ checkbox-expandable-list__popup {
 /*!********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox/checkbox.scss ***!
   \********************************************************************************************************************************/
-@font-face {
-  font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2), url(498c8cdbbcd5264ad13c.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2), url(0329bf8fcbfdd06caa24.woff);
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
-  font-weight: 700;
-  font-style: normal;
-}
 .checkbox-label {
   display: grid;
   grid-template-columns: 30px 1fr;
@@ -454,49 +334,25 @@ checkbox-expandable-list__popup {
 @charset "UTF-8";
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2), url(498c8cdbbcd5264ad13c.woff);
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(498c8cdbbcd5264ad13c.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2), url(0329bf8fcbfdd06caa24.woff);
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(0329bf8fcbfdd06caa24.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(3cd786652b8a2e9d41f2.ttf) format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(079ca05d3ded9bc107ab.ttf) format("ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
   font-weight: 700;
   font-style: normal;
 }
@@ -722,49 +578,25 @@ checkbox-expandable-list__popup {
   \****************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(3cd786652b8a2e9d41f2.ttf) format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(079ca05d3ded9bc107ab.ttf) format("ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2), url(498c8cdbbcd5264ad13c.woff);
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(498c8cdbbcd5264ad13c.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2), url(0329bf8fcbfdd06caa24.woff);
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(0329bf8fcbfdd06caa24.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
   font-weight: 700;
   font-style: normal;
 }
@@ -910,30 +742,6 @@ checkbox-expandable-list__popup {
 /*!************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/text-field/text-field.scss ***!
   \************************************************************************************************************************************/
-@font-face {
-  font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2), url(498c8cdbbcd5264ad13c.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2), url(0329bf8fcbfdd06caa24.woff);
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
-  font-weight: 700;
-  font-style: normal;
-}
 .text-field {
   width: 320px;
   height: 44px;
@@ -1033,25 +841,25 @@ input:checked + .slider:before {
   \***************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(3cd786652b8a2e9d41f2.ttf) format("ttf");
-  font-weight: normal;
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(498c8cdbbcd5264ad13c.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(079ca05d3ded9bc107ab.ttf) format("ttf");
-  font-weight: bold;
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(0329bf8fcbfdd06caa24.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
   font-weight: 700;
   font-style: normal;
 }
@@ -1190,49 +998,25 @@ input:checked + .slider:before {
   \*************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2), url(498c8cdbbcd5264ad13c.woff);
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(498c8cdbbcd5264ad13c.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2), url(0329bf8fcbfdd06caa24.woff);
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(0329bf8fcbfdd06caa24.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(3cd786652b8a2e9d41f2.ttf) format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(079ca05d3ded9bc107ab.ttf) format("ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
   font-weight: 700;
   font-style: normal;
 }
@@ -1320,55 +1104,32 @@ input:checked + .slider:before {
   \****************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(3cd786652b8a2e9d41f2.ttf) format("ttf");
-  font-weight: normal;
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(498c8cdbbcd5264ad13c.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(079ca05d3ded9bc107ab.ttf) format("ttf");
-  font-weight: bold;
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(0329bf8fcbfdd06caa24.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
   font-weight: 700;
   font-style: normal;
 }
 /*!***********************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/fonts.scss ***!
   \***********************************************************************************************************************/
-@font-face {
-  font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2), url(498c8cdbbcd5264ad13c.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2), url(0329bf8fcbfdd06caa24.woff);
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2), url(28ffdec0bc00ff2c9802.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2), url(81630c88ffba8f095bad.woff);
-  font-weight: 700;
-  font-style: normal;
-}
+
 /*!*****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/placeholder.scss ***!
   \*****************************************************************************************************************************/
