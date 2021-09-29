@@ -1,3 +1,7 @@
+@import './../../styles/mixins/fonts.scss';
+@import './../../styles/variables/colors.scss';
+@import './../../styles/mixins/font-faces.scss';
+
 .dropdown {
     display: grid;
     // overflow: hidden;
@@ -15,7 +19,6 @@
         background: #ffffff;
         justify-content: space-between;
         align-items: center;
-        background: #ffffff;
         cursor: pointer;
 
         /* Dark 50% */
@@ -28,12 +31,7 @@
 
         /* Сколько гостей */
 
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 18px;
-        /* identical to box height, or 129% */
+        @include body-font;
 
         /* Dark 75% */
         color: rgba(31, 32, 65, 0.75);
@@ -102,13 +100,8 @@
         z-index: 1;
     }
     &__counter {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
+        @include h3;
         text-align: center;
-        text-transform: uppercase;
         /* Dark 100% */
         color: #1f2041;
         margin-top: 13px;
@@ -116,13 +109,7 @@
     &__option-text {
         margin-left: 15px;
         margin-top: 13px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        /* identical to box height */
-        text-transform: uppercase;
+        @include h3;
 
         /* Dark 100% */
         color: #1f2041;
@@ -139,16 +126,7 @@
         margin-right: 7px;
         justify-self: right;
         justify-content: right;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        /* identical to box height */
-        text-transform: uppercase;
-
-        /* Primary Color */
-        color: #bc9cff;
+        @include h3(#bc9cff);
         cursor: pointer;
     }
     &__clear {
@@ -161,15 +139,7 @@
 
         justify-self: left;
 
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        /* identical to box height */
-        text-transform: uppercase;
-
-        color: #bc9cff;
+        @include h3(#bc9cff);
     }
 
     @media (max-width: 479px) {

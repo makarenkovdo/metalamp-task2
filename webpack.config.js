@@ -126,18 +126,17 @@ module.exports = {
             //     type: 'asset/resource',
             // },
             {
-                test: /\.(woff2|woff|ttf)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: 'fonts/[name].[ext]',
-                            // publicPath: function (url) {
-                            //     return url.replace('../', '/assets/')
-                            // },
-                        },
-                    },
-                ],
+                test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+                type: 'asset/resource',
+                // use: [
+                //     {
+                //         loader: 'file-loader',
+                //         options: {
+                //             name: '[name].[contenthash].[ext]',
+                //             outputPath: 'fonts/',
+                //         },
+                //     },
+                // ],
             },
             {
                 test: /\.pug$/,

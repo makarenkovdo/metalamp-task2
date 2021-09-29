@@ -1,27 +1,28 @@
-// @import './font-faces.scss';
 @mixin h1($color: $dark-shade-100, $weight: bold) {
-    font: normal $weight 24px/29px Montserrat, Arial, sans-serif;
+    font: normal $weight 24px/29px Montserrat, Ravie, sans-serif;
+    text-transform: uppercase;
     color: $color;
 }
 
 @mixin h2($color: $dark-shade-100, $weight: bold) {
     //как сделать так, чтобы в зависимости от weight грузился разный шрифт?
-    font: normal $weight 19px/23px Montserrat, Arial, sans-serif;
+    font: normal $weight 19px/23px Montserrat, Ravie, sans-serif;
+    text-transform: uppercase;
     color: $color;
 }
 
 @mixin h3($color: $dark-shade-100, $weight: bold) {
-    font: normal $weight 12px/15px Montserrat, Arial, sans-serif;
+    font: normal $weight 12px/15px Montserrat, Ravie, sans-serif;
     text-transform: uppercase;
     color: $color;
 }
 @mixin body-font($color: $dark-shade-75, $weight: normal) {
-    font: normal $weight 14px /24px Montserrat, Arial, sans-serif;
+    font: normal $weight 14px /24px Montserrat, Ravie, sans-serif;
     color: $color;
 }
 
 // @mixin body-font($color: $dark-shade-75, $weight: normal, $line-height: 24px) {
-//     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+//     font-family: 'Montserrat', Ravie, Helvetica, sans-serif;
 //     font-weight: $weight;
 //     line-height: $line-height;
 //     color: $color;
