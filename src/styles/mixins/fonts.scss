@@ -1,3 +1,4 @@
+@import './font-faces.scss';
 @mixin h1($color: $dark-shade-100, $weight: bold) {
     font: normal $weight 24px/29px Montserrat, Ravie, sans-serif;
     text-transform: uppercase;
