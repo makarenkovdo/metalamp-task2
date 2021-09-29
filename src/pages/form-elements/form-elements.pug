@@ -48,9 +48,13 @@ block content
             .filter-date-dropdown-block 
                 +block-title('filter date dropdown')
                 +filter-date-dropdown
-            .subscription-text-field 
+            .subscription-text-field
+                +block-title('subscription text field')
                 +text-field ('','email', 'Email')
             .room-dropdown-block 
+                //- .titles-block
+                //-     +block-title('text field')
+                //-     +block-subtitle('DEFAULT')
                 +dropdown(2, 'room') 
                 +dropdown(3, 'room') 
             .expandable-checkbox-list-block
