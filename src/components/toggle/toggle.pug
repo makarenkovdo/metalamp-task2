@@ -1,5 +1,7 @@
 mixin toggle(toggleText)
-    label.switch
-        input(type='checkbox')
-        span.slider.round
-        span= toggleText
+    label.toggle-container
+        span.toggle-inline-container
+            input(type='checkbox')
+            span.slider.round
+            span.toggle-caption= toggleText
+

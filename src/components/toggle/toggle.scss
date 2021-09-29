@@ -1,13 +1,32 @@
+@import './../../styles/mixins/fonts.scss';
 @import './../../styles/variables/colors.scss';
-.switch {
+
+.toggle-container {
+    display: grid;
+    margin-bottom: 10px;
+    align-content: flex-start;
+    align-items: flex-start;
+
+    .toggle-inline-container {
+        display: grid;
+        grid-template-columns: 15.39% 84.61%;
+    }
+    width: 260px;
     position: relative;
-    display: inline-block;
-    width: 40px;
     height: 20px;
+    .toggle-caption {
+        display: inline;
+        align-content: flex-start;
+        vertical-align: top;
+        align-items: flex-start;
+        width: 210px;
+        @include body-font;
+        margin-left: 10px;
+    }
 }
 
 /* Hide default HTML checkbox */
-.switch input {
+.toggle-container input {
     opacity: 0;
     width: 0;
     height: 0;
@@ -16,14 +35,19 @@
 /* The slider */
 .slider {
     position: absolute;
+    box-sizing: border-box;
     cursor: pointer;
-    top: 0;
+    width: 40px;
+    height: 20px;
+
+    top: 3px;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: white;
     -webkit-transition: 0.4s;
     transition: 0.4s;
+    // padding-top: 10px;
 }
 
 .slider:before {
@@ -31,8 +55,8 @@
     content: '';
     height: 12px;
     width: 12px;
-    left: 4px;
-    bottom: 4px;
+    left: 8%;
+    bottom: 16%;
     background-color: $dark-shade-25;
     -webkit-transition: 0.4s;
     transition: 0.4s;
