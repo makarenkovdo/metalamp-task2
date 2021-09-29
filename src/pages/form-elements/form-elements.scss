@@ -1,7 +1,10 @@
+@import './../../styles/mixins/fonts.scss';
+@import './../../styles/mixins/font-faces.scss';
+@import './../../styles/variables/colors.scss';
+
 @mixin a-area() {
     display: grid;
 
-    width: 320px;
     // grid-template-rows: 20px;
     grid-template-columns: 50% 50%;
 }
@@ -11,6 +14,20 @@
     grid-template-areas:
         'a b c'
         'a d d';
+    width: 1440px-141px-141px;
+    margin-top: 143px;
+    // h3 {
+    //     font-size: 80px;
+    // }
+    //     h1 {
+    //         @include h1;
+    //     }
+    //     h2 {
+    //         @include h2;
+    //     }
+    //     h3 {
+    //         @include h3;
+    //     }
 }
 
 .form-elements__area-a {
@@ -21,6 +38,7 @@
         'ab'
         'ac';
     margin-left: 140.5px;
+    width: 320px;
 }
 .form-elements__area-b {
     display: grid;
@@ -29,6 +47,8 @@
         'ba'
         'bb'
         'bc';
+    margin-left: 100px;
+    width: 320px;
 }
 .form-elements__area-c {
     display: grid;
@@ -37,6 +57,7 @@
         'ca'
         'cb'
         'cc';
+    width: 320px;
 }
 .form-elements__area-d {
     display: grid;
@@ -45,6 +66,10 @@
         'ca'
         'cb'
         'cc';
+    margin-left: 100px;
+    .feedback-block {
+        width: 711px;
+    }
 }
 
 .form-elements .text-field_default {

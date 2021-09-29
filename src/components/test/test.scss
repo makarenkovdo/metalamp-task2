@@ -1,12 +1,27 @@
+$hundred: 100px;
+
 .test1 {
     display: grid;
     line-height: 20px;
     padding-bottom: 50px;
-    width: 320px;
-    border: 1px solid yellow;
+    width: 3.2 * $hundred;
+    @media (max-width: 1039px) {
+        border: 1px solid red;
+        $hundred: 50px;
+        width: 3.2 * $hundred;
+    }
+    @media (min-width: 1040px) {
+        border: 1px solid yellow;
+    }
 }
 .test-container1 {
     display: grid;
     border: 1px solid black;
     grid-template-columns: 40% 20% 20% 20%;
+    @media (max-width: 1039px) {
+        border: 1px solid red;
+    }
+    @media (min-width: 1040px) {
+        border: 1px solid yellow;
+    }
 }

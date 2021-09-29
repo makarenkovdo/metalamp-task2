@@ -1,0 +1,16 @@
+// @import './mixins/font-faces.scss';
+@import './mixins/fonts.scss';
+@import './variables/colors.scss';
+
+h1 {
+    @include h1;
+}
+h2 {
+    @include h2;
+}
+h3 {
+    @include h3;
+}
+p {
+    @include body-font;
+}

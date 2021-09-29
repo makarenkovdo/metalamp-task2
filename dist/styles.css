@@ -64,9 +64,16 @@
   display: grid;
   justify-content: left;
   align-content: center;
-  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
-  text-transform: uppercase;
-  color: #1f2041;
+}
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/bullet-list/bullet-list.scss ***!
+  \**************************************************************************************************************************************/
+.bullet-list {
+  display: list-item;
+}
+
+.bullet-list > li {
+  list-style: inside;
 }
 /*!****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/button/button.scss ***!
@@ -496,6 +503,13 @@ checkbox-expandable-list__popup {
 .hide {
   display: none !important;
 }
+/*!********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/feedback/feedback.scss ***!
+  \********************************************************************************************************************************/
+.feedback-container {
+  display: grid;
+  grid-template-areas: "icon title" "icon date" "like text";
+}
 /*!*****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/interior-form-texts-mixins.scss ***!
   \*****************************************************************************************************************************************/
@@ -542,6 +556,42 @@ checkbox-expandable-list__popup {
 }
 .like-button__counter_active {
   color: #bc9cff;
+}
+/*!************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/pagination/pagination.scss ***!
+  \************************************************************************************************************************************/
+.pagination-container {
+  display: grid;
+}
+.pagination__page-numbers {
+  display: grid;
+  grid-template-columns: repeat(6, 40px);
+}
+.pagination__page-numbers_active-page {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 50%;
+}
+.pagination__page-numbers_non-active-page {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 40px;
+  height: 40px;
+}
+.pagination__caption {
+  width: 229px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
 }
 /*!****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/radio-button/radio-button.scss ***!
@@ -669,7 +719,10 @@ checkbox-expandable-list__popup {
 /*!******************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/rich-checkbox/rich-checkbox.scss ***!
   \******************************************************************************************************************************************/
-
+.checkbox-list {
+  display: grid;
+  grid-template-columns: 3;
+}
 /*!************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/test/test.scss ***!
   \************************************************************************************************************************/
@@ -678,13 +731,33 @@ checkbox-expandable-list__popup {
   line-height: 20px;
   padding-bottom: 50px;
   width: 320px;
-  border: 1px solid yellow;
+}
+@media (max-width: 1039px) {
+  .test1 {
+    border: 1px solid red;
+    width: 160px;
+  }
+}
+@media (min-width: 1040px) {
+  .test1 {
+    border: 1px solid yellow;
+  }
 }
 
 .test-container1 {
   display: grid;
   border: 1px solid black;
   grid-template-columns: 40% 20% 20% 20%;
+}
+@media (max-width: 1039px) {
+  .test-container1 {
+    border: 1px solid red;
+  }
+}
+@media (min-width: 1040px) {
+  .test-container1 {
+    border: 1px solid yellow;
+  }
 }
 /*!************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/text-field/text-field.scss ***!
@@ -943,9 +1016,35 @@ input:checked + .slider:before {
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/form-elements/form-elements.scss ***!
   \*************************************************************************************************************************************/
+@font-face {
+  font-family: "Montserrat";
+  src: url(f8d4ca7d3eac34d2d5a6.woff2), url(92f9099c50f6abcbc6f6.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(4864fa64a4ca0d678210.woff2), url(1b85ddf71c245b802e72.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(4f3564bf83d4634c32ea.woff2), url(c0ab61c2a00761ede74e.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(d9740b725d5cecd53445.woff2), url(9c0434acc2db91787f5e.woff);
+  font-weight: 700;
+  font-style: normal;
+}
 .form-elements {
   display: grid;
-  grid-template-areas: "a b c";
+  grid-template-areas: "a b c" "a d d";
+  width: 1158px;
+  margin-top: 143px;
 }
 
 .form-elements__area-a {
@@ -953,18 +1052,36 @@ input:checked + .slider:before {
   grid-area: a;
   grid-template-areas: "aa" "ab" "ac";
   margin-left: 140.5px;
+  width: 320px;
 }
 
 .form-elements__area-b {
   display: grid;
   grid-area: b;
   grid-template-areas: "ba" "bb" "bc";
-  margin-left: 140.5px;
+  margin-left: 100px;
+  width: 320px;
+}
+
+.form-elements__area-c {
+  display: grid;
+  grid-area: c;
+  grid-template-areas: "ca" "cb" "cc";
+  width: 320px;
+}
+
+.form-elements__area-d {
+  display: grid;
+  grid-area: d;
+  grid-template-areas: "ca" "cb" "cc";
+  margin-left: 100px;
+}
+.form-elements__area-d .feedback-block {
+  width: 711px;
 }
 
 .form-elements .text-field_default {
   display: grid;
-  width: 320px;
   grid-template-columns: 50% 50%;
   grid-area: aa;
   margin-top: 143px;
@@ -972,7 +1089,6 @@ input:checked + .slider:before {
 
 .text-field_hover {
   display: grid;
-  width: 320px;
   grid-template-columns: 50% 50%;
   grid-area: ab;
   margin-top: 20px;
@@ -998,6 +1114,29 @@ input:checked + .slider:before {
   left: 30px;
   top: 30px;
   background: url(dded68ce7f618a3b07f6.svg) no-repeat;
+}
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/global-fonts.scss ***!
+  \***********************************************************************************************************************/
+h1 {
+  font: normal bold 24px/29px Montserrat, Arial, sans-serif;
+  color: #1f2041;
+}
+
+h2 {
+  font: normal bold 19px/23px Montserrat, Arial, sans-serif;
+  color: #1f2041;
+}
+
+h3 {
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+p {
+  font: normal normal 14px/24px Montserrat, Arial, sans-serif;
+  color: rgba(31, 32, 65, 0.75);
 }
 /*!****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/font-faces.scss ***!
@@ -1034,101 +1173,6 @@ input:checked + .slider:before {
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/placeholder.scss ***!
   \*****************************************************************************************************************************/
 
-/*!***********************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/reset-styles.scss ***!
-  \***********************************************************************************************************************/
-@charset "UTF-8";
-/*Обнуление*/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-:focus,
-:active {
-  outline: none;
-}
-
-a:focus,
-a:active {
-  outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
-
-/*--------------------*/
 /*!********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/variables/breakpoints.scss ***!
   \********************************************************************************************************************************/

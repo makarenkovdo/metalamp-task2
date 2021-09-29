@@ -132,6 +132,9 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             name: 'fonts/[name].[ext]',
+                            // publicPath: function (url) {
+                            //     return url.replace('../', '/assets/')
+                            // },
                         },
                     },
                 ],
