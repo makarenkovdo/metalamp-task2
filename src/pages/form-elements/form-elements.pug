@@ -40,19 +40,23 @@ block content
                 +block-title('masked text field')
                 +text-field ('','masked-text-field', 'ДД.ММ.ГГГГ')
             .date-dropdowns-block 
+                //- .first-title-block 
+                //-     +block-title('date dropdown')
+                //- .second-title-block 
+                //-     +block-title('date dropdown')
                 +datepicker()
-            //- .filter-date-dropdown-block 
-            //-     +filter-date-dropdown
-            //- .subscription-text-field 
-            //-     +text-field ('','email', 'Email')
-            //- .room-dropdown-block 
-            //-     +dropdown(2, 'room') 
-            //-     +dropdown(3, 'room') 
-            //- .expandable-checkbox-list-block
-            //-     +checkbox-expandable-list
-            //-     +checkbox-expandable-list
-            //- .comfort-block
-            //-     +comfort-block
+            .filter-date-dropdown-block 
+                +filter-date-dropdown
+            .subscription-text-field 
+                +text-field ('','email', 'Email')
+            .room-dropdown-block 
+                +dropdown(2, 'room') 
+                +dropdown(3, 'room') 
+            .expandable-checkbox-list-block
+                +checkbox-expandable-list
+                +checkbox-expandable-list
+            .comfort-block
+                +comfort-block
         .form-elements__area-b
             .checkbox-list-block
                 +block-title('checkbox buttons')

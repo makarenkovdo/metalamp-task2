@@ -29,7 +29,7 @@
   display: grid;
   justify-content: right;
   align-content: center;
-  font: normal 400 12px/15px Montserrat, Ravie, sans-serif;
+  font: normal 400 12px/15px Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
 }
@@ -40,7 +40,7 @@
   display: grid;
   justify-content: left;
   align-content: center;
-  font: normal bold 12px/15px Montserrat, Ravie, sans-serif;
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #1f2041;
 }
@@ -60,7 +60,7 @@
 .button-purple {
   width: 99px;
   height: 44px;
-  font: normal bold 12px/15px Montserrat, Ravie, sans-serif;
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -75,7 +75,7 @@
   width: 99px;
   height: 44px;
   background-color: white;
-  font: normal bold 12px/15px Montserrat, Ravie, sans-serif;
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #bc9cff;
   border-radius: 22px;
@@ -85,7 +85,7 @@
   border-color: rgba(188, 156, 255, 0.5);
 }
 .button-link {
-  font: normal bold 12px/15px Montserrat, Ravie, sans-serif;
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #bc9cff;
   /* identical to box height */
@@ -99,7 +99,7 @@
 .button-go-to-pay {
   width: 320px;
   height: 44px;
-  font: normal bold 12px/15px Montserrat, Ravie, sans-serif;
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
   /* Primary Gradient */
@@ -196,7 +196,7 @@ checkbox-expandable-list__popup {
   height: 18px;
   align-self: flex-start;
   align-content: center;
-  font: normal bold 14px/24px Montserrat, Ravie, sans-serif;
+  font: normal bold 14px/24px Montserrat, Arial, sans-serif;
   color: yellow;
   /* identical to box height, or 129% */
   /* Dark 50% */
@@ -332,30 +332,6 @@ checkbox-expandable-list__popup {
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dropdown/dropdown.scss ***!
   \********************************************************************************************************************************/
 @charset "UTF-8";
-@font-face {
-  font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(498c8cdbbcd5264ad13c.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(0329bf8fcbfdd06caa24.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
-  font-weight: 700;
-  font-style: normal;
-}
 .dropdown {
   display: grid;
   box-sizing: border-box;
@@ -378,7 +354,7 @@ checkbox-expandable-list__popup {
   box-sizing: border-box;
   border-radius: 2px 2px 0px 0px;
   /* Сколько гостей */
-  font: normal normal 14px/24px Montserrat, Ravie, sans-serif;
+  font: normal normal 14px/24px Montserrat, Arial, sans-serif;
   color: rgba(31, 32, 65, 0.75);
   /* Dark 75% */
   color: rgba(31, 32, 65, 0.75);
@@ -437,7 +413,7 @@ checkbox-expandable-list__popup {
   z-index: 1;
 }
 .dropdown__counter {
-  font: normal bold 12px/15px Montserrat, Ravie, sans-serif;
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #1f2041;
   text-align: center;
@@ -448,7 +424,7 @@ checkbox-expandable-list__popup {
 .dropdown__option-text {
   margin-left: 15px;
   margin-top: 13px;
-  font: normal bold 12px/15px Montserrat, Ravie, sans-serif;
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #1f2041;
   /* Dark 100% */
@@ -464,7 +440,7 @@ checkbox-expandable-list__popup {
   margin-right: 7px;
   justify-self: right;
   justify-content: right;
-  font: normal bold 12px/15px Montserrat, Ravie, sans-serif;
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #bc9cff;
   cursor: pointer;
@@ -476,7 +452,7 @@ checkbox-expandable-list__popup {
   margin-left: 14px;
   cursor: pointer;
   justify-self: left;
-  font: normal bold 12px/15px Montserrat, Ravie, sans-serif;
+  font: normal bold 12px/15px Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #bc9cff;
 }
@@ -651,7 +627,7 @@ checkbox-expandable-list__popup {
   height: 18px;
   align-self: flex-start;
   align-content: center;
-  font: normal normal 14px/24px Montserrat, Ravie, sans-serif;
+  font: normal normal 14px/24px Montserrat, Arial, sans-serif;
   color: rgba(31, 32, 65, 0.75);
   /* identical to box height, or 129% */
   /* Dark 50% */
@@ -749,7 +725,7 @@ checkbox-expandable-list__popup {
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
-  font: normal normal 14px/24px Montserrat, Ravie, sans-serif;
+  font: normal normal 14px/24px Montserrat, Arial, sans-serif;
   color: rgba(31, 32, 65, 0.75);
   /* Firefox 19+ */
   /* Firefox 18- */
@@ -776,15 +752,32 @@ checkbox-expandable-list__popup {
 /*!****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/toggle/toggle.scss ***!
   \****************************************************************************************************************************/
-.switch {
+.toggle-container {
+  display: grid;
+  margin-bottom: 10px;
+  align-content: flex-start;
+  align-items: flex-start;
+  width: 260px;
   position: relative;
-  display: inline-block;
-  width: 40px;
   height: 20px;
+}
+.toggle-container .toggle-inline-container {
+  display: grid;
+  grid-template-columns: 15.39% 84.61%;
+}
+.toggle-container .toggle-caption {
+  display: inline;
+  align-content: flex-start;
+  vertical-align: top;
+  align-items: flex-start;
+  width: 210px;
+  font: normal normal 14px/24px Montserrat, Arial, sans-serif;
+  color: rgba(31, 32, 65, 0.75);
+  margin-left: 10px;
 }
 
 /* Hide default HTML checkbox */
-.switch input {
+.toggle-container input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -793,8 +786,11 @@ checkbox-expandable-list__popup {
 /* The slider */
 .slider {
   position: absolute;
+  box-sizing: border-box;
   cursor: pointer;
-  top: 0;
+  width: 40px;
+  height: 20px;
+  top: 3px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -808,8 +804,8 @@ checkbox-expandable-list__popup {
   content: "";
   height: 12px;
   width: 12px;
-  left: 4px;
-  bottom: 4px;
+  left: 8%;
+  bottom: 16%;
   background-color: rgba(31, 32, 65, 0.25);
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -1032,7 +1028,12 @@ input:checked + .slider:before {
   grid-area: a;
   grid-template-areas: "aa" "ab" "ac";
   margin-left: 140.5px;
+  grid-template-rows: 84px 84px 86.56px 104px 105px 105px 164px 84px 236px 64px 306px 154px;
   width: 320px;
+}
+.form-elements__area-a .text-field-block .titles-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .form-elements__area-b {
@@ -1041,6 +1042,7 @@ input:checked + .slider:before {
   grid-template-areas: "ba" "bb" "bc";
   margin-left: 100px;
   width: 320px;
+  gap: 10px;
 }
 
 .form-elements__area-c {

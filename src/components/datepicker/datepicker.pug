@@ -1,5 +1,9 @@
-mixin datepicker()
-    form
-        .one
-            div#start_one.datepicker-here.js-datepicker-input(type='text' data-range='true' data-multiple-dates-separator=' - ' placeholder='ДД.ММ.ГГГГ' )
-            //- input#end_one.js-datepicker-input(type='text' data-range='true' data-multiple-dates-separator=' - ' placeholder='ДД.ММ.ГГГГ')
+include ../../components/block-title/block-title
+mixin datepicker(title1='date dropdown', title2='date dropdown')
+    form.datepicker-container
+        .datepicker__titles-container
+            +block-title(title1)
+            +block-title(title2)
+        .datepicker__inputs-container
+            input#start_one.datepicker-here.js-datepicker-input(type='text' data-range='true' data-multiple-dates-separator=' - ' placeholder='ДД.ММ.ГГГГ' )
+            input#end_one.js-datepicker-input(type='text' data-range='true' data-multiple-dates-separator=' - ' placeholder='ДД.ММ.ГГГГ')

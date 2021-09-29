@@ -5,21 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  <script defer src="styles.bundle.js"></script><script defer src="checkboxExpList.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="datepicker.bundle.js"></script><link href="styles.css" rel="stylesheet"></head>
+  <script defer src="styles.bundle.js"></script><script defer src="checkboxExpList.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="datepicker.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"></head>
   <body><img class="ui-kit-template-logo" src="./img/ui-kit-logo.svg" alt="some some" width="48" height="48">
     <div class="form-elements">
       <div class="form-elements__area-a">    
-        <div class="text-field-block-default">
-          <h3 class="block-title">TEXT FIELD</h3>
-          <h3 class="block-subtitle">DEFAULT</h3>
+        <div class="text-field-block">
+          <div class="titles-block">
+            <h3 class="block-title">text field</h3>
+            <h3 class="block-subtitle">DEFAULT</h3>
+          </div>
           <input class="text-field" type="text" value="" name="email" placeholder="Email">
         </div>
-        <div class="text-field-block_hover">
-          <h3 class="block-title">TEXT FIELD</h3>
-          <h3 class="block-subtitle">HOVER/FOCUS</h3>
+        <div class="text-field-block">
+          <div class="titles-block">       
+            <h3 class="block-title">text field</h3>
+            <h3 class="block-subtitle">HOVER/FOCUS</h3>
+          </div>
           <input class="text-field" type="text" value="This is pretty awesome" name="email" placeholder="Email">
         </div>
-        <div class="dropdown-block"> 
+        <div class="dropdown-block">
+          <h3 class="block-title">dropdown</h3>
           <!--style="display:none"-->
           <div class="js-dropdown_instance-1_type"></div>
           <div class="dropdown js-dropdown_instance-1">
@@ -29,113 +34,15 @@
           </div>
         </div>
         <div class="masked-text-field-block">
+          <h3 class="block-title">masked text field</h3>
           <input class="text-field" type="text" value="" name="masked-text-field" placeholder="ДД.ММ.ГГГГ">
         </div>
         <div class="date-dropdowns-block"> 
           <form>
             <div class="one">
-              <label for="start_one">С:</label>
-              <input class="datepicker-here js-datepicker-input" id="start_one" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ">
-              <label for="start_one">До:</label>
-              <input id="end_one" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ">
+              <div class="datepicker-here js-datepicker-input" id="start_one" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"></div>
             </div>
           </form>
-        </div>
-        <div class="filter-date-dropdown-block"> 
-          <form>
-            <input class="datepicker-here js-datepicker-input" id="start_one" type="text" data-range="true" data-date-format="d M" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ">
-          </form>
-        </div>
-        <div class="subscription-text-field"> 
-          <input class="text-field" type="text" value="" name="email" placeholder="Email">
-        </div>
-        <div class="room-dropdown-block"> 
-          <!--style="display:none"-->
-          <div class="js-dropdown_instance-2_type">room</div>
-          <div class="dropdown js-dropdown_instance-2">
-            <div class="dropdown__button js-dropdown_instance-2__button"><span class="dropdown__text js-dropdown_instance-2__text">0 спален, 0 кроватей</span><span class="dropdown__img-box js-dropdown_instance-2__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
-          </div>
-          <div class="dropdown__popup js-dropdown_instance-2__popup hide"><span class="dropdown__option-text js-dropdown_instance-2__option-text">СПАЛЬНИ</span><span class="dropdown__decrease js-dropdown_instance-2__decrease1"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter1">0</span><span class="dropdown__increase js-dropdown_instance-2__increase1"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-2__option-text">КРОВАТИ</span><span class="dropdown__decrease js-dropdown_instance-2__decrease2"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter2">0</span><span class="dropdown__increase js-dropdown_instance-2__increase2"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-2__option-text">ВАННЫЕ КОМНАТЫ</span><span class="dropdown__decrease js-dropdown_instance-2__decrease3"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter3">0</span><span class="dropdown__increase js-dropdown_instance-2__increase3"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span>
-          </div>
-          <!--style="display:none"-->
-          <div class="js-dropdown_instance-3_type">room</div>
-          <div class="dropdown js-dropdown_instance-3">
-            <div class="dropdown__button js-dropdown_instance-3__button"><span class="dropdown__text js-dropdown_instance-3__text">0 спален, 0 кроватей</span><span class="dropdown__img-box js-dropdown_instance-3__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
-          </div>
-          <div class="dropdown__popup js-dropdown_instance-3__popup hide"><span class="dropdown__option-text js-dropdown_instance-3__option-text">СПАЛЬНИ</span><span class="dropdown__decrease js-dropdown_instance-3__decrease1"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-3__counter1">0</span><span class="dropdown__increase js-dropdown_instance-3__increase1"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-3__option-text">КРОВАТИ</span><span class="dropdown__decrease js-dropdown_instance-3__decrease2"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-3__counter2">0</span><span class="dropdown__increase js-dropdown_instance-3__increase2"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-3__option-text">ВАННЫЕ КОМНАТЫ</span><span class="dropdown__decrease js-dropdown_instance-3__decrease3"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-3__counter3">0</span><span class="dropdown__increase js-dropdown_instance-3__increase3"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span>
-          </div>
-        </div>
-        <div class="expandable-checkbox-list-block">
-          <div class="checkbox-expandable-list js-checkbox-expandable-list">
-            <div class="checkbox-expandable-list__button js-checkbox-expandable-list__button"><span class="checkbox-expandable-list__text js-checkbox-expandable-list__text">EXPANDABLE CHECKBOX LIST</span><span class="checkbox-expandable-list__icon-box js-checkbox-expandable-list__icon-box"><img class="checkbox-expandable-list-icon js-checkbox-expandable-list-icon" src="./img/open-checkbox-expandable-list.svg" alt="some some" width="13" height="8"></span></div>
-          </div>
-          <div class="checkbox-expandable-list__popup js-checkbox-expandable-list__popup hide">
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Завтрак</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Письменный стол</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Стул для кормления</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Кроватка</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Телевизор</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Шампунь</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Телевизор</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Шампунь</span>
-            </label>
-          </div>
-          <div class="checkbox-expandable-list js-checkbox-expandable-list">
-            <div class="checkbox-expandable-list__button js-checkbox-expandable-list__button"><span class="checkbox-expandable-list__text js-checkbox-expandable-list__text">EXPANDABLE CHECKBOX LIST</span><span class="checkbox-expandable-list__icon-box js-checkbox-expandable-list__icon-box"><img class="checkbox-expandable-list-icon js-checkbox-expandable-list-icon" src="./img/open-checkbox-expandable-list.svg" alt="some some" width="13" height="8"></span></div>
-          </div>
-          <div class="checkbox-expandable-list__popup js-checkbox-expandable-list__popup hide">
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Завтрак</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Письменный стол</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Стул для кормления</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Кроватка</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Телевизор</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Шампунь</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Телевизор</span>
-            </label>
-            <label class="checkbox-label">
-              <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Шампунь</span>
-            </label>
-          </div>
-        </div>
-        <div class="comfort-block">
-          <div class="comfort-block">
-            <div class="emotion-container"><img class="emotion-icon" src="./img/comfort-emotion.svg" alt="some some" width="48" height="48">
-              <div class="title">Комфорт</div>
-              <div class="subtitle">Шумопоглощающие стены</div>
-            </div><img class="line-icon" src="./img/comfort-line.svg" alt="some some" width="280" height="1">
-            <div class="house-container"><img class="house-icon" src="./img/comfort-house.svg" alt="some some" width="48" height="48">
-              <div class="title">Удобство</div>
-              <div class="subtitle">Окно в каждой из спален</div>
-            </div>
-          </div>
         </div>
       </div>
       <div class="form-elements__area-b">
@@ -151,7 +58,8 @@
             <input class="checkbox__input" type="checkbox"><span class="checkbox__new-icon"></span><span class="checkbox__text">Можно пригласить гостей (до 10 человек)</span>
           </label>
         </div>
-        <div class="radio-button-block"> 
+        <div class="radio-button-block">                
+          <h3 class="block-title">radio buttons</h3>
           <label class="radio-label">
             <input class="radio__input" type="radio" name="color" value="indigo"><span class="radio__new-icon"></span><span class="radio__text">Мужчина Man</span>
           </label>
@@ -166,17 +74,18 @@
           </label>
         </div>
         <div class="toggle-block"> 
-          <label class="switch">
-            <input type="checkbox"><span class="slider round"></span><span>Получать спецпредложения</span>
-          </label>
-          <label class="switch">
-            <input type="checkbox"><span class="slider round"></span><span>Получать спецпредложения</span>
-          </label>
+          <h3 class="block-title">toggle</h3>
+          <label class="toggle-container"><span class="toggle-inline-container">
+              <input type="checkbox"><span class="slider round"></span><span class="toggle-caption">Получать 1</span></span></label>
+          <label class="toggle-container"><span class="toggle-inline-container">
+              <input type="checkbox"><span class="slider round"></span><span class="toggle-caption">Получать спецпредложения</span></span></label>
         </div>
         <div class="like-button-block">
+          <h3 class="block-title">like button</h3>
           <div class="like-button js-like-button like-button_1"><span class="like-button__icon-container"><img class="like-button__icon js-like-button__icon" src="./img/like-border.svg" alt="some some" width="13" height="8"></span><span class="like-button__counter js-like-button__counter">2</span></div>
         </div>
         <div class="rate-button-block"> 
+          <h3 class="block-title">rate button</h3>
           <div class="rate-button-container"><img src="./img/rate-button.svg" alt="some some" width="24" height="24"><img src="./img/rate-button.svg" alt="some some" width="24" height="24"><img src="./img/rate-button.svg" alt="some some" width="24" height="24"><img src="./img/rate-button.svg" alt="some some" width="24" height="24"><img src="./img/rate-button-white.svg" alt="some some" width="24" height="24">
           </div>
           <div class="rate-button-container"><img src="./img/rate-button.svg" alt="some some" width="24" height="24"><img src="./img/rate-button.svg" alt="some some" width="24" height="24"><img src="./img/rate-button.svg" alt="some some" width="24" height="24"><img src="./img/rate-button.svg" alt="some some" width="24" height="24"><img src="./img/rate-button.svg" alt="some some" width="24" height="24">
