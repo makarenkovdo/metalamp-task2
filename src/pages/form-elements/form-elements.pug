@@ -23,17 +23,21 @@ include ../../components/toggle/toggle
 block content
     .form-elements
         .form-elements__area-a     
-            .text-field-block-default
-                +block-title('TEXT FIELD')
-                +block-subtitle('DEFAULT')
+            .text-field-block
+                .titles-block
+                    +block-title('text field')
+                    +block-subtitle('DEFAULT')
                 +text-field ('','email', 'Email')
-            .text-field-block_hover
-                +block-title('TEXT FIELD')
-                +block-subtitle('HOVER/FOCUS')
+            .text-field-block
+                .titles-block        
+                    +block-title('text field')
+                    +block-subtitle('HOVER/FOCUS')
                 +text-field ('This is pretty awesome','email', 'Email')
-            .dropdown-block 
+            .dropdown-block
+                +block-title('dropdown')
                 +dropdown(1)
             .masked-text-field-block
+                +block-title('masked text field')
                 +text-field ('','masked-text-field', 'ДД.ММ.ГГГГ')
             .date-dropdowns-block 
                 +datepicker()
@@ -53,15 +57,19 @@ block content
             .checkbox-list-block
                 +block-title('checkbox buttons')
                 +checkbox-list
-            .radio-button-block 
+            .radio-button-block                 
+                +block-title('radio buttons')
                 +radio-button()
                 +radio-button()
             .toggle-block 
+                +block-title('toggle')
                 +toggle('Получать 1')
                 +toggle('Получать спецпредложения')
             .like-button-block
+                +block-title('like button')
                 +like-button(1)
             .rate-button-block 
+                +block-title('rate button')
                 +rate-button(4)
                 +rate-button(5)
             .dropdowns-block-2

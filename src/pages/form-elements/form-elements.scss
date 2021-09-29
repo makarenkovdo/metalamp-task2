@@ -38,7 +38,15 @@
         'ab'
         'ac';
     margin-left: 140.5px;
+    grid-template-rows: 84px 84px 86.56px 104px 105px 105px 164px 84px 236px 64px 306px 154px;
     width: 320px;
+
+    .text-field-block {
+        .titles-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }
 .form-elements__area-b {
     display: grid;
@@ -49,6 +57,7 @@
         'bc';
     margin-left: 100px;
     width: 320px;
+    gap: 10px;
 }
 .form-elements__area-c {
     display: grid;
