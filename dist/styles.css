@@ -328,6 +328,22 @@ checkbox-expandable-list__popup {
   left: 260px;
   top: 692px;
 }
+/*!************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/datepicker/datepicker.scss ***!
+  \************************************************************************************************************************************/
+.datepicker-container {
+  width: 320px;
+}
+.datepicker__inputs-container {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  gap: 20px;
+}
+.datepicker__titles-container {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  gap: 20px;
+}
 /*!********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dropdown/dropdown.scss ***!
   \********************************************************************************************************************************/
@@ -465,6 +481,16 @@ checkbox-expandable-list__popup {
 .feedback-container {
   display: grid;
   grid-template-areas: "icon title" "icon date" "like text";
+}
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/filter-date-dropdown/filter-date-dropdown.scss ***!
+  \********************************************************************************************************************************************************/
+.filter-date-dropdown-container {
+  width: 266px;
+}
+
+.filter-date-dropdown-input {
+  width: 266px;
 }
 /*!*****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/interior-form-texts-mixins.scss ***!
@@ -1028,12 +1054,21 @@ input:checked + .slider:before {
   grid-area: a;
   grid-template-areas: "aa" "ab" "ac";
   margin-left: 140.5px;
-  grid-template-rows: 84px 84px 86.56px 104px 105px 105px 164px 84px 236px 64px 306px 154px;
+  grid-template-rows: 84px 84px 86.56px 104px 105px 105px 164px 320px 64px 306px 154px;
   width: 320px;
 }
 .form-elements__area-a .text-field-block .titles-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.form-elements__area-a .date-dropdowns-block {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: space-between;
+  width: 320px;
+}
+.form-elements__area-a .room-dropdown-block {
+  width: 266px;
 }
 
 .form-elements__area-b {

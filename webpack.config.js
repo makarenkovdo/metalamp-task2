@@ -49,10 +49,6 @@ pugComponents.map((page) => {
     )
 })
 plugins.push(
-    new HtmlWebpackPlugin({
-        template: `./src/components/checkbox/checkbox.pug`,
-        filename: `checkboxpug.html`,
-    }),
     new HtmlWebpackPugPlugin(),
     new webpack.ProvidePlugin({
         $: 'jquery',
@@ -162,9 +158,11 @@ module.exports = {
     },
     devServer: {
         static: {
-            directory: path.join(__dirname, 'dist'),
+            directory: path.join(__dirname, 'src'),
         },
-        compress: true,
+        // contentBase: path.resolve(__dirname, 'dist'),
+        // compress: true,
         port: 9000,
+        // hot: true,
     },
 }
