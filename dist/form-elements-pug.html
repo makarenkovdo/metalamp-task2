@@ -10,23 +10,24 @@
     <div class="form-elements">
       <div class="form-elements__area-a">    
         <div class="text-field-block">
-          <div class="titles-block">
+          <div class="titles-container">
             <h3 class="block-title">text field</h3>
             <h3 class="block-subtitle">DEFAULT</h3>
           </div>
-          <input class="text-field" type="text" value="" name="email" placeholder="Email">
+          <div class="text-field__container"></div><span class="text-field-container">
+            <input class="text-field__input" type="text" value="" name="email" placeholder="Email"></span>
         </div>
         <div class="text-field-block">
           <div class="titles-block">       
             <h3 class="block-title">text field</h3>
             <h3 class="block-subtitle">HOVER/FOCUS</h3>
-          </div>
-          <input class="text-field" type="text" value="This is pretty awesome" name="email" placeholder="Email">
+          </div><span class="text-field-container">
+            <input class="text-field__input" type="text" value="This is pretty awesome" name="email" placeholder="Email"></span>
         </div>
         <div class="dropdown-block">
           <h3 class="block-title">dropdown</h3>
           <!--style="display:none"-->
-          <div class="js-dropdown_instance-1_type"></div>
+          <div class="js-dropdown_instance-1_type hide"></div>
           <div class="dropdown js-dropdown_instance-1">
             <div class="dropdown__button js-dropdown_instance-1__button"><span class="dropdown__text js-dropdown_instance-1__text">Сколько гостей?</span><span class="dropdown__img-box js-dropdown_instance-1__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
           </div>
@@ -34,8 +35,8 @@
           </div>
         </div>
         <div class="masked-text-field-block">
-          <h3 class="block-title">masked text field</h3>
-          <input class="text-field" type="text" value="" name="masked-text-field" placeholder="ДД.ММ.ГГГГ">
+          <h3 class="block-title">masked text field</h3><span class="text-field-container">
+            <input class="text-field__input" type="text" value="" name="masked-text-field" placeholder="ДД.ММ.ГГГГ"></span>
         </div>
         <div class="date-dropdowns-block"> 
           <form class="datepicker-container">
@@ -56,19 +57,19 @@
           </form>
         </div>
         <div class="subscription-text-field">
-          <h3 class="block-title">subscription text field</h3>
-          <input class="text-field" type="text" value="" name="email" placeholder="Email">
+          <h3 class="block-title">subscription text field</h3><span class="text-field-container">
+            <input class="text-field__input" type="text" value="" name="email" placeholder="Email"></span>
         </div>
         <div class="room-dropdown-block"> 
           <!--style="display:none"-->
-          <div class="js-dropdown_instance-2_type">room</div>
+          <div class="js-dropdown_instance-2_type hide">room</div>
           <div class="dropdown js-dropdown_instance-2">
             <div class="dropdown__button js-dropdown_instance-2__button"><span class="dropdown__text js-dropdown_instance-2__text">0 спален, 0 кроватей</span><span class="dropdown__img-box js-dropdown_instance-2__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
           </div>
           <div class="dropdown__popup js-dropdown_instance-2__popup hide"><span class="dropdown__option-text js-dropdown_instance-2__option-text">СПАЛЬНИ</span><span class="dropdown__decrease js-dropdown_instance-2__decrease1"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter1">0</span><span class="dropdown__increase js-dropdown_instance-2__increase1"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-2__option-text">КРОВАТИ</span><span class="dropdown__decrease js-dropdown_instance-2__decrease2"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter2">0</span><span class="dropdown__increase js-dropdown_instance-2__increase2"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-2__option-text">ВАННЫЕ КОМНАТЫ</span><span class="dropdown__decrease js-dropdown_instance-2__decrease3"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter3">0</span><span class="dropdown__increase js-dropdown_instance-2__increase3"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span>
           </div>
           <!--style="display:none"-->
-          <div class="js-dropdown_instance-3_type">room</div>
+          <div class="js-dropdown_instance-3_type hide">room</div>
           <div class="dropdown js-dropdown_instance-3">
             <div class="dropdown__button js-dropdown_instance-3__button"><span class="dropdown__text js-dropdown_instance-3__text">0 спален, 0 кроватей</span><span class="dropdown__img-box js-dropdown_instance-3__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
           </div>
@@ -196,7 +197,7 @@
         </div>
         <div class="dropdowns-block-2">
           <!--style="display:none"-->
-          <div class="js-dropdown_instance-4_type"></div>
+          <div class="js-dropdown_instance-4_type hide"></div>
           <div class="dropdown js-dropdown_instance-4">
             <div class="dropdown__button js-dropdown_instance-4__button"><span class="dropdown__text js-dropdown_instance-4__text">Сколько гостей?</span><span class="dropdown__img-box js-dropdown_instance-4__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
           </div>

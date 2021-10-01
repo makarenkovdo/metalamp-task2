@@ -474,10 +474,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /*!****************************************************!*\
   !*** ./src/pages/form-elements/form-elements.scss ***!
   \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/pages/form-elements/form-elements.scss?");
+eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nSassError: Can't find stylesheet to import.\\n  ╷\\n1 │ @import '/path/to/reset-css/sass/reset';\\r\\n  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  ╵\\n  src\\\\pages\\\\form-elements\\\\form-elements.scss 1:9  root stylesheet\\n    at processResult (C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:721:19)\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:827:5\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:399:11\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:251:18\\n    at context.callback (C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:124:13)\\n    at C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\sass-loader\\\\dist\\\\index.js:54:7\\n    at Function.call$2 (C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\sass\\\\sass.dart.js:95925:16)\\n    at _render_closure1.call$2 (C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\sass\\\\sass.dart.js:83907:12)\\n    at _RootZone.runBinary$3$3 (C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\sass\\\\sass.dart.js:28042:18)\\n    at _FutureListener.handleError$1 (C:\\\\Users\\\\Andrew\\\\Documents\\\\MetaLamp\\\\task2\\\\node_modules\\\\sass\\\\sass.dart.js:26572:21)\");\n\n//# sourceURL=webpack://task2/./src/pages/form-elements/form-elements.scss?");
 
 /***/ }),
 
@@ -533,6 +532,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/styles/mixins/placeholder.scss?");
+
+/***/ }),
+
+/***/ "./src/styles/mixins/responsive.scss":
+/*!*******************************************!*\
+  !*** ./src/styles/mixins/responsive.scss ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/styles/mixins/responsive.scss?");
 
 /***/ }),
 
@@ -604,7 +614,7 @@ eval("var map = {\n\t\"./ui-kit-template/ui-kit-logo.svg\": \"./src/pages/ui-kit
   \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./global-fonts.scss\": \"./src/styles/global-fonts.scss\",\n\t\"./mixins/font-faces.scss\": \"./src/styles/mixins/font-faces.scss\",\n\t\"./mixins/fonts.scss\": \"./src/styles/mixins/fonts.scss\",\n\t\"./mixins/placeholder.scss\": \"./src/styles/mixins/placeholder.scss\",\n\t\"./variables/breakpoints.scss\": \"./src/styles/variables/breakpoints.scss\",\n\t\"./variables/colors.scss\": \"./src/styles/variables/colors.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/styles sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/styles/_sync_\\.scss$?");
+eval("var map = {\n\t\"./global-fonts.scss\": \"./src/styles/global-fonts.scss\",\n\t\"./mixins/font-faces.scss\": \"./src/styles/mixins/font-faces.scss\",\n\t\"./mixins/fonts.scss\": \"./src/styles/mixins/fonts.scss\",\n\t\"./mixins/placeholder.scss\": \"./src/styles/mixins/placeholder.scss\",\n\t\"./mixins/responsive.scss\": \"./src/styles/mixins/responsive.scss\",\n\t\"./variables/breakpoints.scss\": \"./src/styles/variables/breakpoints.scss\",\n\t\"./variables/colors.scss\": \"./src/styles/variables/colors.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/styles sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/styles/_sync_\\.scss$?");
 
 /***/ })
 

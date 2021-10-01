@@ -30,6 +30,11 @@
         ($m-l * $percent);
 }
 
+@mixin responsive-font($fontSize, $lineHeight) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}
+
 @mixin static(
     $width,
     $defaultWidth,
@@ -207,6 +212,30 @@
             $m-b,
             $m-l
         );
+    }
+}
+
+@mixin media-font($fontSize, $lineHeight) {
+    @media (max-width: 479px) {
+        @include responsive-font($fontSize * 0.15, $lineHeight * 0.15);
+    }
+    @media (min-width: 480px) and (max-width: 639px) {
+        @include responsive-font($fontSize * 0.22, $lineHeight * 0.22);
+    }
+    @media (min-width: 640px) and (max-width: 767px) {
+        @include responsive-font($fontSize * 0.33, $lineHeight * 0.33);
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        @include responsive-font($fontSize * 0.53, $lineHeight * 0.53);
+    }
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        @include responsive-font($fontSize * 0.71, $lineHeight * 0.71);
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+        @include responsive-font($fontSize * 0.88, $lineHeight * 0.88);
+    }
+    @media (min-width: 1440px) {
+        @include responsive-font($fontSize, $lineHeight);
     }
 }
 

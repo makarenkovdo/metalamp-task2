@@ -1,6 +1,6 @@
 @import './../../styles/mixins/fonts.scss';
 @import './../../styles/mixins/font-faces.scss';
-@import './../../styles/variables/colors.scss';
+@import './../../../node_modules/reset-css/sass/_reset.scss';
 
 @mixin a-area() {
     display: grid;
@@ -38,13 +38,21 @@
         'ab'
         'ac';
     margin-left: 140.5px;
-    grid-template-rows: 84px 84px 86.56px 104px 105px 105px 164px 320px 64px 306px 154px;
+    // grid-template-rows: 84px 84px 86.56px 104px 105px 105px 164px 320px 64px 306px 154px;
     width: 320px;
 
-    .text-field-block {
-        .titles-block {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+    .text-field {
+        &-block {
+            .titles-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 0px 0px 0px 0px;
+                // background-color: blue;
+            }
+        }
+
+        &__container {
+            margin-top: 0px;
         }
     }
     .date-dropdowns-block {

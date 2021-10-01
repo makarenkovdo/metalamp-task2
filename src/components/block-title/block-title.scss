@@ -1,4 +1,5 @@
 @import './../../styles/mixins/fonts.scss';
+@import './../../styles/mixins/responsive.scss';
 @import './../../styles/variables/colors.scss';
 
 .block-title {
@@ -6,4 +7,5 @@
     justify-content: left;
     align-content: center;
     @include h3($dark-shade-100);
+    // @include media-font(12px, 15px);
 }
