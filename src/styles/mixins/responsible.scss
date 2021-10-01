@@ -1,12 +1,109 @@
 @mixin responsible(
     $width,
-    $divider,
-    $padding,
-    $margin,
+    $defaultWidth,
     $fontSize,
-    $lineHeight
+    $lineHeight,
+    $p-t: 0,
+    $p-r: 0,
+    $p-b: 0,
+    $p-l: 0,
+    $m-t: 0,
+    $m-r: 0,
+    $m-b: 0,
+    $m-l: 0
 ) {
-    $hundredPx: $width / $divider;
+    $percent: $width / $defaultWidth;
     width: $width;
-    padding: (0.11 * $hundredPx) 0 (0.07 * $hundredPx) (0.15 * $hundredPx);
+    font-size: $fontSize * $percent;
+    line-height: $lineHeight * $percent;
+    padding: ($p-t * $percent) ($p-r * $percent) ($p-b * $percent)
+        ($p-l * $percent);
+    margin: ($m-t * $percent) ($m-r * $percent) ($m-b * $percent)
+        ($m-l * $percent);
+}
+
+@mixin media(
+    $width,
+    $defaultWidth,
+    $fontSize,
+    $lineHeight,
+    $p-t: 0,
+    $p-r: 0,
+    $p-b: 0,
+    $p-l: 0,
+    $m-t: 0,
+    $m-r: 0,
+    $m-b: 0,
+    $m-l: 0
+) {
+    @media (max-width: 479px) {
+    }
+    @media (min-width: 480px) and (max-width: 639px) {
+    }
+    @media (min-width: 640px) and (max-width: 767px) {
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        @include responsible(
+            $width * 0.1,
+            $defaultWidth,
+            $fontSize,
+            $lineHeight,
+            $p-t: 0,
+            $p-r: 0,
+            $p-b: 0,
+            $p-l: 0,
+            $m-t: 0,
+            $m-r: 0,
+            $m-b: 0,
+            $m-l: 0
+        );
+    }
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        @include responsible(
+            $width * 0.3,
+            $defaultWidth,
+            $fontSize,
+            $lineHeight,
+            $p-t: 0,
+            $p-r: 0,
+            $p-b: 0,
+            $p-l: 0,
+            $m-t: 0,
+            $m-r: 0,
+            $m-b: 0,
+            $m-l: 0
+        );
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+        @include responsible(
+            $width * 0.5,
+            $defaultWidth,
+            $fontSize,
+            $lineHeight,
+            $p-t: 0,
+            $p-r: 0,
+            $p-b: 0,
+            $p-l: 0,
+            $m-t: 0,
+            $m-r: 0,
+            $m-b: 0,
+            $m-l: 0
+        );
+    }
+    @media (min-width: 1440px) {
+        @include responsible(
+            $width,
+            $defaultWidth,
+            $fontSize,
+            $lineHeight,
+            $p-t: 0,
+            $p-r: 0,
+            $p-b: 0,
+            $p-l: 0,
+            $m-t: 0,
+            $m-r: 0,
+            $m-b: 0,
+            $m-l: 0
+        );
+    }
 }

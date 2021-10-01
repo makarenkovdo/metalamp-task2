@@ -2,18 +2,14 @@
 // @import './../../styles/mixins/font-faces.scss';
 @import './../../styles/variables/colors.scss';
 @import './../../styles/mixins/placeholder.scss';
-$width: 320px;
-$100px: $width * 0.5;
-.text-field {
-    width: $width;
-    // height: 44px;
-    padding: 11px 0 7px 15px;
-    box-sizing: border-box;
+@import './../../styles/mixins/responsible.scss';
 
+.text-field {
+    box-sizing: border-box;
+    @include body-font;
     background: #ffffff;
     border: 1px solid $dark-shade-25;
     border-radius: 4px;
-    @include body-font;
     &:placeholder-shown {
         @include placeholder(color, $dark-shade-25);
         line-height: 18px;
@@ -26,18 +22,5 @@ $100px: $width * 0.5;
     &:focus {
         border: 1px solid $dark-shade-50;
     }
-    @media (max-width: 479px) {
-    }
-    @media (min-width: 480px) and (max-width: 639px) {
-    }
-    @media (min-width: 640px) and (max-width: 767px) {
-    }
-    @media (min-width: 768px) and (max-width: 1023px) {
-    }
-    @media (min-width: 1024px) and (max-width: 1279px) {
-    }
-    @media (min-width: 1280px) and (max-width: 1439px) {
-    }
-    @media (min-width: 1440px) {
-    }
+    @include media(320px, 320px, 14px, 24px, 11px, 0, 7px, 15px);
 }
