@@ -2,25 +2,53 @@
 // @import './../../styles/mixins/font-faces.scss';
 @import './../../styles/variables/colors.scss';
 @import './../../styles/mixins/placeholder.scss';
-@import './../../styles/mixins/responsible.scss';
+@import './../../styles/mixins/responsive.scss';
 
 .text-field {
-    display: grid;
-    box-sizing: border-box;
-    @include body-font;
-    background: #ffffff;
-    border: 1px solid $dark-shade-25;
-    border-radius: 4px;
-    &:placeholder-shown {
-        @include placeholder(color, $dark-shade-25);
-        @include media(
+    &-container {
+        display: grid;
+        @include media-container(320px, 320px, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    }
+
+    &__input {
+        display: grid;
+        background: #ffffff;
+        border-radius: 4px;
+        border: 1px solid $dark-shade-25;
+        box-sizing: border-box;
+        @include body-font;
+        &:placeholder-shown {
+            @include placeholder(color, $dark-shade-25);
+            @include media-content(
+                320px,
+                320px,
+                14px,
+                18px,
+                12px,
+                0,
+                12px,
+                15px,
+                0,
+                0,
+                0,
+                0
+            );
+        }
+
+        &:hover {
+            border: 1px solid $dark-shade-50;
+        }
+        &:focus {
+            border: 1px solid $dark-shade-50;
+        }
+        @include media-content(
             320px,
             320px,
             14px,
-            18px,
-            12px,
+            24px,
+            11px,
             0,
-            12px,
+            7px,
             15px,
             0,
             0,
@@ -28,12 +56,4 @@
             0
         );
     }
-
-    &:hover {
-        border: 1px solid $dark-shade-50;
-    }
-    &:focus {
-        border: 1px solid $dark-shade-50;
-    }
-    @include media(320px, 320px, 14px, 24px, 11px, 0, 7px, 15px, 0, 0, 0, 0);
 }

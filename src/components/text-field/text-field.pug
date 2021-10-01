@@ -1,6 +1,7 @@
 mixin text-field(text, name,placeholder)
-    input.text-field(
-        type = 'text'
-        value = text
-        name = name
-        placeholder = placeholder) 
+    span.text-field-container
+        input.text-field__input(
+            type = 'text'
+            value = text
+            name = name
+            placeholder = placeholder) 
