@@ -1,0 +1,12 @@
+@mixin responsible(
+    $width,
+    $divider,
+    $padding,
+    $margin,
+    $fontSize,
+    $lineHeight
+) {
+    $hundredPx: $width / $divider;
+    width: $width;
+    padding: (0.11 * $hundredPx) 0 (0.07 * $hundredPx) (0.15 * $hundredPx);
+}
