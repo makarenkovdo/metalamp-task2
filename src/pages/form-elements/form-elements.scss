@@ -50,6 +50,14 @@
         justify-items: space-between;
         width: 320px;
     }
+    .filter-date-dropdown {
+        &__container {
+            width: 266px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+    }
     .room-dropdown-block {
         width: 266px;
     }

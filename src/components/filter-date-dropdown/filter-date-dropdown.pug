@@ -1,5 +1,5 @@
 mixin filter-date-dropdown()
-    form
-        //- .filter-date-dropdown-container
-        input#start_one.datepicker-here.filter-date-dropdown-input.js-datepicker-input(type='text' data-range='true' data-date-format="d M" data-multiple-dates-separator=' - ' placeholder='ДД.ММ.ГГГГ' )
-         
+    form.filter-date-dropdown-form
+        input#start_one.datepicker-here.filter-date-dropdown__input.js-datepicker-input(type='text' data-range='true' data-date-format="d M" data-multiple-dates-separator=' - ' placeholder='ДД.ММ.ГГГГ' )
+        span(class="dropdown__img-box js-dropdown_instance-" + instance + "__img-box")
+            img(src='./img/dropdown.svg' alt='open' width='13' height='8')

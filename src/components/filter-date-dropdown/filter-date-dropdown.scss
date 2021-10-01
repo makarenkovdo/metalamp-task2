@@ -1,7 +1,12 @@
-.filter-date-dropdown-container {
-    width: 266px;
-}
-
-.filter-date-dropdown-input {
-    width: 266px;
+.filter-date-dropdown {
+    &-form {
+        display: grid;
+        box-sizing: border-box;
+        width: 266px;
+        grid-template-columns: 222px 44px;
+        border: 1px solid #1f204140;
+    }
+    // &__input {
+    //     width: 300px;
+    // }
 }
