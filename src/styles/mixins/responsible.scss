@@ -3,14 +3,14 @@
     $defaultWidth,
     $fontSize,
     $lineHeight,
-    $p-t: 0,
-    $p-r: 0,
-    $p-b: 0,
-    $p-l: 0,
-    $m-t: 0,
-    $m-r: 0,
-    $m-b: 0,
-    $m-l: 0
+    $p-t,
+    $p-r,
+    $p-b,
+    $p-l,
+    $m-t,
+    $m-r,
+    $m-b,
+    $m-l
 ) {
     $percent: $width / $defaultWidth;
     width: $width;
@@ -27,14 +27,14 @@
     $defaultWidth,
     $fontSize,
     $lineHeight,
-    $p-t: 0,
-    $p-r: 0,
-    $p-b: 0,
-    $p-l: 0,
-    $m-t: 0,
-    $m-r: 0,
-    $m-b: 0,
-    $m-l: 0
+    $p-t,
+    $p-r,
+    $p-b,
+    $p-l,
+    $m-t,
+    $m-r,
+    $m-b,
+    $m-l
 ) {
     @media (max-width: 479px) {
     }
@@ -48,14 +48,14 @@
             $defaultWidth,
             $fontSize,
             $lineHeight,
-            $p-t: 0,
-            $p-r: 0,
-            $p-b: 0,
-            $p-l: 0,
-            $m-t: 0,
-            $m-r: 0,
-            $m-b: 0,
-            $m-l: 0
+            $p-t,
+            $p-r,
+            $p-b,
+            $p-l,
+            $m-t,
+            $m-r,
+            $m-b,
+            $m-l
         );
     }
     @media (min-width: 1024px) and (max-width: 1279px) {
@@ -64,14 +64,14 @@
             $defaultWidth,
             $fontSize,
             $lineHeight,
-            $p-t: 0,
-            $p-r: 0,
-            $p-b: 0,
-            $p-l: 0,
-            $m-t: 0,
-            $m-r: 0,
-            $m-b: 0,
-            $m-l: 0
+            $p-t,
+            $p-r,
+            $p-b,
+            $p-l,
+            $m-t,
+            $m-r,
+            $m-b,
+            $m-l
         );
     }
     @media (min-width: 1280px) and (max-width: 1439px) {
@@ -80,14 +80,14 @@
             $defaultWidth,
             $fontSize,
             $lineHeight,
-            $p-t: 0,
-            $p-r: 0,
-            $p-b: 0,
-            $p-l: 0,
-            $m-t: 0,
-            $m-r: 0,
-            $m-b: 0,
-            $m-l: 0
+            $p-t,
+            $p-r,
+            $p-b,
+            $p-l,
+            $m-t,
+            $m-r,
+            $m-b,
+            $m-l
         );
     }
     @media (min-width: 1440px) {
@@ -96,14 +96,14 @@
             $defaultWidth,
             $fontSize,
             $lineHeight,
-            $p-t: 0,
-            $p-r: 0,
-            $p-b: 0,
-            $p-l: 0,
-            $m-t: 0,
-            $m-r: 0,
-            $m-b: 0,
-            $m-l: 0
+            $p-t,
+            $p-r,
+            $p-b,
+            $p-l,
+            $m-t,
+            $m-r,
+            $m-b,
+            $m-l
         );
     }
 }

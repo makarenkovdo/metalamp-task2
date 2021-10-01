@@ -22,5 +22,5 @@
     &:focus {
         border: 1px solid $dark-shade-50;
     }
-    @include media(320px, 320px, 14px, 24px, 11px, 0, 7px, 15px);
+    @include media(320px, 320px, 14px, 24px, 11px, 0, 7px, 15px, 0, 0, 0, 0);
 }
