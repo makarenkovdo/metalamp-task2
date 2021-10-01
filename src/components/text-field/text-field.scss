@@ -5,6 +5,7 @@
 @import './../../styles/mixins/responsible.scss';
 
 .text-field {
+    display: grid;
     box-sizing: border-box;
     @include body-font;
     background: #ffffff;
@@ -12,8 +13,20 @@
     border-radius: 4px;
     &:placeholder-shown {
         @include placeholder(color, $dark-shade-25);
-        line-height: 18px;
-        padding: 12px 0 12px 15px;
+        @include media(
+            320px,
+            320px,
+            14px,
+            18px,
+            12px,
+            0,
+            12px,
+            15px,
+            0,
+            0,
+            0,
+            0
+        );
     }
 
     &:hover {

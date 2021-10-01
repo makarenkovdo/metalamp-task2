@@ -1,4 +1,29 @@
 @mixin responsible(
+    $minWidth,
+    $maxWidth,
+    $defaultWidth,
+    $fontSize,
+    $lineHeight,
+    $p-t,
+    $p-r,
+    $p-b,
+    $p-l,
+    $m-t,
+    $m-r,
+    $m-b,
+    $m-l
+) {
+    $percent: $minWidth / $defaultWidth;
+    grid-template-columns: minmax($minWidth, $maxWidth);
+    font-size: $fontSize * $percent;
+    line-height: $lineHeight * $percent;
+    padding: ($p-t * $percent) ($p-r * $percent) ($p-b * $percent)
+        ($p-l * $percent);
+    margin: ($m-t * $percent) ($m-r * $percent) ($m-b * $percent)
+        ($m-l * $percent);
+}
+
+@mixin static(
     $width,
     $defaultWidth,
     $fontSize,
@@ -12,17 +37,148 @@
     $m-b,
     $m-l
 ) {
-    $percent: $width / $defaultWidth;
-    width: $width;
-    font-size: $fontSize * $percent;
-    line-height: $lineHeight * $percent;
-    padding: ($p-t * $percent) ($p-r * $percent) ($p-b * $percent)
-        ($p-l * $percent);
-    margin: ($m-t * $percent) ($m-r * $percent) ($m-b * $percent)
-        ($m-l * $percent);
+    grid-template-columns: $width;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    padding: ($p-t) ($p-r) ($p-b) ($p-l);
+    margin: ($m-t) ($m-r) ($m-b) ($m-l);
 }
 
 @mixin media(
+    $width,
+    $defaultWidth,
+    $fontSize,
+    $lineHeight,
+    $p-t,
+    $p-r,
+    $p-b,
+    $p-l,
+    $m-t,
+    $m-r,
+    $m-b,
+    $m-l
+) {
+    @media (max-width: 479px) {
+        @include responsible(
+            $width * 0.22,
+            $width * 0.33,
+            $defaultWidth,
+            $fontSize,
+            $lineHeight,
+            $p-t,
+            $p-r,
+            $p-b,
+            $p-l,
+            $m-t,
+            $m-r,
+            $m-b,
+            $m-l
+        );
+    }
+    @media (min-width: 480px) and (max-width: 639px) {
+        @include responsible(
+            $width * 0.33,
+            $width * 0.53,
+            $defaultWidth,
+            $fontSize,
+            $lineHeight,
+            $p-t,
+            $p-r,
+            $p-b,
+            $p-l,
+            $m-t,
+            $m-r,
+            $m-b,
+            $m-l
+        );
+    }
+    @media (min-width: 640px) and (max-width: 767px) {
+        @include responsible(
+            $width * 0.53,
+            $width * 0.71,
+            $defaultWidth,
+            $fontSize,
+            $lineHeight,
+            $p-t,
+            $p-r,
+            $p-b,
+            $p-l,
+            $m-t,
+            $m-r,
+            $m-b,
+            $m-l
+        );
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        @include responsible(
+            $width * 0.53,
+            $width * 0.71,
+            $defaultWidth,
+            $fontSize,
+            $lineHeight,
+            $p-t,
+            $p-r,
+            $p-b,
+            $p-l,
+            $m-t,
+            $m-r,
+            $m-b,
+            $m-l
+        );
+    }
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        @include responsible(
+            $width * 0.71,
+            $width * 0.88,
+            $defaultWidth,
+            $fontSize,
+            $lineHeight,
+            $p-t,
+            $p-r,
+            $p-b,
+            $p-l,
+            $m-t,
+            $m-r,
+            $m-b,
+            $m-l
+        );
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+        @include responsible(
+            $width * 0.88,
+            $width,
+            $defaultWidth,
+            $fontSize,
+            $lineHeight,
+            $p-t,
+            $p-r,
+            $p-b,
+            $p-l,
+            $m-t,
+            $m-r,
+            $m-b,
+            $m-l
+        );
+    }
+    @media (min-width: 1440px) {
+        @include static(
+            $width,
+            $defaultWidth,
+            $fontSize,
+            $lineHeight,
+            $p-t,
+            $p-r,
+            $p-b,
+            $p-l,
+            $m-t,
+            $m-r,
+            $m-b,
+            $m-l
+        );
+    }
+}
+
+@mixin mediaTransform(
     $width,
     $defaultWidth,
     $fontSize,
@@ -44,7 +200,8 @@
     }
     @media (min-width: 768px) and (max-width: 1023px) {
         @include responsible(
-            $width * 0.1,
+            $width * 0.53,
+            $width * 0.71,
             $defaultWidth,
             $fontSize,
             $lineHeight,
@@ -60,7 +217,8 @@
     }
     @media (min-width: 1024px) and (max-width: 1279px) {
         @include responsible(
-            $width * 0.3,
+            $width * 0.71,
+            $width * 0.88,
             $defaultWidth,
             $fontSize,
             $lineHeight,
@@ -76,7 +234,8 @@
     }
     @media (min-width: 1280px) and (max-width: 1439px) {
         @include responsible(
-            $width * 0.5,
+            $width * 0.88,
+            $width,
             $defaultWidth,
             $fontSize,
             $lineHeight,
@@ -91,7 +250,7 @@
         );
     }
     @media (min-width: 1440px) {
-        @include responsible(
+        @include static(
             $width,
             $defaultWidth,
             $fontSize,
