@@ -7,7 +7,7 @@
 .text-field {
     &-container {
         display: grid;
-        @include media-container(320px, 320px, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+        @include media-container(320px);
     }
 
     &__input {
