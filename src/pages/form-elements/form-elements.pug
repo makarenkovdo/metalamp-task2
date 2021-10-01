@@ -27,13 +27,14 @@ block content
                 .titles-container
                     +block-title('text field')
                     +block-subtitle('DEFAULT')
-                .text-field__container
-                +text-field ('','email', 'Email')
-            .text-field-block
-                .titles-block        
+                .text-field__input-container
+                    +text-field ('','email', 'Email')
+            .text-field-block.text-field-block-2
+                .titles-container
                     +block-title('text field')
-                    +block-subtitle('HOVER/FOCUS')
-                +text-field ('This is pretty awesome','email', 'Email')
+                    +block-subtitle('HOVER / FOCUS')
+                .text-field__input-container
+                    +text-field ('This is pretty awesome','email', 'Email')
             .dropdown-block
                 +block-title('dropdown')
                 +dropdown(1)
