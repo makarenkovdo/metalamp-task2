@@ -36,10 +36,12 @@ block content
                 .text-field__input-container
                     +text-field ('This is pretty awesome','email', 'Email')
             .dropdown-block
-                +block-title('dropdown')
+                .titles-container
+                    +block-title('dropdown')
                 +dropdown(1)
             .masked-text-field-block
-                +block-title('masked text field')
+                .titles-container
+                    +block-title('masked text field')
                 +text-field ('','masked-text-field', 'ДД.ММ.ГГГГ')
             .date-dropdowns-block 
                 //- .first-title-block 
@@ -47,11 +49,13 @@ block content
                 //- .second-title-block 
                 //-     +block-title('date dropdown')
                 +datepicker()
-            .filter-date-dropdown-block 
-                +block-title('filter date dropdown')
+            .filter-date-dropdown-block
+                .titles-container
+                    +block-title('filter date dropdown')
                 +filter-date-dropdown
             .subscription-text-field
-                +block-title('subscription text field')
+                .titles-container
+                    +block-title('subscription text field')
                 +text-field ('','email', 'Email')
             .room-dropdown-block 
                 //- .titles-block

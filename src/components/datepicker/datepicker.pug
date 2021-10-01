@@ -5,5 +5,11 @@ mixin datepicker(title1='date dropdown', title2='date dropdown')
             +block-title(title1)
             +block-title(title2)
         .datepicker__inputs-container
-            input#start_one.datepicker-here.js-datepicker-input(type='text' data-range='true' data-multiple-dates-separator=' - ' placeholder='ДД.ММ.ГГГГ' )
-            input#end_one.js-datepicker-input(type='text' data-range='true' data-multiple-dates-separator=' - ' placeholder='ДД.ММ.ГГГГ')
+            .datepicker__input-box
+                input#start_one.datepicker-here.js-datepicker-input(type='text' data-range='true' data-multiple-dates-separator=' - ' placeholder='ДД.ММ.ГГГГ' )
+                span(class="dropdown__img-box js-dropdown_instance-" + instance + "__img-box")
+                    img(src='./img/dropdown.svg' alt='open' width='13' height='8')
+            .datepicker__input-box
+                input#end_one.js-datepicker-input(type='text' data-range='true' data-multiple-dates-separator=' - ' placeholder='ДД.ММ.ГГГГ')
+                span(class="dropdown__img-box js-dropdown_instance-" + instance + "__img-box")
+                    img(src='./img/dropdown.svg' alt='open' width='13' height='8')
