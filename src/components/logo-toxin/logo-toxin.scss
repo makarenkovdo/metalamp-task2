@@ -1,0 +1,14 @@
+.logo-toxin {
+    &-block {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        width: 105.7px;
+        padding: 15px 0 15px 0;
+        align-items: center;
+        align-content: center;
+    }
+    &__toxin {
+        display: grid;
+        margin-left: 12.5px;
+    }
+}

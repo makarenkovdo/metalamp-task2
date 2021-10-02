@@ -29,7 +29,7 @@
   display: grid;
   justify-content: right;
   align-content: center;
-  font: normal 400 1rem/1.25rem Montserrat, Arial, sans-serif;
+  font: normal 400 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
 }
@@ -40,7 +40,7 @@
   display: grid;
   justify-content: left;
   align-content: center;
-  font: normal bold 1rem/1.25rem Montserrat, Arial, sans-serif;
+  font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #1f2041;
 }
@@ -58,9 +58,11 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/button/button.scss ***!
   \****************************************************************************************************************************/
 .button-purple {
-  width: 99px;
+  width: max-content;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 44px;
-  font: normal bold 1rem/1.25rem Montserrat, Arial, sans-serif;
+  font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -72,10 +74,13 @@
   opacity: 0.5;
 }
 .button-white {
-  width: 99px;
+  width: max-content;
+  padding-left: 18.5px;
+  padding-right: 18.5px;
+  box-sizing: border-box;
   height: 44px;
   background-color: white;
-  font: normal bold 1rem/1.25rem Montserrat, Arial, sans-serif;
+  font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #bc9cff;
   border-radius: 22px;
@@ -85,7 +90,7 @@
   border-color: rgba(188, 156, 255, 0.5);
 }
 .button-link {
-  font: normal bold 1rem/1.25rem Montserrat, Arial, sans-serif;
+  font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #bc9cff;
   /* identical to box height */
@@ -99,7 +104,7 @@
 .button-go-to-pay {
   width: 320px;
   height: 44px;
-  font: normal bold 1rem/1.25rem Montserrat, Arial, sans-serif;
+  font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
   /* Primary Gradient */
@@ -198,9 +203,9 @@ checkbox-expandable-list__popup {
   align-content: center;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 2rem;
+  line-height: 1.7143rem;
   color: yellow;
   /* identical to box height, or 129% */
   /* Dark 50% */
@@ -383,9 +388,9 @@ checkbox-expandable-list__popup {
   /* Сколько гостей */
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 2rem;
+  line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
   /* Dark 75% */
   color: rgba(31, 32, 65, 0.75);
@@ -443,7 +448,7 @@ checkbox-expandable-list__popup {
   z-index: 1;
 }
 .dropdown__counter {
-  font: normal bold 1rem/1.25rem Montserrat, Arial, sans-serif;
+  font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #1f2041;
   text-align: center;
@@ -454,7 +459,7 @@ checkbox-expandable-list__popup {
 .dropdown__option-text {
   margin-left: 15px;
   margin-top: 13px;
-  font: normal bold 1rem/1.25rem Montserrat, Arial, sans-serif;
+  font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #1f2041;
   /* Dark 100% */
@@ -470,7 +475,7 @@ checkbox-expandable-list__popup {
   margin-right: 7px;
   justify-self: right;
   justify-content: right;
-  font: normal bold 1rem/1.25rem Montserrat, Arial, sans-serif;
+  font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #bc9cff;
   cursor: pointer;
@@ -482,7 +487,7 @@ checkbox-expandable-list__popup {
   margin-left: 14px;
   cursor: pointer;
   justify-self: left;
-  font: normal bold 1rem/1.25rem Montserrat, Arial, sans-serif;
+  font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #bc9cff;
 }
@@ -505,6 +510,162 @@ checkbox-expandable-list__popup {
   width: 266px;
   grid-template-columns: 222px 44px;
   border: 1px solid #1f204140;
+}
+/*!****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/footer/footer.scss ***!
+  \****************************************************************************************************************************/
+@font-face {
+  font-family: "Montserrat";
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(498c8cdbbcd5264ad13c.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(0329bf8fcbfdd06caa24.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 14px;
+}
+
+.footer-block {
+  display: grid;
+  padding-top: 100px;
+  background-color: white;
+}
+.footer__group-title {
+  text-transform: uppercase;
+  font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1f2041;
+  margin: 0px 0 21px 0;
+}
+.footer__link {
+  margin: 0 0 20px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.4167rem;
+  color: rgba(31, 32, 65, 0.5);
+  text-transform: capitalize;
+}
+.footer__caption {
+  margin: 0 0 21px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  .footer__caption {
+    display: none;
+  }
+}
+.footer-widgets {
+  display: grid;
+  grid-template-columns: 440px 200px 200px 200px 260px;
+}
+.footer__logo-caption-container {
+  display: grid;
+  width: 260px;
+  margin-left: 140px;
+}
+.footer__logo-caption-container .logo-toxin-block {
+  padding: 0px 0 0px 0;
+}
+.footer__group {
+  display: grid;
+  align-items: flex-start;
+  align-self: flex-start;
+  align-content: flex-start;
+  justify-content: left;
+  padding: 4px;
+}
+@media (max-width: 767px) {
+  .footer__group {
+    display: none;
+  }
 }
 /*!****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/header/header.scss ***!
@@ -597,37 +758,29 @@ a {
 }
 
 html {
-  font-size: 12px;
+  font-size: 14px;
 }
 
-@media (min-width: 1280px) and (max-width: 1439px) {
-  html {
-    font-size: 5px;
-  }
-}
-.header-container {
+.header-block {
   display: grid;
   width: 1440px;
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   grid-template-columns: 245.7px minmax(447px, 933px) 1fr;
 }
-.header__logos-block {
-  width: 105.7px;
+.header-logo-container {
   margin-left: 140px;
-  padding: 15px 0 15px 0;
-  align-items: center;
-  align-content: center;
 }
 .header__nav {
   display: grid;
-  grid-template-columns: max-content 74px 72px 62px 92px;
+  grid-template-columns: 43px 74px 72px 62px 116px;
   justify-content: right;
   align-content: center;
   column-gap: 20px;
+  padding-right: 20px;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
   line-height: 1.4167rem;
   color: rgba(31, 32, 65, 0.5);
@@ -635,7 +788,7 @@ html {
 .header__nav .about {
   font-style: normal;
   font-weight: bold;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
   line-height: 1.4167rem;
   color: rgba(31, 32, 65, 0.75);
@@ -646,7 +799,7 @@ html {
   grid-template-columns: 50px 24px;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
   line-height: 1.4167rem;
   color: rgba(31, 32, 65, 0.5);
@@ -656,7 +809,7 @@ html {
   grid-template-columns: 92px 24px;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
   line-height: 1.4167rem;
   color: rgba(31, 32, 65, 0.5);
@@ -664,7 +817,7 @@ html {
 .header__nav a {
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
   line-height: 1.4167rem;
   color: rgba(31, 32, 65, 0.5);
@@ -677,10 +830,15 @@ html {
 .header__auth {
   display: grid;
   grid-template-columns: 87px 196px;
+  align-content: center;
+  margin-right: 140px;
+}
+.header__registration {
+  margin-left: 20px;
 }
 .header__profile {
   display: grid;
-  grid-template-columns: 1px 1fr;
+  grid-template-columns: 20px 1fr;
   align-content: center;
 }
 .header__profile .vertical-line {
@@ -690,13 +848,14 @@ html {
   background: rgba(31, 32, 65, 0.1);
 }
 .header__profile .username {
+  display: grid;
+  align-content: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
   line-height: 1.4167rem;
   color: rgba(31, 32, 65, 0.5);
-  margin-left: 20px;
 }
 /*!*****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/interior-form-texts-mixins.scss ***!
@@ -744,6 +903,21 @@ html {
 }
 .like-button__counter_active {
   color: #bc9cff;
+}
+/*!************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/logo-toxin/logo-toxin.scss ***!
+  \************************************************************************************************************************************/
+.logo-toxin-block {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  width: 105.7px;
+  padding: 15px 0 15px 0;
+  align-items: center;
+  align-content: center;
+}
+.logo-toxin__toxin {
+  display: grid;
+  margin-left: 12.5px;
 }
 /*!************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/pagination/pagination.scss ***!
@@ -861,9 +1035,9 @@ html {
   align-content: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 2rem;
+  line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
   /* identical to box height, or 129% */
   /* Dark 50% */
@@ -981,9 +1155,9 @@ html {
   border: 1px solid rgba(31, 32, 65, 0.25);
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 2rem;
+  line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
 }
 .text-field__input:placeholder-shown {
@@ -1034,9 +1208,9 @@ html {
   width: 210px;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 2rem;
+  line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
   margin-left: 10px;
 }
@@ -1345,7 +1519,7 @@ a {
 }
 
 html {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .form-elements {
@@ -1439,10 +1613,13 @@ html {
 /*!*****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/headers-footers/headers-footers.scss ***!
   \*****************************************************************************************************************************************/
-.headers-footers-page-container {
+.headers-footers-page {
   background-color: #e5e5e5;
 }
 .headers-footers__header-container {
+  margin-top: 140px;
+}
+.headers-footers__footer-container {
   margin-top: 140px;
 }
 /*!*****************************************************************************************************************************************!*\

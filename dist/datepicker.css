@@ -8,45 +8,45 @@
   border-radius: 4px;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 2rem;
+  line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
   padding-left: 15px;
 }
 .js-datepicker-input::-webkit-input-placeholder {
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 2rem;
+  line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
   line-height: 18px;
 }
 .js-datepicker-input::-moz-placeholder {
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 2rem;
+  line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
   line-height: 18px;
 }
 .js-datepicker-input:-moz-placeholder {
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 2rem;
+  line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
   line-height: 18px;
 }
 .js-datepicker-input:-ms-input-placeholder {
   font-style: normal;
   font-weight: normal;
-  font-size: 1.1667rem;
+  font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 2rem;
+  line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
   line-height: 18px;
 }
@@ -217,7 +217,7 @@
   box-sizing: border-box;
   width: 39.88px;
   height: 40px;
-  font: normal bold 1rem/1.25rem Montserrat, Arial, sans-serif;
+  font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #bc9cff;
   -webkit-align-items: center;
@@ -258,7 +258,7 @@
 
 .datepicker--cell-day.-other-month-,
 .datepicker--cell-year.-other-decade- {
-  font: normal normal 1rem/1.25rem Montserrat, Arial, sans-serif;
+  font: normal normal 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.25);
 }
@@ -321,7 +321,7 @@
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   box-sizing: border-box;
-  font: normal normal 1rem/1.25rem Montserrat, Arial, sans-serif;
+  font: normal normal 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #1f2041;
   text-transform: none;
@@ -576,14 +576,14 @@
 .datepicker--nav-title {
   border-radius: 4px;
   padding: 0px 8px;
-  font: normal bold 1.5833rem/1.9167rem Montserrat, Arial, sans-serif;
+  font: normal bold 1.3571rem/1.6429rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #1f2041;
   text-transform: none;
 }
 
 .datepicker--nav-title i {
-  font: normal bold 1rem/1.25rem Montserrat, Arial, sans-serif;
+  font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #1f2041;
   margin-left: 5px;
