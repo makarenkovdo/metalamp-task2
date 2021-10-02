@@ -2,7 +2,9 @@
 @import './../../styles/variables/colors.scss';
 .button {
     &-purple {
-        width: 99px;
+        width: max-content;
+        padding-left: 20px;
+        padding-right: 20px;
         height: 44px;
         @include h3(white, bold);
         background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -15,7 +17,11 @@
     }
 
     &-white {
-        width: 99px;
+        // width: 99px;
+        width: max-content;
+        padding-left: 18.5px;
+        padding-right: 18.5px;
+        box-sizing: border-box;
         height: 44px;
         background-color: white;
         @include h3($purple, bold);
@@ -32,6 +38,7 @@
         text-transform: uppercase;
         border: none;
         color: #bc9cff;
+
         &:hover {
             color: $dark-shade-50;
         }
