@@ -1,0 +1,8 @@
+@import './../../styles/mixins/fonts.scss';
+@import './../../styles/mixins/font-faces.scss';
+@import './../../styles/variables/colors.scss';
+@import './../../../node_modules/reset-css/sass/_reset.scss';
+
+.footer {
+    display: grid;
+}

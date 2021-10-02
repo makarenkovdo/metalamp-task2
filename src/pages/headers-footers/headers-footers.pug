@@ -1,10 +1,16 @@
 extends ../ui-kit-template/ui-kit-template
-include ../../components/header/header
-include ../../components/button/button
 
+include ../../components/button/button
+include ../../components/footer/footer
+include ../../components/header/header
 
 
 block content 
-    main.headers-footers-page-container
-        section.headers-footers__header-container
+    main.headers-footers-page
+        section.headers-footers__header-box
             +header('some')
+            +header()
+        section.headers-footers__footer-box
+            +footer()
+            +footer('mobile')
+

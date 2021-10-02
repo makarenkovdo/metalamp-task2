@@ -1,10 +1,10 @@
 include ../../components/button/button
+include ../../components/logo-toxin/logo-toxin
 
 mixin header(isSignIn) 
-    header.header-container
-        section.header__logos-block
-            img.header__logo(src='./img/colored-logo.svg' alt='header__logo' width='40' height='40')
-            img.header__toxin(src='./img/toxin.svg' alt='header__toxin-logo' width='54' height='13')
+    header.header-block
+        section.header-logos-block
+            +logo-toxin()
         nav.header__nav 
             a.about(href="") О нас
             span.services.expandable-link
@@ -16,9 +16,10 @@ mixin header(isSignIn)
                 a.agreements__link(href="") Соглашения
                 img.header__expandable-link(src='./img/link-expand.svg' alt='link-expand' width='12' height='8')
         if (isSignIn)
-            section.header__auth 
+            section.header__auth
                 +button('white', 'войти')
-                +button('purple', 'зарегистрироваться')
+                .header__registration
+                    +button('purple', 'зарегистрироваться')
         else
             section.header__profile
                 .vertical-line 

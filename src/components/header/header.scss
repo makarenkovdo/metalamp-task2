@@ -4,14 +4,14 @@
 @import './../../../node_modules/reset-css/sass/_reset.scss';
 
 .header {
-    &-container {
+    &-block {
         display: grid;
         width: 1440px;
         background: #ffffff;
         box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
         grid-template-columns: 245.7px minmax(447px, 933px) 1fr;
     }
-    &__logos-block {
+    &-logos-block {
         display: grid;
         grid-template-columns: max-content max-content;
         width: 105.7px;
@@ -61,6 +61,10 @@
         display: grid;
         grid-template-columns: 87px 196px;
         align-content: center;
+        margin-right: 140px;
+    }
+    &__registration {
+        margin-left: 20px;
     }
     &__profile {
         display: grid;
