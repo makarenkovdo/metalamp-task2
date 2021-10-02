@@ -5,33 +5,33 @@ include ../../components/subscription-text-field/subscription-text-field
 mixin footer(isMobile)
     footer(class=`${isMobile}footer-block`)
         section(class=`${isMobile}footer-widgets`)
-            section.footer__logo-caption-container
+            section(class=`${isMobile}footer__logo-caption-container`)
                 +logo-toxin()
-                article.footer__caption Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-            section.footer__group
-                a(href="").footer__group-title Навигация
-                a(href="").footer__link О нас
-                a(href="").footer__link Новости
-                a(href="").footer__link Новости
-                a(href="").footer__link Новости              
-            section.footer__group
-                a(href="").footer__group-title О нас
-                a(href="").footer__link О сервисе
-                a(href="").footer__link Наша команда           
-                a(href="").footer__link Вакансии               
-                a(href="").footer__link Инвесторы
-            section.footer__group
-                a(href="").footer__group-title Служба поддержки
-                a(href="").footer__link Соглашения           
-                a(href="").footer__link Сообщество
-                a(href="").footer__link Связь с нами               
-            section.footer__group.footer__subscribe
-                a(href="").footer__group-title Подписка
-                a(href="").footer__caption Получайте специальные предложения и новости сервиса
+                article(class=`${isMobile}footer__caption`) Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+            section(class=`${isMobile}footer__group`)
+                a(href="")(class=`${isMobile}footer__group-title`) Навигация
+                a(href="")(class=`${isMobile}footer__link`) О нас
+                a(href="")(class=`${isMobile}footer__link`) Новости
+                a(href="")(class=`${isMobile}footer__link`) Новости
+                a(href="")(class=`${isMobile}footer__link`) Новости              
+            section(class=`${isMobile}footer__group`)
+                a(href="")(class=`${isMobile}footer__group-title`) О нас
+                a(href="")(class=`${isMobile}footer__link`) О сервисе
+                a(href="")(class=`${isMobile}footer__link`) Наша команда           
+                a(href="")(class=`${isMobile}footer__link`) Вакансии               
+                a(href="")(class=`${isMobile}footer__link`) Инвесторы
+            section(class=`${isMobile}footer__group`)
+                a(href="")(class=`${isMobile}footer__group-title`) Служба поддержки
+                a(href="")(class=`${isMobile}footer__link`) Соглашения           
+                a(href="")(class=`${isMobile}footer__link`) Сообщество
+                a(href="")(class=`${isMobile}footer__link`) Связь с нами               
+            section(class=`${isMobile}footer__group ${isMobile}footer__subscribe`)
+                a(href="")(class=`${isMobile}footer__group-title`) Подписка
+                a(href="")(class=`${isMobile}footer__caption`) Получайте специальные предложения и новости сервиса
                 +subscription-text-field ('','email', 'Email')
-        section.footer-copyright-bar
-            section.footer__copyright.footer__link Copyright © 2018 Toxin отель. Все права защищены.
-            section.footer__social-networks
+        section(class=`${isMobile}footer-copyright-bar`)
+            section(class=`${isMobile}footer__copyright ${isMobile}footer__link`) Copyright © 2018 Toxin отель. Все права защищены.
+            section(class=`${isMobile}footer__social-networks`)
                 img.logo-toxin__logo(src='./img/twitter.svg' alt='logo' width='24' height='24')
                 img.logo-toxin__logo(src='./img/facebook.svg' alt='logo' width='24' height='24')
                 img.logo-toxin__logo(src='./img/instagram.svg' alt='logo' width='24' height='24')
