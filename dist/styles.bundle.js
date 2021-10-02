@@ -140,6 +140,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/header/link-expand.svg":
+/*!***********************************************!*\
+  !*** ./src/components/header/link-expand.svg ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/link-expand.svg\");\n\n//# sourceURL=webpack://task2/./src/components/header/link-expand.svg?");
+
+/***/ }),
+
 /***/ "./src/components/like-button/like-active.svg":
 /*!****************************************************!*\
   !*** ./src/components/like-button/like-active.svg ***!
@@ -203,6 +214,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/narrow.svg\");\n\n//# sourceURL=webpack://task2/./src/components/subscription-text-field/narrow.svg?");
+
+/***/ }),
+
+/***/ "./src/components/toxin/colored-logo.svg":
+/*!***********************************************!*\
+  !*** ./src/components/toxin/colored-logo.svg ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/colored-logo.svg\");\n\n//# sourceURL=webpack://task2/./src/components/toxin/colored-logo.svg?");
 
 /***/ }),
 
@@ -629,7 +651,7 @@ eval("var map = {\n\t\"./block-subtitle/block-subtitle.scss\": \"./src/component
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./checkbox-expandable-list/close-checkbox-expandable-list.svg\": \"./src/components/checkbox-expandable-list/close-checkbox-expandable-list.svg\",\n\t\"./checkbox-expandable-list/open-checkbox-expandable-list.svg\": \"./src/components/checkbox-expandable-list/open-checkbox-expandable-list.svg\",\n\t\"./comfort-block/comfort-emotion.svg\": \"./src/components/comfort-block/comfort-emotion.svg\",\n\t\"./comfort-block/comfort-house.svg\": \"./src/components/comfort-block/comfort-house.svg\",\n\t\"./comfort-block/comfort-line.svg\": \"./src/components/comfort-block/comfort-line.svg\",\n\t\"./datepicker/arrow-back.svg\": \"./src/components/datepicker/arrow-back.svg\",\n\t\"./datepicker/arrow-forward.svg\": \"./src/components/datepicker/arrow-forward.svg\",\n\t\"./dropdown/dropdown.svg\": \"./src/components/dropdown/dropdown.svg\",\n\t\"./dropdown/minus.svg\": \"./src/components/dropdown/minus.svg\",\n\t\"./dropdown/plus.svg\": \"./src/components/dropdown/plus.svg\",\n\t\"./feedback/murad.svg\": \"./src/components/feedback/murad.svg\",\n\t\"./like-button/like-active.svg\": \"./src/components/like-button/like-active.svg\",\n\t\"./like-button/like-border.svg\": \"./src/components/like-button/like-border.svg\",\n\t\"./pagination/pagination-arrow.svg\": \"./src/components/pagination/pagination-arrow.svg\",\n\t\"./rate-button/rate-button-white.svg\": \"./src/components/rate-button/rate-button-white.svg\",\n\t\"./rate-button/rate-button.svg\": \"./src/components/rate-button/rate-button.svg\",\n\t\"./subscription-text-field/narrow.svg\": \"./src/components/subscription-text-field/narrow.svg\",\n\t\"./toxin/toxin.svg\": \"./src/components/toxin/toxin.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.svg$?");
+eval("var map = {\n\t\"./checkbox-expandable-list/close-checkbox-expandable-list.svg\": \"./src/components/checkbox-expandable-list/close-checkbox-expandable-list.svg\",\n\t\"./checkbox-expandable-list/open-checkbox-expandable-list.svg\": \"./src/components/checkbox-expandable-list/open-checkbox-expandable-list.svg\",\n\t\"./comfort-block/comfort-emotion.svg\": \"./src/components/comfort-block/comfort-emotion.svg\",\n\t\"./comfort-block/comfort-house.svg\": \"./src/components/comfort-block/comfort-house.svg\",\n\t\"./comfort-block/comfort-line.svg\": \"./src/components/comfort-block/comfort-line.svg\",\n\t\"./datepicker/arrow-back.svg\": \"./src/components/datepicker/arrow-back.svg\",\n\t\"./datepicker/arrow-forward.svg\": \"./src/components/datepicker/arrow-forward.svg\",\n\t\"./dropdown/dropdown.svg\": \"./src/components/dropdown/dropdown.svg\",\n\t\"./dropdown/minus.svg\": \"./src/components/dropdown/minus.svg\",\n\t\"./dropdown/plus.svg\": \"./src/components/dropdown/plus.svg\",\n\t\"./feedback/murad.svg\": \"./src/components/feedback/murad.svg\",\n\t\"./header/link-expand.svg\": \"./src/components/header/link-expand.svg\",\n\t\"./like-button/like-active.svg\": \"./src/components/like-button/like-active.svg\",\n\t\"./like-button/like-border.svg\": \"./src/components/like-button/like-border.svg\",\n\t\"./pagination/pagination-arrow.svg\": \"./src/components/pagination/pagination-arrow.svg\",\n\t\"./rate-button/rate-button-white.svg\": \"./src/components/rate-button/rate-button-white.svg\",\n\t\"./rate-button/rate-button.svg\": \"./src/components/rate-button/rate-button.svg\",\n\t\"./subscription-text-field/narrow.svg\": \"./src/components/subscription-text-field/narrow.svg\",\n\t\"./toxin/colored-logo.svg\": \"./src/components/toxin/colored-logo.svg\",\n\t\"./toxin/toxin.svg\": \"./src/components/toxin/toxin.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.svg$?");
 
 /***/ }),
 

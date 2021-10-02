@@ -5,7 +5,6 @@
 }
 
 @mixin h2($color: $dark-shade-100, $weight: bold) {
-    //как сделать так, чтобы в зависимости от weight грузился разный шрифт?
     font: normal $weight 1.5833rem /1.9167rem Montserrat, Arial, sans-serif;
     text-transform: uppercase;
     color: $color;
@@ -17,7 +16,10 @@
     color: $color;
 }
 @mixin body-font($color: $dark-shade-75, $weight: normal, $line-height: 2rem) {
-    font: normal $weight 1.1667rem /2rem Montserrat, Arial, sans-serif;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: 1.1667rem;
+    font-family: Montserrat, Arial, sans-serif;
     line-height: $line-height;
     color: $color;
 }

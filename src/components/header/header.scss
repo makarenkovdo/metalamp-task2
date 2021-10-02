@@ -9,23 +9,78 @@
         width: 1440px;
         background: #ffffff;
         box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-        grid-template-columns: 245.7px 447px 1fr;
+        grid-template-columns: 245.7px minmax(447px, 933px) 1fr;
     }
     &__logos-block {
+        display: grid;
+        grid-template-columns: max-content max-content;
         width: 105.7px;
         margin-left: 140px;
+        padding: 15px 0 15px 0;
+        align-items: center;
+        align-content: center;
     }
+    &__toxin {
+        display: grid;
+        margin-left: 12.5px;
+    }
+
     &__nav {
         display: grid;
         grid-template-columns: 43px 74px 72px 62px 92px;
+        justify-content: right;
+        align-content: center;
+
         column-gap: 20px;
-        @include body-font($line-height: 17px);
+        margin-right: 20px;
+        @include body-font($dark-shade-50, normal, 1.4167rem);
+        .about {
+            @include body-font($dark-shade-75, bold, 1.4167rem);
+            font-size: 14px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: 50px 24px;
+            @include body-font($dark-shade-50, normal, 1.4167rem);
+        }
+        .agreements {
+            display: grid;
+            grid-template-columns: 92px 24px;
+            @include body-font($dark-shade-50, normal, 1.4167rem);
+        }
+        a {
+            @include body-font($dark-shade-50, normal, 1.4167rem);
+        }
+    }
+    &__expandable-link {
+        display: grid;
+        align-self: center;
+        justify-self: center;
     }
     &__auth {
         display: grid;
         grid-template-columns: 87px 196px;
     }
-    &__username {
+    &__profile {
         display: grid;
+        grid-template-columns: 20px 1fr;
+        align-content: center;
+        // margin: 0 140px 0 0px;
+
+        .vertical-line {
+            /* Rectangle */
+            width: 1px;
+            height: 30px;
+            margin-left: 20px;
+
+            background: $dark-shade-10;
+        }
+        .username {
+            display: grid;
+            align-content: center;
+
+            margin-left: 20px;
+            @include body-font($dark-shade-50, normal, 1.4167rem);
+        }
     }
 }

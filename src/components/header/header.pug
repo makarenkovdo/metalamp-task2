@@ -1,15 +1,25 @@
 include ../../components/button/button
 
-mixin header() 
+mixin header(isSignIn) 
     header.header-container
         section.header__logos-block
-            img.header__logo(src='./img/colored-logo.svg' alt='some some' width='40' height='40')
-            img.header__toxin(src='./img/toxin.svg' alt='some some' width='54' height='13')
+            img.header__logo(src='./img/colored-logo.svg' alt='header__logo' width='40' height='40')
+            img.header__toxin(src='./img/toxin.svg' alt='header__toxin-logo' width='54' height='13')
         nav.header__nav 
-            .services 
-            .vacancies 
-            .news
-            .agreements
-        section.header__auth 
-            +button('white', 'войти')
-            +button('purple', 'зарегистрироваться')
+            a.about(href="") О нас
+            span.services.expandable-link
+                a.agreements__link(href="") Услуги
+                img.header__expandable-link(src='./img/link-expand.svg' alt='link-expand' width='12' height='8')
+            a.vacancies(href="") Вакансии
+            a.news(href="") Новости
+            span.agreements 
+                a.agreements__link(href="") Соглашения
+                img.header__expandable-link(src='./img/link-expand.svg' alt='link-expand' width='12' height='8')
+        if (isSignIn)
+            section.header__auth 
+                +button('white', 'войти')
+                +button('purple', 'зарегистрироваться')
+        else
+            section.header__profile
+                .vertical-line 
+                .username Юлий Цезарь
