@@ -4,9 +4,9 @@
 @import './../../../node_modules/reset-css/sass/_reset.scss';
 
 .footer {
-    background-color: #ffffff;
     @media (min-width: 768px) {
         &-block {
+            background-color: white;
             display: grid;
             padding-top: 100px;
         }
@@ -85,6 +85,8 @@
         }
     }
     @media (max-width: 768px) {
+        background-color: white;
+
         &-block {
             display: grid;
             background-color: white;
@@ -136,10 +138,16 @@
 }
 
 .mobile-footer {
+    &-container {
+        display: grid;
+        max-width: 1440px;
+        justify-content: center;
+        margin-top: 40px;
+    }
     &-block {
         display: grid;
         background-color: white;
-        max-width: 768px;
+        width: 768px;
         justify-content: center;
         justify-self: center;
         grid-template-rows: 180px 187px;
