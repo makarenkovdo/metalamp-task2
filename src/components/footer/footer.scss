@@ -61,5 +61,6 @@
         display: grid;
         grid-template-columns: repeat(3, max-content);
         justify-content: right;
+        column-gap: 20px;
     }
 }
