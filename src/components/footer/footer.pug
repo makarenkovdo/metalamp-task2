@@ -1,20 +1,33 @@
 include ../../components/button/button
 include ../../components/logo-toxin/logo-toxin
 
-mixin footer(mobile)
-    if (!mobile)
-        footer.footer-block
-            +logo-toxin()
-            nav.footer__nav 
-                a.about(href="") О нас
-                span.services.expandable-link
-                    a.agreements__link(href="") Услуги
-                    img.footer__expandable-link(src='./img/link-expand.svg' alt='link-expand' width='12' height='8')
-                a.vacancies(href="") Вакансии
-                a.news(href="") Новости
-                span.agreements 
-                    a.agreements__link(href="") Соглашения
-                    img.footer__expandable-link(src='./img/link-expand.svg' alt='link-expand' width='12' height='8')
-    else
-        footer.mobile-footer-block
-
+mixin footer()
+    footer.footer-block
+        section.footer-widgets
+            section.footer__logo-toxin-container
+                +logo-toxin()
+            section.footer__navigation
+                p.footer__group-title Навигация
+                p.footer__link О нас
+                p.footer__link Новости
+                p.footer__link Новости
+                p.footer__link Новости              
+            section.footer__about  
+                p.footer__group-title О нас
+                p.footer__link О сервисе
+                p.footer__link Наша команда           
+                p.footer__link Вакансии               
+                p.footer__link Инвесторы
+            section.footer__support        
+                p.footer__group-title О нас
+                p.footer__link О сервисе
+                p.footer__link Наша команда           
+                p.footer__link Вакансии               
+                p.footer__link Инвесторы                
+            section.footer__subscribe
+                p.footer__group-title О нас
+                p.footer__link О сервисе
+                p.footer__link Наша команда           
+                p.footer__link Вакансии               
+                p.footer__link Инвесторы                
+        section.footer-copyright-bar
