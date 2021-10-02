@@ -90,12 +90,33 @@
             background-color: white;
             max-width: 768px;
             justify-content: center;
-            align-content: center;
             justify-self: center;
+            grid-template-rows: 180px 187px;
+            .logo-toxin-block {
+                display: grid;
+                align-content: flex-start;
+                padding: 0;
+            }
+        }
+        &-widgets {
+            display: grid;
+            align-content: flex-start;
+            align-items: flex-start;
+            padding-top: 120px;
+            margin-bottom: 20px;
         }
         &__logo-caption-container {
             display: grid;
+            align-self: flex-start;
             justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        &__copyright {
+            display: grid;
+            justify-content: center;
+            margin-bottom: 20px;
+            @include body-font($dark-shade-75, normal, 1.2143rem);
         }
 
         &__social-networks {
@@ -111,5 +132,55 @@
         &__caption {
             display: none;
         }
+    }
+}
+
+mobile-footer {
+    &-block {
+        display: grid;
+        background-color: white;
+        max-width: 768px;
+        justify-content: center;
+        justify-self: center;
+        grid-template-rows: 180px 187px;
+        .logo-toxin-block {
+            display: grid;
+            align-content: flex-start;
+            padding: 0;
+        }
+    }
+    &-widgets {
+        display: grid;
+        align-content: flex-start;
+        align-items: flex-start;
+        padding-top: 120px;
+        margin-bottom: 20px;
+    }
+    &__logo-caption-container {
+        display: grid;
+        align-self: flex-start;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    &__copyright {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 20px;
+        @include body-font($dark-shade-75, normal, 1.2143rem);
+    }
+
+    &__social-networks {
+        display: grid;
+        grid-template-columns: max-content max-content max-content;
+        column-gap: 20px;
+        justify-content: center;
+    }
+
+    &__group {
+        display: none;
+    }
+    &__caption {
+        display: none;
     }
 }

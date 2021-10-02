@@ -2,9 +2,9 @@ include ../../components/button/button
 include ../../components/logo-toxin/logo-toxin
 include ../../components/subscription-text-field/subscription-text-field
 
-mixin footer()
-    footer.footer-block
-        section.footer-widgets
+mixin footer(isMobile)
+    footer(class=`${isMobile}footer-block`)
+        section(class=`${isMobile}footer-widgets`)
             section.footer__logo-caption-container
                 +logo-toxin()
                 article.footer__caption Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
