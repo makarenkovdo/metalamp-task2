@@ -1,0 +1,14 @@
+.subscription-text-field {
+    &-form {
+        display: grid;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 266px;
+        grid-template-columns: 222px 44px;
+        border: 1px solid #1f204140;
+        .text-field__input {
+            //обнуление дополнительной границы именно в этом pug
+            border: 0px;
+        }
+    }
+}

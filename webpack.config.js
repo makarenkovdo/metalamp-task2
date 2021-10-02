@@ -7,7 +7,7 @@ const path = require('path')
 
 const htmlComponents = ['datepicker', 'test', 'rate-button', 'toggle']
 
-const pugPages = ['color-and-type', 'test', 'form-elements']
+const pugPages = ['color-and-type', 'test', 'form-elements', 'headers-footers']
 const pugComponents = [
     'checkbox',
     'checkbox-list',

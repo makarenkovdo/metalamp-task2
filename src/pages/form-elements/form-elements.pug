@@ -17,6 +17,7 @@ include ../../components/pagination/pagination
 include ../../components/radio-button/radio-button
 include ../../components/rate-button/rate-button
 include ../../components/rich-checkbox/rich-checkbox
+include ../../components/subscription-text-field/subscription-text-field
 include ../../components/text-field/text-field
 include ../../components/toggle/toggle
                 
@@ -56,7 +57,7 @@ block content
             .subscription-text-field-block
                 .titles-container
                     +block-title('subscription text field')
-                +text-field ('','email', 'Email')
+                +subscription-text-field ('','email', 'Email')
             .room-dropdown-block 
                 //- .titles-block
                 //-     +block-title('text field')

@@ -1,0 +1,15 @@
+include ../../components/button/button
+
+mixin header() 
+    header.header-container
+        section.header__logos-block
+            img.header__logo(src='./img/colored-logo.svg' alt='some some' width='40' height='40')
+            img.header__toxin(src='./img/toxin.svg' alt='some some' width='54' height='13')
+        nav.header__nav 
+            .services 
+            .vacancies 
+            .news
+            .agreements
+        section.header__auth 
+            +button('white', 'войти')
+            +button('purple', 'зарегистрироваться')

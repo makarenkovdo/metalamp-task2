@@ -331,7 +331,7 @@ checkbox-expandable-list__popup {
 /*!************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/datepicker/datepicker.scss ***!
   \************************************************************************************************************************************/
-.datepicker-container {
+.datepicker-form {
   width: 320px;
 }
 .datepicker__inputs-container {
@@ -339,10 +339,17 @@ checkbox-expandable-list__popup {
   grid-template-columns: 150px 150px;
   gap: 20px;
 }
+.datepicker__input-box {
+  display: grid;
+  grid-template-columns: 106px 44px;
+  gap: 0px;
+  border: 1px solid #1f204140;
+}
 .datepicker__titles-container {
   display: grid;
   grid-template-columns: 150px 150px;
   gap: 20px;
+  margin-bottom: 5px;
 }
 /*!********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dropdown/dropdown.scss ***!
@@ -356,7 +363,7 @@ checkbox-expandable-list__popup {
 }
 .dropdown__button {
   display: grid;
-  padding: 11px 0 7px 0px;
+  padding: 9px 0 9px 0px;
   box-sizing: border-box;
   grid-template-columns: 86.25% 13.75%;
   width: 320px;
@@ -368,6 +375,7 @@ checkbox-expandable-list__popup {
   border: 1px solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   border-radius: 2px 2px 0px 0px;
+  margin-top: 5px;
   /* Сколько гостей */
   font: normal normal 14px/24px Montserrat, Arial, sans-serif;
   color: rgba(31, 32, 65, 0.75);
@@ -483,12 +491,105 @@ checkbox-expandable-list__popup {
 /*!********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/filter-date-dropdown/filter-date-dropdown.scss ***!
   \********************************************************************************************************************************************************/
-.filter-date-dropdown-container {
+.filter-date-dropdown-form {
+  display: grid;
+  box-sizing: border-box;
   width: 266px;
+  grid-template-columns: 222px 44px;
+  border: 1px solid #1f204140;
+}
+/*!****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/header/header.scss ***!
+  \****************************************************************************************************************************/
+@font-face {
+  font-family: "Montserrat";
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(498c8cdbbcd5264ad13c.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(0329bf8fcbfdd06caa24.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-.filter-date-dropdown-input {
-  width: 266px;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header-container {
+  display: grid;
+  width: 1440px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  grid-template-columns: 105.7px;
 }
 /*!*****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/interior-form-texts-mixins.scss ***!
@@ -703,6 +804,20 @@ checkbox-expandable-list__popup {
   display: grid;
   grid-template-columns: 3;
 }
+/*!**************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/subscription-text-field/subscription-text-field.scss ***!
+  \**************************************************************************************************************************************************************/
+.subscription-text-field-form {
+  display: grid;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 266px;
+  grid-template-columns: 222px 44px;
+  border: 1px solid #1f204140;
+}
+.subscription-text-field-form .text-field__input {
+  border: 0px;
+}
 /*!************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/test/test.scss ***!
   \************************************************************************************************************************/
@@ -749,7 +864,7 @@ checkbox-expandable-list__popup {
   display: grid;
   box-sizing: border-box;
   width: 320px;
-  padding: 11px 0 7px 15px;
+  padding: 9px 0 9px 15px;
   background: #ffffff;
   border-radius: 4px;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -759,6 +874,7 @@ checkbox-expandable-list__popup {
 .text-field__input:placeholder-shown {
   /* Firefox 19+ */
   /* Firefox 18- */
+  line-height: 18px;
   padding: 12px 0 12px 15px;
 }
 .text-field__input:placeholder-shown::-webkit-input-placeholder {
@@ -1018,6 +1134,186 @@ input:checked + .slider:before {
   /* or 171% */
   /* Dark 75% */
   color: rgba(31, 32, 65, 0.75);
+}
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/form-elements/form-elements.scss ***!
+  \*************************************************************************************************************************************/
+@font-face {
+  font-family: "Montserrat";
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(498c8cdbbcd5264ad13c.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(0329bf8fcbfdd06caa24.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.form-elements {
+  display: grid;
+  grid-template-areas: "a b c" "a d d";
+  width: 1158px;
+  margin-top: 143px;
+}
+
+.form-elements__area-a {
+  display: grid;
+  grid-area: a;
+  margin-left: 140.5px;
+  grid-template-rows: 84px 84px 86.56px 104px 105px 105px 164px 320px 64px 306px 154px;
+  width: 320px;
+}
+.form-elements__area-a .titles-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  margin-bottom: 5px;
+}
+.form-elements__area-a .text-field-block {
+  height: min-content;
+}
+.form-elements__area-a .date-dropdowns-block {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: space-between;
+  width: 320px;
+}
+.form-elements__area-a .filter-date-dropdown__container {
+  width: 266px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-elements__area-a .room-dropdown-block {
+  width: 266px;
+}
+
+.form-elements__area-b {
+  display: grid;
+  grid-area: b;
+  grid-template-areas: "ba" "bb" "bc";
+  margin-left: 100px;
+  width: 320px;
+  gap: 10px;
+}
+
+.form-elements__area-c {
+  display: grid;
+  grid-area: c;
+  grid-template-areas: "ca" "cb" "cc";
+  width: 320px;
+}
+
+.form-elements__area-d {
+  display: grid;
+  grid-area: d;
+  grid-template-areas: "ca" "cb" "cc";
+  margin-left: 100px;
+}
+.form-elements__area-d .feedback-block {
+  width: 711px;
+}
+
+.form-elements .text-field_default {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-area: aa;
+  margin-top: 143px;
+}
+
+.text-field_hover {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-area: ab;
+  margin-top: 20px;
+}
+
+.form-elements .form-elements__title {
+  display: grid;
+  justify-self: left;
+  align-content: center;
+}
+
+.form-elements .form-elements__subtitle {
+  display: grid;
+  justify-self: right;
+}
+/*!*****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/headers-footers/headers-footers.scss ***!
+  \*****************************************************************************************************************************************/
+.headers-footers-page-container {
+  background-color: #e5e5e5;
 }
 /*!*****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/ui-kit-template/ui-kit-template.scss ***!

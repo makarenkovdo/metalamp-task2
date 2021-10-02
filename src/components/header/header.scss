@@ -1,0 +1,31 @@
+@import './../../styles/mixins/fonts.scss';
+@import './../../styles/mixins/font-faces.scss';
+@import './../../styles/variables/colors.scss';
+@import './../../../node_modules/reset-css/sass/_reset.scss';
+
+.header {
+    &-container {
+        display: grid;
+        width: 1440px;
+        background: #ffffff;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        grid-template-columns: 245.7px 447px 1fr;
+    }
+    &__logos-block {
+        width: 105.7px;
+        margin-left: 140px;
+    }
+    &__nav {
+        display: grid;
+        grid-template-columns: 43px 74px 72px 62px 92px;
+        column-gap: 20px;
+        @include body-font($line-height: 17px);
+    }
+    &__auth {
+        display: grid;
+        grid-template-columns: 87px 196px;
+    }
+    &__username {
+        display: grid;
+    }
+}
