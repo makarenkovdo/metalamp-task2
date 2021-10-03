@@ -1,5 +1,8 @@
 include ../../components/checkbox/checkbox
 mixin rich-checkbox()
-    +checkbox('Широкий коридор', 'Ширина коридоров в номере не менее 91 см.')
-    +checkbox('Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.')
+    form.rich-checkbox-container
+        .rich-checkbox-content        
+            +checkbox('Широкий коридор', 'Ширина коридоров в номере не менее 91 см.')
+        .rich-checkbox-content        
+            +checkbox('Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.')
 

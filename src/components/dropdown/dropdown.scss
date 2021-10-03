@@ -112,16 +112,22 @@
         /* Dark 100% */
         color: #1f2041;
     }
+    &__adding-buttons {
+        display: grid;
+        box-sizing: border-box;
+        width: 320px;
+        grid-template-columns: 160px 160px;
+        padding-top: 19px;
+    }
     &__apply {
         display: grid;
+        justify-self: flex-end;
         align-content: flex-end;
         padding-bottom: 35.365%;
 
         /* применить */
 
-        width: 84px;
-        grid-column-start: 4;
-        margin-right: 7px;
+        padding-right: 7px;
         justify-self: right;
         justify-content: right;
         @include h3(#bc9cff);
@@ -131,10 +137,8 @@
         display: grid;
         align-content: end;
         padding-bottom: 35.365%;
-        margin-left: 14px;
-
+        padding-left: 14px;
         cursor: pointer;
-
         justify-self: left;
 
         @include h3(#bc9cff);
@@ -158,4 +162,7 @@
 
 .hide {
     display: none !important;
+}
+.invisible {
+    visibility: hidden !important;
 }

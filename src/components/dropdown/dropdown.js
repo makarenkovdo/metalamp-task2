@@ -202,10 +202,12 @@ class Dropdown {
                 if (this.$type === 'room') {
                     this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}, ${counter[3]} ванн${bathWordEnding[0]} комнат${bathWordEnding[1]}`
                 } else {
-                    if (counter[0] > 0) {
-                        this.$dropdownClearSelector.classList.remove('hide')
+                    if (counter[0] > 0 || counter[3] > 0) {
+                        this.$dropdownClearSelector.classList.remove(
+                            'invisible'
+                        )
                     } else {
-                        this.$dropdownClearSelector.classList.add('hide')
+                        this.$dropdownClearSelector.classList.add('invisible')
                     }
                     if (counter[3] > 0) {
                         this.$dropdownText.innerHTML = `${counter[0]} гост${guestWordEnding}, ${counter[3]} младен${babyWordEnding} `

@@ -28,8 +28,9 @@ mixin dropdown(instance, type)
         span(class="dropdown__increase js-dropdown_instance-" + instance + "__increase3")
             img(src='./img/plus.svg' alt='plus' width='13' height='8')
         if (!type)
-            span(class="dropdown__clear js-dropdown_instance-" + instance + "__clear hide") ОЧИСТИТЬ
-            span(class="dropdown__apply js-dropdown_instance-" + instance + "__apply") ПРИМЕНИТЬ
+            .dropdown__adding-buttons
+                span(class="dropdown__clear js-dropdown_instance-" + instance + "__clear invisible") ОЧИСТИТЬ
+                span(class="dropdown__apply js-dropdown_instance-" + instance + "__apply") ПРИМЕНИТЬ
 
       
 
