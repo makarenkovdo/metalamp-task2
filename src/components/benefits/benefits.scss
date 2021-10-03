@@ -1,0 +1,31 @@
+@import './../../styles/mixins/fonts.scss';
+@import './../../styles/mixins/font-faces.scss';
+@import './../../styles/variables/colors.scss';
+
+.benefits {
+    &-block {
+        @include body-font;
+    }
+    &__main-container {
+        display: grid;
+        grid-template-columns: 58px max-content;
+    }
+    &__img-container {
+        box-sizing: border-box;
+        width: 48px;
+        padding: 4px;
+        height: 48px;
+    }
+
+    &__caption {
+    }
+    &__title {
+        @include body-font($weight: bold);
+    }
+    &__line-img {
+        height: 1px;
+        width: 280px;
+        background: $dark-shade-10;
+        margin: 20px 0;
+    }
+}

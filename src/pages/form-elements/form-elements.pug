@@ -7,7 +7,7 @@ include ../../components/button/button
 include ../../components/checkbox/checkbox
 include ../../components/checkbox-expandable-list/checkbox-expandable-list
 include ../../components/checkbox-list/checkbox-list
-include ../../components/comfort-block/comfort-block
+include ../../components/benefits/benefits
 include ../../components/datepicker/datepicker
 include ../../components/dropdown/dropdown
 include ../../components/feedback/feedback
@@ -68,8 +68,9 @@ block content
                 +checkbox-expandable-list
             .expandable-checkbox-list-block
                 +checkbox-expandable-list
-            .comfort-block
-                +comfort-block
+            .benefits
+                +benefits('benefits-emotion.svg','Комфорт', 'Шумопоглощающие стены')
+                +benefits('benefits-house.svg','Удобство', 'Окно в каждой из спален')
         .form-elements__area-b
             .checkbox-list-block
                 +checkbox-list('checkbox buttons')
