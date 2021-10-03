@@ -1,9 +1,18 @@
+@import './../../styles/mixins/fonts.scss';
+@import './../../styles/variables/colors.scss';
+
 .feedback {
     &-container {
         display: grid;
-        grid-template-areas:
-            'icon title'
-            'icon date'
-            'like text';
+        grid-template-columns: 58px 653px;
+    }
+    &__author-name {
+        @include body-font($weight: bold);
+    }
+    &__date {
+        @include body-font;
+    }
+    &__text {
+        @include body-font;
     }
 }

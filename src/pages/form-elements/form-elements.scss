@@ -79,13 +79,10 @@
 .form-elements__area-b {
     display: grid;
     grid-area: b;
-    grid-template-areas:
-        'ba'
-        'bb'
-        'bc';
+    grid-template-rows: 170px 91.56px 129.44px 91px 220px 320px 145px;
     // margin-left: 100px;
     width: 320px;
-    gap: 10px;
+    // gap: 10px;
 }
 .form-elements__area-c {
     display: grid;
@@ -99,11 +96,8 @@
 .form-elements__area-d {
     display: grid;
     grid-area: d;
-    grid-template-areas:
-        'ca'
-        'cb'
-        'cc';
-    margin-left: 100px;
+
+    margin-top: 235px;
     .feedback {
         width: 711px;
     }
