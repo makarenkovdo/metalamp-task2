@@ -30,6 +30,19 @@
     color: $color;
 }
 
+@mixin caption-font(
+    $color: $dark-shade-50,
+    $weight: normal,
+    $line-height: 1.2857rem
+) {
+    font-style: normal;
+    font-weight: $weight;
+    font-size: 0.8571rem;
+    font-family: Montserrat, Arial, sans-serif;
+    line-height: $line-height;
+    color: $color;
+}
+
 // @mixin body-font($color: $dark-shade-75, $weight: normal, $line-height: 1.7143rem) {
 //     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 //     font-weight: $weight;

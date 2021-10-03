@@ -1,10 +1,15 @@
 mixin checkbox(text, addingText)
-    label.checkbox-label
-        input.checkbox__input(type='checkbox')
-        span.checkbox__new-icon
-        if addingText
-            span.checkbox__rich-title #{text}
-            span.checkbox__rich-subtitle #{addingText}
-        else
+    if addingText
+        label.rich-checkbox-label
+            input.rich-checkbox__input(type='checkbox')
+            span.rich-checkbox__new-icon
+                .rich-checkbox__text-box
+                    span.rich-checkbox__title #{text}
+                    span.rich-checkbox__subtitle #{addingText}
+    else
+        label.checkbox-label
+            input.checkbox__input(type='checkbox')
+            span.checkbox__new-icon
             span.checkbox__text #{text}
+
 

@@ -66,3 +66,27 @@ $newIconWidth: 20px;
         color: rgba(31, 32, 65, 0.5);
     }
 }
+
+.rich-checkbox {
+    &-label {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        grid-template-rows: max-content;
+        margin-bottom: 7px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-rows: max-content;
+    }
+    &__text-box {
+        display: grid;
+        width: 236px;
+    }
+    &__title {
+        @include body-font($weight: bold, $line-height: 1.2857rem);
+    }
+    &__subtitle {
+        @include caption-font;
+    }
+}

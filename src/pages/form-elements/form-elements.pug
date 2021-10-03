@@ -83,19 +83,26 @@ block content
                     +block-title('radio buttons')
                 +radio-button()
             .form-elements__toggle 
-                +block-title('toggle')
-                +toggle('Получать 1')
+                .form-elements-titles-container-b
+                    +block-title('toggle')
+                +toggle('Получать спецпредложения')
                 +toggle('Получать спецпредложения')
             .form-elements__like-button
-                +block-title('like button')
+                .form-elements-titles-container-b
+                    +block-title('like button')
                 +like-button(1)
             .form-elements__rate-button 
-                +block-title('rate button')
+                .form-elements-titles-container-b
+                    +block-title('rate button')
                 +rate-button(4)
                 +rate-button(5)
             .form-elements__dropdowns-2
+                .form-elements-titles-container
+                    +block-title('dropdown')
                 +dropdown(4)
             .form-elements__rich-checkbox
+                .form-elements-titles-container-b
+                    +block-title('rich checkbox buttons')
                 +rich-checkbox()
         .form-elements__area-d
             .form-elements__feedback
