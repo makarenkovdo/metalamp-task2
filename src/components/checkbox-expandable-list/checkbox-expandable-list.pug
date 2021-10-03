@@ -6,6 +6,8 @@ mixin checkbox-expandable-list()
             span.checkbox-expandable-list__icon-box.js-checkbox-expandable-list__icon-box
                 img.checkbox-expandable-list-icon.js-checkbox-expandable-list-icon(src='./img/open-checkbox-expandable-list.svg' alt='some some' width='13' height='8')
     .checkbox-expandable-list__popup.js-checkbox-expandable-list__popup.hide
+    details(class='checkbox-expandable-list.js-checkbox-expandable-list')
+        <summary>EXPANDABLE CHECKBOX LIST</summary>
         +checkbox('Завтрак')
         +checkbox('Письменный стол')
         +checkbox('Стул для кормления')
@@ -14,3 +16,5 @@ mixin checkbox-expandable-list()
         +checkbox('Шампунь')
         +checkbox('Телевизор')
         +checkbox('Шампунь')
+    </details>
+
