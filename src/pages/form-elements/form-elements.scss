@@ -39,14 +39,12 @@
         // background-color: blue;
     }
     .text-field {
-        &-block {
-            height: min-content;
-        }
+        height: min-content;
 
         // &__input-container {
         // }
     }
-    .date-dropdowns-block {
+    .date-dropdowns {
         display: grid;
         grid-template-columns: 50% 50%;
         justify-items: space-between;
@@ -60,7 +58,7 @@
             border-radius: 4px;
         }
     }
-    .room-dropdown-block {
+    .room-dropdown {
         width: 266px;
     }
     .benefits {
@@ -95,7 +93,7 @@
         'cb'
         'cc';
     margin-left: 100px;
-    .feedback-block {
+    .feedback {
         width: 711px;
     }
 }

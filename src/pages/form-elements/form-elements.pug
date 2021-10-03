@@ -24,80 +24,80 @@ include ../../components/toggle/toggle
 block content
     .form-elements
         .form-elements__area-a     
-            .text-field-block
-                .titles-container
+            .form-elements__text-field
+                .form-elements__titles-container
                     +block-title('text field')
                     +block-subtitle('DEFAULT')
                 .text-field__input-container
                     +text-field ('','email', 'Email')
-            .text-field-block.text-field-block-2
+            .form-elements__text-field.form-elements__text-field-2
                 .titles-container
                     +block-title('text field')
                     +block-subtitle('HOVER / FOCUS')
                 .text-field__input-container
                     +text-field ('This is pretty awesome','email', 'Email')
-            .dropdown-block
-                .titles-container
+            .form-elements__dropdown
+                .form-elements__titles-container
                     +block-title('dropdown')
                 +dropdown(1)
-            .masked-text-field-block
+            .form-elements__masked-text-field
                 .titles-container
                     +block-title('masked text field')
                 +text-field ('','masked-text-field', 'ДД.ММ.ГГГГ')
-            .date-dropdowns-block 
-                //- .first-title-block 
+            .form-elements__date-dropdowns 
+                //- .first-title 
                 //-     +block-title('date dropdown')
-                //- .second-title-block 
+                //- .second-title 
                 //-     +block-title('date dropdown')
                 +datepicker()
-            .filter-date-dropdown-block
+            .form-elements__filter-date-dropdown
                 .titles-container
                     +block-title('filter date dropdown')
                 +filter-date-dropdown
-            .subscription-text-field-block
+            .form-elements__subscription-text-field
                 .titles-container
                     +block-title('subscription text field')
                 +subscription-text-field ('','email', 'Email')
-            .room-dropdown-block 
-                //- .titles-block
+            .form-elements__room-dropdown 
+                //- .titles
                 //-     +block-title('text field')
                 //-     +block-subtitle('DEFAULT')
                 +dropdown(2, 'room') 
                 +dropdown(3, 'room') 
-            .expandable-checkbox-list
+            .form-elements__expandable-checkbox-list
                 +checkbox-expandable-list
-            .expandable-checkbox-list-2
+            .form-elements__expandable-checkbox-list-2
                 +checkbox-expandable-list
-            .benefits
+            .form-elements__benefits
                 +benefits('benefits-emotion.svg','Комфорт', 'Шумопоглощающие стены')
                 +benefits('benefits-house.svg','Удобство', 'Окно в каждой из спален')
         .form-elements__area-b
-            .checkbox-list-block
+            .form-elements__checkbox-list
                 +checkbox-list('checkbox buttons')
-            .radio-button-block                 
+            .form-elements__radio-button                 
                 +block-title('radio buttons')
                 +radio-button()
                 +radio-button()
-            .toggle-block 
+            .form-elements__toggle 
                 +block-title('toggle')
                 +toggle('Получать 1')
                 +toggle('Получать спецпредложения')
-            .like-button-block
+            .form-elements__like-button
                 +block-title('like button')
                 +like-button(1)
-            .rate-button-block 
+            .form-elements__rate-button 
                 +block-title('rate button')
                 +rate-button(4)
                 +rate-button(5)
-            .dropdowns-block-2
+            .form-elements__dropdowns-2
                 +dropdown(4)
-            .rich-checkbox-block
+            .form-elements__rich-checkbox
                 +rich-checkbox()
         .form-elements__area-d
-            .feedback-block
+            .form-elements__feedback
                 +feedback()
         .form-elements__area-c
-            .button-block
+            .form-elements__buttons
                 +block-title('BUTTONS')
                 +button('purple', 'click me')
                 +button('purple', 'click me')
@@ -106,11 +106,11 @@ block content
                 +button('link', 'click me')
                 +button('link', 'click me')
                 +button('go-to-pay', 'перейти к оплате')
-            .pagination-block
+            .form-elements__pagination
                 +pagination()
-            //- .dropdowns-block-3
+            //- .dropdowns-3
             //-     +dropdown(5) 
-            .bullet-list-block 
+            .form-elements__bullet-list 
                 +bullet-list()
 
 
@@ -129,7 +129,7 @@ block content
 
            
 
-        //- .checkbox-list-block
+        //- .checkbox-list
         //-     +checkbox-list()
         //- - const buttonAttributes = [['white','CLICK ME'],['white','CLICK ME'], ['purple','CLICK ME'],['purple','CLICK ME'],['link','CLICK ME'],['link','CLICK ME'],['go-to-pay','ПЕРЕЙТИ К ОПЛАТЕ']]
         //- each buttonAttribute, i in buttonAttributes
@@ -137,7 +137,7 @@ block content
         
 
 
-        //- .radio-button-block
+        //- .radio-button
         //-     +radio-button()
         //- +like-button('instance-1', 2)
         //- +like-button('instance-2', 11)
