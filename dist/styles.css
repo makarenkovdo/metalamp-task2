@@ -106,12 +106,62 @@
 /*!**************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/bullet-list/bullet-list.scss ***!
   \**************************************************************************************************************************************/
+@font-face {
+  font-family: "Montserrat";
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  font-weight: 700;
+  font-style: normal;
+}
 .bullet-list {
   display: list-item;
+  margin: 0px;
+  padding: 0px;
 }
 
 .bullet-list > li {
   list-style: inside;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.7143rem;
+  color: rgba(31, 32, 65, 0.75);
+  margin: 0px;
+  padding: 0;
+}
+
+.bullet-list > ul {
+  padding: 0;
+  margin: 0px;
+}
+
+.bullet-list ::marker {
+  font-size: 30px;
+  color: rgba(31, 32, 65, 0.25);
+  margin-right: 0px;
+  padding: 0;
+}
+
+.bullet-list > li {
+  background-color: yellow;
 }
 /*!****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/button/button.scss ***!
@@ -156,6 +206,7 @@
   text-transform: uppercase;
   border: none;
   color: #bc9cff;
+  background-color: transparent;
 }
 .button-link:hover {
   color: rgba(31, 32, 65, 0.5);
@@ -602,7 +653,31 @@ details[open] summary:after {
   \********************************************************************************************************************************/
 .feedback-container {
   display: grid;
-  grid-template-areas: "icon title" "icon date" "like text";
+  grid-template-columns: 58px 653px;
+}
+.feedback__author-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.7143rem;
+  color: rgba(31, 32, 65, 0.75);
+}
+.feedback__date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.7143rem;
+  color: rgba(31, 32, 65, 0.75);
+}
+.feedback__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.7143rem;
+  color: rgba(31, 32, 65, 0.75);
 }
 /*!********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/filter-date-dropdown/filter-date-dropdown.scss ***!
@@ -1145,6 +1220,9 @@ html {
   \************************************************************************************************************************************/
 .pagination-container {
   display: grid;
+  font: normal normal 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
 }
 .pagination__page-numbers {
   display: grid;
@@ -1160,6 +1238,16 @@ html {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 50%;
 }
+.pagination__page-numbers_next-page {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 50%;
+}
 .pagination__page-numbers_non-active-page {
   display: grid;
   justify-content: center;
@@ -1168,13 +1256,15 @@ html {
   height: 40px;
 }
 .pagination__caption {
-  width: 229px;
-  font-family: Montserrat;
+  width: 241px;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
+  text-transform: lowercase;
+  margin-top: 10.56px;
 }
 /*!****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/radio-button/radio-button.scss ***!
@@ -1273,11 +1363,6 @@ html {
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/rate-button/rate-button.scss ***!
   \**************************************************************************************************************************************/
 .rate-button {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -1294,12 +1379,15 @@ html {
   /* Support for IE. */
   font-feature-settings: "liga";
 }
-.rate-button-container {
+.rate-button-block {
   width: 120px;
   height: 24px;
 }
 .rate-button-colored {
   color: rgba(136, 36, 175, 0.54);
+}
+.rate-button__img {
+  margin: 0 2px 0 2px;
 }
 /*!****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/registration/registration.scss ***!
@@ -1765,6 +1853,28 @@ html {
   grid-template-columns: 1fr 0.5fr;
   margin-bottom: 16px;
 }
+.form-elements__like-button-container {
+  display: grid;
+  grid-template-columns: 50px 40px;
+}
+.form-elements__rate-buttons-container {
+  display: grid;
+  grid-template-columns: 140px max-content;
+}
+.form-elements__buttons-container {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 30px;
+  grid-template-columns: min-content min-content;
+  margin-bottom: 30px;
+}
+.form-elements__buttons-container-2 {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 30px;
+  grid-template-columns: max-content max-content;
+  margin-bottom: 30px;
+}
 
 .form-elements__area-a {
   display: grid;
@@ -1799,23 +1909,21 @@ html {
 .form-elements__area-b {
   display: grid;
   grid-area: b;
-  grid-template-areas: "ba" "bb" "bc";
+  grid-template-rows: 170px 91.56px 129.44px 91px 251px 320px 145px;
   width: 320px;
-  gap: 10px;
 }
 
 .form-elements__area-c {
   display: grid;
   grid-area: c;
-  grid-template-areas: "ca" "cb" "cc";
+  grid-template-rows: 88px 309px 336px 320px 147px;
   width: 320px;
 }
 
 .form-elements__area-d {
   display: grid;
   grid-area: d;
-  grid-template-areas: "ca" "cb" "cc";
-  margin-left: 100px;
+  margin-top: 235px;
 }
 .form-elements__area-d .feedback {
   width: 711px;

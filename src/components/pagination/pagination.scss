@@ -1,6 +1,10 @@
+@import './../../styles/mixins/fonts.scss';
+@import './../../styles/variables/colors.scss';
+
 .pagination {
     &-container {
         display: grid;
+        @include h3($dark-shade-50, normal);
     }
     &__page-numbers {
         display: grid;
@@ -15,6 +19,16 @@
             background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
             border-radius: 50%;
         }
+        &_next-page {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            width: 40px;
+            height: 40px;
+            color: white;
+            background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+            border-radius: 50%;
+        }
         &_non-active-page {
             display: grid;
             justify-content: center;
@@ -26,14 +40,9 @@
     }
 
     &__caption {
-        width: 229px;
-
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
-
-        color: rgba(31, 32, 65, 0.75);
+        width: 241px;
+        @include body-font();
+        text-transform: lowercase;
+        margin-top: 10.56px;
     }
 }

@@ -96,8 +96,9 @@ block content
             .form-elements__rate-button 
                 .form-elements-titles-container-b
                     +block-title('rate button')
-                +rate-button(4)
-                +rate-button(5)
+                .form-elements__rate-buttons-container 
+                    +rate-button(4)
+                    +rate-button(5)
             .form-elements__dropdowns-2
                 .form-elements-titles-container
                     +block-title('dropdown')
@@ -110,23 +111,32 @@ block content
             .form-elements__feedback
                 +feedback('Мурад Сарафанов','./img/murad.svg', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.' )
         .form-elements__area-c
+            .form-elements__range-slider 
+                +block-title('range slider')
             .form-elements__buttons
-                +block-title('BUTTONS')
-                +button('purple', 'click me')
-                +button('purple', 'click me')
-                +button('white', 'click me')
-                +button('white', 'click me')
-                +button('link', 'click me')
-                +button('link', 'click me')
+                .form-elements-titles-container-b
+                    +block-title('BUTTONS')
+                .form-elements__buttons-container
+                    +button('purple', 'click me')
+                    +button('purple', 'click me')
+                    +button('white', 'click me')
+                    +button('white', 'click me')
+                .form-elements__buttons-container-2
+                    +button('link', 'click me')
+                    +button('link', 'click me')
                 +button('go-to-pay', 'перейти к оплате')
             .form-elements__pagination
+                .form-elements-titles-container-b
+                    +block-title('pagination')
                 +pagination()
-            //- .dropdowns-3
-            //-     +dropdown(5) 
+            .form-elements__dropdowns-3
+                .form-elements-titles-container
+                    +block-title('dropdown')
+                +dropdown(5)
             .form-elements__bullet-list 
+                .form-elements-titles-container-b
+                    +block-title('bullet list')
                 +bullet-list()
-
-
 
 
 
