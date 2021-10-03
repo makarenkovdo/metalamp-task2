@@ -23,6 +23,11 @@
 /* remove standart styles */
 
 .radio {
+    &-button-block {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        column-gap: 20px;
+    }
     &-label {
         display: grid;
         grid-template-columns: 30px 1fr;

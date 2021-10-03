@@ -24,6 +24,12 @@
         margin-bottom: 5px;
         // background-color: blue;
     }
+    &-titles-container-b {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        margin-bottom: 16px;
+        // background-color: blue;
+    }
 }
 
 .form-elements__area-a {
