@@ -1,46 +1,43 @@
 @import './../../styles/variables/colors.scss';
 @import './../../styles/mixins/fonts.scss';
-checkbox-expandable-list {
-    &__button {
-        width: 166px;
-        height: 44px;
-        border: 1px solid black;
-    }
-    &__icon-box {
-        width: 44px;
-        height: 44px;
-        border: 1px solid black;
-    }
+// checkbox-expandable-list {
+//     &__button {
+//         width: 166px;
+//         height: 44px;
+//         border: 1px solid black;
+//     }
+//     &__icon-box {
+//         width: 44px;
+//         height: 44px;
+//         border: 1px solid black;
+//     }
 
-    &__text {
-        width: 192px;
-        height: 15px;
+//     &__text {
+//         width: 192px;
+//         height: 15px;
 
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        /* identical to box height */
-        text-transform: uppercase;
+//         font-family: Montserrat;
+//         font-style: normal;
+//         font-weight: bold;
+//         font-size: 12px;
+//         line-height: 15px;
+//         /* identical to box height */
+//         text-transform: uppercase;
 
-        /* Dark 100% */
-        color: #1f2041;
-    }
-    &__popup {
-        width: 192px;
-        height: 228px;
-        border: 1px solid black;
-    }
-}
+//         /* Dark 100% */
+//         color: #1f2041;
+//     }
+//     &__popup {
+//         width: 192px;
+//         height: 228px;
+//         border: 1px solid black;
+//     }
+// }
 details > summary {
-    padding: 15px 0 14px;
+    padding: 15px 0 17px;
     box-sizing: border-box;
     position: relative;
-    // background-color: #eee;
-    // color: #333;
     width: 266px;
-    border: 1px #ccc solid;
     cursor: pointer;
     list-style: none;
     @include h3;

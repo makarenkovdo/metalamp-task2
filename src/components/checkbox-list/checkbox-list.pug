@@ -1,6 +1,10 @@
 include ../../components/checkbox/checkbox
-mixin checkbox-list()
-    +checkbox('Можно курить')
-    +checkbox('Можно с питомцами')
-    +checkbox('Можно пригласить гостей (до 10 человек)')
+include ../../components/block-title/block-title
+
+mixin checkbox-list(title)
+    +block-title(title)
+    .checkbox-list
+        +checkbox('Можно курить')
+        +checkbox('Можно с питомцами')
+        +checkbox('Можно пригласить гостей (до 10 человек)')
 

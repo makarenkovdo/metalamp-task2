@@ -56,7 +56,7 @@ $newIconWidth: 20px;
         align-self: flex-start;
         align-content: center;
         // @include font-face;
-        @include body-font(yellow, bold);
+        @include body-font($weight: normal);
 
         /* identical to box height, or 129% */
 
