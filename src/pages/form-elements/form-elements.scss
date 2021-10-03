@@ -15,6 +15,7 @@
         'a b c'
         'a d d';
     width: 1440px-141px-141px;
+    grid-template-columns: 587px 392px 320px;
     margin-top: 143px;
     align-content: flex-start;
 }
@@ -34,7 +35,7 @@
     .titles-container {
         display: grid;
         grid-template-columns: 1fr 0.5fr;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
         // background-color: blue;
     }
     .text-field {
@@ -62,6 +63,9 @@
     .room-dropdown-block {
         width: 266px;
     }
+    .benefits {
+        margin-top: 14px;
+    }
 }
 .form-elements__area-b {
     display: grid;
@@ -70,7 +74,7 @@
         'ba'
         'bb'
         'bc';
-    margin-left: 100px;
+    // margin-left: 100px;
     width: 320px;
     gap: 10px;
 }

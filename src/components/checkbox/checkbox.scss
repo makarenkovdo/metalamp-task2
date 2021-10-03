@@ -50,13 +50,15 @@ $newIconWidth: 20px;
         }
     }
     &__text {
-        // display: grid;
+        display: grid;
         // align-self: center;
-        height: 18px;
-        align-self: flex-start;
-        align-content: center;
+        // height: 18px;
+        align-content: flex-start;
+        // padding-bottom: 5px;
+        height: 18px; // align-content: center;
+        width: 200px;
         // @include font-face;
-        @include body-font($weight: normal);
+        @include body-font($weight: normal, $line-height: 18px);
 
         /* identical to box height, or 129% */
 
