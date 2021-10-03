@@ -1,12 +1,9 @@
 mixin rate-button(number)
     - const filledStars = Array(number)
     - const blankStars = Array(5-number)
-    .rate-button-container
+    .rate-button-block
         each v, i in filledStars
-            img(src='./img/rate-button.svg' alt='some some' width='24' height='24')
+            img(class="rate-button__img" src='./img/rate-button.svg' alt='rate' width='20' height='19')
         each v, i in blankStars
-            img(src='./img/rate-button-white.svg' alt='some some' width='24' height='24')
-        //- img(src='./img/rate-button.svg' alt='some some' width='24' height='24')
-        //- img(src='./img/rate-button.svg' alt='some some' width='24' height='24')
-        //- img(src='./img/rate-button.svg' alt='some some' width='24' height='24')
-        //- img(src='./img/rate-button-white.svg' alt='some some' width='24' height='24')
+            img(class="rate-button__img" src='./img/rate-button-white.svg' alt='blank-rate' width='20' height='19')
+

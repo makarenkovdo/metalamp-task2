@@ -90,7 +90,9 @@ block content
             .form-elements__like-button
                 .form-elements-titles-container-b
                     +block-title('like button')
-                +like-button(1)
+                .form-elements__like-button-container
+                    +like-button(1, 2)
+                    +like-button(2, 11)
             .form-elements__rate-button 
                 .form-elements-titles-container-b
                     +block-title('rate button')

@@ -260,17 +260,49 @@ details[open] summary:after {
   opacity: 0;
 }
 .checkbox__text {
+  display: grid;
+  align-content: flex-start;
   height: 18px;
-  align-self: flex-start;
-  align-content: center;
+  width: 200px;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 1.7143rem;
+  line-height: 18px;
   color: rgba(31, 32, 65, 0.75);
   /* identical to box height, or 129% */
   /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.rich-checkbox-label {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: max-content;
+  margin-bottom: 7px;
+}
+.rich-checkbox__content {
+  display: grid;
+  grid-template-rows: max-content;
+}
+.rich-checkbox__text-box {
+  display: grid;
+  width: 236px;
+}
+.rich-checkbox__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.2857rem;
+  color: rgba(31, 32, 65, 0.75);
+}
+.rich-checkbox__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8571rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.2857rem;
   color: rgba(31, 32, 65, 0.5);
 }
 /*!**************************************************************************************************************************************!*\
@@ -446,7 +478,6 @@ details[open] summary:after {
   border: 1px solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   border-radius: 2px 2px 0px 0px;
-  margin-top: 5px;
   /* Сколько гостей */
   font-style: normal;
   font-weight: normal;
@@ -527,14 +558,20 @@ details[open] summary:after {
   /* Dark 100% */
   color: #1f2041;
 }
+.dropdown__adding-buttons {
+  display: grid;
+  box-sizing: border-box;
+  width: 320px;
+  grid-template-columns: 160px 160px;
+  padding-top: 19px;
+}
 .dropdown__apply {
   display: grid;
+  justify-self: flex-end;
   align-content: flex-end;
   padding-bottom: 35.365%;
   /* применить */
-  width: 84px;
-  grid-column-start: 4;
-  margin-right: 7px;
+  padding-right: 7px;
   justify-self: right;
   justify-content: right;
   font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
@@ -546,7 +583,7 @@ details[open] summary:after {
   display: grid;
   align-content: end;
   padding-bottom: 35.365%;
-  margin-left: 14px;
+  padding-left: 14px;
   cursor: pointer;
   justify-self: left;
   font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
@@ -555,6 +592,10 @@ details[open] summary:after {
 }
 .hide {
   display: none !important;
+}
+
+.invisible {
+  visibility: hidden !important;
 }
 /*!********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/feedback/feedback.scss ***!
@@ -1163,6 +1204,11 @@ html {
   font-style: normal;
 }
 /* remove standart styles */
+.radio-button-block {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 20px;
+}
 .radio-label {
   display: grid;
   grid-template-columns: 30px 1fr;
@@ -1265,9 +1311,8 @@ html {
 /*!******************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/rich-checkbox/rich-checkbox.scss ***!
   \******************************************************************************************************************************************/
-.checkbox-list {
+.rich-checkbox-container {
   display: grid;
-  grid-template-columns: 3;
 }
 /*!**************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/subscription-text-field/subscription-text-field.scss ***!
@@ -1710,24 +1755,29 @@ html {
   margin-top: 143px;
   align-content: flex-start;
 }
+.form-elements-titles-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  margin-bottom: 5px;
+}
+.form-elements-titles-container-b {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  margin-bottom: 16px;
+}
 
 .form-elements__area-a {
   display: grid;
   grid-area: a;
   margin-left: 140.5px;
   align-content: flex-start;
-  grid-template-rows: 84px 84px 86.56px 104px 105px 105px 164px 320px 64px 306px 154px;
+  grid-template-rows: 84px 84px 86.56px 104px 105px 105px 164px 84px 236px 64px 306px 154px;
   width: 320px;
 }
-.form-elements__area-a .titles-container {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr;
-  margin-bottom: 0px;
-}
-.form-elements__area-a .text-field-block {
+.form-elements__area-a .text-field {
   height: min-content;
 }
-.form-elements__area-a .date-dropdowns-block {
+.form-elements__area-a .date-dropdowns {
   display: grid;
   grid-template-columns: 50% 50%;
   justify-items: space-between;
@@ -1739,7 +1789,7 @@ html {
   box-sizing: border-box;
   border-radius: 4px;
 }
-.form-elements__area-a .room-dropdown-block {
+.form-elements__area-a .room-dropdown {
   width: 266px;
 }
 .form-elements__area-a .benefits {
@@ -1767,7 +1817,7 @@ html {
   grid-template-areas: "ca" "cb" "cc";
   margin-left: 100px;
 }
-.form-elements__area-d .feedback-block {
+.form-elements__area-d .feedback {
   width: 711px;
 }
 

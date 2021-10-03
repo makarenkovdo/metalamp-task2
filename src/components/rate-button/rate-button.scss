@@ -21,7 +21,7 @@
 
     /* Support for IE. */
     font-feature-settings: 'liga';
-    &-container {
+    &-block {
         width: 120px;
         height: 24px;
     }
@@ -31,5 +31,8 @@
     }
 
     &-white {
+    }
+    &__img {
+        margin: 0 2px 0 2px;
     }
 }

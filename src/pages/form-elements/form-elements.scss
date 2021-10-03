@@ -30,6 +30,10 @@
         margin-bottom: 16px;
         // background-color: blue;
     }
+    &__like-button-container {
+        display: grid;
+        grid-template-columns: 50px 40px;
+    }
 }
 
 .form-elements__area-a {
