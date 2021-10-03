@@ -25,23 +25,23 @@ block content
     .form-elements
         .form-elements__area-a     
             .form-elements__text-field
-                .form-elements__titles-container
+                .form-elements-titles-container
                     +block-title('text field')
-                    +block-subtitle('DEFAULT')
+                    +block-subtitle('default')
                 .text-field__input-container
                     +text-field ('','email', 'Email')
             .form-elements__text-field.form-elements__text-field-2
-                .titles-container
+                .form-elements-titles-container
                     +block-title('text field')
-                    +block-subtitle('HOVER / FOCUS')
+                    +block-subtitle('hover / focus')
                 .text-field__input-container
                     +text-field ('This is pretty awesome','email', 'Email')
             .form-elements__dropdown
-                .form-elements__titles-container
+                .form-elements-titles-container
                     +block-title('dropdown')
                 +dropdown(1)
             .form-elements__masked-text-field
-                .titles-container
+                .form-elements-titles-container
                     +block-title('masked text field')
                 +text-field ('','masked-text-field', 'ДД.ММ.ГГГГ')
             .form-elements__date-dropdowns 
@@ -51,18 +51,22 @@ block content
                 //-     +block-title('date dropdown')
                 +datepicker()
             .form-elements__filter-date-dropdown
-                .titles-container
+                .form-elements-titles-container
                     +block-title('filter date dropdown')
                 +filter-date-dropdown
             .form-elements__subscription-text-field
-                .titles-container
+                .form-elements-titles-container
                     +block-title('subscription text field')
                 +subscription-text-field ('','email', 'Email')
             .form-elements__room-dropdown 
-                //- .titles
-                //-     +block-title('text field')
-                //-     +block-subtitle('DEFAULT')
-                +dropdown(2, 'room') 
+                .form-elements-titles-container
+                    +block-title('dropdown')
+                    +block-subtitle('default')
+                +dropdown(2, 'room')
+            .form-elements__room-dropdown  
+                .form-elements-titles-container
+                    +block-title('dropdown')
+                    +block-subtitle('expanded')
                 +dropdown(3, 'room') 
             .form-elements__expandable-checkbox-list
                 +checkbox-expandable-list
