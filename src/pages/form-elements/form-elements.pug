@@ -20,6 +20,7 @@ include ../../components/rich-checkbox/rich-checkbox
 include ../../components/subscription-text-field/subscription-text-field
 include ../../components/text-field/text-field
 include ../../components/toggle/toggle
+
                 
 block content
     .form-elements
@@ -79,22 +80,22 @@ block content
             .form-elements__checkbox-list
                 +checkbox-list('checkbox buttons')
             .form-elements__radio-button  
-                .form-elements-titles-container-b
+                div(class='titles-container' style= {margin: '0 0 12px 0'})
                     +block-title('radio buttons')
                 +radio-button()
             .form-elements__toggle 
-                .form-elements-titles-container-b
+                div(class='titles-container' style= {margin: '0 0 16px 0'})
                     +block-title('toggle')
                 +toggle('Получать спецпредложения')
                 +toggle('Получать спецпредложения')
             .form-elements__like-button
-                .form-elements-titles-container-b
+                div(class='titles-container' style= {margin: '0 0 16px 0'})
                     +block-title('like button')
                 .form-elements__like-button-container
                     +like-button(1, 2)
                     +like-button(2, 11)
             .form-elements__rate-button 
-                .form-elements-titles-container-b
+                div(class='titles-container' style= {margin: '0 0 16px 0'})
                     +block-title('rate button')
                 .form-elements__rate-buttons-container 
                     +rate-button(4)
@@ -104,7 +105,7 @@ block content
                     +block-title('dropdown')
                 +dropdown(4)
             .form-elements__rich-checkbox
-                .form-elements-titles-container-b
+                div(class='titles-container' style= {margin: '0 0 16px 0'})
                     +block-title('rich checkbox buttons')
                 +rich-checkbox()
         .form-elements__area-d
@@ -114,7 +115,7 @@ block content
             .form-elements__range-slider 
                 +block-title('range slider')
             .form-elements__buttons
-                .form-elements-titles-container-b
+                div(class='titles-container' style= {margin: '0 0 16px 0'})
                     +block-title('BUTTONS')
                 .form-elements__buttons-container
                     +button('purple', 'click me')
@@ -126,7 +127,7 @@ block content
                     +button('link', 'click me')
                 +button('go-to-pay', 'перейти к оплате')
             .form-elements__pagination
-                .form-elements-titles-container-b
+                div(class='titles-container' style= {margin: '0 0 16px 0'})
                     +block-title('pagination')
                 +pagination()
             .form-elements__dropdowns-3
@@ -134,7 +135,7 @@ block content
                     +block-title('dropdown')
                 +dropdown(5)
             .form-elements__bullet-list 
-                .form-elements-titles-container-b
+                div(class='titles-container' style= {margin: '0 0 16px 0'})
                     +block-title('bullet list')
                 +bullet-list()
 
