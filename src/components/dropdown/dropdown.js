@@ -200,7 +200,7 @@ class Dropdown {
                 //     ).innerHTML
                 // )
                 if (this.$type === 'room') {
-                    this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}, ${counter[3]} ванн${bathWordEnding[0]} комнат${bathWordEnding[1]}`
+                    this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}...`
                 } else {
                     if (counter[0] > 0 || counter[3] > 0) {
                         this.$dropdownClearSelector.classList.remove(
