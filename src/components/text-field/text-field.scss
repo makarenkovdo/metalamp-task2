@@ -14,15 +14,16 @@
         display: grid;
         box-sizing: border-box;
         width: 320px;
-        padding: 8px 0 9px 13px;
+        padding: 9px 0 9px 14px;
         background: #ffffff;
         border-radius: 4px;
         border: 1px solid $dark-shade-25;
         @include body-font;
+        font-stretch: ultra-condensed;
         &:placeholder-shown {
             @include placeholder(color, $dark-shade-25);
             line-height: 18px;
-            padding: 11px 0 12px 13px;
+            padding: 13px 0 12px 14px;
 
             // @include media-content(
             //     320px,

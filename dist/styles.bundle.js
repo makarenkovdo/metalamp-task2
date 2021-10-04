@@ -52,6 +52,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/button/arrow-button.svg":
+/*!************************************************!*\
+  !*** ./src/components/button/arrow-button.svg ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/arrow-button.svg\");\n\n//# sourceURL=webpack://task2/./src/components/button/arrow-button.svg?");
+
+/***/ }),
+
 /***/ "./src/components/checkbox-expandable-list/close-checkbox-expandable-list.svg":
 /*!************************************************************************************!*\
   !*** ./src/components/checkbox-expandable-list/close-checkbox-expandable-list.svg ***!
@@ -250,6 +261,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/pagination/arrow-pagination.svg":
+/*!********************************************************!*\
+  !*** ./src/components/pagination/arrow-pagination.svg ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/arrow-pagination.svg\");\n\n//# sourceURL=webpack://task2/./src/components/pagination/arrow-pagination.svg?");
+
+/***/ }),
+
 /***/ "./src/components/pagination/pagination-arrow.svg":
 /*!********************************************************!*\
   !*** ./src/components/pagination/pagination-arrow.svg ***!
@@ -283,14 +305,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/components/subscription-text-field/narrow.svg":
-/*!***********************************************************!*\
-  !*** ./src/components/subscription-text-field/narrow.svg ***!
-  \***********************************************************/
+/***/ "./src/components/subscription-text-field/arrow.svg":
+/*!**********************************************************!*\
+  !*** ./src/components/subscription-text-field/arrow.svg ***!
+  \**********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/narrow.svg\");\n\n//# sourceURL=webpack://task2/./src/components/subscription-text-field/narrow.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/arrow.svg\");\n\n//# sourceURL=webpack://task2/./src/components/subscription-text-field/arrow.svg?");
 
 /***/ }),
 
@@ -749,7 +771,7 @@ eval("var map = {\n\t\"./benefits/benefits.scss\": \"./src/components/benefits/b
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./benefits/benefits-emotion.svg\": \"./src/components/benefits/benefits-emotion.svg\",\n\t\"./benefits/benefits-house.svg\": \"./src/components/benefits/benefits-house.svg\",\n\t\"./benefits/benefits-line.svg\": \"./src/components/benefits/benefits-line.svg\",\n\t\"./checkbox-expandable-list/close-checkbox-expandable-list.svg\": \"./src/components/checkbox-expandable-list/close-checkbox-expandable-list.svg\",\n\t\"./checkbox-expandable-list/open-checkbox-expandable-list.svg\": \"./src/components/checkbox-expandable-list/open-checkbox-expandable-list.svg\",\n\t\"./datepicker/arrow-back.svg\": \"./src/components/datepicker/arrow-back.svg\",\n\t\"./datepicker/arrow-forward.svg\": \"./src/components/datepicker/arrow-forward.svg\",\n\t\"./dropdown/dropdown.svg\": \"./src/components/dropdown/dropdown.svg\",\n\t\"./dropdown/minus.svg\": \"./src/components/dropdown/minus.svg\",\n\t\"./dropdown/plus.svg\": \"./src/components/dropdown/plus.svg\",\n\t\"./feedback/murad.svg\": \"./src/components/feedback/murad.svg\",\n\t\"./footer/facebook.svg\": \"./src/components/footer/facebook.svg\",\n\t\"./footer/instagram.svg\": \"./src/components/footer/instagram.svg\",\n\t\"./footer/link-expand.svg\": \"./src/components/footer/link-expand.svg\",\n\t\"./footer/twitter.svg\": \"./src/components/footer/twitter.svg\",\n\t\"./header/link-expand.svg\": \"./src/components/header/link-expand.svg\",\n\t\"./like-button/like-active.svg\": \"./src/components/like-button/like-active.svg\",\n\t\"./like-button/like-border.svg\": \"./src/components/like-button/like-border.svg\",\n\t\"./logo-toxin/colored-logo.svg\": \"./src/components/logo-toxin/colored-logo.svg\",\n\t\"./logo-toxin/toxin.svg\": \"./src/components/logo-toxin/toxin.svg\",\n\t\"./pagination/pagination-arrow.svg\": \"./src/components/pagination/pagination-arrow.svg\",\n\t\"./rate-button/rate-button-white.svg\": \"./src/components/rate-button/rate-button-white.svg\",\n\t\"./rate-button/rate-button.svg\": \"./src/components/rate-button/rate-button.svg\",\n\t\"./subscription-text-field/narrow.svg\": \"./src/components/subscription-text-field/narrow.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.svg$?");
+eval("var map = {\n\t\"./benefits/benefits-emotion.svg\": \"./src/components/benefits/benefits-emotion.svg\",\n\t\"./benefits/benefits-house.svg\": \"./src/components/benefits/benefits-house.svg\",\n\t\"./benefits/benefits-line.svg\": \"./src/components/benefits/benefits-line.svg\",\n\t\"./button/arrow-button.svg\": \"./src/components/button/arrow-button.svg\",\n\t\"./checkbox-expandable-list/close-checkbox-expandable-list.svg\": \"./src/components/checkbox-expandable-list/close-checkbox-expandable-list.svg\",\n\t\"./checkbox-expandable-list/open-checkbox-expandable-list.svg\": \"./src/components/checkbox-expandable-list/open-checkbox-expandable-list.svg\",\n\t\"./datepicker/arrow-back.svg\": \"./src/components/datepicker/arrow-back.svg\",\n\t\"./datepicker/arrow-forward.svg\": \"./src/components/datepicker/arrow-forward.svg\",\n\t\"./dropdown/dropdown.svg\": \"./src/components/dropdown/dropdown.svg\",\n\t\"./dropdown/minus.svg\": \"./src/components/dropdown/minus.svg\",\n\t\"./dropdown/plus.svg\": \"./src/components/dropdown/plus.svg\",\n\t\"./feedback/murad.svg\": \"./src/components/feedback/murad.svg\",\n\t\"./footer/facebook.svg\": \"./src/components/footer/facebook.svg\",\n\t\"./footer/instagram.svg\": \"./src/components/footer/instagram.svg\",\n\t\"./footer/link-expand.svg\": \"./src/components/footer/link-expand.svg\",\n\t\"./footer/twitter.svg\": \"./src/components/footer/twitter.svg\",\n\t\"./header/link-expand.svg\": \"./src/components/header/link-expand.svg\",\n\t\"./like-button/like-active.svg\": \"./src/components/like-button/like-active.svg\",\n\t\"./like-button/like-border.svg\": \"./src/components/like-button/like-border.svg\",\n\t\"./logo-toxin/colored-logo.svg\": \"./src/components/logo-toxin/colored-logo.svg\",\n\t\"./logo-toxin/toxin.svg\": \"./src/components/logo-toxin/toxin.svg\",\n\t\"./pagination/arrow-pagination.svg\": \"./src/components/pagination/arrow-pagination.svg\",\n\t\"./pagination/pagination-arrow.svg\": \"./src/components/pagination/pagination-arrow.svg\",\n\t\"./rate-button/rate-button-white.svg\": \"./src/components/rate-button/rate-button-white.svg\",\n\t\"./rate-button/rate-button.svg\": \"./src/components/rate-button/rate-button.svg\",\n\t\"./subscription-text-field/arrow.svg\": \"./src/components/subscription-text-field/arrow.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.svg$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.svg$?");
 
 /***/ }),
 

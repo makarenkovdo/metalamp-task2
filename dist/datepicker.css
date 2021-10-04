@@ -217,9 +217,13 @@
   box-sizing: border-box;
   width: 39.88px;
   height: 40px;
-  font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
-  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8571rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.0714rem;
   color: #bc9cff;
+  text-transform: uppercase;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -258,9 +262,13 @@
 
 .datepicker--cell-day.-other-month-,
 .datepicker--cell-year.-other-decade- {
-  font: normal normal 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
-  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8571rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.0714rem;
   color: rgba(31, 32, 65, 0.25);
+  text-transform: uppercase;
 }
 
 .datepicker--cell-day.-other-month-:hover,
@@ -321,9 +329,13 @@
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   box-sizing: border-box;
-  font: normal normal 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
-  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8571rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.0714rem;
   color: #1f2041;
+  text-transform: uppercase;
   text-transform: none;
   color: #4a4a4a;
   width: 320px;
@@ -583,9 +595,13 @@
 }
 
 .datepicker--nav-title i {
-  font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
-  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8571rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.0714rem;
   color: #1f2041;
+  text-transform: uppercase;
   margin-left: 5px;
 }
 

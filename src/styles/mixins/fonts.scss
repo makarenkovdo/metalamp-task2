@@ -11,10 +11,14 @@
     color: $color;
 }
 
-@mixin h3($color: $dark-shade-100, $weight: bold) {
-    font: normal $weight 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
-    text-transform: uppercase;
+@mixin h3($color: $dark-shade-100, $weight: bold, $line-height: 1.0714rem) {
+    font-style: normal;
+    font-weight: $weight;
+    font-size: 0.8571rem;
+    font-family: Montserrat, Arial, sans-serif;
+    line-height: $line-height;
     color: $color;
+    text-transform: uppercase;
 }
 
 @mixin body-font(
