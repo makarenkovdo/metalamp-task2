@@ -1,9 +1,9 @@
-mixin dropdown(instance, type)
+mixin dropdown(instance, type, width=320)
     - const roomArray = ['0 спален, 0 кроватей','СПАЛЬНИ', 'КРОВАТИ', 'ВАННЫЕ КОМНАТЫ']
     - const guestsArray = ['Сколько гостей?','ВЗРОСЛЫЕ', 'ДЕТИ', 'МЛАДЕНЦЫ']
     //style="display:none"
     div(class="js-dropdown_instance-" + instance +"_type hide" )= type
-    div(class="dropdown js-dropdown_instance-" + instance)
+    div(class="dropdown js-dropdown_instance-" + instance style={width: `${width}px`})
         div(class="dropdown__button js-dropdown_instance-" + instance + "__button")
             span(class="dropdown__text js-dropdown_instance-" + instance + "__text")= type? roomArray[0]:guestsArray[0]
             span(class="dropdown__img-box js-dropdown_instance-" + instance + "__img-box")
