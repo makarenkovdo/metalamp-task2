@@ -106,6 +106,7 @@
 /*!**************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/bullet-list/bullet-list.scss ***!
   \**************************************************************************************************************************************/
+@charset "UTF-8";
 @font-face {
   font-family: "Montserrat";
   src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
@@ -130,38 +131,31 @@
   font-weight: 700;
   font-style: normal;
 }
-.bullet-list {
-  display: list-item;
-  margin: 0px;
-  padding: 0px;
-}
-
 .bullet-list > li {
-  list-style: inside;
+  list-style: none;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
   line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
-  margin: 0px;
+  margin-left: -10px;
   padding: 0;
 }
 
 .bullet-list > ul {
-  padding: 0;
+  padding: 0px;
   margin: 0px;
 }
 
-.bullet-list ::marker {
-  font-size: 30px;
+.bullet-list li::before {
+  content: "•";
+  font-size: 70px;
+  line-height: 0;
+  position: relative;
+  top: 14px;
+  left: -5px;
   color: rgba(31, 32, 65, 0.25);
-  margin-right: 0px;
-  padding: 0;
-}
-
-.bullet-list > li {
-  background-color: yellow;
 }
 /*!****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/button/button.scss ***!

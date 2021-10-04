@@ -1,5 +1,5 @@
 mixin like-button(instance, initValue=2)
-    div(class=`like-button js-like-button_instance-${instance}`)
+    div(class=`like-button js-like-button_instance-${instance}` id=`${instance}`)
         span.like-button__icon-container
-            img(class=`like-button__icon js-like-button__icon_instance-${instance}` src='./img/like-border.svg' alt='like' width='13' height='8')
-        span(class=`like-button__counter js-like-button__counter_instance-${instance}`)= initValue
+            img(class=`like-button__icon js-like-button__icon_instance-${instance}` id=`${instance}` src='./img/like-border.svg' alt='like' width='13' height='8')
+        span(class=`like-button__counter js-like-button__counter_instance-${instance}` id=`${instance}`)= initValue
