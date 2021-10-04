@@ -7,6 +7,13 @@
     width: 320px;
     z-index: 0;
 
+    &_wide {
+        width: 320px;
+    }
+    &_narrow {
+        width: 266px;
+    }
+
     &__button {
         display: grid;
         padding: 9px 0 9px 0px;
@@ -48,6 +55,32 @@
     img {
         position: relative;
     }
+    &__popup {
+        position: absolute;
+
+        display: grid;
+        grid-template-rows: 37px 37px 37px 48px;
+
+        // grid-template-columns: 69.0625% 9.375% 10% 11.5625%;
+        grid-template-columns: minmax(167px, 221px) 30px 32px 37px;
+
+        width: 320px;
+        // height: 159px;
+
+        background: #ffffff;
+        /* Dark 50% */
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        box-sizing: border-box;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        border-radius: 0px 0px 2px 2px;
+        z-index: 1;
+        &_wide {
+            width: 320px;
+        }
+        &_narrow {
+            width: 266px;
+        }
+    }
     &__increase {
         display: flex;
         justify-content: center;
@@ -79,24 +112,7 @@
         border-radius: 22px;
         cursor: pointer;
     }
-    &__popup {
-        position: absolute;
 
-        display: grid;
-        grid-template-rows: 37px 37px 37px 48px;
-
-        grid-template-columns: 69.0625% 9.375% 10% 11.5625%;
-        width: 320px;
-        // height: 159px;
-
-        background: #ffffff;
-        /* Dark 50% */
-        border: 1px solid rgba(31, 32, 65, 0.5);
-        box-sizing: border-box;
-        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-        border-radius: 0px 0px 2px 2px;
-        z-index: 1;
-    }
     &__counter {
         @include h3;
         text-align: center;
