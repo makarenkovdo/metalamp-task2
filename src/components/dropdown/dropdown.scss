@@ -59,7 +59,7 @@
         position: absolute;
 
         display: grid;
-        grid-template-rows: 37px 37px 37px 48px;
+        grid-template-rows: 37px 37px 30px 52px;
 
         // grid-template-columns: 69.0625% 9.375% 10% 11.5625%;
         grid-template-columns: minmax(167px, 221px) 30px 32px 37px;
@@ -70,6 +70,7 @@
         background: #ffffff;
         /* Dark 50% */
         border: 1px solid rgba(31, 32, 65, 0.5);
+        border-top: 0px;
         box-sizing: border-box;
         box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
         border-radius: 0px 0px 2px 2px;
@@ -79,6 +80,25 @@
         }
         &_narrow {
             width: 266px;
+        }
+        &_room {
+            display: grid;
+            grid-template-rows: 37px 37px 30px 14px;
+            position: absolute;
+
+            // grid-template-columns: 69.0625% 9.375% 10% 11.5625%;
+            grid-template-columns: minmax(167px, 221px) 30px 32px 37px;
+
+            // height: 159px;
+
+            background: #ffffff;
+            /* Dark 50% */
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            border-top: 0px;
+            box-sizing: border-box;
+            box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+            border-radius: 0px 0px 2px 2px;
+            z-index: 1;
         }
     }
     &__increase {
@@ -121,8 +141,8 @@
         margin-top: 13px;
     }
     &__option-text {
-        margin-left: 15px;
-        margin-top: 13px;
+        margin-left: 14px;
+        margin-top: 14px;
         @include h3;
 
         /* Dark 100% */
