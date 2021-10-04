@@ -72,7 +72,7 @@ $newIconWidth: 20px;
         display: grid;
         grid-template-columns: 30px 1fr;
         grid-template-rows: max-content;
-        margin-bottom: 7px;
+        margin-bottom: 10px;
     }
 
     &__content {
@@ -82,11 +82,52 @@ $newIconWidth: 20px;
     &__text-box {
         display: grid;
         width: 236px;
+        grid-template-rows: 23px 14px 14px;
     }
     &__title {
-        @include body-font($weight: bold, $line-height: 1.2857rem);
+        @include body-font($weight: bold, $line-height: 1rem);
+        padding-top: 2px;
     }
     &__subtitle {
         @include caption-font;
+        padding-top: 2px;
+    }
+    &__input {
+        position: absolute; /* remove standart styles */
+        z-index: -1;
+        opacity: 0;
+        &:checked + span {
+            border-color: #8ba4f9;
+        }
+        &:checked + span::before {
+            opacity: 1;
+        }
+    }
+    &__new-icon {
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+        width: 20px;
+        height: 20px;
+        background: #ffffff;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: (0.4 * $newIconWidth) - (0.5 * $checkmarkWidth);
+            top: (0.4 * $newIconWidth)- (1 * $checkmarkWidth);
+            transform: translate(-500%, -50%);
+            width: 4px;
+            height: 6px;
+            border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            border-image-slice: 1;
+            border-right-width: 2px;
+            border-right-style: solid;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            transform: rotate(45deg);
+            opacity: 0;
+        }
     }
 }

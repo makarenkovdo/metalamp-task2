@@ -33,7 +33,7 @@
 @mixin caption-font(
     $color: $dark-shade-50,
     $weight: normal,
-    $line-height: 1.2857rem
+    $line-height: 1rem
 ) {
     font-style: normal;
     font-weight: $weight;
