@@ -38,7 +38,7 @@ block content
                 .text-field__input-container
                     +text-field ('This is pretty awesome','email', 'Email')
             .form-elements__dropdown
-                .form-elements-titles-container
+                div(class='titles-container' style= {margin: '0 0 5px 0'})
                     +block-title('dropdown')
                 +dropdown(1, '')
             .form-elements__masked-text-field
@@ -135,7 +135,7 @@ block content
                     +block-title('dropdown')
                 +dropdown(5, '')
             .form-elements__bullet-list 
-                div(class='titles-container' style= {margin: '0 0 7px 0'})
+                div(class='titles-container' style= {margin: '0 0 5px 0'})
                     +block-title('bullet list')
                 +bullet-list()
 

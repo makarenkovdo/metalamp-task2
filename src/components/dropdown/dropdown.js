@@ -199,7 +199,7 @@ class Dropdown {
                 //         `.js-dropdown_instance-${this.instance}_type`
                 //     ).innerHTML
                 // )
-                if (this.$type === 'room') {
+                if (this.$type === '_room') {
                     this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}...`
                 } else {
                     if (counter[0] > 0 || counter[3] > 0) {
