@@ -153,17 +153,17 @@
         box-sizing: border-box;
         width: 320px;
         grid-template-columns: 160px 160px;
-        padding-top: 19px;
+        padding-top: 26px;
     }
     &__apply {
         display: grid;
         justify-self: flex-end;
         align-content: flex-end;
-        padding-bottom: 35.365%;
+        padding-bottom: 30.365%;
 
         /* применить */
 
-        padding-right: 7px;
+        padding-right: 8px;
         justify-self: right;
         justify-content: right;
         @include h3(#bc9cff);
@@ -172,7 +172,7 @@
     &__clear {
         display: grid;
         align-content: end;
-        padding-bottom: 35.365%;
+        padding-bottom: 30.365%;
         padding-left: 14px;
         cursor: pointer;
         justify-self: left;

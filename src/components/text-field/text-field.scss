@@ -14,7 +14,7 @@
         display: grid;
         box-sizing: border-box;
         width: 320px;
-        padding: 9px 0 9px 15px;
+        padding: 8px 0 9px 13px;
         background: #ffffff;
         border-radius: 4px;
         border: 1px solid $dark-shade-25;
@@ -22,7 +22,7 @@
         &:placeholder-shown {
             @include placeholder(color, $dark-shade-25);
             line-height: 18px;
-            padding: 12px 0 12px 15px;
+            padding: 11px 0 12px 13px;
 
             // @include media-content(
             //     320px,

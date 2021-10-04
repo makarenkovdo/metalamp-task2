@@ -6,6 +6,7 @@
         width: 266px;
         grid-template-columns: 222px 44px;
         border: 1px solid #1f204140;
+        border-radius: 4px;
         .text-field__input {
             //обнуление дополнительной границы именно в этом pug
             border: 0px;
