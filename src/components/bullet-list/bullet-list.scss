@@ -1,21 +1,22 @@
 @import './../../styles/mixins/fonts.scss';
 @import './../../styles/mixins/font-faces.scss';
 @import './../../styles/variables/colors.scss';
-// .bullet-list {
-//     &-form {
-//         display: grid;
-//         align-content: flex-start;
-//     }
-// }
+.bullet-list {
+    &-form {
+        padding-left: 21px;
+    }
+}
 .bullet-list > li {
     list-style: none;
     @include body-font;
-    margin-left: -10px;
+    // margin-left: -10px;
     padding: 0;
 }
-.bullet-list > ul {
-    padding: 0px;
-    margin: 0px;
+ul.bullet-list {
+    display: grid;
+    grid-template-columns: 240px;
+    grid-template-rows: 34px 34px 48px;
+    text-indent: -21px;
 }
 
 .bullet-list li::before {

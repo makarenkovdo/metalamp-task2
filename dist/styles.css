@@ -324,7 +324,7 @@ details[open] summary:after {
   display: grid;
   grid-template-columns: 30px 1fr;
   grid-template-rows: max-content;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 .rich-checkbox__content {
   display: grid;
@@ -333,22 +333,64 @@ details[open] summary:after {
 .rich-checkbox__text-box {
   display: grid;
   width: 236px;
+  grid-template-rows: 23px 14px 14px;
 }
 .rich-checkbox__title {
   font-style: normal;
   font-weight: bold;
   font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 1.2857rem;
+  line-height: 1rem;
   color: rgba(31, 32, 65, 0.75);
+  padding-top: 2px;
 }
 .rich-checkbox__subtitle {
   font-style: normal;
   font-weight: normal;
   font-size: 0.8571rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 1.2857rem;
+  line-height: 1rem;
   color: rgba(31, 32, 65, 0.5);
+  padding-top: 2px;
+}
+.rich-checkbox__input {
+  position: absolute;
+  /* remove standart styles */
+  z-index: -1;
+  opacity: 0;
+}
+.rich-checkbox__input:checked + span {
+  border-color: #8ba4f9;
+}
+.rich-checkbox__input:checked + span::before {
+  opacity: 1;
+}
+.rich-checkbox__new-icon {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+.rich-checkbox__new-icon::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  transform: translate(-500%, -50%);
+  width: 4px;
+  height: 6px;
+  border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-image-slice: 1;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  transform: rotate(45deg);
+  opacity: 0;
 }
 /*!**************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/color-block/color-block.scss ***!
@@ -492,6 +534,7 @@ details[open] summary:after {
   grid-template-columns: 106px 44px;
   gap: 0px;
   border: 1px solid #1f204140;
+  border-radius: 4px;
 }
 .datepicker__titles-container {
   display: grid;
@@ -509,12 +552,18 @@ details[open] summary:after {
   width: 320px;
   z-index: 0;
 }
+.dropdown_wide {
+  width: 320px;
+}
+.dropdown_narrow {
+  width: 266px;
+}
 .dropdown__button {
   display: grid;
   padding: 9px 0 9px 0px;
   box-sizing: border-box;
-  grid-template-columns: 86.25% 13.75%;
-  width: 320px;
+  grid-template-columns: 1fr max-content;
+  width: 100%;
   background: #ffffff;
   justify-content: space-between;
   align-items: center;
@@ -545,6 +594,41 @@ details[open] summary:after {
 .dropdown img {
   position: relative;
 }
+.dropdown__popup {
+  position: absolute;
+  display: grid;
+  grid-template-rows: 37px 37px 30px 52px;
+  grid-template-columns: minmax(167px, 221px) 30px 32px 37px;
+  width: 320px;
+  background: #ffffff;
+  /* Dark 50% */
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top: 0px;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 0px 0px 2px 2px;
+  z-index: 1;
+}
+.dropdown__popup_wide {
+  width: 320px;
+}
+.dropdown__popup_narrow {
+  width: 266px;
+}
+.dropdown__popup_room {
+  display: grid;
+  grid-template-rows: 37px 37px 30px 14px;
+  position: absolute;
+  grid-template-columns: minmax(167px, 221px) 30px 32px 37px;
+  background: #ffffff;
+  /* Dark 50% */
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top: 0px;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 0px 0px 2px 2px;
+  z-index: 1;
+}
 .dropdown__increase {
   display: flex;
   justify-content: center;
@@ -571,20 +655,6 @@ details[open] summary:after {
   border-radius: 22px;
   cursor: pointer;
 }
-.dropdown__popup {
-  position: absolute;
-  display: grid;
-  grid-template-rows: 37px 37px 37px 48px;
-  grid-template-columns: 69.0625% 9.375% 10% 11.5625%;
-  width: 320px;
-  background: #ffffff;
-  /* Dark 50% */
-  border: 1px solid rgba(31, 32, 65, 0.5);
-  box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  border-radius: 0px 0px 2px 2px;
-  z-index: 1;
-}
 .dropdown__counter {
   font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
@@ -595,8 +665,8 @@ details[open] summary:after {
   margin-top: 13px;
 }
 .dropdown__option-text {
-  margin-left: 15px;
-  margin-top: 13px;
+  margin-left: 14px;
+  margin-top: 14px;
   font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #1f2041;
@@ -608,15 +678,15 @@ details[open] summary:after {
   box-sizing: border-box;
   width: 320px;
   grid-template-columns: 160px 160px;
-  padding-top: 19px;
+  padding-top: 26px;
 }
 .dropdown__apply {
   display: grid;
   justify-self: flex-end;
   align-content: flex-end;
-  padding-bottom: 35.365%;
+  padding-bottom: 30.365%;
   /* применить */
-  padding-right: 7px;
+  padding-right: 8px;
   justify-self: right;
   justify-content: right;
   font: normal bold 0.8571rem/1.0714rem Montserrat, Arial, sans-serif;
@@ -627,7 +697,7 @@ details[open] summary:after {
 .dropdown__clear {
   display: grid;
   align-content: end;
-  padding-bottom: 35.365%;
+  padding-bottom: 30.365%;
   padding-left: 14px;
   cursor: pointer;
   justify-self: left;
@@ -673,6 +743,10 @@ details[open] summary:after {
   line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
 }
+.feedback__icon {
+  display: grid;
+  justify-items: left;
+}
 /*!********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/filter-date-dropdown/filter-date-dropdown.scss ***!
   \********************************************************************************************************************************************************/
@@ -682,6 +756,7 @@ details[open] summary:after {
   width: 266px;
   grid-template-columns: 222px 44px;
   border: 1px solid #1f204140;
+  border-radius: 4px;
 }
 /*!****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/footer/footer.scss ***!
@@ -1303,8 +1378,9 @@ html {
   z-index: -1;
   opacity: 0;
 }
-.radio__input:checked + span {
+.radio__input:checked ~ span {
   border-color: #8ba4f9;
+  color: rgba(31, 32, 65, 0.75);
 }
 .radio__input:checked + span::before {
   opacity: 1;
@@ -1316,6 +1392,7 @@ html {
   display: grid;
   width: 20px;
   height: 20px;
+  margin-top: 3px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 50%;
   margin-right: 0.5em;
@@ -1406,6 +1483,7 @@ html {
   width: 266px;
   grid-template-columns: 222px 44px;
   border: 1px solid #1f204140;
+  border-radius: 4px;
 }
 .subscription-text-field-form .text-field__input {
   border: 0px;
@@ -1456,7 +1534,7 @@ html {
   display: grid;
   box-sizing: border-box;
   width: 320px;
-  padding: 9px 0 9px 15px;
+  padding: 8px 0 9px 13px;
   background: #ffffff;
   border-radius: 4px;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -1471,7 +1549,7 @@ html {
   /* Firefox 19+ */
   /* Firefox 18- */
   line-height: 18px;
-  padding: 12px 0 12px 15px;
+  padding: 11px 0 12px 13px;
 }
 .text-field__input:placeholder-shown::-webkit-input-placeholder {
   color: rgba(31, 32, 65, 0.25);
@@ -1496,7 +1574,7 @@ html {
   \****************************************************************************************************************************/
 .toggle-container {
   display: grid;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   align-content: flex-start;
   align-items: flex-start;
   width: 260px;
@@ -1840,7 +1918,13 @@ html {
 .form-elements-titles-container {
   display: grid;
   grid-template-columns: 1fr 0.5fr;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+}
+.form-elements-titles-container_266 {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  margin-bottom: 3px;
+  width: 266px;
 }
 .form-elements-titles-container-b {
   display: grid;
@@ -1875,7 +1959,7 @@ html {
   grid-area: a;
   margin-left: 140.5px;
   align-content: flex-start;
-  grid-template-rows: 84px 84px 86.56px 104px 105px 105px 164px 84px 236px 64px 306px 154px;
+  grid-template-rows: 84.44px 83.44px 86px 105px 105px 105px 164px 84px 222px 64px 316px 154px;
   width: 320px;
 }
 .form-elements__area-a .text-field {
@@ -1903,7 +1987,7 @@ html {
 .form-elements__area-b {
   display: grid;
   grid-area: b;
-  grid-template-rows: 170px 91.56px 129.44px 91px 251px 320px 145px;
+  grid-template-rows: 170px 91.56px 129.44px 91px 251px 310px 145px;
   width: 320px;
 }
 

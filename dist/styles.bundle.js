@@ -15,7 +15,7 @@
   \***********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var cache = {};\n\nfunction importAll(r) {\n  r.keys().forEach(function (key) {\n    return cache[key] = r(key);\n  });\n}\n\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/styles sync recursive \\\\.scss$\"));\n\n//# sourceURL=webpack://task2/./src/styles.js?");
+eval("var cache = {};\n\nfunction importAll(r) {\n  r.keys().forEach(function (key) {\n    return cache[key] = r(key);\n  });\n}\n\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.png$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/styles sync recursive \\\\.scss$\"));\n\n//# sourceURL=webpack://task2/./src/styles.js?");
 
 /***/ }),
 
@@ -137,6 +137,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/murad.svg\");\n\n//# sourceURL=webpack://task2/./src/components/feedback/murad.svg?");
+
+/***/ }),
+
+/***/ "./src/components/feedback/sarafanov.png":
+/*!***********************************************!*\
+  !*** ./src/components/feedback/sarafanov.png ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/sarafanov.png\");\n\n//# sourceURL=webpack://task2/./src/components/feedback/sarafanov.png?");
 
 /***/ }),
 
@@ -709,6 +720,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/styles/variables/colors.scss?");
+
+/***/ }),
+
+/***/ "./src/components sync recursive \\.png$":
+/*!*************************************!*\
+  !*** ./src/components/ sync \.png$ ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var map = {\n\t\"./feedback/sarafanov.png\": \"./src/components/feedback/sarafanov.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/components sync recursive \\\\.png$\";\n\n//# sourceURL=webpack://task2/./src/components/_sync_\\.png$?");
 
 /***/ }),
 

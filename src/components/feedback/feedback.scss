@@ -15,4 +15,11 @@
     &__text {
         @include body-font;
     }
+    &__icon {
+        width: 48px;
+        height: 48px;
+        overflow: hidden;
+        display: grid;
+        justify-content: left;
+    }
 }
