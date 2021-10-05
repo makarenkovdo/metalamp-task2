@@ -1,0 +1,26 @@
+.cards {
+    &-page {
+        display: grid;
+        grid-template-columns: 140px 1160px 140px;
+        grid-template-rows: 150px 1060px 140px;
+    }
+    &__margin-top-area {
+        display: grid;
+        grid-area: 1/4;
+        border: 1px solid black;
+        // width: 100%;
+    }
+    &__margin-left-area {
+        display: grid;
+    }
+    &__content-area {
+        display: grid;
+        grid-template-columns: 420px 420px 320px;
+    }
+    &__margin-right-area {
+        display: grid;
+    }
+    &__margin-bottom-area {
+        display: grid;
+    }
+}

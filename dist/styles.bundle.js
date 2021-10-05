@@ -624,6 +624,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/pages/cards/cards.scss":
+/*!************************************!*\
+  !*** ./src/pages/cards/cards.scss ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/pages/cards/cards.scss?");
+
+/***/ }),
+
 /***/ "./src/pages/color-and-type/color-and-type.scss":
 /*!******************************************************!*\
   !*** ./src/pages/color-and-type/color-and-type.scss ***!
@@ -781,7 +792,7 @@ eval("var map = {\n\t\"./benefits/benefits-emotion.svg\": \"./src/components/ben
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./color-and-type/color-and-type.scss\": \"./src/pages/color-and-type/color-and-type.scss\",\n\t\"./form-elements/form-elements.scss\": \"./src/pages/form-elements/form-elements.scss\",\n\t\"./headers-footers/headers-footers.scss\": \"./src/pages/headers-footers/headers-footers.scss\",\n\t\"./ui-kit-template/ui-kit-template.scss\": \"./src/pages/ui-kit-template/ui-kit-template.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.scss$?");
+eval("var map = {\n\t\"./cards/cards.scss\": \"./src/pages/cards/cards.scss\",\n\t\"./color-and-type/color-and-type.scss\": \"./src/pages/color-and-type/color-and-type.scss\",\n\t\"./form-elements/form-elements.scss\": \"./src/pages/form-elements/form-elements.scss\",\n\t\"./headers-footers/headers-footers.scss\": \"./src/pages/headers-footers/headers-footers.scss\",\n\t\"./ui-kit-template/ui-kit-template.scss\": \"./src/pages/ui-kit-template/ui-kit-template.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.scss$?");
 
 /***/ }),
 

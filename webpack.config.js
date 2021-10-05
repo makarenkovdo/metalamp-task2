@@ -4,16 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin')
 const webpack = require('webpack')
 const path = require('path')
-
-const htmlComponents = ['datepicker', 'test', 'rate-button', 'toggle']
-
-const pugPages = ['color-and-type', 'test', 'form-elements', 'headers-footers']
-const pugComponents = [
-    'checkbox',
-    'checkbox-list',
-    'dropdown',
-    'radio-button',
-    'like-button',
+const pugPages = [
+    'color-and-type',
+    'test',
+    'form-elements',
+    'headers-footers',
+    'cards',
 ]
 
 const plugins = [
@@ -24,30 +20,15 @@ const plugins = [
     }),
 ]
 
-htmlComponents.map((page) => {
-    plugins.push(
-        new HtmlWebpackPlugin({
-            template: `./src/components/${page}/${page}.html`,
-            filename: `${page}.html`,
-        })
-    )
-})
 pugPages.map((page) => {
     plugins.push(
         new HtmlWebpackPlugin({
             template: `./src/pages/${page}/${page}.pug`,
-            filename: `${page}-pug.html`,
+            filename: `${page}.html`,
         })
     )
 })
-pugComponents.map((page) => {
-    plugins.push(
-        new HtmlWebpackPlugin({
-            template: `./src/components/${page}/${page}.pug`,
-            filename: `${page}-pug.html`,
-        })
-    )
-})
+
 plugins.push(
     new HtmlWebpackPugPlugin(),
     new webpack.ProvidePlugin({

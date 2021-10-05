@@ -246,7 +246,6 @@ ul.bullet-list {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
   border: none;
-  background: url(a48a30dbef2c8573972a.svg);
 }
 /*!****************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-expandable-list/checkbox-expandable-list.scss ***!
@@ -354,6 +353,7 @@ details[open] summary:after {
   /* identical to box height, or 129% */
   /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
+  padding-top: 1px;
 }
 
 .rich-checkbox-label {
@@ -619,7 +619,7 @@ details[open] summary:after {
   color: rgba(31, 32, 65, 0.75);
 }
 .dropdown__text {
-  padding-left: 15px;
+  padding-left: 14px;
 }
 .dropdown__img-box {
   display: grid;
@@ -770,8 +770,10 @@ details[open] summary:after {
 .feedback-container {
   display: grid;
   grid-template-columns: 58px 653px;
+  grid-template-rows: 48px 70px;
 }
 .feedback__author-name {
+  display: grid;
   font-style: normal;
   font-weight: bold;
   font-size: 1rem;
@@ -780,6 +782,7 @@ details[open] summary:after {
   color: rgba(31, 32, 65, 0.75);
 }
 .feedback__date {
+  display: grid;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
@@ -788,19 +791,29 @@ details[open] summary:after {
   color: rgba(31, 32, 65, 0.75);
 }
 .feedback__text {
+  display: grid;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
   line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
+  padding-top: 10px;
 }
 .feedback__icon {
+  display: grid;
   width: 48px;
   height: 48px;
-  overflow: hidden;
   display: grid;
   justify-content: left;
+}
+.feedback__icon-img {
+  margin-top: -10px;
+  margin-left: -20px;
+}
+.feedback__like {
+  padding-top: 12px;
+  padding-left: 4px;
 }
 /*!********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/filter-date-dropdown/filter-date-dropdown.scss ***!
@@ -1396,7 +1409,8 @@ html {
   line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
   text-transform: lowercase;
-  margin-top: 10.56px;
+  margin-top: 7.56px;
+  padding-left: 6px;
 }
 /*!****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/radio-button/radio-button.scss ***!
@@ -1597,7 +1611,7 @@ html {
   display: grid;
   box-sizing: border-box;
   width: 320px;
-  padding: 8px 0 9px 13px;
+  padding: 9px 0 9px 14px;
   background: #ffffff;
   border-radius: 4px;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -1612,7 +1626,7 @@ html {
   /* Firefox 19+ */
   /* Firefox 18- */
   line-height: 18px;
-  padding: 11px 0 12px 13px;
+  padding: 13px 0 12px 14px;
 }
 .text-field__input:placeholder-shown::-webkit-input-placeholder {
   color: rgba(31, 32, 65, 0.25);
@@ -1718,6 +1732,32 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/cards/cards.scss ***!
+  \*********************************************************************************************************************/
+.cards-page {
+  display: grid;
+  grid-template-columns: 140px 1160px 140px;
+  grid-template-rows: 150px 1060px 140px;
+}
+.cards__margin-top-area {
+  display: grid;
+  grid-area: 1/4;
+  border: 1px solid black;
+}
+.cards__margin-left-area {
+  display: grid;
+}
+.cards__content-area {
+  display: grid;
+  grid-template-columns: 420px 420px 320px;
+}
+.cards__margin-right-area {
+  display: grid;
+}
+.cards__margin-bottom-area {
+  display: grid;
 }
 /*!***************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/color-and-type/color-and-type.scss ***!
@@ -1975,7 +2015,7 @@ html {
   grid-template-areas: "a b c" "a d d";
   width: 1158px;
   grid-template-columns: 587px 392px 320px;
-  margin-top: 143px;
+  margin-top: 143.5px;
   align-content: flex-start;
 }
 .form-elements-titles-container {
@@ -1986,7 +2026,7 @@ html {
 .form-elements-titles-container_266 {
   display: grid;
   grid-template-columns: 1fr 0.5fr;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   width: 266px;
 }
 .form-elements-titles-container-b {
@@ -2064,7 +2104,7 @@ html {
 .form-elements__area-d {
   display: grid;
   grid-area: d;
-  margin-top: 235px;
+  margin-top: 203px;
 }
 .form-elements__area-d .feedback {
   width: 711px;
