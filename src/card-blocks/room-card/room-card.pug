@@ -1,18 +1,23 @@
-include ../../components/datepicker/datepicker
-include ../../components/dropdown/dropdown
 include ../../components/button/button
 include ../../components/block-title/block-title
+include ../../components/datepicker/datepicker
+include ../../components/dropdown/dropdown
+include ../../components/rate-button/rate-button
 
-mixin room-card
-    form.room-card-block
-        .room-card__title Найдем номера под ваши желания
-        .room-card__datepicker-box
-            +datepicker('прибытие', 'выезд')
-        .room-card__dropdown-box
-            +block-title('гости')
-            +dropdown(1, '', 'wide')
-        .room-card__button-box
-            +button('with-arrow', 'подобрать номер')
+
+mixin room-card(img, number, isLux, price, rate, feedback)
+    section.room-card-block
+        .room-card__img-box 
+            img(class=".room-card__img" src=`./img/${img}.png` alt='room-img' width='270' height='151')
+        .room-card__title № #{number}
+        .room-card__price-box
+            p.room-card__price_bold= price
+            p.room-card__price_normal в сутки
+        .room-card__rate-box
+            +rate-button(rate)
+        .room-card__feedback-box
+            p.room-card__feedback_bold= feedback
+            p.room-card__feedback_normal Отзывов
         
         
 

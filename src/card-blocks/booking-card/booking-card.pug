@@ -10,7 +10,7 @@ mixin booking-card
             +datepicker('прибытие', 'выезд')
         .booking-card__dropdown-box
             +block-title('гости')
-            +dropdown(1, '', 'wide')
+            +dropdown(2, '', 'wide')
         .booking-card__price-box 
             p.booking-card__price-text 9 990₽ х 4 суток
             p.booking-card__price-text
@@ -23,7 +23,7 @@ mixin booking-card
             p.booking-card__price-text 300₽
             
         .booking-card__button-box
-            +button('with-arrow', 'подобрать номер')
+            +button('with-arrow', 'забронировать')
         
         
 

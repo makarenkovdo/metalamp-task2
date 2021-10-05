@@ -5,14 +5,17 @@ include ../../components/block-title/block-title
 
 mixin login-card
     form.login-card-block
-        .login-card__title Найдем номера под ваши желания
+        .login-card__title Войти
         .login-card__datepicker-box
             +datepicker('прибытие', 'выезд')
-        .login-card__dropdown-box
-            +block-title('гости')
-            +dropdown(1, '', 'wide')
+        .login-card__user-data
+            +text-field('','email', 'Email')
+            +text-field('','password', 'Пароль')
         .login-card__button-box
-            +button('with-arrow', 'подобрать номер')
+            +button('with-arrow', 'войти')
+        .registration-card__regidtration
+            .registration-card__login-caption Нет аккаунта на Toxin?
+            +button('white', 'создать')
         
         
 

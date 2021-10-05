@@ -48,6 +48,8 @@ module.exports = {
         likeButton: './src/components/like-button/like-button.js',
         dropdown: './src/components/dropdown/dropdown.js',
         datepicker: './src/components/datepicker/datepicker.js',
+        maskedTextField:
+            './src/components/masked-text-field/masked-text-field.js',
     },
     output: {
         filename: '[name].bundle.js',

@@ -232,7 +232,7 @@ ul.bullet-list {
 .button-link:hover {
   color: rgba(31, 32, 65, 0.5);
 }
-.button-go-to-pay {
+.button-with-arrow {
   width: 320px;
   height: 44px;
   font-style: normal;
@@ -1356,6 +1356,51 @@ html {
   display: grid;
   margin-left: 12.5px;
 }
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/masked-text-field/masked-text-field.scss ***!
+  \**************************************************************************************************************************************************/
+.masked-text-field-container {
+  display: grid;
+}
+.masked-text-field__input {
+  display: grid;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 9px 0 9px 14px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.7143rem;
+  color: rgba(31, 32, 65, 0.75);
+}
+.masked-text-field__input:placeholder-shown {
+  /* Firefox 19+ */
+  /* Firefox 18- */
+  line-height: 18px;
+  padding: 13px 0 12px 14px;
+}
+.masked-text-field__input:placeholder-shown::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.masked-text-field__input:placeholder-shown::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.masked-text-field__input:placeholder-shown:-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.masked-text-field__input:placeholder-shown:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.masked-text-field__input:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.masked-text-field__input:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
 /*!************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/pagination/pagination.scss ***!
   \************************************************************************************************************************************/
@@ -1739,7 +1784,6 @@ input:checked + .slider:before {
 .cards-page {
   display: grid;
   grid-template-columns: 140px 1160px 140px;
-  grid-template-rows: 150px 1060px 140px;
 }
 .cards__margin-top-area {
   display: grid;
@@ -2218,19 +2262,139 @@ html {
 /*!*****************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/booking-card/booking-card.scss ***!
   \*****************************************************************************************************************************************/
-
+@font-face {
+  font-family: "Montserrat";
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+.booking-card__price-box {
+  display: grid;
+  grid-template-columns: 219px 43px 1fr;
+}
+.booking-card__price-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.7143rem;
+  color: rgba(31, 32, 65, 0.75);
+}
+.booking-card__info-icon {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: rgba(31, 32, 65, 0.25);
+}
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/login-card/login-card.scss ***!
   \*************************************************************************************************************************************/
-
+@font-face {
+  font-family: "Montserrat";
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  font-weight: 700;
+  font-style: normal;
+}
 /*!***************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/registration-card/registration-card.scss ***!
   \***************************************************************************************************************************************************/
-
+@font-face {
+  font-family: "Montserrat";
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  font-weight: 700;
+  font-style: normal;
+}
 /*!***********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/room-card/room-card.scss ***!
   \***********************************************************************************************************************************/
-
+@font-face {
+  font-family: "Montserrat";
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  font-weight: 700;
+  font-style: normal;
+}
 /*!*********************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/searching-card/searching-card.scss ***!
   \*********************************************************************************************************************************************/
@@ -2261,25 +2425,20 @@ html {
 .searching-card-block {
   display: grid;
   grid-template-columns: 320px;
-  grid-template-rows: 120px 85px 95px 44px 74px;
+  grid-template-rows: 80px 85px 95px 44px 74px;
+  margin: 40px 0 0 30px;
   border: 1px solid yellow;
 }
 .searching-card__title {
   display: grid;
-  width: 200px;
   font: normal bold 1.7143rem/2.0714rem Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   color: #1f2041;
-}
-.searching-card__datepicker-box {
-  display: grid;
-  width: 200px;
+  text-transform: none;
 }
 .searching-card__dropdown-box {
   display: grid;
-  width: 200px;
 }
 .searching-card__title-container {
   display: grid;
-  width: 200px;
 }

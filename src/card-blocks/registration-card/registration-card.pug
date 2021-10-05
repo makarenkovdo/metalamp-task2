@@ -1,7 +1,9 @@
-include ../../components/datepicker/datepicker
-include ../../components/dropdown/dropdown
 include ../../components/button/button
 include ../../components/block-title/block-title
+include ../../components/datepicker/datepicker
+include ../../components/dropdown/dropdown
+include ../../components/masked-text-field/masked-text-field
+
 
 mixin registration-card
     form.registration-card-block
@@ -11,8 +13,8 @@ mixin registration-card
             +text-field('','surname', 'Фамилия')
         .registration-card__radio-buttons
             +radio-button()
-        .registration-card__date-dropdown
-            +filter-date-dropdown()
+        .registration-card__date
+            +masked-text-field('','date','ДД.ММ.ГГГ')
         .registration-card__user-data
             +text-field('','email', 'Email')
             +text-field('','password', 'Пароль')

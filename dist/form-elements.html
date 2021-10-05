@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  <script defer src="styles.bundle.js"></script><script defer src="checkboxExpList.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="datepicker.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"></head>
+  <script defer src="styles.bundle.js"></script><script defer src="checkboxExpList.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="datepicker.bundle.js"></script><script defer src="maskedTextField.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"></head>
   <body><img class="ui-kit-template-logo" src="./img/ui-kit-logo.svg" alt="some some" width="48" height="48">
     <div class="form-elements">
       <div class="form-elements__area-a">    
@@ -31,7 +31,7 @@
           <div class="form-elements__titles-container" style="margin:0 0 5px 0;">
             <h3 class="block-title">dropdown</h3>
           </div>
-          <form class="dropdown-block">
+          <section class="dropdown-block">
             <div class="js-dropdown_instance-1_type hide"></div>
             <div class="dropdown dropdown_wide js-dropdown_instance-1">
               <div class="dropdown__button js-dropdown_instance-1__button"><span class="dropdown__text js-dropdown_instance-1__text">Сколько гостей?</span><span class="dropdown__img-box js-dropdown_instance-1__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
@@ -39,7 +39,7 @@
             <div class="dropdown__popup dropdown__popup_wide js-dropdown_instance-1__popup hide" style="width:widepx;"><span class="dropdown__option-text js-dropdown_instance-1__option-text">ВЗРОСЛЫЕ</span><span class="dropdown__decrease js-dropdown_instance-1__decrease1"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-1__counter1">0</span><span class="dropdown__increase js-dropdown_instance-1__increase1"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-1__option-text">ДЕТИ</span><span class="dropdown__decrease js-dropdown_instance-1__decrease2"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-1__counter2">0</span><span class="dropdown__increase js-dropdown_instance-1__increase2"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-1__option-text">МЛАДЕНЦЫ</span><span class="dropdown__decrease js-dropdown_instance-1__decrease3"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-1__counter3">0</span><span class="dropdown__increase js-dropdown_instance-1__increase3"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span>
               <div class="dropdown__adding-buttons"><span class="dropdown__clear js-dropdown_instance-1__clear invisible">ОЧИСТИТЬ</span><span class="dropdown__apply js-dropdown_instance-1__apply">ПРИМЕНИТЬ</span></div>
             </div>
-          </form>
+          </section>
         </div>
         <div class="form-elements__masked-text-field">
           <div class="form-elements-titles-container">
@@ -48,7 +48,7 @@
             <input class="text-field__input" type="text" value="" name="masked-text-field" placeholder="ДД.ММ.ГГГГ"></span>
         </div>
         <div class="form-elements__date-dropdowns"> 
-          <form class="datepicker-form">
+          <section class="datepicker-form">
             <div class="datepicker__titles-container">
               <h3 class="block-title">date dropdown</h3>
               <h3 class="block-title">date dropdown</h3>
@@ -61,7 +61,7 @@
                 <input class="js-datepicker-input" id="end_one" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
               </div>
             </div>
-          </form>
+          </section>
         </div>
         <div class="form-elements__filter-date-dropdown">
           <div class="form-elements-titles-container">
@@ -84,28 +84,28 @@
             <h3 class="block-title">dropdown</h3>
             <h3 class="block-subtitle">default</h3>
           </div>
-          <form class="dropdown-block">
+          <section class="dropdown-block">
             <div class="js-dropdown_instance-2_type hide">_room</div>
             <div class="dropdown dropdown_narrow js-dropdown_instance-2">
               <div class="dropdown__button js-dropdown_instance-2__button"><span class="dropdown__text js-dropdown_instance-2__text">0 спален, 0 кроватей</span><span class="dropdown__img-box js-dropdown_instance-2__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
             </div>
             <div class="dropdown__popup_room dropdown__popup_narrow js-dropdown_instance-2__popup hide" style="width:narrowpx;"><span class="dropdown__option-text js-dropdown_instance-2__option-text">СПАЛЬНИ</span><span class="dropdown__decrease js-dropdown_instance-2__decrease1"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter1">0</span><span class="dropdown__increase js-dropdown_instance-2__increase1"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-2__option-text">КРОВАТИ</span><span class="dropdown__decrease js-dropdown_instance-2__decrease2"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter2">0</span><span class="dropdown__increase js-dropdown_instance-2__increase2"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-2__option-text">ВАННЫЕ КОМНАТЫ</span><span class="dropdown__decrease js-dropdown_instance-2__decrease3"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter3">0</span><span class="dropdown__increase js-dropdown_instance-2__increase3"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span>
             </div>
-          </form>
+          </section>
         </div>
         <div class="form-elements__room-dropdown"> 
           <div class="form-elements-titles-container_266">
             <h3 class="block-title">dropdown</h3>
             <h3 class="block-subtitle">expanded</h3>
           </div>
-          <form class="dropdown-block">
+          <section class="dropdown-block">
             <div class="js-dropdown_instance-3_type hide">_room</div>
             <div class="dropdown dropdown_narrow js-dropdown_instance-3">
               <div class="dropdown__button js-dropdown_instance-3__button"><span class="dropdown__text js-dropdown_instance-3__text">0 спален, 0 кроватей</span><span class="dropdown__img-box js-dropdown_instance-3__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
             </div>
             <div class="dropdown__popup_room dropdown__popup_narrow js-dropdown_instance-3__popup hide" style="width:narrowpx;"><span class="dropdown__option-text js-dropdown_instance-3__option-text">СПАЛЬНИ</span><span class="dropdown__decrease js-dropdown_instance-3__decrease1"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-3__counter1">0</span><span class="dropdown__increase js-dropdown_instance-3__increase1"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-3__option-text">КРОВАТИ</span><span class="dropdown__decrease js-dropdown_instance-3__decrease2"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-3__counter2">0</span><span class="dropdown__increase js-dropdown_instance-3__increase2"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-3__option-text">ВАННЫЕ КОМНАТЫ</span><span class="dropdown__decrease js-dropdown_instance-3__decrease3"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-3__counter3">0</span><span class="dropdown__increase js-dropdown_instance-3__increase3"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span>
             </div>
-          </form>
+          </section>
         </div>
         <div class="form-elements__expandable-checkbox-list">
           <details class="checkbox-expandable-list"><summary>EXPANDABLE CHECKBOX LIST</summary>
@@ -247,7 +247,7 @@
           <div class="form-elements-titles-container">
             <h3 class="block-title">dropdown</h3>
           </div>
-          <form class="dropdown-block">
+          <section class="dropdown-block">
             <div class="js-dropdown_instance-4_type hide"></div>
             <div class="dropdown dropdown_wide js-dropdown_instance-4">
               <div class="dropdown__button js-dropdown_instance-4__button"><span class="dropdown__text js-dropdown_instance-4__text">Сколько гостей?</span><span class="dropdown__img-box js-dropdown_instance-4__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
@@ -255,7 +255,7 @@
             <div class="dropdown__popup dropdown__popup_wide js-dropdown_instance-4__popup hide" style="width:widepx;"><span class="dropdown__option-text js-dropdown_instance-4__option-text">ВЗРОСЛЫЕ</span><span class="dropdown__decrease js-dropdown_instance-4__decrease1"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-4__counter1">0</span><span class="dropdown__increase js-dropdown_instance-4__increase1"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-4__option-text">ДЕТИ</span><span class="dropdown__decrease js-dropdown_instance-4__decrease2"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-4__counter2">0</span><span class="dropdown__increase js-dropdown_instance-4__increase2"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-4__option-text">МЛАДЕНЦЫ</span><span class="dropdown__decrease js-dropdown_instance-4__decrease3"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-4__counter3">0</span><span class="dropdown__increase js-dropdown_instance-4__increase3"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span>
               <div class="dropdown__adding-buttons"><span class="dropdown__clear js-dropdown_instance-4__clear invisible">ОЧИСТИТЬ</span><span class="dropdown__apply js-dropdown_instance-4__apply">ПРИМЕНИТЬ</span></div>
             </div>
-          </form>
+          </section>
         </div>
         <div class="form-elements__rich-checkbox">
           <div class="form-elements__titles-container" style="margin:0 0 17px 0;">
@@ -301,16 +301,16 @@
             <h3 class="block-title">BUTTONS</h3>
           </div>
           <div class="form-elements__buttons-container">
-            <button class="button-purple undefined">click me</button>
-            <button class="button-purple undefined">click me</button>
-            <button class="button-white undefined">click me</button>
-            <button class="button-white undefined">click me</button>
+            <button class="button-purple undefined" type="submit">click me</button>
+            <button class="button-purple undefined" type="submit">click me</button>
+            <button class="button-white undefined" type="submit">click me</button>
+            <button class="button-white undefined" type="submit">click me</button>
           </div>
           <div class="form-elements__buttons-container-2">
-            <button class="button-link undefined">click me</button>
-            <button class="button-link undefined">click me</button>
+            <button class="button-link undefined" type="submit">click me</button>
+            <button class="button-link undefined" type="submit">click me</button>
           </div>
-          <button class="button-go-to-pay undefined">перейти к оплате</button>
+          <button class="button-with-arrow undefined" type="submit">перейти к оплате</button>
         </div>
         <div class="form-elements__pagination">
           <div class="form-elements__titles-container" style="margin:0 0 16px 0;">
@@ -325,7 +325,7 @@
           <div class="form-elements-titles-container">
             <h3 class="block-title">dropdown</h3>
           </div>
-          <form class="dropdown-block">
+          <section class="dropdown-block">
             <div class="js-dropdown_instance-5_type hide"></div>
             <div class="dropdown dropdown_wide js-dropdown_instance-5">
               <div class="dropdown__button js-dropdown_instance-5__button"><span class="dropdown__text js-dropdown_instance-5__text">Сколько гостей?</span><span class="dropdown__img-box js-dropdown_instance-5__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
@@ -333,7 +333,7 @@
             <div class="dropdown__popup dropdown__popup_wide js-dropdown_instance-5__popup hide" style="width:widepx;"><span class="dropdown__option-text js-dropdown_instance-5__option-text">ВЗРОСЛЫЕ</span><span class="dropdown__decrease js-dropdown_instance-5__decrease1"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-5__counter1">0</span><span class="dropdown__increase js-dropdown_instance-5__increase1"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-5__option-text">ДЕТИ</span><span class="dropdown__decrease js-dropdown_instance-5__decrease2"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-5__counter2">0</span><span class="dropdown__increase js-dropdown_instance-5__increase2"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-5__option-text">МЛАДЕНЦЫ</span><span class="dropdown__decrease js-dropdown_instance-5__decrease3"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-5__counter3">0</span><span class="dropdown__increase js-dropdown_instance-5__increase3"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span>
               <div class="dropdown__adding-buttons"><span class="dropdown__clear js-dropdown_instance-5__clear invisible">ОЧИСТИТЬ</span><span class="dropdown__apply js-dropdown_instance-5__apply">ПРИМЕНИТЬ</span></div>
             </div>
-          </form>
+          </section>
         </div>
         <div class="form-elements__bullet-list"> 
           <div class="form-elements__titles-container" style="margin:0 0 5px 0;">
