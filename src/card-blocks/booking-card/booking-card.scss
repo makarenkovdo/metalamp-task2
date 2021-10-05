@@ -1,0 +1,30 @@
+@import './../../styles/mixins/fonts.scss';
+@import './../../styles/mixins/font-faces.scss';
+@import './../../styles/variables/colors.scss';
+
+.booking-card {
+    &__price-box {
+        display: grid;
+        grid-template-columns: 219px 43px 1fr;
+    }
+    &__price-text {
+        @include body-font();
+    }
+    &__info-icon {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+
+        border: 1px solid $dark-shade-25;
+        border-radius: 50%;
+        box-sizing: border-box;
+        color: $dark-shade-25;
+    }
+}

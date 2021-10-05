@@ -11,6 +11,17 @@ mixin booking-card
         .booking-card__dropdown-box
             +block-title('гости')
             +dropdown(1, '', 'wide')
+        .booking-card__price-box 
+            p.booking-card__price-text 9 990₽ х 4 суток
+            p.booking-card__price-text
+            p.booking-card__price-text 39 960₽
+            p.booking-card__price-text Сбор за услуги: скидка 2 179₽
+            p.booking-card__info-icon i
+            p.booking-card__price-text 0₽
+            p.booking-card__price-text Сбор за дополнительные услуги
+            p.booking-card__info-icon i
+            p.booking-card__price-text 300₽
+            
         .booking-card__button-box
             +button('with-arrow', 'подобрать номер')
         

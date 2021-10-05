@@ -5,14 +5,25 @@ include ../../components/block-title/block-title
 
 mixin registration-card
     form.registration-card-block
-        .registration-card__title Найдем номера под ваши желания
-        .registration-card__datepicker-box
-            +datepicker('прибытие', 'выезд')
-        .registration-card__dropdown-box
-            +block-title('гости')
-            +dropdown(1, '', 'wide')
+        .registration-card__title Регистрация аккаунта
+        .registration-card__text-fields
+            +text-field('','name', 'Имя')
+            +text-field('','surname', 'Фамилия')
+        .registration-card__radio-buttons
+            +radio-button()
+        .registration-card__date-dropdown
+            +filter-date-dropdown()
+        .registration-card__user-data
+            +text-field('','email', 'Email')
+            +text-field('','password', 'Пароль')
+        .registration-card__toggle
+            +toggle('Получать спецпредложения')
         .registration-card__button-box
-            +button('with-arrow', 'подобрать номер')
+            +button('with-arrow', 'перейти к оплате')
+        .registration-card__login
+            .registration-card__login-caption Уже есть аккаунт на Toxin
+            +button('white', 'войти')
+
         
         
 
