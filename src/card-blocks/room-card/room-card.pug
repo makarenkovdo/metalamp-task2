@@ -1,0 +1,18 @@
+include ../../components/datepicker/datepicker
+include ../../components/dropdown/dropdown
+include ../../components/button/button
+include ../../components/block-title/block-title
+
+mixin room-card
+    form.room-card-block
+        .room-card__title Найдем номера под ваши желания
+        .room-card__datepicker-box
+            +datepicker('прибытие', 'выезд')
+        .room-card__dropdown-box
+            +block-title('гости')
+            +dropdown(1, '', 'wide')
+        .room-card__button-box
+            +button('with-arrow', 'подобрать номер')
+        
+        
+

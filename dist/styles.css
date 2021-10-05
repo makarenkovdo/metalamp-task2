@@ -1743,20 +1743,29 @@ input:checked + .slider:before {
 }
 .cards__margin-top-area {
   display: grid;
-  grid-area: 1/4;
+  box-sizing: border-box;
+  grid-area: 1/1/2/4;
   border: 1px solid black;
 }
 .cards__margin-left-area {
   display: grid;
+  box-sizing: border-box;
 }
 .cards__content-area {
   display: grid;
+  box-sizing: border-box;
   grid-template-columns: 420px 420px 320px;
+  border: 1px solid black;
 }
 .cards__margin-right-area {
   display: grid;
+  box-sizing: border-box;
 }
 .cards__margin-bottom-area {
+  display: grid;
+  box-sizing: border-box;
+}
+.cards-titles-container {
   display: grid;
 }
 /*!***************************************************************************************************************************************!*\
@@ -2018,7 +2027,7 @@ html {
   margin-top: 143.5px;
   align-content: flex-start;
 }
-.form-elements-titles-container {
+.form-elements__titles-container {
   display: grid;
   grid-template-columns: 1fr 0.5fr;
   margin-bottom: 4px;
@@ -2206,3 +2215,71 @@ html {
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/variables/colors.scss ***!
   \***************************************************************************************************************************/
 
+/*!*****************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/booking-card/booking-card.scss ***!
+  \*****************************************************************************************************************************************/
+
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/login-card/login-card.scss ***!
+  \*************************************************************************************************************************************/
+
+/*!***************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/registration-card/registration-card.scss ***!
+  \***************************************************************************************************************************************************/
+
+/*!***********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/room-card/room-card.scss ***!
+  \***********************************************************************************************************************************/
+
+/*!*********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/searching-card/searching-card.scss ***!
+  \*********************************************************************************************************************************************/
+@font-face {
+  font-family: "Montserrat";
+  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+.searching-card-block {
+  display: grid;
+  grid-template-columns: 320px;
+  grid-template-rows: 120px 85px 95px 44px 74px;
+  border: 1px solid yellow;
+}
+.searching-card__title {
+  display: grid;
+  width: 200px;
+  font: normal bold 1.7143rem/2.0714rem Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+.searching-card__datepicker-box {
+  display: grid;
+  width: 200px;
+}
+.searching-card__dropdown-box {
+  display: grid;
+  width: 200px;
+}
+.searching-card__title-container {
+  display: grid;
+  width: 200px;
+}

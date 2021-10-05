@@ -38,7 +38,7 @@ block content
                 .text-field__input-container
                     +text-field ('This is pretty awesome','email', 'Email')
             .form-elements__dropdown
-                div(class='titles-container' style= {margin: '0 0 5px 0'})
+                div(class='form-elements__titles-container' style= {margin: '0 0 5px 0'})
                     +block-title('dropdown')
                 +dropdown(1, '')
             .form-elements__masked-text-field
@@ -80,22 +80,22 @@ block content
             .form-elements__checkbox-list
                 +checkbox-list('checkbox buttons')
             .form-elements__radio-button  
-                div(class='titles-container' style= {margin: '0 0 12px 0'})
+                div(class='form-elements__titles-container' style= {margin: '0 0 12px 0'})
                     +block-title('radio buttons')
                 +radio-button()
             .form-elements__toggle 
-                div(class='titles-container' style= {margin: '0 0 12px 0'})
+                div(class='form-elements__titles-container' style= {margin: '0 0 12px 0'})
                     +block-title('toggle')
                 +toggle('Получать спецпредложения')
                 +toggle('Получать спецпредложения')
             .form-elements__like-button
-                div(class='titles-container' style= {margin: '0 0 15px 0'})
+                div(class='form-elements__titles-container' style= {margin: '0 0 15px 0'})
                     +block-title('like button')
                 .form-elements__like-button-container
                     +like-button(1, 2)
                     +like-button(2, 11)
             .form-elements__rate-button 
-                div(class='titles-container' style= {margin: '0 0 17px 0'})
+                div(class='form-elements__titles-container' style= {margin: '0 0 17px 0'})
                     +block-title('rate button')
                 .form-elements__rate-buttons-container 
                     +rate-button(4)
@@ -105,7 +105,7 @@ block content
                     +block-title('dropdown')
                 +dropdown(4, '')
             .form-elements__rich-checkbox
-                div(class='titles-container' style= {margin: '0 0 17px 0'})
+                div(class='form-elements__titles-container' style= {margin: '0 0 17px 0'})
                     +block-title('rich checkbox buttons')
                 +rich-checkbox()
         .form-elements__area-d
@@ -115,7 +115,7 @@ block content
             .form-elements__range-slider 
                 +block-title('range slider')
             .form-elements__buttons
-                div(class='titles-container' style= {margin: '0 0 16px 0'})
+                div(class='form-elements__titles-container' style= {margin: '0 0 16px 0'})
                     +block-title('BUTTONS')
                 .form-elements__buttons-container
                     +button('purple', 'click me')
@@ -125,9 +125,9 @@ block content
                 .form-elements__buttons-container-2
                     +button('link', 'click me')
                     +button('link', 'click me')
-                +button('go-to-pay', 'перейти к оплате')
+                +button('with-arrow', 'перейти к оплате')
             .form-elements__pagination
-                div(class='titles-container' style= {margin: '0 0 16px 0'})
+                div(class='form-elements__titles-container' style= {margin: '0 0 16px 0'})
                     +block-title('pagination')
                 +pagination()
             .form-elements__dropdowns-3
@@ -135,7 +135,7 @@ block content
                     +block-title('dropdown')
                 +dropdown(5, '')
             .form-elements__bullet-list 
-                div(class='titles-container' style= {margin: '0 0 5px 0'})
+                div(class='form-elements__titles-container' style= {margin: '0 0 5px 0'})
                     +block-title('bullet list')
                 +bullet-list()
 

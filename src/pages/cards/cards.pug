@@ -21,18 +21,33 @@ include ../../components/subscription-text-field/subscription-text-field
 include ../../components/text-field/text-field
 include ../../components/toggle/toggle
 
+include ../../card-blocks/booking-card/booking-card
+include ../../card-blocks/login-card/login-card
+include ../../card-blocks/registration-card/registration-card
+include ../../card-blocks/room-card/room-card
+include ../../card-blocks/searching-card/searching-card
+
                 
 block content
     .cards-page
         .cards__margin-top-area
         .cards__margin-left-area
         .cards__content-area
-            .cards-searching
-            .cards-registration
-            .cards-booking
-            .cards-login
-            .cards-calendar 
-            .cards-room-888 
-            .cards-room-840
+            .cards__column-a
+                .cards-searching
+                    +searching-card()
+                .cards-registration
+                    +registration-card()
+            .cards__column-b
+                .cards-booking
+                    +booking-card()
+                .cards-login
+                    +login-card()
+            .cards__column-b
+                .cards-calendar 
+                .cards-room-888
+                    +room-card() 
+                .cards-room-840
+                    +room-card()
         .cards__margin-right-area
         .cards__margin-bottom-area

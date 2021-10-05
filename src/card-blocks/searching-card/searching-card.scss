@@ -1,0 +1,28 @@
+@import './../../styles/mixins/fonts.scss';
+@import './../../styles/mixins/font-faces.scss';
+@import './../../styles/variables/colors.scss';
+
+.searching-card {
+    &-block {
+        display: grid;
+        grid-template-columns: 320px;
+        grid-template-rows: 80px 85px 95px 44px 74px;
+        margin: 40px 0 0 30px;
+        border: 1px solid yellow;
+    }
+
+    &__title {
+        display: grid;
+        // grid-area: 1/1/2/3;
+        @include h1;
+        text-transform: none;
+    }
+    &__datepicker-box {
+    }
+    &__dropdown-box {
+        display: grid;
+    }
+    &__title-container {
+        display: grid;
+    }
+}

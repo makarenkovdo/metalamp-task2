@@ -15,7 +15,7 @@
   \***********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var cache = {};\n\nfunction importAll(r) {\n  r.keys().forEach(function (key) {\n    return cache[key] = r(key);\n  });\n}\n\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.png$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/styles sync recursive \\\\.scss$\"));\n\n//# sourceURL=webpack://task2/./src/styles.js?");
+eval("var cache = {};\n\nfunction importAll(r) {\n  r.keys().forEach(function (key) {\n    return cache[key] = r(key);\n  });\n}\n\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.png$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.svg$\"));\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/styles sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/card-blocks sync recursive \\\\.scss$\"));\n\n//# sourceURL=webpack://task2/./src/styles.js?");
 
 /***/ }),
 
@@ -324,6 +324,61 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/ui-kit-logo.svg\");\n\n//# sourceURL=webpack://task2/./src/pages/ui-kit-template/ui-kit-logo.svg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/booking-card/booking-card.scss":
+/*!********************************************************!*\
+  !*** ./src/card-blocks/booking-card/booking-card.scss ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/card-blocks/booking-card/booking-card.scss?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/login-card/login-card.scss":
+/*!****************************************************!*\
+  !*** ./src/card-blocks/login-card/login-card.scss ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/card-blocks/login-card/login-card.scss?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/registration-card/registration-card.scss":
+/*!******************************************************************!*\
+  !*** ./src/card-blocks/registration-card/registration-card.scss ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/card-blocks/registration-card/registration-card.scss?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/room-card.scss":
+/*!**************************************************!*\
+  !*** ./src/card-blocks/room-card/room-card.scss ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/room-card.scss?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/searching-card/searching-card.scss":
+/*!************************************************************!*\
+  !*** ./src/card-blocks/searching-card/searching-card.scss ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/card-blocks/searching-card/searching-card.scss?");
 
 /***/ }),
 
@@ -753,6 +808,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/styles/variables/colors.scss?");
+
+/***/ }),
+
+/***/ "./src/card-blocks sync recursive \\.scss$":
+/*!***************************************!*\
+  !*** ./src/card-blocks/ sync \.scss$ ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var map = {\n\t\"./booking-card/booking-card.scss\": \"./src/card-blocks/booking-card/booking-card.scss\",\n\t\"./login-card/login-card.scss\": \"./src/card-blocks/login-card/login-card.scss\",\n\t\"./registration-card/registration-card.scss\": \"./src/card-blocks/registration-card/registration-card.scss\",\n\t\"./room-card/room-card.scss\": \"./src/card-blocks/room-card/room-card.scss\",\n\t\"./searching-card/searching-card.scss\": \"./src/card-blocks/searching-card/searching-card.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/card-blocks sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/_sync_\\.scss$?");
 
 /***/ }),
 

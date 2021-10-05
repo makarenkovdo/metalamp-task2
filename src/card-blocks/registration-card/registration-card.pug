@@ -1,0 +1,18 @@
+include ../../components/datepicker/datepicker
+include ../../components/dropdown/dropdown
+include ../../components/button/button
+include ../../components/block-title/block-title
+
+mixin registration-card
+    form.registration-card-block
+        .registration-card__title Найдем номера под ваши желания
+        .registration-card__datepicker-box
+            +datepicker('прибытие', 'выезд')
+        .registration-card__dropdown-box
+            +block-title('гости')
+            +dropdown(1, '', 'wide')
+        .registration-card__button-box
+            +button('with-arrow', 'подобрать номер')
+        
+        
+
