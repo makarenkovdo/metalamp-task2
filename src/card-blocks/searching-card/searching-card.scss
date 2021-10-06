@@ -6,9 +6,9 @@
     &-block {
         display: grid;
         grid-template-columns: 320px;
-        grid-template-rows: 80px 85px 95px 44px 74px;
+        grid-template-rows: 80px 86px 95px 44px;
+        align-items: start;
         margin: 40px 0 0 30px;
-        border: 1px solid yellow;
     }
 
     &__title {

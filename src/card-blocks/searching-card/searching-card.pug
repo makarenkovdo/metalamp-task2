@@ -5,11 +5,12 @@ include ../../components/block-title/block-title
 
 mixin searching-card
     form.searching-card-block
-        .searching-card__title Найдем номера под ваши желания
+        .searching-card__title Найдем номера под ваши пожелания
         .searching-card__datepicker-box
             +datepicker(1, 'прибытие', 'выезд')
         .searching-card__dropdown-box
-            +block-title('гости')
+            div(class='searching-card__titles-container' style= {margin: '0 0 4px 0'})
+                +block-title('гости')
             +dropdown(1, '', 'wide')
         .searching-card__button-box
             +button('with-arrow', 'подобрать номер')

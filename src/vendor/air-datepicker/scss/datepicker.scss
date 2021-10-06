@@ -3,12 +3,13 @@
 
 .js-datepicker-input {
     box-sizing: border-box;
-    width: 145px;
-    height: 42px;
+    width: 150px;
+    height: 45px;
     border: 1px solid $dark-shade-25;
     border-radius: 4px;
     @include body-font;
-    padding-left: 15px;
+    padding: 0px 0px 2px 14px;
+
     &::-webkit-input-placeholder {
         @include body-font;
         line-height: 18px;
