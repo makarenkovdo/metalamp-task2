@@ -3,9 +3,9 @@
 
 .js-datepicker-input {
     box-sizing: border-box;
-    // width: 150px;
+    width: 145px;
     height: 42px;
-    border: 0px solid $dark-shade-25;
+    border: 1px solid $dark-shade-25;
     border-radius: 4px;
     @include body-font;
     padding-left: 15px;

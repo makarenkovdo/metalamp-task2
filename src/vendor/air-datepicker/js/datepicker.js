@@ -8,7 +8,7 @@
         baseTemplate =
             '' +
             '<div class="datepicker">' +
-            '<i class="datepicker--pointer"></i>' +
+            // '<i class="datepicker--pointer"></i>' +
             '<nav class="datepicker--nav"></nav>' +
             '<div class="datepicker--content"></div>' +
             '</div>',
@@ -47,8 +47,8 @@
             multipleDatesSeparator: ',',
             range: false,
 
-            todayButton: false,
-            clearButton: false,
+            applyButton: true,
+            clearButton: true,
 
             showEvent: 'focus',
             autoClose: false,
@@ -672,15 +672,8 @@
             })
         },
 
-        today: function () {
-            this.silent = true
-            this.view = this.opts.minView
-            this.silent = false
-            this.date = new Date()
-
-            if (this.opts.todayButton instanceof Date) {
-                this.selectDate(this.opts.todayButton)
-            }
+        apply: function () {
+            this.hide()
         },
 
         clear: function () {
@@ -1642,8 +1635,8 @@
                 'ноя',
                 'дек',
             ],
-            today: 'Сегодня',
             clear: 'Очистить',
+            apply: 'Применить',
             dateFormat: 'dd.mm.yyyy',
             timeFormat: 'hh:ii',
             firstDay: 1,
