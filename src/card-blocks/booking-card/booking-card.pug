@@ -3,13 +3,19 @@ include ../../components/dropdown/dropdown
 include ../../components/button/button
 include ../../components/block-title/block-title
 
-mixin booking-card
+mixin booking-card(number, isLux, price)
     form.booking-card-block
-        .booking-card__title Найдем номера под ваши желания
+        .booking-card__title-box 
+            p.booking-card__title-number-sign №
+            p.booking-card__title-number 888
+            p.booking-card__title-lux= isLux
+            p.booking-card__title-price= price
+            p.booking-card__title-in-a-day в сутки
         .booking-card__datepicker-box
             +datepicker(2, 'прибытие', 'выезд')
         .booking-card__dropdown-box
-            +block-title('гости')
+            div(class='searching-card__titles-container' style= {margin: '0 0 4px 0'})
+                +block-title('гости')
             +dropdown(2, '', 'wide')
         .booking-card__price-box 
             p.booking-card__price-text 9 990₽ х 4 суток

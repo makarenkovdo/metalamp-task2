@@ -18,7 +18,8 @@
         display: grid;
         box-sizing: border-box;
 
-        grid-template-columns: 420px 420px 320px;
+        grid-template-columns: 380px 380px 320px;
+        column-gap: 40px;
     }
     &__column-a {
         display: grid;
@@ -27,7 +28,13 @@
         grid-template-rows: 374px 646px;
         row-gap: 40px;
     }
+    &__column-b {
+        display: grid;
+        box-sizing: border-box;
 
+        grid-template-rows: 512px 358px;
+        row-gap: 40px;
+    }
     &__column-c {
         display: grid;
         box-sizing: border-box;

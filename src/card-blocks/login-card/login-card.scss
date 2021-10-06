@@ -1,3 +1,17 @@
 @import './../../styles/mixins/fonts.scss';
 @import './../../styles/mixins/font-faces.scss';
 @import './../../styles/variables/colors.scss';
+
+.login-card {
+    &-block {
+        display: grid;
+        align-items: flex-start;
+        grid-template-rows: auto auto auto;
+        padding: 40px 30px 30px 30px;
+
+        border: 1px solid $dark-shade-25;
+        border-radius: 50%;
+        box-sizing: border-box;
+        color: $dark-shade-25;
+    }
+}
