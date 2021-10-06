@@ -11,11 +11,18 @@ $('.js-datepicker-input_instance-1').datepicker({
 })
 
 $('.js-datepicker-input_instance-2').datepicker({
+    inline: true,
     onSelect: function (fd, d, picker) {
         $('.js-datepicker-input_instance-2').val(fd.split('-')[0])
         $('.js-datepicker-second-input_instance-2').val(fd.split('-')[1])
     },
 })
+$('.js-datepicker-input_instance-1').datepicker({ inline: true })
+
+// $('.js-datepicker-input_instance-1') //works! shows, but not 'inline-style'
+// .datepicker({ inline: true })
+// .data('datepicker')
+// .show()
 
 $('.js-datepicker-second-input').click(function (e) {
     e.preventDefault()

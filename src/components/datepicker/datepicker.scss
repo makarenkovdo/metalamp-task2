@@ -22,4 +22,10 @@
         gap: 20px;
         margin-bottom: 5px;
     }
+    &-inline {
+        position: absolute;
+        top: 150px;
+        left: 980px;
+        z-index: 5;
+    }
 }
