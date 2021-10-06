@@ -5,6 +5,7 @@ include ../../components/block-title/block-title
 
 mixin booking-card
     form.booking-card-block
+        +datepicker('прибытие', 'выезд')
         .booking-card__title Найдем номера под ваши желания
         .booking-card__datepicker-box
             +datepicker('прибытие', 'выезд')

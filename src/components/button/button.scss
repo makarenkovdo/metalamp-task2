@@ -56,6 +56,9 @@
         background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
         border-radius: 22px;
         border: none;
-        // background: url('./arrow-button.svg');
+        // background: url(img/arrow-button.svg);
+    }
+    &__arrow-icon {
+        padding-left: 20px;
     }
 }

@@ -1,4 +1,7 @@
 mixin button(kind, text, styles)
     button(type='submit' class='button-' + kind + ' ' + styles) #{text}
+        if kind==='with-arrow'
+            img(class="button__arrow-icon" src='./img/arrow-button.svg' alt='submit' width='18' height='17')
+
 
 
