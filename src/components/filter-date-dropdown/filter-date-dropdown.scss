@@ -4,8 +4,11 @@
         box-sizing: border-box;
         width: 266px;
         grid-template-columns: 222px 44px;
-        border: 1px solid #1f204140;
+        border: none;
         border-radius: 4px;
+        .js-datepicker-input {
+            width: 266px;
+        }
     }
     // &__input {
     //     width: 300px;
