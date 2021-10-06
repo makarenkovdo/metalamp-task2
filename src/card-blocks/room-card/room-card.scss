@@ -1,3 +1,69 @@
 @import './../../styles/mixins/fonts.scss';
 @import './../../styles/mixins/font-faces.scss';
 @import './../../styles/variables/colors.scss';
+
+.room-card {
+    &-block {
+        display: grid;
+        grid-template-rows: 171px 23px 21px 24px;
+        /* Rectangle */
+
+        width: 270px;
+
+        background: #ffffff;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        border-radius: 4px;
+        padding-bottom: 19px;
+    }
+    &__title {
+        &-box {
+            display: grid;
+            grid-template-columns: 20px 39px 73px 55px 46px;
+            padding-left: 20px;
+        }
+        &-number-sign {
+            @include body-font($dark-shade-100, bold, 17px);
+            padding-top: 5px;
+        }
+        &-number {
+            @include h1;
+            font-size: 19px;
+            line-height: 23px;
+            padding-left: 1px;
+            padding-top: 2px;
+        }
+        &-lux {
+            @include h3($purple);
+            padding: 8px 0 0 1px;
+        }
+        &-price {
+            @include body-font($dark-shade-50, bold, 18px);
+            padding: 5px 0px 0 1px;
+        }
+        &-in-a-day {
+            @include caption-font($dark-shade-50, normal, 18px);
+            padding: 5px 0 0 1px;
+        }
+    }
+    &__line {
+        width: 230px;
+        height: 1px;
+        background: rgba(31, 32, 65, 0.1);
+        margin: 11.5px 0 0 20px;
+    }
+    &__rate-and-feeback-box {
+        display: grid;
+        grid-template-columns: 140.5px 27px 70px;
+        padding: 1px 0 0 20px;
+    }
+    &__feedback {
+        &_bold {
+            @include body-font($dark-shade-50, bold, 1.2857rem);
+            padding-top: 2px;
+        }
+        &_normal {
+            @include body-font($dark-shade-50, normal, 1.2857rem);
+            padding-top: 2px;
+        }
+    }
+}

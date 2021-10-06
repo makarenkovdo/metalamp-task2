@@ -5,6 +5,7 @@
 .searching-card {
     &-block {
         display: grid;
+        width: 380px;
         grid-template-columns: 320px;
         grid-template-rows: 80px 86px 94px 44px;
         align-items: start;

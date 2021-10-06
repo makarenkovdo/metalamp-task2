@@ -5,6 +5,8 @@
 .booking-card {
     &-block {
         display: grid;
+        width: 380px;
+
         box-sizing: border-box;
         align-items: flex-start;
 
