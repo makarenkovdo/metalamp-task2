@@ -153,15 +153,15 @@
     cursor: default;
 }
 
-.datepicker--days-names {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 8px 0 3px;
-}
+// .datepicker--days-names {
+//     display: -webkit-flex;
+//     display: -ms-flexbox;
+//     display: flex;
+//     -webkit-flex-wrap: wrap;
+//     -ms-flex-wrap: wrap;
+//     flex-wrap: wrap;
+//     margin: 8px 0 3px;
+// }
 
 .datepicker--day-name {
     display: flex;
@@ -509,15 +509,16 @@
 }
 
 .datepicker--buttons {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
+    grid-template-columns: 72px 84px;
+    column-gap: 124px;
     padding: 4px;
+    padding-left: 20px;
     border-top: 1px solid #efefef;
 }
 
 .datepicker--button {
-    color: #4eb5e6;
+    @include h3(#bc9cff);
     cursor: pointer;
     border-radius: 4px;
     -webkit-flex: 1;
@@ -534,10 +535,10 @@
     align-items: center;
     height: 32px;
 }
-.datepicker--button:hover {
-    color: #4a4a4a;
-    background: #f0f0f0;
-}
+// .datepicker--button:hover {
+//     color: #4a4a4a;
+//     background: #f0f0f0;
+// }
 
 .datepicker--cell-day.-other-month-,
 .datepicker--cell-year.-other-decade- {

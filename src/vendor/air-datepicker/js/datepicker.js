@@ -47,8 +47,8 @@
             multipleDatesSeparator: ',',
             range: false,
 
-            applyButton: true,
             clearButton: true,
+            applyButton: true,
 
             showEvent: 'focus',
             autoClose: false,
@@ -672,9 +672,7 @@
             })
         },
 
-        apply: function () {
-            this.hide()
-        },
+       
 
         clear: function () {
             this.selectedDates = []
@@ -685,6 +683,9 @@
             if (this.opts.onSelect) {
                 this._triggerOnChange()
             }
+        },
+        apply: function () {
+            this.hide()
         },
 
         /**

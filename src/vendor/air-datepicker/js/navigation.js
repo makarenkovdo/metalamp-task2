@@ -51,11 +51,11 @@
         },
 
         _addButtonsIfNeed: function () {
-            if (this.opts.applyButton) {
-                this._addButton('apply')
-            }
             if (this.opts.clearButton) {
                 this._addButton('clear')
+            }
+            if (this.opts.applyButton) {
+                this._addButton('apply')
             }
         },
 
