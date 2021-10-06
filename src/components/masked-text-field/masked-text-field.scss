@@ -23,7 +23,7 @@
         &:placeholder-shown {
             @include placeholder(color, $dark-shade-25);
             line-height: 18px;
-            padding: 13px 0 12px 14px;
+            padding: 12px 0 12px 14px;
 
             // @include media-content(
             //     320px,
