@@ -2,7 +2,7 @@
 @import './../../styles/variables/colors.scss';
 .button {
     &-purple {
-        width: max-content;
+        width: 99px;
         padding-left: 19px;
         padding-right: 20px;
         height: 44px;
@@ -18,8 +18,7 @@
     }
 
     &-white {
-        // width: 99px;
-        width: max-content;
+        width: 99px;
         padding-left: 17px;
         padding-right: 16px;
         box-sizing: border-box;
@@ -49,11 +48,11 @@
 
     &-with-arrow {
         display: grid;
-        grid-template-columns: 262px max-content;
+        position: relative;
+        // grid-template-columns: 262px max-content;
         align-items: center;
         justify-content: center;
         width: 320px;
-        height: 44px;
         @include h3(white, bold);
 
         /* Primary Gradient */
@@ -61,9 +60,11 @@
         border-radius: 22px;
         border: none;
         // background: url(img/arrow-button.svg);
-        padding: 0px 0px 0px 14px;
+        padding: 14.5px 2px 14.5px 0px;
     }
     &__arrow-icon {
+        position: absolute;
+        left: 290px;
         padding-left: 0px;
     }
 }
