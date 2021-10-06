@@ -28,15 +28,17 @@
         grid-template-columns: 98px 98px;
         column-gap: 20px;
     }
-    &__login-box {
-        display: grid;
-        grid-template-columns: 186px 99px;
-        column-gap: 35px;
-    }
+    &__login {
+        &-box {
+            display: grid;
+            grid-template-columns: 186px 99px;
+            column-gap: 35px;
+        }
 
-    &__login-caption {
-        display: grid;
-        align-items: center;
-        @include body-font($dark-shade-100, normal, 1.2857rem);
+        &-caption {
+            display: grid;
+            align-items: center;
+            @include body-font($dark-shade-100, normal, 1.2857rem);
+        }
     }
 }

@@ -316,6 +316,7 @@
     opacity: 1;
     -webkit-transform: none;
     transform: none;
+    padding: 0 10px 0 10px;
 }
 
 .datepicker-inline .datepicker--pointer {
@@ -324,8 +325,7 @@
 
 .datepicker--content {
     box-sizing: content-box;
-    padding: 15px;
-    //NOTE
+    padding: 23px 0 0 10px; //NOTE
 }
 .-only-timepicker- .datepicker--content {
     display: none;
@@ -448,7 +448,7 @@
     justify-content: space-between;
     border-bottom: 1px solid #efefef;
     min-height: 32px;
-    padding: 4px;
+    padding: 0px;
 }
 .-only-timepicker- .datepicker--nav {
     display: none;
@@ -513,9 +513,8 @@
     display: grid;
     grid-template-columns: 72px 84px;
     column-gap: 124px;
-    padding: 4px;
-    padding-left: 20px;
-    border-top: 1px solid #efefef;
+    padding: 13px 0px 0 9px;
+    // border-top: 1px solid #efefef;
 }
 
 .datepicker--button {

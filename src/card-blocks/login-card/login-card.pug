@@ -6,15 +6,13 @@ include ../../components/block-title/block-title
 mixin login-card
     form.login-card-block
         .login-card__title Войти
-        .login-card__datepicker-box
-            +datepicker('прибытие', 'выезд')
-        .login-card__user-data
+        .login-card__text-fields 
             +text-field('','email', 'Email')
             +text-field('','password', 'Пароль')
         .login-card__button-box
             +button('with-arrow', 'войти')
-        .registration-card__regidtration
-            .registration-card__login-caption Нет аккаунта на Toxin?
+        .login-card__registration-box
+            .login-card__registration-caption Нет аккаунта на Toxin?
             +button('white', 'создать')
         
         
