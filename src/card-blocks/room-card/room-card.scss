@@ -30,7 +30,6 @@
             font-size: 19px;
             line-height: 23px;
             padding-left: 1px;
-            padding-top: 2px;
         }
         &-lux {
             @include h3($purple);
@@ -58,8 +57,10 @@
     }
     &__feedback {
         &_bold {
+            display: grid;
+            justify-content: end;
+            padding: 2px 3.6px;
             @include body-font($dark-shade-50, bold, 1.2857rem);
-            padding-top: 2px;
         }
         &_normal {
             @include body-font($dark-shade-50, normal, 1.2857rem);

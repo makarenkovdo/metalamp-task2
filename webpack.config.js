@@ -45,11 +45,12 @@ module.exports = {
         styles: './src/styles.js',
         checkboxExpList:
             './src/components/checkbox-expandable-list/checkbox-expandable-list.js',
-        likeButton: './src/components/like-button/like-button.js',
-        dropdown: './src/components/dropdown/dropdown.js',
         datepicker: './src/components/datepicker/datepicker.js',
+        dropdown: './src/components/dropdown/dropdown.js',
+        likeButton: './src/components/like-button/like-button.js',
         maskedTextField:
             './src/components/masked-text-field/masked-text-field.js',
+        slickCarousel: './src/components/carousel/carousel.js',
     },
     output: {
         filename: '[name].bundle.js',

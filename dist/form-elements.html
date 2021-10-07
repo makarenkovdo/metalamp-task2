@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  <script defer src="styles.bundle.js"></script><script defer src="checkboxExpList.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="datepicker.bundle.js"></script><script defer src="maskedTextField.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"></head>
+  <script defer src="styles.bundle.js"></script><script defer src="checkboxExpList.bundle.js"></script><script defer src="datepicker.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="maskedTextField.bundle.js"></script><script defer src="slickCarousel.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"></head>
   <body><img class="ui-kit-template-logo" src="./img/ui-kit-logo.svg" alt="logo" width="48" height="48">
     <div class="form-elements">
       <div class="form-elements__area-a">    
@@ -42,7 +42,7 @@
           </section>
         </div>
         <div class="form-elements__masked-text-field">
-          <div class="form-elements-titles-container">
+          <div class="form-elements__titles-container" style="margin:0 0 4.4px 0;">
             <h3 class="block-title">masked text field</h3>
           </div><span class="text-field-container">
             <input class="masked-text-field__input js-masked-text-field__input" type="text" name="masked-text-field" placeholder="ДД.ММ.ГГГГ" maxlength="10"></span>
@@ -55,10 +55,10 @@
             </div>
             <div class="datepicker__inputs-container">
               <div class="datepicker__input-box">
-                <input class="datepicker-here js-datepicker-input" id="start_one" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
+                <input class="datepicker-here js-datepicker-input js-datepicker-input_instance-undefined" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
               </div>
               <div class="datepicker__input-box">
-                <input class="js-datepicker-input js-datepicker-input_second" id="end_one" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
+                <input class="js-datepicker-input js-datepicker-second-input js-datepicker-second-input_instance-undefined" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
               </div>
             </div>
           </section>
@@ -205,14 +205,14 @@
           <div class="form-elements__titles-container" style="margin:0 0 12px 0;">
             <h3 class="block-title">radio buttons</h3>
           </div>
-          <form class="radio-button-block">
+          <section class="radio-button-block">
             <label class="radio-label">
               <input class="radio__input" type="radio" name="color" value="indigo"><span class="radio__new-icon"></span><span class="radio__text">Мужчина</span>
             </label>
             <label class="radio-label">
               <input class="radio__input" type="radio" name="color" value="indigo"><span class="radio__new-icon"></span><span class="radio__text">Женщина</span>
             </label>
-          </form>
+          </section>
         </div>
         <div class="form-elements__toggle"> 
           <div class="form-elements__titles-container" style="margin:0 0 12px 0;">

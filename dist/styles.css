@@ -174,7 +174,7 @@ ul.bullet-list {
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/button/button.scss ***!
   \****************************************************************************************************************************/
 .button-purple {
-  width: max-content;
+  width: 99px;
   padding-left: 19px;
   padding-right: 20px;
   height: 44px;
@@ -195,7 +195,7 @@ ul.bullet-list {
   opacity: 0.5;
 }
 .button-white {
-  width: max-content;
+  width: 99px;
   padding-left: 17px;
   padding-right: 16px;
   box-sizing: border-box;
@@ -233,8 +233,11 @@ ul.bullet-list {
   color: rgba(31, 32, 65, 0.5);
 }
 .button-with-arrow {
+  display: grid;
+  position: relative;
+  align-items: center;
+  justify-content: center;
   width: 320px;
-  height: 44px;
   font-style: normal;
   font-weight: bold;
   font-size: 0.8571rem;
@@ -246,9 +249,12 @@ ul.bullet-list {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
   border: none;
+  padding: 14.5px 2px 14.5px 0px;
 }
 .button__arrow-icon {
-  padding-left: 20px;
+  position: absolute;
+  left: 290px;
+  padding-left: 0px;
 }
 /*!****************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-expandable-list/checkbox-expandable-list.scss ***!
@@ -572,14 +578,19 @@ details[open] summary:after {
   display: grid;
   grid-template-columns: 106px 44px;
   gap: 0px;
-  border: 1px solid #1f204140;
-  border-radius: 4px;
+  box-sizing: content-box;
 }
 .datepicker__titles-container {
   display: grid;
   grid-template-columns: 150px 150px;
   gap: 20px;
   margin-bottom: 5px;
+}
+.datepicker-inline {
+  position: absolute;
+  top: 150px;
+  left: 980px;
+  z-index: 5;
 }
 /*!********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dropdown/dropdown.scss ***!
@@ -826,8 +837,11 @@ details[open] summary:after {
   box-sizing: border-box;
   width: 266px;
   grid-template-columns: 222px 44px;
-  border: 1px solid #1f204140;
+  border: none;
   border-radius: 4px;
+}
+.filter-date-dropdown-form .js-datepicker-input {
+  width: 266px;
 }
 /*!****************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/footer/footer.scss ***!
@@ -1384,7 +1398,7 @@ html {
   /* Firefox 19+ */
   /* Firefox 18- */
   line-height: 18px;
-  padding: 13px 0 12px 14px;
+  padding: 12px 0 12px 14px;
 }
 .masked-text-field__input:placeholder-shown::-webkit-input-placeholder {
   color: rgba(31, 32, 65, 0.25);
@@ -1674,7 +1688,7 @@ html {
   /* Firefox 19+ */
   /* Firefox 18- */
   line-height: 18px;
-  padding: 13px 0 12px 14px;
+  padding: 12px 0 12px 14px;
 }
 .text-field__input:placeholder-shown::-webkit-input-placeholder {
   color: rgba(31, 32, 65, 0.25);
@@ -1787,12 +1801,12 @@ input:checked + .slider:before {
 .cards-page {
   display: grid;
   grid-template-columns: 140px 1160px 140px;
+  grid-template-rows: 150px 1060px 140px;
 }
 .cards__margin-top-area {
   display: grid;
   box-sizing: border-box;
   grid-area: 1/1/2/4;
-  border: 1px solid black;
 }
 .cards__margin-left-area {
   display: grid;
@@ -1801,8 +1815,25 @@ input:checked + .slider:before {
 .cards__content-area {
   display: grid;
   box-sizing: border-box;
-  grid-template-columns: 420px 420px 320px;
-  border: 1px solid black;
+  grid-template-columns: 380px 380px 320px;
+  column-gap: 40px;
+}
+.cards__column-a {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-rows: 374px 646px;
+  row-gap: 40px;
+}
+.cards__column-b {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-rows: 512px 358px;
+  row-gap: 40px;
+}
+.cards__column-c {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-rows: 409px 297px 257px;
 }
 .cards__margin-right-area {
   display: grid;
@@ -2289,17 +2320,89 @@ html {
   font-weight: 700;
   font-style: normal;
 }
+.booking-card-block {
+  display: grid;
+  width: 380px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  padding: 39px 30px 30px 29px;
+  grid-template-rows: 50px 85px 85px 134px 44px 44px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.booking-card__title-box {
+  display: grid;
+  grid-template-columns: 20px 55px 145px 55px 45px;
+}
+.booking-card__title-number-sign {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 17px;
+  color: #1f2041;
+  padding-top: 10px;
+}
+.booking-card__title-number {
+  font: normal bold 1.7143rem/2.0714rem Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1f2041;
+  padding-left: 1px;
+}
+.booking-card__title-lux {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8571rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.0714rem;
+  color: #bc9cff;
+  text-transform: uppercase;
+  padding: 13px 0 0 2px;
+}
+.booking-card__title-price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  padding-top: 10px;
+}
+.booking-card__title-in-a-day {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8571rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  padding: 11px 0 0 0px;
+}
 .booking-card__price-box {
   display: grid;
-  grid-template-columns: 219px 43px 1fr;
+  grid-template-columns: 220px 42px 1fr;
+  grid-template-rows: 34px 34px 36px;
+  padding-right: 1px;
 }
 .booking-card__price-text {
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 1.7143rem;
+  line-height: 1.2857rem;
   color: rgba(31, 32, 65, 0.75);
+  padding-left: 1px;
+}
+.booking-card__price-text_right {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.2857rem;
+  color: rgba(31, 32, 65, 0.75);
+  display: grid;
+  justify-content: right;
+  padding-right: 2px;
 }
 .booking-card__info-icon {
   display: grid;
@@ -2316,6 +2419,24 @@ html {
   border-radius: 50%;
   box-sizing: border-box;
   color: rgba(31, 32, 65, 0.25);
+}
+.booking-card__summary-box {
+  display: grid;
+  grid-template-columns: 60px 183px 80px;
+}
+.booking-card__summary-text {
+  font: normal bold 1.3571rem/1.6429rem Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1f2041;
+  text-transform: none;
+}
+.booking-card__summary-border-div {
+  width: 182px;
+  height: 1px;
+  border-top: 0.5px dashed rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-width: thin;
+  margin: 18px 0 0 5px;
 }
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/login-card/login-card.scss ***!
@@ -2344,6 +2465,41 @@ html {
   font-weight: 700;
   font-style: normal;
 }
+.login-card-block {
+  display: grid;
+  align-items: flex-start;
+  grid-template-rows: 50px 118px 74px 44px;
+  padding: 39px 30px 30px 29px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.login-card__title {
+  font: normal bold 1.7143rem/2.0714rem Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1f2041;
+  text-transform: none;
+}
+.login-card__text-fields {
+  display: grid;
+  row-gap: 10px;
+}
+.login-card__registration-box {
+  display: grid;
+  grid-template-columns: 186px 99px;
+  column-gap: 35px;
+}
+.login-card__registration-caption {
+  display: grid;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.2857rem;
+  color: #1f2041;
+}
 /*!***************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/registration-card/registration-card.scss ***!
   \***************************************************************************************************************************************************/
@@ -2371,6 +2527,47 @@ html {
   font-weight: 700;
   font-style: normal;
 }
+.registration-card-block {
+  display: grid;
+  align-items: flex-start;
+  grid-template-rows: 50px 105.56px 47px 84px 124px 47px 74px 44px;
+  padding: 39px 30px 30px 29px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.registration-card__title {
+  font: normal bold 1.7143rem/2.0714rem Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1f2041;
+  text-transform: none;
+}
+.registration-card__text-fields {
+  display: grid;
+  row-gap: 10px;
+}
+.registration-card__radio-buttons {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: 98px 98px;
+  column-gap: 20px;
+}
+.registration-card__login-box {
+  display: grid;
+  grid-template-columns: 186px 99px;
+  column-gap: 35px;
+}
+.registration-card__login-caption {
+  display: grid;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.2857rem;
+  color: #1f2041;
+}
 /*!***********************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/room-card/room-card.scss ***!
   \***********************************************************************************************************************************/
@@ -2397,6 +2594,96 @@ html {
   src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
   font-weight: 700;
   font-style: normal;
+}
+.room-card-block {
+  display: grid;
+  grid-template-rows: 171px 23px 21px 24px;
+  /* Rectangle */
+  width: 270px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  padding-bottom: 19px;
+}
+.room-card__title-box {
+  display: grid;
+  grid-template-columns: 20px 39px 73px 55px 46px;
+  padding-left: 20px;
+}
+.room-card__title-number-sign {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 17px;
+  color: #1f2041;
+  padding-top: 5px;
+}
+.room-card__title-number {
+  font: normal bold 1.7143rem/2.0714rem Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1f2041;
+  font-size: 19px;
+  line-height: 23px;
+  padding-left: 1px;
+  padding-top: 2px;
+}
+.room-card__title-lux {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8571rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.0714rem;
+  color: #bc9cff;
+  text-transform: uppercase;
+  padding: 8px 0 0 1px;
+}
+.room-card__title-price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  padding: 5px 0px 0 1px;
+}
+.room-card__title-in-a-day {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8571rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  padding: 5px 0 0 1px;
+}
+.room-card__line {
+  width: 230px;
+  height: 1px;
+  background: rgba(31, 32, 65, 0.1);
+  margin: 11.5px 0 0 20px;
+}
+.room-card__rate-and-feeback-box {
+  display: grid;
+  grid-template-columns: 140.5px 27px 70px;
+  padding: 1px 0 0 20px;
+}
+.room-card__feedback_bold {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.2857rem;
+  color: rgba(31, 32, 65, 0.5);
+  padding-top: 2px;
+}
+.room-card__feedback_normal {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.2857rem;
+  color: rgba(31, 32, 65, 0.5);
+  padding-top: 2px;
 }
 /*!*********************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/searching-card/searching-card.scss ***!
@@ -2427,10 +2714,15 @@ html {
 }
 .searching-card-block {
   display: grid;
+  width: 380px;
   grid-template-columns: 320px;
-  grid-template-rows: 80px 85px 95px 44px 74px;
-  margin: 40px 0 0 30px;
-  border: 1px solid yellow;
+  grid-template-rows: 80px 86px 94px 44px;
+  align-items: start;
+  padding: 39px 30px 30px 29px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 .searching-card__title {
   display: grid;

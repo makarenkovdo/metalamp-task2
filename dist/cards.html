@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  <script defer src="styles.bundle.js"></script><script defer src="checkboxExpList.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="datepicker.bundle.js"></script><script defer src="maskedTextField.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"></head>
+  <script defer src="styles.bundle.js"></script><script defer src="checkboxExpList.bundle.js"></script><script defer src="datepicker.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="maskedTextField.bundle.js"></script><script defer src="slickCarousel.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"></head>
   <body><img class="ui-kit-template-logo" src="./img/ui-kit-logo.svg" alt="logo" width="48" height="48">
     <div class="cards-page">
       <div class="cards__margin-top-area"></div>
@@ -14,7 +14,7 @@
         <div class="cards__column-a">
           <div class="cards-searching">
             <form class="searching-card-block">
-              <div class="searching-card__title">Найдем номера под ваши желания</div>
+              <div class="searching-card__title">Найдем номера под ваши пожелания</div>
               <div class="searching-card__datepicker-box">
                 <section class="datepicker-form">
                   <div class="datepicker__titles-container">
@@ -23,16 +23,18 @@
                   </div>
                   <div class="datepicker__inputs-container">
                     <div class="datepicker__input-box">
-                      <input class="datepicker-here js-datepicker-input" id="start_one" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
+                      <input class="datepicker-here js-datepicker-input js-datepicker-input_instance-1" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
                     </div>
                     <div class="datepicker__input-box">
-                      <input class="js-datepicker-input js-datepicker-input_second" id="end_one" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
+                      <input class="js-datepicker-input js-datepicker-second-input js-datepicker-second-input_instance-1" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
                     </div>
                   </div>
                 </section>
               </div>
               <div class="searching-card__dropdown-box">
-                <h3 class="block-title">гости</h3>
+                <div class="searching-card__titles-container" style="margin:0 0 4px 0;">
+                  <h3 class="block-title">гости</h3>
+                </div>
                 <section class="dropdown-block">
                   <div class="js-dropdown_instance-1_type hide"></div>
                   <div class="dropdown dropdown_wide js-dropdown_instance-1">
@@ -57,21 +59,29 @@
                   <input class="text-field__input" type="text" value="" name="surname" placeholder="Фамилия"></span>
               </div>
               <div class="registration-card__radio-buttons">
-                <form class="radio-button-block">
+                <section class="radio-button-block">
                   <label class="radio-label">
                     <input class="radio__input" type="radio" name="color" value="indigo"><span class="radio__new-icon"></span><span class="radio__text">Мужчина</span>
                   </label>
                   <label class="radio-label">
                     <input class="radio__input" type="radio" name="color" value="indigo"><span class="radio__new-icon"></span><span class="radio__text">Женщина</span>
                   </label>
-                </form>
+                </section>
               </div>
-              <div class="registration-card__date"><span class="text-field-container">
-                  <input class="masked-text-field__input js-masked-text-field__input" type="text" name="date" placeholder="ДД.ММ.ГГГ" maxlength="10"></span>
+              <div class="registration-card__date">
+                <div class="searching-card__titles-container" style="margin:0 0 4px 0;">
+                  <h3 class="block-title">дата рождения</h3>
+                </div><span class="text-field-container">
+                  <input class="masked-text-field__input js-masked-text-field__input" type="text" name="date" placeholder="ДД.ММ.ГГГГ" maxlength="10"></span>
               </div>
-              <div class="registration-card__user-data"><span class="text-field-container">
-                  <input class="text-field__input" type="text" value="" name="email" placeholder="Email"></span><span class="text-field-container">
-                  <input class="text-field__input" type="text" value="" name="password" placeholder="Пароль"></span>
+              <div class="registration-card__user-data">
+                <div class="searching-card__titles-container" style="margin:0 0 4px 0;">
+                  <h3 class="block-title">данные для входа в сервис</h3>
+                </div>
+                <div class="registration-card__text-fields"><span class="text-field-container">
+                    <input class="text-field__input" type="text" value="" name="email" placeholder="Email"></span><span class="text-field-container">
+                    <input class="text-field__input" type="text" value="" name="password" placeholder="Пароль"></span>
+                </div>
               </div>
               <div class="registration-card__toggle">
                 <label class="toggle-container"><span class="toggle-inline-container">
@@ -81,7 +91,7 @@
                 <button class="button-with-arrow undefined" type="submit">перейти к оплате<img class="button__arrow-icon" src="./img/arrow-button.svg" alt="submit" width="18" height="17">
                 </button>
               </div>
-              <div class="registration-card__login">
+              <div class="registration-card__login-box">
                 <div class="registration-card__login-caption">Уже есть аккаунт на Toxin</div>
                 <button class="button-white undefined" type="submit">войти
                 </button>
@@ -92,21 +102,13 @@
         <div class="cards__column-b">
           <div class="cards-booking">
             <form class="booking-card-block">
-              <section class="datepicker-form">
-                <div class="datepicker__titles-container">
-                  <h3 class="block-title">прибытие</h3>
-                  <h3 class="block-title">выезд</h3>
-                </div>
-                <div class="datepicker__inputs-container">
-                  <div class="datepicker__input-box">
-                    <input class="datepicker-here js-datepicker-input" id="start_one" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
-                  </div>
-                  <div class="datepicker__input-box">
-                    <input class="js-datepicker-input js-datepicker-input_second" id="end_one" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
-                  </div>
-                </div>
-              </section>
-              <div class="booking-card__title">Найдем номера под ваши желания</div>
+              <div class="booking-card__title-box"> 
+                <p class="booking-card__title-number-sign">№</p>
+                <p class="booking-card__title-number">888</p>
+                <p class="booking-card__title-lux">ЛЮКС</p>
+                <p class="booking-card__title-price">9 990₽</p>
+                <p class="booking-card__title-in-a-day">в сутки</p>
+              </div>
               <div class="booking-card__datepicker-box">
                 <section class="datepicker-form">
                   <div class="datepicker__titles-container">
@@ -115,16 +117,18 @@
                   </div>
                   <div class="datepicker__inputs-container">
                     <div class="datepicker__input-box">
-                      <input class="datepicker-here js-datepicker-input" id="start_one" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
+                      <input class="datepicker-here js-datepicker-input js-datepicker-input_instance-2" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
                     </div>
                     <div class="datepicker__input-box">
-                      <input class="js-datepicker-input js-datepicker-input_second" id="end_one" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
+                      <input class="js-datepicker-input js-datepicker-second-input js-datepicker-second-input_instance-2" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
                     </div>
                   </div>
                 </section>
               </div>
               <div class="booking-card__dropdown-box">
-                <h3 class="block-title">гости</h3>
+                <div class="searching-card__titles-container" style="margin:0 0 5px 0;">
+                  <h3 class="block-title">гости</h3>
+                </div>
                 <section class="dropdown-block">
                   <div class="js-dropdown_instance-2_type hide"></div>
                   <div class="dropdown dropdown_wide js-dropdown_instance-2">
@@ -138,15 +142,20 @@
               <div class="booking-card__price-box"> 
                 <p class="booking-card__price-text">9 990₽ х 4 суток</p>
                 <p class="booking-card__price-text"></p>
-                <p class="booking-card__price-text">39 960₽</p>
+                <p class="booking-card__price-text_right">39 960₽</p>
                 <p class="booking-card__price-text">Сбор за услуги: скидка 2 179₽</p>
                 <p class="booking-card__info-icon">i</p>
-                <p class="booking-card__price-text">0₽</p>
+                <p class="booking-card__price-text_right">0₽</p>
                 <p class="booking-card__price-text">Сбор за дополнительные услуги</p>
                 <p class="booking-card__info-icon">i</p>
-                <p class="booking-card__price-text">300₽</p>
+                <p class="booking-card__price-text_right">300₽</p>
               </div>
-              <div class="booking-card__button-box">
+              <div class="booking-card__summary-box"> 
+                <p class="booking-card__summary-text">Итого</p>
+                <div class="booking-card__summary-border-div"></div>
+                <p class="booking-card__summary-text">38 081₽</p>
+              </div>
+              <div class="booking-card__button-box"> 
                 <button class="button-with-arrow undefined" type="submit">забронировать<img class="button__arrow-icon" src="./img/arrow-button.svg" alt="submit" width="18" height="17">
                 </button>
               </div>
@@ -155,23 +164,7 @@
           <div class="cards-login">
             <form class="login-card-block">
               <div class="login-card__title">Войти</div>
-              <div class="login-card__datepicker-box">
-                <section class="datepicker-form">
-                  <div class="datepicker__titles-container">
-                    <h3 class="block-title">прибытие</h3>
-                    <h3 class="block-title">выезд</h3>
-                  </div>
-                  <div class="datepicker__inputs-container">
-                    <div class="datepicker__input-box">
-                      <input class="datepicker-here js-datepicker-input" id="start_one" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
-                    </div>
-                    <div class="datepicker__input-box">
-                      <input class="js-datepicker-input js-datepicker-input_second" id="end_one" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div class="login-card__user-data"><span class="text-field-container">
+              <div class="login-card__text-fields"> <span class="text-field-container">
                   <input class="text-field__input" type="text" value="" name="email" placeholder="Email"></span><span class="text-field-container">
                   <input class="text-field__input" type="text" value="" name="password" placeholder="Пароль"></span>
               </div>
@@ -179,31 +172,32 @@
                 <button class="button-with-arrow undefined" type="submit">войти<img class="button__arrow-icon" src="./img/arrow-button.svg" alt="submit" width="18" height="17">
                 </button>
               </div>
-              <div class="registration-card__regidtration">
-                <div class="registration-card__login-caption">Нет аккаунта на Toxin?</div>
+              <div class="login-card__registration-box">
+                <div class="login-card__registration-caption">Нет аккаунта на Toxin?</div>
                 <button class="button-white undefined" type="submit">создать
                 </button>
               </div>
             </form>
           </div>
         </div>
-        <div class="cards__column-b">
+        <div class="cards__column-c">
           <div class="cards-calendar">
             <div class="datepicker -bottom-left- -from-bottom-">some text</div>
           </div>
           <div class="cards-room-888">
             <section class="room-card-block">
               <div class="room-card__img-box"> <img class=".room-card__img" src="./img/room-888.png" alt="room-img" width="270" height="151"></div>
-              <div class="room-card__title">№ 888</div>
-              <div class="room-card__price-box">
-                <p class="room-card__price_bold">9990</p>
-                <p class="room-card__price_normal">в сутки</p>
+              <div class="room-card__title-box"> 
+                <p class="room-card__title-number-sign">№</p>
+                <p class="room-card__title-number">888</p>
+                <p class="room-card__title-lux">ЛЮКС</p>
+                <p class="room-card__title-price">9 990₽</p>
+                <p class="room-card__title-in-a-day">в сутки</p>
               </div>
-              <div class="room-card__rate-box">
+              <div class="room-card__line"></div>
+              <div class="room-card__rate-and-feeback-box">
                 <div class="rate-button-block"><img class="rate-button__img" src="./img/rate-button.svg" alt="rate" width="20" height="19"><img class="rate-button__img" src="./img/rate-button.svg" alt="rate" width="20" height="19"><img class="rate-button__img" src="./img/rate-button.svg" alt="rate" width="20" height="19"><img class="rate-button__img" src="./img/rate-button.svg" alt="rate" width="20" height="19"><img class="rate-button__img" src="./img/rate-button.svg" alt="rate" width="20" height="19">
                 </div>
-              </div>
-              <div class="room-card__feedback-box">
                 <p class="room-card__feedback_bold">145</p>
                 <p class="room-card__feedback_normal">Отзывов</p>
               </div>
@@ -212,16 +206,17 @@
           <div class="cards-room-840">
             <section class="room-card-block">
               <div class="room-card__img-box"> <img class=".room-card__img" src="./img/room-840.png" alt="room-img" width="270" height="151"></div>
-              <div class="room-card__title">№ 840</div>
-              <div class="room-card__price-box">
-                <p class="room-card__price_bold">9990</p>
-                <p class="room-card__price_normal">в сутки</p>
+              <div class="room-card__title-box"> 
+                <p class="room-card__title-number-sign">№</p>
+                <p class="room-card__title-number">888</p>
+                <p class="room-card__title-lux"></p>
+                <p class="room-card__title-price">9 990₽</p>
+                <p class="room-card__title-in-a-day">в сутки</p>
               </div>
-              <div class="room-card__rate-box">
+              <div class="room-card__line"></div>
+              <div class="room-card__rate-and-feeback-box">
                 <div class="rate-button-block"><img class="rate-button__img" src="./img/rate-button.svg" alt="rate" width="20" height="19"><img class="rate-button__img" src="./img/rate-button.svg" alt="rate" width="20" height="19"><img class="rate-button__img" src="./img/rate-button.svg" alt="rate" width="20" height="19"><img class="rate-button__img" src="./img/rate-button.svg" alt="rate" width="20" height="19"><img class="rate-button__img" src="./img/rate-button-white.svg" alt="blank-rate" width="20" height="19">
                 </div>
-              </div>
-              <div class="room-card__feedback-box">
                 <p class="room-card__feedback_bold">65</p>
                 <p class="room-card__feedback_normal">Отзывов</p>
               </div>

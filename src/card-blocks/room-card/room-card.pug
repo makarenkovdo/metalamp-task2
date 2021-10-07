@@ -9,9 +9,15 @@ mixin room-card(img, number, isLux, price, rate, feedback)
     section.room-card-block
         .room-card__img-box 
             img(class=".room-card__img" src=`./img/${img}.png` alt='room-img' width='270' height='151')
+            //- .img_2
+            //-     img(class=".room-card__img" src=`./img/${img}.png` alt='room-img' width='270' height='151')
+            //- .img_3
+            //-     img(class=".room-card__img" src=`./img/${img}.png` alt='room-img' width='270' height='151')
+            //- .img_4
+            //-     img(class=".room-card__img" src=`./img/${img}.png` alt='room-img' width='270' height='151')
         .room-card__title-box 
             p.room-card__title-number-sign №
-            p.room-card__title-number 888
+            p.room-card__title-number= number
             p.room-card__title-lux= isLux
             p.room-card__title-price= price
             p.room-card__title-in-a-day в сутки
