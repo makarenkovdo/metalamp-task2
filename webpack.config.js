@@ -10,6 +10,7 @@ const pugPages = [
     'form-elements',
     'headers-footers',
     'cards',
+    'landing-page',
 ]
 
 const plugins = [
