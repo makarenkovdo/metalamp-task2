@@ -3,12 +3,13 @@ include ../../components/block-title/block-title
 include ../../components/datepicker/datepicker
 include ../../components/dropdown/dropdown
 include ../../components/rate-button/rate-button
-
+include ../../components/slider/slider
 
 mixin room-card(img, number, isLux, price, rate, feedback)
     section.room-card-block
         .room-card__img-box 
-            img(class=".room-card__img" src=`./img/${img}.png` alt='room-img' width='270' height='151')
+            +slider(['room-888','room-840','room-888','room-840'])
+            //- img(class=".room-card__img" src=`./img/${img}.png` alt='room-img' width='270' height='151')
             //- .img_2
             //-     img(class=".room-card__img" src=`./img/${img}.png` alt='room-img' width='270' height='151')
             //- .img_3
