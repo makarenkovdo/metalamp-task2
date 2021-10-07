@@ -87,7 +87,7 @@ $newIconWidth: 20px;
     }
     &__title {
         @include body-font($weight: bold, $line-height: 1rem);
-        padding-top: 2px;
+        padding-top: 4px;
     }
     &__subtitle {
         @include caption-font;

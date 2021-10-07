@@ -52,6 +52,10 @@
         grid-template-columns: min-content min-content;
         margin-bottom: 30px;
     }
+    &__button-container {
+        width: 99px;
+        height: 44px;
+    }
     &__buttons-container-2 {
         display: grid;
         column-gap: 14px;

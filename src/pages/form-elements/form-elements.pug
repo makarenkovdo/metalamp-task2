@@ -29,13 +29,13 @@ block content
     .form-elements
         .form-elements__area-a     
             .form-elements__text-field
-                .form-elements-titles-container
+                div(class='form-elements__titles-container' style= {margin: '0 0 5px 0'})
                     +block-title('text field')
                     +block-subtitle('default')
                 .text-field__input-container
                     +text-field ('','email', 'Email')
             .form-elements__text-field.form-elements__text-field-2
-                .form-elements-titles-container
+                div(class='form-elements__titles-container' style= {margin: '0 0 5px 0'})
                     +block-title('text field')
                     +block-subtitle('hover / focus')
                 .text-field__input-container
@@ -45,7 +45,7 @@ block content
                     +block-title('dropdown')
                 +dropdown(1, '')
             .form-elements__masked-text-field
-                div(class='form-elements__titles-container' style= {margin: '0 0 4.4px 0'})
+                div(class='form-elements__titles-container' style= {margin: '0 0 5.5px 0'})
                     +block-title('masked text field')
                 +masked-text-field ('','masked-text-field', 'ДД.ММ.ГГГГ')
             .form-elements__date-dropdowns 
@@ -55,11 +55,11 @@ block content
                 //-     +block-title('date dropdown')
                 +datepicker()
             .form-elements__filter-date-dropdown
-                .form-elements-titles-container
+                div(class='form-elements__titles-container' style= {margin: '0 0 5px 0'})
                     +block-title('filter date dropdown')
                 +filter-date-dropdown
             .form-elements__subscription-text-field
-                .form-elements-titles-container
+                div(class='form-elements__titles-container' style= {margin: '0 0 5px 0'})
                     +block-title('subscription text field')
                 +subscription-text-field ('','email', 'Email')
             .form-elements__room-dropdown 
@@ -104,11 +104,11 @@ block content
                     +rate-button(4)
                     +rate-button(5)
             .form-elements__dropdowns-2
-                .form-elements-titles-container
+                div(class='form-elements__titles-container' style= {margin: '0 0 5px 0'})
                     +block-title('dropdown')
                 +dropdown(4, '')
             .form-elements__rich-checkbox
-                div(class='form-elements__titles-container' style= {margin: '0 0 17px 0'})
+                div(class='form-elements__titles-container' style= {margin: '0 0 15px 0'})
                     +block-title('rich checkbox buttons')
                 +rich-checkbox()
         .form-elements__area-d
@@ -121,10 +121,15 @@ block content
                 div(class='form-elements__titles-container' style= {margin: '0 0 16px 0'})
                     +block-title('BUTTONS')
                 .form-elements__buttons-container
-                    +button('purple', 'click me')
-                    +button('purple', 'click me')
-                    +button('white', 'click me')
-                    +button('white', 'click me')
+                    .form-elements__button-container                    
+                        +button('purple', 'click me')
+                    .form-elements__button-container                    
+                        +button('purple', 'click me')
+                    .form-elements__button-container                    
+                        +button('white', 'click me')
+                    .form-elements__button-container                    
+                        +button('white', 'click me')
+                    
                 .form-elements__buttons-container-2
                     +button('link', 'click me')
                     +button('link', 'click me')
@@ -134,7 +139,7 @@ block content
                     +block-title('pagination')
                 +pagination()
             .form-elements__dropdowns-3
-                .form-elements-titles-container
+                div(class='form-elements__titles-container' style= {margin: '0 0 5px 0'})
                     +block-title('dropdown')
                 +dropdown(5, '')
             .form-elements__bullet-list 
