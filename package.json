@@ -26,11 +26,11 @@
         "webpack-dev-server": "^4.2.1"
     },
     "dependencies": {
+        "@splidejs/splide": "^3.0.9",
         "air-datepicker": "^2.2.3",
         "jquery": "^3.6.0",
         "jquery-ui": "^1.12.1",
         "jsdom": "^17.0.0",
-        "pg-calendar": "^1.4.31",
         "reset-css": "^5.0.1",
         "style-loader": "^3.2.1",
         "webpack-jquery-ui": "^2.0.1"

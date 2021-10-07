@@ -51,7 +51,7 @@ module.exports = {
         likeButton: './src/components/like-button/like-button.js',
         maskedTextField:
             './src/components/masked-text-field/masked-text-field.js',
-        slickCarousel: './src/components/carousel/carousel.js',
+        slider: './src/components/slider/slider.js',
     },
     output: {
         filename: '[name].bundle.js',

@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  <script defer src="styles.bundle.js"></script><script defer src="checkboxExpList.bundle.js"></script><script defer src="datepicker.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="maskedTextField.bundle.js"></script><script defer src="slickCarousel.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"></head>
+  <script defer src="styles.bundle.js"></script><script defer src="checkboxExpList.bundle.js"></script><script defer src="datepicker.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="maskedTextField.bundle.js"></script><script defer src="slider.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"><link href="slider.css" rel="stylesheet"></head>
   <body><img class="ui-kit-template-logo" src="./img/ui-kit-logo.svg" alt="logo" width="48" height="48">
     <div class="form-elements">
       <div class="form-elements__area-a">    
         <div class="form-elements__text-field">
-          <div class="form-elements-titles-container">
+          <div class="form-elements__titles-container" style="margin:0 0 5px 0;">
             <h3 class="block-title">text field</h3>
             <h3 class="block-subtitle">default</h3>
           </div>
@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="form-elements__text-field form-elements__text-field-2">
-          <div class="form-elements-titles-container">
+          <div class="form-elements__titles-container" style="margin:0 0 5px 0;">
             <h3 class="block-title">text field</h3>
             <h3 class="block-subtitle">hover / focus</h3>
           </div>
@@ -42,7 +42,7 @@
           </section>
         </div>
         <div class="form-elements__masked-text-field">
-          <div class="form-elements__titles-container" style="margin:0 0 4.4px 0;">
+          <div class="form-elements__titles-container" style="margin:0 0 5.5px 0;">
             <h3 class="block-title">masked text field</h3>
           </div><span class="text-field-container">
             <input class="masked-text-field__input js-masked-text-field__input" type="text" name="masked-text-field" placeholder="ДД.ММ.ГГГГ" maxlength="10"></span>
@@ -64,7 +64,7 @@
           </section>
         </div>
         <div class="form-elements__filter-date-dropdown">
-          <div class="form-elements-titles-container">
+          <div class="form-elements__titles-container" style="margin:0 0 5px 0;">
             <h3 class="block-title">filter date dropdown</h3>
           </div>
           <form class="filter-date-dropdown-form">
@@ -72,7 +72,7 @@
           </form>
         </div>
         <div class="form-elements__subscription-text-field">
-          <div class="form-elements-titles-container">
+          <div class="form-elements__titles-container" style="margin:0 0 5px 0;">
             <h3 class="block-title">subscription text field</h3>
           </div>
           <form class="subscription-text-field-form"><span class="text-field-container">
@@ -244,7 +244,7 @@
           </div>
         </div>
         <div class="form-elements__dropdowns-2">
-          <div class="form-elements-titles-container">
+          <div class="form-elements__titles-container" style="margin:0 0 5px 0;">
             <h3 class="block-title">dropdown</h3>
           </div>
           <section class="dropdown-block">
@@ -258,7 +258,7 @@
           </section>
         </div>
         <div class="form-elements__rich-checkbox">
-          <div class="form-elements__titles-container" style="margin:0 0 17px 0;">
+          <div class="form-elements__titles-container" style="margin:0 0 15px 0;">
             <h3 class="block-title">rich checkbox buttons</h3>
           </div>
           <form class="rich-checkbox-container">
@@ -301,14 +301,22 @@
             <h3 class="block-title">BUTTONS</h3>
           </div>
           <div class="form-elements__buttons-container">
-            <button class="button-purple undefined" type="submit">click me
-            </button>
-            <button class="button-purple undefined" type="submit">click me
-            </button>
-            <button class="button-white undefined" type="submit">click me
-            </button>
-            <button class="button-white undefined" type="submit">click me
-            </button>
+            <div class="form-elements__button-container">                   
+              <button class="button-purple undefined" type="submit">click me
+              </button>
+            </div>
+            <div class="form-elements__button-container">                   
+              <button class="button-purple undefined" type="submit">click me
+              </button>
+            </div>
+            <div class="form-elements__button-container">                   
+              <button class="button-white undefined" type="submit">click me
+              </button>
+            </div>
+            <div class="form-elements__button-container">                   
+              <button class="button-white undefined" type="submit">click me
+              </button>
+            </div>
           </div>
           <div class="form-elements__buttons-container-2">
             <button class="button-link undefined" type="submit">click me
@@ -329,7 +337,7 @@
           </div>
         </div>
         <div class="form-elements__dropdowns-3">
-          <div class="form-elements-titles-container">
+          <div class="form-elements__titles-container" style="margin:0 0 5px 0;">
             <h3 class="block-title">dropdown</h3>
           </div>
           <section class="dropdown-block">
