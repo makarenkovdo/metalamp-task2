@@ -53,6 +53,7 @@
         grid-template-columns: 87px 196px;
         align-content: center;
         margin-right: 140px;
+        column-gap: 20px;
     }
     &__registration {
         margin-left: 20px;
@@ -74,8 +75,19 @@
         .username {
             display: grid;
             align-content: center;
-
+            padding-left: 1px;
             @include body-font($dark-shade-50, normal, 1.4167rem);
         }
+    }
+
+    &__login-button-box {
+        width: 87px;
+        height: 34px;
+        box-sizing: border-box;
+    }
+    &__registration-button-box {
+        width: 196px;
+        height: 34px;
+        box-sizing: border-box;
     }
 }

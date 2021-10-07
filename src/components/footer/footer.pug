@@ -12,8 +12,8 @@ mixin footer(isMobile)
                 a(href="" class=`${isMobile}footer__group-title`) Навигация
                 a(href="" class=`${isMobile}footer__link`) О нас
                 a(href="" class=`${isMobile}footer__link`) Новости
-                a(href="" class=`${isMobile}footer__link`) Новости
-                a(href="" class=`${isMobile}footer__link`) Новости              
+                a(href="" class=`${isMobile}footer__link`) Cлужба поддержки
+                a(href="" class=`${isMobile}footer__link`) Услуги              
             section(class=`${isMobile}footer__group`)
                 a(href="" class=`${isMobile}footer__group-title`) О нас
                 a(href="" class=`${isMobile}footer__link`) О сервисе
@@ -23,15 +23,15 @@ mixin footer(isMobile)
             section(class=`${isMobile}footer__group`)
                 a(href="" class=`${isMobile}footer__group-title`) Служба поддержки
                 a(href="" class=`${isMobile}footer__link`) Соглашения           
-                a(href="" class=`${isMobile}footer__link`) Сообщество
+                a(href="" class=`${isMobile}footer__link`) Сообщества
                 a(href="" class=`${isMobile}footer__link`) Связь с нами               
             section(class=`${isMobile}footer__group ${isMobile}footer__subscribe`)
                 a(href="" class=`${isMobile}footer__group-title`) Подписка
                 a(href="" class=`${isMobile}footer__caption`) Получайте специальные предложения и новости сервиса
                 +subscription-text-field ('','email', 'Email')
         section(class=`${isMobile}footer-copyright-bar`)
-            section(class=`${isMobile}footer__copyright ${isMobile}footer__link`) Copyright © 2018 Toxin отель. Все права защищены.
-            section(class=`${isMobile}footer__social-networks`)
+            section(class=`${isMobile}footer-copyright-bar__text ${isMobile}footer__link`) Copyright © 2018 Toxin отель. Все права защищены.
+            section(class=`${isMobile}footer-copyright-bar__social-networks`)
                 img.logo-toxin__logo(src='./img/twitter.svg' alt='logo' width='24' height='24')
                 img.logo-toxin__logo(src='./img/facebook.svg' alt='logo' width='24' height='24')
                 img.logo-toxin__logo(src='./img/instagram.svg' alt='logo' width='24' height='24')

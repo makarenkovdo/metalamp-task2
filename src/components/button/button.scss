@@ -2,10 +2,13 @@
 @import './../../styles/variables/colors.scss';
 .button {
     &-purple {
-        width: 99px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         padding-left: 19px;
         padding-right: 20px;
-        height: 44px;
+        height: 100%;
         @include h3(white, bold, 14.63px);
         background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
         border-radius: 22px;
@@ -18,11 +21,14 @@
     }
 
     &-white {
-        width: 99px;
-        padding-left: 17px;
-        padding-right: 16px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        // padding-left: 17px;
+        // padding-right: 16px;
         box-sizing: border-box;
-        height: 44px;
+        height: 100%;
         background-color: white;
         @include h3($purple, bold);
         border-radius: 22px;
