@@ -59,22 +59,32 @@ button.splide__pagination__page.is-active {
 .room-card__img-box :hover {
     .splide__arrow--prev {
         opacity: 1;
+        transition: 0.55s opacity;
     }
     .splide__arrow--next {
         opacity: 1;
+        transition: 0.55s opacity;
+    }
+    .splide__vignette-div-left {
+        opacity: 1;
+        transition: 0.55s opacity;
+    }
+    .splide__vignette-div-right {
+        opacity: 1;
+        transition: 0.55s opacity;
     }
 }
 .splide__vignette-div-left {
     position: absolute;
     width: 42px;
     height: 151px;
-    // opacity: 0;
+    opacity: 0;
 
     background: linear-gradient(
         90deg,
-        rgba(0, 0, 0, 0.5) -200%,
+        rgba(0, 0, 0, 0.5) -250%,
         rgba(0, 0, 0, 0) 99.99%,
-        rgba(255, 255, 255, 0) 500%
+        rgba(255, 255, 255, 0) 100%
     );
 }
 .splide__vignette-div-right {
@@ -82,11 +92,11 @@ button.splide__pagination__page.is-active {
     left: 228px;
     width: 42px;
     height: 151px;
-    // opacity: 0;
+    opacity: 0;
 
     background: linear-gradient(
         90deg,
-        rgba(0, 0, 0, 0.5) -200%,
+        rgba(0, 0, 0, 0.5) -250%,
         rgba(0, 0, 0, 0) 99.99%,
         rgba(255, 255, 255, 0) 100%
     );
