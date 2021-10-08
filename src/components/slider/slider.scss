@@ -72,9 +72,9 @@ button.splide__pagination__page.is-active {
 
     background: linear-gradient(
         90deg,
-        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) -200%,
         rgba(0, 0, 0, 0) 99.99%,
-        rgba(255, 255, 255, 0) 100%
+        rgba(255, 255, 255, 0) 500%
     );
 }
 .splide__vignette-div-right {
@@ -86,7 +86,7 @@ button.splide__pagination__page.is-active {
 
     background: linear-gradient(
         90deg,
-        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) -200%,
         rgba(0, 0, 0, 0) 99.99%,
         rgba(255, 255, 255, 0) 100%
     );
