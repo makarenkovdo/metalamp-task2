@@ -27,8 +27,11 @@ include ../../card-blocks/registration-card/registration-card
 include ../../card-blocks/room-card/room-card
 include ../../card-blocks/searching-card/searching-card
 
+
                 
 block content
+    -const room888=['room-888','room-888','room-888','room-888']
+    -const room840=['room-840','room-840','room-840','room-840']
     .cards-page
         .cards__margin-top-area
         .cards__margin-left-area
@@ -47,10 +50,8 @@ block content
                 .cards-calendar
                     div(class="datepicker -bottom-left- -from-bottom-") some text
                 .cards-room-888
-                    +room-card('room-888', '888', 'ЛЮКС', '9 990₽', 5, 145 ) 
-                .cards-room-888
-                    +room-card('room-888', '888', 'ЛЮКС', '9 990₽', 5, 145 ) 
+                    +room-card(room888, '888', 'ЛЮКС', '9 990₽', 5, 145 ) 
                 .cards-room-840
-                    +room-card('room-840', '840', ' ', '9 990₽', 4, 65 ) 
+                    +room-card(room840, '840', ' ', '9 990₽', 4, 65 ) 
         .cards__margin-right-area
         .cards__margin-bottom-area
