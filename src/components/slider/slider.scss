@@ -36,11 +36,16 @@ button.splide__pagination__page.is-active {
 }
 
 .room-card__img-box {
+    &:hover {
+        opacity: 1;
+    }
     .splide__arrow--prev {
         left: 13px;
+        opacity: 0;
     }
     .splide__arrow--next {
         right: 13px;
+        opacity: 0;
     }
     .splide__pagination {
         display: grid;
@@ -49,5 +54,13 @@ button.splide__pagination__page.is-active {
         bottom: 11.8px;
         left: 0;
         padding: 0 14.2px;
+    }
+}
+.room-card__img-box :hover {
+    .splide__arrow--prev {
+        opacity: 1;
+    }
+    .splide__arrow--next {
+        opacity: 1;
     }
 }

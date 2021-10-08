@@ -1649,6 +1649,66 @@ html {
 .rich-checkbox-container {
   display: grid;
 }
+/*!****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/slider/slider.scss ***!
+  \****************************************************************************************************************************/
+button.splide__pagination__page.is-active {
+  border: white;
+  background: white;
+  transform: none;
+  padding: 1px;
+}
+
+.splide.is-initialized,
+.splide.is-rendered {
+  visibility: visible;
+  width: 270px;
+}
+
+.splide__pagination .splide__pagination__page {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  height: 7.5px;
+  margin: 3px;
+  opacity: 1;
+  padding: 0;
+  transition: transform 0.2s linear;
+  width: 7.5px;
+  border: 1px solid white;
+}
+
+.room-card__img-box .splide__arrow {
+  background: transparent;
+}
+
+.room-card__img-box .splide__arrow svg {
+  fill: white;
+  opacity: 1;
+  padding-left: 7px;
+  height: 13px;
+  width: 13px;
+}
+
+.room-card__img-box .splide__arrow--prev {
+  left: 13px;
+  visibility: hidden;
+}
+.room-card__img-box .splide__arrow--prev:hover {
+  visibility: visible;
+}
+.room-card__img-box .splide__arrow--next {
+  right: 13px;
+}
+.room-card__img-box .splide__pagination {
+  display: grid;
+  grid-template-columns: repeat(4, 11.25px);
+  justify-content: end;
+  bottom: 11.8px;
+  left: 0;
+  padding: 0 14.2px;
+}
 /*!**************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/subscription-text-field/subscription-text-field.scss ***!
   \**************************************************************************************************************************************************************/
