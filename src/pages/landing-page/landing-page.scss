@@ -11,7 +11,8 @@
     &__main-container {
         height: 100%;
         display: grid;
-        grid-template-rows: 374px 368px;
+        grid-template-columns: 896px 270px;
+        grid-template-rows: 371px 368px;
         padding: 70px 181px 18px 140px;
     }
     &__background {
@@ -26,9 +27,11 @@
     }
     &__caption {
         display: grid;
+        grid-area: 2/2;
         @include body-font();
         justify-content: right;
         align-self: flex-end;
+        text-align: end;
 
         /* Dark 75% */
 

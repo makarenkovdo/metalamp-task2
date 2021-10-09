@@ -7,7 +7,7 @@
         display: grid;
         width: 380px;
         grid-template-columns: 320px;
-        grid-template-rows: 80px 86px 94px 44px;
+        grid-template-rows: 81px 86px 94px 44px;
         align-items: start;
         padding: 39px 30px 30px 29px;
 
@@ -24,6 +24,7 @@
         // grid-area: 1/1/2/3;
         @include h1;
         text-transform: none;
+        line-height: 2.1714rem;
     }
     // &__datepicker-box {
     // }
