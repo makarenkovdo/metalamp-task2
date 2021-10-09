@@ -1,21 +1,28 @@
-/* // .landing {
-//     &-page {
-//         display: grid;
-//         grid-template-columns: 1440px;
-//         grid-template-rows: 70px 830px 443px;
-//         align-items: baseline;
-//     }
-//     &__main-container {
-//         background-image: url(landing-page-img.jpg);
-//     }
-// } */
+@import './../../styles/mixins/fonts.scss';
+@import './../../styles/variables/colors.scss';
 
-.landing-page {
-    display: grid;
-    grid-template-columns: 1440px;
-    grid-template-rows: 70px 830px 443px;
-    align-items: baseline;
-}
-.landing__main-container {
-    background-image: url(img/landing-page-img.jpg);
+.landing {
+    &-page {
+        display: grid;
+        grid-template-columns: 1440px;
+        grid-template-rows: 70px 830px 443px;
+        align-items: baseline;
+    }
+    &__main-container {
+        background-image: url(img/landing-page-img.jpg);
+        height: 100%;
+        display: grid;
+        grid-template-rows: 374px 368px;
+        padding: 70px 181px 18px 140px;
+    }
+    &__caption {
+        display: grid;
+        @include body-font();
+        justify-content: right;
+        align-self: flex-end;
+
+        /* Dark 75% */
+
+        color: rgba(31, 32, 65, 0.75);
+    }
 }
