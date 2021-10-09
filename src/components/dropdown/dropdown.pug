@@ -1,6 +1,6 @@
 mixin dropdown(instance, type, width='wide')
     - const roomArray = ['0 спален, 0 кроватей','СПАЛЬНИ', 'КРОВАТИ', 'ВАННЫЕ КОМНАТЫ']
-    - const guestsArray = ['Сколько гостей?','ВЗРОСЛЫЕ', 'ДЕТИ', 'МЛАДЕНЦЫ']
+    - const guestsArray = ['Сколько гостей','ВЗРОСЛЫЕ', 'ДЕТИ', 'МЛАДЕНЦЫ']
     section.dropdown-block
         div(class="js-dropdown_instance-" + instance +"_type hide" )= type
         div(class='dropdown dropdown_'+ width+ " js-dropdown_instance-" + instance )
