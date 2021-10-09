@@ -3,10 +3,31 @@
 
 .landing {
     &-page {
-        display: grid;
-        grid-template-columns: 1440px;
-        grid-template-rows: 70px 830px 443px;
-        align-items: baseline;
+        @media (max-width: 479px) {
+        }
+        @media (min-width: 480px) and (max-width: 639px) {
+        }
+        @media (min-width: 640px) and (max-width: 767px) {
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+        }
+        @media (min-width: 1024px) and (max-width: 1279px) {
+        }
+        @media (min-width: 1280px) and (max-width: 1439px) {
+            display: grid;
+            max-width: 1439px;
+            min-width: 1280px;
+            grid-template-columns: minmax(1280px, 1440px);
+        }
+        @media (min-width: 1440px) {
+            display: grid;
+            grid-template-columns: 1440px;
+            grid-template-rows: 70px 830px 443px;
+            align-items: baseline;
+        }
+    }
+    &__header-container {
+        width: minmax(768px, 1440px);
     }
     &__main-container {
         height: 100%;
@@ -17,12 +38,12 @@
     }
     &__background {
         position: absolute;
-        width: 100%;
+        width: 1440px;
         height: 900px;
         left: 0px;
         top: 0px;
         background-image: url(img/landing-page-img.jpg);
-        background-size: 101.2% 100%;
+        background-size: 100% 100%;
         z-index: -1;
     }
     &__caption {
