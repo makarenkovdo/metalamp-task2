@@ -88,7 +88,12 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader,
                     // 'style-loader',
-                    'css-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            url: false,
+                        },
+                    },
                 ],
             },
             {
@@ -109,15 +114,15 @@ module.exports = {
             {
                 test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
                 type: 'asset/resource',
-                // use: [
-                //     {
-                //         loader: 'file-loader',
-                //         options: {
-                //             name: '[name].[contenthash].[ext]',
-                //             outputPath: 'fonts/',
-                //         },
-                //     },
-                // ],
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[contenthash].[ext]',
+                            outputPath: 'fonts/',
+                        },
+                    },
+                ],
             },
             {
                 test: /\.pug$/,
@@ -134,8 +139,12 @@ module.exports = {
                     // Creates `style` nodes from JS strings
                     MiniCssExtractPlugin.loader,
                     // Translates CSS into CommonJS
-                    'css-loader',
-                    // Compiles Sass to CSS
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            url: false,
+                        },
+                    }, // Compiles Sass to CSS
                     'sass-loader',
                 ],
             },
@@ -145,9 +154,6 @@ module.exports = {
         static: {
             directory: path.join(__dirname, 'src'),
         },
-        // contentBase: path.resolve(__dirname, 'dist'),
-        // compress: true,
         port: 9000,
-        // hot: true,
     },
 }

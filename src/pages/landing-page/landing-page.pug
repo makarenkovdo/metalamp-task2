@@ -1,4 +1,4 @@
-extends ../ui-kit-template/ui-kit-template
+extends ../page-template/page-template
 
 include ../../components/footer/footer
 include ../../components/header/header
@@ -10,4 +10,12 @@ include ../../card-blocks/registration-card/registration-card
 include ../../card-blocks/room-card/room-card
 include ../../card-blocks/searching-card/searching-card
 
-      
+
+block content 
+    main.landing-page
+        section.landing__header-container
+            +header()
+        main.landing__main-container 
+            +searching-card()
+        section.landing__footer-container
+            +footer('')

@@ -1,27 +1,27 @@
-/*!********************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/benefits/benefits.scss ***!
-  \********************************************************************************************************************************/
+/*!************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/benefits/benefits.scss ***!
+  \************************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../fonts/Montserrat-Regular.woff") format("woff"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Bold.woff2") format("woff2"), url("./../../fonts/Montserrat-Bold.woff") format("woff2"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  src: url("./../../fonts/Quicksand-Regular.woff2") format("woff2"), url("./../../fonts/Quicksand-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  src: url("./../../fonts/Quicksand-Bold.woff2") format("woff2"), url("./../../fonts/Quicksand-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -57,30 +57,30 @@
   background: rgba(31, 32, 65, 0.1);
   margin: 20px 0;
 }
-/*!********************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/block-subtitle/block-subtitle.scss ***!
-  \********************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/block-subtitle/block-subtitle.scss ***!
+  \************************************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../fonts/Montserrat-Regular.woff") format("woff"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Bold.woff2") format("woff2"), url("./../../fonts/Montserrat-Bold.woff") format("woff2"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  src: url("./../../fonts/Quicksand-Regular.woff2") format("woff2"), url("./../../fonts/Quicksand-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  src: url("./../../fonts/Quicksand-Bold.woff2") format("woff2"), url("./../../fonts/Quicksand-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -96,9 +96,9 @@
   color: rgba(31, 32, 65, 0.5);
   text-transform: uppercase;
 }
-/*!**************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/block-title/block-title.scss ***!
-  \**************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/block-title/block-title.scss ***!
+  \******************************************************************************************************************************************************************/
 .block-title {
   display: grid;
   justify-content: left;
@@ -111,31 +111,31 @@
   color: #1f2041;
   text-transform: uppercase;
 }
-/*!**************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/bullet-list/bullet-list.scss ***!
-  \**************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/bullet-list/bullet-list.scss ***!
+  \******************************************************************************************************************************************************************/
 @charset "UTF-8";
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../fonts/Montserrat-Regular.woff") format("woff"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Bold.woff2") format("woff2"), url("./../../fonts/Montserrat-Bold.woff") format("woff2"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  src: url("./../../fonts/Quicksand-Regular.woff2") format("woff2"), url("./../../fonts/Quicksand-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  src: url("./../../fonts/Quicksand-Bold.woff2") format("woff2"), url("./../../fonts/Quicksand-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -170,9 +170,9 @@ ul.bullet-list {
   left: -5px;
   color: rgba(31, 32, 65, 0.25);
 }
-/*!****************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/button/button.scss ***!
-  \****************************************************************************************************************************/
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/button/button.scss ***!
+  \********************************************************************************************************************************************************/
 .button-purple {
   display: grid;
   align-items: center;
@@ -258,9 +258,9 @@ ul.bullet-list {
   left: 290px;
   padding-left: 0px;
 }
-/*!****************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-expandable-list/checkbox-expandable-list.scss ***!
-  \****************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-expandable-list/checkbox-expandable-list.scss ***!
+  \********************************************************************************************************************************************************************************************/
 details > summary {
   padding: 15px 0 17px;
   box-sizing: border-box;
@@ -297,15 +297,15 @@ details[open] summary:after {
   transform: rotate(225deg);
   margin-top: 6px;
 }
-/*!******************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-list/checkbox-list.scss ***!
-  \******************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-list/checkbox-list.scss ***!
+  \**********************************************************************************************************************************************************************/
 .checkbox-list {
   margin-top: 16px;
 }
-/*!********************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox/checkbox.scss ***!
-  \********************************************************************************************************************************/
+/*!************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox/checkbox.scss ***!
+  \************************************************************************************************************************************************************/
 .checkbox-label {
   display: grid;
   grid-template-columns: 30px 1fr;
@@ -439,9 +439,9 @@ details[open] summary:after {
   transform: rotate(45deg);
   opacity: 0;
 }
-/*!**************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/color-block/color-block.scss ***!
-  \**************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/color-block/color-block.scss ***!
+  \******************************************************************************************************************************************************************/
 .color-block-container {
   width: 281px;
 }
@@ -565,9 +565,9 @@ details[open] summary:after {
   left: 260px;
   top: 692px;
 }
-/*!************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/datepicker/datepicker.scss ***!
-  \************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/datepicker/datepicker.scss ***!
+  \****************************************************************************************************************************************************************/
 .datepicker-form {
   width: 320px;
 }
@@ -594,9 +594,9 @@ details[open] summary:after {
   left: 980px;
   z-index: 5;
 }
-/*!********************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/dropdown/dropdown.scss ***!
-  \********************************************************************************************************************************/
+/*!************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/dropdown/dropdown.scss ***!
+  \************************************************************************************************************************************************************/
 @charset "UTF-8";
 .dropdown {
   display: grid;
@@ -780,9 +780,9 @@ details[open] summary:after {
 .invisible {
   visibility: hidden !important;
 }
-/*!********************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/feedback/feedback.scss ***!
-  \********************************************************************************************************************************/
+/*!************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/feedback/feedback.scss ***!
+  \************************************************************************************************************************************************************/
 .feedback-container {
   display: grid;
   grid-template-columns: 58px 653px;
@@ -831,9 +831,9 @@ details[open] summary:after {
   padding-top: 12px;
   padding-left: 4px;
 }
-/*!********************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/filter-date-dropdown/filter-date-dropdown.scss ***!
-  \********************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/filter-date-dropdown/filter-date-dropdown.scss ***!
+  \************************************************************************************************************************************************************************************/
 .filter-date-dropdown-form {
   display: grid;
   box-sizing: border-box;
@@ -845,30 +845,30 @@ details[open] summary:after {
 .filter-date-dropdown-form .js-datepicker-input {
   width: 266px;
 }
-/*!****************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/footer/footer.scss ***!
-  \****************************************************************************************************************************/
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/footer/footer.scss ***!
+  \********************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../fonts/Montserrat-Regular.woff") format("woff"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Bold.woff2") format("woff2"), url("./../../fonts/Montserrat-Bold.woff") format("woff2"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  src: url("./../../fonts/Quicksand-Regular.woff2") format("woff2"), url("./../../fonts/Quicksand-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  src: url("./../../fonts/Quicksand-Bold.woff2") format("woff2"), url("./../../fonts/Quicksand-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -1145,30 +1145,30 @@ html {
 .mobile-footer__caption {
   display: none;
 }
-/*!****************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/header/header.scss ***!
-  \****************************************************************************************************************************/
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/header/header.scss ***!
+  \********************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../fonts/Montserrat-Regular.woff") format("woff"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Bold.woff2") format("woff2"), url("./../../fonts/Montserrat-Bold.woff") format("woff2"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  src: url("./../../fonts/Quicksand-Regular.woff2") format("woff2"), url("./../../fonts/Quicksand-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  src: url("./../../fonts/Quicksand-Bold.woff2") format("woff2"), url("./../../fonts/Quicksand-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -1348,13 +1348,13 @@ html {
   height: 34px;
   box-sizing: border-box;
 }
-/*!*****************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/interior-form-texts-mixins.scss ***!
-  \*****************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/interior-form-texts-mixins.scss ***!
+  \*********************************************************************************************************************************************************************/
 
-/*!**************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/like-button/like-button.scss ***!
-  \**************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/like-button/like-button.scss ***!
+  \******************************************************************************************************************************************************************/
 .like-button {
   cursor: pointer;
   /* 2 */
@@ -1395,9 +1395,9 @@ html {
 .like-button__counter_active {
   color: #bc9cff;
 }
-/*!************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/logo-toxin/logo-toxin.scss ***!
-  \************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/logo-toxin/logo-toxin.scss ***!
+  \****************************************************************************************************************************************************************/
 .logo-toxin-block {
   display: grid;
   grid-template-columns: max-content max-content;
@@ -1410,9 +1410,9 @@ html {
   display: grid;
   margin: 1px 0 0 7.5px;
 }
-/*!**************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/masked-text-field/masked-text-field.scss ***!
-  \**************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/masked-text-field/masked-text-field.scss ***!
+  \******************************************************************************************************************************************************************************/
 .masked-text-field-container {
   display: grid;
 }
@@ -1455,9 +1455,9 @@ html {
 .masked-text-field__input:focus {
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
-/*!************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/pagination/pagination.scss ***!
-  \************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/pagination/pagination.scss ***!
+  \****************************************************************************************************************************************************************/
 .pagination-container {
   display: grid;
   font-style: normal;
@@ -1511,30 +1511,30 @@ html {
   margin-top: 7.56px;
   padding-left: 6px;
 }
-/*!****************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/radio-button/radio-button.scss ***!
-  \****************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/radio-button/radio-button.scss ***!
+  \********************************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../fonts/Montserrat-Regular.woff") format("woff"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Bold.woff2") format("woff2"), url("./../../fonts/Montserrat-Bold.woff") format("woff2"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  src: url("./../../fonts/Quicksand-Regular.woff2") format("woff2"), url("./../../fonts/Quicksand-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  src: url("./../../fonts/Quicksand-Bold.woff2") format("woff2"), url("./../../fonts/Quicksand-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -1606,9 +1606,9 @@ html {
   /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
 }
-/*!**************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/rate-button/rate-button.scss ***!
-  \**************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/rate-button/rate-button.scss ***!
+  \******************************************************************************************************************************************************************/
 .rate-button {
   display: inline-block;
   line-height: 1;
@@ -1636,22 +1636,22 @@ html {
 .rate-button__img {
   margin: 0 2px 0 2px;
 }
-/*!****************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/registration/registration.scss ***!
-  \****************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/registration/registration.scss ***!
+  \********************************************************************************************************************************************************************/
 .registration-container {
   width: 380px;
   height: 646px;
 }
-/*!******************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/rich-checkbox/rich-checkbox.scss ***!
-  \******************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/rich-checkbox/rich-checkbox.scss ***!
+  \**********************************************************************************************************************************************************************/
 .rich-checkbox-container {
   display: grid;
 }
-/*!****************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/slider/slider.scss ***!
-  \****************************************************************************************************************************/
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/slider/slider.scss ***!
+  \********************************************************************************************************************************************************/
 button.splide__pagination__page.is-active {
   border: white;
   background: white;
@@ -1691,15 +1691,16 @@ button.splide__pagination__page.is-active {
   width: 13px;
 }
 
+.room-card__img-box:hover {
+  opacity: 1;
+}
 .room-card__img-box .splide__arrow--prev {
   left: 13px;
-  visibility: hidden;
-}
-.room-card__img-box .splide__arrow--prev:hover {
-  visibility: visible;
+  opacity: 0;
 }
 .room-card__img-box .splide__arrow--next {
   right: 13px;
+  opacity: 0;
 }
 .room-card__img-box .splide__pagination {
   display: grid;
@@ -1709,9 +1710,44 @@ button.splide__pagination__page.is-active {
   left: 0;
   padding: 0 14.2px;
 }
-/*!**************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/subscription-text-field/subscription-text-field.scss ***!
-  \**************************************************************************************************************************************************************/
+
+.room-card__img-box :hover .splide__arrow--prev {
+  opacity: 1;
+  transition: 0.55s opacity;
+}
+.room-card__img-box :hover .splide__arrow--next {
+  opacity: 1;
+  transition: 0.55s opacity;
+}
+.room-card__img-box :hover .splide__vignette-div-left {
+  opacity: 1;
+  transition: 0.55s opacity;
+}
+.room-card__img-box :hover .splide__vignette-div-right {
+  opacity: 1;
+  transition: 0.55s opacity;
+}
+
+.splide__vignette-div-left {
+  position: absolute;
+  width: 42px;
+  height: 151px;
+  opacity: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) -250%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+}
+
+.splide__vignette-div-right {
+  position: absolute;
+  left: 228px;
+  width: 42px;
+  height: 151px;
+  opacity: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) -250%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/subscription-text-field/subscription-text-field.scss ***!
+  \******************************************************************************************************************************************************************************************/
 .subscription-text-field-form {
   display: grid;
   box-sizing: border-box;
@@ -1724,9 +1760,9 @@ button.splide__pagination__page.is-active {
 .subscription-text-field-form .text-field__input {
   border: 0px;
 }
-/*!************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/text-field/text-field.scss ***!
-  \************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/text-field/text-field.scss ***!
+  \****************************************************************************************************************************************************************/
 .text-field-container {
   display: grid;
 }
@@ -1769,9 +1805,9 @@ button.splide__pagination__page.is-active {
 .text-field__input:focus {
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
-/*!****************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/toggle/toggle.scss ***!
-  \****************************************************************************************************************************/
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/toggle/toggle.scss ***!
+  \********************************************************************************************************************************************************/
 .toggle-container {
   display: grid;
   margin-bottom: 14px;
@@ -1856,9 +1892,9 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-/*!*********************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/cards/cards.scss ***!
-  \*********************************************************************************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/pages/cards/cards.scss ***!
+  \*************************************************************************************************************************************************/
 .cards-page {
   display: grid;
   grid-template-columns: 140px 1160px 140px;
@@ -1907,30 +1943,30 @@ input:checked + .slider:before {
 .cards-titles-container {
   display: grid;
 }
-/*!***************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/color-and-type/color-and-type.scss ***!
-  \***************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/pages/color-and-type/color-and-type.scss ***!
+  \*******************************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../fonts/Montserrat-Regular.woff") format("woff"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Bold.woff2") format("woff2"), url("./../../fonts/Montserrat-Bold.woff") format("woff2"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  src: url("./../../fonts/Quicksand-Regular.woff2") format("woff2"), url("./../../fonts/Quicksand-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  src: url("./../../fonts/Quicksand-Bold.woff2") format("woff2"), url("./../../fonts/Quicksand-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -2064,30 +2100,30 @@ input:checked + .slider:before {
   /* Dark 75% */
   color: rgba(31, 32, 65, 0.75);
 }
-/*!*************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/form-elements/form-elements.scss ***!
-  \*************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/pages/form-elements/form-elements.scss ***!
+  \*****************************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../fonts/Montserrat-Regular.woff") format("woff"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Bold.woff2") format("woff2"), url("./../../fonts/Montserrat-Bold.woff") format("woff2"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  src: url("./../../fonts/Quicksand-Regular.woff2") format("woff2"), url("./../../fonts/Quicksand-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  src: url("./../../fonts/Quicksand-Bold.woff2") format("woff2"), url("./../../fonts/Quicksand-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -2286,9 +2322,9 @@ html {
   display: grid;
   justify-self: right;
 }
-/*!*****************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/headers-footers/headers-footers.scss ***!
-  \*****************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/pages/headers-footers/headers-footers.scss ***!
+  \*********************************************************************************************************************************************************************/
 .headers-footers-page {
   background-color: #e5e5e5;
   max-width: 1440px;
@@ -2296,102 +2332,127 @@ html {
 .headers-footers__header-container {
   padding-top: 140px;
 }
-/*!***********************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/landing-page/landing-page.scss ***!
-  \***********************************************************************************************************************************/
+/*!***************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/pages/landing-page/landing-page.scss ***!
+  \***************************************************************************************************************************************************************/
+/* // .landing {
+//     &-page {
+//         display: grid;
+//         grid-template-columns: 1440px;
+//         grid-template-rows: 70px 830px 443px;
+//         align-items: baseline;
+//     }
+//     &__main-container {
+//         background-image: url(landing-page-img.jpg);
+//     }
+// } */
+.landing-page {
+  display: grid;
+  grid-template-columns: 1440px;
+  grid-template-rows: 70px 830px 443px;
+  align-items: baseline;
+}
 
-/*!*****************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/ui-kit-template/ui-kit-template.scss ***!
-  \*****************************************************************************************************************************************/
+.landing__main-container {
+  background-image: url(img/landing-page-img.jpg);
+}
+/*!*****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/pages/page-template/page-template.scss ***!
+  \*****************************************************************************************************************************************************************/
+
+/*!*********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/pages/ui-kit-template/ui-kit-template.scss ***!
+  \*********************************************************************************************************************************************************************/
 .ui-kit-template-logo {
   position: absolute;
   width: 48px;
   height: 48px;
   left: 30px;
   top: 30px;
-  background: url(dded68ce7f618a3b07f6.svg) no-repeat;
+  background: url("./ui-kit-logo.svg") no-repeat;
 }
-/*!***********************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/global-fonts.scss ***!
-  \***********************************************************************************************************************/
+/*!***************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/global-fonts.scss ***!
+  \***************************************************************************************************************************************************/
 
-/*!****************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/font-faces.scss ***!
-  \****************************************************************************************************************************/
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/font-faces.scss ***!
+  \********************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../fonts/Montserrat-Regular.woff") format("woff"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Bold.woff2") format("woff2"), url("./../../fonts/Montserrat-Bold.woff") format("woff2"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  src: url("./../../fonts/Quicksand-Regular.woff2") format("woff2"), url("./../../fonts/Quicksand-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  src: url("./../../fonts/Quicksand-Bold.woff2") format("woff2"), url("./../../fonts/Quicksand-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
-/*!***********************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/fonts.scss ***!
-  \***********************************************************************************************************************/
+/*!***************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/fonts.scss ***!
+  \***************************************************************************************************************************************************/
 
-/*!*****************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/placeholder.scss ***!
-  \*****************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/placeholder.scss ***!
+  \*********************************************************************************************************************************************************/
 
-/*!****************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/responsive.scss ***!
-  \****************************************************************************************************************************/
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/responsive.scss ***!
+  \********************************************************************************************************************************************************/
 
-/*!********************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/variables/breakpoints.scss ***!
-  \********************************************************************************************************************************/
+/*!************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/variables/breakpoints.scss ***!
+  \************************************************************************************************************************************************************/
 
-/*!***************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/variables/colors.scss ***!
-  \***************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/variables/colors.scss ***!
+  \*******************************************************************************************************************************************************/
 
-/*!*****************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/booking-card/booking-card.scss ***!
-  \*****************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/booking-card/booking-card.scss ***!
+  \*********************************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../fonts/Montserrat-Regular.woff") format("woff"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Bold.woff2") format("woff2"), url("./../../fonts/Montserrat-Bold.woff") format("woff2"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  src: url("./../../fonts/Quicksand-Regular.woff2") format("woff2"), url("./../../fonts/Quicksand-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  src: url("./../../fonts/Quicksand-Bold.woff2") format("woff2"), url("./../../fonts/Quicksand-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
 .booking-card-block {
   display: grid;
   width: 380px;
+  background-color: white;
   box-sizing: border-box;
   align-items: flex-start;
   padding: 39px 30px 30px 29px;
@@ -2507,35 +2568,36 @@ html {
   border-width: thin;
   margin: 18px 0 0 5px;
 }
-/*!*************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/login-card/login-card.scss ***!
-  \*************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/login-card/login-card.scss ***!
+  \*****************************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../fonts/Montserrat-Regular.woff") format("woff"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Bold.woff2") format("woff2"), url("./../../fonts/Montserrat-Bold.woff") format("woff2"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  src: url("./../../fonts/Quicksand-Regular.woff2") format("woff2"), url("./../../fonts/Quicksand-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  src: url("./../../fonts/Quicksand-Bold.woff2") format("woff2"), url("./../../fonts/Quicksand-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
 .login-card-block {
   display: grid;
+  background-color: white;
   align-items: flex-start;
   grid-template-rows: 50px 118px 74px 44px;
   padding: 39px 30px 30px 29px;
@@ -2573,30 +2635,30 @@ html {
   width: 99px;
   height: 44px;
 }
-/*!***************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/registration-card/registration-card.scss ***!
-  \***************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/registration-card/registration-card.scss ***!
+  \*******************************************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../fonts/Montserrat-Regular.woff") format("woff"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Bold.woff2") format("woff2"), url("./../../fonts/Montserrat-Bold.woff") format("woff2"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  src: url("./../../fonts/Quicksand-Regular.woff2") format("woff2"), url("./../../fonts/Quicksand-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  src: url("./../../fonts/Quicksand-Bold.woff2") format("woff2"), url("./../../fonts/Quicksand-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -2605,6 +2667,7 @@ html {
   align-items: flex-start;
   grid-template-rows: 50px 105.56px 47px 84px 124px 47px 74px 44px;
   padding: 39px 30px 30px 29px;
+  background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -2645,30 +2708,30 @@ html {
   width: 99px;
   height: 44px;
 }
-/*!***********************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/room-card/room-card.scss ***!
-  \***********************************************************************************************************************************/
+/*!***************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/room-card/room-card.scss ***!
+  \***************************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../fonts/Montserrat-Regular.woff") format("woff"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Bold.woff2") format("woff2"), url("./../../fonts/Montserrat-Bold.woff") format("woff2"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  src: url("./../../fonts/Quicksand-Regular.woff2") format("woff2"), url("./../../fonts/Quicksand-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  src: url("./../../fonts/Quicksand-Bold.woff2") format("woff2"), url("./../../fonts/Quicksand-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -2763,30 +2826,30 @@ html {
   color: rgba(31, 32, 65, 0.5);
   padding-top: 2px;
 }
-/*!*********************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/searching-card/searching-card.scss ***!
-  \*********************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/card-blocks/searching-card/searching-card.scss ***!
+  \*************************************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(518803d3e08549d2d704.woff2) format("woff2"), url(529d91f8321cc635816e.woff) format("woff"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Regular.woff2") format("woff2"), url("./../../fonts/Montserrat-Regular.woff") format("woff"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(dbf9cc3b5d0be6860367.woff2) format("woff2"), url(c742b2fa0aaad7cc229c.woff) format("woff2"), url(3cd786652b8a2e9d41f2.ttf) format("ttf");
+  src: url("./../../fonts/Montserrat-Bold.woff2") format("woff2"), url("./../../fonts/Montserrat-Bold.woff") format("woff2"), url("./../../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(335a811e1f9eeca6bedb.woff2) format("woff2"), url(28ffdec0bc00ff2c9802.woff);
+  src: url("./../../fonts/Quicksand-Regular.woff2") format("woff2"), url("./../../fonts/Quicksand-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(148383d36e5b4d4788d2.woff2) format("woff2"), url(81630c88ffba8f095bad.woff);
+  src: url("./../../fonts/Quicksand-Bold.woff2") format("woff2"), url("./../../fonts/Quicksand-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -2797,6 +2860,7 @@ html {
   grid-template-rows: 80px 86px 94px 44px;
   align-items: start;
   padding: 39px 30px 30px 29px;
+  background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);

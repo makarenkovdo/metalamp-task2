@@ -1,0 +1,21 @@
+/* // .landing {
+//     &-page {
+//         display: grid;
+//         grid-template-columns: 1440px;
+//         grid-template-rows: 70px 830px 443px;
+//         align-items: baseline;
+//     }
+//     &__main-container {
+//         background-image: url(landing-page-img.jpg);
+//     }
+// } */
+
+.landing-page {
+    display: grid;
+    grid-template-columns: 1440px;
+    grid-template-rows: 70px 830px 443px;
+    align-items: baseline;
+}
+.landing__main-container {
+    background-image: url(img/landing-page-img.jpg);
+}

@@ -5,6 +5,7 @@
 .login-card {
     &-block {
         display: grid;
+        background-color: white;
         align-items: flex-start;
         grid-template-rows: 50px 118px 74px 44px;
         padding: 39px 30px 30px 29px;
