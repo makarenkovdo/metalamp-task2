@@ -15,20 +15,18 @@
         }
         @media (min-width: 1280px) and (max-width: 1439px) {
             display: grid;
-            max-width: 1439px;
-            min-width: 1280px;
-            grid-template-columns: minmax(1280px, 1440px);
+            width: 100vw;
+            // grid-template-columns: minmax(1280px, 1440px);
         }
         @media (min-width: 1440px) {
             display: grid;
-            grid-template-columns: 1440px;
+            // grid-template-columns: 1440px;
             grid-template-rows: 70px 830px 443px;
             align-items: baseline;
         }
     }
-    &__header-container {
-        width: minmax(768px, 1440px);
-    }
+    // &__header-container {
+    // }
     &__main-container {
         height: 100%;
         display: grid;
