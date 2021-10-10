@@ -26,45 +26,56 @@
           </section>
         </header>
       </section>
-      <main class="registration__main-container"> 
-        <form class="searching-card-block">
-          <div class="searching-card__title">Найдем номера под ваши пожелания</div>
-          <div class="searching-card__datepicker-box">
-            <section class="datepicker-form">
-              <div class="datepicker__titles-container">
-                <h3 class="block-title">прибытие</h3>
-                <h3 class="block-title">выезд</h3>
-              </div>
-              <div class="datepicker__inputs-container">
-                <div class="datepicker__input-box">
-                  <input class="datepicker-here js-datepicker-input js-datepicker-input_instance-1" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown__img-box"><img class="datepicker__arrow-icon" src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
-                </div>
-                <div class="datepicker__input-box">
-                  <input class="js-datepicker-input js-datepicker-second-input js-datepicker-second-input_instance-1" type="text" data-range="true" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance__img-box"><img class="datepicker__arrow-icon" src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
-                </div>
-              </div>
-            </section>
-          </div>
-          <div class="searching-card__dropdown-box">
-            <div class="searching-card__titles-container" style="margin:0 0 4px 0;">
-              <h3 class="block-title">гости</h3>
+      <main class="registration__main-container">
+        <div class="registration__card-container">
+          <form class="registration-card-block">
+            <div class="registration-card__title">Регистрация аккаунта</div>
+            <div class="registration-card__text-fields"><span class="text-field-container">
+                <input class="text-field__input" type="text" value="" name="name" placeholder="Имя"></span><span class="text-field-container">
+                <input class="text-field__input" type="text" value="" name="surname" placeholder="Фамилия"></span>
             </div>
-            <section class="dropdown-block">
-              <div class="js-dropdown_instance-1_type hide"></div>
-              <div class="dropdown dropdown_wide js-dropdown_instance-1">
-                <div class="dropdown__button js-dropdown_instance-1__button"><span class="dropdown__text js-dropdown_instance-1__text">Сколько гостей</span><span class="dropdown__img-box js-dropdown_instance-1__img-box"><img class="dropdown__arrow-icon" src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
+            <div class="registration-card__radio-buttons">
+              <section class="radio-button-block">
+                <label class="radio-label">
+                  <input class="radio__input" type="radio" name="color" value="indigo"><span class="radio__new-icon"></span><span class="radio__text">Мужчина</span>
+                </label>
+                <label class="radio-label">
+                  <input class="radio__input" type="radio" name="color" value="indigo"><span class="radio__new-icon"></span><span class="radio__text">Женщина</span>
+                </label>
+              </section>
+            </div>
+            <div class="registration-card__date">
+              <div class="searching-card__titles-container" style="margin:0 0 4px 0;">
+                <h3 class="block-title">дата рождения</h3>
+              </div><span class="text-field-container">
+                <input class="masked-text-field__input js-masked-text-field__input" type="text" name="date" placeholder="ДД.ММ.ГГГГ" maxlength="10"></span>
+            </div>
+            <div class="registration-card__user-data">
+              <div class="searching-card__titles-container" style="margin:0 0 4px 0;">
+                <h3 class="block-title">данные для входа в сервис</h3>
               </div>
-              <div class="dropdown__popup dropdown__popup_wide js-dropdown_instance-1__popup hide" style="width:widepx;"><span class="dropdown__option-text js-dropdown_instance-1__option-text">ВЗРОСЛЫЕ</span><span class="dropdown__decrease js-dropdown_instance-1__decrease1"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-1__counter1">0</span><span class="dropdown__increase js-dropdown_instance-1__increase1"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-1__option-text">ДЕТИ</span><span class="dropdown__decrease js-dropdown_instance-1__decrease2"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-1__counter2">0</span><span class="dropdown__increase js-dropdown_instance-1__increase2"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-1__option-text">МЛАДЕНЦЫ</span><span class="dropdown__decrease js-dropdown_instance-1__decrease3"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-1__counter3">0</span><span class="dropdown__increase js-dropdown_instance-1__increase3"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span>
-                <div class="dropdown__adding-buttons"><span class="dropdown__clear js-dropdown_instance-1__clear invisible">ОЧИСТИТЬ</span><span class="dropdown__apply js-dropdown_instance-1__apply">ПРИМЕНИТЬ</span></div>
+              <div class="registration-card__text-fields"><span class="text-field-container">
+                  <input class="text-field__input" type="text" value="" name="email" placeholder="Email"></span><span class="text-field-container">
+                  <input class="text-field__input" type="text" value="" name="password" placeholder="Пароль"></span>
               </div>
-            </section>
-          </div>
-          <div class="searching-card__button-box">
-            <button class="button-with-arrow undefined" type="submit">подобрать номер<img class="button__arrow-icon" src="./img/arrow-button.svg" alt="submit" width="18" height="17">
-            </button>
-          </div>
-        </form>
-        <p class="registration__caption">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+            </div>
+            <div class="registration-card__toggle">
+              <label class="toggle-container"><span class="toggle-inline-container">
+                  <input type="checkbox"><span class="slider round"></span><span class="toggle-caption">Получать спецпредложения</span></span></label>
+            </div>
+            <div class="registration-card__button-box">
+              <button class="button-with-arrow undefined" type="submit">зарегистрироваться<img class="button__arrow-icon" src="./img/arrow-button.svg" alt="submit" width="18" height="17">
+              </button>
+            </div>
+            <div class="registration-card__login-box">
+              <div class="registration-card__login-caption">Уже есть аккаунт на Toxin</div>
+              <div class="registration-card__login-button-box">
+                <button class="button-white undefined" type="submit">войти
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
         <div class="registration__background"></div>
       </main>
       <section class="registration__footer-container">

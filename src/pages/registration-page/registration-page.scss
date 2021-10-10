@@ -1,28 +1,17 @@
 @import './../../styles/mixins/fonts.scss';
 @import './../../styles/variables/colors.scss';
 
-@media (max-width: 479px) {
-    html {
-        font-size: 10px;
-    }
-}
+// @media (max-width: 479px) {
+//     html {
+//         font-size: 3px;
+//     }
+// }
 
 .registration {
     &-page {
-        @media (max-width: 479px) {
-            font-size: 5px;
-
-            html {
-                font-size: 5px;
-            }
-        }
-        @media (min-width: 480px) and (max-width: 639px) {
-        }
-        @media (min-width: 640px) and (max-width: 767px) {
-        }
-        @media (min-width: 768px) and (max-width: 1023px) {
-        }
-        @media (min-width: 1024px) and (max-width: 1279px) {
+        @media (min-width: 320px) and (max-width: 1279px) {
+            display: grid;
+            width: 100vw;
         }
         @media (min-width: 1280px) and (max-width: 1439px) {
             display: grid;
@@ -56,16 +45,22 @@
         align-content: center;
         @media (min-width: 320px) and (max-width: 1439px) {
             width: 100vw;
-            height: 47.5vw;
+            height: max-content;
         }
         @media (min-width: 1440px) {
             height: 684px;
         }
     }
     &__card-container {
-        width: 380px;
-        height: 646px;
-        padding-left: 6px;
+        @media (min-width: 320px) and (max-width: 1439px) {
+            padding-top: 20px;
+        }
+
+        @media (min-width: 1440px) {
+            width: 380px;
+            height: 646px;
+            padding-left: 6px;
+        }
     }
     &__background {
         position: absolute;
@@ -76,6 +71,7 @@
         background-image: url(img/registration-page-img.jpg);
         background-size: 100% 83.8%;
         z-index: -1;
+        background-repeat: no-repeat;
         @media (min-width: 320px) and (max-width: 767px) {
             width: 100vw;
             height: 62vw;

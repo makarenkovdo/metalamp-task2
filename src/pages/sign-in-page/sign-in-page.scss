@@ -1,21 +1,8 @@
 @import './../../styles/mixins/fonts.scss';
 @import './../../styles/variables/colors.scss';
 
-@media (max-width: 479px) {
-    html {
-        font-size: 10px;
-    }
-}
-
 .sign-in-page {
     &-page {
-        @media (max-width: 479px) {
-            font-size: 5px;
-
-            html {
-                font-size: 5px;
-            }
-        }
         @media (min-width: 480px) and (max-width: 639px) {
         }
         @media (min-width: 640px) and (max-width: 767px) {

@@ -2558,16 +2558,8 @@ html {
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/pages/landing-page/landing-page.scss ***!
   \***************************************************************************************************************************************************************/
 @media (max-width: 479px) {
-  html {
-    font-size: 10px;
-  }
-}
-@media (max-width: 479px) {
-  .landing-page {
-    font-size: 5px;
-  }
   .landing-page html {
-    font-size: 5px;
+    font-size: 10px;
   }
 }
 @media (min-width: 1280px) and (max-width: 1439px) {
@@ -2708,17 +2700,10 @@ html {
 /*!*************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/pages/registration-page/registration-page.scss ***!
   \*************************************************************************************************************************************************************************/
-@media (max-width: 479px) {
-  html {
-    font-size: 10px;
-  }
-}
-@media (max-width: 479px) {
+@media (min-width: 320px) and (max-width: 1279px) {
   .registration-page {
-    font-size: 5px;
-  }
-  .registration-page html {
-    font-size: 5px;
+    display: grid;
+    width: 100vw;
   }
 }
 @media (min-width: 1280px) and (max-width: 1439px) {
@@ -2730,9 +2715,12 @@ html {
 @media (min-width: 1440px) {
   .registration-page {
     display: grid;
-    grid-template-rows: 70px 830px 443px;
+    grid-template-rows: 70px 684px 443px;
     align-items: baseline;
   }
+}
+.registration__header-container {
+  box-sizing: border-box;
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .registration__header-container {
@@ -2745,40 +2733,29 @@ html {
   }
 }
 .registration__main-container {
-  height: 100%;
+  width: 100vw;
   display: grid;
+  box-sizing: border-box;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-@media (max-width: 479px) {
+@media (min-width: 320px) and (max-width: 1439px) {
   .registration__main-container {
-    padding-top: 50px;
-    grid-template-rows: 371px 68px;
-    grid-template-columns: 100vw;
-    justify-items: center;
-    row-gap: 20px;
-  }
-}
-@media (min-width: 480px) and (max-width: 767px) {
-  .registration__main-container {
-    padding: 70px 181px 18px 0px;
-    grid-template-rows: 371px 68px;
-    grid-template-columns: 100vw;
-    justify-items: center;
-  }
-}
-@media (min-width: 768px) and (max-width: 1439px) {
-  .registration__main-container {
-    padding: 70px 0px 18px 70px;
-    grid-template-rows: 371px max-content;
-    grid-template-columns: minmax(max-content, 695px) 270px;
-    column-gap: 20px;
+    width: 100vw;
+    height: max-content;
   }
 }
 @media (min-width: 1440px) {
   .registration__main-container {
-    grid-template-columns: 896px 270px;
-    grid-template-rows: 371px 368px;
-    padding: 70px 181px 18px 140px;
+    height: 684px;
   }
+}
+.registration__card-container {
+  width: 380px;
+  height: 646px;
+  padding-left: 6px;
 }
 .registration__background {
   position: absolute;
@@ -2787,8 +2764,9 @@ html {
   left: 0px;
   top: 0px;
   background-image: url(img/registration-page-img.jpg);
-  background-size: 100% 100%;
+  background-size: 100% 83.8%;
   z-index: -1;
+  background-repeat: no-repeat;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .registration__background {
