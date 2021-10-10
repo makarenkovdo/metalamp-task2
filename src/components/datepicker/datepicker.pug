@@ -9,11 +9,11 @@ mixin datepicker(instance,title1='date dropdown', title2='date dropdown', isOpen
                 .datepicker__input-box
                     input(class="datepicker-here js-datepicker-input js-datepicker-input_instance-" + instance type='text' data-range='true' data-multiple-dates-separator=' - ' placeholder='ДД.ММ.ГГГГ' )
                     span(class="dropdown__img-box js-dropdown__img-box")
-                        img(src='./img/dropdown.svg' alt='open' width='13' height='8')
+                        img(class='datepicker__arrow-icon' src='./img/dropdown.svg' alt='open' width='13' height='8')
                 .datepicker__input-box
                     input(class="js-datepicker-input js-datepicker-second-input js-datepicker-second-input_instance-" + instance type='text' data-range='true' data-multiple-dates-separator=' - ' placeholder='ДД.ММ.ГГГГ')
                     span(class="dropdown__img-box js-dropdown_instance__img-box")
-                        img(src='./img/dropdown.svg' alt='open' width='13' height='8')
+                        img(class='datepicker__arrow-icon' src='./img/dropdown.svg' alt='open' width='13' height='8')
     else 
         section.datepicker-form
             .datepicker__titles-container

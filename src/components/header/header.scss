@@ -93,8 +93,9 @@
         }
         @media (max-width: 479px) {
             grid-template-columns: 70px 74px 72px;
-            column-gap: 10px;
-            padding-bottom: 10px;
+            column-gap: 15px;
+            row-gap: 20px;
+            padding-bottom: 20px;
             justify-content: center;
         }
         @media (min-width: 480px) and (max-width: 767px) {
@@ -114,6 +115,8 @@
         display: grid;
         align-self: center;
         justify-self: center;
+        width: 0.8571rem;
+        height: 0.5714rem;
     }
     &__auth {
         display: grid;
@@ -144,6 +147,7 @@
             margin-right: 10px;
             justify-content: center;
             grid-area: 2/1/2/3;
+            padding-bottom: 20px;
         }
         @media (min-width: 1024px) and (max-width: 1439px) {
             margin-right: 70px;

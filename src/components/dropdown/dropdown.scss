@@ -4,19 +4,19 @@
 .dropdown {
     display: grid;
     box-sizing: border-box;
-    width: 320px;
+    width: 22.8571rem;
     z-index: 0;
 
     &_wide {
-        width: 320px;
+        width: 22.8571rem;
     }
     &_narrow {
-        width: 266px;
+        width: 19rem;
     }
 
     &__button {
         display: grid;
-        padding: 9px 0 9px 0px;
+        padding: 0.6429rem 0 0.6429rem 0rem;
         box-sizing: border-box;
         grid-template-columns: 1fr max-content;
         width: 100%;
@@ -28,9 +28,9 @@
 
         /* Dark 50% */
 
-        border: 1px solid rgba(31, 32, 65, 0.5);
+        border: 0.0714rem solid rgba(31, 32, 65, 0.5);
         box-sizing: border-box;
-        border-radius: 2px 2px 0px 0px;
+        border-radius: 0.1429rem 0.1429rem 0rem 0rem;
 
         //
 
@@ -42,12 +42,12 @@
         color: rgba(31, 32, 65, 0.75);
     }
     &__text {
-        padding-left: 14px;
-        // margin-bottom: 5px;
+        padding-left: 1rem;
+        // margin-bottom: .3571rem;
     }
     &__img-box {
         display: grid;
-        width: 44px;
+        width: 3.1429rem;
         align-items: center;
         justify-content: center;
     }
@@ -59,45 +59,45 @@
         position: absolute;
 
         display: grid;
-        grid-template-rows: 37px 37px 30px 52px;
+        grid-template-rows: 2.6429rem 2.6429rem 2.1429rem 3.7143rem;
 
         // grid-template-columns: 69.0625% 9.375% 10% 11.5625%;
-        grid-template-columns: minmax(167px, 221px) 30px 32px 37px;
+        grid-template-columns: minmax(11.9286rem, 15.7857rem) 2.1429rem 2.2857rem 2.6429rem;
 
-        width: 320px;
-        // height: 159px;
+        width: 22.8571rem;
+        // height: 11.3571rem;
 
         background: #ffffff;
         /* Dark 50% */
-        border: 1px solid rgba(31, 32, 65, 0.5);
-        border-top: 0px;
+        border: 0.0714rem solid rgba(31, 32, 65, 0.5);
+        border-top: 0rem;
         box-sizing: border-box;
-        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-        border-radius: 0px 0px 2px 2px;
+        box-shadow: 0rem 0.7143rem 1.4286rem rgba(31, 32, 65, 0.05);
+        border-radius: 0rem 0rem 0.1429rem 0.1429rem;
         z-index: 1;
         &_wide {
-            width: 320px;
+            width: 22.8571rem;
         }
         &_narrow {
-            width: 266px;
+            width: 19rem;
         }
         &_room {
             display: grid;
-            grid-template-rows: 37px 37px 30px 14px;
+            grid-template-rows: 2.6429rem 2.6429rem 2.1429rem 1rem;
             position: absolute;
 
             // grid-template-columns: 69.0625% 9.375% 10% 11.5625%;
-            grid-template-columns: minmax(167px, 221px) 30px 32px 37px;
+            grid-template-columns: minmax(11.9286rem, 15.7857rem) 2.1429rem 2.2857rem 2.6429rem;
 
-            // height: 159px;
+            // height: 11.3571rem;
 
             background: #ffffff;
             /* Dark 50% */
-            border: 1px solid rgba(31, 32, 65, 0.5);
-            border-top: 0px;
+            border: 0.0714rem solid rgba(31, 32, 65, 0.5);
+            border-top: 0rem;
             box-sizing: border-box;
-            box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-            border-radius: 0px 0px 2px 2px;
+            box-shadow: 0rem 0.7143rem 1.4286rem rgba(31, 32, 65, 0.05);
+            border-radius: 0rem 0rem 0.1429rem 0.1429rem;
             z-index: 1;
         }
     }
@@ -106,15 +106,15 @@
         justify-content: center;
         align-items: center;
 
-        width: 30px;
-        height: 30px;
+        width: 2.1429rem;
+        height: 2.1429rem;
 
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        border: 0.0714rem solid rgba(31, 32, 65, 0.25);
         box-sizing: border-box;
-        border-radius: 22px;
+        border-radius: 1.5714rem;
 
-        margin-top: 7px;
-        margin-right: 7px;
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
         cursor: pointer;
     }
 
@@ -122,14 +122,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 7px;
+        margin-top: 0.5rem;
         /* Rectangle 2 */
 
-        width: 30px;
-        height: 30px;
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        width: 2.1429rem;
+        height: 2.1429rem;
+        border: 0.0714rem solid rgba(31, 32, 65, 0.25);
         box-sizing: border-box;
-        border-radius: 22px;
+        border-radius: 1.5714rem;
         cursor: pointer;
     }
 
@@ -138,11 +138,11 @@
         text-align: center;
         /* Dark 100% */
         color: #1f2041;
-        margin-top: 13px;
+        margin-top: 0.9286rem;
     }
     &__option-text {
-        margin-left: 14px;
-        margin-top: 14px;
+        margin-left: 1rem;
+        margin-top: 1rem;
         @include h3;
 
         /* Dark 100% */
@@ -151,9 +151,9 @@
     &__adding-buttons {
         display: grid;
         box-sizing: border-box;
-        width: 320px;
-        grid-template-columns: 160px 160px;
-        padding-top: 26px;
+        width: 22.8571rem;
+        grid-template-columns: 11.4286rem 11.4286rem;
+        padding-top: 1.8571rem;
     }
     &__apply {
         display: grid;
@@ -163,7 +163,7 @@
 
         /* применить */
 
-        padding-right: 8px;
+        padding-right: 0.5714rem;
         justify-self: right;
         justify-content: right;
         @include h3(#bc9cff);
@@ -173,26 +173,15 @@
         display: grid;
         align-content: end;
         padding-bottom: 30.365%;
-        padding-left: 14px;
+        padding-left: 1rem;
         cursor: pointer;
         justify-self: left;
 
         @include h3(#bc9cff);
     }
-
-    @media (max-width: 479px) {
-    }
-    @media (min-width: 480px) and (max-width: 639px) {
-    }
-    @media (min-width: 640px) and (max-width: 767px) {
-    }
-    @media (min-width: 768px) and (max-width: 1023px) {
-    }
-    @media (min-width: 1024px) and (max-width: 1199px) {
-    }
-    @media (min-width: 1200px) and (max-width: 1439px) {
-    }
-    @media (min-width: 1440px) {
+    &__arrow-icon {
+        width: 0.9286rem;
+        height: 0.5714rem;
     }
 }
 

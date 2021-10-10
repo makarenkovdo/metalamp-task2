@@ -7,7 +7,7 @@ mixin dropdown(instance, type, width='wide')
             div(class="dropdown__button js-dropdown_instance-" + instance + "__button")
                 span(class="dropdown__text js-dropdown_instance-" + instance + "__text")= type? roomArray[0]:guestsArray[0]
                 span(class="dropdown__img-box js-dropdown_instance-" + instance + "__img-box")
-                    img(src='./img/dropdown.svg' alt='open' width='13' height='8')
+                    img(class="dropdown__arrow-icon" src='./img/dropdown.svg' alt='open' width='13' height='8')
         div(class="dropdown__popup"+ type+  " dropdown__popup_"+ width+ " js-dropdown_instance-" + instance + "__popup hide" style={width: `${width}px`})
             span(class="dropdown__option-text js-dropdown_instance-" + instance + "__option-text")= type? roomArray[1]:guestsArray[1]
             span(class="dropdown__decrease js-dropdown_instance-" + instance + "__decrease1")
