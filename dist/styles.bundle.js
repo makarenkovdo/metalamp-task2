@@ -371,14 +371,25 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/pages/landing-page/landing-page-img.jpg":
-/*!*****************************************************!*\
-  !*** ./src/pages/landing-page/landing-page-img.jpg ***!
-  \*****************************************************/
+/***/ "./src/pages/registration-page/img/registration-page-img.jpg":
+/*!*******************************************************************!*\
+  !*** ./src/pages/registration-page/img/registration-page-img.jpg ***!
+  \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/landing-page-img.jpg\");\n\n//# sourceURL=webpack://task2/./src/pages/landing-page/landing-page-img.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/registration-page-img.jpg\");\n\n//# sourceURL=webpack://task2/./src/pages/registration-page/img/registration-page-img.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/sign-in-page/img/sign-in-page-img.jpg":
+/*!*********************************************************!*\
+  !*** ./src/pages/sign-in-page/img/sign-in-page-img.jpg ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/sign-in-page-img.jpg\");\n\n//# sourceURL=webpack://task2/./src/pages/sign-in-page/img/sign-in-page-img.jpg?");
 
 /***/ }),
 
@@ -822,6 +833,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/pages/registration-page/registration-page.scss":
+/*!************************************************************!*\
+  !*** ./src/pages/registration-page/registration-page.scss ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/pages/registration-page/registration-page.scss?");
+
+/***/ }),
+
+/***/ "./src/pages/sign-in-page/sign-in-page.scss":
+/*!**************************************************!*\
+  !*** ./src/pages/sign-in-page/sign-in-page.scss ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/pages/sign-in-page/sign-in-page.scss?");
+
+/***/ }),
+
 /***/ "./src/pages/ui-kit-template/ui-kit-template.scss":
 /*!********************************************************!*\
   !*** ./src/pages/ui-kit-template/ui-kit-template.scss ***!
@@ -956,7 +989,7 @@ eval("var map = {\n\t\"./benefits/benefits.scss\": \"./src/components/benefits/b
   \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./cards/cards.scss\": \"./src/pages/cards/cards.scss\",\n\t\"./color-and-type/color-and-type.scss\": \"./src/pages/color-and-type/color-and-type.scss\",\n\t\"./form-elements/form-elements.scss\": \"./src/pages/form-elements/form-elements.scss\",\n\t\"./headers-footers/headers-footers.scss\": \"./src/pages/headers-footers/headers-footers.scss\",\n\t\"./landing-page/landing-page.scss\": \"./src/pages/landing-page/landing-page.scss\",\n\t\"./page-template/page-template.scss\": \"./src/pages/page-template/page-template.scss\",\n\t\"./ui-kit-template/ui-kit-template.scss\": \"./src/pages/ui-kit-template/ui-kit-template.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.(scss|css)$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.(scss%7Ccss)$?");
+eval("var map = {\n\t\"./cards/cards.scss\": \"./src/pages/cards/cards.scss\",\n\t\"./color-and-type/color-and-type.scss\": \"./src/pages/color-and-type/color-and-type.scss\",\n\t\"./form-elements/form-elements.scss\": \"./src/pages/form-elements/form-elements.scss\",\n\t\"./headers-footers/headers-footers.scss\": \"./src/pages/headers-footers/headers-footers.scss\",\n\t\"./landing-page/landing-page.scss\": \"./src/pages/landing-page/landing-page.scss\",\n\t\"./page-template/page-template.scss\": \"./src/pages/page-template/page-template.scss\",\n\t\"./registration-page/registration-page.scss\": \"./src/pages/registration-page/registration-page.scss\",\n\t\"./sign-in-page/sign-in-page.scss\": \"./src/pages/sign-in-page/sign-in-page.scss\",\n\t\"./ui-kit-template/ui-kit-template.scss\": \"./src/pages/ui-kit-template/ui-kit-template.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.(scss|css)$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.(scss%7Ccss)$?");
 
 /***/ }),
 
@@ -966,7 +999,7 @@ eval("var map = {\n\t\"./cards/cards.scss\": \"./src/pages/cards/cards.scss\",\n
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./landing-page/img/landing-page-img.jpg\": \"./src/pages/landing-page/img/landing-page-img.jpg\",\n\t\"./landing-page/img/landing-page-img.png\": \"./src/pages/landing-page/img/landing-page-img.png\",\n\t\"./landing-page/landing-page-img.jpg\": \"./src/pages/landing-page/landing-page-img.jpg\",\n\t\"./ui-kit-template/ui-kit-logo.svg\": \"./src/pages/ui-kit-template/ui-kit-logo.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.(svg|png|jpg)$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.(svg%7Cpng%7Cjpg)$?");
+eval("var map = {\n\t\"./landing-page/img/landing-page-img.jpg\": \"./src/pages/landing-page/img/landing-page-img.jpg\",\n\t\"./landing-page/img/landing-page-img.png\": \"./src/pages/landing-page/img/landing-page-img.png\",\n\t\"./registration-page/img/registration-page-img.jpg\": \"./src/pages/registration-page/img/registration-page-img.jpg\",\n\t\"./sign-in-page/img/sign-in-page-img.jpg\": \"./src/pages/sign-in-page/img/sign-in-page-img.jpg\",\n\t\"./ui-kit-template/ui-kit-logo.svg\": \"./src/pages/ui-kit-template/ui-kit-logo.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.(svg|png|jpg)$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.(svg%7Cpng%7Cjpg)$?");
 
 /***/ }),
 

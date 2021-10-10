@@ -1,0 +1,24 @@
+extends ../page-template/page-template
+
+include ../../components/footer/footer
+include ../../components/header/header
+
+
+include ../../card-blocks/booking-card/booking-card
+include ../../card-blocks/login-card/login-card
+include ../../card-blocks/registration-card/registration-card
+include ../../card-blocks/room-card/room-card
+include ../../card-blocks/searching-card/searching-card
+
+
+block content 
+    main.registration-page
+        section.registration__header-container
+            +header('signin')
+        main.registration__main-container
+            .registration__card-container
+                +registration-card()
+            .registration__background
+
+        section.registration__footer-container
+            +footer('')

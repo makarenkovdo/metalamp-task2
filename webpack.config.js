@@ -11,6 +11,8 @@ const pugPages = [
     'headers-footers',
     'cards',
     'landing-page',
+    'registration-page',
+    'sign-in-page',
 ]
 
 const plugins = [
