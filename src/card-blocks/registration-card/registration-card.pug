@@ -8,7 +8,7 @@ include ../../components/text-field/text-field
 include ../../components/toggle/toggle
 
 
-mixin registration-card
+mixin registration-card(buttonText)
     form.registration-card-block
         .registration-card__title Регистрация аккаунта
         .registration-card__text-fields
@@ -29,7 +29,7 @@ mixin registration-card
         .registration-card__toggle
             +toggle('Получать спецпредложения')
         .registration-card__button-box
-            +button('with-arrow', 'перейти к оплате')
+            +button('with-arrow', buttonText)
         .registration-card__login-box
             .registration-card__login-caption Уже есть аккаунт на Toxin
             .registration-card__login-button-box
