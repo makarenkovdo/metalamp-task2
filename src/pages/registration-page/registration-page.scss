@@ -32,11 +32,13 @@
         @media (min-width: 1440px) {
             display: grid;
             // grid-template-columns: 1440px;
-            grid-template-rows: 70px 830px 443px;
+            grid-template-rows: 70px 684px 443px;
             align-items: baseline;
         }
     }
     &__header-container {
+        box-sizing: border-box;
+
         @media (min-width: 768px) and (max-width: 1439px) {
             width: 100vw;
         }
@@ -47,21 +49,23 @@
     &__main-container {
         width: 100vw;
         display: grid;
+        box-sizing: border-box;
         justify-items: center;
         justify-content: center;
         align-items: center;
         align-content: center;
         @media (min-width: 320px) and (max-width: 1439px) {
             width: 100vw;
-            height: 44.861vw;
+            height: 47.5vw;
         }
         @media (min-width: 1440px) {
-            height: 646px;
+            height: 684px;
         }
     }
     &__card-container {
         width: 380px;
         height: 646px;
+        padding-left: 6px;
     }
     &__background {
         position: absolute;
@@ -70,7 +74,7 @@
         left: 0px;
         top: 0px;
         background-image: url(img/registration-page-img.jpg);
-        background-size: 100% 100%;
+        background-size: 100% 83.8%;
         z-index: -1;
         @media (min-width: 320px) and (max-width: 767px) {
             width: 100vw;
