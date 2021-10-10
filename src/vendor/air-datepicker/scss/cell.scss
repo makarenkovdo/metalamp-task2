@@ -67,7 +67,7 @@
     }
 
     &.-range-from- {
-        border: 1px solid rgba(map_get($datepickerBG, selected), 0.5);
+        border: 0.0714rem solid rgba(map_get($datepickerBG, selected), 0.5);
         background-color: map_get($datepickerBG, inRange);
         border-radius: $datepickerBorderRadius;
 
@@ -83,7 +83,7 @@
     }
 
     &.-range-to- {
-        border: 1px solid rgba(map_get($datepickerBG, selected), 0.5);
+        border: 0.0714rem solid rgba(map_get($datepickerBG, selected), 0.5);
         background-color: map_get($datepickerBG, inRange);
         border-radius: $datepickerBorderRadius;
         &::after {
@@ -141,9 +141,9 @@
 
 .datepicker--days-names {
     display: grid;
-    grid-template-columns: repeat(7, 40px);
-    grid-template-rows: 36px;
-    margin: 7px 0 3px;
+    grid-template-columns: repeat(7, 2.8571rem);
+    grid-template-rows: 2.5714rem;
+    margin: 0.5rem 0 0.2143rem;
 }
 
 .datepicker--day-name {
@@ -151,7 +151,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 0px;
+    margin-left: 0rem;
     text-align: center;
     text-transform: inherit;
     font-size: 0.8571rem;

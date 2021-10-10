@@ -1,15 +1,15 @@
 @import './../../../styles/mixins/fonts.scss';
 @import './../../../styles/variables/colors.scss';
 
-$datepickerDayCellSize: 40px !default;
-$datepickerWidth: 320px !default;
-$datepickerMinBodyHeight: 369px !default;
-$datepickerBorderRadius: 22px !default;
-$datepickerPadding: 0px !default;
+$datepickerDayCellSize: 2.8571rem !default;
+$datepickerWidth: 22.8571rem !default;
+$datepickerMinBodyHeight: 26.3571rem !default;
+$datepickerBorderRadius: 1.5714rem !default;
+$datepickerPadding: 0rem !default;
 $datepickerZIndex: 100 !default;
 
 $datepickerFontFamily: Montserrat !default;
-$datepickerFontSize: 14px !default;
+$datepickerFontSize: 1rem !default;
 
 $datepickerYearsPerRow: 4 !default;
 
@@ -40,16 +40,16 @@ $datepickerBorderColor: (
     default: #dbdbdb,
 ) !default;
 
-$datepickerNavigationHeight: 32px !default;
-$datepickerNavigationButtonsOffset: 2px !default;
+$datepickerNavigationHeight: 2.2857rem !default;
+$datepickerNavigationButtonsOffset: 0.1429rem !default;
 
-$datepickerPointerSize: 10px !default;
-$datepickerPointerOffset: 10px !default;
+$datepickerPointerSize: 0.7143rem !default;
+$datepickerPointerOffset: 0.7143rem !default;
 
 // Transitions
 $datepickerTransitionSpeed: 0.3s !default;
 $datepickerTransitionEase: ease !default;
-$datepickerTransitionOffset: 8px !default;
+$datepickerTransitionOffset: 0.5714rem !default;
 
 // Objects
 %otherMonth {

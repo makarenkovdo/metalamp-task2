@@ -672,8 +672,6 @@
             })
         },
 
-       
-
         clear: function () {
             this.selectedDates = []
             this.minRange = ''
@@ -896,7 +894,7 @@
 
             this.$datepicker.css({
                 left: left,
-                top: top,
+                top: top - 6,
             })
         },
 
