@@ -12,11 +12,12 @@ include ../../card-blocks/searching-card/searching-card
 
 
 block content 
-    main.sign-in-page-page
+    main.sign-in-page
         section.sign-in-page__header-container
             +header('signin')
         main.sign-in-page__main-container 
-            +login-card()
+            .sign-in-page__card-container
+                +login-card()
             .sign-in-page__background
         section.sign-in-page__footer-container
             +footer('')

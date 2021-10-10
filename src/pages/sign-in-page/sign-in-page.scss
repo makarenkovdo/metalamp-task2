@@ -1,29 +1,36 @@
 @import './../../styles/mixins/fonts.scss';
 @import './../../styles/variables/colors.scss';
 
+// @media (max-width: 479px) {
+//     html {
+//         font-size: 3px;
+//     }
+// }
+
 .sign-in-page {
-    &-page {
-        @media (min-width: 480px) and (max-width: 639px) {
-        }
-        @media (min-width: 640px) and (max-width: 767px) {
-        }
-        @media (min-width: 768px) and (max-width: 1023px) {
-        }
-        @media (min-width: 1024px) and (max-width: 1279px) {
-        }
-        @media (min-width: 1280px) and (max-width: 1439px) {
-            display: grid;
-            width: 100vw;
-            // grid-template-columns: minmax(1280px, 1440px);
-        }
-        @media (min-width: 1440px) {
-            display: grid;
-            // grid-template-columns: 1440px;
-            grid-template-rows: 70px 830px 443px;
-            align-items: baseline;
-        }
+    @media (max-width: 480px) {
+        display: grid;
+        width: 100vw;
+        grid-template-rows: 300px 400px;
     }
+    @media (min-width: 480px) and (max-width: 1279px) {
+        display: grid;
+        width: 100vw;
+        grid-template-rows: 200px 400px;
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+        display: grid;
+        width: 100vw;
+        // grid-template-columns: minmax(1280px, 1440px);
+    }
+    @media (min-width: 1440px) {
+        display: grid;
+        grid-template-rows: 70px max-content max-content;
+    }
+
     &__header-container {
+        box-sizing: border-box;
+
         @media (min-width: 768px) and (max-width: 1439px) {
             width: 100vw;
         }
@@ -32,31 +39,31 @@
         }
     }
     &__main-container {
-        height: 100%;
+        width: 100vw;
         display: grid;
-        @media (max-width: 479px) {
-            padding-top: 50px;
-            grid-template-rows: 371px 68px;
-            grid-template-columns: 100vw;
-            justify-items: center;
-            row-gap: 20px;
-        }
-        @media (min-width: 480px) and (max-width: 767px) {
-            padding: 70px 181px 18px 0px;
-            grid-template-rows: 371px 68px;
-            grid-template-columns: 100vw;
-            justify-items: center;
-        }
-        @media (min-width: 768px) and (max-width: 1439px) {
-            padding: 70px 0px 18px 70px;
-            grid-template-rows: 371px max-content;
-            grid-template-columns: minmax(max-content, 695px) 270px;
-            column-gap: 20px;
+        box-sizing: border-box;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        @media (min-width: 320px) and (max-width: 1439px) {
+            width: 100vw;
+            height: max-content;
         }
         @media (min-width: 1440px) {
-            grid-template-columns: 896px 270px;
-            grid-template-rows: 371px 368px;
-            padding: 70px 181px 18px 140px;
+            height: 684px;
+        }
+    }
+    &__card-container {
+        @media (min-width: 320px) and (max-width: 1439px) {
+            padding-top: 20px;
+        }
+
+        @media (min-width: 1440px) {
+            width: 380px;
+            height: 646px;
+            display: grid;
+            align-items: center;
         }
     }
     &__background {
@@ -66,8 +73,9 @@
         left: 0px;
         top: 0px;
         background-image: url(img/sign-in-page-img.jpg);
-        background-size: 100% 100%;
+        background-size: 100% 83.8%;
         z-index: -1;
+        background-repeat: no-repeat;
         @media (min-width: 320px) and (max-width: 767px) {
             width: 100vw;
             height: 62vw;

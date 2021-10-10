@@ -7,24 +7,23 @@
 //     }
 // }
 
-.registration {
-    &-page {
-        @media (min-width: 320px) and (max-width: 1279px) {
-            display: grid;
-            width: 100vw;
-        }
-        @media (min-width: 1280px) and (max-width: 1439px) {
-            display: grid;
-            width: 100vw;
-            // grid-template-columns: minmax(1280px, 1440px);
-        }
-        @media (min-width: 1440px) {
-            display: grid;
-            // grid-template-columns: 1440px;
-            grid-template-rows: 70px 684px 443px;
-            align-items: baseline;
-        }
+.registration-page {
+    @media (min-width: 320px) and (max-width: 1279px) {
+        display: grid;
+        width: 100vw;
     }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+        display: grid;
+        width: 100vw;
+        // grid-template-columns: minmax(1280px, 1440px);
+    }
+    @media (min-width: 1440px) {
+        display: grid;
+        // grid-template-columns: 1440px;
+        grid-template-rows: 70px 684px 443px;
+        align-items: baseline;
+    }
+
     &__header-container {
         box-sizing: border-box;
 
