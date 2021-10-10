@@ -10,8 +10,13 @@
         background: #ffffff;
         box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
         @media (max-width: 479px) {
+            max-width: 100vw;
+            grid-template-columns: 100%;
+            justify-content: center;
         }
+
         @media (min-width: 480px) and (max-width: 639px) {
+            max-width: 100vw;
             grid-template-columns: 100%;
             justify-content: center;
         }
@@ -38,11 +43,16 @@
         }
     }
     &-logo-container {
+        display: grid;
         @media (max-width: 479px) {
+            padding-top: 20px 20;
+            padding-bottom: 20px;
+            justify-content: center;
         }
-        @media (min-width: 480px) and (max-width: 639px) {
-        }
-        @media (min-width: 640px) and (max-width: 767px) {
+        @media (min-width: 480px) and (max-width: 767px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            justify-content: center;
         }
         @media (min-width: 768px) and (max-width: 1023px) {
             margin-left: 20px;
@@ -82,10 +92,14 @@
             @include body-font($dark-shade-50, normal, 1.4167rem);
         }
         @media (max-width: 479px) {
+            grid-template-columns: 70px 74px 72px;
+            column-gap: 10px;
+            padding-bottom: 10px;
+            justify-content: center;
         }
-        @media (min-width: 480px) and (max-width: 639px) {
-        }
-        @media (min-width: 640px) and (max-width: 767px) {
+        @media (min-width: 480px) and (max-width: 767px) {
+            padding-bottom: 20px;
+            justify-content: center;
         }
         @media (min-width: 768px) and (max-width: 1023px) {
         }
@@ -107,21 +121,31 @@
         grid-template-columns: 87px 196px;
 
         @media (max-width: 479px) {
+            grid-template-columns: max-content;
+            padding-bottom: 10px;
+            justify-content: center;
+            justify-items: center;
+            row-gap: 10px;
         }
-        @media (min-width: 480px) and (max-width: 639px) {
+        @media (min-width: 480px) and (max-width: 640px) {
+            padding-bottom: 20px;
+            justify-content: center;
+            column-gap: 10px;
         }
         @media (min-width: 640px) and (max-width: 767px) {
-            @media (min-width: 640px) and (max-width: 1023px) {
-                grid-area: 2/2/2/2;
-                column-gap: 10px;
-                padding-bottom: 10px;
-            }
+            grid-area: 2/1/2/3;
+            column-gap: 10px;
+            padding-bottom: 20px;
+            justify-content: center;
         }
-        @media (min-width: 768px) and (max-width: 1279px) {
+
+        @media (min-width: 768px) and (max-width: 1023px) {
             column-gap: 10px;
             margin-right: 10px;
+            justify-content: center;
+            grid-area: 2/1/2/3;
         }
-        @media (min-width: 1280px) and (max-width: 1439px) {
+        @media (min-width: 1024px) and (max-width: 1439px) {
             margin-right: 70px;
             column-gap: 20px;
         }

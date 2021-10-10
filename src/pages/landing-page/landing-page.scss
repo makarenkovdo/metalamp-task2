@@ -43,6 +43,14 @@
         background-image: url(img/landing-page-img.jpg);
         background-size: 100% 100%;
         z-index: -1;
+        @media (max-width: 479px) and (max-width: 1439px) {
+            width: 100vw;
+            height: 62vw;
+        }
+        @media (min-width: 1440px) {
+            width: 1440px;
+            height: 900px;
+        }
     }
     &__caption {
         display: grid;
