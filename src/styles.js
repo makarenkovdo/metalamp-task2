@@ -4,7 +4,7 @@ function importAll(r) {
     r.keys().forEach((key) => (cache[key] = r(key)))
 }
 importAll(require.context('./components/', true, /\.(svg|png)$/))
-importAll(require.context('./card-blocks/', true, /\.(svg|png)$/))
+importAll(require.context('./card-blocks/', true, /\.(svg|png|jpg)$/))
 importAll(require.context('./pages/', true, /\.(svg|png|jpg)$/))
 
 // importAll(require.context('./components/', true, /\.png$/))

@@ -15,7 +15,139 @@
   \***********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var cache = {};\n\nfunction importAll(r) {\n  r.keys().forEach(function (key) {\n    return cache[key] = r(key);\n  });\n}\n\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.(svg|png)$\"));\nimportAll(__webpack_require__(\"./src/card-blocks sync recursive \\\\.(svg|png)$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.(svg|png|jpg)$\")); // importAll(require.context('./components/', true, /\\.png$/))\n// importAll(require.context('./card-blocks/', true, /\\.png$/))\n\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.(scss|css)$\"));\nimportAll(__webpack_require__(\"./src/styles sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/card-blocks sync recursive \\\\.scss$\"));\n\n//# sourceURL=webpack://task2/./src/styles.js?");
+eval("var cache = {};\n\nfunction importAll(r) {\n  r.keys().forEach(function (key) {\n    return cache[key] = r(key);\n  });\n}\n\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.(svg|png)$\"));\nimportAll(__webpack_require__(\"./src/card-blocks sync recursive \\\\.(svg|png|jpg)$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.(svg|png|jpg)$\")); // importAll(require.context('./components/', true, /\\.png$/))\n// importAll(require.context('./card-blocks/', true, /\\.png$/))\n\nimportAll(__webpack_require__(\"./src/components sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/pages sync recursive \\\\.(scss|css)$\"));\nimportAll(__webpack_require__(\"./src/styles sync recursive \\\\.scss$\"));\nimportAll(__webpack_require__(\"./src/card-blocks sync recursive \\\\.scss$\"));\n\n//# sourceURL=webpack://task2/./src/styles.js?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-350__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-350__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-350__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-350__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-352__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-352__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-352__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-352__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-444__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-444__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-444__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-444__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-450__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-450__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-450__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-450__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-666__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-666__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-666__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-666__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-678__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-678__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-678__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-678__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-740__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-740__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-740__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-740__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-840__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-840__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-840__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-840__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-852__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-852__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-852__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-852__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-888__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-888__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-888__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-888__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-980__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-980__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-980__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-980__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-982__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-982__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-982__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-982__small-1.jpg?");
 
 /***/ }),
 
@@ -932,13 +1064,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./src/card-blocks sync recursive \\.(svg|png)$":
-/*!********************************************!*\
-  !*** ./src/card-blocks/ sync \.(svg|png)$ ***!
-  \********************************************/
-/***/ ((module) => {
+/***/ "./src/card-blocks sync recursive \\.(svg|png|jpg)$":
+/*!************************************************!*\
+  !*** ./src/card-blocks/ sync \.(svg|png|jpg)$ ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("function webpackEmptyContext(req) {\n\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\te.code = 'MODULE_NOT_FOUND';\n\tthrow e;\n}\nwebpackEmptyContext.keys = () => ([]);\nwebpackEmptyContext.resolve = webpackEmptyContext;\nwebpackEmptyContext.id = \"./src/card-blocks sync recursive \\\\.(svg|png)$\";\nmodule.exports = webpackEmptyContext;\n\n//# sourceURL=webpack://task2/./src/card-blocks/_sync_\\.(svg%7Cpng)$?");
+eval("var map = {\n\t\"./room-card/img/room-350__small-1.jpg\": \"./src/card-blocks/room-card/img/room-350__small-1.jpg\",\n\t\"./room-card/img/room-352__small-1.jpg\": \"./src/card-blocks/room-card/img/room-352__small-1.jpg\",\n\t\"./room-card/img/room-444__small-1.jpg\": \"./src/card-blocks/room-card/img/room-444__small-1.jpg\",\n\t\"./room-card/img/room-450__small-1.jpg\": \"./src/card-blocks/room-card/img/room-450__small-1.jpg\",\n\t\"./room-card/img/room-666__small-1.jpg\": \"./src/card-blocks/room-card/img/room-666__small-1.jpg\",\n\t\"./room-card/img/room-678__small-1.jpg\": \"./src/card-blocks/room-card/img/room-678__small-1.jpg\",\n\t\"./room-card/img/room-740__small-1.jpg\": \"./src/card-blocks/room-card/img/room-740__small-1.jpg\",\n\t\"./room-card/img/room-840__small-1.jpg\": \"./src/card-blocks/room-card/img/room-840__small-1.jpg\",\n\t\"./room-card/img/room-852__small-1.jpg\": \"./src/card-blocks/room-card/img/room-852__small-1.jpg\",\n\t\"./room-card/img/room-888__small-1.jpg\": \"./src/card-blocks/room-card/img/room-888__small-1.jpg\",\n\t\"./room-card/img/room-980__small-1.jpg\": \"./src/card-blocks/room-card/img/room-980__small-1.jpg\",\n\t\"./room-card/img/room-982__small-1.jpg\": \"./src/card-blocks/room-card/img/room-982__small-1.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/card-blocks sync recursive \\\\.(svg|png|jpg)$\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/_sync_\\.(svg%7Cpng%7Cjpg)$?");
 
 /***/ }),
 

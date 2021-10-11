@@ -6,7 +6,7 @@ include ../../components/rate-button/rate-button
 include ../../components/slider/slider
 
 mixin room-card(number, isLux, price, rate, feedback)
-    - var imgArray = [`room-${number}-small-1`,`room-${number}-small-1`,`room-${number}-small-1`,`room-${number}-small-1`]
+    - var imgArray = [`room-${number}__small-1`,`room-${number}__small-1`,`room-${number}__small-1`,`room-${number}__small-1`]
     section.room-card-block
         .room-card__img-box 
             +slider(imgArray)
