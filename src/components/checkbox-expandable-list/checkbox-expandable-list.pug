@@ -1,7 +1,7 @@
 include ../../components/checkbox/checkbox
 mixin checkbox-expandable-list(title)
-    details(class='checkbox-expandable-list')
-        <summary>#{title}</summary>
+    details.checkbox-expandable-list__details
+        summary.checkbox-expandable-list__summary #{title}
         +checkbox('Завтрак')
         +checkbox('Письменный стол')
         +checkbox('Стул для кормления')

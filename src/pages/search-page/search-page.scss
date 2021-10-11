@@ -53,6 +53,18 @@
         display: grid;
         grid-template-columns: 266px;
         grid-template-rows: 86px 88px 108px 160px 175.5px 79px 260px;
+        .checkbox-expandable-list {
+            &__details[open] summary:after {
+                transform: rotate(225deg);
+                margin-top: 4px;
+            }
+            &__summary {
+                &::after {
+                    margin-left: 32px;
+                    margin-top: 1px;
+                }
+            }
+        }
     }
     &__filter-date-dropdown {
         padding-top: 1px;
