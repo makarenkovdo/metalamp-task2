@@ -72,6 +72,10 @@
     &__range-slider-caption {
         @include caption-font();
     }
+    &__range-slider-container {
+        border: 1px solid silver;
+        padding: 10px 0 15px 0;
+    }
 
     &__room-list {
         display: grid;
@@ -106,7 +110,8 @@
     }
     &__titles-container {
         display: grid;
-        grid-template-columns: 1fr 0.5fr;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 7px;
     }
 
     &__footer-container {
