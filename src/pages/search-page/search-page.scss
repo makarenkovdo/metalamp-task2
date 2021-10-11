@@ -23,7 +23,7 @@
     @media (min-width: 1440px) {
         display: grid;
         // grid-template-columns: 1440px;
-        grid-template-rows: 70px 830px 443px;
+        grid-template-rows: 70px 1357px 443px;
         align-items: baseline;
     }
 
@@ -36,77 +36,42 @@
         }
     }
     &__main-container {
-        height: 100%;
         display: grid;
+        grid-template-columns: 266px 1fr;
+        padding: 30px 140px 70px 140px;
+        column-gap: 59px;
         @media (max-width: 479px) {
-            padding-top: 50px;
-            grid-template-rows: 371px 68px;
-            grid-template-columns: 100vw;
-            justify-items: center;
-            row-gap: 20px;
         }
         @media (min-width: 480px) and (max-width: 767px) {
-            padding: 70px 181px 18px 0px;
-            grid-template-rows: 371px 68px;
-            grid-template-columns: 100vw;
-            justify-items: center;
         }
         @media (min-width: 768px) and (max-width: 1439px) {
-            padding: 70px 0px 18px 70px;
-            grid-template-rows: 371px max-content;
-            grid-template-columns: minmax(max-content, 695px) 270px;
-            column-gap: 20px;
         }
         @media (min-width: 1440px) {
-            grid-template-columns: 896px 270px;
-            grid-template-rows: 371px 368px;
-            padding: 70px 181px 18px 140px;
         }
     }
-    &__background {
-        position: absolute;
-        width: 1440px;
-        height: 900px;
-        left: 0px;
-        top: 0px;
-        background-image: url(img/landing-page-img.jpg);
-        background-size: 100% 100%;
-        z-index: -1;
-        @media (min-width: 320px) and (max-width: 767px) {
-            width: 100vw;
-            height: 62vw;
-            top: 200px;
-        }
-        @media (min-width: 768px) and (max-width: 1439px) {
-            width: 100vw;
-            height: 62vw;
-            top: 120px;
-        }
-
-        @media (min-width: 1440px) {
-            width: 1440px;
-            height: 900px;
-        }
-    }
-    &__caption {
+    &__menu {
         display: grid;
-        @include body-font();
-        align-self: flex-end;
-        text-align: end;
-        @media (min-width: 320px) and (max-width: 767px) {
-            grid-area: 2/1;
-            justify-content: center;
-            width: 50vw;
+        grid-template-columns: 266px;
+    }
+
+    &__room-list {
+        display: grid;
+        grid-template-columns: max-content;
+        grid-template-rows: 50px 1152px 75px;
+        &-title {
+            @include h1;
+            text-transform: none;
         }
-        @media (min-width: 768px) and (max-width: 1439px) {
-            grid-area: 1/2;
-            justify-content: center;
-            align-self: center;
-            background-color: rgb(255, 255, 255, 0.6);
+        &-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 270px);
+            grid-auto-rows: 257px;
+            column-gap: 12px;
+            row-gap: 20px;
         }
-        @media (min-width: 1440px) {
-            grid-area: 2/2;
-            justify-content: right;
+        &-pagination {
+            display: grid;
+            justify-content: center;
         }
     }
     &__footer-container {
