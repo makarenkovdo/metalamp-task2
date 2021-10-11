@@ -23,7 +23,7 @@
     @media (min-width: 1440px) {
         display: grid;
         // grid-template-columns: 1440px;
-        grid-template-rows: 70px 1357px 443px;
+        grid-template-rows: 70px 1358px 443px;
         align-items: baseline;
     }
 
@@ -61,7 +61,7 @@
     &__room-list {
         display: grid;
         grid-template-columns: max-content;
-        grid-template-rows: 50px 1152px 75px;
+        grid-template-rows: 52px 1130px 75px;
         &-title {
             @include h1;
             text-transform: none;
@@ -71,11 +71,13 @@
             grid-template-columns: repeat(3, 270px);
             grid-auto-rows: 257px;
             column-gap: 12px;
-            row-gap: 20px;
+            row-gap: 20.6px;
+            padding-left: 1px;
         }
         &-pagination {
             display: grid;
             justify-content: center;
+            padding-right: 6px;
         }
     }
     &__titles-container {
