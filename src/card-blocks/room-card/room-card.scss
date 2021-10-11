@@ -29,7 +29,7 @@
             @include h1;
             font-size: 19px;
             line-height: 23px;
-            padding-left: 1px;
+            padding: 1px 0 0 1px;
         }
         &-lux {
             @include h3($purple);

@@ -61,7 +61,7 @@
     &__room-list {
         display: grid;
         grid-template-columns: max-content;
-        grid-template-rows: 52px 1130px 75px;
+        grid-template-rows: 50px 1131.7 px 75px;
         &-title {
             @include h1;
             text-transform: none;
@@ -71,8 +71,17 @@
             grid-template-columns: repeat(3, 270px);
             grid-auto-rows: 257px;
             column-gap: 12px;
-            row-gap: 20.6px;
+            row-gap: 21px;
             padding-left: 1px;
+            .room-card__title-lux {
+                padding: 9px 0 0 8px;
+            }
+            .room-card__feedback_bold {
+                padding: 4px 3.6px;
+            }
+            .room-card__feedback_normal {
+                padding-top: 4px;
+            }
         }
         &-pagination {
             display: grid;
