@@ -12,6 +12,7 @@ const pugPages = [
     'cards',
     'landing-page',
     'registration-page',
+    'room-page',
     'sign-in-page',
     'search-page',
 ]
@@ -55,6 +56,7 @@ module.exports = {
         maskedTextField:
             './src/components/masked-text-field/masked-text-field.js',
         slider: './src/components/slider/slider.js',
+        chart: './src/components/impressions/chart.js',
     },
     output: {
         filename: '[name].bundle.js',

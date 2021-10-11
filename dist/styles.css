@@ -1580,6 +1580,10 @@ html {
   height: 34px;
   box-sizing: border-box;
 }
+/*!******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/impressions/impressions.scss ***!
+  \******************************************************************************************************************************************************************/
+
 /*!*********************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/interior-form-texts-mixins.scss ***!
   \*********************************************************************************************************************************************************************/
@@ -2860,6 +2864,11 @@ html {
   .room-page__header-container {
     width: 1440px;
   }
+}
+.room-page__images-container {
+  display: grid;
+  grid-template-columns: 981px 1fr;
+  grid-template-rows: 242.5px 242.5px;
 }
 .room-page__main-container {
   display: grid;
