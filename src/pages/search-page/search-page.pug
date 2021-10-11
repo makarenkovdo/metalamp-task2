@@ -3,6 +3,7 @@ extends ../page-template/page-template
 include ../../components/footer/footer
 include ../../components/header/header
 
+include ../../components/block-subtitle/block-subtitle
 include ../../components/block-title/block-title
 include ../../components/checkbox-list/checkbox-list
 include ../../components/checkbox-expandable-list/checkbox-expandable-list
@@ -26,24 +27,26 @@ block content
         main.search-page__main-container 
             section.search-page__menu
                 .search-page__filter-date-dropdown
-                    div(class='search-page__title-container' style= {margin: '0 0 15px 0'})
-                        +block-title('дата пребывания в отеле')
+                    div(class='search-page__title-container' style= {margin: '0 0 5px 0'})
+                        +block-title('даты пребывания в отеле')
                     +filter-date-dropdown()
                 .search-page__guest-dropdown
-                    div(class='search-page__title-container' style= {margin: '0 0 15px 0'})
+                    div(class='search-page__title-container' style= {margin: '0 0 5px 0'})
                         +block-title('гости')
                     +dropdown(1, '_guests', 'narrow')
                 .search-page__range-slider
-                    div(class='search-page__title-container' style= {margin: '0 0 15px 0'})
+                    div(class='search-page__titles-container' style= {margin: '0 0 20px 0'})
                         +block-title('диапазон цены')
+                        +block-subtitle('5 000₽ - 10 000₽')
+                    p.search-page__range-slider-caption Стоимость за сутки пребывания в номере
                 .search-page__checkbox-list
                     +checkbox-list('правила дома')
                 .search-page__rich-checkbox
-                    div(class='search-page__title-container' style= {margin: '0 0 15px 0'})
+                    div(class='search-page__title-container' style= {margin: '0 0 16.5px 0'})
                         +block-title('доступность')
                     +rich-checkbox()
                 .search-page__room-dropdown
-                    div(class='search-page__title-container' style= {margin: '0 0 15px 0'})
+                    div(class='search-page__title-container' style= {margin: '0 0 5px 0'})
                         +block-title('удобства номера')
                     +dropdown(2, '_room', 'narrow')
                 .search-page__expandable-list

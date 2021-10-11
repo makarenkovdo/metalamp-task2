@@ -52,6 +52,10 @@
     &__menu {
         display: grid;
         grid-template-columns: 266px;
+        grid-template-rows: 84.44px 94px 101.5px 160px 175.5px 93.5px 260px;
+    }
+    &__range-slider-caption {
+        @include caption-font();
     }
 
     &__room-list {
@@ -74,6 +78,11 @@
             justify-content: center;
         }
     }
+    &__titles-container {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+    }
+
     &__footer-container {
         @media (min-width: 768px) and (max-width: 1439px) {
             width: 100vw;
