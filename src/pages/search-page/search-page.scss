@@ -7,13 +7,8 @@
     //         font-size: 10px;
     //     }
     // }
-    @media (min-width: 480px) and (max-width: 639px) {
-    }
-    @media (min-width: 640px) and (max-width: 767px) {
-    }
-    @media (min-width: 768px) and (max-width: 1023px) {
-    }
-    @media (min-width: 1024px) and (max-width: 1279px) {
+    @media (min-width: 480px) and (max-width: 1279px) {
+        grid-template-rows: max-content max-content max-content;
     }
     @media (min-width: 1280px) and (max-width: 1439px) {
         display: grid;
@@ -37,22 +32,36 @@
     }
     &__main-container {
         display: grid;
-        grid-template-columns: 266px 1fr;
-        padding: 30px 140px 70px 140px;
-        column-gap: 59px;
         @media (max-width: 479px) {
         }
-        @media (min-width: 480px) and (max-width: 767px) {
+        @media (min-width: 480px) and (max-width: 960px) {
+            grid-template-columns: 1fr;
         }
-        @media (min-width: 768px) and (max-width: 1439px) {
+
+        @media (min-width: 960px) and (max-width: 1439px) {
+            grid-template-columns: 266px 1fr;
+            padding: 30px 40px 70px 40px;
+            column-gap: 29px;
+            height: 1600px;
         }
         @media (min-width: 1440px) {
+            grid-template-columns: 266px 1fr;
+            padding: 30px 140px 70px 140px;
+            column-gap: 59px;
         }
     }
     &__menu {
         display: grid;
         grid-template-columns: 266px;
         grid-template-rows: 86px 88px 108px 160px 175.5px 79px 260px;
+        @media (min-width: 480px) and (max-width: 960px) {
+            grid-template-columns: repeat(auto-fill, 266px);
+            grid-auto-rows: max-content;
+            grid-template-rows: repeat(auto-fill, max-content);
+            column-gap: 10px;
+            row-gap: 10px;
+            padding: 20px;
+        }
         .checkbox-expandable-list {
             &__details[open] summary:after {
                 transform: rotate(225deg);
@@ -79,11 +88,20 @@
 
     &__room-list {
         display: grid;
-        grid-template-columns: max-content;
-        grid-template-rows: 50px 1131.7px 75px;
+        @media (min-width: 320px) and (max-width: 1439px) {
+            grid-template-rows: max-content max-content max-content;
+            justify-content: center;
+        }
+        @media (min-width: 1440px) {
+            grid-template-rows: 50px 1131.7px 75px;
+        }
+
         &-title {
             @include h1;
             text-transform: none;
+            @media (min-width: 320px) and (max-width: 1279px) {
+                padding: 0 20px 10px 20px;
+            }
         }
         &-cards {
             display: grid;
@@ -92,6 +110,13 @@
             column-gap: 12px;
             row-gap: 21px;
             padding-left: 1px;
+            @media (max-width: 639px) {
+                grid-template-columns: 270px;
+                justify-content: center;
+            }
+            @media (min-width: 640px) and (max-width: 1279px) {
+                grid-template-columns: repeat(2, 270px);
+            }
             .room-card__title-lux {
                 padding: 9px 0 0 8px;
             }

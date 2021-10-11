@@ -112,10 +112,6 @@
                 display: grid;
                 align-items: center;
                 margin: 0;
-                @media (max-width: 515px) {
-                    padding: 0px 70px 0 70px;
-                    text-align: center;
-                }
             }
             &__social-networks {
                 display: grid;
@@ -174,6 +170,9 @@
             &__text {
                 @include body-font($dark-shade-75, normal, 1.2143rem);
                 padding: 1px;
+                @media (max-width: 480px) {
+                    text-align: center;
+                }
             }
             &__social-networks {
                 display: grid;
