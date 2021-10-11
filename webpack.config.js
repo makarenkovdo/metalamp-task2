@@ -13,6 +13,7 @@ const pugPages = [
     'landing-page',
     'registration-page',
     'sign-in-page',
+    'search-page',
 ]
 
 const plugins = [

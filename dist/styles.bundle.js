@@ -19,28 +19,6 @@ eval("var cache = {};\n\nfunction importAll(r) {\n  r.keys().forEach(function (k
 
 /***/ }),
 
-/***/ "./src/card-blocks/room-card/img/room-840.png":
-/*!****************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-840.png ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-840.png\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-840.png?");
-
-/***/ }),
-
-/***/ "./src/card-blocks/room-card/img/room-888.png":
-/*!****************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-888.png ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-888.png\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-888.png?");
-
-/***/ }),
-
 /***/ "./src/components/benefits/benefits-emotion.svg":
 /*!******************************************************!*\
   !*** ./src/components/benefits/benefits-emotion.svg ***!
@@ -844,6 +822,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/pages/search-page/search-page.scss":
+/*!************************************************!*\
+  !*** ./src/pages/search-page/search-page.scss ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/pages/search-page/search-page.scss?");
+
+/***/ }),
+
 /***/ "./src/pages/sign-in-page/sign-in-page.scss":
 /*!**************************************************!*\
   !*** ./src/pages/sign-in-page/sign-in-page.scss ***!
@@ -947,9 +936,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /*!********************************************!*\
   !*** ./src/card-blocks/ sync \.(svg|png)$ ***!
   \********************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module) => {
 
-eval("var map = {\n\t\"./room-card/img/room-840.png\": \"./src/card-blocks/room-card/img/room-840.png\",\n\t\"./room-card/img/room-888.png\": \"./src/card-blocks/room-card/img/room-888.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/card-blocks sync recursive \\\\.(svg|png)$\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/_sync_\\.(svg%7Cpng)$?");
+eval("function webpackEmptyContext(req) {\n\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\te.code = 'MODULE_NOT_FOUND';\n\tthrow e;\n}\nwebpackEmptyContext.keys = () => ([]);\nwebpackEmptyContext.resolve = webpackEmptyContext;\nwebpackEmptyContext.id = \"./src/card-blocks sync recursive \\\\.(svg|png)$\";\nmodule.exports = webpackEmptyContext;\n\n//# sourceURL=webpack://task2/./src/card-blocks/_sync_\\.(svg%7Cpng)$?");
 
 /***/ }),
 
@@ -989,7 +978,7 @@ eval("var map = {\n\t\"./benefits/benefits.scss\": \"./src/components/benefits/b
   \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./cards/cards.scss\": \"./src/pages/cards/cards.scss\",\n\t\"./color-and-type/color-and-type.scss\": \"./src/pages/color-and-type/color-and-type.scss\",\n\t\"./form-elements/form-elements.scss\": \"./src/pages/form-elements/form-elements.scss\",\n\t\"./headers-footers/headers-footers.scss\": \"./src/pages/headers-footers/headers-footers.scss\",\n\t\"./landing-page/landing-page.scss\": \"./src/pages/landing-page/landing-page.scss\",\n\t\"./page-template/page-template.scss\": \"./src/pages/page-template/page-template.scss\",\n\t\"./registration-page/registration-page.scss\": \"./src/pages/registration-page/registration-page.scss\",\n\t\"./sign-in-page/sign-in-page.scss\": \"./src/pages/sign-in-page/sign-in-page.scss\",\n\t\"./ui-kit-template/ui-kit-template.scss\": \"./src/pages/ui-kit-template/ui-kit-template.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.(scss|css)$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.(scss%7Ccss)$?");
+eval("var map = {\n\t\"./cards/cards.scss\": \"./src/pages/cards/cards.scss\",\n\t\"./color-and-type/color-and-type.scss\": \"./src/pages/color-and-type/color-and-type.scss\",\n\t\"./form-elements/form-elements.scss\": \"./src/pages/form-elements/form-elements.scss\",\n\t\"./headers-footers/headers-footers.scss\": \"./src/pages/headers-footers/headers-footers.scss\",\n\t\"./landing-page/landing-page.scss\": \"./src/pages/landing-page/landing-page.scss\",\n\t\"./page-template/page-template.scss\": \"./src/pages/page-template/page-template.scss\",\n\t\"./registration-page/registration-page.scss\": \"./src/pages/registration-page/registration-page.scss\",\n\t\"./search-page/search-page.scss\": \"./src/pages/search-page/search-page.scss\",\n\t\"./sign-in-page/sign-in-page.scss\": \"./src/pages/sign-in-page/sign-in-page.scss\",\n\t\"./ui-kit-template/ui-kit-template.scss\": \"./src/pages/ui-kit-template/ui-kit-template.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.(scss|css)$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.(scss%7Ccss)$?");
 
 /***/ }),
 

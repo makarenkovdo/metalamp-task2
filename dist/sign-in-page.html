@@ -7,7 +7,7 @@
     <title>Document</title>
   <script defer src="styles.bundle.js"></script><script defer src="checkboxExpList.bundle.js"></script><script defer src="datepicker.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="maskedTextField.bundle.js"></script><script defer src="slider.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"><link href="slider.css" rel="stylesheet"></head>
   <body>
-    <main class="sign-in-page-page">
+    <main class="sign-in-page">
       <section class="sign-in-page__header-container">
         <header class="header-block">
           <section class="header-logo-container">
@@ -27,24 +27,26 @@
         </header>
       </section>
       <main class="sign-in-page__main-container"> 
-        <form class="login-card-block">
-          <div class="login-card__title">Войти</div>
-          <div class="login-card__text-fields"> <span class="text-field-container">
-              <input class="text-field__input" type="text" value="" name="email" placeholder="Email"></span><span class="text-field-container">
-              <input class="text-field__input" type="text" value="" name="password" placeholder="Пароль"></span>
-          </div>
-          <div class="login-card__button-box">
-            <button class="button-with-arrow undefined" type="submit">войти<img class="button__arrow-icon" src="./img/arrow-button.svg" alt="submit" width="18" height="17">
-            </button>
-          </div>
-          <div class="login-card__registration-box">
-            <div class="login-card__registration-caption">Нет аккаунта на Toxin?</div>
-            <div class="login-card__registration-button-box">
-              <button class="button-white undefined" type="submit">создать
+        <div class="sign-in-page__card-container">
+          <form class="login-card-block">
+            <div class="login-card__title">Войти</div>
+            <div class="login-card__text-fields"> <span class="text-field-container">
+                <input class="text-field__input" type="text" value="" name="email" placeholder="Email"></span><span class="text-field-container">
+                <input class="text-field__input" type="text" value="" name="password" placeholder="Пароль"></span>
+            </div>
+            <div class="login-card__button-box">
+              <button class="button-with-arrow undefined" type="submit">войти<img class="button__arrow-icon" src="./img/arrow-button.svg" alt="submit" width="18" height="17">
               </button>
             </div>
-          </div>
-        </form>
+            <div class="login-card__registration-box">
+              <div class="login-card__registration-caption">Нет аккаунта на Toxin?</div>
+              <div class="login-card__registration-button-box">
+                <button class="button-white undefined" type="submit">создать
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
         <div class="sign-in-page__background"></div>
       </main>
       <section class="sign-in-page__footer-container">

@@ -5,10 +5,11 @@ include ../../components/dropdown/dropdown
 include ../../components/rate-button/rate-button
 include ../../components/slider/slider
 
-mixin room-card(img, number, isLux, price, rate, feedback)
+mixin room-card(number, isLux, price, rate, feedback)
+    - var imgArray = [`room-${number}-small-1`,`room-${number}-small-1`,`room-${number}-small-1`,`room-${number}-small-1`]
     section.room-card-block
         .room-card__img-box 
-            +slider(img)
+            +slider(imgArray)
         .room-card__title-box 
             p.room-card__title-number-sign №
             p.room-card__title-number= number
