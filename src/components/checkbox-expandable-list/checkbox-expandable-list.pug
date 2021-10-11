@@ -1,7 +1,7 @@
 include ../../components/checkbox/checkbox
-mixin checkbox-expandable-list()
+mixin checkbox-expandable-list(title)
     details(class='checkbox-expandable-list')
-        <summary>EXPANDABLE CHECKBOX LIST</summary>
+        <summary>#{title}</summary>
         +checkbox('Завтрак')
         +checkbox('Письменный стол')
         +checkbox('Стул для кормления')

@@ -3,6 +3,7 @@ extends ../page-template/page-template
 include ../../components/footer/footer
 include ../../components/header/header
 
+include ../../components/block-title/block-title
 include ../../components/checkbox-list/checkbox-list
 include ../../components/checkbox-expandable-list/checkbox-expandable-list
 include ../../components/dropdown/dropdown
@@ -24,6 +25,32 @@ block content
             +header('signin')
         main.search-page__main-container 
             section.search-page__menu
+                .search-page__filter-date-dropdown
+                    div(class='search-page__title-container' style= {margin: '0 0 15px 0'})
+                        +block-title('дата пребывания в отеле')
+                    +filter-date-dropdown()
+                .search-page__guest-dropdown
+                    div(class='search-page__title-container' style= {margin: '0 0 15px 0'})
+                        +block-title('гости')
+                    +dropdown(1, '_guests', 'narrow')
+                .search-page__range-slider
+                    div(class='search-page__title-container' style= {margin: '0 0 15px 0'})
+                        +block-title('диапазон цены')
+                .search-page__checkbox-list
+                    +checkbox-list('правила дома')
+                .search-page__rich-checkbox
+                    div(class='search-page__title-container' style= {margin: '0 0 15px 0'})
+                        +block-title('доступность')
+                    +rich-checkbox()
+                .search-page__room-dropdown
+                    div(class='search-page__title-container' style= {margin: '0 0 15px 0'})
+                        +block-title('удобства номера')
+                    +dropdown(2, '_room', 'narrow')
+                .search-page__expandable-list
+                    +checkbox-expandable-list('дополнительные удобства')
+
+                    
+                
             section.search-page__room-list
                 h1.search-page__room-list-title Номера, которые мы для вас подобрали
                 section.search-page__room-list-cards
