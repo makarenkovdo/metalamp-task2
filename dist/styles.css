@@ -263,7 +263,11 @@ ul.bullet-list {
 /*!********************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-expandable-list/checkbox-expandable-list.scss ***!
   \********************************************************************************************************************************************************************************************/
-details > summary {
+.checkbox-expandable-list__details[open] summary:after {
+  transform: rotate(225deg);
+  margin-top: 6px;
+}
+.checkbox-expandable-list__summary {
   padding: 15px 0 17px;
   box-sizing: border-box;
   position: relative;
@@ -278,8 +282,7 @@ details > summary {
   color: #1f2041;
   text-transform: uppercase;
 }
-
-summary::after {
+.checkbox-expandable-list__summary::after {
   content: "";
   position: absolute;
   margin-left: 48.5px;
@@ -293,11 +296,6 @@ summary::after {
   border-bottom-width: 2px;
   border-bottom-style: solid;
   transform: rotate(45deg);
-}
-
-details[open] summary:after {
-  transform: rotate(225deg);
-  margin-top: 6px;
 }
 /*!**********************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/checkbox-list/checkbox-list.scss ***!
@@ -745,9 +743,10 @@ details[open] summary:after {
 }
 .dropdown__adding-buttons {
   display: grid;
+  grid-area: 4/1/4/5;
   box-sizing: border-box;
-  width: 22.8571rem;
-  grid-template-columns: 11.4286rem 11.4286rem;
+  width: 100%;
+  grid-template-columns: 50% 50%;
   padding-top: 1.8571rem;
 }
 .dropdown__apply {
@@ -1100,12 +1099,6 @@ html {
     margin: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 515px) {
-  .footer-copyright-bar__text {
-    padding: 0px 70px 0 70px;
-    text-align: center;
-  }
-}
 @media (min-width: 768px) {
   .footer-copyright-bar__social-networks {
     display: grid;
@@ -1171,15 +1164,26 @@ html {
     color: rgba(31, 32, 65, 0.75);
     padding: 1px;
   }
+}
+@media (max-width: 768px) and (max-width: 480px) {
+  .footer-copyright-bar__text {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
   .footer-copyright-bar__social-networks {
     display: grid;
     grid-template-columns: max-content max-content max-content;
     column-gap: 20px;
     justify-content: center;
   }
+}
+@media (max-width: 768px) {
   .footer__group {
     display: none;
   }
+}
+@media (max-width: 768px) {
   .footer__caption {
     display: none;
   }
@@ -2838,9 +2842,54 @@ html {
     width: 1440px;
   }
 }
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/pages/room-page/room-page.scss ***!
+  \*********************************************************************************************************************************************************/
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .room-page {
+    display: grid;
+    width: 100vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .room-page__header-container {
+    width: 100vw;
+  }
+}
+@media (min-width: 1440px) {
+  .room-page__header-container {
+    width: 1440px;
+  }
+}
+.room-page__main-container {
+  display: grid;
+}
+.room-page__main-container .booking-card-block {
+  box-sizing: border-box;
+}
+.room-page__titles-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 7px;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .room-page__footer-container {
+    width: 100vw;
+  }
+}
+@media (min-width: 1440px) {
+  .room-page__footer-container {
+    width: 1440px;
+  }
+}
 /*!*************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/pages/search-page/search-page.scss ***!
   \*************************************************************************************************************************************************************/
+@media (min-width: 480px) and (max-width: 1279px) {
+  .search-page {
+    grid-template-rows: max-content max-content max-content;
+  }
+}
 @media (min-width: 1280px) and (max-width: 1439px) {
   .search-page {
     display: grid;
@@ -2850,7 +2899,7 @@ html {
 @media (min-width: 1440px) {
   .search-page {
     display: grid;
-    grid-template-rows: 70px 830px 443px;
+    grid-template-rows: 70px 1358px 443px;
     align-items: baseline;
   }
 }
@@ -2865,102 +2914,137 @@ html {
   }
 }
 .search-page__main-container {
-  height: 100%;
   display: grid;
 }
-@media (max-width: 479px) {
+@media (min-width: 480px) and (max-width: 960px) {
   .search-page__main-container {
-    padding-top: 50px;
-    grid-template-rows: 371px 68px;
-    grid-template-columns: 100vw;
-    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 960px) and (max-width: 1439px) {
+  .search-page__main-container {
+    grid-template-columns: 266px 1fr;
+    padding: 30px 40px 70px 40px;
+    column-gap: 29px;
+    height: 1600px;
+  }
+}
+@media (min-width: 1440px) {
+  .search-page__main-container {
+    grid-template-columns: 266px 1fr;
+    padding: 30px 140px 70px 140px;
+    column-gap: 59px;
+  }
+}
+.search-page__menu {
+  display: grid;
+  grid-template-columns: 266px;
+  grid-template-rows: 86px 88px 108px 160px 175.5px 79px 260px;
+}
+@media (min-width: 320px) and (max-width: 639px) {
+  .search-page__menu {
+    grid-template-columns: 266px;
+    grid-auto-rows: max-content;
+    justify-content: center;
     row-gap: 20px;
+    padding: 20px;
   }
 }
-@media (min-width: 480px) and (max-width: 767px) {
-  .search-page__main-container {
-    padding: 70px 181px 18px 0px;
-    grid-template-rows: 371px 68px;
-    grid-template-columns: 100vw;
-    justify-items: center;
+@media (min-width: 640px) and (max-width: 960px) {
+  .search-page__menu {
+    grid-template-columns: repeat(2, 266px);
+    grid-template-rows: repeat(4, max-content);
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 10px;
+    padding: 20px;
   }
 }
-@media (min-width: 768px) and (max-width: 1439px) {
-  .search-page__main-container {
-    padding: 70px 0px 18px 70px;
-    grid-template-rows: 371px max-content;
-    grid-template-columns: minmax(max-content, 695px) 270px;
-    column-gap: 20px;
-  }
+.search-page__menu .checkbox-expandable-list__details[open] summary:after {
+  transform: rotate(225deg);
+  margin-top: 4px;
 }
-@media (min-width: 1440px) {
-  .search-page__main-container {
-    grid-template-columns: 896px 270px;
-    grid-template-rows: 371px 368px;
-    padding: 70px 181px 18px 140px;
-  }
+.search-page__menu .checkbox-expandable-list__summary::after {
+  margin-left: 32px;
+  margin-top: 1px;
 }
-.search-page__background {
-  position: absolute;
-  width: 1440px;
-  height: 900px;
-  left: 0px;
-  top: 0px;
-  background-image: url(img/landing-page-img.jpg);
-  background-size: 100% 100%;
-  z-index: -1;
+.search-page__filter-date-dropdown {
+  padding-top: 1px;
 }
-@media (min-width: 320px) and (max-width: 767px) {
-  .search-page__background {
-    width: 100vw;
-    height: 62vw;
-    top: 200px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1439px) {
-  .search-page__background {
-    width: 100vw;
-    height: 62vw;
-    top: 120px;
-  }
-}
-@media (min-width: 1440px) {
-  .search-page__background {
-    width: 1440px;
-    height: 900px;
-  }
-}
-.search-page__caption {
-  display: grid;
+.search-page__range-slider-caption {
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.8571rem;
   font-family: Montserrat, Arial, sans-serif;
-  line-height: 1.7143rem;
-  color: rgba(31, 32, 65, 0.75);
-  align-self: flex-end;
-  text-align: end;
+  line-height: 1rem;
+  color: rgba(31, 32, 65, 0.5);
 }
-@media (min-width: 320px) and (max-width: 767px) {
-  .search-page__caption {
-    grid-area: 2/1;
-    justify-content: center;
-    width: 50vw;
-  }
+.search-page__range-slider-container {
+  border: 1px solid silver;
+  padding: 10px 0 15px 0;
 }
-@media (min-width: 768px) and (max-width: 1439px) {
-  .search-page__caption {
-    grid-area: 1/2;
+.search-page__room-list {
+  display: grid;
+}
+@media (min-width: 320px) and (max-width: 1439px) {
+  .search-page__room-list {
+    grid-template-rows: max-content max-content max-content;
     justify-content: center;
-    align-self: center;
-    background-color: rgba(255, 255, 255, 0.6);
   }
 }
 @media (min-width: 1440px) {
-  .search-page__caption {
-    grid-area: 2/2;
-    justify-content: right;
+  .search-page__room-list {
+    grid-template-rows: 50px 1131.7px 75px;
   }
+}
+.search-page__room-list-title {
+  font: normal bold 1.7143rem/2.0714rem Montserrat, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1f2041;
+  text-transform: none;
+}
+@media (min-width: 320px) and (max-width: 1279px) {
+  .search-page__room-list-title {
+    padding: 0 20px 10px 20px;
+  }
+}
+.search-page__room-list-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 270px);
+  grid-auto-rows: 257px;
+  column-gap: 12px;
+  row-gap: 21px;
+  padding-left: 1px;
+}
+@media (max-width: 639px) {
+  .search-page__room-list-cards {
+    grid-template-columns: 270px;
+    justify-content: center;
+  }
+}
+@media (min-width: 640px) and (max-width: 1279px) {
+  .search-page__room-list-cards {
+    grid-template-columns: repeat(2, 270px);
+  }
+}
+.search-page__room-list-cards .room-card__title-lux {
+  padding: 9px 0 0 8px;
+}
+.search-page__room-list-cards .room-card__feedback_bold {
+  padding: 4px 3.6px;
+}
+.search-page__room-list-cards .room-card__feedback_normal {
+  padding-top: 4px;
+}
+.search-page__room-list-pagination {
+  display: grid;
+  justify-content: center;
+  padding-right: 6px;
+}
+.search-page__titles-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 7px;
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .search-page__footer-container {
@@ -3525,7 +3609,7 @@ html {
   color: #1f2041;
   font-size: 19px;
   line-height: 23px;
-  padding-left: 1px;
+  padding: 1px 0 0 1px;
 }
 .room-card__title-lux {
   font-style: normal;

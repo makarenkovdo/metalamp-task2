@@ -1,0 +1,59 @@
+@import './../../styles/mixins/fonts.scss';
+@import './../../styles/variables/colors.scss';
+
+.room-page {
+    @media (min-width: 480px) and (max-width: 1279px) {
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+        display: grid;
+        width: 100vw;
+        // grid-template-columns: minmax(1280px, 1440px);
+    }
+    @media (min-width: 1440px) {
+    }
+
+    &__header-container {
+        @media (min-width: 768px) and (max-width: 1439px) {
+            width: 100vw;
+        }
+        @media (min-width: 1440px) {
+            width: 1440px;
+        }
+    }
+    &__images-container {
+        display: grid;
+        grid-template-columns: 981px 1fr;
+        grid-template-rows: 242.5px 242.5px;
+    }
+    &__main-container {
+        display: grid;
+        @media (max-width: 479px) {
+        }
+        @media (min-width: 480px) and (max-width: 960px) {
+        }
+
+        @media (min-width: 960px) and (max-width: 1439px) {
+        }
+        @media (min-width: 1440px) {
+        }
+
+        .booking-card-block {
+            box-sizing: border-box;
+        }
+    }
+
+    &__titles-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 7px;
+    }
+
+    &__footer-container {
+        @media (min-width: 768px) and (max-width: 1439px) {
+            width: 100vw;
+        }
+        @media (min-width: 1440px) {
+            width: 1440px;
+        }
+    }
+}

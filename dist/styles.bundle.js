@@ -107,14 +107,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/card-blocks/room-card/img/room-852__small-1.jpg":
+/***/ "./src/card-blocks/room-card/img/room-856__small-1.jpg":
 /*!*************************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-852__small-1.jpg ***!
+  !*** ./src/card-blocks/room-card/img/room-856__small-1.jpg ***!
   \*************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-852__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-852__small-1.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-856__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-856__small-1.jpg?");
 
 /***/ }),
 
@@ -489,6 +489,39 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/registration-page-img.jpg\");\n\n//# sourceURL=webpack://task2/./src/pages/registration-page/img/registration-page-img.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/room-page/room-888__big-1.jpg":
+/*!*************************************************!*\
+  !*** ./src/pages/room-page/room-888__big-1.jpg ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-888__big-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/pages/room-page/room-888__big-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/room-page/room-888__medium-1.jpg":
+/*!****************************************************!*\
+  !*** ./src/pages/room-page/room-888__medium-1.jpg ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-888__medium-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/pages/room-page/room-888__medium-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/room-page/room-888__medium-2.jpg":
+/*!****************************************************!*\
+  !*** ./src/pages/room-page/room-888__medium-2.jpg ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-888__medium-2.jpg\");\n\n//# sourceURL=webpack://task2/./src/pages/room-page/room-888__medium-2.jpg?");
 
 /***/ }),
 
@@ -954,6 +987,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/pages/room-page/room-page.scss":
+/*!********************************************!*\
+  !*** ./src/pages/room-page/room-page.scss ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://task2/./src/pages/room-page/room-page.scss?");
+
+/***/ }),
+
 /***/ "./src/pages/search-page/search-page.scss":
 /*!************************************************!*\
   !*** ./src/pages/search-page/search-page.scss ***!
@@ -1070,7 +1114,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./room-card/img/room-350__small-1.jpg\": \"./src/card-blocks/room-card/img/room-350__small-1.jpg\",\n\t\"./room-card/img/room-352__small-1.jpg\": \"./src/card-blocks/room-card/img/room-352__small-1.jpg\",\n\t\"./room-card/img/room-444__small-1.jpg\": \"./src/card-blocks/room-card/img/room-444__small-1.jpg\",\n\t\"./room-card/img/room-450__small-1.jpg\": \"./src/card-blocks/room-card/img/room-450__small-1.jpg\",\n\t\"./room-card/img/room-666__small-1.jpg\": \"./src/card-blocks/room-card/img/room-666__small-1.jpg\",\n\t\"./room-card/img/room-678__small-1.jpg\": \"./src/card-blocks/room-card/img/room-678__small-1.jpg\",\n\t\"./room-card/img/room-740__small-1.jpg\": \"./src/card-blocks/room-card/img/room-740__small-1.jpg\",\n\t\"./room-card/img/room-840__small-1.jpg\": \"./src/card-blocks/room-card/img/room-840__small-1.jpg\",\n\t\"./room-card/img/room-852__small-1.jpg\": \"./src/card-blocks/room-card/img/room-852__small-1.jpg\",\n\t\"./room-card/img/room-888__small-1.jpg\": \"./src/card-blocks/room-card/img/room-888__small-1.jpg\",\n\t\"./room-card/img/room-980__small-1.jpg\": \"./src/card-blocks/room-card/img/room-980__small-1.jpg\",\n\t\"./room-card/img/room-982__small-1.jpg\": \"./src/card-blocks/room-card/img/room-982__small-1.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/card-blocks sync recursive \\\\.(svg|png|jpg)$\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/_sync_\\.(svg%7Cpng%7Cjpg)$?");
+eval("var map = {\n\t\"./room-card/img/room-350__small-1.jpg\": \"./src/card-blocks/room-card/img/room-350__small-1.jpg\",\n\t\"./room-card/img/room-352__small-1.jpg\": \"./src/card-blocks/room-card/img/room-352__small-1.jpg\",\n\t\"./room-card/img/room-444__small-1.jpg\": \"./src/card-blocks/room-card/img/room-444__small-1.jpg\",\n\t\"./room-card/img/room-450__small-1.jpg\": \"./src/card-blocks/room-card/img/room-450__small-1.jpg\",\n\t\"./room-card/img/room-666__small-1.jpg\": \"./src/card-blocks/room-card/img/room-666__small-1.jpg\",\n\t\"./room-card/img/room-678__small-1.jpg\": \"./src/card-blocks/room-card/img/room-678__small-1.jpg\",\n\t\"./room-card/img/room-740__small-1.jpg\": \"./src/card-blocks/room-card/img/room-740__small-1.jpg\",\n\t\"./room-card/img/room-840__small-1.jpg\": \"./src/card-blocks/room-card/img/room-840__small-1.jpg\",\n\t\"./room-card/img/room-856__small-1.jpg\": \"./src/card-blocks/room-card/img/room-856__small-1.jpg\",\n\t\"./room-card/img/room-888__small-1.jpg\": \"./src/card-blocks/room-card/img/room-888__small-1.jpg\",\n\t\"./room-card/img/room-980__small-1.jpg\": \"./src/card-blocks/room-card/img/room-980__small-1.jpg\",\n\t\"./room-card/img/room-982__small-1.jpg\": \"./src/card-blocks/room-card/img/room-982__small-1.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/card-blocks sync recursive \\\\.(svg|png|jpg)$\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/_sync_\\.(svg%7Cpng%7Cjpg)$?");
 
 /***/ }),
 
@@ -1110,7 +1154,7 @@ eval("var map = {\n\t\"./benefits/benefits.scss\": \"./src/components/benefits/b
   \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./cards/cards.scss\": \"./src/pages/cards/cards.scss\",\n\t\"./color-and-type/color-and-type.scss\": \"./src/pages/color-and-type/color-and-type.scss\",\n\t\"./form-elements/form-elements.scss\": \"./src/pages/form-elements/form-elements.scss\",\n\t\"./headers-footers/headers-footers.scss\": \"./src/pages/headers-footers/headers-footers.scss\",\n\t\"./landing-page/landing-page.scss\": \"./src/pages/landing-page/landing-page.scss\",\n\t\"./page-template/page-template.scss\": \"./src/pages/page-template/page-template.scss\",\n\t\"./registration-page/registration-page.scss\": \"./src/pages/registration-page/registration-page.scss\",\n\t\"./search-page/search-page.scss\": \"./src/pages/search-page/search-page.scss\",\n\t\"./sign-in-page/sign-in-page.scss\": \"./src/pages/sign-in-page/sign-in-page.scss\",\n\t\"./ui-kit-template/ui-kit-template.scss\": \"./src/pages/ui-kit-template/ui-kit-template.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.(scss|css)$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.(scss%7Ccss)$?");
+eval("var map = {\n\t\"./cards/cards.scss\": \"./src/pages/cards/cards.scss\",\n\t\"./color-and-type/color-and-type.scss\": \"./src/pages/color-and-type/color-and-type.scss\",\n\t\"./form-elements/form-elements.scss\": \"./src/pages/form-elements/form-elements.scss\",\n\t\"./headers-footers/headers-footers.scss\": \"./src/pages/headers-footers/headers-footers.scss\",\n\t\"./landing-page/landing-page.scss\": \"./src/pages/landing-page/landing-page.scss\",\n\t\"./page-template/page-template.scss\": \"./src/pages/page-template/page-template.scss\",\n\t\"./registration-page/registration-page.scss\": \"./src/pages/registration-page/registration-page.scss\",\n\t\"./room-page/room-page.scss\": \"./src/pages/room-page/room-page.scss\",\n\t\"./search-page/search-page.scss\": \"./src/pages/search-page/search-page.scss\",\n\t\"./sign-in-page/sign-in-page.scss\": \"./src/pages/sign-in-page/sign-in-page.scss\",\n\t\"./ui-kit-template/ui-kit-template.scss\": \"./src/pages/ui-kit-template/ui-kit-template.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.(scss|css)$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.(scss%7Ccss)$?");
 
 /***/ }),
 
@@ -1120,7 +1164,7 @@ eval("var map = {\n\t\"./cards/cards.scss\": \"./src/pages/cards/cards.scss\",\n
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./landing-page/img/landing-page-img.jpg\": \"./src/pages/landing-page/img/landing-page-img.jpg\",\n\t\"./landing-page/img/landing-page-img.png\": \"./src/pages/landing-page/img/landing-page-img.png\",\n\t\"./registration-page/img/registration-page-img.jpg\": \"./src/pages/registration-page/img/registration-page-img.jpg\",\n\t\"./sign-in-page/img/sign-in-page-img.jpg\": \"./src/pages/sign-in-page/img/sign-in-page-img.jpg\",\n\t\"./ui-kit-template/ui-kit-logo.svg\": \"./src/pages/ui-kit-template/ui-kit-logo.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.(svg|png|jpg)$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.(svg%7Cpng%7Cjpg)$?");
+eval("var map = {\n\t\"./landing-page/img/landing-page-img.jpg\": \"./src/pages/landing-page/img/landing-page-img.jpg\",\n\t\"./landing-page/img/landing-page-img.png\": \"./src/pages/landing-page/img/landing-page-img.png\",\n\t\"./registration-page/img/registration-page-img.jpg\": \"./src/pages/registration-page/img/registration-page-img.jpg\",\n\t\"./room-page/room-888__big-1.jpg\": \"./src/pages/room-page/room-888__big-1.jpg\",\n\t\"./room-page/room-888__medium-1.jpg\": \"./src/pages/room-page/room-888__medium-1.jpg\",\n\t\"./room-page/room-888__medium-2.jpg\": \"./src/pages/room-page/room-888__medium-2.jpg\",\n\t\"./sign-in-page/img/sign-in-page-img.jpg\": \"./src/pages/sign-in-page/img/sign-in-page-img.jpg\",\n\t\"./ui-kit-template/ui-kit-logo.svg\": \"./src/pages/ui-kit-template/ui-kit-logo.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/pages sync recursive \\\\.(svg|png|jpg)$\";\n\n//# sourceURL=webpack://task2/./src/pages/_sync_\\.(svg%7Cpng%7Cjpg)$?");
 
 /***/ }),
 

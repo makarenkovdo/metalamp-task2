@@ -1,0 +1,38 @@
+extends ../page-template/page-template
+
+include ../../components/footer/footer
+include ../../components/header/header
+
+include ../../components/block-subtitle/block-subtitle
+include ../../components/block-title/block-title
+include ../../components/checkbox-list/checkbox-list
+include ../../components/checkbox-expandable-list/checkbox-expandable-list
+include ../../components/dropdown/dropdown
+include ../../components/filter-date-dropdown/filter-date-dropdown
+include ../../components/rich-checkbox/rich-checkbox
+
+include ../../components/pagination/pagination
+
+include ../../card-blocks/booking-card/booking-card
+include ../../card-blocks/login-card/login-card
+include ../../card-blocks/registration-card/registration-card
+include ../../card-blocks/room-card/room-card
+include ../../card-blocks/searching-card/searching-card
+
+
+block content 
+    section.room-page
+        section.room-page__header-container
+            +header('signin')
+        main.room-page__main-container 
+            section.room-page__images-container
+                img(class="room-page__img-1" src='./img/dropdown.svg' alt='room-img' width='981' height='485')
+                img(class="room-page__img-2" src='./img/dropdown.svg' alt='room-img' width='461' height='243')
+                img(class="room-page__img-3" src='./img/dropdown.svg' alt='room-img' width='461' height='243')
+ 
+
+            section.room-page__main-container 
+                section.room-page__images-container 
+                +booking-card(888, 'ЛЮКС', '9 990₽')                               
+        section.room-page__footer-container
+            +footer('')
