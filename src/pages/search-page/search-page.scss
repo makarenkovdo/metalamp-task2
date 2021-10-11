@@ -54,12 +54,19 @@
         display: grid;
         grid-template-columns: 266px;
         grid-template-rows: 86px 88px 108px 160px 175.5px 79px 260px;
-        @media (min-width: 480px) and (max-width: 960px) {
-            grid-template-columns: repeat(auto-fill, 266px);
+        @media (min-width: 320px) and (max-width: 639px) {
+            grid-template-columns: 266px;
             grid-auto-rows: max-content;
-            grid-template-rows: repeat(auto-fill, max-content);
+            justify-content: center;
+            row-gap: 20px;
+            padding: 20px;
+        }
+        @media (min-width: 640px) and (max-width: 960px) {
+            grid-template-columns: repeat(2, 266px);
+            grid-template-rows: repeat(4, max-content);
+            justify-content: center;
+            row-gap: 20px;
             column-gap: 10px;
-            row-gap: 10px;
             padding: 20px;
         }
         .checkbox-expandable-list {
