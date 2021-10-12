@@ -11,7 +11,7 @@ $('.js-datepicker-input_instance-1').datepicker({
 })
 
 $('.js-datepicker-input_instance-2').datepicker({
-    inline: true,
+    inline: true, //FOR SECOND DATEPICKER WE SET INLINE VIEW
     onSelect: function (fd, d, picker) {
         $('.js-datepicker-input_instance-2').val(fd.split('-')[0])
         $('.js-datepicker-second-input_instance-2').val(fd.split('-')[1])
