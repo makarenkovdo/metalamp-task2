@@ -31,12 +31,13 @@ new Chart(document.getElementById('myChart'), {
     },
     options: {
         cutout: '90%',
-        // responsive: false,
+        responsive: false,
         rotation: 180,
-        radius: '67%',
+        radius: '100%',
         plugins: {
             legend: {
                 position: 'right',
+                align: 'end',
                 labels: {
                     boxWidth: 10,
                     boxHeight: 10,
