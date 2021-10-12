@@ -17,33 +17,113 @@ const gradientD = ctx.createLinearGradient(0, 0, 0, 600)
 gradientD.addColorStop(0, '#919191')
 gradientD.addColorStop(1, '#8BA4F9')
 
-new Chart(document.getElementById('myChart'), {
+// new Chart(document.getElementById('myChart'), {
+//     type: 'doughnut',
+//     data: {
+//         labels: ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован'],
+//         datasets: [
+//             {
+//                 label: 'Впечатления от номера',
+//                 backgroundColor: [gradientA, gradientB, gradientC, gradientD],
+//                 data: [130, 65, 65, 0],
+//             },
+//         ],
+//     },
+//     options: {
+//         cutout: '90%',
+//         responsive: false,
+//         rotation: 180,
+//         radius: '90%',
+//         layout: {
+//             padding: {
+//                 right: 50,
+//                 top: 5,
+//             },
+//         },
+//         title: {
+//             display: true,
+//             text: 'Month sdfsd fsd fsdfsdf',
+//         },
+//         plugins: {
+//             legend: {
+//                 position: 'right',
+//                 align: 'end',
+//                 title: {
+//                     display: true,
+//                     text: 'Legend Title',
+//                     position: 'left',
+//                     padding: {
+//                         right: 50,
+//                     },
+//                 },
+//                 plugins: {
+//                     title: {
+//                         display: true,
+//                         text: 'Custom Chart Title',
+//                     },
+//                 },
+//                 labels: {
+//                     boxWidth: 8,
+//                     boxHeight: 8,
+//                     borderRadius: '50%',
+//                     usePointStyle: true,
+//                     pointStyle: 'circle',
+//                     textAlign: 'left',
+//                     font: {
+//                         family: 'Montserrat',
+//                         style: 'normal',
+//                         weight: 'normal',
+//                         size: 14,
+//                         lineHeight: 24,
+//                         color: 'rgba(31, 32, 65, 0.75)',
+//                     },
+//                 },
+//             },
+//         },
+//     },
+// })
+
+var data = {
+    labels: ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован'],
+    datasets: [
+        {
+            label: 'Впечатления от номера',
+            backgroundColor: [gradientA, gradientB, gradientC, gradientD],
+            data: [130, 65, 65, 0],
+        },
+    ],
+}
+
+var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
     type: 'doughnut',
-    data: {
-        labels: ['Великолепно', 'Хорошо', 'Удовлетворен', 'Разочарован'],
-        datasets: [
-            {
-                label: 'Впечатления от номера',
-                backgroundColor: [gradientA, gradientB, gradientC, gradientD],
-                data: [130, 65, 65, 0],
-            },
-        ],
-    },
+    data: data,
     options: {
         cutout: '90%',
-        responsive: false,
+        responsive: true,
         rotation: 180,
-        radius: '88%',
+        radius: '90%',
+        // layout: {
+        //     padding: {
+        //         right: 50,
+        //         top: 5,
+        //     },
+        // },
+        title: {
+            display: true,
+            text: 'Month sdfsd fsd fsdfsdf',
+        },
         plugins: {
             legend: {
                 position: 'right',
                 align: 'end',
+
                 labels: {
-                    boxWidth: 10,
-                    boxHeight: 10,
+                    boxWidth: 8,
+                    boxHeight: 8,
                     borderRadius: '50%',
                     usePointStyle: true,
                     pointStyle: 'circle',
+                    textAlign: 'left',
                     font: {
                         family: 'Montserrat',
                         style: 'normal',
@@ -56,4 +136,35 @@ new Chart(document.getElementById('myChart'), {
             },
         },
     },
+    plugins: [
+        {
+            id: 'text',
+            beforeDraw: function (chart, a, b) {
+                var width = chart.width,
+                    height = chart.height,
+                    ctx = chart.ctx
+
+                ctx.restore()
+                var fontSize = (height / 114).toFixed(2)
+                ctx.font = fontSize + 'em sans-serif'
+                ctx.textBaseline = 'middle'
+
+                var text = '260',
+                    textX = Math.round(
+                        (width - ctx.measureText(text).width) / 2 - 50
+                    ),
+                    textY = height / 2
+
+                ctx.fillText(text, textX, textY)
+                var text2 = 'голосов',
+                    text2X = Math.round(
+                        (width - ctx.measureText(text).width) / 2 - 50
+                    ),
+                    text2Y = height / 2 + 20
+
+                ctx.fillText(text2, text2X, text2Y)
+                ctx.save()
+            },
+        },
+    ],
 })
