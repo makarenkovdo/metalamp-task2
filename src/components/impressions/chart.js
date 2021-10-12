@@ -1,8 +1,6 @@
 import { Chart, registerables } from 'chart.js'
 Chart.register(...registerables)
 const ctx = document.getElementById('myChart').getContext('2d')
-ctx.height = 200
-ctx.width = 300
 
 const gradientA = ctx.createLinearGradient(0, 0, 0, 600)
 gradientA.addColorStop(0, 'rgb(255, 228, 156)')
@@ -37,13 +35,12 @@ var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
         cutout: '90%',
         responsive: true,
         rotation: 180,
-        radius: '90%',
-        // layout: {
-        //     padding: {
-        //         right: 50,
-        //         top: 5,
-        //     },
-        // },
+        radius: '92%',
+        layout: {
+            padding: {
+                bottom: 180,
+            },
+        },
         title: {
             display: true,
             text: 'Month sdfsd fsd fsdfsdf',
@@ -110,3 +107,5 @@ var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
         },
     ],
 })
+ctx.height = 100
+ctx.width = 300
