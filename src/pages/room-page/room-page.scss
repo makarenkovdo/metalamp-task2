@@ -67,6 +67,7 @@
     }
     &__title {
         @include h2();
+        text-transform: none;
     }
     &__feedback-container {
         display: grid;

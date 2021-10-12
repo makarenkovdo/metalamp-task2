@@ -1,6 +1,8 @@
 import { Chart, registerables } from 'chart.js'
 Chart.register(...registerables)
 const ctx = document.getElementById('myChart').getContext('2d')
+ctx.height = 300
+ctx.width = 300
 
 const gradientA = ctx.createLinearGradient(0, 0, 0, 600)
 gradientA.addColorStop(0, 'rgb(255, 228, 156)')
@@ -28,8 +30,24 @@ new Chart(document.getElementById('myChart'), {
         ],
     },
     options: {
-        cutout: 150,
-        responsive: false,
+        cutout: '90%',
+        // responsive: false,
         rotation: 180,
+        radius: '67%',
+        plugins: {
+            legend: {
+                position: 'right',
+                labels: {
+                    font: {
+                        family: 'Montserrat',
+                        style: 'normal',
+                        weight: 'normal',
+                        size: 14,
+                        lineHeight: 24,
+                        color: 'rgba(31, 32, 65, 0.75)',
+                    },
+                },
+            },
+        },
     },
 })
