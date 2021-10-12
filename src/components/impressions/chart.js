@@ -1,7 +1,7 @@
 import { Chart, registerables } from 'chart.js'
 Chart.register(...registerables)
 const ctx = document.getElementById('myChart').getContext('2d')
-ctx.height = 300
+ctx.height = 200
 ctx.width = 300
 
 const gradientA = ctx.createLinearGradient(0, 0, 0, 600)
@@ -16,72 +16,6 @@ gradientC.addColorStop(1, 'rgb(111,207,153)')
 const gradientD = ctx.createLinearGradient(0, 0, 0, 600)
 gradientD.addColorStop(0, '#919191')
 gradientD.addColorStop(1, '#8BA4F9')
-
-// new Chart(document.getElementById('myChart'), {
-//     type: 'doughnut',
-//     data: {
-//         labels: ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован'],
-//         datasets: [
-//             {
-//                 label: 'Впечатления от номера',
-//                 backgroundColor: [gradientA, gradientB, gradientC, gradientD],
-//                 data: [130, 65, 65, 0],
-//             },
-//         ],
-//     },
-//     options: {
-//         cutout: '90%',
-//         responsive: false,
-//         rotation: 180,
-//         radius: '90%',
-//         layout: {
-//             padding: {
-//                 right: 50,
-//                 top: 5,
-//             },
-//         },
-//         title: {
-//             display: true,
-//             text: 'Month sdfsd fsd fsdfsdf',
-//         },
-//         plugins: {
-//             legend: {
-//                 position: 'right',
-//                 align: 'end',
-//                 title: {
-//                     display: true,
-//                     text: 'Legend Title',
-//                     position: 'left',
-//                     padding: {
-//                         right: 50,
-//                     },
-//                 },
-//                 plugins: {
-//                     title: {
-//                         display: true,
-//                         text: 'Custom Chart Title',
-//                     },
-//                 },
-//                 labels: {
-//                     boxWidth: 8,
-//                     boxHeight: 8,
-//                     borderRadius: '50%',
-//                     usePointStyle: true,
-//                     pointStyle: 'circle',
-//                     textAlign: 'left',
-//                     font: {
-//                         family: 'Montserrat',
-//                         style: 'normal',
-//                         weight: 'normal',
-//                         size: 14,
-//                         lineHeight: 24,
-//                         color: 'rgba(31, 32, 65, 0.75)',
-//                     },
-//                 },
-//             },
-//         },
-//     },
-// })
 
 const voices = [130, 65, 65, 0]
 const voiceQuantity = voices.reduce((acc, v) => (acc += v))
@@ -151,10 +85,11 @@ var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
                 ctx.font = '24px Montserrat'
                 ctx.lineHeight = '29px'
                 ctx.textBaseline = 'middle'
+                ctx.fillStyle = '#BC9CFF'
 
                 var text = `${voiceQuantity}`,
                     textX = Math.round(
-                        (width - ctx.measureText(text).width) / 2 - 50
+                        (width - ctx.measureText(text).width) / 2 - 70
                     ),
                     textY = height / 2
 
@@ -162,11 +97,11 @@ var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
 
                 var text2 = 'голосов',
                     text2X = Math.round(
-                        (width - ctx.measureText(text).width) / 2 - 50
+                        (width - ctx.measureText(text).width) / 2 - 70
                     ),
                     text2Y = height / 2 + 20
-                ctx.font = '14px Montserrat'
-                ctx.lineHeight = '29px'
+                ctx.font = '12px Montserrat'
+                ctx.lineHeight = '14.6px'
                 ctx.textBaseline = 'middle'
 
                 ctx.fillText(text2, text2X, text2Y)
