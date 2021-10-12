@@ -33,7 +33,7 @@ new Chart(document.getElementById('myChart'), {
         cutout: '90%',
         responsive: false,
         rotation: 180,
-        radius: '100%',
+        radius: '88%',
         plugins: {
             legend: {
                 position: 'right',

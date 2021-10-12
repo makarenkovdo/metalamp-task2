@@ -11,6 +11,9 @@
     }
     @media (min-width: 1440px) {
     }
+    .header-block {
+        margin: 0px;
+    }
 
     &__header-container {
         @media (min-width: 768px) and (max-width: 1439px) {
@@ -56,12 +59,13 @@
 
         .booking-card-block {
             box-sizing: border-box;
+            height: fit-content;
         }
     }
     &__room-info {
         display: grid;
         grid-template-columns: 291px 311px;
-        column-gap: 70px;
+        column-gap: 45px;
         grid-template-rows: 273px;
         row-gap: 30px 306px 160px;
     }

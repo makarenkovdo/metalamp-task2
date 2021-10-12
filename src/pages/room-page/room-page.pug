@@ -32,7 +32,9 @@ block content
                         +benefits('benefits-emotion.svg','Комфорт', 'Шумопоглощающие стены')
                         +benefits('benefits-location.svg','Удобство', 'Окно в каждой из спален')
                         +benefits('benefits-whatshot.svg','Уют', 'Номер оснащён камином')
-                    +impressions()
+                    section.room-page__impression                 
+                        h2(class='room-page__title' style= {margin: '0 0 16px 0'}) Впечатления от номера
+                        +impressions()
                     section.room-page__feedback-container
                         h2(class='room-page__title' style= {margin: '0 0 16px 0'}) Отзывы посетителей номера
                         +feedback(...feedbackA)
