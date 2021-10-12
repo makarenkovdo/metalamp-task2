@@ -15,12 +15,8 @@ new Chart(document.getElementById('myChart'), {
         ],
     },
     options: {
-        title: {
-            display: true,
-            text: 'Predicted world population (millions) in 2050',
-        },
-        cutoutPercentage: 90,
+        cutout: 150,
         responsive: false,
-        rotation: 120,
+        rotation: 180,
     },
 })

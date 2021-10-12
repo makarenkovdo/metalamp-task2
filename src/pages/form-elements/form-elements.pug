@@ -26,6 +26,7 @@ include ../../components/toggle/toggle
 
                 
 block content
+    -const feedbackA = ['Мурад Сарафанов','./img/sarafanov.png', '5 дней назад', [3,11], 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.']
     .form-elements
         .form-elements__area-a     
             .form-elements__text-field
@@ -78,7 +79,7 @@ block content
                 +checkbox-expandable-list('EXPANDABLE CHECKBOX LIST')
             .form-elements__benefits
                 +benefits('benefits-emotion.svg','Комфорт', 'Шумопоглощающие стены')
-                +benefits('benefits-house.svg','Удобство', 'Окно в каждой из спален')
+                +benefits('benefits-location.svg','Удобство', 'Окно в каждой из спален')
         .form-elements__area-b
             .form-elements__checkbox-list
                 +checkbox-list('checkbox buttons')
@@ -112,8 +113,8 @@ block content
                     +block-title('rich checkbox buttons')
                 +rich-checkbox()
         .form-elements__area-d
-            .form-elements__feedback
-                +feedback('Мурад Сарафанов','./img/sarafanov.png', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.' )
+            //- .form-elements__feedback
+            //-     +feedback(...feedbackA)
         .form-elements__area-c
             .form-elements__range-slider 
                 +block-title('range slider')

@@ -1,5 +1,5 @@
 include ../like-button/like-button
-mixin feedback(name, img, date, text)
+mixin feedback(name, img, date, likes, text)
     .feedback-container 
         .feedback__icon
             img(class="feedback__icon-img" src=`${img}` alt='author-icon' width='88' height='88')
@@ -7,5 +7,5 @@ mixin feedback(name, img, date, text)
             .feedback__author-name= name
             .feedback__date= date
         .feedback__like
-            +like-button(3, 11)
+            +like-button(...likes)
         .feedback__text= text
