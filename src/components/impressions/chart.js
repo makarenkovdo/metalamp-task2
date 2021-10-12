@@ -83,13 +83,15 @@ gradientD.addColorStop(1, '#8BA4F9')
 //     },
 // })
 
+const voices = [130, 65, 65, 0]
+const voiceQuantity = voices.reduce((acc, v) => (acc += v))
 var data = {
     labels: ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован'],
     datasets: [
         {
             label: 'Впечатления от номера',
             backgroundColor: [gradientA, gradientB, gradientC, gradientD],
-            data: [130, 65, 65, 0],
+            data: voices,
         },
     ],
 }
@@ -149,7 +151,7 @@ var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
                 ctx.font = fontSize + 'em sans-serif'
                 ctx.textBaseline = 'middle'
 
-                var text = '260',
+                var text = `${voiceQuantity}`,
                     textX = Math.round(
                         (width - ctx.measureText(text).width) / 2 - 50
                     ),
