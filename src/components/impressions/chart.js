@@ -38,6 +38,11 @@ new Chart(document.getElementById('myChart'), {
             legend: {
                 position: 'right',
                 labels: {
+                    boxWidth: 10,
+                    boxHeight: 10,
+                    borderRadius: '50%',
+                    usePointStyle: true,
+                    pointStyle: 'circle',
                     font: {
                         family: 'Montserrat',
                         style: 'normal',
