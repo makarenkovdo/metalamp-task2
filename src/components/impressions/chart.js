@@ -34,11 +34,16 @@ var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
     options: {
         cutout: '90%',
         responsive: true,
+        aspectRatio: 3,
         rotation: 180,
-        radius: '92%',
+        radius: '86%',
+
+        maintainAspectRatio: false,
+
         layout: {
             padding: {
-                bottom: 180,
+                bottom: 179,
+                right: 20,
             },
         },
         title: {
@@ -107,5 +112,6 @@ var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
         },
     ],
 })
-ctx.height = 100
-ctx.width = 300
+// Chart.canvas.parentNode.style.height = '328px'
+// Chart.canvas.parentNode.style.width = '328px'
+// ctx.height = '328px'
