@@ -148,7 +148,8 @@ var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
 
                 ctx.restore()
                 var fontSize = (height / 114).toFixed(2)
-                ctx.font = fontSize + 'em sans-serif'
+                ctx.font = '24px Montserrat'
+                ctx.lineHeight = '29px'
                 ctx.textBaseline = 'middle'
 
                 var text = `${voiceQuantity}`,
@@ -158,11 +159,15 @@ var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
                     textY = height / 2
 
                 ctx.fillText(text, textX, textY)
+
                 var text2 = 'голосов',
                     text2X = Math.round(
                         (width - ctx.measureText(text).width) / 2 - 50
                     ),
                     text2Y = height / 2 + 20
+                ctx.font = '14px Montserrat'
+                ctx.lineHeight = '29px'
+                ctx.textBaseline = 'middle'
 
                 ctx.fillText(text2, text2X, text2Y)
                 ctx.save()
