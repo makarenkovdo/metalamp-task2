@@ -54,7 +54,7 @@
         @media (min-width: 1440px) {
             display: grid;
             grid-template-columns: 780px 1fr;
-            padding: 70px 140px 90px 140px;
+            padding: 70px 140px 81px 139px;
         }
 
         .booking-card-block {
@@ -66,21 +66,27 @@
         display: grid;
         grid-template-columns: 291px 311px;
         column-gap: 44px;
-        grid-template-rows: 273px;
-        row-gap: 30px 306px 160px;
+        grid-template-rows: 274px 305px;
+        row-gap: 30px;
+    }
+    &__benefits-container {
+        padding-left: 1px;
     }
     &__title {
         @include h2();
         text-transform: none;
+        // padding-left: 26px;
     }
     &__feedback-container {
         display: grid;
         grid-area: 2/1/3/3;
+        grid-template-rows: 44px 153px;
     }
 
     &__cancel {
         display: grid;
-        grid-template-rows: 44px 96px;
+        grid-template-rows: 42px 96px;
+        padding-left: 27px;
         &-caption {
             width: 341px;
             @include body-font();

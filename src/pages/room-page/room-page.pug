@@ -29,18 +29,19 @@ block content
             section.room-page__main-container 
                 section.room-page__room-info
                     section.room-page__benefits-container
+                        h2(class='room-page__title' style= {margin: '0px 0 21px 0'}) Сведения о номере
                         +benefits('benefits-emotion.svg','Комфорт', 'Шумопоглощающие стены')
                         +benefits('benefits-location.svg','Удобство', 'Окно в каждой из спален')
                         +benefits('benefits-whatshot.svg','Уют', 'Номер оснащён камином')
                     section.room-page__impression                 
-                        h2(class='room-page__title' style= {margin: '0 0 10px 0'}) Впечатления от номера
+                        h2(class='room-page__title' style= {margin: '0 0 10px 26px'}) Впечатления от номера
                         +impressions()
                     section.room-page__feedback-container
-                        h2(class='room-page__title' style= {margin: '0 0 16px 0'}) Отзывы посетителей номера
+                        h2(class='room-page__title' style= {margin: '0 0 8px 0'}) Отзывы посетителей номера
                         +feedback(...feedbackA)
                         +feedback(...feedbackB)
                     section.room-page__rules
-                        h2(class='room-page__title' style= {margin: '0 0 16px 0'}) Правила
+                        h2(class='room-page__title' style= {margin: '0 0 11px 21px'}) Правила
                         +bullet-list()
                     section.room-page__cancel
                         h2(class='room-page__title' style= {margin: '0 0 16px 0'}) Отмена
