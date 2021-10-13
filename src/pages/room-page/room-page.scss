@@ -1,7 +1,15 @@
 @import './../../styles/mixins/fonts.scss';
 @import './../../styles/variables/colors.scss';
-
+html {
+    @media (min-width: 320px) and (max-width: 360px) {
+        font-size: 10px;
+    }
+}
 .room-page {
+    @media (min-width: 320px) and (max-width: 439px) {
+        display: grid;
+        width: 100vw;
+    }
     @media (min-width: 480px) and (max-width: 1439px) {
         display: grid;
         width: 100vw;
@@ -25,6 +33,7 @@
         @media (min-width: 320px) and (max-width: 1439px) {
             grid-template-columns: 64vw 32vw;
             grid-template-rows: 16vw 16vw;
+            padding-left: 10px;
         }
         @media (min-width: 1440px) {
             grid-template-columns: 981px 1fr;
@@ -61,7 +70,6 @@
     &__main-container {
         display: grid;
         @media (max-width: 479px) {
-            padding-left: 15px;
         }
         @media (min-width: 480px) and (max-width: 859px) {
             padding-left: 25px;
@@ -80,15 +88,39 @@
             padding: 70px 140px 81px 139px;
         }
 
-        .booking-card-block {
-            box-sizing: border-box;
-            height: fit-content;
-            padding-top: 40px;
+        .booking-card {
+            &-block {
+                box-sizing: border-box;
+                height: fit-content;
+                padding-top: 40px;
+                @media (max-width: 479px) {
+                    margin-left: 10px;
+                    width: 100vw;
+                    padding: 10px;
+                }
+            }
+            &__price-box {
+                display: grid;
+                @media (max-width: 479px) {
+                    grid-template-columns: 220px 22px 60px;
+                }
+            }
+        }
+        .dropdown__button {
+            @media (max-width: 479px) {
+                width: 250px;
+            }
         }
     }
     &__room-info {
         display: grid;
-        @media (min-width: 320px) and (max-width: 859px) {
+        @media (min-width: 320px) and (max-width: 459px) {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+            padding-left: 15px;
+        }
+
+        @media (min-width: 460px) and (max-width: 859px) {
             grid-template-columns: 1fr;
             row-gap: 30px;
         }
@@ -141,18 +173,28 @@
         display: grid;
         grid-template-rows: 42px 96px;
         padding-left: 27px;
+        @media (min-width: 320px) and (max-width: 859px) {
+            padding-left: 0px;
+        }
         &-caption {
             width: 341px;
             @include body-font();
         }
     }
-
-    &__footer-container {
-        @media (min-width: 768px) and (max-width: 1439px) {
-            width: 100vw;
-        }
-        @media (min-width: 1440px) {
-            width: 1440px;
-        }
+}
+@media (max-width: 768px) {
+    .room-page .footer-block {
+        width: 100vw;
+    }
+    .room-page .header-block {
+        width: 100vw;
+    }
+}
+@media (min-width: 769px) and (max-width: 1439px) {
+    .room-page .footer-block {
+        width: 100vw;
+    }
+    .room-page .header-block {
+        width: 100vw;
     }
 }

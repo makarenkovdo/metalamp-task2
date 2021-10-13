@@ -25,10 +25,15 @@
         </section>
       </header>
       <main>
-        <section class="room-page__images-container"><img class="room-page__img-1" src="./img/room-888__big-1.jpg" alt="room-img" width="981" height="485"><img class="room-page__img-2" src="./img/room-888__medium-1.jpg" alt="room-img" width="461" height="243"><img class="room-page__img-3" src="./img/room-888__medium-2.jpg" alt="room-img" width="461" height="243"></section>
+        <section class="room-page__images-container">
+          <div class="room-page__img-1"></div>
+          <div class="room-page__img-2"></div>
+          <div class="room-page__img-3"></div>
+        </section>
         <section class="room-page__main-container"> 
           <section class="room-page__room-info">
             <section class="room-page__benefits-container">
+              <h2 class="room-page__title" style="margin:0px 0 21px 0;">Сведения о номере</h2>
               <section class="benefits-block">
                 <section class="benefits__main-container">
                   <div class="benefits__img-container"><img class="emotion-icon" src="./img/benefits-emotion.svg" alt="Комфорт" width="40" height="40"></div>
@@ -60,11 +65,14 @@
                 <div class="benefits__line-img"></div>
               </section>
             </section>
-            <section class="impressions-container">
-              <canvas id="myChart" width="400" height="400"></canvas>
+            <section class="room-page__impression">                
+              <h2 class="room-page__title" style="margin:0 0 10px 26px;">Впечатления от номера</h2>
+              <section class="impressions-container">
+                <canvas id="myChart" width="450" height="330"></canvas>
+              </section>
             </section>
             <section class="room-page__feedback-container">
-              <h2 class="room-page__title" style="margin:0 0 16px 0;">Отзывы посетителей номера</h2>
+              <h2 class="room-page__title" style="margin:0 0 8px 0;">Отзывы посетителей номера</h2>
               <div class="feedback-container"> 
                 <div class="feedback__icon"><img class="feedback__icon-img" src="./img/sarafanov.png" alt="author-icon" width="88" height="88"></div>
                 <div class="feedback__author-date-container">
@@ -87,6 +95,16 @@
                 </div>
                 <div class="feedback__text">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</div>
               </div>
+            </section>
+            <section class="room-page__rules">
+              <h2 class="room-page__title" style="margin:0 0 11px 21px;">Правила</h2>
+              <form class="bullet-list-form">
+                <ul class="bullet-list">
+                  <li>Нельзя с питомцами</li>
+                  <li>Без вечеринок и мероприятий</li>
+                  <li>Время прибытия — после 13:00, а выезд до 12:00</li>
+                </ul>
+              </form>
             </section>
             <section class="room-page__cancel">
               <h2 class="room-page__title" style="margin:0 0 16px 0;">Отмена</h2>
