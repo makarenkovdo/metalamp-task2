@@ -2,12 +2,9 @@
 @import './../../styles/variables/colors.scss';
 
 .room-page {
-    @media (min-width: 480px) and (max-width: 1279px) {
-    }
-    @media (min-width: 1280px) and (max-width: 1439px) {
+    @media (min-width: 480px) and (max-width: 1439px) {
         display: grid;
         width: 100vw;
-        // grid-template-columns: minmax(1280px, 1440px);
     }
     @media (min-width: 1440px) {
     }
@@ -25,34 +22,60 @@
     }
     &__images-container {
         display: grid;
-        grid-template-columns: 981px 1fr;
-        grid-template-rows: 242.5px 242.5px;
+        @media (min-width: 320px) and (max-width: 1439px) {
+            grid-template-columns: 64vw 32vw;
+            grid-template-rows: 16vw 16vw;
+        }
+        @media (min-width: 1440px) {
+            grid-template-columns: 981px 1fr;
+            grid-template-rows: 242.5px 242.5px;
+            padding: 70px 40px 81px 40px;
+        }
     }
     &__img {
         &-1 {
             display: grid;
             grid-area: 1/1/3/2;
+            background: url(./img/room-888__big-1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
         &-2 {
             display: grid;
             grid-area: 1/2/2/3;
+            background: url(./img/room-888__medium-1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
         &-3 {
             display: grid;
             grid-area: 2/2/3/3;
+            background: url(./img/room-888__medium-2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
     }
     &__main-container {
         display: grid;
         @media (max-width: 479px) {
+            padding-left: 15px;
         }
-        @media (min-width: 480px) and (max-width: 960px) {
+        @media (min-width: 480px) and (max-width: 859px) {
+            padding-left: 25px;
+        }
+        @media (min-width: 860px) and (max-width: 1023px) {
+            justify-content: center;
+            row-gap: 30px;
         }
 
-        @media (min-width: 960px) and (max-width: 1439px) {
+        @media (min-width: 1024px) and (max-width: 1439px) {
+            grid-template-columns: 741px 1fr;
+            padding: 70px 40px 81px 40px;
         }
         @media (min-width: 1440px) {
-            display: grid;
             grid-template-columns: 781px 1fr;
             padding: 70px 140px 81px 139px;
         }
@@ -65,10 +88,22 @@
     }
     &__room-info {
         display: grid;
-        grid-template-columns: 291px 311px;
-        column-gap: 44px;
-        grid-template-rows: 274px 305px;
-        row-gap: 30px;
+        @media (min-width: 320px) and (max-width: 859px) {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+        @media (min-width: 860px) and (max-width: 1439px) {
+            grid-template-columns: 291px 311px;
+            column-gap: 34px;
+            grid-template-rows: 274px 305px;
+            row-gap: 30px;
+        }
+        @media (min-width: 1440px) {
+            grid-template-columns: 291px 311px;
+            column-gap: 44px;
+            grid-template-rows: 274px 305px;
+            row-gap: 30px;
+        }
     }
     &__benefits-container {
         padding-left: 1px;
@@ -82,6 +117,24 @@
         display: grid;
         grid-area: 2/1/3/3;
         grid-template-rows: 44px 153px;
+        @media (min-width: 320px) and (max-width: 859px) {
+            grid-area: 3/1;
+            row-gap: 15px;
+        }
+    }
+    .feedback {
+        &__container {
+            @media (min-width: 320px) and (max-width: 859px) {
+                display: grid;
+                grid-template-columns: 58px max-content;
+                grid-template-rows: 48px max-content;
+            }
+        }
+        &__text {
+            @media (min-width: 320px) and (max-width: 859px) {
+                width: 80vw;
+            }
+        }
     }
 
     &__cancel {
