@@ -35,7 +35,7 @@ var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
         cutout: '90%',
         responsive: false,
         rotation: 180,
-        radius: '90%',
+        radius: '87%',
 
         layout: {
             padding: {
@@ -80,25 +80,25 @@ var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
 
                 ctx.restore()
                 var fontSize = (height / 114).toFixed(2)
-                ctx.font = '24px Montserrat'
+                ctx.font = 'bold 24px Montserrat'
                 ctx.lineHeight = '29px'
                 ctx.textBaseline = 'middle'
                 ctx.fillStyle = '#BC9CFF'
 
                 var text = `${voiceQuantity}`,
                     textX = Math.round(
-                        (width - ctx.measureText(text).width) / 2 - 70
+                        (width - ctx.measureText(text).width) / 2 - 138
                     ),
-                    textY = height / 2
+                    textY = height / 2 - 102
 
                 ctx.fillText(text, textX, textY)
 
                 var text2 = 'голосов',
                     text2X = Math.round(
-                        (width - ctx.measureText(text).width) / 2 - 70
+                        (width - ctx.measureText(text).width) / 2 - 147
                     ),
-                    text2Y = height / 2 + 20
-                ctx.font = '12px Montserrat'
+                    text2Y = height / 2 - 80
+                ctx.font = 'normal 15px Montserrat'
                 ctx.lineHeight = '14.6px'
                 ctx.textBaseline = 'middle'
 
