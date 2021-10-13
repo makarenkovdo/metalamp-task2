@@ -53,13 +53,14 @@
         }
         @media (min-width: 1440px) {
             display: grid;
-            grid-template-columns: 780px 1fr;
+            grid-template-columns: 781px 1fr;
             padding: 70px 140px 81px 139px;
         }
 
         .booking-card-block {
             box-sizing: border-box;
             height: fit-content;
+            padding-top: 40px;
         }
     }
     &__room-info {
