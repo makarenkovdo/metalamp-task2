@@ -33,17 +33,14 @@ var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
     data: data,
     options: {
         cutout: '90%',
-        responsive: true,
-        aspectRatio: 3,
+        responsive: false,
         rotation: 180,
-        radius: '86%',
-
-        maintainAspectRatio: false,
+        radius: '90%',
 
         layout: {
             padding: {
-                bottom: 179,
-                right: 20,
+                bottom: 189,
+                right: 110,
             },
         },
         title: {
@@ -61,7 +58,6 @@ var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
                     borderRadius: '50%',
                     usePointStyle: true,
                     pointStyle: 'circle',
-                    textAlign: 'left',
                     font: {
                         family: 'Montserrat',
                         style: 'normal',
@@ -112,6 +108,7 @@ var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
         },
     ],
 })
+
 // Chart.canvas.parentNode.style.height = '328px'
 // Chart.canvas.parentNode.style.width = '328px'
 // ctx.height = '328px'
