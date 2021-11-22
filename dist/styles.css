@@ -1845,6 +1845,12 @@ html {
   /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
 }
+/*!********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/range-slider/range-slider.scss ***!
+  \********************************************************************************************************************************************************************/
+.range-slider__container {
+  width: 266px;
+}
 /*!******************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/rate-button/rate-button.scss ***!
   \******************************************************************************************************************************************************************/
@@ -2852,15 +2858,12 @@ html {
 /*!*********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/pages/room-page/room-page.scss ***!
   \*********************************************************************************************************************************************************/
-html .room-page {
-  font-size: 10px;
-}
-
-@media (min-width: 320px) and (max-width: 439px) {
-  .room-page html {
+@media (min-width: 320px) and (max-width: 360px) {
+  html {
     font-size: 10px;
   }
 }
+
 @media (min-width: 320px) and (max-width: 439px) {
   .room-page {
     display: grid;
@@ -2893,6 +2896,7 @@ html .room-page {
   .room-page__images-container {
     grid-template-columns: 64vw 32vw;
     grid-template-rows: 16vw 16vw;
+    padding-left: 10px;
   }
 }
 @media (min-width: 1440px) {
@@ -2931,21 +2935,22 @@ html .room-page {
 }
 @media (max-width: 479px) {
   .room-page__main-container {
-    padding-left: 15px;
+    row-gap: 30px;
   }
 }
 @media (min-width: 480px) and (max-width: 859px) {
   .room-page__main-container {
     padding-left: 25px;
+    row-gap: 50px;
   }
 }
-@media (min-width: 860px) and (max-width: 1023px) {
+@media (min-width: 860px) and (max-width: 1279px) {
   .room-page__main-container {
     justify-content: center;
     row-gap: 30px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1280px) and (max-width: 1439px) {
   .room-page__main-container {
     grid-template-columns: 741px 1fr;
     padding: 70px 40px 81px 40px;
@@ -2962,16 +2967,44 @@ html .room-page {
   height: fit-content;
   padding-top: 40px;
 }
+@media (max-width: 479px) {
+  .room-page__main-container .booking-card-block {
+    margin-left: 10px;
+    width: 100vw;
+    padding: 10px;
+  }
+}
+.room-page__main-container .booking-card__price-box {
+  display: grid;
+}
+@media (max-width: 479px) {
+  .room-page__main-container .booking-card__price-box {
+    grid-template-columns: 220px 22px 60px;
+  }
+}
+@media (max-width: 479px) {
+  .room-page__main-container .dropdown__button {
+    width: 250px;
+  }
+}
 .room-page__room-info {
   display: grid;
 }
-@media (min-width: 320px) and (max-width: 859px) {
+@media (min-width: 320px) and (max-width: 459px) {
   .room-page__room-info {
     grid-template-columns: 1fr;
     row-gap: 30px;
+    padding-left: 15px;
   }
 }
-@media (min-width: 860px) and (max-width: 1439px) {
+@media (min-width: 460px) and (max-width: 759px) {
+  .room-page__room-info {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    justify-items: center;
+  }
+}
+@media (min-width: 760px) and (max-width: 1439px) {
   .room-page__room-info {
     grid-template-columns: 291px 311px;
     column-gap: 34px;
@@ -3005,6 +3038,12 @@ html .room-page {
   .room-page__feedback-container {
     grid-area: 3/1;
     row-gap: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 320px) and (max-width: 859px) {
+  .room-page .impressions-container {
+    width: 50vw;
   }
 }
 @media (min-width: 320px) and (max-width: 859px) {
@@ -3038,14 +3077,23 @@ html .room-page {
   line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
 }
-@media (min-width: 768px) and (max-width: 1439px) {
-  .room-page__footer-container {
+
+@media (max-width: 768px) {
+  .room-page .footer-block {
+    width: 100vw;
+  }
+
+  .room-page .header-block {
     width: 100vw;
   }
 }
-@media (min-width: 1440px) {
-  .room-page__footer-container {
-    width: 1440px;
+@media (min-width: 769px) and (max-width: 1439px) {
+  .room-page .footer-block {
+    width: 100vw;
+  }
+
+  .room-page .header-block {
+    width: 100vw;
   }
 }
 /*!*************************************************************************************************************************************************************!*\

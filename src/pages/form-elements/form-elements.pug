@@ -16,11 +16,13 @@ include ../../components/like-button/like-button
 include ../../components/masked-text-field/masked-text-field    
 include ../../components/pagination/pagination
 include ../../components/radio-button/radio-button
+include ../../components/range-slider/range-slider
 include ../../components/rate-button/rate-button
 include ../../components/rich-checkbox/rich-checkbox
 include ../../components/subscription-text-field/subscription-text-field
 include ../../components/text-field/text-field
 include ../../components/toggle/toggle
+
 
 
 
@@ -118,6 +120,7 @@ block content
         .form-elements__area-c
             .form-elements__range-slider 
                 +block-title('range slider')
+                +range-slider
             .form-elements__buttons
                 div(class='form-elements__titles-container' style= {margin: '0 0 16px 0'})
                     +block-title('BUTTONS')
