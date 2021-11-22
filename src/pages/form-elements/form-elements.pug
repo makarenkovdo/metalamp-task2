@@ -115,11 +115,13 @@ block content
                     +block-title('rich checkbox buttons')
                 +rich-checkbox()
         .form-elements__area-d
-            //- .form-elements__feedback
-            //-     +feedback(...feedbackA)
+            .form-elements__feedback
+                +feedback(...feedbackA)
         .form-elements__area-c
             .form-elements__range-slider 
-                +block-title('range slider')
+                div(class='form-elements__titles-container' style= {margin: '0 0 5px 0'})
+                    +block-title('text field')
+                    div(class='block-subtitle' id='range-slider__text') 5000-1000
                 +range-slider
             .form-elements__buttons
                 div(class='form-elements__titles-container' style= {margin: '0 0 16px 0'})

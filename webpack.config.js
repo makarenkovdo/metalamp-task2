@@ -6,7 +6,7 @@ const webpack = require('webpack')
 const path = require('path')
 // const pugPages = [
 //     'color-and-type',
-//     'form-elements',
+    // 'form-elements',
 //     'headers-footers',
 //     'cards',
 //     'landing-page',
@@ -15,7 +15,7 @@ const path = require('path')
 //     'sign-in-page',
 //     'search-page',
 // ]
-const pugPages = ['room-page']
+const pugPages = ['room-page', 'form-elements']
 
 const plugins = [
     new MiniCssExtractPlugin({
@@ -53,6 +53,7 @@ module.exports = {
         datepicker: './src/components/datepicker/datepicker.js',
         dropdown: './src/components/dropdown/dropdown.js',
         likeButton: './src/components/like-button/like-button.js',
+        rangeSlider: './src/components/range-slider/range-slider.js',
         maskedTextField:
             './src/components/masked-text-field/masked-text-field.js',
         slider: './src/components/slider/slider.js',
@@ -85,6 +86,7 @@ module.exports = {
                                 { exclude: ['proposal-dynamic-import'] },
                             ],
                         ],
+                        plugins: ["add-module-exports"]
                     },
                 },
             },

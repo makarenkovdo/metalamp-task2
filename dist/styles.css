@@ -2053,7 +2053,7 @@ button.splide__pagination__page.is-active {
 /*!********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/toggle/toggle.scss ***!
   \********************************************************************************************************************************************************/
-.toggle-container {
+.toggle__container {
   display: grid;
   margin-bottom: 14px;
   align-content: flex-start;
@@ -2062,11 +2062,11 @@ button.splide__pagination__page.is-active {
   position: relative;
   height: 20px;
 }
-.toggle-container .toggle-inline-container {
+.toggle__container .toggle__container_inline {
   display: grid;
   grid-template-columns: 15.39% 84.61%;
 }
-.toggle-container .toggle-caption {
+.toggle__container .toggle__caption {
   display: inline;
   align-content: flex-start;
   vertical-align: top;
@@ -2082,14 +2082,14 @@ button.splide__pagination__page.is-active {
 }
 
 /* Hide default HTML checkbox */
-.toggle-container input {
+.toggle__container input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
 /* The slider */
-.slider {
+.toggle__slider {
   position: absolute;
   box-sizing: border-box;
   cursor: pointer;
@@ -2104,7 +2104,7 @@ button.splide__pagination__page.is-active {
   transition: 0.4s;
 }
 
-.slider:before {
+.toggle__slider:before {
   position: absolute;
   content: "";
   height: 12px;
@@ -2116,11 +2116,11 @@ button.splide__pagination__page.is-active {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked + .toggle__slider {
   border: 1px solid #8ba4f9;
 }
 
-input:checked + .slider:before {
+input:checked + .toggle__slider:before {
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
   transform: translateX(20px);
@@ -2128,13 +2128,13 @@ input:checked + .slider:before {
 }
 
 /* Rounded sliders */
-.slider.round {
+.toggle__slider.round {
   border-radius: 34px;
   border: 1px solid #bc9cff;
   border: 1px solid rgba(31, 32, 65, 0.25);
 }
 
-.slider.round:before {
+.toggle__slider.round:before {
   border-radius: 50%;
 }
 /*!*************************************************************************************************************************************************!*\
