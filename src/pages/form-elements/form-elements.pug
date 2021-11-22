@@ -23,10 +23,8 @@ include ../../components/subscription-text-field/subscription-text-field
 include ../../components/text-field/text-field
 include ../../components/toggle/toggle
 
-
-
-
-                
+block headBlock
+    title Form Elements              
 block content
     -const feedbackA = ['Мурад Сарафанов','./img/sarafanov.png', '5 дней назад', [3,11], 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.']
     .form-elements
@@ -119,9 +117,9 @@ block content
                 +feedback(...feedbackA)
         .form-elements__area-c
             .form-elements__range-slider 
-                div(class='form-elements__titles-container' style= {margin: '0 0 5px 0'})
-                    +block-title('text field')
-                    div(class='block-subtitle' id='range-slider__text') 5000-1000
+                div(class='form-elements__titles-container' style= {margin: '0 0 23px 0', width: '266px'})
+                    +block-title('rangle slider')
+                    div(class='block-subtitle' id='range-slider__text') 5000₽-10000₽
                 +range-slider
             .form-elements__buttons
                 div(class='form-elements__titles-container' style= {margin: '0 0 16px 0'})
