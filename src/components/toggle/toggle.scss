@@ -1,20 +1,20 @@
 @import './../../styles/mixins/fonts.scss';
 @import './../../styles/variables/colors.scss';
 
-.toggle-container {
+.toggle__container {
     display: grid;
     margin-bottom: 14px;
     align-content: flex-start;
     align-items: flex-start;
 
-    .toggle-inline-container {
+    .toggle__container_inline {
         display: grid;
         grid-template-columns: 15.39% 84.61%;
     }
     width: 260px;
     position: relative;
     height: 20px;
-    .toggle-caption {
+    .toggle__caption {
         display: inline;
         align-content: flex-start;
         vertical-align: top;
@@ -26,14 +26,14 @@
 }
 
 /* Hide default HTML checkbox */
-.toggle-container input {
+.toggle__container input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
 /* The slider */
-.slider {
+.toggle__slider {
     position: absolute;
     box-sizing: border-box;
     cursor: pointer;
@@ -50,7 +50,7 @@
     // padding-top: 10px;
 }
 
-.slider:before {
+.toggle__slider:before {
     position: absolute;
     content: '';
     height: 12px;
@@ -62,11 +62,11 @@
     transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked + .toggle__slider {
     border: 1px solid #8ba4f9;
 }
 
-input:checked + .slider:before {
+input:checked + .toggle__slider:before {
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px);
@@ -74,12 +74,12 @@ input:checked + .slider:before {
 }
 
 /* Rounded sliders */
-.slider.round {
+.toggle__slider.round {
     border-radius: 34px;
     border: 1px solid $purple;
     border: 1px solid $dark-shade-25;
 }
 
-.slider.round:before {
+.toggle__slider.round:before {
     border-radius: 50%;
 }
