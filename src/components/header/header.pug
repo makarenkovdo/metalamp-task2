@@ -6,19 +6,17 @@ mixin header(isSignIn)
         section.header-logo-container
             +logo-toxin()
         div.header__hamburger
-            label.header__hamburger-new-button
-                input.header__hamburger-button(type='checkbox')
-                span.header__hamburger-new-icon
-                div.header__hamburger-menu
-                    a.about(href="") О нас
-                    span.services.expandable-link
-                        a.agreements__link(href="") Услуги
-                        img.header__expandable-link(src='./img/link-expand.svg' alt='link-expand' width='12' height='8')
-                    a.vacancies(href="") Вакансии
-                    a.news(href="") Новости
-                    span.agreements 
-                        a.agreements__link(href="") Соглашения
-                        img.header__expandable-link(src='./img/link-expand.svg' alt='link-expand' width='12' height='8')
+            img(class=`header__hamburger-icon js-header__hamburger-icon` src='./img/burger.svg' alt='menu' width='24' height='24')
+            div(class="header__hamburger-menu js-header__hamburger-menu js-hider")
+                a.about(href="") О нас
+                span.services.expandable-link
+                    a.agreements__link(href="") Услуги
+                    img.header__expandable-link(src='./img/link-expand.svg' alt='link-expand' width='12' height='8')
+                a.vacancies(href="") Вакансии
+                a.news(href="") Новости
+                span.agreements 
+                    a.agreements__link(href="") Соглашения
+                    img.header__expandable-link(src='./img/link-expand.svg' alt='link-expand' width='12' height='8')
         nav.header__nav 
             a.about(href="") О нас
             span.services.expandable-link

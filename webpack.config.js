@@ -54,6 +54,7 @@ module.exports = {
         dropdown: './src/components/dropdown/dropdown.js',
         likeButton: './src/components/like-button/like-button.js',
         rangeSlider: './src/components/range-slider/range-slider.js',
+        burger: './src/components/header/header.js',
         maskedTextField:
             './src/components/masked-text-field/masked-text-field.js',
         slider: './src/components/slider/slider.js',
