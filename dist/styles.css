@@ -1881,13 +1881,6 @@ html {
 .rate-button__img {
   margin: 0 2px 0 2px;
 }
-/*!********************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/registration/registration.scss ***!
-  \********************************************************************************************************************************************************************/
-.registration-container {
-  width: 380px;
-  height: 646px;
-}
 /*!**********************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/rich-checkbox/rich-checkbox.scss ***!
   \**********************************************************************************************************************************************************************/
@@ -3269,6 +3262,9 @@ html {
   .search-page__footer-container {
     width: 1440px;
   }
+}
+.search-page .slider {
+  margin-bottom: 13.56px;
 }
 /*!***************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/pages/sign-in-page/sign-in-page.scss ***!

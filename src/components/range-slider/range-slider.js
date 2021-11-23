@@ -9,8 +9,8 @@ const params = {
   isRange: true,
   shouldAddBar:true, 
   minValue: 0, 
-  maxValue:15000, 
-  step:200,
+  maxValue:14000, 
+  step: 100,
   runnerSize: [12,12],
   runnersInstantPosition: [5000, 10000],
   };
@@ -20,4 +20,4 @@ const handleChange = function handleSliderChange(params) {
 }
 params.onChange = handleChange;
 
-const rangeSlider = new Slider('range-slider',params )
+const rangeSlider = new Slider('range-slider', params)

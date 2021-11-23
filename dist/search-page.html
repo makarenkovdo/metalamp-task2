@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="keywords" content="Hotel-Pages, Metalamp">
+<meta name="description" content="Hotel Pages for MetaLamp's staging task">
+    <title>Search Page     </title>
   <script defer src="styles.bundle.js"></script><script defer src="checkboxExpList.bundle.js"></script><script defer src="datepicker.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="rangeSlider.bundle.js"></script><script defer src="maskedTextField.bundle.js"></script><script defer src="slider.bundle.js"></script><script defer src="chart.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"><link href="rangeSlider.css" rel="stylesheet"><link href="slider.css" rel="stylesheet"></head>
   <body>
     <section class="search-page">
@@ -32,9 +33,9 @@
             <div class="search-page__title-container" style="margin:0 0 5px 0;">
               <h3 class="block-title">даты пребывания в отеле</h3>
             </div>
-            <form class="filter-date-dropdown-form">
+            <section class="filter-date-dropdown-form">
               <input class="datepicker-here filter-date-dropdown__input js-datepicker-input" id="start_one" type="text" data-range="true" data-date-format="d M" data-multiple-dates-separator=" - " placeholder="ДД.ММ.ГГГГ"><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/dropdown.svg" alt="open" width="13" height="8"></span>
-            </form>
+            </section>
           </div>
           <div class="search-page__guest-dropdown">
             <div class="search-page__title-container" style="margin:0 0 5px 0;">
@@ -53,9 +54,11 @@
           <div class="search-page__range-slider">
             <div class="search-page__titles-container" style="margin:0 0 16px 0;">
               <h3 class="block-title">диапазон цены</h3>
-              <h3 class="block-subtitle">5 000₽ - 10 000₽</h3>
+              <div class="block-subtitle" id="range-slider__text">5000₽-10000₽</div>
             </div>
-            <div class="search-page__range-slider-container"></div>
+            <div class="range-slider__container" style="width:">
+              <div class="slider" id="range-slider"></div>
+            </div>
             <p class="search-page__range-slider-caption">Стоимость за сутки пребывания в номере</p>
           </div>
           <div class="search-page__checkbox-list">
@@ -76,7 +79,7 @@
             <div class="search-page__title-container" style="margin:0 0 16.5px 0;">
               <h3 class="block-title">доступность</h3>
             </div>
-            <form class="rich-checkbox-container">
+            <section class="rich-checkbox-container">
               <div class="rich-checkbox-content">       
                 <label class="rich-checkbox-label">
                   <input class="rich-checkbox__input" type="checkbox"><span class="rich-checkbox__new-icon"></span>
@@ -89,7 +92,7 @@
                   <div class="rich-checkbox__text-box"><span class="rich-checkbox__title">Помощник для инвалидов</span><span class="rich-checkbox__subtitle">На 1 этаже вас встретит специалист</span><span class="rich-checkbox__subtitle"> и проводит до номера.</span></div>
                 </label>
               </div>
-            </form>
+            </section>
           </div>
           <div class="search-page__room-dropdown">
             <div class="search-page__title-container" style="margin:0 0 5px 0;">
@@ -613,9 +616,9 @@
             <section class="footer__group"><a class="footer__group-title" href="">О нас</a><a class="footer__link" href="">О сервисе</a><a class="footer__link" href="">Наша команда           </a><a class="footer__link" href="">Вакансии               </a><a class="footer__link" href="">Инвесторы</a></section>
             <section class="footer__group"><a class="footer__group-title" href="">Служба поддержки</a><a class="footer__link" href="">Соглашения           </a><a class="footer__link" href="">Сообщества</a><a class="footer__link" href="">Связь с нами               </a></section>
             <section class="footer__group footer__subscribe"><a class="footer__group-title" href="">Подписка</a><a class="footer__caption" href="">Получайте специальные предложения и новости сервиса</a>
-              <form class="subscription-text-field-form"><span class="text-field-container">
+              <section>.subscription-text-field-form<span class="text-field-container">
                   <input class="text-field__input" type="text" value="" name="email" placeholder="Email"></span><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/arrow.svg" alt="open" width="18" height="18"></span>
-              </form>
+              </section>
             </section>
           </section>
           <section class="footer-copyright-bar">
