@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Elements              </title>
-  <script defer src="styles.bundle.js"></script><script defer src="checkboxExpList.bundle.js"></script><script defer src="datepicker.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="rangeSlider.bundle.js"></script><script defer src="maskedTextField.bundle.js"></script><script defer src="slider.bundle.js"></script><script defer src="chart.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"><link href="rangeSlider.css" rel="stylesheet"><link href="slider.css" rel="stylesheet"></head>
+  <script defer src="styles.bundle.js"></script><script defer src="datepicker.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="rangeSlider.bundle.js"></script><script defer src="maskedTextField.bundle.js"></script><script defer src="slider.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"><link href="rangeSlider.css" rel="stylesheet"><link href="slider.css" rel="stylesheet"></head>
   <body><img class="ui-kit-template-logo" src="./img/ui-kit-logo.svg" alt="logo" width="48" height="48">
     <div class="form-elements">
       <div class="form-elements__area-a">    
@@ -32,9 +32,9 @@
             <h3 class="block-title">dropdown</h3>
           </div>
           <section class="dropdown-block">
-            <div class="js-dropdown_instance-1_type hide"></div>
-            <div class="dropdown dropdown_wide js-dropdown_instance-1">
-              <div class="dropdown__button js-dropdown_instance-1__button"><span class="dropdown__text js-dropdown_instance-1__text">Сколько гостей</span><span class="dropdown__img-box js-dropdown_instance-1__img-box"><img class="dropdown__arrow-icon" src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
+            <div class="js-dropdown_instance-1_type hide" tabindex="0"></div>
+            <div class="dropdown dropdown_wide js-dropdown_instance-1" tabindex="0">
+              <div class="dropdown__button js-dropdown_instance-1__button" tabindex="0"><span class="dropdown__text js-dropdown_instance-1__text">Сколько гостей</span><span class="dropdown__img-box js-dropdown_instance-1__img-box"><img class="dropdown__arrow-icon" src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
             </div>
             <div class="dropdown__popup dropdown__popup_wide js-dropdown_instance-1__popup hide" style="width:widepx;"><span class="dropdown__option-text js-dropdown_instance-1__option-text">ВЗРОСЛЫЕ</span><span class="dropdown__decrease js-dropdown_instance-1__decrease1"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-1__counter1">0</span><span class="dropdown__increase js-dropdown_instance-1__increase1"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-1__option-text">ДЕТИ</span><span class="dropdown__decrease js-dropdown_instance-1__decrease2"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-1__counter2">0</span><span class="dropdown__increase js-dropdown_instance-1__increase2"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-1__option-text">МЛАДЕНЦЫ</span><span class="dropdown__decrease js-dropdown_instance-1__decrease3"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-1__counter3">0</span><span class="dropdown__increase js-dropdown_instance-1__increase3"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span>
               <div class="dropdown__adding-buttons"><span class="dropdown__clear js-dropdown_instance-1__clear invisible">ОЧИСТИТЬ</span><span class="dropdown__apply js-dropdown_instance-1__apply">ПРИМЕНИТЬ</span></div>
@@ -75,7 +75,7 @@
           <div class="form-elements__titles-container" style="margin:0 0 5px 0;">
             <h3 class="block-title">subscription text field</h3>
           </div>
-          <section>.subscription-text-field-form<span class="text-field-container">
+          <section class="subscription-text-field-form"><span class="text-field-container">
               <input class="text-field__input" type="text" value="" name="email" placeholder="Email"></span><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/arrow.svg" alt="open" width="18" height="18"></span>
           </section>
         </div>
@@ -85,9 +85,9 @@
             <h3 class="block-subtitle">default</h3>
           </div>
           <section class="dropdown-block">
-            <div class="js-dropdown_instance-2_type hide">_room</div>
-            <div class="dropdown dropdown_narrow js-dropdown_instance-2">
-              <div class="dropdown__button js-dropdown_instance-2__button"><span class="dropdown__text js-dropdown_instance-2__text">0 спален, 0 кроватей</span><span class="dropdown__img-box js-dropdown_instance-2__img-box"><img class="dropdown__arrow-icon" src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
+            <div class="js-dropdown_instance-2_type hide" tabindex="0">_room</div>
+            <div class="dropdown dropdown_narrow js-dropdown_instance-2" tabindex="0">
+              <div class="dropdown__button js-dropdown_instance-2__button" tabindex="0"><span class="dropdown__text js-dropdown_instance-2__text">0 спален, 0 кроватей</span><span class="dropdown__img-box js-dropdown_instance-2__img-box"><img class="dropdown__arrow-icon" src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
             </div>
             <div class="dropdown__popup_room dropdown__popup_narrow js-dropdown_instance-2__popup hide" style="width:narrowpx;"><span class="dropdown__option-text js-dropdown_instance-2__option-text">СПАЛЬНИ</span><span class="dropdown__decrease js-dropdown_instance-2__decrease1"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter1">0</span><span class="dropdown__increase js-dropdown_instance-2__increase1"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-2__option-text">КРОВАТИ</span><span class="dropdown__decrease js-dropdown_instance-2__decrease2"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter2">0</span><span class="dropdown__increase js-dropdown_instance-2__increase2"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-2__option-text">ВАННЫЕ КОМНАТЫ</span><span class="dropdown__decrease js-dropdown_instance-2__decrease3"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-2__counter3">0</span><span class="dropdown__increase js-dropdown_instance-2__increase3"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span>
             </div>
@@ -99,9 +99,9 @@
             <h3 class="block-subtitle">expanded</h3>
           </div>
           <section class="dropdown-block">
-            <div class="js-dropdown_instance-3_type hide">_room</div>
-            <div class="dropdown dropdown_narrow js-dropdown_instance-3">
-              <div class="dropdown__button js-dropdown_instance-3__button"><span class="dropdown__text js-dropdown_instance-3__text">0 спален, 0 кроватей</span><span class="dropdown__img-box js-dropdown_instance-3__img-box"><img class="dropdown__arrow-icon" src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
+            <div class="js-dropdown_instance-3_type hide" tabindex="0">_room</div>
+            <div class="dropdown dropdown_narrow js-dropdown_instance-3" tabindex="0">
+              <div class="dropdown__button js-dropdown_instance-3__button" tabindex="0"><span class="dropdown__text js-dropdown_instance-3__text">0 спален, 0 кроватей</span><span class="dropdown__img-box js-dropdown_instance-3__img-box"><img class="dropdown__arrow-icon" src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
             </div>
             <div class="dropdown__popup_room dropdown__popup_narrow js-dropdown_instance-3__popup hide" style="width:narrowpx;"><span class="dropdown__option-text js-dropdown_instance-3__option-text">СПАЛЬНИ</span><span class="dropdown__decrease js-dropdown_instance-3__decrease1"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-3__counter1">0</span><span class="dropdown__increase js-dropdown_instance-3__increase1"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-3__option-text">КРОВАТИ</span><span class="dropdown__decrease js-dropdown_instance-3__decrease2"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-3__counter2">0</span><span class="dropdown__increase js-dropdown_instance-3__increase2"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-3__option-text">ВАННЫЕ КОМНАТЫ</span><span class="dropdown__decrease js-dropdown_instance-3__decrease3"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-3__counter3">0</span><span class="dropdown__increase js-dropdown_instance-3__increase3"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span>
             </div>
@@ -250,9 +250,9 @@
             <h3 class="block-title">dropdown</h3>
           </div>
           <section class="dropdown-block">
-            <div class="js-dropdown_instance-4_type hide"></div>
-            <div class="dropdown dropdown_wide js-dropdown_instance-4">
-              <div class="dropdown__button js-dropdown_instance-4__button"><span class="dropdown__text js-dropdown_instance-4__text">Сколько гостей</span><span class="dropdown__img-box js-dropdown_instance-4__img-box"><img class="dropdown__arrow-icon" src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
+            <div class="js-dropdown_instance-4_type hide" tabindex="0"></div>
+            <div class="dropdown dropdown_wide js-dropdown_instance-4" tabindex="0">
+              <div class="dropdown__button js-dropdown_instance-4__button" tabindex="0"><span class="dropdown__text js-dropdown_instance-4__text">Сколько гостей</span><span class="dropdown__img-box js-dropdown_instance-4__img-box"><img class="dropdown__arrow-icon" src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
             </div>
             <div class="dropdown__popup dropdown__popup_wide js-dropdown_instance-4__popup hide" style="width:widepx;"><span class="dropdown__option-text js-dropdown_instance-4__option-text">ВЗРОСЛЫЕ</span><span class="dropdown__decrease js-dropdown_instance-4__decrease1"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-4__counter1">0</span><span class="dropdown__increase js-dropdown_instance-4__increase1"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-4__option-text">ДЕТИ</span><span class="dropdown__decrease js-dropdown_instance-4__decrease2"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-4__counter2">0</span><span class="dropdown__increase js-dropdown_instance-4__increase2"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-4__option-text">МЛАДЕНЦЫ</span><span class="dropdown__decrease js-dropdown_instance-4__decrease3"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-4__counter3">0</span><span class="dropdown__increase js-dropdown_instance-4__increase3"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span>
               <div class="dropdown__adding-buttons"><span class="dropdown__clear js-dropdown_instance-4__clear invisible">ОЧИСТИТЬ</span><span class="dropdown__apply js-dropdown_instance-4__apply">ПРИМЕНИТЬ</span></div>
@@ -298,7 +298,7 @@
         <div class="form-elements__range-slider"> 
           <div class="form-elements__titles-container" style="margin:0 0 23px 0;width:266px;">
             <h3 class="block-title">rangle slider</h3>
-            <div class="block-subtitle" id="range-slider__text">5000₽-10000₽</div>
+            <div class="block-subtitle" id="range-slider__text">5000₽ - 10000₽</div>
           </div>
           <div class="range-slider__container" style="width:">
             <div class="slider" id="range-slider"></div>
@@ -349,9 +349,9 @@
             <h3 class="block-title">dropdown</h3>
           </div>
           <section class="dropdown-block">
-            <div class="js-dropdown_instance-5_type hide"></div>
-            <div class="dropdown dropdown_wide js-dropdown_instance-5">
-              <div class="dropdown__button js-dropdown_instance-5__button"><span class="dropdown__text js-dropdown_instance-5__text">Сколько гостей</span><span class="dropdown__img-box js-dropdown_instance-5__img-box"><img class="dropdown__arrow-icon" src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
+            <div class="js-dropdown_instance-5_type hide" tabindex="0"></div>
+            <div class="dropdown dropdown_wide js-dropdown_instance-5" tabindex="0">
+              <div class="dropdown__button js-dropdown_instance-5__button" tabindex="0"><span class="dropdown__text js-dropdown_instance-5__text">Сколько гостей</span><span class="dropdown__img-box js-dropdown_instance-5__img-box"><img class="dropdown__arrow-icon" src="./img/dropdown.svg" alt="open" width="13" height="8"></span></div>
             </div>
             <div class="dropdown__popup dropdown__popup_wide js-dropdown_instance-5__popup hide" style="width:widepx;"><span class="dropdown__option-text js-dropdown_instance-5__option-text">ВЗРОСЛЫЕ</span><span class="dropdown__decrease js-dropdown_instance-5__decrease1"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-5__counter1">0</span><span class="dropdown__increase js-dropdown_instance-5__increase1"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-5__option-text">ДЕТИ</span><span class="dropdown__decrease js-dropdown_instance-5__decrease2"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-5__counter2">0</span><span class="dropdown__increase js-dropdown_instance-5__increase2"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span><span class="dropdown__option-text js-dropdown_instance-5__option-text">МЛАДЕНЦЫ</span><span class="dropdown__decrease js-dropdown_instance-5__decrease3"><img src="./img/minus.svg" alt="minus" width="13" height="8"></span><span class="dropdown__counter js-dropdown_instance-5__counter3">0</span><span class="dropdown__increase js-dropdown_instance-5__increase3"><img src="./img/plus.svg" alt="plus" width="13" height="8"></span>
               <div class="dropdown__adding-buttons"><span class="dropdown__clear js-dropdown_instance-5__clear invisible">ОЧИСТИТЬ</span><span class="dropdown__apply js-dropdown_instance-5__apply">ПРИМЕНИТЬ</span></div>

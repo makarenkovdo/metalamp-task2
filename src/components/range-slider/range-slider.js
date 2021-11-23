@@ -16,7 +16,7 @@ const params = {
   };
   // 
 const handleChange = function handleSliderChange(params) {
-  rangeSliderText.textContent = `${params.runnersInstantPosition[0]}₽-${params.runnersInstantPosition[1]}₽`;
+  rangeSliderText.textContent = `${params.runnersInstantPosition[0]}₽ - ${params.runnersInstantPosition[1]}₽`;
 }
 params.onChange = handleChange;
 

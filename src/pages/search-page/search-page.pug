@@ -34,7 +34,7 @@ block content
                         +block-title('гости')
                     +dropdown(1, '', 'narrow')
                 .search-page__range-slider
-                    div(class='search-page__titles-container' style= {margin: '0 0 16px 0'})
+                    div(tabindex=-1 class='search-page__titles-container' style= {margin: '0 0 16px 0'})
                         +block-title('диапазон цены')
                         div(class='block-subtitle' id='range-slider__text') 5000₽-10000₽
                     +range-slider

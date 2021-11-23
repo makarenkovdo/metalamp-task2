@@ -2,9 +2,9 @@ mixin dropdown(instance, type, width='wide')
     - const roomArray = ['0 спален, 0 кроватей','СПАЛЬНИ', 'КРОВАТИ', 'ВАННЫЕ КОМНАТЫ']
     - const guestsArray = ['Сколько гостей','ВЗРОСЛЫЕ', 'ДЕТИ', 'МЛАДЕНЦЫ']
     section.dropdown-block
-        div(class="js-dropdown_instance-" + instance +"_type hide" )= type
-        div(class='dropdown dropdown_'+ width+ " js-dropdown_instance-" + instance )
-            div(class="dropdown__button js-dropdown_instance-" + instance + "__button")
+        div(tabindex=0 class="js-dropdown_instance-" + instance +"_type hide" )= type
+        div(tabindex=0 class='dropdown dropdown_'+ width+ " js-dropdown_instance-" + instance )
+            div(tabindex=0 class="dropdown__button js-dropdown_instance-" + instance + "__button")
                 span(class="dropdown__text js-dropdown_instance-" + instance + "__text")= type? roomArray[0]:guestsArray[0]
                 span(class="dropdown__img-box js-dropdown_instance-" + instance + "__img-box")
                     img(class="dropdown__arrow-icon" src='./img/dropdown.svg' alt='open' width='13' height='8')

@@ -7,7 +7,7 @@ include ../../components/slider/slider
 
 mixin room-card(number, isLux, price, rate, feedback)
     - var imgArray = [`room-${number}__small-1`,`room-${number}__small-1`,`room-${number}__small-1`,`room-${number}__small-1`]
-    section.room-card-block
+    form.room-card-block
         .room-card__img-box 
             +slider(imgArray)
         .room-card__title-box 
