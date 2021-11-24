@@ -18,13 +18,20 @@ https://www.metalamp.io
 
 ### UI kit
 [Colors & Type](https://makarenkovdo.github.io/metalamp-task2/dist/color-and-type.html)
+
 [Cards](https://makarenkovdo.github.io/metalamp-task2/dist/cards.html)
+
 [Form Elements](https://makarenkovdo.github.io/metalamp-task2/dist/form-elements.html)
+
 [Headers & Footers](https://makarenkovdo.github.io/metalamp-task2/dist/headers-footers.html)
 
 ### Hotel pages
 [Registration](https://makarenkovdo.github.io/metalamp-task2/dist/registration-page.html)
+
 [Sign In](https://makarenkovdo.github.io/metalamp-task2/dist/sign-in-page.html)
+
 [Search room](https://makarenkovdo.github.io/metalamp-task2/dist/search-page.html)
+
 [Landing page](https://makarenkovdo.github.io/metalamp-task2/dist/landing-page.html)
+
 [Room details](https://makarenkovdo.github.io/metalamp-task2/dist/room-page.html)
