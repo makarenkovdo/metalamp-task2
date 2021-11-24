@@ -4,18 +4,18 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin')
 const webpack = require('webpack')
 const path = require('path')
-// const pugPages = [
-//     'color-and-type',
-    // 'form-elements',
-//     'headers-footers',
-//     'cards',
-//     'landing-page',
-//     'registration-page',
-//     'room-page',
-//     'sign-in-page',
-//     'search-page',
-// ]
-const pugPages = ['room-page', 'search-page', 'cards', 'form-elements']
+const pugPages = [
+    'color-and-type',
+    'form-elements',
+    'headers-footers',
+    'cards',
+    'landing-page',
+    'registration-page',
+    'room-page',
+    'sign-in-page',
+    'search-page',
+]
+// const pugPages = ['room-page', 'search-page', 'cards', 'form-elements']
 
 const plugins = [
     new MiniCssExtractPlugin({
