@@ -19,7 +19,6 @@
         &-box {
             display: grid;
             grid-template-columns: repeat(3, max-content) 1fr 66px;
-            // padding-left: 20px;
         }
         &-number-sign {
             @include body-font($dark-shade-100, bold, 17px);
@@ -40,7 +39,6 @@
         &-price {
             @include body-font($dark-shade-50, bold, 18px);
             padding: 5px 0px 0 0px;
-            // width: 76px;
             text-align: right;        
         }
         &-in-a-day {

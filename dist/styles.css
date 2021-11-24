@@ -641,18 +641,15 @@ body .datepicker {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  /* Dark 50% */
   border: 0.0714rem solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   border-radius: 0.1429rem 0.1429rem 0rem 0rem;
-  /* Сколько гостей */
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
   font-family: Montserrat, Arial, sans-serif;
   line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
-  /* Dark 75% */
   color: rgba(31, 32, 65, 0.75);
 }
 .dropdown__text {
@@ -694,7 +691,6 @@ body .datepicker {
   position: absolute;
   grid-template-columns: minmax(11.9286rem, 15.7857rem) 2.1429rem 2.2857rem 2.6429rem;
   background: #ffffff;
-  /* Dark 50% */
   border: 0.0714rem solid rgba(31, 32, 65, 0.5);
   border-top: 0rem;
   box-sizing: border-box;
@@ -1873,7 +1869,6 @@ html {
   font-weight: 700;
   font-style: normal;
 }
-/* remove standart styles */
 .radio-button-block {
   display: grid;
   grid-template-columns: max-content max-content;
@@ -1937,8 +1932,6 @@ html {
   font-family: Montserrat, Arial, sans-serif;
   line-height: 1.7143rem;
   color: rgba(31, 32, 65, 0.75);
-  /* identical to box height, or 129% */
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
 }
 /*!********************************************************************************************************************************************************************!*\
@@ -3521,10 +3514,6 @@ html {
   top: 30px;
   background: url("./ui-kit-logo.svg") no-repeat;
 }
-/*!***************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/global-fonts.scss ***!
-  \***************************************************************************************************************************************************/
-
 /*!********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/mixins/font-faces.scss ***!
   \********************************************************************************************************************************************************/

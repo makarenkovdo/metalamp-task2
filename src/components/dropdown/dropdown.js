@@ -154,7 +154,6 @@ class Dropdown {
 
         return function (shift, j) {
             if (shift === 0) {
-                // console.log(this)
                 counter = [0, 0, 0, 0]
             }
             if (counter[j] === 0 && shift < 0) {
@@ -185,20 +184,6 @@ class Dropdown {
                 this.$counterSelector2.innerHTML = counter[2]
                 this.$counterSelector3.innerHTML = counter[3]
 
-                console.log(
-                    'this',
-                    this,
-                    'this instance',
-                    this.instance,
-                    'this type',
-                    this.$type
-                )
-                // console.log(
-                //     'selector',
-                //     document.querySelector(
-                //         `.js-dropdown_instance-${this.instance}_type`
-                //     ).innerHTML
-                // )
                 if (this.$type === '_room') {
                     this.$dropdownText.innerHTML = `${counter[1]} спал${bedroomWordEnding}, ${counter[2]} кроват${bedWordEnding}...`
                 } else {
@@ -222,12 +207,9 @@ class Dropdown {
 let $quantityArray = $(`.dropdown__button`)
 
 function createDropdowns(n) {
-    // let instanceQuantity = 1
-    // while (
     const dropdownArray = new Array(n)
     for (let i = 0; i < n; i++) {
         dropdownArray[i] = new Dropdown(i + 1)
-        console.log(dropdownArray[i].$type)
     }
     return dropdownArray
 }

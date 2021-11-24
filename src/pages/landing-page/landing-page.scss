@@ -3,11 +3,6 @@
 
 .landing {
     &-page {
-        // @media (max-width: 479px) {
-        //     html {
-        //         font-size: 10px;
-        //     }
-        // }
         @media (min-width: 480px) and (max-width: 639px) {
         }
         @media (min-width: 640px) and (max-width: 767px) {
@@ -19,11 +14,9 @@
         @media (min-width: 1280px) and (max-width: 1439px) {
             display: grid;
             width: 100vw;
-            // grid-template-columns: minmax(1280px, 1440px);
         }
         @media (min-width: 1440px) {
             display: grid;
-            // grid-template-columns: 1440px;
             grid-template-rows: 70px 830px 443px;
             align-items: baseline;
         }

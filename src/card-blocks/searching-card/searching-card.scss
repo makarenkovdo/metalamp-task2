@@ -21,13 +21,10 @@
 
     &__title {
         display: grid;
-        // grid-area: 1/1/2/3;
         @include h1;
         text-transform: none;
         line-height: 2.1714rem;
     }
-    // &__datepicker-box {
-    // }
     &__dropdown-box {
         display: grid;
     }

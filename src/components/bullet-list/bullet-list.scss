@@ -9,7 +9,6 @@
 .bullet-list > li {
     list-style: none;
     @include body-font;
-    // margin-left: -10px;
     padding: 0;
 }
 ul.bullet-list {

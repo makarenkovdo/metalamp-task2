@@ -2,26 +2,6 @@
 @import './../../styles/mixins/font-faces.scss';
 @import './../../styles/mixins/fonts.scss';
 
-// @font-face {
-//     font-family: 'Quicksand';
-//     src: url('./../../fonts/Quicksand-Regular.eot');
-//     src: local('☺'), url('./../../fonts/Quicksand-Regular.woff') format('woff'),
-//         url('./../../fonts/Quicksand-Regular.ttf') format('truetype'),
-//         url('./../../fonts/Quicksand-Regular.svg') format('svg');
-//     font-weight: 400;
-//     font-style: normal;
-// }
-
-// @font-face {
-// 	font-family: 'Conv_Quicksand-Regular';
-// 	src: url('fonts/Quicksand-Regular.eot');
-// 	src: local('☺'), url('fonts/Quicksand-Regular.woff') format('woff'), url('fonts/Quicksand-Regular.ttf') format('truetype'), url('fonts/Quicksand-Regular.svg') format('svg');
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
-
-/* remove standart styles */
-
 .radio {
     &-button-block {
         display: grid;
@@ -78,21 +58,10 @@
         }
     }
     &__text {
-        // display: grid;
-        // align-self: center;
         height: 18px;
         align-self: flex-start;
         align-content: center;
-        // @include font-face;
-        // font-family: 'Montserrat';
-        // font-weight: 400;
-        // font-style: normal;
-
         @include body-font;
-
-        /* identical to box height, or 129% */
-
-        /* Dark 50% */
         color: rgba(31, 32, 65, 0.5);
     }
 }

@@ -1,5 +1,4 @@
 @import './../../styles/mixins/fonts.scss';
-// @import './../../styles/mixins/font-faces.scss';
 @import './../../styles/variables/colors.scss';
 @import './../../styles/mixins/placeholder.scss';
 @import './../../styles/mixins/responsive.scss';
@@ -7,7 +6,6 @@
 .masked-text-field {
     &-container {
         display: grid;
-        // @include media-container(320px);
     }
 
     &__input {
@@ -24,21 +22,6 @@
             @include placeholder(color, $dark-shade-25);
             line-height: 18px;
             padding: 12px 0 12px 14px;
-
-            // @include media-content(
-            //     320px,
-            //     320px,
-            //     14px,
-            //     18px,
-            //     12px,
-            //     0,
-            //     12px,
-            //     15px,
-            //     0,
-            //     0,
-            //     0,
-            //     0
-            // );
         }
 
         &:hover {
@@ -47,19 +30,5 @@
         &:focus {
             border: 1px solid $dark-shade-50;
         }
-        // @include media-content(
-        //     320px,
-        //     320px,
-        //     14px,
-        //     24px,
-        //     11px,
-        //     0,
-        //     7px,
-        //     15px,
-        //     0,
-        //     0,
-        //     0,
-        //     0
-        // );
     }
 }

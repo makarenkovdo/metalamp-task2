@@ -50,10 +50,6 @@ block content
                     +block-title('masked text field')
                 +masked-text-field ('','masked-text-field', 'ДД.ММ.ГГГГ')
             .form-elements__date-dropdowns 
-                //- .first-title 
-                //-     +block-title('date dropdown')
-                //- .second-title 
-                //-     +block-title('date dropdown')
                 +datepicker()
             .form-elements__filter-date-dropdown
                 div(class='form-elements__titles-container' style= {margin: '0 0 5px 0'})
@@ -150,31 +146,3 @@ block content
                 div(class='form-elements__titles-container' style= {margin: '0 0 5px 0'})
                     +block-title('bullet list')
                 +bullet-list()
-
-
-
-
-
-            
-
-
-
-
-
-
-
-           
-
-        //- .checkbox-list
-        //-     +checkbox-list()
-        //- - const buttonAttributes = [['white','CLICK ME'],['white','CLICK ME'], ['purple','CLICK ME'],['purple','CLICK ME'],['link','CLICK ME'],['link','CLICK ME'],['go-to-pay','ПЕРЕЙТИ К ОПЛАТЕ']]
-        //- each buttonAttribute, i in buttonAttributes
-        //-     +button(buttonAttribute[0], buttonAttribute[1], `instance-${i+1}`)
-        
-
-
-        //- .radio-button
-        //-     +radio-button()
-        //- +like-button('instance-1', 2)
-        //- +like-button('instance-2', 11)
-

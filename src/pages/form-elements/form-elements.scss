@@ -4,8 +4,6 @@
 
 @mixin a-area() {
     display: grid;
-
-    // grid-template-rows: 20px;
     grid-template-columns: 50% 50%;
 }
 
@@ -22,20 +20,17 @@
         display: grid;
         grid-template-columns: 1fr 0.6fr;
         margin-bottom: 4px;
-        // background-color: blue;
     }
     &-titles-container_266 {
         display: grid;
         grid-template-columns: 1fr 0.5fr;
         margin-bottom: 5px;
         width: 266px;
-        // background-color: blue;
     }
     &-titles-container-b {
         display: grid;
         grid-template-columns: 1fr 0.5fr;
         margin-bottom: 16px;
-        // background-color: blue;
     }
     &__like-button-container {
         display: grid;
@@ -68,11 +63,6 @@
 .form-elements__area-a {
     display: grid;
     grid-area: a;
-    // height: 800px;
-    // grid-template-areas:
-    //     'aa'
-    //     'ab'
-    //     'ac';
     margin-left: 140.5px;
     align-content: flex-start;
     grid-template-rows: 84.44px 83.44px 86px 105px 105px 105px 164px 84px 222px 64px 316px 154px;
@@ -80,9 +70,6 @@
 
     .text-field {
         height: min-content;
-
-        // &__input-container {
-        // }
     }
     .date-dropdowns {
         display: grid;
@@ -109,9 +96,7 @@
     display: grid;
     grid-area: b;
     grid-template-rows: 170px 91.56px 129.44px 91px 251px 321px 145px;
-    // margin-left: 100px;
     width: 320px;
-    // gap: 10px;
 }
 .form-elements__area-c {
     display: grid;

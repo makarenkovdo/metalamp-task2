@@ -146,7 +146,6 @@ html {
     &__title {
         @include h2();
         text-transform: none;
-        // padding-left: 26px;
     }
     &__feedback-container {
         display: grid;

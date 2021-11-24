@@ -6,7 +6,6 @@
         display: grid;
         grid-template-columns: 58px 653px;
         grid-template-rows: 48px 70px;
-        // row-gap: 10px;
     }
     &__author-name {
         display: grid;
@@ -23,14 +22,12 @@
 
         @include body-font;
         padding-top: 10px;
-        // padding-left: 4px;
     }
     &__icon {
         display: grid;
 
         width: 48px;
         height: 48px;
-        // overflow: hidden;
         display: grid;
         justify-content: left;
         &-img {

@@ -31,13 +31,10 @@ function likeButtonCounter(shift, currentId) {
 
 function handleLikeButtonClick(currentButton, e) {
     let currentId = e.target.id
-    console.log(currentId)
-    console.log($likeButtonSelector[currentId])
 
     if (
         $likeButtonSelector[currentId].classList.contains('like-button_active')
     ) {
-        console.log('here')
         $likeButtonSelector[currentId].classList.remove('like-button_active')
         $likeButtonCounter[currentId].classList.remove(
             'like-button__counter-active'
@@ -53,6 +50,3 @@ function handleLikeButtonClick(currentButton, e) {
         currentButton(+1, currentId)
     }
 }
-// $(document).ready(function () {
-//     console.log('ready!')
-// })

@@ -16,9 +16,6 @@
         padding: 4px;
         height: 48px;
     }
-
-    // &__caption {
-    // }
     &__title {
         @include body-font($weight: bold);
     }

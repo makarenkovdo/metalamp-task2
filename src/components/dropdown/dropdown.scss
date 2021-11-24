@@ -25,25 +25,14 @@
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
-
-        /* Dark 50% */
-
         border: 0.0714rem solid rgba(31, 32, 65, 0.5);
         box-sizing: border-box;
         border-radius: 0.1429rem 0.1429rem 0rem 0rem;
-
-        //
-
-        /* Сколько гостей */
-
         @include body-font;
-
-        /* Dark 75% */
         color: rgba(31, 32, 65, 0.75);
     }
     &__text {
         padding-left: 1rem;
-        // margin-bottom: .3571rem;
     }
     &__img-box {
         display: grid;
@@ -61,11 +50,9 @@
         display: grid;
         grid-template-rows: 2.6429rem 2.6429rem 2.1429rem 3.7143rem;
 
-        // grid-template-columns: 69.0625% 9.375% 10% 11.5625%;
         grid-template-columns: minmax(11.9286rem, 15.7857rem) 2.1429rem 2.2857rem 2.6429rem;
 
         width: 22.8571rem;
-        // height: 11.3571rem;
 
         background: #ffffff;
         /* Dark 50% */
@@ -85,14 +72,8 @@
             display: grid;
             grid-template-rows: 2.6429rem 2.6429rem 2.1429rem 1rem;
             position: absolute;
-
-            // grid-template-columns: 69.0625% 9.375% 10% 11.5625%;
             grid-template-columns: minmax(11.9286rem, 15.7857rem) 2.1429rem 2.2857rem 2.6429rem;
-
-            // height: 11.3571rem;
-
             background: #ffffff;
-            /* Dark 50% */
             border: 0.0714rem solid rgba(31, 32, 65, 0.5);
             border-top: 0rem;
             box-sizing: border-box;
