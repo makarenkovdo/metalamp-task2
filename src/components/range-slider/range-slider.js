@@ -9,9 +9,9 @@ const params = {
   isRange: true,
   shouldAddBar:true, 
   minValue: 0, 
-  maxValue:14000, 
+  maxValue:16000, 
   step: 100,
-  runnerSize: [12,12],
+  runnerSize: [14,14],
   runnersInstantPosition: [5000, 10000],
   };
   // 

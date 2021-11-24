@@ -29,10 +29,8 @@ mixin header(isSignIn)
                 img.header__expandable-link(src='./img/link-expand.svg' alt='link-expand' width='12' height='8')
         if (isSignIn)
             section.header__auth
-                .header__login-button-box
-                    +button('white', 'войти')
-                .header__registration-button-box
-                    +button('purple', 'зарегистрироваться')
+                +button('white', 'войти')
+                +button('purple', 'зарегистрироваться')
         else
             section.header__profile
                 .vertical-line 

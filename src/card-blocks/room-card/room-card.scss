@@ -18,30 +18,35 @@
     &__title {
         &-box {
             display: grid;
-            grid-template-columns: 20px 39px 73px 55px 46px;
-            padding-left: 20px;
+            grid-template-columns: repeat(3, max-content) 1fr 66px;
+            // padding-left: 20px;
         }
         &-number-sign {
             @include body-font($dark-shade-100, bold, 17px);
             padding-top: 5px;
+            padding-left: 20px
         }
         &-number {
             @include h1;
             font-size: 19px;
             line-height: 23px;
-            padding: 1px 0 0 1px;
+            padding: 2px 0 0 5px;
         }
         &-lux {
             @include h3($purple);
-            padding: 8px 0 0 1px;
+            // padding: 8px 0 0 1px;
+            min-width: 41px;
         }
         &-price {
             @include body-font($dark-shade-50, bold, 18px);
-            padding: 5px 0px 0 1px;
+            padding: 5px 0px 0 0px;
+            // width: 76px;
+            text-align: right;        
         }
         &-in-a-day {
             @include caption-font($dark-shade-50, normal, 18px);
-            padding: 5px 0 0 1px;
+            padding: 5px 17px 0 1px;
+            text-align: end;
         }
     }
     &__line {

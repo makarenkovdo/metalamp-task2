@@ -46,7 +46,7 @@
         }
         @media (min-width: 1440px) {
             width: 1440px;
-            grid-template-columns: 245.7px minmax(447px, 933px) 1fr;
+            grid-template-columns: 245.7px 1fr max-content;
             margin-bottom: 40px;
         }
     }
@@ -74,7 +74,7 @@
 
     &__nav {
         display: grid;
-        grid-template-columns: 43px 74px 72px 62px 116px;
+        grid-template-columns: repeat(5, max-content);
         justify-content: right;
         align-content: center;
 
@@ -127,7 +127,7 @@
     &__auth {
         display: grid;
         align-content: center;
-        grid-template-columns: 87px 196px;
+        grid-template-columns: max-content max-content;
 
         @media (max-width: 479px) {
             grid-template-columns: max-content;
@@ -161,7 +161,7 @@
         }
         @media (min-width: 1440px) {
             margin-right: 140px;
-            column-gap: 20px;
+            column-gap: 18px;
         }
     }
     &__registration {
@@ -171,7 +171,7 @@
         display: grid;
         grid-template-columns: 20px 1fr;
         align-content: center;
-        // margin: 0 140px 0 0px;
+        margin: 0 140px 0 0px;
 
         .vertical-line {
             /* Rectangle */
