@@ -177,8 +177,8 @@ ul.bullet-list {
   display: grid;
   align-items: center;
   justify-content: center;
-  width: max-content;
-  padding: 7.5px 19px 7.5px 18px;
+  width: 100%;
+  height: 100%;
   font-style: normal;
   font-weight: bold;
   font-size: 0.8571rem;
@@ -188,7 +188,7 @@ ul.bullet-list {
   text-transform: uppercase;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 1.5714rem;
-  border: 0.1429rem solid #bc9cff;
+  border: none;
   font-stretch: ultra-condensed;
 }
 .button-purple:hover {
@@ -199,9 +199,9 @@ ul.bullet-list {
   display: grid;
   align-items: center;
   justify-content: center;
-  width: max-content;
-  padding: 6.1px 19px 6.1px 18px;
+  width: 100%;
   box-sizing: border-box;
+  height: 100%;
   background-color: white;
   font-style: normal;
   font-weight: bold;
@@ -567,38 +567,52 @@ ul.bullet-list {
 /*!****************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/components/datepicker/datepicker.scss ***!
   \****************************************************************************************************************************************************************/
-.datepicker-form {
+body .datepicker-form {
   width: 22.8571rem;
 }
-.datepicker__inputs-container {
+body .datepicker__inputs-container {
   display: grid;
   grid-template-columns: 10.7143rem 10.7143rem;
   gap: 1.4286rem;
 }
-.datepicker__input-box {
+body .datepicker__input-box {
   display: grid;
   grid-template-columns: 7.5714rem 3.1429rem;
   gap: 0rem;
   box-sizing: content-box;
 }
-.datepicker__titles-container {
+body .datepicker__titles-container {
   display: grid;
   grid-template-columns: 10.7143rem 10.7143rem;
   gap: 1.4286rem;
   margin-bottom: 0.3571rem;
 }
-.datepicker-inline {
+body .datepicker-inline {
   position: absolute;
   top: 10.7143rem;
   left: 70rem;
   z-index: 5;
 }
-.datepicker__arrow-icon {
+body .datepicker__arrow-icon {
   width: 0.9286rem;
   height: 0.5714rem;
 }
-
-.datepicker {
+body .datepicker--buttons {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  padding: 0.9286rem 0rem 0 0.6429rem;
+}
+body .datepicker--button {
+  cursor: pointer;
+  border-radius: 1.5714rem;
+  flex: 1;
+  display: inline-flex;
+  justify-content: left;
+  align-items: center;
+  height: 32px;
+  padding-right: 9px;
+}
+body .datepicker {
   padding: 0 10px 0 10px;
 }
 /*!************************************************************************************************************************************************************!*\
@@ -1494,7 +1508,7 @@ html {
 .header__auth {
   display: grid;
   align-content: center;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: minmax(87px, max-content) minmax(196px, max-content);
 }
 @media (max-width: 479px) {
   .header__auth {
@@ -1568,12 +1582,10 @@ html {
   color: rgba(31, 32, 65, 0.5);
 }
 .header__login-button-box {
-  width: 87px;
   height: 34px;
   box-sizing: border-box;
 }
 .header__registration-button-box {
-  width: 196px;
   height: 34px;
   box-sizing: border-box;
 }
@@ -2092,7 +2104,7 @@ button.splide__pagination__page.is-active {
   display: grid;
   box-sizing: border-box;
   width: 320px;
-  padding: 9px 0 9px 14px;
+  padding: 9px 10px 9px 14px;
   background: #ffffff;
   border-radius: 4px;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -3756,8 +3768,7 @@ html {
 }
 .login-card__registration-box {
   display: grid;
-  grid-template-columns: 13.2857rem 7.0714rem;
-  column-gap: 2.5rem;
+  grid-template-columns: 1fr minmax(7.0714rem, max-content);
 }
 .login-card__registration-caption {
   display: grid;
@@ -3770,7 +3781,6 @@ html {
   color: #1f2041;
 }
 .login-card__registration-button-box {
-  width: 7.0714rem;
   height: 3.1429rem;
 }
 /*!*******************************************************************************************************************************************************************************!*\
@@ -3829,8 +3839,7 @@ html {
 }
 .registration-card__login-box {
   display: grid;
-  grid-template-columns: 13.2857rem 7.0714rem;
-  column-gap: 2.5rem;
+  grid-template-columns: 1fr minmax(7.0714rem, max-content);
 }
 .registration-card__login-caption {
   display: grid;
@@ -3843,7 +3852,6 @@ html {
   color: #1f2041;
 }
 .registration-card__login-button-box {
-  width: 7.0714rem;
   height: 3.1429rem;
 }
 /*!***************************************************************************************************************************************************************!*\
@@ -3914,6 +3922,7 @@ html {
   color: #bc9cff;
   text-transform: uppercase;
   min-width: 41px;
+  padding: 9px 0 0 8px;
 }
 .room-card__title-price {
   font-style: normal;

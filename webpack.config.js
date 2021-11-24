@@ -15,7 +15,7 @@ const path = require('path')
 //     'sign-in-page',
 //     'search-page',
 // ]
-const pugPages = ['room-page', 'landing-page', 'cards']
+const pugPages = ['room-page', 'search-page', 'cards', 'form-elements']
 
 const plugins = [
     new MiniCssExtractPlugin({

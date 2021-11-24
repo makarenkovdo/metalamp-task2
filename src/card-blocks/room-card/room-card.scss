@@ -34,8 +34,8 @@
         }
         &-lux {
             @include h3($purple);
-            // padding: 8px 0 0 1px;
             min-width: 41px;
+            padding: 9px 0 0 8px;
         }
         &-price {
             @include body-font($dark-shade-50, bold, 18px);
