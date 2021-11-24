@@ -177,8 +177,8 @@ ul.bullet-list {
   display: grid;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: max-content;
+  padding: 7.5px 19px 7.5px 18px;
   font-style: normal;
   font-weight: bold;
   font-size: 0.8571rem;
@@ -188,7 +188,7 @@ ul.bullet-list {
   text-transform: uppercase;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 1.5714rem;
-  border: none;
+  border: 0.1429rem solid #bc9cff;
   font-stretch: ultra-condensed;
 }
 .button-purple:hover {
@@ -199,9 +199,9 @@ ul.bullet-list {
   display: grid;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: max-content;
+  padding: 6.1px 19px 6.1px 18px;
   box-sizing: border-box;
-  height: 100%;
   background-color: white;
   font-style: normal;
   font-weight: bold;
@@ -309,7 +309,7 @@ ul.bullet-list {
 .checkbox-label {
   display: grid;
   grid-template-columns: 30px 1fr;
-  grid-template-rows: 30px;
+  margin-bottom: 10px;
 }
 .checkbox__input {
   position: absolute;
@@ -353,7 +353,6 @@ ul.bullet-list {
 .checkbox__text {
   display: grid;
   align-content: flex-start;
-  height: 18px;
   width: 200px;
   font-style: normal;
   font-weight: normal;
@@ -380,7 +379,6 @@ ul.bullet-list {
 .rich-checkbox__text-box {
   display: grid;
   width: 236px;
-  grid-template-rows: 23px 14px 14px;
 }
 .rich-checkbox__title {
   font-style: normal;
@@ -389,7 +387,8 @@ ul.bullet-list {
   font-family: Montserrat, Arial, sans-serif;
   line-height: 1rem;
   color: rgba(31, 32, 65, 0.75);
-  padding-top: 4px;
+  padding-top: 2px;
+  padding-bottom: 6px;
 }
 .rich-checkbox__subtitle {
   font-style: normal;
@@ -1111,7 +1110,7 @@ html {
 @media (min-width: 768px) {
   .footer__subscribe {
     display: grid;
-    grid-template-rows: 33px 71px 64px;
+    grid-template-rows: repeat(3, max-content);
   }
 }
 @media (max-width: 768px) {
@@ -1366,7 +1365,6 @@ html {
   .header-block {
     max-width: 100vw;
     grid-template-columns: 10fr 2fr;
-    grid-template-rows: 20px repeat(2, 100px);
     margin-bottom: 10px;
     justify-content: center;
   }
@@ -1396,7 +1394,7 @@ html {
 @media (min-width: 1440px) {
   .header-block {
     width: 1440px;
-    grid-template-columns: 245.7px minmax(447px, 933px) 1fr;
+    grid-template-columns: 245.7px 1fr max-content;
     margin-bottom: 40px;
   }
 }
@@ -1432,7 +1430,7 @@ html {
 }
 .header__nav {
   display: grid;
-  grid-template-columns: 43px 74px 72px 62px 116px;
+  grid-template-columns: repeat(5, max-content);
   justify-content: right;
   align-content: center;
   column-gap: 20px;
@@ -1496,7 +1494,7 @@ html {
 .header__auth {
   display: grid;
   align-content: center;
-  grid-template-columns: 87px 196px;
+  grid-template-columns: max-content max-content;
 }
 @media (max-width: 479px) {
   .header__auth {
@@ -1540,7 +1538,7 @@ html {
 @media (min-width: 1440px) {
   .header__auth {
     margin-right: 140px;
-    column-gap: 20px;
+    column-gap: 18px;
   }
 }
 .header__registration {
@@ -1550,6 +1548,7 @@ html {
   display: grid;
   grid-template-columns: 20px 1fr;
   align-content: center;
+  margin: 0 140px 0 0px;
 }
 .header__profile .vertical-line {
   /* Rectangle */
@@ -1584,17 +1583,32 @@ html {
 @media (min-width: 320px) and (max-width: 767px) {
   .header__hamburger {
     display: grid;
+    justify-content: left;
   }
 }
+.header__hamburger-icon {
+  display: grid;
+  align-self: center;
+  cursor: pointer;
+  z-index: 3;
+}
 .header__hamburger-menu {
-  position: fixed;
-  left: 10px;
-  right: 10px;
-  top: 10px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+  position: absolute;
   width: 90%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   border: 2px solid black;
   background-color: white;
   border-radius: 5px;
+  z-index: 2;
 }
 .header__hamburger-menu .about {
   font-style: normal;
@@ -1634,7 +1648,14 @@ html {
   color: rgba(31, 32, 65, 0.5);
 }
 .header__hamburger .js-hider {
-  display: none;
+  opacity: 0;
+}
+.header__hamburger .js-header__hamburger_animate {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 .header__hamburger-button:checked ~ .header__hamburger-menu {
   display: grid;
@@ -3864,8 +3885,7 @@ html {
 }
 .room-card__title-box {
   display: grid;
-  grid-template-columns: 20px 39px 73px 55px 46px;
-  padding-left: 20px;
+  grid-template-columns: repeat(3, max-content) 1fr 66px;
 }
 .room-card__title-number-sign {
   font-style: normal;
@@ -3875,6 +3895,7 @@ html {
   line-height: 17px;
   color: #1f2041;
   padding-top: 5px;
+  padding-left: 20px;
 }
 .room-card__title-number {
   font: normal bold 1.7143rem/2.0714rem Montserrat, Arial, sans-serif;
@@ -3882,7 +3903,7 @@ html {
   color: #1f2041;
   font-size: 19px;
   line-height: 23px;
-  padding: 1px 0 0 1px;
+  padding: 2px 0 0 5px;
 }
 .room-card__title-lux {
   font-style: normal;
@@ -3892,7 +3913,7 @@ html {
   line-height: 1.0714rem;
   color: #bc9cff;
   text-transform: uppercase;
-  padding: 8px 0 0 1px;
+  min-width: 41px;
 }
 .room-card__title-price {
   font-style: normal;
@@ -3901,7 +3922,8 @@ html {
   font-family: Montserrat, Arial, sans-serif;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
-  padding: 5px 0px 0 1px;
+  padding: 5px 0px 0 0px;
+  text-align: right;
 }
 .room-card__title-in-a-day {
   font-style: normal;
@@ -3910,7 +3932,8 @@ html {
   font-family: Montserrat, Arial, sans-serif;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
-  padding: 5px 0 0 1px;
+  padding: 5px 17px 0 1px;
+  text-align: end;
 }
 .room-card__line {
   width: 230px;

@@ -127,7 +127,7 @@
     &__auth {
         display: grid;
         align-content: center;
-        grid-template-columns: max-content max-content;
+        grid-template-columns: minmax(87px, max-content) minmax(196px, max-content);
 
         @media (max-width: 479px) {
             grid-template-columns: max-content;
@@ -190,12 +190,10 @@
     }
 
     &__login-button-box {
-        width: 87px;
         height: 34px;
         box-sizing: border-box;
     }
     &__registration-button-box {
-        width: 196px;
         height: 34px;
         box-sizing: border-box;
     }

@@ -15,7 +15,7 @@ const path = require('path')
 //     'sign-in-page',
 //     'search-page',
 // ]
-const pugPages = ['room-page', 'form-elements', 'search-page', 'headers-footers']
+const pugPages = ['room-page', 'landing-page', 'cards']
 
 const plugins = [
     new MiniCssExtractPlugin({
@@ -48,8 +48,6 @@ module.exports = {
     mode: 'development',
     entry: {
         styles: './src/styles.js',
-        // checkboxExpList:
-        //     './src/components/checkbox-expandable-list/checkbox-expandable-list.js',
         datepicker: './src/components/datepicker/datepicker.js',
         dropdown: './src/components/dropdown/dropdown.js',
         likeButton: './src/components/like-button/like-button.js',
@@ -58,7 +56,7 @@ module.exports = {
         maskedTextField:
             './src/components/masked-text-field/masked-text-field.js',
         slider: './src/components/slider/slider.js',
-        // chart: './src/components/impressions/chart.js',
+        chart: './src/components/impressions/chart.js',
     },
     output: {
         filename: '[name].bundle.js',

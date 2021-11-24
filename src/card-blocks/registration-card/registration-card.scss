@@ -32,8 +32,7 @@
     &__login {
         &-box {
             display: grid;
-            grid-template-columns: 13.2857rem 7.0714rem;
-            column-gap: 2.5rem;
+            grid-template-columns: 1fr minmax(7.0714rem, max-content);         
         }
 
         &-caption {
@@ -42,7 +41,7 @@
             @include body-font($dark-shade-100, normal, 1.2857rem);
         }
         &-button-box {
-            width: 7.0714rem;
+            // width: 7.0714rem;
             height: 3.1429rem;
         }
     }

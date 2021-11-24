@@ -15,7 +15,7 @@
   \*****************************************/
 /***/ (() => {
 
-eval("var $burgerIcon = document.querySelector('.js-header__hamburger-icon');\nvar $burgerMenu = document.querySelector('js-header__hamburger-menu');\n\nvar handleClick = function handleBurgerClick() {\n  $burgerMenu.classList.remove('js-hider');\n};\n\n$burgerIcon.addEventListener('click', handleClick);\n\n//# sourceURL=webpack://task2/./src/components/header/header.js?");
+eval("var $burgerIcon = document.querySelector('.js-header__hamburger-icon');\nvar $burgerMenu = document.querySelector('.js-header__hamburger-menu');\nconsole.log($burgerMenu);\nvar isOpen = false;\n\nvar handleClick = function handleBurgerClick() {\n  if (!isOpen) {\n    $burgerMenu.classList.remove('js-hider');\n    $burgerMenu.classList.add('js-header__hamburger_animate');\n  }\n\n  if (isOpen) {\n    $burgerMenu.classList.add('js-hider');\n    $burgerMenu.classList.remove('js-header__hamburger_animate');\n  }\n\n  isOpen = !isOpen;\n};\n\n$burgerIcon.addEventListener('click', handleClick);\n\n//# sourceURL=webpack://task2/./src/components/header/header.js?");
 
 /***/ })
 

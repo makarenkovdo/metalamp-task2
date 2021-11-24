@@ -26,8 +26,7 @@
     &__registration {
         &-box {
             display: grid;
-            grid-template-columns: 13.2857rem 7.0714rem;
-            column-gap: 2.5rem;
+            grid-template-columns: 1fr minmax(7.0714rem, max-content);         
         }
 
         &-caption {
