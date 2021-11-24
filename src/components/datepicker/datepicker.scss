@@ -1,38 +1,53 @@
-.datepicker {
-    &-form {
-        width: 22.8571rem;
-    }
-    &__inputs-container {
-        display: grid;
-        grid-template-columns: 10.7143rem 10.7143rem;
-        gap: 1.4286rem;
-    }
-    &__input-box {
-        display: grid;
-        grid-template-columns: 7.5714rem 3.1429rem;
-        gap: 0rem;
-        box-sizing: content-box;
-        // border: .0714rem solid #1f204140;
-        // border-radius: .2857rem;
+body {
+    .datepicker {
+        &-form {
+            width: 22.8571rem;
+        }
+        &__inputs-container {
+            display: grid;
+            grid-template-columns: 10.7143rem 10.7143rem;
+            gap: 1.4286rem;
+        }
+        &__input-box {
+            display: grid;
+            grid-template-columns: 7.5714rem 3.1429rem;
+            gap: 0rem;
+            box-sizing: content-box;
+        }
+        &__titles-container {
+            display: grid;
+            grid-template-columns: 10.7143rem 10.7143rem;
+            gap: 1.4286rem;
+            margin-bottom: 0.3571rem;
+        }
+        &-inline {
+            position: absolute;
+            top: 10.7143rem;
+            left: 70rem;
+            z-index: 5;
+        }
+        &__arrow-icon {
+            width: 0.9286rem;
+            height: 0.5714rem;
+        }
+        &--buttons {
+            display: grid;
+            grid-template-columns: 1fr max-content;
+            padding: 0.9286rem 0rem 0 0.6429rem;
+        }
     }
 
-    &__titles-container {
-        display: grid;
-        grid-template-columns: 10.7143rem 10.7143rem;
-        gap: 1.4286rem;
-        margin-bottom: 0.3571rem;
+    .datepicker--button {
+        cursor: pointer;
+        border-radius: 1.5714rem;
+        flex: 1;
+        display: inline-flex;
+        justify-content: left;
+        align-items: center;
+        height: 32px;
+        padding-right: 9px;
     }
-    &-inline {
-        position: absolute;
-        top: 10.7143rem;
-        left: 70rem;
-        z-index: 5;
+    .datepicker {
+        padding: 0 10px 0 10px;
     }
-    &__arrow-icon {
-        width: 0.9286rem;
-        height: 0.5714rem;
-    }
-}
-.datepicker {
-    padding: 0 10px 0 10px;
 }
