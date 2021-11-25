@@ -19,578 +19,6 @@ eval("var cache = {};\n\nfunction importAll(r) {\n  r.keys().forEach(function (k
 
 /***/ }),
 
-/***/ "./src/card-blocks/room-card/img/room-350__small-1.jpg":
-/*!*************************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-350__small-1.jpg ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-350__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-350__small-1.jpg?");
-
-/***/ }),
-
-/***/ "./src/card-blocks/room-card/img/room-352__small-1.jpg":
-/*!*************************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-352__small-1.jpg ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-352__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-352__small-1.jpg?");
-
-/***/ }),
-
-/***/ "./src/card-blocks/room-card/img/room-444__small-1.jpg":
-/*!*************************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-444__small-1.jpg ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-444__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-444__small-1.jpg?");
-
-/***/ }),
-
-/***/ "./src/card-blocks/room-card/img/room-450__small-1.jpg":
-/*!*************************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-450__small-1.jpg ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-450__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-450__small-1.jpg?");
-
-/***/ }),
-
-/***/ "./src/card-blocks/room-card/img/room-666__small-1.jpg":
-/*!*************************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-666__small-1.jpg ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-666__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-666__small-1.jpg?");
-
-/***/ }),
-
-/***/ "./src/card-blocks/room-card/img/room-678__small-1.jpg":
-/*!*************************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-678__small-1.jpg ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-678__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-678__small-1.jpg?");
-
-/***/ }),
-
-/***/ "./src/card-blocks/room-card/img/room-740__small-1.jpg":
-/*!*************************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-740__small-1.jpg ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-740__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-740__small-1.jpg?");
-
-/***/ }),
-
-/***/ "./src/card-blocks/room-card/img/room-840__small-1.jpg":
-/*!*************************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-840__small-1.jpg ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-840__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-840__small-1.jpg?");
-
-/***/ }),
-
-/***/ "./src/card-blocks/room-card/img/room-856__small-1.jpg":
-/*!*************************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-856__small-1.jpg ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-856__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-856__small-1.jpg?");
-
-/***/ }),
-
-/***/ "./src/card-blocks/room-card/img/room-888__small-1.jpg":
-/*!*************************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-888__small-1.jpg ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-888__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-888__small-1.jpg?");
-
-/***/ }),
-
-/***/ "./src/card-blocks/room-card/img/room-980__small-1.jpg":
-/*!*************************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-980__small-1.jpg ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-980__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-980__small-1.jpg?");
-
-/***/ }),
-
-/***/ "./src/card-blocks/room-card/img/room-982__small-1.jpg":
-/*!*************************************************************!*\
-  !*** ./src/card-blocks/room-card/img/room-982__small-1.jpg ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-982__small-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-982__small-1.jpg?");
-
-/***/ }),
-
-/***/ "./src/components/benefits/benefits-emotion.svg":
-/*!******************************************************!*\
-  !*** ./src/components/benefits/benefits-emotion.svg ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/benefits-emotion.svg\");\n\n//# sourceURL=webpack://task2/./src/components/benefits/benefits-emotion.svg?");
-
-/***/ }),
-
-/***/ "./src/components/benefits/benefits-line.svg":
-/*!***************************************************!*\
-  !*** ./src/components/benefits/benefits-line.svg ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/benefits-line.svg\");\n\n//# sourceURL=webpack://task2/./src/components/benefits/benefits-line.svg?");
-
-/***/ }),
-
-/***/ "./src/components/benefits/benefits-location.svg":
-/*!*******************************************************!*\
-  !*** ./src/components/benefits/benefits-location.svg ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/benefits-location.svg\");\n\n//# sourceURL=webpack://task2/./src/components/benefits/benefits-location.svg?");
-
-/***/ }),
-
-/***/ "./src/components/benefits/benefits-whatshot.svg":
-/*!*******************************************************!*\
-  !*** ./src/components/benefits/benefits-whatshot.svg ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/benefits-whatshot.svg\");\n\n//# sourceURL=webpack://task2/./src/components/benefits/benefits-whatshot.svg?");
-
-/***/ }),
-
-/***/ "./src/components/button/arrow-button.svg":
-/*!************************************************!*\
-  !*** ./src/components/button/arrow-button.svg ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/arrow-button.svg\");\n\n//# sourceURL=webpack://task2/./src/components/button/arrow-button.svg?");
-
-/***/ }),
-
-/***/ "./src/components/checkbox-expandable-list/close-checkbox-expandable-list.svg":
-/*!************************************************************************************!*\
-  !*** ./src/components/checkbox-expandable-list/close-checkbox-expandable-list.svg ***!
-  \************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/close-checkbox-expandable-list.svg\");\n\n//# sourceURL=webpack://task2/./src/components/checkbox-expandable-list/close-checkbox-expandable-list.svg?");
-
-/***/ }),
-
-/***/ "./src/components/checkbox-expandable-list/open-checkbox-expandable-list.svg":
-/*!***********************************************************************************!*\
-  !*** ./src/components/checkbox-expandable-list/open-checkbox-expandable-list.svg ***!
-  \***********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/open-checkbox-expandable-list.svg\");\n\n//# sourceURL=webpack://task2/./src/components/checkbox-expandable-list/open-checkbox-expandable-list.svg?");
-
-/***/ }),
-
-/***/ "./src/components/datepicker/arrow-back.svg":
-/*!**************************************************!*\
-  !*** ./src/components/datepicker/arrow-back.svg ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/arrow-back.svg\");\n\n//# sourceURL=webpack://task2/./src/components/datepicker/arrow-back.svg?");
-
-/***/ }),
-
-/***/ "./src/components/datepicker/arrow-forward.svg":
-/*!*****************************************************!*\
-  !*** ./src/components/datepicker/arrow-forward.svg ***!
-  \*****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/arrow-forward.svg\");\n\n//# sourceURL=webpack://task2/./src/components/datepicker/arrow-forward.svg?");
-
-/***/ }),
-
-/***/ "./src/components/dropdown/dropdown.svg":
-/*!**********************************************!*\
-  !*** ./src/components/dropdown/dropdown.svg ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/dropdown.svg\");\n\n//# sourceURL=webpack://task2/./src/components/dropdown/dropdown.svg?");
-
-/***/ }),
-
-/***/ "./src/components/dropdown/minus.svg":
-/*!*******************************************!*\
-  !*** ./src/components/dropdown/minus.svg ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/minus.svg\");\n\n//# sourceURL=webpack://task2/./src/components/dropdown/minus.svg?");
-
-/***/ }),
-
-/***/ "./src/components/dropdown/plus.svg":
-/*!******************************************!*\
-  !*** ./src/components/dropdown/plus.svg ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/plus.svg\");\n\n//# sourceURL=webpack://task2/./src/components/dropdown/plus.svg?");
-
-/***/ }),
-
-/***/ "./src/components/feedback/murad.svg":
-/*!*******************************************!*\
-  !*** ./src/components/feedback/murad.svg ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/murad.svg\");\n\n//# sourceURL=webpack://task2/./src/components/feedback/murad.svg?");
-
-/***/ }),
-
-/***/ "./src/components/feedback/sarafanov.png":
-/*!***********************************************!*\
-  !*** ./src/components/feedback/sarafanov.png ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/sarafanov.png\");\n\n//# sourceURL=webpack://task2/./src/components/feedback/sarafanov.png?");
-
-/***/ }),
-
-/***/ "./src/components/feedback/steklishkova.png":
-/*!**************************************************!*\
-  !*** ./src/components/feedback/steklishkova.png ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/steklishkova.png\");\n\n//# sourceURL=webpack://task2/./src/components/feedback/steklishkova.png?");
-
-/***/ }),
-
-/***/ "./src/components/footer/facebook.svg":
-/*!********************************************!*\
-  !*** ./src/components/footer/facebook.svg ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/facebook.svg\");\n\n//# sourceURL=webpack://task2/./src/components/footer/facebook.svg?");
-
-/***/ }),
-
-/***/ "./src/components/footer/instagram.svg":
-/*!*********************************************!*\
-  !*** ./src/components/footer/instagram.svg ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/instagram.svg\");\n\n//# sourceURL=webpack://task2/./src/components/footer/instagram.svg?");
-
-/***/ }),
-
-/***/ "./src/components/footer/link-expand.svg":
-/*!***********************************************!*\
-  !*** ./src/components/footer/link-expand.svg ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/link-expand.svg\");\n\n//# sourceURL=webpack://task2/./src/components/footer/link-expand.svg?");
-
-/***/ }),
-
-/***/ "./src/components/footer/twitter.svg":
-/*!*******************************************!*\
-  !*** ./src/components/footer/twitter.svg ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/twitter.svg\");\n\n//# sourceURL=webpack://task2/./src/components/footer/twitter.svg?");
-
-/***/ }),
-
-/***/ "./src/components/header/burger.svg":
-/*!******************************************!*\
-  !*** ./src/components/header/burger.svg ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/burger.svg\");\n\n//# sourceURL=webpack://task2/./src/components/header/burger.svg?");
-
-/***/ }),
-
-/***/ "./src/components/header/link-expand.svg":
-/*!***********************************************!*\
-  !*** ./src/components/header/link-expand.svg ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/link-expand.svg\");\n\n//# sourceURL=webpack://task2/./src/components/header/link-expand.svg?");
-
-/***/ }),
-
-/***/ "./src/components/like-button/like-active.svg":
-/*!****************************************************!*\
-  !*** ./src/components/like-button/like-active.svg ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/like-active.svg\");\n\n//# sourceURL=webpack://task2/./src/components/like-button/like-active.svg?");
-
-/***/ }),
-
-/***/ "./src/components/like-button/like-border.svg":
-/*!****************************************************!*\
-  !*** ./src/components/like-button/like-border.svg ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/like-border.svg\");\n\n//# sourceURL=webpack://task2/./src/components/like-button/like-border.svg?");
-
-/***/ }),
-
-/***/ "./src/components/logo-toxin/colored-logo.svg":
-/*!****************************************************!*\
-  !*** ./src/components/logo-toxin/colored-logo.svg ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/colored-logo.svg\");\n\n//# sourceURL=webpack://task2/./src/components/logo-toxin/colored-logo.svg?");
-
-/***/ }),
-
-/***/ "./src/components/logo-toxin/toxin.png":
-/*!*********************************************!*\
-  !*** ./src/components/logo-toxin/toxin.png ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/toxin.png\");\n\n//# sourceURL=webpack://task2/./src/components/logo-toxin/toxin.png?");
-
-/***/ }),
-
-/***/ "./src/components/logo-toxin/toxin.svg":
-/*!*********************************************!*\
-  !*** ./src/components/logo-toxin/toxin.svg ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/toxin.svg\");\n\n//# sourceURL=webpack://task2/./src/components/logo-toxin/toxin.svg?");
-
-/***/ }),
-
-/***/ "./src/components/pagination/arrow-pagination.svg":
-/*!********************************************************!*\
-  !*** ./src/components/pagination/arrow-pagination.svg ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/arrow-pagination.svg\");\n\n//# sourceURL=webpack://task2/./src/components/pagination/arrow-pagination.svg?");
-
-/***/ }),
-
-/***/ "./src/components/pagination/pagination-arrow.svg":
-/*!********************************************************!*\
-  !*** ./src/components/pagination/pagination-arrow.svg ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/pagination-arrow.svg\");\n\n//# sourceURL=webpack://task2/./src/components/pagination/pagination-arrow.svg?");
-
-/***/ }),
-
-/***/ "./src/components/rate-button/rate-button-white.svg":
-/*!**********************************************************!*\
-  !*** ./src/components/rate-button/rate-button-white.svg ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/rate-button-white.svg\");\n\n//# sourceURL=webpack://task2/./src/components/rate-button/rate-button-white.svg?");
-
-/***/ }),
-
-/***/ "./src/components/rate-button/rate-button.svg":
-/*!****************************************************!*\
-  !*** ./src/components/rate-button/rate-button.svg ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/rate-button.svg\");\n\n//# sourceURL=webpack://task2/./src/components/rate-button/rate-button.svg?");
-
-/***/ }),
-
-/***/ "./src/components/subscription-text-field/arrow.svg":
-/*!**********************************************************!*\
-  !*** ./src/components/subscription-text-field/arrow.svg ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/arrow.svg\");\n\n//# sourceURL=webpack://task2/./src/components/subscription-text-field/arrow.svg?");
-
-/***/ }),
-
-/***/ "./src/pages/landing-page/img/landing-page-img.jpg":
-/*!*********************************************************!*\
-  !*** ./src/pages/landing-page/img/landing-page-img.jpg ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/landing-page-img.jpg\");\n\n//# sourceURL=webpack://task2/./src/pages/landing-page/img/landing-page-img.jpg?");
-
-/***/ }),
-
-/***/ "./src/pages/landing-page/img/landing-page-img.png":
-/*!*********************************************************!*\
-  !*** ./src/pages/landing-page/img/landing-page-img.png ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/landing-page-img.png\");\n\n//# sourceURL=webpack://task2/./src/pages/landing-page/img/landing-page-img.png?");
-
-/***/ }),
-
-/***/ "./src/pages/page-template/favicon.png":
-/*!*********************************************!*\
-  !*** ./src/pages/page-template/favicon.png ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/favicon.png\");\n\n//# sourceURL=webpack://task2/./src/pages/page-template/favicon.png?");
-
-/***/ }),
-
-/***/ "./src/pages/registration-page/img/registration-page-img.jpg":
-/*!*******************************************************************!*\
-  !*** ./src/pages/registration-page/img/registration-page-img.jpg ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/registration-page-img.jpg\");\n\n//# sourceURL=webpack://task2/./src/pages/registration-page/img/registration-page-img.jpg?");
-
-/***/ }),
-
-/***/ "./src/pages/room-page/img/room-888__big-1.jpg":
-/*!*****************************************************!*\
-  !*** ./src/pages/room-page/img/room-888__big-1.jpg ***!
-  \*****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-888__big-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/pages/room-page/img/room-888__big-1.jpg?");
-
-/***/ }),
-
-/***/ "./src/pages/room-page/img/room-888__medium-1.jpg":
-/*!********************************************************!*\
-  !*** ./src/pages/room-page/img/room-888__medium-1.jpg ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-888__medium-1.jpg\");\n\n//# sourceURL=webpack://task2/./src/pages/room-page/img/room-888__medium-1.jpg?");
-
-/***/ }),
-
-/***/ "./src/pages/room-page/img/room-888__medium-2.jpg":
-/*!********************************************************!*\
-  !*** ./src/pages/room-page/img/room-888__medium-2.jpg ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/room-888__medium-2.jpg\");\n\n//# sourceURL=webpack://task2/./src/pages/room-page/img/room-888__medium-2.jpg?");
-
-/***/ }),
-
-/***/ "./src/pages/sign-in-page/img/sign-in-page-img.jpg":
-/*!*********************************************************!*\
-  !*** ./src/pages/sign-in-page/img/sign-in-page-img.jpg ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/sign-in-page-img.jpg\");\n\n//# sourceURL=webpack://task2/./src/pages/sign-in-page/img/sign-in-page-img.jpg?");
-
-/***/ }),
-
-/***/ "./src/pages/ui-kit-template/ui-kit-logo.svg":
-/*!***************************************************!*\
-  !*** ./src/pages/ui-kit-template/ui-kit-logo.svg ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"img/ui-kit-logo.svg\");\n\n//# sourceURL=webpack://task2/./src/pages/ui-kit-template/ui-kit-logo.svg?");
-
-/***/ }),
-
 /***/ "./src/card-blocks/booking-card/booking-card.scss":
 /*!********************************************************!*\
   !*** ./src/card-blocks/booking-card/booking-card.scss ***!
@@ -1220,6 +648,578 @@ eval("var map = {\n\t\"./landing-page/img/landing-page-img.jpg\": \"./src/pages/
 
 eval("var map = {\n\t\"./mixins/font-faces.scss\": \"./src/styles/mixins/font-faces.scss\",\n\t\"./mixins/fonts.scss\": \"./src/styles/mixins/fonts.scss\",\n\t\"./mixins/placeholder.scss\": \"./src/styles/mixins/placeholder.scss\",\n\t\"./mixins/responsive.scss\": \"./src/styles/mixins/responsive.scss\",\n\t\"./variables/breakpoints.scss\": \"./src/styles/variables/breakpoints.scss\",\n\t\"./variables/colors.scss\": \"./src/styles/variables/colors.scss\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/styles sync recursive \\\\.scss$\";\n\n//# sourceURL=webpack://task2/./src/styles/_sync_\\.scss$?");
 
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-350__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-350__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-350__small-1.jpg\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-350__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-352__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-352__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-352__small-1.jpg\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-352__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-444__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-444__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-444__small-1.jpg\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-444__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-450__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-450__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-450__small-1.jpg\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-450__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-666__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-666__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-666__small-1.jpg\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-666__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-678__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-678__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-678__small-1.jpg\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-678__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-740__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-740__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-740__small-1.jpg\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-740__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-840__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-840__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-840__small-1.jpg\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-840__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-856__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-856__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-856__small-1.jpg\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-856__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-888__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-888__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-888__small-1.jpg\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-888__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-980__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-980__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-980__small-1.jpg\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-980__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/card-blocks/room-card/img/room-982__small-1.jpg":
+/*!*************************************************************!*\
+  !*** ./src/card-blocks/room-card/img/room-982__small-1.jpg ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-982__small-1.jpg\";\n\n//# sourceURL=webpack://task2/./src/card-blocks/room-card/img/room-982__small-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/components/benefits/benefits-emotion.svg":
+/*!******************************************************!*\
+  !*** ./src/components/benefits/benefits-emotion.svg ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/benefits-emotion.svg\";\n\n//# sourceURL=webpack://task2/./src/components/benefits/benefits-emotion.svg?");
+
+/***/ }),
+
+/***/ "./src/components/benefits/benefits-line.svg":
+/*!***************************************************!*\
+  !*** ./src/components/benefits/benefits-line.svg ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/benefits-line.svg\";\n\n//# sourceURL=webpack://task2/./src/components/benefits/benefits-line.svg?");
+
+/***/ }),
+
+/***/ "./src/components/benefits/benefits-location.svg":
+/*!*******************************************************!*\
+  !*** ./src/components/benefits/benefits-location.svg ***!
+  \*******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/benefits-location.svg\";\n\n//# sourceURL=webpack://task2/./src/components/benefits/benefits-location.svg?");
+
+/***/ }),
+
+/***/ "./src/components/benefits/benefits-whatshot.svg":
+/*!*******************************************************!*\
+  !*** ./src/components/benefits/benefits-whatshot.svg ***!
+  \*******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/benefits-whatshot.svg\";\n\n//# sourceURL=webpack://task2/./src/components/benefits/benefits-whatshot.svg?");
+
+/***/ }),
+
+/***/ "./src/components/button/arrow-button.svg":
+/*!************************************************!*\
+  !*** ./src/components/button/arrow-button.svg ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/arrow-button.svg\";\n\n//# sourceURL=webpack://task2/./src/components/button/arrow-button.svg?");
+
+/***/ }),
+
+/***/ "./src/components/checkbox-expandable-list/close-checkbox-expandable-list.svg":
+/*!************************************************************************************!*\
+  !*** ./src/components/checkbox-expandable-list/close-checkbox-expandable-list.svg ***!
+  \************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/close-checkbox-expandable-list.svg\";\n\n//# sourceURL=webpack://task2/./src/components/checkbox-expandable-list/close-checkbox-expandable-list.svg?");
+
+/***/ }),
+
+/***/ "./src/components/checkbox-expandable-list/open-checkbox-expandable-list.svg":
+/*!***********************************************************************************!*\
+  !*** ./src/components/checkbox-expandable-list/open-checkbox-expandable-list.svg ***!
+  \***********************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/open-checkbox-expandable-list.svg\";\n\n//# sourceURL=webpack://task2/./src/components/checkbox-expandable-list/open-checkbox-expandable-list.svg?");
+
+/***/ }),
+
+/***/ "./src/components/datepicker/arrow-back.svg":
+/*!**************************************************!*\
+  !*** ./src/components/datepicker/arrow-back.svg ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/arrow-back.svg\";\n\n//# sourceURL=webpack://task2/./src/components/datepicker/arrow-back.svg?");
+
+/***/ }),
+
+/***/ "./src/components/datepicker/arrow-forward.svg":
+/*!*****************************************************!*\
+  !*** ./src/components/datepicker/arrow-forward.svg ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/arrow-forward.svg\";\n\n//# sourceURL=webpack://task2/./src/components/datepicker/arrow-forward.svg?");
+
+/***/ }),
+
+/***/ "./src/components/dropdown/dropdown.svg":
+/*!**********************************************!*\
+  !*** ./src/components/dropdown/dropdown.svg ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/dropdown.svg\";\n\n//# sourceURL=webpack://task2/./src/components/dropdown/dropdown.svg?");
+
+/***/ }),
+
+/***/ "./src/components/dropdown/minus.svg":
+/*!*******************************************!*\
+  !*** ./src/components/dropdown/minus.svg ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/minus.svg\";\n\n//# sourceURL=webpack://task2/./src/components/dropdown/minus.svg?");
+
+/***/ }),
+
+/***/ "./src/components/dropdown/plus.svg":
+/*!******************************************!*\
+  !*** ./src/components/dropdown/plus.svg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/plus.svg\";\n\n//# sourceURL=webpack://task2/./src/components/dropdown/plus.svg?");
+
+/***/ }),
+
+/***/ "./src/components/feedback/murad.svg":
+/*!*******************************************!*\
+  !*** ./src/components/feedback/murad.svg ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/murad.svg\";\n\n//# sourceURL=webpack://task2/./src/components/feedback/murad.svg?");
+
+/***/ }),
+
+/***/ "./src/components/feedback/sarafanov.png":
+/*!***********************************************!*\
+  !*** ./src/components/feedback/sarafanov.png ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/sarafanov.png\";\n\n//# sourceURL=webpack://task2/./src/components/feedback/sarafanov.png?");
+
+/***/ }),
+
+/***/ "./src/components/feedback/steklishkova.png":
+/*!**************************************************!*\
+  !*** ./src/components/feedback/steklishkova.png ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/steklishkova.png\";\n\n//# sourceURL=webpack://task2/./src/components/feedback/steklishkova.png?");
+
+/***/ }),
+
+/***/ "./src/components/footer/facebook.svg":
+/*!********************************************!*\
+  !*** ./src/components/footer/facebook.svg ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/facebook.svg\";\n\n//# sourceURL=webpack://task2/./src/components/footer/facebook.svg?");
+
+/***/ }),
+
+/***/ "./src/components/footer/instagram.svg":
+/*!*********************************************!*\
+  !*** ./src/components/footer/instagram.svg ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/instagram.svg\";\n\n//# sourceURL=webpack://task2/./src/components/footer/instagram.svg?");
+
+/***/ }),
+
+/***/ "./src/components/footer/link-expand.svg":
+/*!***********************************************!*\
+  !*** ./src/components/footer/link-expand.svg ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/link-expand.svg\";\n\n//# sourceURL=webpack://task2/./src/components/footer/link-expand.svg?");
+
+/***/ }),
+
+/***/ "./src/components/footer/twitter.svg":
+/*!*******************************************!*\
+  !*** ./src/components/footer/twitter.svg ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/twitter.svg\";\n\n//# sourceURL=webpack://task2/./src/components/footer/twitter.svg?");
+
+/***/ }),
+
+/***/ "./src/components/header/burger.svg":
+/*!******************************************!*\
+  !*** ./src/components/header/burger.svg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/burger.svg\";\n\n//# sourceURL=webpack://task2/./src/components/header/burger.svg?");
+
+/***/ }),
+
+/***/ "./src/components/header/link-expand.svg":
+/*!***********************************************!*\
+  !*** ./src/components/header/link-expand.svg ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/link-expand.svg\";\n\n//# sourceURL=webpack://task2/./src/components/header/link-expand.svg?");
+
+/***/ }),
+
+/***/ "./src/components/like-button/like-active.svg":
+/*!****************************************************!*\
+  !*** ./src/components/like-button/like-active.svg ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/like-active.svg\";\n\n//# sourceURL=webpack://task2/./src/components/like-button/like-active.svg?");
+
+/***/ }),
+
+/***/ "./src/components/like-button/like-border.svg":
+/*!****************************************************!*\
+  !*** ./src/components/like-button/like-border.svg ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/like-border.svg\";\n\n//# sourceURL=webpack://task2/./src/components/like-button/like-border.svg?");
+
+/***/ }),
+
+/***/ "./src/components/logo-toxin/colored-logo.svg":
+/*!****************************************************!*\
+  !*** ./src/components/logo-toxin/colored-logo.svg ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/colored-logo.svg\";\n\n//# sourceURL=webpack://task2/./src/components/logo-toxin/colored-logo.svg?");
+
+/***/ }),
+
+/***/ "./src/components/logo-toxin/toxin.png":
+/*!*********************************************!*\
+  !*** ./src/components/logo-toxin/toxin.png ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/toxin.png\";\n\n//# sourceURL=webpack://task2/./src/components/logo-toxin/toxin.png?");
+
+/***/ }),
+
+/***/ "./src/components/logo-toxin/toxin.svg":
+/*!*********************************************!*\
+  !*** ./src/components/logo-toxin/toxin.svg ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/toxin.svg\";\n\n//# sourceURL=webpack://task2/./src/components/logo-toxin/toxin.svg?");
+
+/***/ }),
+
+/***/ "./src/components/pagination/arrow-pagination.svg":
+/*!********************************************************!*\
+  !*** ./src/components/pagination/arrow-pagination.svg ***!
+  \********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/arrow-pagination.svg\";\n\n//# sourceURL=webpack://task2/./src/components/pagination/arrow-pagination.svg?");
+
+/***/ }),
+
+/***/ "./src/components/pagination/pagination-arrow.svg":
+/*!********************************************************!*\
+  !*** ./src/components/pagination/pagination-arrow.svg ***!
+  \********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/pagination-arrow.svg\";\n\n//# sourceURL=webpack://task2/./src/components/pagination/pagination-arrow.svg?");
+
+/***/ }),
+
+/***/ "./src/components/rate-button/rate-button-white.svg":
+/*!**********************************************************!*\
+  !*** ./src/components/rate-button/rate-button-white.svg ***!
+  \**********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/rate-button-white.svg\";\n\n//# sourceURL=webpack://task2/./src/components/rate-button/rate-button-white.svg?");
+
+/***/ }),
+
+/***/ "./src/components/rate-button/rate-button.svg":
+/*!****************************************************!*\
+  !*** ./src/components/rate-button/rate-button.svg ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/rate-button.svg\";\n\n//# sourceURL=webpack://task2/./src/components/rate-button/rate-button.svg?");
+
+/***/ }),
+
+/***/ "./src/components/subscription-text-field/arrow.svg":
+/*!**********************************************************!*\
+  !*** ./src/components/subscription-text-field/arrow.svg ***!
+  \**********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/arrow.svg\";\n\n//# sourceURL=webpack://task2/./src/components/subscription-text-field/arrow.svg?");
+
+/***/ }),
+
+/***/ "./src/pages/landing-page/img/landing-page-img.jpg":
+/*!*********************************************************!*\
+  !*** ./src/pages/landing-page/img/landing-page-img.jpg ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/landing-page-img.jpg\";\n\n//# sourceURL=webpack://task2/./src/pages/landing-page/img/landing-page-img.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/landing-page/img/landing-page-img.png":
+/*!*********************************************************!*\
+  !*** ./src/pages/landing-page/img/landing-page-img.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/landing-page-img.png\";\n\n//# sourceURL=webpack://task2/./src/pages/landing-page/img/landing-page-img.png?");
+
+/***/ }),
+
+/***/ "./src/pages/page-template/favicon.png":
+/*!*********************************************!*\
+  !*** ./src/pages/page-template/favicon.png ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/favicon.png\";\n\n//# sourceURL=webpack://task2/./src/pages/page-template/favicon.png?");
+
+/***/ }),
+
+/***/ "./src/pages/registration-page/img/registration-page-img.jpg":
+/*!*******************************************************************!*\
+  !*** ./src/pages/registration-page/img/registration-page-img.jpg ***!
+  \*******************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/registration-page-img.jpg\";\n\n//# sourceURL=webpack://task2/./src/pages/registration-page/img/registration-page-img.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/room-page/img/room-888__big-1.jpg":
+/*!*****************************************************!*\
+  !*** ./src/pages/room-page/img/room-888__big-1.jpg ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-888__big-1.jpg\";\n\n//# sourceURL=webpack://task2/./src/pages/room-page/img/room-888__big-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/room-page/img/room-888__medium-1.jpg":
+/*!********************************************************!*\
+  !*** ./src/pages/room-page/img/room-888__medium-1.jpg ***!
+  \********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-888__medium-1.jpg\";\n\n//# sourceURL=webpack://task2/./src/pages/room-page/img/room-888__medium-1.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/room-page/img/room-888__medium-2.jpg":
+/*!********************************************************!*\
+  !*** ./src/pages/room-page/img/room-888__medium-2.jpg ***!
+  \********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/room-888__medium-2.jpg\";\n\n//# sourceURL=webpack://task2/./src/pages/room-page/img/room-888__medium-2.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/sign-in-page/img/sign-in-page-img.jpg":
+/*!*********************************************************!*\
+  !*** ./src/pages/sign-in-page/img/sign-in-page-img.jpg ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/sign-in-page-img.jpg\";\n\n//# sourceURL=webpack://task2/./src/pages/sign-in-page/img/sign-in-page-img.jpg?");
+
+/***/ }),
+
+/***/ "./src/pages/ui-kit-template/ui-kit-logo.svg":
+/*!***************************************************!*\
+  !*** ./src/pages/ui-kit-template/ui-kit-logo.svg ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/ui-kit-logo.svg\";\n\n//# sourceURL=webpack://task2/./src/pages/ui-kit-template/ui-kit-logo.svg?");
+
 /***/ })
 
 /******/ 	});
@@ -1249,18 +1249,6 @@ eval("var map = {\n\t\"./mixins/font-faces.scss\": \"./src/styles/mixins/font-fa
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
