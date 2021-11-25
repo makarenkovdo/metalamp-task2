@@ -6,16 +6,15 @@ const webpack = require('webpack')
 const path = require('path')
 const pugPages = [
     'color-and-type',
-    // 'form-elements',
-    // 'headers-footers',
-    // 'cards',
-    // 'landing-page',
-    // 'registration-page',
-    // 'room-page',
-    // 'sign-in-page',
+    'form-elements',
+    'headers-footers',
+    'cards',
+    'landing-page',
+    'registration-page',
+    'room-page',
+    'sign-in-page',
     'search-page',
 ]
-// const pugPages = ['room-page', 'search-page', 'cards', 'form-elements']
 
 const plugins = [
     new MiniCssExtractPlugin({
@@ -63,11 +62,6 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
-    // resolve: {
-    //     alias: {
-    //         images: path.resolve(__dirname, 'src/assets/img/'),
-    //     },
-    // },
 
     plugins: plugins,
 
@@ -96,9 +90,6 @@ module.exports = {
                     // 'style-loader',
                     {
                         loader: 'css-loader',
-                        // options: {
-                        //     url: false,
-                        // },
                     },
                 ],
             },
@@ -110,25 +101,9 @@ module.exports = {
               },
 
               },
-            // {
-            //     test: /\.(woff|woff2|eot|ttf|otf)$/i,
-            //     type: 'asset/resource',
-            //   },
-            // {
-            //     test: /\.(png|jpe?g|gif|svg)$/i,
-            //     use: [
-            //         {
-            //             loader: 'file-loader',
-            //             options: {
-            //                 name: 'img/[name].[ext]',
-            //             },
-            //         },
-            //     ],
-            // },
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 type: 'asset/resource',         
-                // include: [path.resolve(__dirname, 'src/fonts/')],
                 generator: {
                     filename: 'fonts/[name][ext]'
                   },
@@ -136,44 +111,10 @@ module.exports = {
               {
                 test: /\.(eot|ttf|otf)$/i,
                 type: 'asset/resource',         
-                // include: [path.resolve(__dirname, 'src/fonts/')],
                 generator: {
                     filename: 'fonts/[name][ext]'
                   },
-              },           //         {
-            //             loader: 'file-loader',
-            //             options: {
-            //                 name: 'fonts/[name].[ext]',
-            //             },
-            //         },
-            //     ],
-            // },
-            // {
-            //     test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-            //     use: [
-            //       {
-            //         loader: 'url-loader',
-            //         options: {
-            //           name: '[name].[ext]',
-            //           outputPath: 'fonts/',
-            //           mimetype: 'application/font-woff'
-            //         }
-            //       }
-            //     ]
-            //   },
-            //   {
-            //     test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-            //     use: [
-            //       {
-            //         loader: 'url-loader',
-            //         options: {
-            //           name: '[name].[ext]',
-            //           outputPath: 'fonts/',
-            //           mimetype: 'application/octet-stream'
-            //         }
-            //       }
-            //     ]
-            //   },
+              },          
             {
                 test: /\.pug$/,
                 use: [
@@ -191,9 +132,6 @@ module.exports = {
                     // Translates CSS into CommonJS
                     {
                         loader: 'css-loader',
-                        // options: {
-                        //     url: false,
-                        // },
                     }, // Compiles Sass to CSS
                     'sass-loader',
                 ],
