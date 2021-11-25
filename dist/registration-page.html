@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="keywords" content="Hotel-Pages, Metalamp">
+<meta name="description" content="Hotel Pages for MetaLamp's staging task">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Registration Page  </title>
+  <script defer src="styles.bundle.js"></script><script defer src="datepicker.bundle.js"></script><script defer src="dropdown.bundle.js"></script><script defer src="likeButton.bundle.js"></script><script defer src="rangeSlider.bundle.js"></script><script defer src="burger.bundle.js"></script><script defer src="maskedTextField.bundle.js"></script><script defer src="slider.bundle.js"></script><script defer src="chart.bundle.js"></script><link href="styles.css" rel="stylesheet"><link href="datepicker.css" rel="stylesheet"><link href="rangeSlider.css" rel="stylesheet"><link href="slider.css" rel="stylesheet"></head>
+  <body>
+    <main class="registration-page">
+      <section class="registration-page__header-container">
+        <header class="header-block">
+          <section class="header-logo-container">
+            <section class="logo-toxin-block"><img class="logo-toxin__logo" src="./img/colored-logo.svg" alt="logo" width="40" height="40"><img class="logo-toxin__toxin" src="./img/toxin.svg" alt="toxin-title" width="64" height="14"></section>
+          </section>
+          <div class="header__hamburger"><img class="header__hamburger-icon js-header__hamburger-icon" src="./img/burger.svg" alt="menu" width="24" height="24">
+            <div class="header__hamburger-menu js-header__hamburger-menu js-hider"><a class="about" href="">О нас</a><span class="services expandable-link"><a class="agreements__link" href="">Услуги</a><img class="header__expandable-link" src="./img/link-expand.svg" alt="link-expand" width="12" height="8"></span><a class="vacancies" href="">Вакансии</a><a class="news" href="">Новости</a><span class="agreements"> <a class="agreements__link" href="">Соглашения</a><img class="header__expandable-link" src="./img/link-expand.svg" alt="link-expand" width="12" height="8"></span></div>
+          </div>
+          <nav class="header__nav"> <a class="about" href="">О нас</a><span class="services expandable-link"><a class="agreements__link" href="">Услуги</a><img class="header__expandable-link" src="./img/link-expand.svg" alt="link-expand" width="12" height="8"></span><a class="vacancies" href="">Вакансии</a><a class="news" href="">Новости</a><span class="agreements"> <a class="agreements__link" href="">Соглашения</a><img class="header__expandable-link" src="./img/link-expand.svg" alt="link-expand" width="12" height="8"></span></nav>
+          <section class="header__auth">
+            <div class="header__login-button-box">
+              <button class="button-white undefined" type="submit">войти
+              </button>
+            </div>
+            <div class="header__registration-button-box">
+              <button class="button-purple undefined" type="submit">зарегистрироваться
+              </button>
+            </div>
+          </section>
+        </header>
+      </section>
+      <main class="registration-page__main-container">
+        <div class="registration-page__card-container">
+          <form class="registration-card-block">
+            <div class="registration-card__title">Регистрация аккаунта</div>
+            <div class="registration-card__text-fields"><span class="text-field-container">
+                <input class="text-field__input" type="text" value="" name="name" placeholder="Имя"></span><span class="text-field-container">
+                <input class="text-field__input" type="text" value="" name="surname" placeholder="Фамилия"></span>
+            </div>
+            <div class="registration-card__radio-buttons">
+              <section class="radio-button-block">
+                <label class="radio-label">
+                  <input class="radio__input" type="radio" name="color" value="indigo"><span class="radio__new-icon"></span><span class="radio__text">Мужчина</span>
+                </label>
+                <label class="radio-label">
+                  <input class="radio__input" type="radio" name="color" value="indigo"><span class="radio__new-icon"></span><span class="radio__text">Женщина</span>
+                </label>
+              </section>
+            </div>
+            <div class="registration-card__date">
+              <div class="searching-card__titles-container" style="margin:0 0 4px 0;">
+                <h3 class="block-title">дата рождения</h3>
+              </div><span class="text-field-container">
+                <input class="masked-text-field__input js-masked-text-field__input" type="text" name="date" placeholder="ДД.ММ.ГГГГ" maxlength="10"></span>
+            </div>
+            <div class="registration-card__user-data">
+              <div class="searching-card__titles-container" style="margin:0 0 4px 0;">
+                <h3 class="block-title">данные для входа в сервис</h3>
+              </div>
+              <div class="registration-card__text-fields"><span class="text-field-container">
+                  <input class="text-field__input" type="text" value="" name="email" placeholder="Email"></span><span class="text-field-container">
+                  <input class="text-field__input" type="text" value="" name="password" placeholder="Пароль"></span>
+              </div>
+            </div>
+            <div class="registration-card__toggle">
+              <label class="toggle__container"><span class="toggle__container_inline">
+                  <input type="checkbox"><span class="toggle__slider round"></span><span class="toggle__caption">Получать спецпредложения</span></span></label>
+            </div>
+            <div class="registration-card__button-box">
+              <button class="button-with-arrow undefined" type="submit">зарегистрироваться<img class="button__arrow-icon" src="./img/arrow-button.svg" alt="submit" width="18" height="17">
+              </button>
+            </div>
+            <div class="registration-card__login-box">
+              <div class="registration-card__login-caption">Уже есть аккаунт на Toxin</div>
+              <div class="registration-card__login-button-box">
+                <button class="button-white undefined" type="submit">войти
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="registration-page__background"></div>
+      </main>
+      <section class="registration-page__footer-container">
+        <footer class="footer-block">
+          <section class="footer-widgets">
+            <section class="footer__logo-caption-container">
+              <section class="logo-toxin-block"><img class="logo-toxin__logo" src="./img/colored-logo.svg" alt="logo" width="40" height="40"><img class="logo-toxin__toxin" src="./img/toxin.svg" alt="toxin-title" width="64" height="14"></section>
+              <article class="footer__caption">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</article>
+            </section>
+            <section class="footer__group"><a class="footer__group-title" href="">Навигация</a><a class="footer__link" href="">О нас</a><a class="footer__link" href="">Новости</a><a class="footer__link" href="">Cлужба поддержки</a><a class="footer__link" href="">Услуги              </a></section>
+            <section class="footer__group"><a class="footer__group-title" href="">О нас</a><a class="footer__link" href="">О сервисе</a><a class="footer__link" href="">Наша команда           </a><a class="footer__link" href="">Вакансии               </a><a class="footer__link" href="">Инвесторы</a></section>
+            <section class="footer__group"><a class="footer__group-title" href="">Служба поддержки</a><a class="footer__link" href="">Соглашения           </a><a class="footer__link" href="">Сообщества</a><a class="footer__link" href="">Связь с нами               </a></section>
+            <section class="footer__group footer__subscribe"><a class="footer__group-title" href="">Подписка</a><a class="footer__caption" href="">Получайте специальные предложения и новости сервиса</a>
+              <section class="subscription-text-field-form"><span class="text-field-container">
+                  <input class="text-field__input" type="text" value="" name="email" placeholder="Email"></span><span class="dropdown__img-box js-dropdown_instance-undefined__img-box"><img src="./img/arrow.svg" alt="open" width="18" height="18"></span>
+              </section>
+            </section>
+          </section>
+          <section class="footer-copyright-bar">
+            <section class="footer-copyright-bar__text footer__link">Copyright © 2018 Toxin отель. Все права защищены.</section>
+            <section class="footer-copyright-bar__social-networks"><img class="logo-toxin__logo" src="./img/twitter.svg" alt="logo" width="24" height="24"><img class="logo-toxin__logo" src="./img/facebook.svg" alt="logo" width="24" height="24"><img class="logo-toxin__logo" src="./img/instagram.svg" alt="logo" width="24" height="24"></section>
+          </section>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
